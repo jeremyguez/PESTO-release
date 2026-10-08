@@ -44,12 +44,15 @@ python3 -m venv ~/venvs/pesto
 ```
 
 On Debian and Ubuntu a plain `pip install` outside a virtual environment is
-refused (`externally-managed-environment`); use one of the two above.
+refused (`externally-managed-environment`); use one of the two above. On macOS,
+`brew install pipx` provides pipx. PESTO runs on Linux and macOS.
+
+To update: `pipx upgrade pesto-genetics`.
 
 The install is about 1.3 GB, nearly all of it PyTorch, which the Open Targets
 branch uses to rank traits locally. On Linux, pip's default index serves the CUDA
 build of torch; nothing here uses a GPU, and the CPU build is several hundred
-megabytes smaller:
+megabytes smaller (on macOS the default build is already the right one):
 
 ```bash
 pipx install pesto-genetics --pip-args="--extra-index-url https://download.pytorch.org/whl/cpu"
@@ -131,7 +134,7 @@ the probability distribution, the justification and the supporting PMIDs.
 A table of pairs (tab-separated, columns `gene` and `phenotype`) runs in parallel:
 
 ```bash
-pesto --bench pairs.tsv --workers 10      # writes pesto.tsv and pesto.cost.tsv
+pesto --bench pairs.tsv --workers 10      # writes pesto.tsv and cost.tsv beside it
 ```
 
 | Option | What it does |
@@ -146,6 +149,35 @@ pesto --bench pairs.tsv --workers 10      # writes pesto.tsv and pesto.cost.tsv
 | `--show-pipeline` | print the blocks of the pipeline and their fingerprints, call nothing |
 
 `pesto --help` lists the rest.
+
+## In a web page
+
+```bash
+pesto browser
+```
+
+opens PESTO in your browser: run one pair, or drop a table of pairs and follow it
+as it runs; scroll through the answers, filter them by verdict, and open a pair
+to read its summary, the distribution over the four levels, the articles read
+(each opens in PubMed or Europe PMC), the Open Targets traits and how each relates
+to the phenotype, the cost, and links to gnomAD, GeneCards, Open Targets, OMIM,
+ClinVar, DECIPHER, the GWAS Catalog, GTEx and UniProt.
+
+- **Every table is a run of its own**, kept in a folder under
+  `~/.local/share/pesto/runs` (change it in the settings, or with
+  `pesto browser --runs-dir DIR`). The sidebar lists them; a run stopped or
+  interrupted resumes where it was, without paying again for the pairs done.
+- **Runs made elsewhere open too**: a folder written by `pesto --bench` (it holds
+  `pesto.tsv`) opens with *Open a run folder*.
+- **Export as HTML** saves a run as a single file that opens by double-clicking,
+  with no installation: it can be read and shared, not run again.
+- **The API key** is read from `ANTHROPIC_API_KEY` as on the command line. If it is
+  not set, the page asks for it; the key is then kept in memory while
+  `pesto browser` runs, never written to disk, and sent only to api.anthropic.com.
+
+The page is served on 127.0.0.1 only, and every request must carry the token in
+the address `pesto browser` opens, so no other site open in the browser can start
+a run. Before a table runs, the page shows its estimated cost.
 
 ## Pipelines
 
@@ -178,8 +210,8 @@ At Anthropic list prices, the literature branch costs about $0.07–0.11 a pair
 with `abstracts` (Extended Data Fig. 2 and Supplementary Figure 3), and 2–3%
 more with `fulltext`; the Open Targets branch about $0.03. Well-studied genes cost more. A
 pair already answered by the same pipeline is read from the cache and costs
-nothing. With `--bench`, the cost of every pair is written to `pesto.cost.tsv`
-as it runs.
+nothing. With `--bench`, the cost of every pair is written to `cost.tsv` as it
+runs.
 
 ## Where things are written
 

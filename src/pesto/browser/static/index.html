@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PESTO</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --panel-2: #f9fafb; --text: #1b2230;
+  --muted: #667085; --line: #e3e6eb; --accent: #2e5f4f; --accent-soft: #e6efeb;
+  --danger: #b42318; --shadow: 0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.08);
+  --novel: #a9573f; --hyp: #bfa45c; --exist: #5b7f95; --estab: #2e5f4f;
+  --radius: 10px; --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+[data-theme="dark"] {
+  --bg: #0e1116; --panel: #161b22; --panel-2: #1b212a; --text: #e6e9ee;
+  --muted: #98a2b3; --line: #2a313c; --accent: #6fb39b; --accent-soft: #1d2f29;
+  --danger: #f97066; --shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
+       "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { font: inherit; cursor: pointer; }
+input, textarea, select { font: inherit; color: var(--text); background: var(--panel);
+  border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; width: 100%; }
+input:focus, textarea:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.top { height: 56px; display: flex; align-items: center; gap: 12px; padding: 0 18px;
+  background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+.brand { font-weight: 700; letter-spacing: .08em; font-size: 17px; }
+.brand small { font-weight: 400; letter-spacing: 0; color: var(--muted); margin-left: 10px; font-size: 13px; }
+.spacer { flex: 1; }
+.btn { border: 1px solid var(--line); background: var(--panel); color: var(--text);
+  padding: 7px 12px; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; }
+.btn:hover { background: var(--panel-2); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+[data-theme="dark"] .btn.primary { color: #0e1116; }
+.btn.primary:hover { filter: brightness(1.05); }
+.btn.danger { color: var(--danger); }
+.btn.small { padding: 4px 9px; font-size: 13px; }
+.btn:disabled { opacity: .5; cursor: default; }
+.icon-btn { border: 0; background: transparent; color: var(--muted); font-size: 18px; padding: 6px; border-radius: 6px; }
+.icon-btn:hover { background: var(--panel-2); color: var(--text); }
+.pill { font-size: 12px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.pill.ok { color: var(--accent); border-color: var(--accent); }
+.pill.warn { color: var(--danger); border-color: var(--danger); cursor: pointer; }
+.layout { display: grid; grid-template-columns: 290px minmax(0, 1fr); height: calc(100% - 56px); }
+body { overflow: hidden; }
+.table-wrap { overflow-x: auto; }
+aside { border-right: 1px solid var(--line); background: var(--panel); overflow: auto; padding: 16px; }
+main { overflow: auto; padding: 24px 28px 60px; }
+.side-title { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 18px 0 8px; }
+.run-item { padding: 10px 11px; border-radius: 8px; cursor: pointer; border: 1px solid transparent; margin-bottom: 4px; }
+.run-item:hover { background: var(--panel-2); }
+.run-item.active { background: var(--accent-soft); border-color: var(--accent); }
+.run-item .name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.run-item .sub { font-size: 12px; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; background: var(--muted); }
+.dot.running { background: #e0a100; animation: pulse 1.2s infinite; }
+.dot.done { background: var(--accent); }
+.dot.error, .dot.stopped { background: var(--danger); }
+@keyframes pulse { 50% { opacity: .35; } }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+.mono { font-family: var(--mono); font-size: 12px; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+h2 { font-size: 16px; margin: 0 0 12px; }
+h3 { font-size: 13px; margin: 0 0 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 18px 20px; margin-bottom: 18px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 1100px) { .grid2 { grid-template-columns: 1fr; } }
+.field { margin-bottom: 12px; }
+.field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { border: 0; background: var(--panel); color: var(--text); padding: 7px 12px; }
+.seg button.on { background: var(--accent); color: #fff; }
+[data-theme="dark"] .seg button.on { color: #0e1116; }
+.drop { border: 2px dashed var(--line); border-radius: var(--radius); padding: 22px; text-align: center;
+  color: var(--muted); cursor: pointer; }
+.drop.over { border-color: var(--accent); background: var(--accent-soft); }
+.chip { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600;
+  color: #fff; white-space: nowrap; }
+.chip.Novel { background: var(--novel); } .chip.Hypothesized { background: var(--hyp); }
+.chip.Existing { background: var(--exist); } .chip.Established { background: var(--estab); }
+.chip.none { background: transparent; color: var(--muted); border: 1px solid var(--line); font-weight: 400; }
+.chip.Error { background: var(--danger); }
+.tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 5px;
+  background: var(--panel-2); border: 1px solid var(--line); color: var(--muted); }
+.tag.exact { color: #fff; background: var(--estab); border-color: var(--estab); }
+.tag.tie { color: #fff; background: var(--hyp); border-color: var(--hyp); }
+.dist { display: flex; height: 8px; border-radius: 4px; overflow: hidden; background: var(--line); min-width: 90px; }
+.dist span { display: block; height: 100%; }
+.dist.big { height: 14px; border-radius: 7px; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 6px; }
+.legend i { width: 9px; height: 9px; display: inline-block; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin: 12px 0 4px; }
+.progress > div { height: 100%; background: var(--accent); transition: width .4s; }
+.counts { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.count { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; cursor: pointer; background: var(--panel); }
+.count.on { outline: 2px solid var(--accent); }
+.count b { margin-left: 6px; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; padding: 9px 10px;
+  border-bottom: 1px solid var(--line); cursor: pointer; user-select: none; white-space: nowrap; }
+td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: var(--panel-2); }
+tbody tr.sel { background: var(--accent-soft); }
+.gene { font-weight: 700; }
+.err { color: var(--danger); font-size: 12px; }
+.toolbar { display: flex; gap: 10px; align-items: center; margin: 14px 0; flex-wrap: wrap; }
+.toolbar input { max-width: 280px; }
+.toolbar select { width: auto; }
+.drawer { position: fixed; top: 56px; right: 0; bottom: 0; width: min(640px, 100%); background: var(--panel);
+  border-left: 1px solid var(--line); box-shadow: -8px 0 24px rgba(0,0,0,.08); overflow: auto; padding: 22px 24px 60px;
+  transform: translateX(100%); transition: transform .2s; z-index: 6; }
+.drawer.open { transform: none; }
+.links { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 18px; }
+.links a { font-size: 12px; border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; color: var(--text); }
+.links a:hover { border-color: var(--accent); text-decoration: none; color: var(--accent); }
+.sect { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 16px; }
+.just { white-space: pre-wrap; }
+.art { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.art:last-child { border-bottom: 0; }
+.art .t { font-weight: 600; color: var(--text); }
+.art .meta { font-size: 12px; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; margin-top: 3px; }
+details summary { cursor: pointer; color: var(--muted); font-size: 12px; margin-top: 4px; }
+details p { font-size: 13px; margin: 6px 0 0; }
+.cited { color: var(--accent); font-weight: 600; font-size: 11px; }
+.terms span { display: inline-block; margin: 0 6px 6px 0; }
+.modal { position: fixed; inset: 0; background: rgba(15,18,22,.45); display: flex; align-items: center;
+  justify-content: center; z-index: 10; }
+.modal.hidden { display: none; }
+.modal-card { background: var(--panel); border-radius: 12px; padding: 22px 24px; width: min(520px, 92vw);
+  box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+.modal-card p { color: var(--muted); }
+.note { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+  font-size: 13px; color: var(--muted); }
+.empty { text-align: center; color: var(--muted); padding: 60px 20px; }
+#toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--bg);
+  padding: 10px 16px; border-radius: 8px; opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 20; }
+#toast.show { opacity: .95; }
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">PESTO<small>Prior evidence for gene–phenotype associations</small></div>
+  <div class="spacer"></div>
+  <span id="key-pill" class="pill hidden"></span>
+  <button class="icon-btn" id="theme-btn" title="Light or dark">◐</button>
+  <button class="icon-btn" id="settings-btn" title="Settings">⚙</button>
+</header>
+<div class="layout">
+  <aside id="sidebar"></aside>
+  <main id="main"></main>
+</div>
+<div id="drawer" class="drawer"></div>
+<div id="modal" class="modal hidden"><div class="modal-card" id="modal-card"></div></div>
+<div id="toast"></div>
+<script id="pesto-export" type="application/json"></script>
+<script>
+"use strict";
+const EXPORT = (() => {
+  const t = document.getElementById("pesto-export").textContent.trim();
+  return t ? JSON.parse(t) : null;
+})();
+const TOKEN = EXPORT ? null : (new URLSearchParams(location.search).get("token")
+                               || sessionStorage.getItem("pesto-token"));
+if (TOKEN) {
+  sessionStorage.setItem("pesto-token", TOKEN);
+  if (location.search) history.replaceState(null, "", location.pathname);
+}
+const ORDER = ["Novel", "Hypothesized", "Existing", "Established"];
+const COLOR = { Novel: "var(--novel)", Hypothesized: "var(--hyp)", Existing: "var(--exist)", Established: "var(--estab)" };
+const TIES = new Set(["PARENT_FIRST", "CHILD_FIRST", "CLOSE_VERY", "CLOSE_MODERATE", "SYMPTOM_SPECIFIC", "SYMPTOM_MODERATE"]);
+const S = { status: null, runs: [], path: null, run: null, filter: { q: "", lit: "", ot: "" },
+            sort: { key: null, dir: 1 }, pair: null, timer: null };
+
+// ------------------------------------------------------------------ helpers
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const enc = encodeURIComponent;
+function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 2600); }
+async function api(path, body) {
+  const opts = { headers: { "X-Pesto-Token": TOKEN, "Content-Type": "application/json" } };
+  if (body !== undefined) { opts.method = "POST"; opts.body = JSON.stringify(body); }
+  const r = await fetch(path, opts);
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(d.error || `request failed (${r.status})`);
+  return d;
+}
+function chip(v) { return v && ORDER.includes(v) ? `<span class="chip ${v}">${v}</span>`
+  : v === "Error" ? `<span class="chip Error">Error</span>` : `<span class="chip none">${esc(v || "—")}</span>`; }
+function dist(r, big) {
+  const p = ORDER.map((k) => Number(r["p_" + k.toLowerCase()] ?? r[k] ?? 0));
+  const tot = p.reduce((a, b) => a + b, 0);
+  if (!tot) return "";
+  return `<div class="dist${big ? " big" : ""}" title="${ORDER.map((k, i) => `${k} ${p[i]}`).join(" · ")}">` +
+    ORDER.map((k, i) => `<span style="width:${100 * p[i] / tot}%;background:${COLOR[k]}"></span>`).join("") + "</div>";
+}
+const usd = (x) => (x === null || x === undefined || x === "") ? "" : "$" + Number(x).toFixed(Number(x) < 1 ? 3 : 2);
+const day = (s) => s ? new Date(s).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }) : "";
+const pmidLinks = (text) => esc(text).replace(/\b(\d{7,8})\b/g,
+  (m) => `<a href="https://pubmed.ncbi.nlm.nih.gov/${m}/" target="_blank" rel="noopener">${m}</a>`);
+const modeName = (m) => m === "fulltext" ? "Full text" : m === "abstracts" ? "Abstracts" : "";
+
+// ------------------------------------------------------------------- theme
+function setTheme(t) { document.documentElement.dataset.theme = t; localStorage.setItem("pesto-theme", t); }
+setTheme(localStorage.getItem("pesto-theme") ||
+  (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+$("theme-btn").onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+
+// ------------------------------------------------------------------- modal
+function modal(html) { $("modal-card").innerHTML = html; $("modal").classList.remove("hidden"); }
+function closeModal() { $("modal").classList.add("hidden"); }
+$("modal").onclick = (e) => { if (e.target.id === "modal") closeModal(); };
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") { closeModal(); closeDrawer(); } });
+
+function askKey(then) {
+  modal(`<h2>Anthropic API key</h2>
+    <p>PESTO reads the literature with Claude, through your own Anthropic account.
+    Paste an API key from <a href="https://console.anthropic.com" target="_blank" rel="noopener">console.anthropic.com</a>.</p>
+    <div class="note">Your key stays on this computer. It is kept in memory only while
+    <code>pesto browser</code> runs, is never written to disk, and is sent only to
+    api.anthropic.com. To skip this step, run <code>export ANTHROPIC_API_KEY=sk-ant-…</code>
+    before <code>pesto browser</code>.</div>
+    <div class="field" style="margin-top:14px"><input id="key-in" type="password" placeholder="sk-ant-…" autocomplete="off"></div>
+    <div class="err" id="key-err"></div>
+    <div class="row" style="justify-content:flex-end;margin-top:8px">
+      <button class="btn" onclick="closeModal()">Cancel</button>
+      <button class="btn primary" id="key-ok">Use this key</button></div>`);
+  $("key-in").focus();
+  const go = async () => {
+    $("key-ok").disabled = true; $("key-err").textContent = "Checking with Anthropic…";
+    try { await api("/api/key", { key: $("key-in").value }); closeModal(); await loadStatus(); toast("Key accepted for this session");
+          if (then) then(); }
+    catch (e) { $("key-err").textContent = e.message; $("key-ok").disabled = false; }
+  };
+  $("key-ok").onclick = go;
+  $("key-in").onkeydown = (e) => { if (e.key === "Enter") go(); };
+}
+async function needKey(then) { if (S.status && S.status.key) return then(); askKey(then); }
+
+$("settings-btn").onclick = () => {
+  if (EXPORT) return;
+  modal(`<h2>Settings</h2>
+    <div class="field"><label>Folder where new runs are kept</label>
+      <input id="dir-in" value="${esc(S.status.runs_dir)}"></div>
+    <p class="small">Runs already made stay where they are; open them with “Open a run folder”.</p>
+    <div class="row" style="justify-content:flex-end">
+      <button class="btn" onclick="closeModal()">Cancel</button>
+      <button class="btn primary" id="dir-ok">Save</button></div>`);
+  $("dir-ok").onclick = async () => {
+    try { await api("/api/settings", { runs_dir: $("dir-in").value }); closeModal(); await loadStatus(); await loadRuns(); toast("Saved"); }
+    catch (e) { toast(e.message); }
+  };
+};
+
+function openRunDialog() {
+  modal(`<h2>Open a run folder</h2>
+    <p>A folder made by PESTO: one created here, or one written by <code>pesto --bench</code>
+    (it holds <code>pesto.tsv</code>). Paste its path.</p>
+    <div class="field"><input id="open-in" placeholder="/home/you/project/runs/2026-10-08_my_run"></div>
+    <div class="err" id="open-err"></div>
+    <div class="row" style="justify-content:flex-end">
+      <button class="btn" onclick="closeModal()">Cancel</button>
+      <button class="btn primary" id="open-ok">Open</button></div>`);
+  $("open-in").focus();
+  $("open-ok").onclick = async () => {
+    try { const d = await api("/api/open", { path: $("open-in").value.trim() }); closeModal(); await loadRuns(); showRun(d.path); }
+    catch (e) { $("open-err").textContent = e.message; }
+  };
+}
+
+// ----------------------------------------------------------------- sidebar
+async function loadStatus() {
+  if (EXPORT) return;
+  S.status = await api("/api/status");
+  const pill = $("key-pill");
+  pill.classList.remove("hidden", "ok", "warn");
+  if (S.status.key) { pill.textContent = "API key ready"; pill.classList.add("ok"); pill.onclick = null; }
+  else { pill.textContent = "No API key"; pill.classList.add("warn"); pill.onclick = () => askKey(); }
+}
+async function loadRuns() {
+  if (EXPORT) return renderSidebar();
+  S.runs = (await api("/api/runs")).runs;
+  renderSidebar();
+}
+function renderSidebar() {
+  if (EXPORT) {
+    const m = EXPORT.meta;
+    $("sidebar").innerHTML = `<div class="side-title">Exported run</div>
+      <div class="run-item active"><div class="name">${esc(m.name)}</div>
+      <div class="sub">${day(m.created)} · ${m.pairs} pairs</div></div>
+      <p class="small muted" style="margin-top:16px">A copy of a PESTO run, saved as one file.
+      It can be read but not run again; open it with <code>pesto browser</code> to do that.</p>`;
+    $("settings-btn").classList.add("hidden");
+    return;
+  }
+  const items = S.runs.map((m) => {
+    const st = m.active ? "running" : m.status;
+    const pct = m.pairs ? Math.round(100 * (m.done || 0) / m.pairs) : 0;
+    return `<div class="run-item ${m.path === S.path ? "active" : ""}" data-path="${esc(m.path)}">
+      <div class="name" title="${esc(m.name)}">${esc(m.name)}</div>
+      <div class="sub"><span class="dot ${st === "running" || st === "loading the embedding model" ? "running" : esc(st)}"></span>
+        ${m.pairs} pair${m.pairs === 1 ? "" : "s"}${st !== "done" ? ` · ${pct}%` : ""} · ${day(m.created)}</div></div>`;
+  }).join("");
+  $("sidebar").innerHTML = `<button class="btn primary" style="width:100%;justify-content:center" id="new-btn">＋ New analysis</button>
+    <div class="side-title">Runs</div>
+    ${items || `<p class="small muted">No runs yet.</p>`}
+    <div class="side-title">Elsewhere on disk</div>
+    <button class="btn small" id="open-btn">Open a run folder…</button>
+    <p class="small muted" style="margin-top:14px;word-break:break-all">New runs go to<br><span class="mono">${esc(S.status.runs_dir)}</span></p>`;
+  $("new-btn").onclick = () => showNew();
+  $("open-btn").onclick = openRunDialog;
+  document.querySelectorAll(".run-item").forEach((el) => el.onclick = () => showRun(el.dataset.path));
+}
+
+// ------------------------------------------------------------ new analysis
+let NEW = { mode: "abstracts", pairs: [], name: "", workers: 8 };
+function costPerPair() {
+  const lit = NEW.mode === "fulltext" ? 0.13 : 0.12;
+  return S.status && S.status.torch ? [lit + 0.04, lit + 0.08] : [lit + 0.1, lit + 0.6];
+}
+function showNew() {
+  S.path = null; closeDrawer(); stopPolling(); renderSidebar();
+  const torchNote = S.status.torch ? "" : `<div class="note" style="margin-top:12px">PyTorch is not installed, so the
+    Open Targets branch grades every trait associated with each gene instead of the 20 nearest. That costs more for
+    well-studied genes (up to about $0.50 a pair); see “Without PyTorch” in the README.</div>`;
+  $("main").innerHTML = `<h1>New analysis</h1>
+    <p class="muted">Each analysis is kept as a run of its own, listed on the left.</p>
+    <div class="card"><div class="row" style="justify-content:space-between">
+      <div><h3 style="margin:0">Literature search</h3>
+      <div class="small muted" id="mode-help"></div></div>
+      <div class="seg" id="mode-seg"><button data-m="abstracts">Abstracts</button><button data-m="fulltext">Full text</button></div>
+    </div>${torchNote}</div>
+    <div class="grid2">
+      <div class="card"><h2>One pair</h2>
+        <div class="field"><label>Gene (HGNC symbol)</label><input id="g-in" placeholder="DDX41"></div>
+        <div class="field"><label>Phenotype</label><input id="p-in" placeholder="myelodysplastic syndrome"></div>
+        <div class="row" style="justify-content:space-between"><span class="small muted" id="one-cost"></span>
+        <button class="btn primary" id="one-go">Run</button></div></div>
+      <div class="card"><h2>A table of pairs</h2>
+        <div class="drop" id="drop">Drop a .tsv or .csv file here, or click to choose one<br>
+          <span class="small">Columns <code>gene</code> and <code>phenotype</code>; other columns are kept.</span></div>
+        <input type="file" id="file-in" accept=".tsv,.csv,.txt" class="hidden">
+        <details style="margin-top:10px"><summary>or paste the table</summary>
+          <textarea id="paste-in" rows="5" placeholder="gene&#9;phenotype&#10;DDX41&#9;myelodysplastic syndrome" style="margin-top:6px"></textarea></details>
+        <div id="table-info" class="small" style="margin-top:10px"></div>
+        <div class="row" style="margin-top:10px">
+          <div style="flex:1"><label class="small muted">Run name</label><input id="name-in"></div>
+          <div style="width:110px"><label class="small muted">In parallel</label>
+            <select id="workers-in">${[1, 2, 4, 8, 12, 16, 20].map((w) => `<option ${w === 8 ? "selected" : ""}>${w}</option>`).join("")}</select></div></div>
+        <div class="row" style="justify-content:space-between;margin-top:12px"><span class="small muted" id="tab-cost"></span>
+          <button class="btn primary" id="tab-go" disabled>Run the table</button></div></div>
+    </div>`;
+  const setMode = (m) => {
+    NEW.mode = m;
+    document.querySelectorAll("#mode-seg button").forEach((b) => b.classList.toggle("on", b.dataset.m === m));
+    $("mode-help").textContent = m === "fulltext"
+      ? "Adds a Europe PMC search for articles that name the gene only in their body. Not used for the paper's analyses."
+      : "PESTO as in the paper: PubMed abstracts, twenty read per pair.";
+    const [a, b] = costPerPair();
+    $("one-cost").textContent = `About ${usd(a)}–${usd(b)}`;
+    updateTable();
+  };
+  document.querySelectorAll("#mode-seg button").forEach((b) => b.onclick = () => setMode(b.dataset.m));
+  setMode(NEW.mode);
+  $("one-go").onclick = () => {
+    const g = $("g-in").value.trim(), p = $("p-in").value.trim();
+    if (!g || !p) return toast("Enter a gene and a phenotype");
+    needKey(() => launch([{ gene: g, phenotype: p }], `${g} · ${p}`));
+  };
+  $("p-in").onkeydown = (e) => { if (e.key === "Enter") $("one-go").click(); };
+  const drop = $("drop");
+  drop.onclick = () => $("file-in").click();
+  drop.ondragover = (e) => { e.preventDefault(); drop.classList.add("over"); };
+  drop.ondragleave = () => drop.classList.remove("over");
+  drop.ondrop = (e) => { e.preventDefault(); drop.classList.remove("over"); readFile(e.dataTransfer.files[0]); };
+  $("file-in").onchange = (e) => readFile(e.target.files[0]);
+  $("paste-in").oninput = (e) => { NEW.name = NEW.name || "pasted table"; parseInto(e.target.value); };
+  $("tab-go").onclick = () => needKey(() => {
+    const [a, b] = costPerPair(), n = NEW.pairs.length;
+    const name = $("name-in").value.trim() || NEW.name || "table";
+    const workers = Number($("workers-in").value);
+    modal(`<h2>Run ${n} pair${n === 1 ? "" : "s"}?</h2>
+      <p>Estimated cost on your Anthropic account: <b>${usd(a * n)}–${usd(b * n)}</b>
+      (about ${usd(a)}–${usd(b)} a pair; well-studied genes cost more). If the run stops,
+      resuming it does not pay again for the pairs already answered.</p>
+      <div class="row" style="justify-content:flex-end"><button class="btn" onclick="closeModal()">Cancel</button>
+      <button class="btn primary" id="go-ok">Run</button></div>`);
+    $("go-ok").onclick = () => { closeModal(); launch(NEW.pairs, name, workers); };
+  });
+}
+function readFile(f) {
+  if (!f) return;
+  NEW.name = f.name.replace(/\.(tsv|csv|txt)$/i, "");
+  f.text().then(parseInto);
+}
+function splitLine(line, sep) {
+  if (sep === "\t") return line.split("\t");
+  const out = []; let cur = "", q = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (q) { if (c === '"' && line[i + 1] === '"') { cur += '"'; i++; } else if (c === '"') q = false; else cur += c; }
+    else if (c === '"') q = true; else if (c === sep) { out.push(cur); cur = ""; } else cur += c;
+  }
+  out.push(cur); return out;
+}
+function parseInto(text) {
+  const lines = text.replace(/\r/g, "").split("\n").filter((l) => l.trim());
+  NEW.pairs = []; NEW.error = "";
+  if (lines.length) {
+    const sep = lines[0].includes("\t") ? "\t" : ",";
+    const head = splitLine(lines[0], sep).map((h) => h.trim());
+    const low = head.map((h) => h.toLowerCase());
+    const gi = low.findIndex((h) => ["gene", "gene_symbol", "symbol", "hgnc_symbol"].includes(h));
+    const pi = low.findIndex((h) => ["phenotype", "trait", "disease", "description"].includes(h));
+    if (gi < 0 || pi < 0) NEW.error = "The first line must name the columns, with one called gene and one called phenotype.";
+    else {
+      const seen = new Set();
+      for (const l of lines.slice(1)) {
+        const cells = splitLine(l, sep).map((c) => c.trim());
+        const p = { gene: cells[gi] || "", phenotype: cells[pi] || "" };
+        head.forEach((h, i) => { if (i !== gi && i !== pi && h) p[h] = cells[i] || ""; });
+        const key = p.gene + "\t" + p.phenotype;
+        if (p.gene && p.phenotype && !seen.has(key)) { seen.add(key); NEW.pairs.push(p); }
+      }
+    }
+  }
+  if ($("name-in") && !$("name-in").value) $("name-in").value = NEW.name || "";
+  updateTable();
+}
+function updateTable() {
+  if (!$("table-info")) return;
+  const n = NEW.pairs.length, [a, b] = costPerPair();
+  $("table-info").innerHTML = NEW.error ? `<span class="err">${esc(NEW.error)}</span>`
+    : n ? `<b>${n}</b> pair${n === 1 ? "" : "s"} · first: <span class="gene">${esc(NEW.pairs[0].gene)}</span> / ${esc(NEW.pairs[0].phenotype)}` : "";
+  $("tab-cost").textContent = n ? `About ${usd(a * n)}–${usd(b * n)}` : "";
+  $("tab-go").disabled = !n;
+}
+async function launch(pairs, name, workers) {
+  try {
+    const d = await api("/api/runs", { pairs, name, mode: NEW.mode, workers: workers || 8 });
+    await loadRuns(); showRun(d.path);
+  } catch (e) { toast(e.message); if (/key/i.test(e.message)) askKey(); }
+}
+
+// ---------------------------------------------------------------- run view
+function stopPolling() { clearTimeout(S.timer); S.timer = null; }
+async function showRun(path, keepPair) {
+  stopPolling();
+  if (path !== S.path) { S.filter = { q: "", lit: "", ot: "" }; S.sort = { key: null, dir: 1 }; }
+  S.path = path;
+  if (!keepPair) closeDrawer();
+  try { S.run = EXPORT ? { meta: EXPORT.meta, rows: EXPORT.rows } : await api(`/api/run?path=${enc(path)}`); }
+  catch (e) { toast(e.message); return; }
+  renderSidebar();
+  renderRun();
+  const m = S.run.meta;
+  if (!EXPORT && m.active) {
+    S.timer = setTimeout(async () => { await loadRuns(); if (S.path === path) showRun(path, true); }, 2500);
+  }
+}
+function runState(m) {
+  if (m.active) return m.status === "loading the embedding model" ? "Loading the embedding model…" : "Running";
+  return { done: "Finished", stopped: "Stopped", error: "Error", queued: "Queued", running: "Interrupted" }[m.status] || m.status;
+}
+function renderRun() {
+  const { meta: m, rows } = S.run;
+  const answered = rows.filter((r) => r.answered);
+  const pct = m.pairs ? 100 * answered.length / m.pairs : 0;
+  const canResume = !EXPORT && !m.active && answered.length < m.pairs && m.status !== "done";
+  const countBy = (k) => ORDER.concat(["Error"]).map((v) => [v, answered.filter((r) => (r[k] || (r.error ? "Error" : "")) === v).length]).filter(([, n]) => n);
+  const counts = (k, label) => `<div class="counts"><span class="small muted" style="width:96px">${label}</span>` +
+    countBy(k).map(([v, n]) => `<span class="count ${S.filter[k === "lit_mean" ? "lit" : "ot"] === v ? "on" : ""}" data-k="${k}" data-v="${v}">${chip(v)}<b>${n}</b></span>`).join("") + "</div>";
+  $("main").innerHTML = `<div class="row" style="justify-content:space-between;align-items:flex-start">
+      <div><h1>${esc(m.name)}</h1>
+      <div class="muted small">${day(m.created)} · ${m.pairs} pair${m.pairs === 1 ? "" : "s"}${m.mode ? " · " + modeName(m.mode) : ""}${m.usd ? " · " + usd(m.usd) : ""}${m.version ? " · PESTO " + esc(m.version) : ""}</div></div>
+      <div class="row">
+        ${!EXPORT && m.active ? `<button class="btn danger" id="stop-btn">Stop</button>` : ""}
+        ${canResume ? `<button class="btn primary" id="resume-btn">Resume</button>` : ""}
+        ${!EXPORT ? `<a class="btn" href="/api/export?path=${enc(S.path)}&token=${enc(TOKEN)}">Export as HTML</a>` : ""}
+      </div></div>
+    <div class="card" style="margin-top:16px">
+      <div class="row" style="justify-content:space-between"><b>${runState(m)}</b>
+        <span class="small muted">${answered.length} of ${m.pairs} answered</span></div>
+      <div class="progress"><div style="width:${pct}%"></div></div>
+      ${m.error ? `<div class="err">${esc(m.error)}</div>` : ""}
+      <div style="margin-top:10px;display:grid;gap:8px">${counts("lit_mean", "Literature")}${counts("open_targets_verdict", "Open Targets")}</div>
+    </div>
+    <div class="card"><div class="toolbar">
+      <input id="q-in" placeholder="Filter by gene or phenotype" value="${esc(S.filter.q)}">
+      ${S.filter.lit || S.filter.ot ? `<button class="btn small" id="clear-f">Clear filters</button>` : ""}
+      <span class="spacer"></span><span class="small muted" id="shown"></span></div>
+      <div class="table-wrap"><table><thead><tr>
+        <th data-s="gene">Gene</th><th data-s="phenotype">Phenotype</th><th data-s="lit">Literature</th><th>Distribution</th>
+        <th data-s="ot">Open Targets</th><th data-s="read">Read</th><th data-s="usd">Cost</th></tr></thead>
+      <tbody id="tbody"></tbody></table></div></div>`;
+  if ($("stop-btn")) $("stop-btn").onclick = async () => { await api("/api/run/stop", { path: S.path }); toast("Stopping after the pairs in progress"); };
+  if ($("resume-btn")) $("resume-btn").onclick = () => needKey(async () => { await api("/api/run/resume", { path: S.path }); await loadRuns(); showRun(S.path); });
+  $("q-in").oninput = (e) => { S.filter.q = e.target.value; renderRows(); };
+  if ($("clear-f")) $("clear-f").onclick = () => { S.filter.lit = S.filter.ot = ""; renderRun(); };
+  document.querySelectorAll(".count").forEach((el) => el.onclick = () => {
+    const f = el.dataset.k === "lit_mean" ? "lit" : "ot";
+    S.filter[f] = S.filter[f] === el.dataset.v ? "" : el.dataset.v; renderRun();
+  });
+  document.querySelectorAll("th[data-s]").forEach((th) => th.onclick = () => {
+    S.sort = { key: th.dataset.s, dir: S.sort.key === th.dataset.s ? -S.sort.dir : 1 }; renderRows();
+  });
+  renderRows();
+}
+function renderRows() {
+  const q = S.filter.q.toLowerCase();
+  let rows = S.run.rows.filter((r) => (!q || (r.gene + " " + r.phenotype).toLowerCase().includes(q))
+    && (!S.filter.lit || (r.lit_mean || (r.error ? "Error" : "")) === S.filter.lit)
+    && (!S.filter.ot || (r.open_targets_verdict || "") === S.filter.ot));
+  const k = S.sort.key, rank = (v) => ORDER.indexOf(v);
+  if (k) rows = rows.slice().sort((a, b) => {
+    const va = k === "lit" ? rank(a.lit_mean) : k === "ot" ? rank(a.open_targets_verdict) : k === "read" ? Number(a.read || 0)
+      : k === "usd" ? Number(a.usd || 0) : String(a[k] || "").toLowerCase();
+    const vb = k === "lit" ? rank(b.lit_mean) : k === "ot" ? rank(b.open_targets_verdict) : k === "read" ? Number(b.read || 0)
+      : k === "usd" ? Number(b.usd || 0) : String(b[k] || "").toLowerCase();
+    return (va > vb ? 1 : va < vb ? -1 : 0) * S.sort.dir;
+  });
+  $("shown").textContent = `${rows.length} shown`;
+  $("tbody").innerHTML = rows.map((r) => {
+    const sel = S.pair && S.pair.gene === r.gene && S.pair.phenotype === r.phenotype ? "sel" : "";
+    if (!r.answered) return `<tr class="${sel}" data-g="${esc(r.gene)}" data-p="${esc(r.phenotype)}"><td class="gene">${esc(r.gene)}</td>
+      <td>${esc(r.phenotype)}</td><td colspan="5" class="small muted">${S.run.meta.active ? "waiting…" : "not run yet"}</td></tr>`;
+    if (r.error) return `<tr class="${sel}" data-g="${esc(r.gene)}" data-p="${esc(r.phenotype)}"><td class="gene">${esc(r.gene)}</td>
+      <td>${esc(r.phenotype)}</td><td colspan="5" class="err" title="${esc(r.error)}">${esc(r.error.slice(0, 110))}</td></tr>`;
+    return `<tr class="${sel}" data-g="${esc(r.gene)}" data-p="${esc(r.phenotype)}">
+      <td class="gene">${esc(r.gene)}</td><td>${esc(r.phenotype)}</td><td>${chip(r.lit_mean)}</td><td>${dist(r)}</td>
+      <td>${chip(r.open_targets_verdict)}</td><td class="small muted">${esc(r.read)}${r.found ? " / " + esc(r.found) : ""}</td>
+      <td class="small muted">${usd(r.usd)}</td></tr>`;
+  }).join("") || `<tr><td colspan="7" class="empty">No pair matches.</td></tr>`;
+  document.querySelectorAll("#tbody tr[data-g]").forEach((tr) => tr.onclick = () => openPair(tr.dataset.g, tr.dataset.p));
+}
+
+// ------------------------------------------------------------- pair detail
+function closeDrawer() { $("drawer").classList.remove("open"); S.pair = null;
+  document.querySelectorAll("#tbody tr.sel").forEach((t) => t.classList.remove("sel")); }
+async function openPair(gene, phenotype) {
+  S.pair = { gene, phenotype };
+  document.querySelectorAll("#tbody tr").forEach((t) => t.classList.toggle("sel", t.dataset.g === gene && t.dataset.p === phenotype));
+  let d;
+  try { d = EXPORT ? EXPORT.details[gene + "\t" + phenotype] : await api(`/api/pair?path=${enc(S.path)}&gene=${enc(gene)}&phenotype=${enc(phenotype)}`); }
+  catch (e) { toast(e.message); return; }
+  $("drawer").innerHTML = pairHtml(gene, phenotype, d || {});
+  $("drawer").classList.add("open");
+  $("drawer").scrollTop = 0;
+  $("close-d").onclick = closeDrawer;
+}
+function linkBar(g, p, ensg) {
+  const L = [
+    ["gnomAD", `https://gnomad.broadinstitute.org/gene/${enc(g)}?dataset=gnomad_r4`],
+    ["GeneCards", `https://www.genecards.org/cgi-bin/carddisp.pl?gene=${enc(g)}`],
+    ["Open Targets", ensg ? `https://platform.opentargets.org/target/${enc(ensg)}` : `https://platform.opentargets.org/search?q=${enc(g)}`],
+    ["OMIM", `https://www.omim.org/search?search=${enc(g)}`],
+    ["ClinVar", `https://www.ncbi.nlm.nih.gov/clinvar/?term=${enc(g)}%5Bgene%5D`],
+    ["DECIPHER", `https://www.deciphergenomics.org/gene/${enc(g)}`],
+    ["GWAS Catalog", `https://www.ebi.ac.uk/gwas/genes/${enc(g)}`],
+    ["GTEx", `https://gtexportal.org/home/gene/${enc(g)}`],
+    ["UniProt", `https://www.uniprot.org/uniprotkb?query=gene_exact:${enc(g)}+AND+organism_id:9606`],
+    ["PubMed: gene + phenotype", `https://pubmed.ncbi.nlm.nih.gov/?term=${enc(g)}+AND+${enc('"' + p + '"')}`],
+    ["Europe PMC full text", `https://europepmc.org/search?query=${enc(g + ' AND "' + p + '"')}`],
+  ];
+  return `<div class="links">${L.map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n} ↗</a>`).join("")}</div>`;
+}
+function pairHtml(gene, phenotype, d) {
+  const r = d.row || {};
+  const flow = d.flow, ot = d.ot;
+  const just = (flow && flow.verdict && flow.verdict.justification) || r.justification || "";
+  const cited = new Set((just.match(/\b\d{7,8}\b/g) || []));
+  const distRow = flow && flow.verdict && flow.verdict.distribution ? flow.verdict.distribution : r;
+  let h = `<div class="row" style="justify-content:space-between"><div>
+      <h1><span class="gene">${esc(gene)}</span> <span class="muted" style="font-weight:400">/</span> ${esc(phenotype)}</h1>
+      ${r.arm ? `<span class="small muted">Pipeline <b>${esc(r.arm)}</b> <span class="mono">[${esc(r.fingerprint)}]</span></span>` : ""}</div>
+      <button class="icon-btn" id="close-d" title="Close">✕</button></div>
+    ${linkBar(gene, phenotype, ot && ot.ensembl_id)}`;
+  if (r.error) h += `<div class="note err">${esc(r.error)}</div>`;
+  if (!d.row) return h + `<p class="muted">This pair has not been answered yet.</p>`;
+  h += `<div class="sect"><h3>Literature</h3><div class="row">${chip(r.lit_mean)}
+      <span class="small muted">${esc(r.found || 0)} articles found, ${esc(r.read || 0)} read</span></div>
+      <div style="margin-top:10px">${dist(distRow, true)}</div>
+      <div class="legend">${ORDER.map((k) => `<span><i style="background:${COLOR[k]}"></i>${k} ${Number(distRow["p_" + k.toLowerCase()] ?? distRow[k] ?? 0)}</span>`).join("")}</div>
+      ${just ? `<p class="just" style="margin-top:12px">${pmidLinks(just)}</p>` : ""}</div>`;
+  const arts = (flow && flow.articles) || [];
+  if (arts.length) {
+    h += `<div class="sect"><h3>Articles read (${arts.length}${flow.corpus_size ? " of " + flow.corpus_size + " found" : ""})</h3>` +
+      arts.map((a) => {
+        const band = d.bands && a.band ? d.bands[a.band] : "";
+        const ft = /\[full text, passages naming/.test(a.abstract || "");
+        return `<div class="art"><a class="t" href="https://pubmed.ncbi.nlm.nih.gov/${esc(a.pmid)}/" target="_blank" rel="noopener">${esc(a.title || "PMID " + a.pmid)}</a>
+          <div class="meta"><span>PMID ${esc(a.pmid)}</span>${a.pubdate ? `<span>${esc(a.pubdate)}</span>` : ""}
+          ${band ? `<span class="tag">${esc(band)}</span>` : ""}${ft ? `<span class="tag">full-text excerpt</span>` : ""}
+          ${cited.has(String(a.pmid)) ? `<span class="cited">cited in the verdict</span>` : ""}
+          <a href="https://europepmc.org/article/MED/${esc(a.pmid)}" target="_blank" rel="noopener">Europe PMC ↗</a></div>
+          ${a.abstract ? `<details><summary>Abstract</summary><p>${esc(a.abstract)}</p></details>` : ""}</div>`;
+      }).join("") + `</div>`;
+  }
+  if (flow && flow.terms) {
+    const t = flow.terms, list = (xs) => (xs || []).map((x) => `<span class="tag">${esc(x)}</span>`).join("");
+    h += `<div class="sect terms"><h3>Searched under</h3>
+      ${t.synonyms && t.synonyms.length ? `<div class="small muted">Phenotype names</div><div>${list(t.synonyms)}</div>` : ""}
+      ${t.broad ? `<div class="small muted">Broader term</div><div>${list([t.broad])}</div>` : ""}
+      ${t.gene_names && t.gene_names.length ? `<div class="small muted">Gene names</div><div>${list(t.gene_names)}</div>` : ""}
+      ${t.anchors && t.anchors.length ? `<div class="small muted">Full-text words</div><div>${list(t.anchors)}</div>` : ""}</div>`;
+  }
+  h += `<div class="sect"><h3>Open Targets</h3><div class="row">${chip(r.open_targets_verdict)}
+      ${r.open_targets_max_score && Number(r.open_targets_max_score) ? `<span class="small muted">association score ${Number(r.open_targets_max_score).toFixed(3)}</span>` : ""}</div>`;
+  if (r.ot_trait) {
+    const t = ot && ot.traits.find((x) => x.name === r.ot_trait);
+    const url = t && ot.ensembl_id ? `https://platform.opentargets.org/evidence/${enc(ot.ensembl_id)}/${enc(t.disease_id)}` : "";
+    h += `<p style="margin:10px 0 0">Deciding trait: ${url ? `<a href="${url}" target="_blank" rel="noopener">${esc(r.ot_trait)} ↗</a>` : esc(r.ot_trait)}
+      <span class="tag ${r.ot_tag === "EXACT" ? "exact" : "tie"}">${esc((r.ot_tag || "").toLowerCase().replace(/_/g, " "))}</span></p>
+      ${r.ot_cap ? `<p class="small muted">A related trait rather than the phenotype itself, so the verdict is capped at ${esc(r.ot_cap)}.</p>` : ""}`;
+  }
+  if (ot && ot.graded && ot.graded.length) {
+    const g = ot.graded.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
+    const shown = g.filter((x) => x.tag && x.tag !== "DIFFERENT");
+    h += `<p class="small muted" style="margin-top:10px">${ot.of} traits associated with the gene; ${g.length} graded,
+      ${shown.length} related to the phenotype.</p>
+      <table><thead><tr><th>Trait</th><th>Score</th><th>Relation</th></tr></thead><tbody>` +
+      (shown.length ? shown : g.slice(0, 10)).map((x) => `<tr style="cursor:default"><td><a href="https://platform.opentargets.org/disease/${enc(x.disease_id)}" target="_blank" rel="noopener">${esc(x.name)}</a></td>
+        <td class="small">${x.score != null ? Number(x.score).toFixed(3) : ""}</td>
+        <td><span class="tag ${x.tag === "EXACT" ? "exact" : TIES.has(x.tag) ? "tie" : ""}">${esc((x.tag || "untagged").toLowerCase().replace(/_/g, " "))}</span></td></tr>`).join("") +
+      `</tbody></table>`;
+  }
+  h += `</div>`;
+  const cost = (d.cost || []).filter((c) => c.step !== "total");
+  const total = (d.cost || []).find((c) => c.step === "total");
+  if (cost.length) {
+    h += `<div class="sect"><h3>Cost ${total ? usd(total.usd) : ""}</h3><table><thead><tr><th>Step</th><th>Model</th><th>Tokens in / out</th><th>USD</th></tr></thead><tbody>` +
+      cost.map((c) => `<tr style="cursor:default"><td class="small">${esc(c.step)}</td><td class="small muted">${esc(c.model)}</td>
+        <td class="small muted">${Number(c.input_tokens).toLocaleString()} / ${Number(c.output_tokens).toLocaleString()}</td><td class="small">${usd(c.usd)}</td></tr>`).join("") +
+      `</tbody></table>${total && total.cached === "True" ? `<p class="small muted">Read from an earlier identical run: nothing was paid this time.</p>` : ""}</div>`;
+  }
+  return h;
+}
+
+// ------------------------------------------------------------------- start
+(async function start() {
+  if (EXPORT) { document.title = "PESTO · " + EXPORT.meta.name; renderSidebar(); S.path = "export"; return showRun("export"); }
+  if (!TOKEN) { $("main").innerHTML = `<div class="empty">Open PESTO from the address printed by <code>pesto browser</code>.</div>`; return; }
+  try { await loadStatus(); await loadRuns(); }
+  catch (e) { $("main").innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
+  if (S.runs.length) showRun(S.runs[0].path); else showNew();
+  if (!S.status.key) askKey();
+  setInterval(() => { if (S.runs.some((m) => m.active) && !S.timer) loadRuns().catch(() => {}); }, 6000);
+})();
+</script>
+</body>
+</html>

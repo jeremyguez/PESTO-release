@@ -3,6 +3,7 @@
 
     pesto --gene DDX41 --phenotype "myelodysplastic syndrome"
     pesto --bench pairs.tsv
+    pesto browser
 
 Two answers come back, from two sources that are kept apart on purpose. The
 literature verdict is read off the abstracts the pipeline retrieves and weighs.
@@ -219,6 +220,14 @@ def write_table(out, fields, rows):
         w.writerows(rows)
 
 
+# The columns a table of answers carries after the input's own.
+ANSWER_FIELDS = ["lit_mean", "lit_argmax", "p_established", "p_existing",
+                 "p_hypothesized", "p_novel", "open_targets_verdict",
+                 "open_targets_max_score", "ot_channel", "ot_tag",
+                 "ot_trait", "ot_cap", "found", "read", "cached",
+                 "arm", "fingerprint", "justification", "error"]
+
+
 def run_bench(args, arm, worker, reader=None):
     """Every row of a TSV, in parallel, one process."""
     from .flow import arms
@@ -234,12 +243,7 @@ def run_bench(args, arm, worker, reader=None):
     from .cost import load_table as load_cost, path_for as cost_path, write_table as write_cost
     costs_out = cost_path(out)
     extra = [k for k in rows[0] if k not in ("gene", "phenotype")]
-    fields = (["gene", "phenotype"] + extra +
-              ["lit_mean", "lit_argmax", "p_established", "p_existing",
-               "p_hypothesized", "p_novel", "open_targets_verdict",
-               "open_targets_max_score", "ot_channel", "ot_tag",
-               "ot_trait", "ot_cap", "found", "read", "cached",
-               "arm", "fingerprint", "justification", "error"])
+    fields = ["gene", "phenotype"] + extra + ANSWER_FIELDS
 
     def fitted(name):
         return arms.get(name).using(reader=reader, worker=worker)
@@ -341,6 +345,8 @@ def build_parser():
               Hypothesized   suggested, or shown for a closely related phenotype
               Existing       reported, in one study or in a form that falls short
               Established    reported repeatedly, in humans, with genetic evidence
+
+            `pesto browser` opens the same pipeline in a web page.
             """))
     p.add_argument("--gene", metavar="SYMBOL",
                    help="HGNC gene symbol, e.g. DDX41")
@@ -438,6 +444,9 @@ def main(argv=None):
     # is not about a pair.
     if "--download-models" in argv:
         return download_models()
+    if argv[:1] == ["browser"]:
+        from .browser.server import main as browser_main
+        return browser_main(argv[1:])
 
     args = build_parser().parse_args(argv)
     if (not config.TORCH_INSTALLED and not args.ot_encoder
