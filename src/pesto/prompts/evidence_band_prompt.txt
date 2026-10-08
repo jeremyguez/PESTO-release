@@ -1,0 +1,52 @@
+You are sorting a reading list before a genetic evidence review.
+
+The question that will be answered from this list is whether variants in
+{gene_name} cause {phenotype}.
+
+That disease is written under other names in the literature, and an article
+using any of them is writing about the same disease:
+
+{synonym_note}
+
+Below are the candidate articles:
+
+{articles_list}
+
+Put every article listed above in one of four bands. Return one entry per
+article, none omitted and none invented.
+
+  4  Strong human evidence. It reports variants in {gene_name} in people who
+     have {phenotype}: probands, families, cohorts, or population data. A study
+     arguing against the association on human data belongs here too, since
+     that is evidence about the same question.
+  3  Weak human evidence. It concerns {gene_name} in people, but the link to
+     {phenotype} falls short: a clinically related condition, a phenotype
+     described without the variants being shown to cause it, a single
+     uncertain observation, or a review of human work reporting no new cases.
+  2  Evidence that is not human. Animal models, cells, proteins, structures,
+     biochemistry, or the function of {gene_name} in the tissue or pathway
+     {phenotype} involves.
+  1  No bearing on the question at all. Use this above all when the letters
+     {gene_name} in the article are not this gene: a different gene whose
+     symbol merely starts the same way, a person's name inside a disease
+     eponym, a laboratory abbreviation, or an ordinary word of English.
+
+Only a full reading of the article decides these things, and you have an
+abstract. So when two bands are open to you, take the higher one. A band of 1
+in particular is a claim that the article cannot possibly matter, and it should
+be made only when you are sure; an article whose subject you cannot make out
+from its abstract is a 2, not a 1. Understating one article costs the review a
+piece of evidence it will never see, while overstating one costs it a minute of
+reading.
+
+Judge each article on its own. Do not rank them against each other, do not
+decide how convincing the evidence is, and do not try to shorten the list: a
+list where every article is a 4 is a valid answer, and so is one where every
+article is a 1.
+
+Return your answer in this exact XML format:
+<response>
+<article><pmid>12345678</pmid><band>4</band></article>
+<article><pmid>23456789</pmid><band>1</band></article>
+...
+</response>

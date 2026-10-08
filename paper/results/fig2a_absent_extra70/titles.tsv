@@ -1,0 +1,71 @@
+gene	phenotype	verdict	lit_score	found	read	cached	error	usd	bands_usd
+CEP120	hemochromatosis type 1	Novel	1.02	35	19	False		0.043570	0.008566
+GGPS1	polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy 1	Novel	1.31	30	14	False		0.053818	0.007353
+SLC25A13	aldosterone-producing adenoma with seizures and neurological abnormalities	Novel	1.15	78	20	False		0.061507	0.018696
+C1QBP	Antley-Bixler syndrome	Novel	1.14	67	20	False		0.062542	0.016322
+POU4F1	autosomal dominant polycystic kidney disease	Hypothesized	1.66	57	18	False		0.056201	0.013740
+TRHR	metabolic encephalomyopathic crises, recurrent, with rhabdomyolysis, cardiac arrhythmias, and neurodegeneration	Novel	1.14	73	20	False		0.061028	0.018477
+IFNAR2	Fuchs' endothelial dystrophy	Novel	1.06	77	20	False		0.055383	0.018236
+GHR	familial long QT syndrome	Novel	1.06	85	20	False		0.052408	0.019026
+CYBA	parathyroid gland carcinoma	Novel	1.06	78	20	False		0.053746	0.018046
+TFRC	congenital stationary night blindness autosomal dominant 3	Novel	1.14	76	18	False		0.059917	0.018277
+MT-TG	minimal pigment oculocutaneous albinism type 1	Novel	1.14	58	5	False		0.050697	0.013812
+DNAJC13	craniofacial anomalies and anterior segment dysgenesis syndrome	Novel	1.14	54	20	False		0.062063	0.013277
+GYPC	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	Novel	1.06	68	6	False		0.056272	0.016196
+TCF3	striate palmoplantar keratoderma	Novel	1.16	68	17	False		0.061168	0.016016
+KIF17	spinal muscular atrophy-progressive myoclonic epilepsy syndrome	Hypothesized	1.61	53	20	False		0.064616	0.013424
+TCTN1	congenital disorder of deglycosylation 2	Novel	1.19	29	20	False		0.059947	0.006688
+BRSK2	mitochondrial pyruvate carrier deficiency	Novel	1.17	52	20	False		0.054259	0.012739
+KREMEN1	autosomal dominant hypocalcemia 1	Novel	1.19	53	20	False		0.058245	0.013119
+PCBD1	developmental delay, hypotonia, and impaired language	Existing	2.49	59	13	False		0.062352	0.013740
+SBDS	immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome	Novel	1.27	58	20	False		0.060099	0.013913
+ADCY5	3M syndrome 2	Novel	1.11	59	20	False		0.050585	0.013298
+DBT	myofibrillar myopathy 5	Novel	1.14	68	3	False		0.046151	0.015690
+ADAM20	amyotrophic lateral sclerosis type 9	Novel	1.14	11	2	False		0.032636	0.003938
+SLK	degenerative myopia	Novel	1.28	77	11	False		0.049824	0.017428
+LEPR	spastic paraplegia 83, autosomal recessive	Novel	1.14	69	20	False		0.059654	0.015955
+LPAR6	blepharophimosis - intellectual disability syndrome, MKB type	Novel	1.12	58	14	False		0.061315	0.014269
+PTS	3-hydroxy-3-methylglutaric aciduria	Novel	1.26	88	6	False		0.060806	0.020835
+SMAD2	intellectual disability, X-linked 96	Novel	1.17	86	20	False		0.060059	0.020120
+SMC3	asthma-related traits, susceptibility to, 5	Novel	1.14	70	20	False		0.057155	0.015896
+IL17RD	microphthalmia, isolated, with coloboma 6	Hypothesized	1.89	57	15	False		0.066924	0.013669
+IDH2	hereditary renal hypouricemia	Novel	1.34	82	10	False		0.058161	0.019747
+MRAS	gonadal dysgenesis, dysmorphic facies, retinal dystrophy, and myopathy	Novel	1.73	81	20	False		0.109267	0.020947
+ATP5F1A	short stature-brachydactyly-obesity-global developmental delay syndrome	Novel	2.06	60	20	False		0.095459	0.014247
+SFRP4	Ritscher-Schinzel syndrome	Novel	1.37	65	18	False		0.071069	0.016518
+FGF3	surfactant metabolism dysfunction, pulmonary, 4	Novel	1.29	76	15	False		0.064015	0.018077
+HPS1	myosclerosis	Novel	1.24	62	20	False		0.059221	0.014716
+MYO18B	hypertrophic cardiomyopathy 16	Hypothesized	2.23	49	20	False		0.074092	0.011544
+PAX9	Knobloch syndrome 2	Novel	1.14	63	20	False		0.056221	0.014803
+VWA2	hypercholesterolemia, familial, 4	Novel	1.05	14	5	False		0.041753	0.003765
+MC2R	congenital reticular ichthyosiform erythroderma	Novel	1.12	63	20	False		0.051991	0.014975
+ZNF81	acromelic frontonasal dysostosis	Novel	1.12	12	1	False		0.034314	0.003458
+PDCD1	polymicrogyria, perisylvian, with cerebellar hypoplasia and arthrogryposis	Novel	1.06	77	11	False		0.064848	0.018599
+TTC21A	spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 3	Novel	1.24	17	0	False		0.041891	0.004362
+PIGC	agammaglobulinemia	Novel	1.5	40	12	False		0.052806	0.009203
+RAB32	Silver-Russell syndrome 5	Novel	1.14	57	20	False		0.062333	0.013196
+MTHFR	immunodeficiency 102	Novel	1.52	69	11	False		0.067043	0.016036
+WBP11	immunodeficiency, common variable, 3	Novel	1.12	21	5	False		0.041816	0.005570
+MRPS14	robinow syndrome, autosomal recessive 2	Novel	1.14	3	3	False		0.039417	0.001254
+HLA-DRB1	congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency	Novel	1.65	90	5	False		0.070599	0.021972
+FCGR2B	bardet-biedl syndrome 21	Novel	1.06	69	5	False		0.046017	0.016337
+PNPLA1	immunodeficiency-centromeric instability-facial anomalies syndrome	Novel	1.11	55	20	False		0.055902	0.013860
+EDNRA	Charcot-Marie-Tooth disease axonal type 2CC	Novel	1.33	70	20	False		0.062077	0.016895
+SCNN1A	autosomal recessive limb-girdle muscular dystrophy type 2F	Novel	1.08	61	11	False		0.053724	0.016164
+AGPAT5	short-rib thoracic dysplasia 11 with or without polydactyly	Novel	1.14	11	5	False		0.042210	0.003438
+SEC16B	MHC class II deficiency 3	Novel	1.14	63	1	False		0.049513	0.014978
+PRDM6	Long-Olsen-Distelmaier syndrome	Established	3.53	57	11	False		0.068554	0.012871
+HELLS	autosomal recessive spondylocostal dysostosis	Novel	1.17	63	20	False		0.060406	0.015521
+MCCC2	vitamin D-dependent rickets, type 3	Novel	1.14	54	12	False		0.054737	0.013231
+FKTN	autosomal dominant hypophosphatemic rickets	Novel	1.05	61	11	False		0.051218	0.015586
+IFT54	familial isolated deficiency of vitamin E	Novel	1.06	12	7	False		0.038722	0.003428
+PNKP	amyloidosis, hereditary systemic 3	Novel	1.11	71	20	False		0.087825	0.017223
+RXYLT1	cholestasis, progressive familial intrahepatic, 8	Novel	1.11	14	1	False		0.037063	0.003808
+SLC52A2	Guttmacher syndrome	Novel	1.12	57	20	False		0.059666	0.013469
+RNF220	myopathy, lactic acidosis, and sideroblastic anemia 1	Novel	1.36	29	16	False		0.049685	0.007146
+PDX1	arthrogryposis-renal dysfunction-cholestasis syndrome	Novel	1.12	69	20	False		0.056651	0.016282
+PLEKHM2	developmental malformations-deafness-dystonia syndrome	Novel	1.25	23	13	False		0.060148	0.006045
+TRPA1	early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome	Novel	1.36	78	20	False		0.091691	0.018502
+ISCA1	pulmonary hypertension, primary, 3	Novel	1.14	49	20	False		0.060445	0.011803
+ANAPC1	head and neck squamous cell carcinoma	Hypothesized	1.75	65	20	False		0.057122	0.015617
+CAV1	hereditary late onset Parkinson disease	Novel	1.38	86	20	False		0.062743	0.020054

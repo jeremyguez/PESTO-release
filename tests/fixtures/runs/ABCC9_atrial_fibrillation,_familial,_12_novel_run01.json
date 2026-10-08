@@ -1,0 +1,1834 @@
+{
+    "gene_name": "ABCC9",
+    "phenotype": "atrial fibrillation, familial, 12",
+    "synonyms": [
+        "familial atrial fibrillation 12",
+        "FAF12",
+        "ATFB12",
+        "hereditary atrial fibrillation 12",
+        "familial AF 12",
+        "AF12",
+        "familial AF12",
+        "autosomal dominant atrial fibrillation 12"
+    ],
+    "run_parameters": {
+        "model": "claude-haiku-4-5@vertex",
+        "temperature": 0.0,
+        "batch_size": null
+    },
+    "prompt_templates": {
+        "phenotype_synonyms_prompt": "You are a medical expert helping to identify alternative terms and synonyms for phenotypes/diseases.\n\nGiven the following phenotype: {phenotype}\n\nGenerate between 0 and 10 relevant synonyms or alternative terms that could be used to search for scientific literature about this phenotype. Include:\n- Alternative medical terminology\n- Common abbreviations\n- Related clinical terms\n- Different ways the condition might be described in literature\n\nIMPORTANT: \n- If the phenotype is already very specific and well-defined, you may return fewer synonyms (even 0).\n- Only include terms that are semantically equivalent or very closely related.\n- Do NOT include broader categories, subtypes, or related but distinct conditions.\n\nReturn your answer in this exact XML format:\n<response>\n<synonyms>\n<synonym>term 1</synonym>\n<synonym>term 2</synonym>\n...\n</synonyms>\n</response>\n\nIf you think no synonyms are needed, return:\n<response>\n<synonyms>\n</synonyms>\n</response>",
+        "novelty_assessment_prompt": "You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.\n\nBelow is a list of scientific articles about {gene_name} and/or {phenotype}:\n\n{alias_note}{dismiss_note}\n\n{articles_list}\n\nClassify the gene\u2013phenotype relationship into ONE of four categories:\n\n1. **Established**  \n   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical studies in independent probands or families support a clear causal role.\n   Research used to prove this category has to be in Human.\n\n2. **Existing**\n   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.  \n   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.\n   Research used to prove this category has to be in Human.\n\n3. **Hypothesized**  \n   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.  \n   Includes expression, functional data, pathway links, or relevant animal models.  \n   Excludes cases where gene and phenotype are merely co-mentioned without relevance.\n\n4. **Novel**  \n   No evidence that variants or biological activity of {gene_name} influence {phenotype}.  \n   Co-mentions are incidental and provide no logical basis.\n\nYour task:\n1. Read the article titles and abstracts.  \n2. Choose the best category.  \n3. Provide a brief justification (3\u20135 sentences).  \n4. Cite up to 10 relevant PMIDs from the provided list only.\n\nReturn your answer in **this exact XML format**:\n\n<response>\n  <verdict>Established|Existing|Hypothesized|Novel</verdict>\n  <justification>Your brief explanation (3\u20135 sentences)</justification>\n  <pmids>\n    <pmid>12345678</pmid>\n    ...\n  </pmids>\n</response>\n\nAdditional rules:\n- If uncertain between two categories, choose the *less novel* one.  \n- Hypothesized can apply without phenotype measurements if the gene\u2019s biology is directly relevant.\n- Think step by step internally: if the studies used to prove \"Existing\" or \"Established\" are not in human but in an animal or in vitro experiments, downgrade to \"Hypothesized\".\n- Maximum 10 PMIDs.\n\nIMPORTANT: before answering Established, name the articles that demonstrate the causal link in their own results, with variants found in patients. If you cannot cite at least two such PMIDs, reporting independent probands or families, answer Existing at most. A copy number change spanning several genes, such as a deletion, duplication or microduplication, does not count towards those two, because it cannot single out this gene from its neighbours. An article that restates the association as known background, while its own results are about something else, is a citation and not evidence, and any number of such statements does not add up to replication."
+    },
+    "prompt_texts": {},
+    "pubmed_articles": [
+        {
+            "pmid": "31039256",
+            "title": "Limbic-predominant age-related TDP-43 encephalopathy (LATE): consensus working group report.",
+            "pubdate": "2019 Jun 1",
+            "abstract": "We describe a recently recognized disease entity, limbic-predominant age-related TDP-43 encephalopathy (LATE). LATE neuropathological change (LATE-NC) is defined by a stereotypical TDP-43 proteinopathy in older adults, with or without coexisting hippocampal sclerosis pathology. LATE-NC is a common TDP-43 proteinopathy, associated with an amnestic dementia syndrome that mimicked Alzheimer's-type dementia in retrospective autopsy studies. LATE is distinguished from frontotemporal lobar degeneration with TDP-43 pathology based on its epidemiology (LATE generally affects older subjects), and relatively restricted neuroanatomical distribution of TDP-43 proteinopathy. In community-based autopsy cohorts, \u223c25% of brains had sufficient burden of LATE-NC to be associated with discernible cognitive impairment. Many subjects with LATE-NC have comorbid brain pathologies, often including amyloid-\u03b2 plaques and tauopathy. Given that the 'oldest-old' are at greatest risk for LATE-NC, and subjects of advanced age constitute a rapidly growing demographic group in many countries, LATE has an expanding but under-recognized impact on public health. For these reasons, a working group was convened to develop diagnostic criteria for LATE, aiming both to stimulate research and to promote awareness of this pathway to dementia. We report consensus-based recommendations including guidelines for diagnosis and staging of LATE-NC. For routine autopsy workup of LATE-NC, an anatomically-based preliminary staging scheme is proposed with TDP-43 immunohistochemistry on tissue from three brain areas, reflecting a hierarchical pattern of brain involvement: amygdala, hippocampus, and middle frontal gyrus. LATE-NC appears to affect the medial temporal lobe structures preferentially, but other areas also are impacted. Neuroimaging studies demonstrated that subjects with LATE-NC also had atrophy in the medial temporal lobes, frontal cortex, and other brain regions. Genetic studies have thus far indicated five genes with risk alleles for LATE-NC: GRN, TMEM106B, ABCC9, KCNMB2, and APOE. The discovery of these genetic risk variants indicate that LATE shares pathogenetic mechanisms with both frontotemporal lobar degeneration and Alzheimer's disease, but also suggests disease-specific underlying mechanisms. Large gaps remain in our understanding of LATE. For advances in prevention, diagnosis, and treatment, there is an urgent need for research focused on LATE, including in vitro and animal models. An obstacle to clinical progress is lack of diagnostic tools, such as biofluid or neuroimaging biomarkers, for ante-mortem detection of LATE. Development of a disease biomarker would augment observational studies seeking to further define the risk factors, natural history, and clinical features of LATE, as well as eventual subject recruitment for targeted therapies in clinical trials."
+        },
+        {
+            "pmid": "20301690",
+            "title": "Brugada Syndrome.",
+            "pubdate": "1993",
+            "abstract": ""
+        },
+        {
+            "pmid": "36129056",
+            "title": "Determining the Likelihood of Disease Pathogenicity Among Incidentally Identified Genetic Variants in Rare Dilated Cardiomyopathy-Associated Genes.",
+            "pubdate": "2022 Oct 4",
+            "abstract": "Background As utilization of clinical exome sequencing (ES) has expanded, criteria for evaluating the diagnostic weight of incidentally identified variants are critical to guide clinicians and researchers. This is particularly important in genes associated with dilated cardiomyopathy (DCM), which can cause heart failure and sudden death. We sought to compare the frequency and distribution of incidentally identified variants in DCM-associated genes between a clinical referral cohort with those in control and known case cohorts to determine the likelihood of pathogenicity among those undergoing genetic testing for non-DCM indications. Methods and Results A total of 39 rare, non-TTN DCM-associated genes were identified and evaluated from a clinical ES testing referral cohort (n=14\u2009005, Baylor Genetic Laboratories) and compared with a DCM case cohort (n=9442) as well as a control cohort of population variants (n=141\u2009456) derived from the gnomAD database. Variant frequencies in each cohort were compared. Signal-to-noise ratios were calculated comparing the DCM and ES cohort with the gnomAD cohort. The likely pathogenic/pathogenic variant yield in the DCM cohort (8.2%) was significantly higher than in the ES cohort (1.9%). Based on signal-to-noise and correlation analysis, incidental variants found in FLNC, RBM20, MYH6, DSP, ABCC9, JPH2, and NEXN had the greatest chance of being DCM-associated. Conclusions The distribution of pathogenic variants between the ES cohort and the DCM case cohort was gene specific, and variants found in the ES cohort were similar to variants found in the control cohort. Incidentally identified variants in specific genes are more associated with DCM than others."
+        },
+        {
+            "pmid": "25275207",
+            "title": "Cant\u00fa Syndrome.",
+            "pubdate": "1993",
+            "abstract": ""
+        },
+        {
+            "pmid": "38217872",
+            "title": "Novel loss-of-function variants expand ABCC9-related intellectual disability and myopathy syndrome.",
+            "pubdate": "2024 May 3",
+            "abstract": "Loss-of-function mutation of ABCC9, the gene encoding the SUR2 subunit of ATP sensitive-potassium (KATP) channels, was recently associated with autosomal recessive ABCC9-related intellectual disability and myopathy syndrome (AIMS). Here we identify nine additional subjects, from seven unrelated families, harbouring different homozygous loss-of-function variants in ABCC9 and presenting with a conserved range of clinical features. All variants are predicted to result in severe truncations or in-frame deletions within SUR2, leading to the generation of non-functional SUR2-dependent KATP channels. Affected individuals show psychomotor delay and intellectual disability of variable severity, microcephaly, corpus callosum and white matter abnormalities, seizures, spasticity, short stature, muscle fatigability and weakness. Heterozygous parents do not show any conserved clinical pathology but report multiple incidences of intra-uterine fetal death, which were also observed in an eighth family included in this study. In vivo studies of abcc9 loss-of-function in zebrafish revealed an exacerbated motor response to pentylenetetrazole, a pro-convulsive drug, consistent with impaired neurodevelopment associated with an increased seizure susceptibility. Our findings define an ABCC9 loss-of-function-related phenotype, expanding the genotypic and phenotypic spectrum of AIMS and reveal novel human pathologies arising from KATP channel dysfunction."
+        },
+        {
+            "pmid": "38510289",
+            "title": "Functional Validation of Doxorubicin-Induced Cardiotoxicity-Related Genes.",
+            "pubdate": "2024 Feb",
+            "abstract": "Genome-wide association studies and candidate gene association studies have identified more than 180\u00a0genetic variants statistically associated with anthracycline-induced cardiotoxicity (AIC). However, the lack of functional validation has hindered the clinical translation of these findings."
+        },
+        {
+            "pmid": "42290677",
+            "title": "Cognitive Decline, Neurologic Involvement, and Neonatal Crisis in ABCC9-Related Intellectual Disability and Myopathy Syndrome.",
+            "pubdate": "2026 Aug",
+            "abstract": "The ABCC9 gene encodes the widely expressed SUR2 subunit of ATP-sensitive potassium (KATP) channels. Autosomal recessive loss-of-function variants in ABCC9 cause ABCC9-related Intellectual disability and Myopathy Syndrome (AIMS). Here, we sought to compile multiple case reports from previously unidentified individuals with the primary objective of further establishing the clinical consequences of ABCC9 variants."
+        },
+        {
+            "pmid": "41347799",
+            "title": "ABCC9 knockdown attenuates isoproterenol\u2011induced myocardial hypertrophy by inhibiting the PI3K/AKT signaling pathway.",
+            "pubdate": "2026 Feb",
+            "abstract": "Myocardial hypertrophy (MH) represents an early pathological manifestation that progresses to severe cardiovascular disease (CVD), and its reversal is important for preventing and treating heart failure. Dysregulated expression of ATP\u2011binding cassette subfamily C member 9 (ABCC9) has been associated with complex CVD pathogenesis, although its precise mechanistic role remains ambiguous. The present study was designed to investigate the protective effects of ABCC9 knockdown against isoproterenol (ISO)\u2011induced MH and elucidate its underlying molecular mechanisms. AC16 cardiomyocytes were treated with ISO to establish an MH model, in which ABCC9 protein expression was significantly elevated. Fluorescence staining of cardiomyocyte surface area and quantification of MH\u2011related biomarkers, including atrial natriuretic peptide, brain natriuretic peptide and \u03b2\u2011myosin heavy chain, demonstrated that ABCC9 knockdown effectively attenuated MH and improved cardiac function. Furthermore, western blot analysis and flow cytometry revealed that ABCC9 knockdown not only decreased cardiomyocyte apoptosis but also reduced oxidative stress, as indicated by lower reactive oxygen species levels. Mechanistically, western blotting and mitochondrial membrane potential assays showed that ABCC9 knockdown inhibited the phosphatidylinositol 3\u2011kinase/protein kinase B (PI3K/AKT) signaling pathway and improved mitochondrial function. Notably, these protective effects were diminished by treatment with the PI3K/AKT activator 740Y\u2011P. These findings collectively suggest that ABCC9 knockdown protects against MH by inhibiting the PI3K/AKT signaling pathway, thereby alleviating mitochondrial dysfunction and reducing apoptosis and oxidative stress, positioning ABCC9 as a potential therapeutic target for MH treatment."
+        },
+        {
+            "pmid": "35876283",
+            "title": "Kir6.1 and SUR2B in Cant\u00fa syndrome.",
+            "pubdate": "2022 Sep 1",
+            "abstract": "Kir6.1 and SUR2 are subunits of ATP-sensitive potassium (KATP) channels expressed in a wide range of tissues. Extensive study has implicated roles of these channel subunits in diverse physiological functions. Together they generate the predominant KATP conductance in vascular smooth muscle and are the target of vasodilatory drugs. Roles for Kir6.1/SUR2 dysfunction in disease have been suggested based on studies of animal models and human genetic discoveries. In recent years, it has become clear that gain-of-function (GoF) mutations in both genes result in Cant\u00fa syndrome (CS)-a complex, multisystem disorder. There is currently no targeted therapy for CS, but studies of mouse models of the disease reveal that pharmacological reversibility of cardiovascular and gastrointestinal pathologies can be achieved by administration of the KATP channel inhibitor, glibenclamide. Here we review the function, structure, and physiological and pathological roles of Kir6.1/SUR2B channels, with a focus on CS. Recent studies have led to much improved understanding of the underlying pathologies and the potential for treatment, but important questions remain: Can the study of genetically defined CS reveal new insights into Kir6.1/SUR2 function? Do these reveal new pathophysiological mechanisms that may be important in more common diseases? And is our pharmacological armory adequately stocked?"
+        },
+        {
+            "pmid": "26226329",
+            "title": "ABCC9/SUR2 in the brain: Implications for hippocampal sclerosis of aging and a potential therapeutic target.",
+            "pubdate": "2015 Nov",
+            "abstract": "The ABCC9 gene and its polypeptide product, SUR2, are increasingly implicated in human neurologic disease, including prevalent diseases of the aged brain. SUR2 proteins are a component of the ATP-sensitive potassium (\"KATP\") channel, a metabolic sensor for stress and/or hypoxia that has been shown to change in aging. The KATP channel also helps regulate the neurovascular unit. Most brain cell types express SUR2, including neurons, astrocytes, oligodendrocytes, microglia, vascular smooth muscle, pericytes, and endothelial cells. Thus it is not surprising that ABCC9 gene variants are associated with risk for human brain diseases. For example, Cantu syndrome is a result of ABCC9 mutations; we discuss neurologic manifestations of this genetic syndrome. More common brain disorders linked to ABCC9 gene variants include hippocampal sclerosis of aging (HS-Aging), sleep disorders, and depression. HS-Aging is a prevalent neurological disease with pathologic features of both neurodegenerative (aberrant TDP-43) and cerebrovascular (arteriolosclerosis) disease. As to potential therapeutic intervention, the human pharmacopeia features both SUR2 agonists and antagonists, so ABCC9/SUR2 may provide a \"druggable target\", relevant perhaps to both HS-Aging and Alzheimer's disease. We conclude that more work is required to better understand the roles of ABCC9/SUR2 in the human brain during health and disease conditions."
+        }
+    ],
+    "pubmed_pmids": [
+        "31039256",
+        "20301690",
+        "36129056",
+        "25275207",
+        "38217872",
+        "38510289",
+        "42290677",
+        "41347799",
+        "35876283",
+        "26226329"
+    ],
+    "llm_raw_response": "I will analyze the provided articles systematically to evaluate the genetic association between ABCC9 and atrial fibrillation, familial, 12.\n\n**Step 1: Identify relevant articles**\n\nScanning the titles and abstracts for any mention of atrial fibrillation (AF) or familial AF:\n- LATE consensus paper: Mentions ABCC9 as a genetic risk variant for LATE-NC, not AF\n- Brugada Syndrome: Title only, no abstract provided; Brugada is a cardiac arrhythmia but distinct from AF\n- DCM variants paper: Discusses ABCC9 in dilated cardiomyopathy context, not AF\n- Cant\u00fa Syndrome: ABCC9 gain-of-function mutations, cardiovascular manifestations mentioned but no AF\n- ABCC9 intellectual disability papers (2 papers): Loss-of-function variants, neurological phenotypes, not AF\n- Doxorubicin cardiotoxicity: General cardiotoxicity genes, no ABCC9-AF link\n- ABCC9 knockdown myocardial hypertrophy: Studies ISO-induced hypertrophy, not AF\n- Kir6.1/SUR2B in Cant\u00fa syndrome: KATP channel dysfunction, cardiovascular but not AF-specific\n- ABCC9/SUR2 in brain: Neurological diseases, not AF\n\n**Step 2: Search for AF-specific evidence**\n\nNone of the provided articles contain:\n- Direct evidence of ABCC9 variants causing atrial fibrillation\n- Clinical studies of ABCC9 variants in AF patients\n- Familial AF pedigrees with ABCC9 mutations\n- Any mention of \"atrial fibrillation, familial, 12\" or similar AF phenotypes\n\n**Step 3: Assess biological relevance**\n\nWhile ABCC9 encodes SUR2, a subunit of KATP channels involved in metabolic sensing and vascular function, and cardiovascular manifestations appear in some ABCC9-related conditions (Cant\u00fa syndrome), none of the articles establish a mechanistic link to atrial fibrillation specifically.\n\n**Step 4: Determine category**\n\nThe articles provide no human genetic evidence linking ABCC9 variants to atrial fibrillation, familial, 12. There is no mention of this phenotype in any abstract. The gene is discussed in other cardiac contexts (DCM, hypertrophy, Cant\u00fa syndrome) but not AF.\n\n<response>\n  <verdict>Novel</verdict>\n  <justification>None of the provided articles contain evidence linking ABCC9 variants to atrial fibrillation, familial, 12. While ABCC9 is discussed in various cardiac and neurological contexts (dilated cardiomyopathy, myocardial hypertrophy, Cant\u00fa syndrome, and neurodegeneration), there is no mention of atrial fibrillation or familial AF in any of the abstracts. The gene and phenotype are not meaningfully connected in the provided literature, making this a novel association with no supporting evidence.</justification>\n  <pmids>\n  </pmids>\n</response>",
+    "final_output": {
+        "verdict": "Novel",
+        "justification": "None of the provided articles contain evidence linking ABCC9 variants to atrial fibrillation, familial, 12. While ABCC9 is discussed in various cardiac and neurological contexts (dilated cardiomyopathy, myocardial hypertrophy, Cant\u00fa syndrome, and neurodegeneration), there is no mention of atrial fibrillation or familial AF in any of the abstracts. The gene and phenotype are not meaningfully connected in the provided literature, making this a novel association with no supporting evidence.",
+        "pmids": []
+    },
+    "api_response": {
+        "verdict": "Novel",
+        "justification": "None of the provided articles contain evidence linking ABCC9 variants to atrial fibrillation, familial, 12. While ABCC9 is discussed in various cardiac and neurological contexts (dilated cardiomyopathy, myocardial hypertrophy, Cant\u00fa syndrome, and neurodegeneration), there is no mention of atrial fibrillation or familial AF in any of the abstracts. The gene and phenotype are not meaningfully connected in the provided literature, making this a novel association with no supporting evidence.",
+        "articles_found": 10,
+        "cited_articles": [],
+        "open_targets_verdict": "Established",
+        "open_targets_max_score": 0.6267966153376076,
+        "open_targets_traits": {
+            "ensembl_id": "ENSG00000069431",
+            "traits_count": 269,
+            "file_path": "data/runs/novel/open_targets_traits_ABCC9_atrial_fibrillation_familial_12.txt",
+            "traits": [
+                {
+                    "disease_id": "Orphanet_1517",
+                    "name": "Hypertrichotic osteochondrodysplasia, Cantu type",
+                    "score": 0.772989487505329,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009406",
+                    "name": "hypertrichotic osteochondrodysplasia Cantu type",
+                    "score": 0.7664209318970332,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012062",
+                    "name": "dilated cardiomyopathy 1O",
+                    "score": 0.7387833962027363,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859224",
+                    "name": "intellectual disability and myopathy syndrome",
+                    "score": 0.6529405556197123,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013545",
+                    "name": "atrial fibrillation, familial, 12",
+                    "score": 0.6267966153376076,
+                    "matched": true
+                },
+                {
+                    "disease_id": "EFO_0004995",
+                    "name": "lean body mass",
+                    "score": 0.578440680288627,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0700335",
+                    "name": "familial isolated dilated cardiomyopathy",
+                    "score": 0.5639576324291983,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005106",
+                    "name": "body composition measurement",
+                    "score": 0.5419748491342631,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005044",
+                    "name": "hypertensive disorder",
+                    "score": 0.5288133374908178,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000924",
+                    "name": "Abnormality of the skeletal system",
+                    "score": 0.52160599590596,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004570",
+                    "name": "bilirubin measurement",
+                    "score": 0.5149727323306965,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009805",
+                    "name": "whole body water mass",
+                    "score": 0.4759608002431602,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001626",
+                    "name": "Abnormality of the cardiovascular system",
+                    "score": 0.46917339637648947,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009142",
+                    "name": "autosomal dominant dilated cardiomyopathy",
+                    "score": 0.4619748183558772,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005559",
+                    "name": "neurodegenerative disease",
+                    "score": 0.4497886449462227,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005763",
+                    "name": "pulse pressure measurement",
+                    "score": 0.4496424468250208,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007777",
+                    "name": "base metabolic rate measurement",
+                    "score": 0.43657740713089455,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005021",
+                    "name": "dilated cardiomyopathy",
+                    "score": 0.4231361558697376,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020865",
+                    "name": "aortic measurement",
+                    "score": 0.4133679390931457,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005339",
+                    "name": "androgenetic alopecia",
+                    "score": 0.41181218540360454,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004994",
+                    "name": "cardiomyopathy",
+                    "score": 0.39384280097510654,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000822",
+                    "name": "Hypertension",
+                    "score": 0.3911303619867519,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018054",
+                    "name": "familial atrial fibrillation",
+                    "score": 0.38869055687146986,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0006335",
+                    "name": "systolic blood pressure",
+                    "score": 0.38746376917243386,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005301",
+                    "name": "multiple sclerosis",
+                    "score": 0.37905280232669514,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019280",
+                    "name": "hypertrichosis",
+                    "score": 0.3727885296547784,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004975",
+                    "name": "Alzheimer disease",
+                    "score": 0.37206538164415265,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005516",
+                    "name": "osteochondrodysplasia",
+                    "score": 0.3710511418200945,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005180",
+                    "name": "Parkinson disease",
+                    "score": 0.37077585615888975,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003037",
+                    "name": "hypotrichosis",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0002561",
+                    "name": "lysosomal storage disease",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_1000110",
+                    "name": "bone tissue density",
+                    "score": 0.34926192570471565,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004980",
+                    "name": "appendicular lean mass",
+                    "score": 0.34926192570471565,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001643",
+                    "name": "Patent ductus arteriosus",
+                    "score": 0.3413454937028518,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000256",
+                    "name": "Macrocephaly",
+                    "score": 0.3409322828931001,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0003896",
+                    "name": "left ventricular hypertrophy",
+                    "score": 0.34075262601929507,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000271",
+                    "name": "Abnormality of the face",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001182",
+                    "name": "Tapered finger",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001382",
+                    "name": "Joint hypermobility",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000294",
+                    "name": "Low anterior hairline",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000414",
+                    "name": "Bulbous nose",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001999",
+                    "name": "Abnormal facial shape",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000347",
+                    "name": "Micrognathia",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0005280",
+                    "name": "Depressed nasal bridge",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000280",
+                    "name": "Coarse facial features",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000286",
+                    "name": "Epicanthus",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001176",
+                    "name": "Large hands",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000215",
+                    "name": "Thick upper lip vermilion",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0007777",
+                    "name": "Chorioretinal scar",
+                    "score": 0.3325706877905186,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050078",
+                    "name": "blood metabolite level",
+                    "score": 0.30422732530076424,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008685",
+                    "name": "Wolff-Parkinson-White syndrome",
+                    "score": 0.30035015630516343,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004298",
+                    "name": "stomach disorder",
+                    "score": 0.29318469284685966,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050001",
+                    "name": "ascending aorta diameter",
+                    "score": 0.26865873604264173,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050418",
+                    "name": "voice quality trait",
+                    "score": 0.26859403782136304,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003847",
+                    "name": "hereditary disease",
+                    "score": 0.2676663105255865,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0002901",
+                    "name": "Hypocalcemia",
+                    "score": 0.26623047103481184,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0027407",
+                    "name": "Kleefstra syndrome 1",
+                    "score": 0.26609749537298527,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004530",
+                    "name": "triglyceride measurement",
+                    "score": 0.25525798754181456,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004736",
+                    "name": "aspartate aminotransferase measurement",
+                    "score": 0.24006769549246174,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005294",
+                    "name": "peripheral vascular disease",
+                    "score": 0.23927814368889616,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005544",
+                    "name": "hippocampal sclerosis of aging",
+                    "score": 0.226532241638172,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0000620",
+                    "name": "breast benign neoplasm",
+                    "score": 0.21999525407731385,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005488",
+                    "name": "adolescent idiopathic scoliosis",
+                    "score": 0.1937313228549801,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004528",
+                    "name": "mean corpuscular hemoglobin concentration",
+                    "score": 0.19185809236650286,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016333",
+                    "name": "familial dilated cardiomyopathy",
+                    "score": 0.17049766953876677,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005045",
+                    "name": "hypertrophic cardiomyopathy",
+                    "score": 0.16692674413704503,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001249",
+                    "name": "Intellectual disability",
+                    "score": 0.1534060169536704,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016587",
+                    "name": "arrhythmogenic right ventricular cardiomyopathy",
+                    "score": 0.1501315498585855,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007269",
+                    "name": "dilated cardiomyopathy 1A",
+                    "score": 0.12967817941176818,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0000568",
+                    "name": "autoimmune disorder of central nervous system",
+                    "score": 0.1229773775686187,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001657",
+                    "name": "Prolonged QT interval",
+                    "score": 0.1189123182448028,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0024573",
+                    "name": "familial hypertrophic cardiomyopathy",
+                    "score": 0.11087395640541053,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005590",
+                    "name": "breast ductal adenocarcinoma",
+                    "score": 0.11087395640541053,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004907",
+                    "name": "alopecia",
+                    "score": 0.10250194608609457,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015924",
+                    "name": "pulmonary arterial hypertension",
+                    "score": 0.09494338772522533,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019171",
+                    "name": "familial long QT syndrome",
+                    "score": 0.0854326192061478,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008170",
+                    "name": "ovarian cancer",
+                    "score": 0.08421800938627642,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015263",
+                    "name": "Brugada syndrome",
+                    "score": 0.08352117355685248,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008678",
+                    "name": "Williams syndrome",
+                    "score": 0.08160877561220242,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012693",
+                    "name": "glycogen storage disease due to muscle and heart glycogen synthase deficiency",
+                    "score": 0.08015157152249461,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005340",
+                    "name": "alopecia areata",
+                    "score": 0.07894636340348213,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_101016",
+                    "name": "Romano-Ward syndrome",
+                    "score": 0.07882637930365874,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0700102",
+                    "name": "familial isolated restrictive cardiomyopathy",
+                    "score": 0.07864597903848107,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019625",
+                    "name": "familial thoracic aortic aneurysm and aortic dissection",
+                    "score": 0.07755091335582319,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007152",
+                    "name": "arrhythmogenic right ventricular dysplasia 1",
+                    "score": 0.07645454966656136,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_99739",
+                    "name": "Rare familial disorder with hypertrophic cardiomyopathy",
+                    "score": 0.0763289715256552,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018901",
+                    "name": "left ventricular noncompaction",
+                    "score": 0.07597561524160708,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008102",
+                    "name": "sick sinus syndrome 2, autosomal dominant",
+                    "score": 0.07567234581257264,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_233655",
+                    "name": "Rare genetic vascular disease",
+                    "score": 0.07502911228679239,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012900",
+                    "name": "cardiomyopathy, familial restrictive, 3",
+                    "score": 0.07501268272994588,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0001253",
+                    "name": "body height",
+                    "score": 0.0744529357770405,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_590",
+                    "name": "Congenital myasthenic syndromes",
+                    "score": 0.0739239359464082,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_701",
+                    "name": "Alopecia universalis",
+                    "score": 0.07391597093694036,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008661",
+                    "name": "vitiligo",
+                    "score": 0.07391597093694036,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019080",
+                    "name": "alopecia totalis",
+                    "score": 0.07391597093694036,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004981",
+                    "name": "atrial fibrillation",
+                    "score": 0.07330079082270499,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016830",
+                    "name": "Emery-Dreifuss muscular dystrophy",
+                    "score": 0.07129428441688739,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012808",
+                    "name": "dilated cardiomyopathy 1AA",
+                    "score": 0.07106231347274923,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013373",
+                    "name": "dilated cardiomyopathy 1V",
+                    "score": 0.0709673396629809,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008742",
+                    "name": "autosomal dominant severe congenital neutropenia",
+                    "score": 0.06999472867873568,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013291",
+                    "name": "glycogen storage disease XV",
+                    "score": 0.06928908780896477,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_263297",
+                    "name": "Glycogen storage disease due to glycogenin deficiency",
+                    "score": 0.06928908780896477,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011484",
+                    "name": "catecholaminergic polymorphic ventricular tachycardia 1",
+                    "score": 0.0691557824086014,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_247",
+                    "name": "Arrhythmogenic right ventricular dysplasia",
+                    "score": 0.06865073100496061,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015666",
+                    "name": "familial idiopathic dilatation of the right atrium",
+                    "score": 0.06766744737580063,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0700079",
+                    "name": "congenital myasthenic syndromes with glycosylation defect",
+                    "score": 0.06733714154034044,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010281",
+                    "name": "Danon disease",
+                    "score": 0.06732595148362913,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_860",
+                    "name": "Congenitally uncorrected transposition of the great arteries",
+                    "score": 0.0668110046445608,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007194",
+                    "name": "familial bicuspid aortic valve",
+                    "score": 0.06635666725466058,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_51608",
+                    "name": "Generalized arterial calcification of infancy",
+                    "score": 0.06590347265590744,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98913",
+                    "name": "Postsynaptic congenital myasthenic syndromes",
+                    "score": 0.06545484070971995,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017735",
+                    "name": "congenital aortic valve stenosis",
+                    "score": 0.06538292851527404,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012730",
+                    "name": "aortic aneurysm, familial thoracic 6",
+                    "score": 0.06485448886649593,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98909",
+                    "name": "Desminopathy",
+                    "score": 0.06462658128944038,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008021",
+                    "name": "Cowden syndrome 1",
+                    "score": 0.06452474468854402,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011482",
+                    "name": "dilated cardiomyopathy 1I",
+                    "score": 0.06421383245450708,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030062",
+                    "name": "arrhythmogenic right ventricular dysplasia, familial, 14",
+                    "score": 0.06399480506007103,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013371",
+                    "name": "dilated cardiomyopathy 1U",
+                    "score": 0.06377305714726021,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013768",
+                    "name": "arterial calcification, generalized, of infancy, 2",
+                    "score": 0.06368947871634469,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0006761",
+                    "name": "fibromuscular dysplasia",
+                    "score": 0.06362132408469799,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007568",
+                    "name": "aortic aneurysm, familial thoracic 4",
+                    "score": 0.06359966259877063,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98914",
+                    "name": "Presynaptic congenital myasthenic syndromes",
+                    "score": 0.06358190428675303,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016301",
+                    "name": "congenitally corrected transposition of the great arteries",
+                    "score": 0.0634929977462658,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013477",
+                    "name": "hypertrophic cardiomyopathy 20",
+                    "score": 0.06338746216553917,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004976",
+                    "name": "amyotrophic lateral sclerosis",
+                    "score": 0.06301687563059503,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0979573",
+                    "name": "cardiomyopathy, familial hypertrophic, 31",
+                    "score": 0.06263880630712579,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009710",
+                    "name": "Thomsen and Becker disease",
+                    "score": 0.06230192400347361,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020290",
+                    "name": "familial atrioventricular septal defect",
+                    "score": 0.06212616825035689,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014344",
+                    "name": "congenital heart defects, multiple types, 4",
+                    "score": 0.06212616825035689,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009677",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2C",
+                    "score": 0.06207110701167311,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019512",
+                    "name": "congenital heart malformation",
+                    "score": 0.06202124863605473,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020437",
+                    "name": "atrial septal defect, ostium primum type",
+                    "score": 0.061846097357607925,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030887",
+                    "name": "cardiomyopathy, dilated, 2G",
+                    "score": 0.061668094552689345,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007268",
+                    "name": "hypertrophic cardiomyopathy 4",
+                    "score": 0.06166572102873369,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0011611",
+                    "name": "Interrupted aortic arch",
+                    "score": 0.06138580535323833,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009010",
+                    "name": "aortic arch interruption",
+                    "score": 0.06138580535323833,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_171445",
+                    "name": "Muscle filaminopathy",
+                    "score": 0.061106031350020594,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009935",
+                    "name": "pulmonary hypertension, primary, 5",
+                    "score": 0.06100244016997388,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013852",
+                    "name": "hypertrophic cardiomyopathy 21",
+                    "score": 0.060936223779342893,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013197",
+                    "name": "hypertrophic cardiomyopathy 14",
+                    "score": 0.06071088272905597,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008050",
+                    "name": "MYH7-related skeletal myopathy",
+                    "score": 0.060687322013319805,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_59135",
+                    "name": "Laing early-onset distal myopathy",
+                    "score": 0.060687322013319805,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98912",
+                    "name": "Late-onset distal myopathy, Markesbery-Griggs type",
+                    "score": 0.06067022894504064,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012799",
+                    "name": "hypertrophic cardiomyopathy 11",
+                    "score": 0.06056654126358744,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008504",
+                    "name": "supravalvular aortic stenosis",
+                    "score": 0.060362040410661906,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012112",
+                    "name": "hypertrophic cardiomyopathy 10",
+                    "score": 0.06034746253861601,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008223",
+                    "name": "hypokalemic periodic paralysis",
+                    "score": 0.060055083809132104,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011843",
+                    "name": "hypertrophic cardiomyopathy 25",
+                    "score": 0.05987953337815688,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013162",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2N",
+                    "score": 0.05976106250251628,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_871",
+                    "name": "Familial progressive cardiac conduction defect",
+                    "score": 0.05975367090542259,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007345",
+                    "name": "aorta coarctation",
+                    "score": 0.05974678440079697,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005144",
+                    "name": "familial amyotrophic lateral sclerosis",
+                    "score": 0.05960003861305156,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859372",
+                    "name": "cardiomyopathy, familial hypertrophic, 29, with polyglucosan bodies",
+                    "score": 0.05946909441731537,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017161",
+                    "name": "frontotemporal dementia with motor neuron disease",
+                    "score": 0.059399453253364286,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010311",
+                    "name": "Becker muscular dystrophy",
+                    "score": 0.05934158936744916,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013139",
+                    "name": "neutropenia, severe congenital, 2, autosomal dominant",
+                    "score": 0.059265825497238786,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013463",
+                    "name": "congenital heart defects, multiple types, 6",
+                    "score": 0.059065328426072324,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859572",
+                    "name": "cardiac valvular dysplasia 2",
+                    "score": 0.059036480665192764,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030317",
+                    "name": "cardiomyopathy, familial hypertrophic, 28",
+                    "score": 0.05902929439024057,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013530",
+                    "name": "atrial fibrillation, familial, 10",
+                    "score": 0.05896954564706654,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014500",
+                    "name": "atrial conduction disease",
+                    "score": 0.058650475039188764,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009676",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2B",
+                    "score": 0.05840157327316568,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020558",
+                    "name": "autosomal dominant Charcot-Marie-Tooth disease type 2K",
+                    "score": 0.05837513804744865,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008003",
+                    "name": "autosomal dominant progressive external ophthalmoplegia",
+                    "score": 0.05835968960952284,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013474",
+                    "name": "hypertrophic cardiomyopathy 17",
+                    "score": 0.05829054532515415,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015753",
+                    "name": "cap myopathy",
+                    "score": 0.05813942822901641,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009081",
+                    "name": "Heterotaxia",
+                    "score": 0.058061086277429126,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0006664",
+                    "name": "atrial septal defect",
+                    "score": 0.05801558030170998,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_158",
+                    "name": "Systemic primary carnitine deficiency",
+                    "score": 0.05769634304767774,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008895",
+                    "name": "hereditary arterial and articular multiple calcification syndrome",
+                    "score": 0.05732737915941752,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015738",
+                    "name": "childhood-onset nemaline myopathy",
+                    "score": 0.05711322816584187,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020427",
+                    "name": "Laubry-Pezzi syndrome",
+                    "score": 0.05699891095712366,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013902",
+                    "name": "aortic valve disease 2",
+                    "score": 0.05691570826572706,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_269",
+                    "name": "Facioscapulohumeral dystrophy",
+                    "score": 0.05680072786649181,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014100",
+                    "name": "dilated cardiomyopathy 1KK",
+                    "score": 0.05679682674580349,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_602",
+                    "name": "Distal myopathy, Nonaka type",
+                    "score": 0.05676212730389143,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014142",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2T",
+                    "score": 0.05668615811153956,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0958241",
+                    "name": "cardiomyopathy, familial hypertrophic, 30, atrial",
+                    "score": 0.056614090039876046,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010294",
+                    "name": "X-linked severe congenital neutropenia",
+                    "score": 0.05651060768056433,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013418",
+                    "name": "aortic aneurysm, familial thoracic 7",
+                    "score": 0.05649397658710353,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018072",
+                    "name": "persistent truncus arteriosus",
+                    "score": 0.05634558616900477,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014528",
+                    "name": "chronic atrial and intestinal dysrhythmia",
+                    "score": 0.05613445751735189,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016097",
+                    "name": "symptomatic form of muscular dystrophy of Duchenne and Becker in female carriers",
+                    "score": 0.05590778187314528,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013049",
+                    "name": "DPM3-congenital disorder of glycosylation",
+                    "score": 0.05587677822978007,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012755",
+                    "name": "episodic ataxia type 7",
+                    "score": 0.055869386632686376,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019180",
+                    "name": "hereditary hemorrhagic telangiectasia",
+                    "score": 0.05581119217812345,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020436",
+                    "name": "atrial septal defect, sinus venosus type",
+                    "score": 0.05564476420989467,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013390",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2Q",
+                    "score": 0.05562361602932104,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012248",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2K",
+                    "score": 0.05551002155454088,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0000507",
+                    "name": "inclusion body myopathy with Paget disease of bone and frontotemporal dementia",
+                    "score": 0.055506787730812385,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859222",
+                    "name": "heterotaxy, visceral, 12, autosomal",
+                    "score": 0.0555004740749615,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007173",
+                    "name": "atrial septal defect 7",
+                    "score": 0.055490567281634554,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_1479",
+                    "name": "Atrial septal defect - atrioventricular conduction defects",
+                    "score": 0.055490567281634554,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011438",
+                    "name": "acne",
+                    "score": 0.05543697820270527,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0003762",
+                    "name": "vitamin D deficiency",
+                    "score": 0.05543697820270527,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009685",
+                    "name": "Miyoshi myopathy",
+                    "score": 0.0553371916419404,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007270",
+                    "name": "cardiomyopathy, familial restrictive, 1",
+                    "score": 0.05495344455949278,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001660",
+                    "name": "Truncus arteriosus",
+                    "score": 0.05494502635169163,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014883",
+                    "name": "hypertrophic cardiomyopathy 26",
+                    "score": 0.054867825226490835,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020435",
+                    "name": "atrial septal defect, coronary sinus type",
+                    "score": 0.05481551941094587,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859322",
+                    "name": "myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 1",
+                    "score": 0.054786517658460196,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019018",
+                    "name": "Tako-tsubo cardiomyopathy",
+                    "score": 0.05464977311222686,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013550",
+                    "name": "distal myopathy with posterior leg and anterior hand involvement",
+                    "score": 0.05463314201876605,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011787",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2I",
+                    "score": 0.05461096722748496,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008817",
+                    "name": "arterial calcification, generalized, of infancy, 1",
+                    "score": 0.05439681623390934,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020434",
+                    "name": "atrial septal defect, ostium secundum type",
+                    "score": 0.05436144949503741,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010773",
+                    "name": "mitochondrial myopathy with diabetes",
+                    "score": 0.05408431593455926,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0100294",
+                    "name": "mitochondrial complex II deficiency, nuclear type 1",
+                    "score": 0.05394059043551521,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013440",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2P",
+                    "score": 0.05381821843918628,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0024533",
+                    "name": "pulmonary hypertension, primary, 1",
+                    "score": 0.05368917347325886,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0033620",
+                    "name": "myofibrillar myopathy 10",
+                    "score": 0.05360386212346915,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_401953",
+                    "name": "Episodic ataxia with slurred speech",
+                    "score": 0.05352625035398535,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_399096",
+                    "name": "Distal anoctaminopathy",
+                    "score": 0.053456030181595275,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0032913",
+                    "name": "congenital heart defects, multiple types, 7",
+                    "score": 0.053455208893029287,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017694",
+                    "name": "glycogen storage disease due to acid maltase deficiency, infantile onset",
+                    "score": 0.053428978989453764,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010679",
+                    "name": "Duchenne muscular dystrophy",
+                    "score": 0.05337287471429122,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008029",
+                    "name": "Bethlem myopathy",
+                    "score": 0.05332421336675773,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016342",
+                    "name": "familial isolated arrhythmogenic right ventricular dysplasia",
+                    "score": 0.05325152932866973,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_34516",
+                    "name": "Autosomal dominant limb-girdle muscular dystrophy type 1D",
+                    "score": 0.05324536966442498,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012301",
+                    "name": "mitochondrial DNA depletion syndrome, myopathic form",
+                    "score": 0.053198761538306424,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011603",
+                    "name": "GNE myopathy",
+                    "score": 0.05316406209639435,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014735",
+                    "name": "Charcot-Marie-Tooth disease type 2Y",
+                    "score": 0.053060579737082635,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012742",
+                    "name": "Brugada syndrome 3",
+                    "score": 0.05302731755016101,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016810",
+                    "name": "autosomal recessive progressive external ophthalmoplegia",
+                    "score": 0.0529461639737365,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0979243",
+                    "name": "cardiomyopathy, dilated, 2M",
+                    "score": 0.0529406716064516,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014155",
+                    "name": "atrial fibrillation, familial, 13",
+                    "score": 0.05286018532698693,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009144",
+                    "name": "Ebstein anomaly",
+                    "score": 0.052781341624654206,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014331",
+                    "name": "Moyamoya disease with early-onset achalasia",
+                    "score": 0.05271317467367902,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013178",
+                    "name": "congenital muscular dystrophy due to LMNA mutation",
+                    "score": 0.05271132677440559,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008051",
+                    "name": "tubular aggregate myopathy",
+                    "score": 0.052624475508554695,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010870",
+                    "name": "tibial muscular dystrophy",
+                    "score": 0.052565342731805145,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014163",
+                    "name": "left ventricular noncompaction 10",
+                    "score": 0.05247664356668081,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008195",
+                    "name": "paramyotonia congenita of Von Eulenburg",
+                    "score": 0.05246740407031369,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_51083",
+                    "name": "Familial short QT syndrome",
+                    "score": 0.0523657696102754,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015735",
+                    "name": "severe congenital nemaline myopathy",
+                    "score": 0.05232085539182413,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009683",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2H",
+                    "score": 0.05231957212843981,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_365",
+                    "name": "Glycogen storage disease due to acid maltase deficiency",
+                    "score": 0.05226423781130786,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859168",
+                    "name": "myopathy, myofibrillar, 12, infantile-onset, with cardiomyopathy",
+                    "score": 0.052214036547713186,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017990",
+                    "name": "catecholaminergic polymorphic ventricular tachycardia",
+                    "score": 0.052177283884386194,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0976226",
+                    "name": "neuronopathy, distal hereditary motor, autosomal dominant 15",
+                    "score": 0.05213498752323895,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011968",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2D",
+                    "score": 0.05208488892071502,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019441",
+                    "name": "ATTRV122I amyloidosis",
+                    "score": 0.05199167266847787,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98915",
+                    "name": "Synaptic congenital myasthenic syndromes",
+                    "score": 0.051900098993372674,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008913",
+                    "name": "cardiac valvular defect, developmental",
+                    "score": 0.05185359352832484,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011003",
+                    "name": "dilated cardiomyopathy 1E",
+                    "score": 0.05178552923842041,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014062",
+                    "name": "mitochondrial DNA deletion syndrome with progressive myopathy",
+                    "score": 0.0517688981449596,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_99095",
+                    "name": "Gerbode defect",
+                    "score": 0.051623940713066606,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020428",
+                    "name": "congenital Gerbode defect",
+                    "score": 0.051623940713066606,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98911",
+                    "name": "Distal myotilinopathy",
+                    "score": 0.051573020821976706,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012410",
+                    "name": "Finnish upper limb-onset distal myopathy",
+                    "score": 0.051508344347406886,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020336",
+                    "name": "autosomal dominant Emery-Dreifuss muscular dystrophy",
+                    "score": 0.05150464854886004,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015273",
+                    "name": "complete atrioventricular canal",
+                    "score": 0.05142375162511239,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011243",
+                    "name": "grange syndrome",
+                    "score": 0.05141410148446229,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018993",
+                    "name": "Charcot-Marie-Tooth disease type 2",
+                    "score": 0.05133074069501676,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010880",
+                    "name": "telangiectasia, hereditary hemorrhagic, type 2",
+                    "score": 0.05122458914786565,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_231160",
+                    "name": "Familial cerebral saccular aneurysm",
+                    "score": 0.05088354907084825,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016820",
+                    "name": "Moyamoya disease",
+                    "score": 0.0508773894066035,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015987",
+                    "name": "scimitar syndrome",
+                    "score": 0.050875952151613064,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010789",
+                    "name": "MELAS syndrome",
+                    "score": 0.05077062189302793,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_550",
+                    "name": "MELAS",
+                    "score": 0.05077062189302793,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011423",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2E",
+                    "score": 0.050734074551842444,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018949",
+                    "name": "distal myopathy",
+                    "score": 0.05049015184775054,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018243",
+                    "name": "intellectual disability-hyperkinetic movement-truncal ataxia syndrome",
+                    "score": 0.050488919914901585,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012736",
+                    "name": "long QT syndrome 9",
+                    "score": 0.05048460814993026,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004933",
+                    "name": "hypoplastic left heart syndrome",
+                    "score": 0.050453809828706536,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012652",
+                    "name": "autosomal recessive limb-girdle muscular dystrophy type 2L",
+                    "score": 0.05038851738771223,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018920",
+                    "name": "peripartum cardiomyopathy",
+                    "score": 0.050263630195150046,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017991",
+                    "name": "Takayasu arteritis",
+                    "score": 0.050138332358304845,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859325",
+                    "name": "developmental and epileptic encephalopathy 109",
+                    "score": 0.05011605490595303,
+                    "matched": false
+                }
+            ],
+            "articles": [
+                {
+                    "pmid": "17245405",
+                    "title": "KATP channel mutation confers risk for vein of Marshall adrenergic atrial fibrillation.",
+                    "abstract": "",
+                    "year": "2007 Feb",
+                    "source": "uniprot_variants"
+                },
+                {
+                    "pmid": "27532257",
+                    "title": "Reassessment of Mendelian gene pathogenicity using 7,855 cardiomyopathy cases and 60,706 reference samples.",
+                    "abstract": "",
+                    "year": "2017 Feb",
+                    "source": "genomics_england"
+                },
+                {
+                    "pmid": "15034580",
+                    "title": "ABCC9 mutations identified in human dilated cardiomyopathy disrupt catalytic KATP channel gating.",
+                    "abstract": "",
+                    "year": "2004 Apr",
+                    "source": "genomics_england"
+                },
+                {
+                    "pmid": "11562480",
+                    "title": "Disruption of Sur2-containing K(ATP) channels enhances insulin-stimulated glucose uptake in skeletal muscle.",
+                    "abstract": "",
+                    "year": "2001 Sep 25",
+                    "source": "impc"
+                },
+                {
+                    "pmid": "12122112",
+                    "title": "Episodic coronary artery vasospasm and hypertension develop in the absence of Sur2 K(ATP) channels.",
+                    "abstract": "",
+                    "year": "2002 Jul",
+                    "source": "impc"
+                },
+                {
+                    "pmid": "30089727",
+                    "title": "Cardiovascular consequences of KATP overactivity in Cantu syndrome.",
+                    "abstract": "",
+                    "year": "2018 Aug 9",
+                    "source": "impc"
+                },
+                {
+                    "pmid": "31575858",
+                    "title": "ABCC9-related Intellectual disability Myopathy Syndrome is a K(ATP) channelopathy with loss-of-function mutations in ABCC9.",
+                    "abstract": "",
+                    "year": "2019 Oct 1",
+                    "source": "impc"
+                },
+                {
+                    "pmid": "24648545",
+                    "title": "Abcc9 is required for the transition to oxidative metabolism in the newborn heart.",
+                    "abstract": "",
+                    "year": "2014 Jul",
+                    "source": "impc"
+                },
+                {
+                    "pmid": "33529173",
+                    "title": "Complex consequences of Cantu syndrome SUR2 variant R1154Q in genetically modified mice.",
+                    "abstract": "",
+                    "year": "2021 Mar 8",
+                    "source": "impc"
+                }
+            ],
+            "ot_synonym_selection_usage": {
+                "text": "VERDICT: ALREADY KNOWN\nBASIS: atrial fibrillation, familial, 12\nREASON: The exact reported trait appears verbatim in the list.",
+                "input_tokens": 6229,
+                "output_tokens": 60,
+                "flex": false
+            },
+            "match": {
+                "method": "broad_opus",
+                "matched_id": "MONDO_0013545",
+                "basis": "atrial fibrillation, familial, 12",
+                "reason": "The exact reported trait appears verbatim in the list.",
+                "verdict_text": "ALREADY KNOWN",
+                "unresolved_basis": false
+            }
+        },
+        "synonyms": [
+            "familial atrial fibrillation 12",
+            "FAF12",
+            "ATFB12",
+            "hereditary atrial fibrillation 12",
+            "familial AF 12",
+            "AF12",
+            "familial AF12",
+            "autosomal dominant atrial fibrillation 12"
+        ],
+        "pubmed_pmids": [
+            "31039256",
+            "20301690",
+            "36129056",
+            "25275207",
+            "38217872",
+            "38510289",
+            "42290677",
+            "41347799",
+            "35876283",
+            "26226329"
+        ]
+    }
+}

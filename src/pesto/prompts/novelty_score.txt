@@ -1,0 +1,16 @@
+You are evaluating whether {gene_name} is already linked to {phenotype} in the articles below.
+
+{alias_note}{dismiss_note}
+
+{articles_list}
+
+Read the titles and abstracts. Give a novelty score from 0 to 100.
+
+- 0 = the association is already well established
+- 100 = no evidence of a link
+
+Return only this XML:
+
+<response>
+  <novelty>50</novelty>
+</response>

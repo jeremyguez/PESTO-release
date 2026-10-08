@@ -1,0 +1,2763 @@
+{
+    "gene_name": "ABCB4",
+    "phenotype": "Height",
+    "synonyms": [
+        "Stature",
+        "Body height",
+        "Standing height",
+        "Linear growth",
+        "Tallness",
+        "Vertical measurement"
+    ],
+    "run_parameters": {
+        "model": "claude-haiku-4-5@vertex",
+        "temperature": 0.0,
+        "batch_size": null
+    },
+    "prompt_templates": {
+        "phenotype_synonyms_prompt": "You are a medical expert helping to identify alternative terms and synonyms for phenotypes/diseases.\n\nGiven the following phenotype: {phenotype}\n\nGenerate between 0 and 10 relevant synonyms or alternative terms that could be used to search for scientific literature about this phenotype. Include:\n- Alternative medical terminology\n- Common abbreviations\n- Related clinical terms\n- Different ways the condition might be described in literature\n\nIMPORTANT: \n- If the phenotype is already very specific and well-defined, you may return fewer synonyms (even 0).\n- Only include terms that are semantically equivalent or very closely related.\n- Do NOT include broader categories, subtypes, or related but distinct conditions.\n\nReturn your answer in this exact XML format:\n<response>\n<synonyms>\n<synonym>term 1</synonym>\n<synonym>term 2</synonym>\n...\n</synonyms>\n</response>\n\nIf you think no synonyms are needed, return:\n<response>\n<synonyms>\n</synonyms>\n</response>",
+        "novelty_assessment_prompt": "You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.\n\nBelow is a list of scientific articles about {gene_name} and/or {phenotype}:\n\n{alias_note}{dismiss_note}\n\n{articles_list}\n\nClassify the gene\u2013phenotype relationship into ONE of four categories:\n\n1. **Established**  \n   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical or mechanistic studies support a clear causal role.\n   Research used to prove this category has to be in Human.\n\n2. **Existing**\n   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.  \n   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.\n   Research used to prove this category has to be in Human.\n\n3. **Hypothesized**  \n   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.  \n   Includes expression, functional data, pathway links, or relevant animal models.  \n   Excludes cases where gene and phenotype are merely co-mentioned without relevance.\n\n4. **Novel**  \n   No evidence that variants or biological activity of {gene_name} influence {phenotype}.  \n   Co-mentions are incidental and provide no logical basis.\n\nYour task:\n1. Read the article titles and abstracts.  \n2. Choose the best category.  \n3. Provide a brief justification (3\u20135 sentences).  \n4. Cite up to 10 relevant PMIDs from the provided list only.\n\nReturn your answer in **this exact XML format**:\n\n<response>\n  <verdict>Established|Existing|Hypothesized|Novel</verdict>\n  <justification>Your brief explanation (3\u20135 sentences)</justification>\n  <pmids>\n    <pmid>12345678</pmid>\n    ...\n  </pmids>\n</response>\n\nAdditional rules:\n- If uncertain between two categories, choose the *less novel* one.  \n- Hypothesized can apply without phenotype measurements if the gene\u2019s biology is directly relevant.  \n- Think step by step internally: if the studies used to prove \"Existing\" or \"Established\" are not in human but in an animal or in vitro experiments, downgrade to \"Hypothesized\".\n- Maximum 10 PMIDs."
+    },
+    "prompt_texts": {},
+    "pubmed_articles": [
+        {
+            "pmid": "35528937",
+            "title": "Loss of Multiple ABCB Auxin Transporters Recapitulates the Major twisted dwarf 1 Phenotypes in Arabidopsis thaliana.",
+            "pubdate": "2022",
+            "abstract": "FK506-BINDING PROTEIN 42/TWISTED DWARF 1 (FKBP42/TWD1) directly regulates cellular trafficking and activation of multiple ATP-BINDING CASSETTE (ABC) transporters from the ABCB and ABCC subfamilies. abcb1 abcb19 double mutants exhibit remarkable phenotypic overlap with twd1 including severe dwarfism, stamen elongation defects, and compact circinate leaves; however, twd1 mutants exhibit greater loss of polar auxin transport and additional helical twisting of roots, inflorescences, and siliques. As abcc1 abcc2 mutants do not exhibit any visible phenotypes and TWD1 does not interact with PIN or AUX1/LAX auxin transporters, loss of function of other ABCB auxin transporters is hypothesized to underly the remaining morphological phenotypes. Here, gene expression, mutant analyses, pharmacological inhibitor studies, auxin transport assays, and direct auxin quantitations were used to determine the relative contributions of loss of other reported ABCB auxin transporters (4, 6, 11, 14, 20, and 21) to twd1 phenotypes. From these analyses, the additional reduction in plant height and the twisted inflorescence, root, and silique phenotypes observed in twd1 compared to abcb1 abcb19 result from loss of ABCB6 and ABCB20 function. Additionally, abcb6 abcb20 root twisting exhibited the same sensitivity to the auxin transport inhibitor 1-napthalthalamic acid as twd1 suggesting they are the primary contributors to these auxin-dependent organ twisting phenotypes. The lack of obvious phenotypes in higher order abcb4 and abcb21 mutants suggests that the functional loss of these transporters does not contribute to twd1 root or shoot twisting. Analyses of ABCB11 and ABCB14 function revealed capacity for auxin transport; however, their activities are readily outcompeted by other substrates, suggesting alternate functions in planta, consistent with a spectrum of relative substrate affinities among ABCB transporters. Overall, the results presented here suggest that the ABCB1/19 and ABCB6/20 pairs represent the primary long-distance ABCB auxin transporters in Arabidopsis and account for all reported twd1 morphological phenotypes. Other ABCB transporters appear to participate in highly localized auxin streams or mobilize alternate transport substrates."
+        },
+        {
+            "pmid": "39036642",
+            "title": "Quantification of Radiation Exposure in Canadian Orthopaedic Surgery Residents.",
+            "pubdate": "2024 Jul-Sep",
+            "abstract": "Natural radiation exposure in the general population averages 3 milliSieverts (mSv) annually; however, radiation exposure in orthopaedic residents is not well defined. Despite protective measures, evidence of radiation-related diseases in orthopaedic surgeons is increasing. The purpose of this study was to quantify radiation exposure in orthopaedic residents and to determine the variability of exposure among post graduate year (PGY) of residency."
+        },
+        {
+            "pmid": "31024649",
+            "title": "Prospective Comparison of Ultrasound-Guided Versus Palpation Techniques for Arterial Line Placement by Residents in a Teaching Institution.",
+            "pubdate": "2019 Apr",
+            "abstract": "Arterial line insertion is traditionally done by blind palpation. Residents may need multiple attempts for successful insertion, leading to longer procedure times and many failed attempts."
+        },
+        {
+            "pmid": "10790550",
+            "title": "Microlaparoscopic cholecystectomy. Less invasive gallbladder surgery.",
+            "pubdate": "2000 Apr",
+            "abstract": "We set out to compare a prospective evaluation of microlaparoscopic cholesystectomy (MLC) using 5-mm ports for the scope and operating ports and two 2-mm ports for retracting to the historic results of standard laparoscopic cholecystectomy (SLC)."
+        },
+        {
+            "pmid": "41441977",
+            "title": "An evaluation of reliability in measurement of native femoral torsion on CT imaging.",
+            "pubdate": "2025 Dec 24",
+            "abstract": "This study assesses intra- and interobserver reliability in measuring femoral torsion on repeated computed tomography (CT) scanograms and explores variability across training levels and patient characteristics."
+        },
+        {
+            "pmid": "30266155",
+            "title": "Progressive Familial Intrahepatic Cholestasis.",
+            "pubdate": "2018 Nov",
+            "abstract": "Genetic cholestasis has been dissected through genetic investigation. The major PFIC genes are now described. ATP8B1 encodes FIC1, ABCB11 encodes BSEP, ABCB4 encodes MDR3, TJP2 encodes TJP2, NR1H4 encodes FXR, and MYO5B encodes MYO5B. The full spectra of phenotypes associated with mutations in each gene are discussed, along with our understanding of the disease mechanisms. Differences in treatment response and targets for future treatment are emerging."
+        },
+        {
+            "pmid": "30236549",
+            "title": "Systematic review of progressive familial intrahepatic cholestasis.",
+            "pubdate": "2019 Feb",
+            "abstract": "Progressive familial intrahepatic cholestasis (PFIC) is a heterogeneous group of rare genetic disorders associated with bile acid secretion or transport defects. This is the first systematic review of the epidemiology, natural history and burden of PFIC."
+        },
+        {
+            "pmid": "35894240",
+            "title": "Clinical phenotype of adult-onset liver disease in patients with variants in ABCB4, ABCB11, and ATP8B1.",
+            "pubdate": "2022 Oct",
+            "abstract": "Variants in ATP8B1, ABCB11, and ABCB4 underlie the most prevalent forms of progressive familial intrahepatic cholestasis. We aim to describe variants in these genes in a cohort of patients with adult-onset liver disease, and explore a genotype-phenotype correlation. Patients with onset of liver disease aged above 18 who underwent sequencing of cholestasis genes for clinical purposes over a 5-year period were identified. Bioinformatic analysis of variants was performed. Liver histology was evaluated in patients with variants. Of the 356 patients tested, at least one variant was identified in 101 (28.4%): 46 ABCB4, 35 ABCB11, and 28 ATP8B1. Patients with ABCB4 variants had chronic liver disease (71.7%) and pregnancy-associated liver dysfunction (75%), with a younger age of onset in more severe genotypes (p\u00a0=\u20090.046). ABCB11 variants presented with pregnancy-associated liver dysfunction (82.4%) and acute/episodic cholestasis (40%), with no association between age of onset and genotype severity. ATP8B1 variants were associated with chronic liver disease (75%); however, they were commonly seen in patients with an alternate etiology of liver disease and variants were of low predicted pathogenicity. In adults with suspected genetic cholestasis, variants in cholestasis genes were frequently identified and were likely to contribute to the development of liver disease, particularly ABCB4 and ABCB11. Variants were often in heterozygous state, and they should no longer be considered recessive Mendelian traits. Sequencing cholestasis genes in selected patients with adult-onset disease should be considered, with interpretation in close collaboration with histopathologists and geneticists."
+        },
+        {
+            "pmid": "23797137",
+            "title": "Cholestatic liver disease.",
+            "pubdate": "2013",
+            "abstract": "Cholestasis develops as a consequence of impaired bile formation and/or bile flow and can be classified as intra- or extrahepatic. Chronic cholestatic diseases are mostly intrahepatic with the exception of primary and secondary sclerosing cholangitis affecting intra- and extrahepatic bile ducts. Recent genome-wide association studies have confirmed major histocompatibility complex associations and discovered multiple susceptibility loci in primary biliary cirrhosis and primary sclerosing cholangitis, providing new insights into disease pathogenesis, which may translate into more precise therapeutic prevention and intervention in the future. Diagnostic steps in cholestatic conditions comprise a thorough patient history, abdominal imaging and distinct serological studies including antimitochondrial antibodies and IgG4 levels; if the diagnosis remains unclear, liver biopsy is warranted. Genetic testing should also be considered, as mutations in the hepatobiliary transporters ATP8B1, ABCB11 and ABCB4 are causative for three different forms of familial intrahepatic cholestasis. Disease severity is dependent on the genotypic variants of these transporters, ranging from mildly elevated liver enzymes in adults to cirrhosis in early childhood. Ligands of nuclear receptors, which represent important regulators of hepatobiliary transporters, and modified bile salts are new promising therapeutic options in cholestatic liver disease and are currently being investigated in clinical trials."
+        },
+        {
+            "pmid": "22628294",
+            "title": "Transporters in cholelithiasis.",
+            "pubdate": "2012 Jan",
+            "abstract": "Gallstones are a common and costly disease with a projected increase in prevalence due to the increasing ageing population. Numerous endogenous and environmental factors are aetiologically related to this multifactorial disease, and genetic studies continue to unravel the pathobiological mechanisms related to gallstone formation. In particular, variants of genes encoding hepatobiliary transporters have been implicated in gallstone disease and, given their ability to influence biliary lipid composition, have undergone considerable investigation. Here we summarize the role of enterohepatic transporters in cholelithogenesis with a particular focus on pertinent ATP-binding cassette transporters (ABCB4, ABCB11, ABCC7, and ABCG5/G8)."
+        },
+        {
+            "pmid": "40545044",
+            "title": "Bile acids engage the SIPR-STAT3 signaling axis to modulate regulatory T cell responses in fibrosing cholangiopathies.",
+            "pubdate": "2025 Nov",
+            "abstract": "Regulatory T cells (Tregs), a subset of CD4 lymphocytes, protect against inflammatory tissue injury. However, it is currently unknown how retention of bile acids (BA) in fibrosing cholangiopathies like biliary atresia or PSC shape hepatic Treg responses."
+        },
+        {
+            "pmid": "39262913",
+            "title": "Genetic issues in ICP.",
+            "pubdate": "2024 Sep",
+            "abstract": "Intrahepatic cholestasis of pregnancy (ICP) is the commonest gestational liver disorder with variable global incidence. Genetic susceptibility, combined with hormonal and environmental influences, contributes to ICP aetiology. Adverse pregnancy outcomes linked to elevated serum bile acids highlight the importance of comprehensive risk assessment. ABCB4 and ABCB11 gene variants play a significant role in about 20% of severe ICP cases. Several other genes including ATP8B1, NR1H4, ABCC2, TJP2, SERPINA1, GCKR and HNF4A have also been implicated with ICP. Additionally, ABCB4 variants elevate the risk of drug-induced intrahepatic cholestasis, gallstone disease, gallbladder and bile duct carcinoma, liver cirrhosis and abnormal liver function tests. Genetic variations, both rare and common, intricately contribute to ICP susceptibility. Leveraging genetic insights holds promise for personalised management and intervention strategies. Further research is needed to elucidate variant-specific phenotypic expressions and therapeutic implications, advancing precision medicine in ICP management."
+        },
+        {
+            "pmid": "38510289",
+            "title": "Functional Validation of Doxorubicin-Induced Cardiotoxicity-Related Genes.",
+            "pubdate": "2024 Feb",
+            "abstract": "Genome-wide association studies and candidate gene association studies have identified more than 180\u00a0genetic variants statistically associated with anthracycline-induced cardiotoxicity (AIC). However, the lack of functional validation has hindered the clinical translation of these findings."
+        },
+        {
+            "pmid": "34082807",
+            "title": "Epidemiology and burden of progressive familial intrahepatic cholestasis: a systematic review.",
+            "pubdate": "2021 Jun 3",
+            "abstract": "Progressive familial intrahepatic cholestasis is a rare, heterogeneous group of liver disorders of autosomal recessive inheritance, characterised by an early onset of cholestasis with pruritus and malabsorption, which rapidly progresses, eventually culminating in liver failure. For children and their parents, PFIC is an extremely distressing disease. Significant pruritus can lead to severe cutaneous mutilation and may affect many activities of daily living through loss of sleep, irritability, poor attention, and impaired school performance."
+        }
+    ],
+    "pubmed_pmids": [
+        "35528937",
+        "39036642",
+        "31024649",
+        "10790550",
+        "41441977",
+        "30266155",
+        "30236549",
+        "35894240",
+        "23797137",
+        "22628294",
+        "40545044",
+        "39262913",
+        "38510289",
+        "34082807"
+    ],
+    "llm_raw_response": "I'll analyze the provided literature systematically to evaluate the genetic association between ABCB4 and Height.\n\n## Step-by-step analysis:\n\n**Reviewing each article:**\n\n1. **PMID 35528937** - Loss of Multiple ABCB Auxin Transporters in *Arabidopsis thaliana*\n   - Plant model, discusses ABCB transporters and dwarfism\n   - NOT human research; mentions height-related phenotypes but in plants\n   - Relevant to biology but not human genetics\n\n2. **PMID 39036642** - Radiation Exposure in Orthopaedic Residents\n   - About PGY (post-graduate year) residents and radiation\n   - PGY is a homonym acronym (not ABCB4 alias); dismiss per instructions\n\n3. **PMID 31024649** - Arterial Line Placement by Residents\n   - Unrelated to ABCB4 or Height\n\n4. **PMID 10790550** - Microlaparoscopic Cholecystectomy\n   - Unrelated to ABCB4 or Height\n\n5. **PMID 41441977** - Femoral Torsion Measurement\n   - About orthopedic anatomy, not genetic association with height\n\n6. **PMID 30266155** - Progressive Familial Intrahepatic Cholestasis\n   - Mentions ABCB4 (MDR3) as causative for PFIC\n   - Focuses on liver disease, not height\n\n7. **PMID 30236549** - Systematic Review of PFIC\n   - PFIC is a liver disorder, no mention of height association\n\n8. **PMID 35894240** - Clinical Phenotype of Adult-Onset Liver Disease\n   - ABCB4 variants associated with liver disease phenotypes\n   - No mention of height\n\n9. **PMID 23797137** - Cholestatic Liver Disease\n   - ABCB4 mentioned in context of hepatobiliary transporters and cholestasis\n   - No height association\n\n10. **PMID 22628294** - Transporters in Cholelithiasis\n    - ABCB4 role in gallstone disease\n    - No height association\n\n11. **PMID 40545044** - Bile Acids and Regulatory T Cells\n    - Fibrosing cholangiopathies, no height mention\n\n12. **PMID 39262913** - Genetic Issues in ICP\n    - ABCB4 variants in intrahepatic cholestasis of pregnancy\n    - No height association\n\n13. **PMID 38510289** - Doxorubicin-Induced Cardiotoxicity\n    - Unrelated to ABCB4 or Height\n\n14. **PMID 34082807** - Epidemiology of PFIC\n    - PFIC is a liver disorder, no height association\n\n## Conclusion:\n\nNone of the provided articles establish, demonstrate, or even suggest a genetic association between ABCB4 and Height in humans. The literature focuses exclusively on ABCB4's role in cholestatic liver diseases (PFIC, ICP, cholelithiasis). One plant biology study mentions dwarfism with ABCB transporters, but this is in *Arabidopsis*, not humans, and involves different ABCB members (ABCB6, ABCB20), not ABCB4.\n\n<response>\n  <verdict>Novel</verdict>\n  <justification>The provided literature contains no evidence linking ABCB4 variants to Height in humans or any other organism. All articles mentioning ABCB4 focus exclusively on its role in cholestatic liver diseases (PFIC, intrahepatic cholestasis of pregnancy, gallstone disease). While one plant study discusses ABCB transporters and dwarfism, it involves *Arabidopsis* and different ABCB members (ABCB6/20), not ABCB4 in humans. There is no biological mechanism, genetic association, or phenotypic overlap reported between ABCB4 and height in the reviewed literature.</justification>\n  <pmids>\n  </pmids>\n</response>",
+    "final_output": {
+        "verdict": "Novel",
+        "justification": "The provided literature contains no evidence linking ABCB4 variants to Height in humans or any other organism. All articles mentioning ABCB4 focus exclusively on its role in cholestatic liver diseases (PFIC, intrahepatic cholestasis of pregnancy, gallstone disease). While one plant study discusses ABCB transporters and dwarfism, it involves *Arabidopsis* and different ABCB members (ABCB6/20), not ABCB4 in humans. There is no biological mechanism, genetic association, or phenotypic overlap reported between ABCB4 and height in the reviewed literature.",
+        "pmids": []
+    },
+    "api_response": {
+        "verdict": "Novel",
+        "justification": "The provided literature contains no evidence linking ABCB4 variants to Height in humans or any other organism. All articles mentioning ABCB4 focus exclusively on its role in cholestatic liver diseases (PFIC, intrahepatic cholestasis of pregnancy, gallstone disease). While one plant study discusses ABCB transporters and dwarfism, it involves *Arabidopsis* and different ABCB members (ABCB6/20), not ABCB4 in humans. There is no biological mechanism, genetic association, or phenotypic overlap reported between ABCB4 and height in the reviewed literature.",
+        "articles_found": 14,
+        "cited_articles": [],
+        "open_targets_verdict": "Existing",
+        "open_targets_max_score": 0.4858489878289626,
+        "open_targets_traits": {
+            "ensembl_id": "ENSG00000005471",
+            "traits_count": 418,
+            "file_path": "data/runs/novel/open_targets_traits_ABCB4_Height.txt",
+            "traits": [
+                {
+                    "disease_id": "MONDO_0011214",
+                    "name": "progressive familial intrahepatic cholestasis type 3",
+                    "score": 0.8515080272436963,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009150",
+                    "name": "cholestasis, intrahepatic, of pregnancy 3",
+                    "score": 0.8011721080079727,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012672",
+                    "name": "cholelithiasis",
+                    "score": 0.7914288719578292,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009048",
+                    "name": "Intrahepatic cholestasis of pregnancy",
+                    "score": 0.743927500163293,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005281",
+                    "name": "gallbladder disorder",
+                    "score": 0.7414797905255893,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010939",
+                    "name": "gallbladder disease 1",
+                    "score": 0.7277906243058441,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050062",
+                    "name": "serum alanine aminotransferase amount",
+                    "score": 0.7182446425662162,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019072",
+                    "name": "intrahepatic cholestasis",
+                    "score": 0.694800888572568,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015762",
+                    "name": "progressive familial intrahepatic cholestasis",
+                    "score": 0.6773152574049152,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005346",
+                    "name": "gallstones",
+                    "score": 0.6418005040834195,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001082",
+                    "name": "Cholecystitis",
+                    "score": 0.6165904108516292,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017290",
+                    "name": "familial intrahepatic cholestasis",
+                    "score": 0.556451257230816,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008892",
+                    "name": "progressive familial intrahepatic cholestasis type 1",
+                    "score": 0.547359990065035,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0802260",
+                    "name": "alanine aminotransferase 1 measurement",
+                    "score": 0.5146673114041452,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010934",
+                    "name": "aspartate aminotransferase to alanine aminotransferase ratio",
+                    "score": 0.5053865476336151,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0001253",
+                    "name": "body height",
+                    "score": 0.4858489878289626,
+                    "matched": true
+                },
+                {
+                    "disease_id": "EFO_0004611",
+                    "name": "low density lipoprotein cholesterol measurement",
+                    "score": 0.48479786235735073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009188",
+                    "name": "Red cell distribution width",
+                    "score": 0.4740811294488542,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007986",
+                    "name": "reticulocyte count",
+                    "score": 0.4738457919215993,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004736",
+                    "name": "aspartate aminotransferase measurement",
+                    "score": 0.46264166053033784,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004574",
+                    "name": "total cholesterol measurement",
+                    "score": 0.4475207160858342,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022303",
+                    "name": "polyunsaturated fatty acids to total fatty acids percentage ",
+                    "score": 0.43292029966482715,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004615",
+                    "name": "apolipoprotein B measurement",
+                    "score": 0.429996208338085,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003847",
+                    "name": "hereditary disease",
+                    "score": 0.4163705619743401,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010701",
+                    "name": "mean reticulocyte volume",
+                    "score": 0.4076386977786453,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005154",
+                    "name": "liver disorder",
+                    "score": 0.3990725471966407,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_0003460",
+                    "name": "erythrocyte volume",
+                    "score": 0.38254345527852435,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005689",
+                    "name": "non-high density lipoprotein cholesterol measurement",
+                    "score": 0.37623459102570644,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_0002272",
+                    "name": "reticulocyte amount",
+                    "score": 0.37230422915471373,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0011011",
+                    "name": "sitting height measurement",
+                    "score": 0.36447624002519696,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020946",
+                    "name": "phospholipids:total lipids ratio",
+                    "score": 0.36093673998860526,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004868",
+                    "name": "biliary tract disorder",
+                    "score": 0.3585764778062339,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0002356",
+                    "name": "pancreas disorder",
+                    "score": 0.35847841968626604,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004532",
+                    "name": "serum gamma-glutamyl transferase measurement",
+                    "score": 0.351453894967676,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022240",
+                    "name": "cholesterol to total lipids in small HDL percentage ",
+                    "score": 0.3479720696272066,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0021253",
+                    "name": "gallbladder neoplasm",
+                    "score": 0.30765477936455204,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0802856",
+                    "name": "peroxisomal carnitine O-octanoyltransferase measurement",
+                    "score": 0.29962061284243796,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004302",
+                    "name": "anthropometric measurement",
+                    "score": 0.2850663988112749,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2042801",
+                    "name": "level of PEST proteolytic signal-containing nuclear protein in blood serum",
+                    "score": 0.2811534891588072,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022302",
+                    "name": "polyunsaturated fatty acids to monounsaturated fatty acids ratio ",
+                    "score": 0.2676301290476166,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022286",
+                    "name": "free cholesterol to total lipids in small LDL percentage ",
+                    "score": 0.2676301290476166,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0010046",
+                    "name": "fatty acid amount",
+                    "score": 0.2669203430796827,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004612",
+                    "name": "high density lipoprotein cholesterol measurement",
+                    "score": 0.24279395892143676,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004335",
+                    "name": "digestive system disorder",
+                    "score": 0.2022405779543605,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0006633",
+                    "name": "acalculous cholecystitis",
+                    "score": 0.19535370291904244,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0008589",
+                    "name": "esterified cholesterol measurement",
+                    "score": 0.18629904584597418,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010282",
+                    "name": "gastrointestinal disease",
+                    "score": 0.17991782305279116,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010118",
+                    "name": "sphingomyelin measurement",
+                    "score": 0.17647964238148364,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001392",
+                    "name": "Abnormality of the liver",
+                    "score": 0.14629924387551557,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2041151",
+                    "name": "level of peroxisomal carnitine O-octanoyltransferase in blood serum",
+                    "score": 0.12957793681864058,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009549",
+                    "name": "severe early-childhood-onset retinal dystrophy",
+                    "score": 0.11826555349910459,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005090",
+                    "name": "schizophrenia",
+                    "score": 0.11087395640541053,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005070",
+                    "name": "neoplasm",
+                    "score": 0.09671636581823803,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005388",
+                    "name": "primary biliary cholangitis",
+                    "score": 0.09503619019085671,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019008",
+                    "name": "benign recurrent intrahepatic cholestasis",
+                    "score": 0.09201725496884768,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011156",
+                    "name": "progressive familial intrahepatic cholestasis type 2",
+                    "score": 0.09180446065297115,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79302",
+                    "name": "Congenital bile acid synthesis defect type 3",
+                    "score": 0.09123425664942922,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018646",
+                    "name": "sclerosing cholangitis",
+                    "score": 0.09054237060673458,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030505",
+                    "name": "cholestasis, progressive familial intrahepatic, 8",
+                    "score": 0.08986259224076881,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011559",
+                    "name": "benign recurrent intrahepatic cholestasis type 2",
+                    "score": 0.08727652496391929,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79301",
+                    "name": "Congenital bile acid synthesis defect type 1",
+                    "score": 0.08722668352456764,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79303",
+                    "name": "Congenital bile acid synthesis defect type 2",
+                    "score": 0.08625680175217335,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013439",
+                    "name": "congenital bile acid synthesis defect 3",
+                    "score": 0.08539356898805754,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007256",
+                    "name": "hepatocellular carcinoma",
+                    "score": 0.08466810371809738,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004992",
+                    "name": "cancer",
+                    "score": 0.0839172780314214,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030503",
+                    "name": "cholestasis, progressive familial intrahepatic, 7, with or without hearing loss",
+                    "score": 0.08348257422055368,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013282",
+                    "name": "alpha 1-antitrypsin deficiency",
+                    "score": 0.08341361883255516,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_60",
+                    "name": "Alpha-1-antitrypsin deficiency",
+                    "score": 0.08341361883255516,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_1414",
+                    "name": "Cholestasis-lymphedema syndrome",
+                    "score": 0.08292695549327166,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009339",
+                    "name": "congenital bile acid synthesis defect 2",
+                    "score": 0.0824086511320323,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008966",
+                    "name": "Aagenaes syndrome",
+                    "score": 0.08229233408565592,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0021020",
+                    "name": "Crigler-Najjar syndrome type 1",
+                    "score": 0.08212061575616823,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011601",
+                    "name": "neonatal intrahepatic cholestasis due to citrin deficiency",
+                    "score": 0.08198340784069516,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011906",
+                    "name": "congenital bile acid synthesis defect 1",
+                    "score": 0.081639597859741,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030360",
+                    "name": "cholestasis, progressive familial intrahepatic, 6",
+                    "score": 0.08063109317106235,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005292",
+                    "name": "colitis",
+                    "score": 0.07993883212204701,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019394",
+                    "name": "Senior-Boichis syndrome",
+                    "score": 0.07983298840338834,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009275",
+                    "name": "neonatal hemochromatosis",
+                    "score": 0.07959717007150593,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018177",
+                    "name": "glioblastoma",
+                    "score": 0.079456046863201,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010913",
+                    "name": "Caroli disease",
+                    "score": 0.07905143495616898,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014564",
+                    "name": "congenital bile acid synthesis defect 5",
+                    "score": 0.07870105888137802,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0031040",
+                    "name": "cholestasis, progressive familial intrahepatic, 12",
+                    "score": 0.07842445299880348,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009379",
+                    "name": "Rotor syndrome",
+                    "score": 0.07780271791258071,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_255132",
+                    "name": "Adult-onset autosomal recessive sideroblastic anemia",
+                    "score": 0.07721911552684185,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014804",
+                    "name": "sideroblastic anemia 3",
+                    "score": 0.07721911552684185,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79095",
+                    "name": "Congenital bile acid synthesis defect type 4",
+                    "score": 0.07708915500224892,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004995",
+                    "name": "lean body mass",
+                    "score": 0.07681932881212128,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030800",
+                    "name": "cholestasis, progressive familial intrahepatic, 9",
+                    "score": 0.07649097751002773,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009469",
+                    "name": "benign recurrent intrahepatic cholestasis type 1",
+                    "score": 0.07617552878472585,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020693",
+                    "name": "glycogen storage disease due to liver phosphorylase kinase deficiency",
+                    "score": 0.0752187268969096,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009380",
+                    "name": "Dubin-Johnson syndrome",
+                    "score": 0.07508958819126295,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004267",
+                    "name": "biliary liver cirrhosis",
+                    "score": 0.07503602188570245,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014381",
+                    "name": "cholestasis, progressive familial intrahepatic, 4",
+                    "score": 0.07497436551190076,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013275",
+                    "name": "hemolytic anemia due to glucophosphate isomerase deficiency",
+                    "score": 0.0747334244624256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030991",
+                    "name": "bile acid conjugation defect 1",
+                    "score": 0.07470539966621113,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019087",
+                    "name": "cholangiocarcinoma",
+                    "score": 0.07448837889576829,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011725",
+                    "name": "Crigler-Najjar syndrome type 2",
+                    "score": 0.07414354371901764,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008967",
+                    "name": "congenital bile acid synthesis defect 4",
+                    "score": 0.07413844363691065,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019350",
+                    "name": "hereditary spherocytosis",
+                    "score": 0.0741221951988199,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_370088",
+                    "name": "Acute infantile liver failure-multisystemic involvement syndrome",
+                    "score": 0.07398452720551107,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009044",
+                    "name": "Crigler-Najjar syndrome",
+                    "score": 0.07391457213329314,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018055",
+                    "name": "pediatric hepatocellular carcinoma",
+                    "score": 0.0738555548968065,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030105",
+                    "name": "galactosemia 4",
+                    "score": 0.07381321952445236,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016264",
+                    "name": "autoimmune hepatitis",
+                    "score": 0.07359342929540695,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008867",
+                    "name": "biliary atresia",
+                    "score": 0.07354157531222213,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019149",
+                    "name": "cholesteryl ester storage disease",
+                    "score": 0.07340911269845445,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019514",
+                    "name": "hepatic veno-occlusive disease",
+                    "score": 0.07288129283970193,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008720",
+                    "name": "congenital isolated adrenocorticotropic hormone deficiency",
+                    "score": 0.07287012910822235,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_411",
+                    "name": "Hyperlipoproteinemia type 1",
+                    "score": 0.07283383452229662,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_83620",
+                    "name": "Congenital malabsorptive diarrhea due to paucity of enteroendocrine cells",
+                    "score": 0.07283380961176021,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012479",
+                    "name": "congenital malabsorptive diarrhea 4",
+                    "score": 0.07283380961176021,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_766",
+                    "name": "Hemolytic anemia due to red cell pyruvate kinase deficiency",
+                    "score": 0.07217775243056992,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009294",
+                    "name": "glycogen storage disease VI",
+                    "score": 0.07209313018332396,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017417",
+                    "name": "renal-hepatic-pancreatic dysplasia",
+                    "score": 0.07157147074189683,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859254",
+                    "name": "hepatorenocardiac degenerative fibrosis",
+                    "score": 0.07153292003393341,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011382",
+                    "name": "sickle cell disease",
+                    "score": 0.07152451104467737,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012251",
+                    "name": "MEDNIK syndrome",
+                    "score": 0.07143372890737887,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030815",
+                    "name": "cholestasis, progressive familial intrahepatic, 11",
+                    "score": 0.07118482714135578,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014789",
+                    "name": "CCDC115-CDG",
+                    "score": 0.07069882963244539,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013771",
+                    "name": "transient infantile hypertriglyceridemia and hepatosteatosis",
+                    "score": 0.07058836632032298,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0975807",
+                    "name": "cholestasis, progressive familial intrahepatic, 13",
+                    "score": 0.0704927375329233,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009340",
+                    "name": "non-spherocytic hemolytic anemia due to hexokinase deficiency",
+                    "score": 0.07049024902856843,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008689",
+                    "name": "dehydrated hereditary stomatocytosis with or without pseudohyperkalemia and/or perinatal edema",
+                    "score": 0.07019312119795183,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018637",
+                    "name": "familial chylomicronemia syndrome",
+                    "score": 0.07005088285974936,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008185",
+                    "name": "hereditary chronic pancreatitis",
+                    "score": 0.0700230631342615,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019263",
+                    "name": "autosomal erythropoietic protoporphyria",
+                    "score": 0.06986244988907978,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859180",
+                    "name": "bile acid malabsorption, primary, 2",
+                    "score": 0.06978365751728241,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_85450",
+                    "name": "Familial renal amyloidosis",
+                    "score": 0.069767319426898,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013276",
+                    "name": "Reynolds syndrome",
+                    "score": 0.06975732495263613,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007329",
+                    "name": "cirrhosis, familial",
+                    "score": 0.06973783372174433,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019005",
+                    "name": "nephronophthisis",
+                    "score": 0.06968783232831322,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009383",
+                    "name": "transient familial neonatal hyperbilirubinemia",
+                    "score": 0.0695316800255798,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013595",
+                    "name": "hyperbiliverdinemia",
+                    "score": 0.06952743601691518,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0031003",
+                    "name": "hypercholanemia, familial, 2",
+                    "score": 0.06951798914518514,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019257",
+                    "name": "hemochromatosis type 2",
+                    "score": 0.06904298653568733,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015515",
+                    "name": "carnitine palmitoyltransferase II deficiency",
+                    "score": 0.068984502434902,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030048",
+                    "name": "harderoporphyria",
+                    "score": 0.0689645556321233,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013091",
+                    "name": "glycogen storage disease IXc",
+                    "score": 0.06896354955362999,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010420",
+                    "name": "X-linked erythropoietic protoporphyria",
+                    "score": 0.06845753313592418,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_1460",
+                    "name": "Isolated CoQ-cytochrome C reductase deficiency",
+                    "score": 0.06839820993505061,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014659",
+                    "name": "infantile liver failure syndrome 2",
+                    "score": 0.06834486261078072,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005106",
+                    "name": "body composition measurement",
+                    "score": 0.06785041466445187,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009950",
+                    "name": "pyruvate kinase deficiency of red cells",
+                    "score": 0.06784460342592233,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011012",
+                    "name": "African iron overload",
+                    "score": 0.0677931127392791,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017910",
+                    "name": "dehydrated hereditary stomatocytosis",
+                    "score": 0.06779013557870309,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0005416",
+                    "name": "blood protein amount",
+                    "score": 0.0677286456509437,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010914",
+                    "name": "carnitine palmitoyl transferase II deficiency, severe infantile form",
+                    "score": 0.06772095021943049,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007745",
+                    "name": "Gilbert syndrome",
+                    "score": 0.06770837629148556,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007099",
+                    "name": "familial visceral amyloidosis",
+                    "score": 0.06749222956669462,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011308",
+                    "name": "GRACILE syndrome",
+                    "score": 0.0674920345106602,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014943",
+                    "name": "mitochondrial DNA depletion syndrome 15 (hepatocerebral type)",
+                    "score": 0.06710738606401144,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0100512",
+                    "name": "mitochondrial DNA depletion syndrome, hepatocerebral form",
+                    "score": 0.06710738606401144,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009257",
+                    "name": "galactose epimerase deficiency",
+                    "score": 0.06698880910177253,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0957253",
+                    "name": "diarrhea 13",
+                    "score": 0.06689251644294059,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009387",
+                    "name": "familial lipoprotein lipase deficiency",
+                    "score": 0.06677463689506748,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004272",
+                    "name": "anemia (phenotype)",
+                    "score": 0.06655551710566775,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0032799",
+                    "name": "mitochondrial DNA depletion syndrome 16 (hepatic type)",
+                    "score": 0.06648895577383904,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009868",
+                    "name": "glycogen storage disease IXb",
+                    "score": 0.0664254692039329,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011497",
+                    "name": "hereditary North American Indian childhood cirrhosis",
+                    "score": 0.06640220716905887,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014790",
+                    "name": "TMEM199-CDG",
+                    "score": 0.06630467915185041,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_279934",
+                    "name": "Mitochondrial DNA depletion syndrome, hepatocerebral form due to DGUOK deficiency",
+                    "score": 0.06619806357665953,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009636",
+                    "name": "mitochondrial DNA depletion syndrome 3 (hepatocerebral type)",
+                    "score": 0.06619806357665953,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010480",
+                    "name": "anemia, nonspherocytic hemolytic, due to G6PD deficiency",
+                    "score": 0.06618593725098304,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011257",
+                    "name": "MPI-congenital disorder of glycosylation",
+                    "score": 0.06618003148432725,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019107",
+                    "name": "Rh deficiency syndrome",
+                    "score": 0.06590368251632009,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_540",
+                    "name": "Familial hemophagocytic lymphohistiocytosis",
+                    "score": 0.06583991162171587,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_2924",
+                    "name": "Isolated polycystic liver disease",
+                    "score": 0.06576734060866855,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013131",
+                    "name": "polycystic kidney disease 2",
+                    "score": 0.06513418895374275,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009255",
+                    "name": "galactokinase deficiency",
+                    "score": 0.06499539118609449,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98870",
+                    "name": "Congenital dyserythropoietic anemia type III",
+                    "score": 0.06498788400101563,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007109",
+                    "name": "congenital dyserythropoietic anemia type 3",
+                    "score": 0.06498788400101563,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005789",
+                    "name": "hepatitis D virus infection",
+                    "score": 0.06493420518793001,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_293864",
+                    "name": "Hypoplastic pancreas-intestinal atresia-hypoplastic gallbladder syndrome",
+                    "score": 0.0646994870754412,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_882",
+                    "name": "Tyrosinemia type 1",
+                    "score": 0.06468119640291804,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011874",
+                    "name": "neonatal ichthyosis-sclerosing cholangitis syndrome",
+                    "score": 0.06417872236831206,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007369",
+                    "name": "hereditary coproporphyria",
+                    "score": 0.06410295849810169,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008810",
+                    "name": "familial apolipoprotein C-II deficiency",
+                    "score": 0.06410095660722213,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009705",
+                    "name": "carnitine palmitoyl transferase 1A deficiency",
+                    "score": 0.06407700372619575,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003345",
+                    "name": "hilar cholangiocarcinoma",
+                    "score": 0.06337206300492731,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009295",
+                    "name": "glycogen storage disease VII",
+                    "score": 0.06327857778068481,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014206",
+                    "name": "severe early-onset pulmonary alveolar proteinosis due to MARS deficiency",
+                    "score": 0.06326652537097927,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008493",
+                    "name": "overhydrated hereditary stomatocytosis",
+                    "score": 0.0629880962277883,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017319",
+                    "name": "hereditary elliptocytosis",
+                    "score": 0.06297568784605775,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018921",
+                    "name": "Meckel syndrome",
+                    "score": 0.06276536276869832,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012981",
+                    "name": "hereditary spherocytosis type 4",
+                    "score": 0.06260961771149136,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012335",
+                    "name": "obesity due to pro-opiomelanocortin deficiency",
+                    "score": 0.06257033342615978,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010598",
+                    "name": "glycogen storage disease IXa1",
+                    "score": 0.062479110851916535,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007669",
+                    "name": "renal cysts and diabetes syndrome",
+                    "score": 0.0624464600139991,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017400",
+                    "name": "hypoplastic pancreas-intestinal atresia-hypoplastic gallbalder syndrome",
+                    "score": 0.06241618577521363,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011698",
+                    "name": "glycine N-methyltransferase deficiency",
+                    "score": 0.062237863495328255,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017287",
+                    "name": "immunoglobulin G4-related sclerosing disease",
+                    "score": 0.062207681140529,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013111",
+                    "name": "acute infantile liver failure due to synthesis defect of mtDNA-encoded proteins",
+                    "score": 0.06216158631976417,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0975829",
+                    "name": "anemia, congenital dyserythropoietic, type IVb",
+                    "score": 0.06214916433020393,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008814",
+                    "name": "arginase deficiency",
+                    "score": 0.06196057594324397,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_90",
+                    "name": "Argininemia",
+                    "score": 0.06196057594324397,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016203",
+                    "name": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency",
+                    "score": 0.06195205507437209,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015072",
+                    "name": "liver neuroendocrine carcinoma",
+                    "score": 0.06193316543735487,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014098",
+                    "name": "CIDEC-related familial partial lipodystrophy",
+                    "score": 0.06182927243376017,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005501",
+                    "name": "congenital disorder of glycosylation type II",
+                    "score": 0.06178738671689591,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009249",
+                    "name": "hereditary fructose intolerance",
+                    "score": 0.06176343647572563,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013220",
+                    "name": "hemochromatosis type 2B",
+                    "score": 0.061654337969209425,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018883",
+                    "name": "Berardinelli-Seip congenital lipodystrophy",
+                    "score": 0.06164351487112004,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98869",
+                    "name": "Congenital dyserythropoietic anemia type I",
+                    "score": 0.0616407887610924,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008723",
+                    "name": "very long chain acyl-CoA dehydrogenase deficiency",
+                    "score": 0.061382584644985416,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020531",
+                    "name": "long chain acyl-CoA dehydrogenase deficiency",
+                    "score": 0.061382584644985416,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012173",
+                    "name": "long chain 3-hydroxyacyl-CoA dehydrogenase deficiency",
+                    "score": 0.06124006882857459,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0958022",
+                    "name": "lipodystrophy, familial partial, type 8",
+                    "score": 0.06122860250882678,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_2442",
+                    "name": "X-linked lymphoproliferative disease",
+                    "score": 0.06111166212118984,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013208",
+                    "name": "cirrhosis - dystonia - polycythemia - hypermanganesemia syndrome",
+                    "score": 0.06083148736267392,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_309854",
+                    "name": "Cirrhosis-dystonia-polycythemia-hypermanganesemia syndrome",
+                    "score": 0.06083148736267392,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012747",
+                    "name": "glycogen storage disease due to aldolase A deficiency",
+                    "score": 0.060802786972808984,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016487",
+                    "name": "beta-thalassemia intermedia",
+                    "score": 0.06070015464716303,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_912",
+                    "name": "Zellweger syndrome",
+                    "score": 0.0606411393812568,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017842",
+                    "name": "Senior-Loken syndrome",
+                    "score": 0.06062457146043719,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005080",
+                    "name": "portal hypertension",
+                    "score": 0.06047231521983186,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0032844",
+                    "name": "infantile liver failure syndrome 3",
+                    "score": 0.06034145686597739,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015073",
+                    "name": "gallbladder neuroendocrine tumor, grade 1/2",
+                    "score": 0.06031009390886456,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_98873",
+                    "name": "Congenital dyserythropoietic anemia type II",
+                    "score": 0.05999862022022195,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009134",
+                    "name": "congenital dyserythropoietic anemia type 2",
+                    "score": 0.05999862022022195,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_2697",
+                    "name": "Arthrogryposis - renal dysfunction - cholestasis",
+                    "score": 0.05985567075506777,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009889",
+                    "name": "autosomal recessive polycystic kidney disease",
+                    "score": 0.0598472978019427,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012465",
+                    "name": "hypercoagulability syndrome due to glycosylphosphatidylinositol deficiency",
+                    "score": 0.059805001440795466,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011614",
+                    "name": "3-hydroxy-3-methylglutaryl-CoA synthase deficiency",
+                    "score": 0.05957344939572842,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_364",
+                    "name": "Glycogen storage disease due to glucose-6-phosphatase deficiency",
+                    "score": 0.05953105195607928,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0800132",
+                    "name": "autoinflammatory-pancytopenia syndrome due to DNASE2 deficiency",
+                    "score": 0.05941180953983924,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013898",
+                    "name": "karyomegalic interstitial nephritis",
+                    "score": 0.05932563173061242,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015517",
+                    "name": "common variable immunodeficiency",
+                    "score": 0.05928341795924903,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_71212",
+                    "name": "Hyperinsulinism due to short chain 3-hydroxylacyl-CoA dehydrogenase deficiency",
+                    "score": 0.059219301553198225,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015104",
+                    "name": "porphyria cutanea tarda",
+                    "score": 0.0591206627432043,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_228429",
+                    "name": "Generalized congenital lipodystrophy with myopathy",
+                    "score": 0.059054752282564106,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009155",
+                    "name": "growth retardation, intellectual developmental disorder, hypotonia, and hepatopathy",
+                    "score": 0.05882448555410281,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79259",
+                    "name": "Glycogen storage disease due to glucose-6-phosphatase deficiency type b",
+                    "score": 0.058562132664351695,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009258",
+                    "name": "classic galactosemia",
+                    "score": 0.05854991852039328,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015278",
+                    "name": "familial pancreatic carcinoma",
+                    "score": 0.058318674458538486,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0002882",
+                    "name": "colon neuroendocrine neoplasm",
+                    "score": 0.058306868435402726,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014374",
+                    "name": "nephronophthisis 18",
+                    "score": 0.058164888174561356,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0033004",
+                    "name": "polycystic kidney disease 4",
+                    "score": 0.05805627276171235,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018588",
+                    "name": "ALECT2 amyloidosis",
+                    "score": 0.057804958460526766,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009288",
+                    "name": "glycogen storage disease Ib",
+                    "score": 0.05770873500363696,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0100347",
+                    "name": "carcinoid syndrome",
+                    "score": 0.057684845007754226,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859216",
+                    "name": "neurodevelopmental disorder with microcephaly, seizures, and neonatal cholestasis",
+                    "score": 0.05756781138710408,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0033557",
+                    "name": "hemophagocytic lymphohistiocytosis, familial, 6",
+                    "score": 0.057530802071100236,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009216",
+                    "name": "glycogen storage disease due to GLUT2 deficiency",
+                    "score": 0.05737865836425503,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0032819",
+                    "name": "hypothyroidism, congenital, nongoitrous, 7",
+                    "score": 0.05722081696798343,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_357329",
+                    "name": "Cryptosporidiosis - chronic cholangitis - liver disease",
+                    "score": 0.05720356990809814,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014082",
+                    "name": "cryptosporidiosis-chronic cholangitis-liver disease syndrome",
+                    "score": 0.05720356990809814,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0054741",
+                    "name": "combined oxidative phosphorylation deficiency 34",
+                    "score": 0.05712105093943272,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015068",
+                    "name": "rectal neuroendocrine tumor",
+                    "score": 0.05709983089610956,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003646",
+                    "name": "rectum neuroendocrine neoplasm",
+                    "score": 0.05709983089610956,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017320",
+                    "name": "phosphoenolpyruvate carboxykinase deficiency",
+                    "score": 0.057095763464486624,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010315",
+                    "name": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+                    "score": 0.056977407569245256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030924",
+                    "name": "proteasome-associated autoinflammatory syndrome 5",
+                    "score": 0.05695246092905404,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010161",
+                    "name": "tyrosinemia type I",
+                    "score": 0.05694072060900355,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014389",
+                    "name": "polyglucosan body myopathy 1 with or without immunodeficiency",
+                    "score": 0.05686745756247656,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0000192",
+                    "name": "polyglucosan body myopathy",
+                    "score": 0.05686745756247656,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_381",
+                    "name": "Griscelli disease",
+                    "score": 0.056812657082912485,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011628",
+                    "name": "propionic acidemia",
+                    "score": 0.05680545027574612,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0958181",
+                    "name": "mitochondrial trifunctional protein deficiency 1",
+                    "score": 0.056775678565229866,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_88618",
+                    "name": "Psychomotor retardation due to S-adenosylhomocysteine hydrolase deficiency",
+                    "score": 0.0566949869636237,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013404",
+                    "name": "hypermethioninemia with deficiency of S-adenosylhomocysteine hydrolase",
+                    "score": 0.0566949869636237,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018479",
+                    "name": "congenital adrenal hyperplasia",
+                    "score": 0.056678351763720054,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011871",
+                    "name": "Niemann-Pick disease type B",
+                    "score": 0.0566707589509277,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015541",
+                    "name": "hereditary hemophagocytic lymphohistiocytosis",
+                    "score": 0.05658760348362365,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_572",
+                    "name": "Immunodeficiency by defective expression of HLA class 2",
+                    "score": 0.056573263785261875,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011792",
+                    "name": "thyroid dyshormonogenesis 6",
+                    "score": 0.05657261496729477,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008265",
+                    "name": "polycystic liver disease 1",
+                    "score": 0.05656527470073644,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018999",
+                    "name": "LCAT deficiency",
+                    "score": 0.05643779634274861,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019633",
+                    "name": "relapsing fever",
+                    "score": 0.05641159107783005,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011216",
+                    "name": "hemochromatosis type 2A",
+                    "score": 0.0563227379210996,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030311",
+                    "name": "combined oxidative phosphorylation deficiency 52",
+                    "score": 0.05631606495150113,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017979",
+                    "name": "autoimmune lymphoproliferative syndrome",
+                    "score": 0.056299074544292706,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859164",
+                    "name": "osteootohepatoenteric syndrome",
+                    "score": 0.056176548556357654,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009061",
+                    "name": "cystic fibrosis",
+                    "score": 0.056121770241145785,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0968983",
+                    "name": "proteasome-associated autoinflammatory syndrome 6",
+                    "score": 0.056114335947485744,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012997",
+                    "name": "cholestasis-pigmentary retinopathy-cleft palate syndrome",
+                    "score": 0.05606357004800195,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013811",
+                    "name": "combined oxidative phosphorylation defect type 9",
+                    "score": 0.05605196934700768,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008833",
+                    "name": "renal-hepatic-pancreatic dysplasia 1",
+                    "score": 0.05603626220318359,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005136",
+                    "name": "malaria",
+                    "score": 0.056032463743566005,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_77259",
+                    "name": "Gaucher disease type 1",
+                    "score": 0.055942189757616424,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017214",
+                    "name": "vitamin B12-responsive methylmalonic acidemia",
+                    "score": 0.055881648470976236,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009966",
+                    "name": "NPHP3-related Meckel-like syndrome",
+                    "score": 0.05584372136499993,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0033541",
+                    "name": "immunodeficiency 69",
+                    "score": 0.05578807906465574,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_101088",
+                    "name": "X-linked hyper-IgM syndrome",
+                    "score": 0.055740649649971205,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010626",
+                    "name": "hyper-IgM syndrome type 1",
+                    "score": 0.055740649649971205,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0100058",
+                    "name": "hypervalinemia and hyperleucine-isoleucinemia",
+                    "score": 0.055729562254330664,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014332",
+                    "name": "hyperammonemic encephalopathy due to carbonic anhydrase VA deficiency",
+                    "score": 0.05566124131174936,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008988",
+                    "name": "citrullinemia type I",
+                    "score": 0.05564496953203617,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009194",
+                    "name": "immunodeficiency 32B",
+                    "score": 0.05563223955926369,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012923",
+                    "name": "congenital generalized lipodystrophy type 3",
+                    "score": 0.05562854376071684,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010200",
+                    "name": "Wilson disease",
+                    "score": 0.05561585399851722,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_631",
+                    "name": "Non-acquired isolated growth hormone deficiency",
+                    "score": 0.05551464130272443,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0002611",
+                    "name": "Cholestatic liver disease",
+                    "score": 0.055443137444597314,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003111",
+                    "name": "gastric neuroendocrine neoplasm",
+                    "score": 0.05542270831387162,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0006976",
+                    "name": "somatostatinoma",
+                    "score": 0.055395297807982496,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011174",
+                    "name": "hyperzincemia with functional zinc depletion",
+                    "score": 0.0553735336609844,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008918",
+                    "name": "carnitine-acylcarnitine translocase deficiency",
+                    "score": 0.0553371916419404,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009372",
+                    "name": "encephalopathy due to hydroxykynureninuria",
+                    "score": 0.05531255298496142,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018582",
+                    "name": "GCGR-related hyperglucagonemia",
+                    "score": 0.05531132105211247,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007318",
+                    "name": "Alagille syndrome",
+                    "score": 0.05524545534126006,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019439",
+                    "name": "AA amyloidosis",
+                    "score": 0.05522816558480841,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014158",
+                    "name": "nephronophthisis 16",
+                    "score": 0.055093268937848494,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009974",
+                    "name": "familial hemophagocytic lymphohistiocytosis type 1",
+                    "score": 0.05495649769973677,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015066",
+                    "name": "neuroendocrine tumor of the appendix, well differentiated, low or intermediate grade",
+                    "score": 0.05494194651956927,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0024501",
+                    "name": "appendix neuroendocrine neoplasm",
+                    "score": 0.05494194651956927,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009043",
+                    "name": "generalized resistance to thyroid hormone",
+                    "score": 0.054822705685898074,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009259",
+                    "name": "gamma-glutamylcysteine synthetase deficiency",
+                    "score": 0.0548105403490147,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_158",
+                    "name": "Systemic primary carnitine deficiency",
+                    "score": 0.0548083926794147,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_1454",
+                    "name": "Joubert syndrome with hepatic defect",
+                    "score": 0.054780762478834184,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030397",
+                    "name": "portal hypertension, noncirrhotic, 2",
+                    "score": 0.054731696646681975,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010504",
+                    "name": "immunodeficiency 47",
+                    "score": 0.05469740784905287,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015524",
+                    "name": "hyperplastic polyposis syndrome",
+                    "score": 0.054603575630391275,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010142",
+                    "name": "hypothyroidism due to TSH receptor mutations",
+                    "score": 0.05451426049884246,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0958023",
+                    "name": "lipodystrophy, congenital generalized, type 5",
+                    "score": 0.054483051533335755,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79477",
+                    "name": "Griscelli disease type 2",
+                    "score": 0.0544346981690145,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011872",
+                    "name": "Griscelli syndrome type 2",
+                    "score": 0.0544346981690145,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009529",
+                    "name": "pyruvate dehydrogenase E3 deficiency",
+                    "score": 0.05420914446365247,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005108",
+                    "name": "viral infectious disease",
+                    "score": 0.05420011762236048,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017858",
+                    "name": "acute erythroid leukemia",
+                    "score": 0.054123327141442655,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0957271",
+                    "name": "autoinflammatory disease, systemic, with vasculitis",
+                    "score": 0.05405988259972177,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010703",
+                    "name": "ornithine carbamoyltransferase deficiency",
+                    "score": 0.05405520406236178,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011821",
+                    "name": "Meckel syndrome, type 3",
+                    "score": 0.054036270553450255,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013511",
+                    "name": "cyanosis, transient neonatal",
+                    "score": 0.05393094029486511,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017238",
+                    "name": "hemoglobinopathy Toms River",
+                    "score": 0.05393094029486511,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018702",
+                    "name": "Castleman-Kojima disease",
+                    "score": 0.05393094029486511,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011631",
+                    "name": "hemochromatosis type 4",
+                    "score": 0.053914309201404303,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015545",
+                    "name": "macrophage activation syndrome",
+                    "score": 0.05390712292645209,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005246",
+                    "name": "osteomyelitis",
+                    "score": 0.053771227001574225,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009109",
+                    "name": "lysinuric protein intolerance",
+                    "score": 0.05375414150526961,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010023",
+                    "name": "combined immunodeficiency due to ZAP70 deficiency",
+                    "score": 0.053715557368440525,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008165",
+                    "name": "southeast Asian ovalocytosis",
+                    "score": 0.05369194532216902,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012624",
+                    "name": "acyl-CoA dehydrogenase 9 deficiency",
+                    "score": 0.053639253500998046,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018982",
+                    "name": "Niemann-Pick disease type C",
+                    "score": 0.05361843999551505,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018247",
+                    "name": "CADDS",
+                    "score": 0.05359277472782861,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009292",
+                    "name": "glycogen storage disease due to glycogen branching enzyme deficiency",
+                    "score": 0.053556481986098574,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008721",
+                    "name": "medium chain acyl-CoA dehydrogenase deficiency",
+                    "score": 0.05351367437281901,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015065",
+                    "name": "ileal neuroendocrine tumor, well differentiated, low or intermediate grade",
+                    "score": 0.05339422821700632,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050135",
+                    "name": "growth differentiation factor 15  level",
+                    "score": 0.053390037285686455,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008725",
+                    "name": "congenital lipoid adrenal hyperplasia due to STAR deficency",
+                    "score": 0.0533609660300847,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0033636",
+                    "name": "mitochondrial complex IV deficiency, nuclear type 4",
+                    "score": 0.05334977597337341,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0100255",
+                    "name": "adenosine kinase deficiency",
+                    "score": 0.05334151175717839,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_199337",
+                    "name": "Pancreatic insufficiency - anemia - hyperostosis",
+                    "score": 0.053244137731576026,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012992",
+                    "name": "pancreatic insufficiency-anemia-hyperostosis syndrome",
+                    "score": 0.053244137731576026,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004726",
+                    "name": "liver inflammatory myofibroblastic tumor",
+                    "score": 0.05312895201019931,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019610",
+                    "name": "Zollinger-Ellison syndrome",
+                    "score": 0.053101644165380935,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_69723",
+                    "name": "Tyrosinemia type 3",
+                    "score": 0.05306283828063904,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010162",
+                    "name": "tyrosinemia type III",
+                    "score": 0.05306283828063904,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0021001",
+                    "name": "hemochromatosis type 1",
+                    "score": 0.053061195703507105,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019475",
+                    "name": "subcutaneous panniculitis-like T-cell lymphoma",
+                    "score": 0.05290535619811507,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012191",
+                    "name": "hepatoencephalopathy due to combined oxidative phosphorylation defect type 1",
+                    "score": 0.052856027553621725,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_137681",
+                    "name": "Hepatoencephalopathy due to combined oxidative phosphorylation deficiency type 1",
+                    "score": 0.052856027553621725,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79258",
+                    "name": "Glycogen storage disease due to glucose-6-phosphatase deficiency type a",
+                    "score": 0.05283775388302899,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009287",
+                    "name": "glycogen storage disease due to glucose-6-phosphatase deficiency type IA",
+                    "score": 0.05283775388302899,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008569",
+                    "name": "thyroid hormone resistance, generalized, autosomal dominant",
+                    "score": 0.05278421613463508,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009305",
+                    "name": "granulocytopenia with immunoglobulin abnormality",
+                    "score": 0.052688536016700045,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014094",
+                    "name": "severe congenital hypochromic anemia with ringed sideroblasts",
+                    "score": 0.05266615590327746,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008815",
+                    "name": "argininosuccinic aciduria",
+                    "score": 0.05266338405436733,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010122",
+                    "name": "congenital thrombotic thrombocytopenic purpura",
+                    "score": 0.05265732705119334,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0958185",
+                    "name": "mitochondrial trifunctional protein deficiency 2",
+                    "score": 0.05260517522725448,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012552",
+                    "name": "multiple endocrine neoplasia type 4",
+                    "score": 0.05253290183344948,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019192",
+                    "name": "AKT2-related familial partial lipodystrophy",
+                    "score": 0.05238794440155648,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79085",
+                    "name": "Familial partial lipodystrophy due to AKT2 mutations",
+                    "score": 0.05238794440155648,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009251",
+                    "name": "fructose-1,6-bisphosphatase deficiency",
+                    "score": 0.05237393116539969,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012072",
+                    "name": "familial partial lipodystrophy, Kobberling type",
+                    "score": 0.052345134735055504,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79084",
+                    "name": "Familial partial lipodystrophy, K\u00f6bberling type",
+                    "score": 0.052345134735055504,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_848",
+                    "name": "Beta-thalassemia",
+                    "score": 0.0522690628816329,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019402",
+                    "name": "beta thalassemia",
+                    "score": 0.0522690628816329,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013081",
+                    "name": "lymphoproliferative syndrome 1",
+                    "score": 0.05222943570832503,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007573",
+                    "name": "erythroleukemia, familial, susceptibility to",
+                    "score": 0.05217933710580111,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013730",
+                    "name": "graft versus host disease",
+                    "score": 0.05213498752323895,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018770",
+                    "name": "Jeune syndrome",
+                    "score": 0.052103022972251556,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009397",
+                    "name": "neonatal severe primary hyperparathyroidism",
+                    "score": 0.05204449178937657,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009192",
+                    "name": "Wolcott-Rallison syndrome",
+                    "score": 0.05200712315962511,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_93160",
+                    "name": "Hypocalcemic vitamin D-resistant rickets",
+                    "score": 0.051928638771039995,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007620",
+                    "name": "fish eye disease",
+                    "score": 0.05190769591260787,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79292",
+                    "name": "Fish-eye disease",
+                    "score": 0.05190769591260787,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005500",
+                    "name": "congenital disorder of glycosylation type I",
+                    "score": 0.05189938036587746,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008863",
+                    "name": "sitosterolemia",
+                    "score": 0.05187279114855431,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010780",
+                    "name": "mitochondrial myopathy with reversible cytochrome C oxidase deficiency",
+                    "score": 0.051865656204137474,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011448",
+                    "name": "PPARG-related familial partial lipodystrophy",
+                    "score": 0.05181663554285638,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009528",
+                    "name": "chylomicron retention disease",
+                    "score": 0.05167095948346816,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015612",
+                    "name": "Dent disease",
+                    "score": 0.05149561437463442,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013536",
+                    "name": "heme oxygenase 1 deficiency",
+                    "score": 0.051472412972645876,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030498",
+                    "name": "immunodeficiency 92",
+                    "score": 0.051467690563391566,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009825",
+                    "name": "5-oxoprolinase deficiency",
+                    "score": 0.051402398122397275,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013952",
+                    "name": "peroxisome biogenesis disorder 13A (Zellweger)",
+                    "score": 0.0513701625461831,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013041",
+                    "name": "atypical hemolytic-uremic syndrome with I factor anomaly",
+                    "score": 0.05134059615780833,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013044",
+                    "name": "atypical hemolytic-uremic syndrome with thrombomodulin anomaly",
+                    "score": 0.05134059615780833,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013040",
+                    "name": "atypical hemolytic-uremic syndrome with MCP/CD46 anomaly",
+                    "score": 0.05134059615780833,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_217330",
+                    "name": "Hyperuricemia - anemia - renal failure",
+                    "score": 0.0512492811886014,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008877",
+                    "name": "blue diaper syndrome",
+                    "score": 0.05121452836293255,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014493",
+                    "name": "autoimmune lymphoproliferative syndrome due to CTLA4 haploinsufficiency",
+                    "score": 0.05110786351042772,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0957920",
+                    "name": "immunodeficiency 113 with autoimmunity and autoinflammation",
+                    "score": 0.05110755552721547,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012211",
+                    "name": "MPDU1-congenital disorder of glycosylation",
+                    "score": 0.0510660804546342,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010472",
+                    "name": "developmental and epileptic encephalopathy, 36",
+                    "score": 0.0510660804546342,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_324422",
+                    "name": "ALG13-CDG",
+                    "score": 0.0510660804546342,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012783",
+                    "name": "RFT1-congenital disorder of glycosylation",
+                    "score": 0.0510660804546342,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013968",
+                    "name": "PGM1-congenital disorder of glycosylation",
+                    "score": 0.0510660804546342,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005825",
+                    "name": "leptospirosis",
+                    "score": 0.05103158633486361,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019193",
+                    "name": "acquired generalized lipodystrophy",
+                    "score": 0.05093364767337218,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019860",
+                    "name": "thyroid hemiagenesis",
+                    "score": 0.05092892526411788,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013043",
+                    "name": "atypical hemolytic-uremic syndrome with C3 anomaly",
+                    "score": 0.0508800585944429,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013042",
+                    "name": "atypical hemolytic-uremic syndrome with B factor anomaly",
+                    "score": 0.050735717128974366,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016603",
+                    "name": "citrullinemia type II",
+                    "score": 0.050729968109012605,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014712",
+                    "name": "Senior-Loken syndrome 9",
+                    "score": 0.050704508163467665,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014252",
+                    "name": "familial hypobetalipoproteinemia 1",
+                    "score": 0.050627923004691336,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030071",
+                    "name": "retinitis pigmentosa 89",
+                    "score": 0.05062689639398387,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009291",
+                    "name": "glycogen storage disease III",
+                    "score": 0.050606774824117705,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_32",
+                    "name": "Glutathione synthetase deficiency",
+                    "score": 0.050519718236125305,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019542",
+                    "name": "acute liver failure",
+                    "score": 0.05051520114901249,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019169",
+                    "name": "pyruvate dehydrogenase deficiency",
+                    "score": 0.05045185926836237,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_332",
+                    "name": "Congenital intrinsic factor deficiency",
+                    "score": 0.05034211458373516,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009113",
+                    "name": "hemolytic anemia due to diphosphoglycerate mutase deficiency",
+                    "score": 0.05028503502840053,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0800449",
+                    "name": "lysosomal acid lipase deficiency",
+                    "score": 0.050211683693352695,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013576",
+                    "name": "recurrent infections associated with rare immunoglobulin isotypes deficiency",
+                    "score": 0.05016163642136413,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011381",
+                    "name": "dominant beta-thalassemia",
+                    "score": 0.05012277920608686,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011989",
+                    "name": "leishmaniasis",
+                    "score": 0.05009819187964326,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010132",
+                    "name": "familial thyroid dyshormonogenesis",
+                    "score": 0.05009203221539851,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008660",
+                    "name": "autosomal dominant hypophosphatemic rickets",
+                    "score": 0.050070678712683406,
+                    "matched": false
+                }
+            ],
+            "articles": [
+                {
+                    "pmid": "36224396",
+                    "title": "A saturated map of common genetic variants associated with human height.",
+                    "abstract": "",
+                    "year": "2022 Oct",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "39024449",
+                    "title": "Diversity and scale: Genetic architecture of 2068 traits in the VA Million Veteran Program.",
+                    "abstract": "",
+                    "year": "2024 Jul 19",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "35399580",
+                    "title": "Ancestral diversity improves discovery and fine-mapping of genetic loci for anthropometric traits-The Hispanic/Latino Anthropometry Consortium.",
+                    "abstract": "",
+                    "year": "2022 Apr 14",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "40968291",
+                    "title": "Pan-UK Biobank genome-wide association analyses enhance discovery and resolution of ancestry-enriched effects.",
+                    "abstract": "",
+                    "year": "2025 Oct",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "39134668",
+                    "title": "A Genomics England haplotype reference panel and imputation of UK Biobank.",
+                    "abstract": "",
+                    "year": "2024 Sep",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "40770095",
+                    "title": "Whole-genome sequencing of 490,640 UK Biobank participants.",
+                    "abstract": "",
+                    "year": "2025 Sep",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "37377600",
+                    "title": "Variants in JAZF1 are associated with asthma, type 2 diabetes, and height in the United Kingdom biobank population.",
+                    "abstract": "",
+                    "year": "2023",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "40436827",
+                    "title": "Genome-wide association studies in a large Korean cohort identify quantitative trait loci for 36 traits and illuminate their genetic architectures.",
+                    "abstract": "",
+                    "year": "2025 May 28",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "30595370",
+                    "title": "Leveraging Polygenic Functional Enrichment to Improve GWAS Power.",
+                    "abstract": "",
+                    "year": "2019 Jan 3",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "36653562",
+                    "title": "FinnGen provides genetic insights from a well-phenotyped isolated population.",
+                    "abstract": "",
+                    "year": "2023 Jan",
+                    "source": "gwas_credible_sets"
+                }
+            ],
+            "ot_synonym_selection_usage": {
+                "text": "VERDICT: ALREADY KNOWN\nBASIS: body height\nREASON: \"Body height\" is the same trait as \"Height,\" just worded differently.",
+                "input_tokens": 10081,
+                "output_tokens": 52,
+                "flex": false
+            },
+            "match": {
+                "method": "broad_opus",
+                "matched_id": "OBA_VT0001253",
+                "basis": "body height",
+                "reason": "\"Body height\" is the same trait as \"Height,\" just worded differently.",
+                "verdict_text": "ALREADY KNOWN",
+                "unresolved_basis": false
+            }
+        },
+        "synonyms": [
+            "Stature",
+            "Body height",
+            "Standing height",
+            "Linear growth",
+            "Tallness",
+            "Vertical measurement"
+        ],
+        "pubmed_pmids": [
+            "35528937",
+            "39036642",
+            "31024649",
+            "10790550",
+            "41441977",
+            "30266155",
+            "30236549",
+            "35894240",
+            "23797137",
+            "22628294",
+            "40545044",
+            "39262913",
+            "38510289",
+            "34082807"
+        ]
+    }
+}

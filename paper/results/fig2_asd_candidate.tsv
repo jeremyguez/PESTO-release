@@ -1,0 +1,5 @@
+arm	n	established	rate	rate_lo	rate_hi	lost_vs_current	gained_vs_current	mcnemar_exact_p	mcnemar_midp	diff_pts	diff_lo	diff_hi
+current	56	1	1.79	0.05	9.55	0	0	nan	nan	0.0	nan	nan
+score	56	27	48.21	34.66	61.97	0	26	2.9802322387695312e-08	1.4901161193847656e-08	46.43	34.02	59.3
+current-bare	56	9	16.07	7.62	28.33	0	8	0.0078125	0.00390625	14.29	6.95	25.74
+current-open	56	8	14.29	6.38	26.22	0	7	0.015625	0.0078125	12.5	5.28	23.63

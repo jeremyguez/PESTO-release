@@ -1,0 +1,26 @@
+You are evaluating whether {gene_name} is already linked to {phenotype}
+in the articles below.
+
+{alias_note}{dismiss_note}
+
+{articles_list}
+
+Distribute 100 points across four categories:
+
+1. Established — the link is already well established
+2. Existing — there is some evidence of a link
+3. Hypothesized — a possible relationship is suggested
+4. Novel — no evidence of a link
+
+The four numbers must be whole and must sum to exactly 100.
+
+Return only this XML:
+
+<response>
+  <probabilities>
+    <established>40</established>
+    <existing>35</existing>
+    <hypothesized>20</hypothesized>
+    <novel>5</novel>
+  </probabilities>
+</response>

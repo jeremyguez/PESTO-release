@@ -1,0 +1,186 @@
+{
+ "gene": "DDX41",
+ "phenotype": "acromesomelic dysplasia",
+ "articles": [
+  {
+   "pmid": "33328584",
+   "title": "Advances in germline predisposition to acute leukaemias and myeloid neoplasms.",
+   "pubdate": "2021 Feb",
+   "abstract": "Although much work has focused on the elucidation of somatic alterations that drive the development of acute leukaemias and other haematopoietic diseases, it has become increasingly recognized that germline mutations are common in many of these neoplasms. In this Review, we highlight the different genetic pathways impacted by germline mutations that can ultimately lead to the development of familial and sporadic haematological malignancies, including acute lymphoblastic leukaemia, acute myeloid leukaemia (AML) and myelodysplastic syndrome (MDS). Many of the genes disrupted by somatic mutations in these diseases (for example, TP53, RUNX1, IKZF1 and ETV6) are the same as those that harbour germline mutations in children and adolescents who develop these malignancies. Moreover, the presumption that familial leukaemias only present in childhood is no longer true, in large part due to the numerous studies demonstrating germline DDX41 mutations in adults with MDS and AML. Lastly, we highlight how different cooperating events can influence the ultimate phenotype in these different familial leukaemia syndromes.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "35671390",
+   "title": "The genetic landscape of germline DDX41 variants predisposing to myeloid neoplasms.",
+   "pubdate": "2022 Aug 18",
+   "abstract": "Germline DDX41 variants are the most common mutations predisposing to acute myeloid leukemia (AML)/myelodysplastic syndrome (MDS) in adults, but the causal variant (CV) landscape and clinical spectrum of hematologic malignancies (HMs) remain unexplored. Here, we analyzed the genomic profiles of 176 patients with HM carrying 82 distinct presumably germline DDX41 variants among a group of 9821 unrelated patients. Using our proposed DDX41-specific variant classification, we identified features distinguishing 116 patients with HM with CV from 60 patients with HM with variant of uncertain significance (VUS): an older age (median 69 years), male predominance (74% in CV vs 60% in VUS, P = .03), frequent concurrent somatic DDX41 variants (79% in CV vs 5% in VUS, P < .0001), a lower somatic mutation burden (1.4 \u00b1 0.1 in CV vs 2.9 \u00b1 0.04 in VUS, P = .012), near exclusion of canonical recurrent genetic abnormalities including mutations in NPM1, CEBPA, and FLT3 in AML, and favorable overall survival (OS) in patients with AML/MDS. This superior OS was determined independent of blast count, abnormal karyotypes, and concurrent variants, including TP53 in patients with AML/MDS, regardless of patient's sex, age, or specific germline CV, suggesting that germline DDX41 variants define a distinct clinical entity. Furthermore, unrelated patients with myeloproliferative neoplasm and B-cell lymphoma were linked by DDX41 CV, thus expanding the known disease spectrum. This study outlines the CV landscape, expands the phenotypic spectrum in unrelated DDX41-mutated patients, and underscores the urgent need for gene-specific diagnostic and clinical management guidelines.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "36445482",
+   "title": "The International Consensus Classification (ICC) of hematologic neoplasms with germline predisposition, pediatric myelodysplastic syndrome, and juvenile myelomonocytic leukemia.",
+   "pubdate": "2023 Jan",
+   "abstract": "Updating the classification of hematologic neoplasia with germline predisposition, pediatric myelodysplastic syndrome (MDS), and juvenile myelomonocytic leukemia (JMML) is critical for diagnosis, therapy, research, and clinical trials. Advances in next-generation sequencing technology have led to the identification of an expanding group of genes that predispose to the development of hematolymphoid neoplasia when mutated in germline configuration and inherited. This review encompasses recent advances in the classification of myeloid and lymphoblastic neoplasia with germline predisposition summarizing important genetic and phenotypic information, relevant laboratory testing, and pathologic bone marrow features. Genes are organized into three major categories including (1) those that are not associated with constitutional disorder and include CEBPA, DDX41, and TP53; (2) those associated with thrombocytopenia or platelet dysfunction including RUNX1, ANKRD26, and ETV6; and (3) those associated with constitutional disorders affecting multiple organ systems including GATA2, SAMD9, and SAMD9L, inherited genetic mutations associated with classic bone marrow failure syndromes and JMML, and Down syndrome. A provisional category of germline predisposition genes is created to recognize genes with growing evidence that may be formally included in future revised classifications as substantial supporting data emerges. We also detail advances in the classification of pediatric myelodysplastic syndrome (MDS), expanding the definition of refractory cytopenia of childhood (RCC) to include early manifestation of MDS in patients with germline predisposition. Finally, updates in the classification of juvenile myelomonocytic leukemia are presented which genetically define JMML as a myeloproliferative/myelodysplastic disease harboring canonical RAS pathway mutations. Diseases with features overlapping with JMML that do not carry RAS pathway mutations are classified as JMML-like. The review is based on the International Consensus Classification (ICC) of Myeloid and Lymphoid Neoplasms as reported by Arber et al. (Blood 140(11):1200-1228, 2022).",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "25920683",
+   "title": "Inherited and Somatic Defects in DDX41 in Myeloid Neoplasms.",
+   "pubdate": "2015 May 11",
+   "abstract": "Most cases of adult myeloid neoplasms are routinely assumed to be sporadic. Here, we describe an adult familial acute myeloid leukemia (AML) syndrome caused by germline mutations in the DEAD/H-box helicase gene DDX41. DDX41 was also found to be affected by somatic mutations in sporadic cases of myeloid neoplasms as well as in a biallelic fashion in 50% of patients with germline DDX41 mutations. Moreover, corresponding deletions on 5q35.3 present in 6% of cases led to haploinsufficient DDX41 expression. DDX41 lesions caused altered pre-mRNA splicing and RNA processing. DDX41 is exemplary of other RNA helicase genes also affected by somatic mutations, suggesting that they constitute a family of tumor suppressor genes.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "39357070",
+   "title": "Inherited Predispositions to Myeloid Neoplasms: Pathogenesis and Clinical Implications.",
+   "pubdate": "2025 Jan",
+   "abstract": "Myeloid neoplasms with and without preexisting platelet disorders frequently develop in association with an underlying germline predisposition. Germline alterations affecting ANKRD26, CEBPA, DDX41, ETV6, and RUNX1 are associated with nonsyndromic predisposition to the development of myeloid neoplasms including acute myeloid leukemia and myelodysplastic syndrome. However, germline predisposition to myeloid neoplasms is also associated with a wide range of other syndromes, including SAMD9/9L associated predisposition, GATA2 deficiency, RASopathies, ribosomopathies, telomere biology disorders, Fanconi anemia, severe congenital neutropenia, Down syndrome, and others. In the fifth edition of the World Health Organization (WHO) series on the classification of tumors of hematopoietic and lymphoid tissues, myeloid neoplasms associated with germline predisposition have been recognized as a separate entity. Here, we review several disorders from this WHO entity as well as other related conditions with an emphasis on the molecular pathogenesis of disease and accompanying somatic alterations. Finally, we provide an overview of establishing the molecular diagnosis of these germline genetic conditions and general recommendations for screening and management of the associated hematologic conditions.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "40818987",
+   "title": "Newly diagnosed acute myeloid leukemia in unfit patients: 2026 treatment algorithms.",
+   "pubdate": "2025 Aug 16",
+   "abstract": "Management paradigms for newly-diagnosed acute myeloid leukemia (ND-AML) in patients considered unfit to receive intensive chemotherapy have evolved with improved understanding of disease biology. In this setting, management requires clear delineation of goals of therapy that should include preservation of quality-of-life (QoL). Combination of venetoclax (Ven) and a hypomethylating agent (HMA) is the current standard-of-care in most circumstances with flexible options in regard to drug dose and duration of treatment as well as the addition (triplet combinations) or alternative use of targeted therapies, such as inhibitors of FLT3, IDH1, IDH2, or menin for patients with NPM1MUT or KMT2A rearrangements (KMT2Ar). Response rates (CR/CRi:40-90%) and overall survival outcomes (3-year: 0-67%) following Ven-HMA therapy are highly variable and depend primarily on tumor genetics while achievement of complete response with (CR) or without count recovery (CRi) and consolidation with allogeneic stem cell transplant (ASCT) are essential in securing long-term survival. Favorable genomic predictors of response to Ven-HMA include NPM1MUT, IDH2MUT, and DDX41MUT, and unfavorable TP53MUT, FLT3-ITD, and K/NRASMUT. Favorable predictors of overall survival include IDH2MUT, and unfavorable TP53MUT, FLT3-ITD, K/NRASMUT, and KMT2Ar. Whether or not triplet regimens provide significant survival gain over Ven-HMA in genetically targetable subgroups remains to be determined. Particularly frail patients who are considered unfit for Ven-HMA might benefit from monotherapy targeting FLT3MUT, IDH1/2MUT, NPM1MUTor KMT2Ar. Future research projects should focus on incorporating patient-reported outcomes in clinical trials, optimization of Ven-HMA dosing and treatment duration especially in triplet combinations and broadening the use of ASCT and clarification of its timing.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "31203998",
+   "title": "Hereditary myeloid malignancies.",
+   "pubdate": "2019 Jun",
+   "abstract": "Myelodysplastic syndromes and acute myeloid leukemia are sporadic for the majority of cases affecting the elderly population. Inherited cases, however, do occur. Genetic predispositions to myeloid malignancies can be classified into three categories: familial cancer syndromes associated with increased risk of various malignancies including myelodysplasia and acute myeloid leukemia such as Li-Fraumeni syndrome and constitutional mismatch repair deficiency (CMMRD); germline mutations conferring a specific increased risk of myelodysplastic syndrome and acute myeloid leukemia such as mutations in ANKRD26, CEBPA, DDX41, ETV6, GATA2, RUNX1, SRP72 genes; and finally primarily pediatric inherited bone marrow failure syndromes such as Fanconi anemia, dyskeratosis congenita, severe congenital neutropenia, Shwachman-Diamond syndrome and Diamond Blackfan anemia. The recognition of these germline syndromes is essential in the management and follow-up of patients. Herein, we review the conditions associated with hereditary myeloid leukemia with a special clinical focus on management and monitoring.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "35443031",
+   "title": "Prognostic impact of DDX41 germline mutations in intensively treated acute myeloid leukemia patients: an ALFA-FILO study.",
+   "pubdate": "2022 Aug 18",
+   "abstract": "DDX41 germline mutations (DDX41MutGL) are the most common genetic predisposition to myelodysplastic syndrome and acute myeloid leukemia (AML). Recent reports suggest that DDX41MutGL myeloid malignancies could be considered as a distinct entity, even if their specific presentation and outcome remain to be defined. We describe here the clinical and biological features of 191 patients with DDX41MutGL AML. Baseline characteristics and outcome of 86 of these patients, treated with intensive chemotherapy in 5 prospective Acute Leukemia French Association/French Innovative Leukemia Organization trials, were compared with those of 1604 patients with DDX41 wild-type (DDX41WT) AML, representing a prevalence of 5%. Patients with DDX41MutGL AML were mostly male (75%), in their seventh decade, and with low leukocyte count (median, 2 \u00d7 109/L), low bone marrow blast infiltration (median, 33%), normal cytogenetics (75%), and few additional somatic mutations (median, 2). A second somatic DDX41 mutation (DDX41MutSom) was found in 82% of patients, and clonal architecture inference suggested that it could be the main driver for AML progression. DDX41MutGL patients displayed higher complete remission rates (94% vs 69%; P < .0001) and longer restricted mean overall survival censored at hematopoietic stem cell transplantation (HSCT) than 2017 European LeukemiaNet intermediate/adverse (Int/Adv) DDX41WT patients (5-year difference in restricted mean survival times, 13.6 months; P < .001). Relapse rates censored at HSCT were lower at 1 year in DDX41MutGL patients (15% vs 44%) but later increased to be similar to Int/Adv DDX41WT patients at 3 years (82% vs 75%). HSCT in first complete remission was associated with prolonged relapse-free survival (hazard ratio, 0.43; 95% confidence interval, 0.21-0.88; P = .02) but not with longer overall survival (hazard ratio, 0.77; 95% confidence interval, 0.35-1.68; P = .5).",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "35338116",
+   "title": "STING agonist diABZI induces PANoptosis and DNA mediated acute respiratory distress syndrome (ARDS).",
+   "pubdate": "2022 Mar 25",
+   "abstract": "Stimulator of interferon genes (STING) contributes to immune responses against tumors and may control viral infection including SARS-CoV-2 infection. However, activation of the STING pathway by airway silica or smoke exposure leads to cell death, self-dsDNA release, and STING/type I IFN dependent acute lung inflammation/ARDS. The inflammatory response induced by a synthetic non-nucleotide-based diABZI STING agonist, in comparison to the natural cyclic dinucleotide cGAMP, is unknown. A low dose of diABZI (1\u2009\u00b5g by endotracheal route for 3 consecutive days) triggered an acute neutrophilic inflammation, disruption of the respiratory barrier, DNA release with NET formation, PANoptosis cell death, and inflammatory cytokines with type I IFN dependent acute lung inflammation. Downstream upregulation of DNA sensors including cGAS, DDX41, IFI204, as well as NLRP3 and AIM2 inflammasomes, suggested a secondary inflammatory response to dsDNA as a danger signal. DNase I treatment, inhibition of NET formation together with an investigation in gene-deficient mice highlighted extracellular DNA and TLR9, but not cGAS, as central to diABZI-induced neutrophilic response. Therefore, activation of acute cell death with DNA release may lead to ARDS which may be modeled by diABZI. These results show that airway targeting by STING activator as a therapeutic strategy for infection may enhance lung inflammation with severe ARDS. STING agonist diABZI induces neutrophilic lung inflammation and PANoptosis A, Airway STING priming induce a neutrophilic lung inflammation with epithelial barrier damage, double-stranded DNA release in the bronchoalvelolar space, cell death, NETosis and type I interferon release. B, 1. The diamidobenzimidazole (diABZI), a STING agonist is internalized into the cytoplasm through unknown receptor and induce the activation and dimerization of STING followed by TBK1/IRF3 phosporylation leading to type I IFN response. STING activation also leads to NF-kB activation and the production of pro-inflammatory cytokines TNF\u03b1 and IL-6. 2. The activation of TNFR1 and IFNAR1 signaling pathway results in ZBP1 and RIPK3/ASC/CASP8 activation leading to MLKL phosphorylation and necroptosis induction. 3. This can also leads to Caspase-3 cleavage and apoptosis induction. 4. Self-dsDNA or mtDNA sensing by NLRP3 or AIM2 induces inflammsome formation leading to Gasdermin D cleavage enabling Gasdermin D pore formation and the release mature IL-1\u03b2 and pyroptosis. NLRP3 inflammasome formation can be enhanced by the ZBP1/RIPK3/CASP8 complex. 5. A second signal of STING activation with diABZI induces cell death and the release of self-DNA which is sensed by cGAS and form 2'3'-cGAMP leading to STING hyper activation, the amplification of TBK1/IRF3 and NF-kB pathway and the subsequent production of IFN-I and inflammatory TNF\u03b1 and IL-6. This also leads to IFI204 and DDX41 upregulation thus, amplifying the inflammatory loop. The upregulation of apoptosis, pyroptosis and necroptosis is indicative of STING-dependent PANoptosis.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "26712909",
+   "title": "Novel germ line DDX41 mutations define families with a lower age of MDS/AML onset and lymphoid malignancies.",
+   "pubdate": "2016 Feb 25",
+   "abstract": "Recently our group and others have identified DDX41 mutations both as germ line and acquired somatic mutations in families with multiple cases of late onset myelodysplastic syndrome (MDS) and/or acute myeloid leukemia (AML), suggesting that DDX41 acts as a tumor suppressor. To determine whether novel DDX41 mutations could be identified in families with additional types of hematologic malignancies, our group screened two cohorts of families with a diverse range of hematologic malignancy subtypes. Among 289 families, we identified nine (3%) with DDX41 mutations. As previously observed, MDS and AML were the most common malignancies, often of the erythroblastic subtype, and 1 family displayed early-onset follicular lymphoma. Five novel mutations were identified, including missense mutations within important functional domains and start-loss and splicing mutations predicted to result in truncated proteins. We also show that most asymptomatic mutation carriers have normal blood counts until malignancy develops. This study expands both the mutation and phenotypic spectra observed in families with germ line DDX41 mutations. With an increasing number of both inherited and acquired mutations in this gene being identified, further study of how DDX41 disruption leads to hematologic malignancies is critical.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "27174803",
+   "title": "Biological implications of somatic DDX41 p.R525H mutation in acute myeloid leukemia.",
+   "pubdate": "2016 Aug",
+   "abstract": "The DDX41 gene, encoding a DEAD-box type ATP-dependent RNA helicase, is rarely but reproducibly mutated in myeloid diseases. The acquired mutation in DDX41 is highly concentrated at c.G1574A (p.R525H) in the conserved motif VI located at the C-terminus of the helicase core domain where ATP interacts and is hydrolyzed. Therefore, it is likely that the p.R525H mutation perturbs ATPase activity in a dominant-negative manner. In this study, we screened for the DDX41 mutation of CD34-positive tumor cells based on mRNA sequencing and identified the p.R525H mutation in three cases among 23 patients. Intriguingly, these patients commonly exhibited acute myeloid leukemia (AML) with peripheral blood cytopenias and low blast counts, suggesting that the mutation inhibits the growth and differentiation of hematopoietic cells. Data from cord blood cells and leukemia cell lines suggest a role for DDX41 in preribosomal RNA processing, in which the expression of the p.R525H mutant causes a certain ribosomopathy phenotype in hematopoietic cells by suppressing MDM2-mediated RB degradation, thus triggering the inhibition of E2F activity. This study uncovered a pathogenic role of p.R525H DDX41 in the slow growth rate of tumor cells. Age-dependent epigenetic alterations or other somatic changes might collaborate with the mutation to cause\u00a0AML.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "27210295",
+   "title": "Evaluation of Patients and Families With Concern for Predispositions to Hematologic Malignancies Within the Hereditary Hematologic Malignancy Clinic (HHMC).",
+   "pubdate": "2016 Jul",
+   "abstract": "Although multiple predispositions to hematologic malignancies exist, evaluations for hereditary cancer syndromes (HCS) are underperformed by most hematologist/oncologists. Criteria for initiating HCS evaluation are poorly defined, and results of genetic testing for hereditary hematologic malignancies have not been systematically reported.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "27384852",
+   "title": "[Genetic predisposition to pediatric myeloid malignancies].",
+   "pubdate": "2016 Jun",
+   "abstract": "Various genetic disorders are known to be associated with cancer predisposition. For example, children with Down syndrome are predisposed to developing acute myeloid leukemia, and those with RASopathies, such as Noonan syndrome, are predisposed to juvenile myelomonocytic leukemia. To date, more than 250 diseases or syndromes have been reported to be associated with the development of pediatric cancers. Recently, the advent of the massive parallel sequencing technique revealed several germline mutations, including RUNX1, CEBPA, GATA2, SRP72, ETV6, and DDX41, which are associated with familial myeloid malignancies. A significant number of children with myeloid malignancies may harbor pathognomonic germline variants. It is strongly recommended that precise diagnosis, genetic counseling, familial screening, and follow-up programs be provided for patients with such a predisposition to cancer. To identify genetic disorders associated with predispositions to pediatric myeloid malignancies, the development of an efficient screening system with the massive parallel sequencer for germline and somatic mutations, which would also be useful for familial genetic studies and prediction of tumor progression, is needed.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "27248996",
+   "title": "Hereditary Predispositions to Myelodysplastic Syndrome.",
+   "pubdate": "2016 May 30",
+   "abstract": "Myelodysplastic syndromes (MDS) are heterogeneous clonal hematopoietic disorders characterized by ineffective hematopoiesis, bone marrow dysplasia, and peripheral cytopenias. Familial forms of MDS have traditionally been considered rare, especially in adults; however, the increasing availability of somatic and germline genetic analyses has identified multiple susceptibility loci. Bone marrow failure syndromes have been well-described in the pediatric setting, e.g., Fanconi anemia (FA), dyskeratosis congenita (DC), Diamond-Blackfan anemia (DBA), and Shwachman-Diamond syndrome (SBS), hallmarked by clinically-recognizable phenotypes (e.g., radial ray anomalies in FA) and significantly increased risks for MDS and/or acute myeloid leukemia (AML) in the setting of bone marrow failure. However, additional families with multiple cases of MDS or AML have long been reported in the medical literature with little known regarding potential hereditary etiologies. Over the last decade, genomic investigation of such families has revealed multiple genes conferring inherited risks for MDS and/or AML as the primary malignancy, including RUNX1, ANKRD26, DDX41, ETV6, GATA2, and SRP72. As these syndromes are increasingly appreciated in even apparently de novo presentations of MDS, it is important for hematologists/oncologists to become familiar with these newly-described syndromes. Herein, we provide a review of familial MDS syndromes and practical aspects of management in patients with predisposition syndromes.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "26876264",
+   "title": "[Clinical and genetic background of familial myelodysplasia and acute myeloid leukemia].",
+   "pubdate": "2016 Feb 21",
+   "abstract": "Myelodysplastic syndrome and acute myeloid leukaemia are mainly sporadic diseases, however, rare familial cases exist. These disorders are considered rare, but are likely to be more common than currently appreciated, and are characterized by the autosomal dominant mutations of hematopoietic transcription factors. These syndromes have typical phenotypic features and are associated with an increased risk for developing overt malignancy. Currently, four recognized syndromes could be separated: familial acute myeloid leukemia with mutated CEBPA, familial myelodysplastic syndrome/acute myeloid leukemia with mutated GATA2, familial platelet disorder with propensity to myeloid malignancy with RUNX1 mutations, and telomere biology disorders due to mutations of TERC or TERT. Furthermore, there are new, emerging syndromes associated with germline mutations in novel genes including ANKRD26, ETV6, SRP72 or DDX41. This review will discuss the current understanding of the genetic basis and clinical presentation of familial leukemia and myelodysplasia.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "26693794",
+   "title": "Genetic predisposition to myelodysplastic syndrome and acute myeloid leukemia in children and young adults.",
+   "pubdate": "2016",
+   "abstract": "Myelodysplastic syndrome (MDS) is a clonal blood disorder characterized by ineffective hematopoiesis, cytopenias, dysplasia and an increased risk of acute myeloid leukemia (AML). With the growing availability of clinical genetic testing, there is an increasing appreciation that a number of genetic predisposition syndromes may underlie apparent de novo presentations of MDS/AML, particularly in children and young adults. Recent findings of clonal hematopoiesis in acquired aplastic anemia add another facet to our understanding of the mechanisms of MDS/AML predisposition. As more predisposition syndromes are recognized, it is becoming increasingly important for hematologists and oncologists to have familiarity with the common as well as emerging syndromes, and to have a systematic approach to diagnosis and screening of at risk patient populations. Here, we provide a practical algorithm for approaching a patient with a suspected MDS/AML predisposition, and provide an in-depth review of the established and emerging familial MDS/AML syndromes caused by mutations in the ANKRD26, CEBPA, DDX41, ETV6, GATA2, RUNX1, SRP72 genes. Finally, we discuss recent data on the role of somatic mutations in malignant transformation in acquired aplastic anemia, and review the practical aspects of MDS/AML management in patients and families with predisposition syndromes.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "22237025",
+   "title": "Clonal evolution in relapsed acute myeloid leukaemia revealed by whole-genome sequencing.",
+   "pubdate": "2012 Jan 11",
+   "abstract": "Most patients with acute myeloid leukaemia (AML) die from progressive disease after relapse, which is associated with clonal evolution at the cytogenetic level. To determine the mutational spectrum associated with relapse, we sequenced the primary tumour and relapse genomes from eight AML patients, and validated hundreds of somatic mutations using deep sequencing; this allowed us to define clonality and clonal evolution patterns precisely at relapse. In addition to discovering novel, recurrently mutated genes (for example, WAC, SMC3, DIS3, DDX41 and DAXX) in AML, we also found two major clonal evolution patterns during AML relapse: (1) the founding clone in the primary tumour gained mutations and evolved into the relapse clone, or (2) a subclone of the founding clone survived initial therapy, gained additional mutations and expanded at relapse. In all cases, chemotherapy failed to eradicate the founding clone. The comparison of relapse-specific versus primary tumour mutations in all eight cases revealed an increase in transversions, probably due to DNA damage caused by cytotoxic chemotherapy. These data demonstrate that AML relapse is associated with the addition of new mutations and clonal evolution, which is shaped, in part, by the chemotherapy that the patients receive to establish and maintain remissions.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "20941364",
+   "title": "Comparative structural analysis of human DEAD-box RNA helicases.",
+   "pubdate": "2010 Sep 30",
+   "abstract": "DEAD-box RNA helicases play various, often critical, roles in all processes where RNAs are involved. Members of this family of proteins are linked to human disease, including cancer and viral infections. DEAD-box proteins contain two conserved domains that both contribute to RNA and ATP binding. Despite recent advances the molecular details of how these enzymes convert chemical energy into RNA remodeling is unknown. We present crystal structures of the isolated DEAD-domains of human DDX2A/eIF4A1, DDX2B/eIF4A2, DDX5, DDX10/DBP4, DDX18/myc-regulated DEAD-box protein, DDX20, DDX47, DDX52/ROK1, and DDX53/CAGE, and of the helicase domains of DDX25 and DDX41. Together with prior knowledge this enables a family-wide comparative structural analysis. We propose a general mechanism for opening of the RNA binding site. This analysis also provides insights into the diversity of DExD/H- proteins, with implications for understanding the functions of individual family members.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "39945023",
+   "title": "Overall cancer risk in people with deleterious germline DDX41 variants.",
+   "pubdate": "2025 Sep 1",
+   "abstract": "Germline loss-of-function (LoF) DDX41 variants predispose to late-onset hematopoietic malignancies (HM), predominantly of myeloid lineage. Among 43 families with germline DDX41LoF variants, bone marrow (BM) biopsies in those without (N=8) or with malignancies (N=21) revealed mild dysplasia in peripheral blood (57%) and BM (88%), long before the average age of DDX41-related HM onset. Therefore, we recommend baseline BM biopsies in people with germline DDX41LoF alleles to avoid over-diagnosis of myelodysplastic syndromes. A variety of solid tumors were also observed in our cohort, with 24% penetrance by age 75. Although acquired DDX41 mutations are common in HM, we failed to identify such alleles in solid tumors arising in those with germline DDX41LoF variants (N=15), suggesting an alternative mechanism driving solid tumor development. Furthermore, 33% of pedigrees in which \u226515% of first-degree relatives including the proband were diagnosed with a solid tumor had second germline deleterious variants in other cancer-predisposition genes, likely serving as primary cancer drivers. Finally, both lymphoblastoid cell lines and primary peripheral blood from individuals with germline DDX41LoF variants exhibited differential levels of inflammation-associated proteins. These data provide evidence of inflammatory dysfunction mediated by germline DDX41LoF alleles that may contribute to solid tumor growth in the context of additional germline cancer- associated variants. For those with HM and personal/family histories of solid tumors, we recommend broad germline testing. DDX41 may be an indirect modifier of solid tumor pathogenesis compared to its tumor suppressor function within hematopoietic tissues, a hypothesis that can be addressed in future work.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "33929502",
+   "title": "Clinical and Pathologic Spectrum of DDX41-Mutated Hematolymphoid Neoplasms.",
+   "pubdate": "2021 Oct 13",
+   "abstract": "This study seeks to further characterize the clinicopathologic spectrum of DDX41-mutated hematolymphoid malignancies.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "39453476",
+   "title": "Biallelic germline DDX41 variants in a patient with bone dysplasia, ichthyosis, and dysmorphic features.",
+   "pubdate": "2024 Dec",
+   "abstract": "DDX41 (DEAD\u2011box helicase 41) is a member of the largest family of RNA helicases. The DEAD-box RNA helicases share a highly conserved core structure and regulate all aspects of RNA metabolism. The functional role of DDX41 in innate immunity is also highly conserved. DDX41 acts as a sensor of viral DNA and activates the STING-TBK1-IRF3-type I IFN signaling pathway. Germline heterozygous variants in DDX41 have been reported in familial myelodysplasia syndrome (MDS)/acute myeloid leukemia (AML) patients; most patients also acquired a somatic variant in the second DDX41 allele. Here, we report a patient who inherited compound heterozygous DDX41 variants and presented with bone dysplasia, ichthyosis, and dysmorphic features. Functional analyses of the patient-derived dermal fibroblasts revealed a reduced abundance of DDX41 and abrogated activation of the IFN genes through the STING-type I interferon pathway. Genome-wide transcriptome analyses in the patient's fibroblasts revealed significant gene dysregulation and changes in the RNA splicing events. The patient's fibroblasts also displayed upregulation of periostin mRNA expression. Using an RNA binding protein assay, we identified DDX41 as a novel regulator of periostin expression. Our results suggest that functional impairment of DDX41, along with dysregulated periostin expression, likely contributes to this patient's multisystem disorder.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "35612271",
+   "title": "Clinical implications and genetic features of clonal cytopenia of undetermined significance compared to lower-risk myelodysplastic syndrome.",
+   "pubdate": "2022 Aug",
+   "abstract": "Clonal cytopenia of undetermined significance (CCUS) is characterized by persistent cytopenias with genetic aberrations, which do not meet the diagnostic criteria for myelodysplastic syndrome (MDS). We aimed to compare the clinical and genetic characteristics of CCUS with lower-risk MDS and identify patients with CCUS with a high risk of progression. We performed targeted sequencing of bone marrow (BM) samples from patients with idiopathic cytopenia of undetermined significance (ICUS) (n\u00a0=\u00a0139) and MDS (n\u00a0=\u00a0226). Overall survival (OS) of patients with CCUS (n\u00a0=\u00a078) was worse than non-clonal ICUS (n\u00a0=\u00a061) and superior to lower-risk MDS (n\u00a0=\u00a099). Patients with CCUS showed similar characteristics to those with lower-risk MDS, except for higher haemoglobin, lower BM cellularity, and less frequent SF3B1 mutations. Lower haemoglobin, DDX41 (biallelic germline and somatic), ETV6, and RUNX1 mutations were independent prognostic factors for worse OS. Lower haemoglobin and DDX41 mutations were also associated with lower progression-free survival. Patients with CCUS with high-risk features showed similar or worse OS than patients with lower-risk MDS. Our findings suggest that patients with CCUS having certain clinical or genetic features should be regarded and treated as lower-risk MDS despite lacking significant dysplasia or MDS-associated chromosomal abnormalities.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "38123227",
+   "title": "[Etiological analysis of a patient with multiple primary malignant neoplasms].",
+   "pubdate": "2023 Dec 19",
+   "abstract": "To investigate the etiology of multiple primary malignant neoplasms occurred in one patient. Retrospective analysis was performed on a 52-year-old female patient who was admitted to the Department of Endocrinology, the First Affiliated Hospital of Sun Yat-Sen University on October 7, 2021, due to \"thyroid occupying lesion for one week\". A complete systemic positron emission tomography examination of the patient indicated that the metabolic characteristics of the left thyroid nodules were consistent with medullary thyroid carcinoma, those of the right thyroid nodules were consistent with papillary thyroid carcinoma, and the metabolic characteristics of the T6-7 level were consistent with meningioma, and teratoma was found in the right ovarian region. Intradural subdural mass resection was performed on October 20, 2021, and bilateral total thyroidectomy, isthmus thyroidectomy, bilateral central lymph node dissection and left cervical lymph node dissection were performed on November 2, 2021. The postoperative pathologic diagnosises were meningioma (WHO Grade 1), medullary thyroid carcinoma (left side), and papillary thyroid carcinoma (right side).Whole exon gene sequencing revealed the presence of mutations in the ACAN and FLNB genes, which are associated with dysplasia, as well as mutations in the DDX41 and JAK2 genes, which are linked to active pro-proliferation signaling and tumor susceptibility. In this study, a gene mutation pattern which could lead to multiple primary malignant neoplasms was found.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "30407884",
+   "title": "Novel germline missense DDX41 variant in a patient with an adult-onset myeloid neoplasm with excess blasts without dysplasia.",
+   "pubdate": "2019 May",
+   "abstract": "",
+   "query_tier": "primary"
+  }
+ ],
+ "kept_pmids": [
+  "33328584",
+  "35671390",
+  "36445482",
+  "25920683",
+  "39357070",
+  "40818987",
+  "31203998",
+  "35443031",
+  "26712909",
+  "39453476"
+ ]
+}

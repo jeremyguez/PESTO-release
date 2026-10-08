@@ -1,0 +1,21 @@
+gene	phenotype	verdict	lit_score	found	read	cached	error	usd	bands_usd
+CYBA	parathyroid gland carcinoma	Novel	1.14	78	20	False		0.117796	0.040331
+DNAJC13	craniofacial anomalies and anterior segment dysgenesis syndrome	Novel	1.06	54	20	False		0.139608	0.028372
+MRAS	gonadal dysgenesis, dysmorphic facies, retinal dystrophy, and myopathy	Novel	1.73	81	20	False		0.191208	0.045198
+GHR	familial long QT syndrome	Novel	1.06	85	17	False		0.117895	0.047183
+POU4F1	autosomal dominant polycystic kidney disease	Novel	1.37	57	18	False		0.111543	0.030897
+IFNAR2	Fuchs' endothelial dystrophy	Novel	1.06	56	20	False		0.112324	0.029427
+CEP120	hemochromatosis type 1	Novel	1.08	35	20	False		0.093254	0.018210
+MT-TG	minimal pigment oculocutaneous albinism type 1	Novel	1.08	58	5	False		0.072350	0.032010
+GYPC	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	Novel	1.11	69	1	False		0.069529	0.035503
+BRSK2	mitochondrial pyruvate carrier deficiency	Novel	1.14	52	20	False		0.133113	0.032148
+TRHR	metabolic encephalomyopathic crises, recurrent, with rhabdomyolysis, cardiac arrhythmias, and neurodegeneration	Novel	1.14	74	20	False		0.139970	0.044869
+TFRC	congenital stationary night blindness autosomal dominant 3	Novel	1.19	76	20	False		0.162238	0.063838
+SLC25A13	aldosterone-producing adenoma with seizures and neurological abnormalities	Novel	1.14	78	20	False		0.117254	0.038808
+KIF17	spinal muscular atrophy-progressive myoclonic epilepsy syndrome	Hypothesized	1.63	53	20	False		0.128744	0.030817
+GGPS1	polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy 1	Novel	1.25	31	20	False		0.109539	0.017764
+KREMEN1	autosomal dominant hypocalcemia 1	Novel	1.19	52	20	False		0.127038	0.029267
+C1QBP	Antley-Bixler syndrome	Novel	1.19	68	20	False		0.130298	0.038383
+PCBD1	developmental delay, hypotonia, and impaired language	Existing	2.33	59	20	False		0.130564	0.030087
+TCF3	striate palmoplantar keratoderma	Novel	1.27	67	13	False		0.118346	0.038389
+TCTN1	congenital disorder of deglycosylation 2	Novel	1.18	29	18	False		0.107649	0.014250

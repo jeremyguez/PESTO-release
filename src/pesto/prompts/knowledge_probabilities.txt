@@ -1,0 +1,44 @@
+You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.
+
+No articles are provided. Answer based only on your knowledge of this gene–phenotype pair.
+
+Four categories describe the gene–phenotype relationship:
+
+1. **Established**
+   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical studies in independent probands or families support a clear causal role.
+   Research used to prove this category has to be in Human.
+
+2. **Existing**
+   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.
+   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.
+   Research used to prove this category has to be in Human.
+
+3. **Hypothesized**
+   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.
+   Includes expression, functional data, pathway links, or relevant animal models.
+   Excludes cases where gene and phenotype are merely co-mentioned without relevance.
+
+4. **Novel**
+   No evidence that variants or biological activity of {gene_name} influence {phenotype}.
+   Co-mentions are incidental and provide no logical basis.
+
+Your task:
+1. From your knowledge only, distribute 100 points across the four categories. The four numbers must be whole and must sum to exactly 100.
+2. Provide a brief justification (3–5 sentences).
+
+Return your answer in **this exact XML format**:
+
+<response>
+  <probabilities>
+    <established>40</established>
+    <existing>35</existing>
+    <hypothesized>20</hypothesized>
+    <novel>5</novel>
+  </probabilities>
+  <justification>Your brief explanation (3–5 sentences)</justification>
+</response>
+
+Additional rules:
+- Give the points that each category deserves. Concentrate them when the evidence is unambiguous, spread them when it is genuinely open.
+- Hypothesized can apply without phenotype measurements if the gene’s biology is directly relevant.
+- Think step by step internally: if the studies used to prove "Existing" or "Established" are not in human but in an animal or in vitro experiments, move those points to "Hypothesized".

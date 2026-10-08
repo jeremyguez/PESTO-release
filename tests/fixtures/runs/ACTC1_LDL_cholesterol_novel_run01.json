@@ -1,0 +1,448 @@
+{
+    "gene_name": "ACTC1",
+    "phenotype": "LDL cholesterol",
+    "synonyms": [
+        "low-density lipoprotein cholesterol",
+        "LDL-C",
+        "LDL",
+        "bad cholesterol",
+        "low-density lipoprotein",
+        "LDL cholesterol level",
+        "serum LDL cholesterol",
+        "plasma LDL cholesterol",
+        "LDL-cholesterol concentration"
+    ],
+    "run_parameters": {
+        "model": "claude-haiku-4-5@vertex",
+        "temperature": 0.0,
+        "batch_size": null
+    },
+    "prompt_templates": {
+        "phenotype_synonyms_prompt": "You are a medical expert helping to identify alternative terms and synonyms for phenotypes/diseases.\n\nGiven the following phenotype: {phenotype}\n\nGenerate between 0 and 10 relevant synonyms or alternative terms that could be used to search for scientific literature about this phenotype. Include:\n- Alternative medical terminology\n- Common abbreviations\n- Related clinical terms\n- Different ways the condition might be described in literature\n\nIMPORTANT: \n- If the phenotype is already very specific and well-defined, you may return fewer synonyms (even 0).\n- Only include terms that are semantically equivalent or very closely related.\n- Do NOT include broader categories, subtypes, or related but distinct conditions.\n\nReturn your answer in this exact XML format:\n<response>\n<synonyms>\n<synonym>term 1</synonym>\n<synonym>term 2</synonym>\n...\n</synonyms>\n</response>\n\nIf you think no synonyms are needed, return:\n<response>\n<synonyms>\n</synonyms>\n</response>",
+        "novelty_assessment_prompt": "You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.\n\nBelow is a list of scientific articles about {gene_name} and/or {phenotype}:\n\n{alias_note}{dismiss_note}\n\n{articles_list}\n\nClassify the gene\u2013phenotype relationship into ONE of four categories:\n\n1. **Established**  \n   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical or mechanistic studies support a clear causal role.\n   Research used to prove this category has to be in Human.\n\n2. **Existing**\n   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.  \n   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.\n   Research used to prove this category has to be in Human.\n\n3. **Hypothesized**  \n   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.  \n   Includes expression, functional data, pathway links, or relevant animal models.  \n   Excludes cases where gene and phenotype are merely co-mentioned without relevance.\n\n4. **Novel**  \n   No evidence that variants or biological activity of {gene_name} influence {phenotype}.  \n   Co-mentions are incidental and provide no logical basis.\n\nYour task:\n1. Read the article titles and abstracts.  \n2. Choose the best category.  \n3. Provide a brief justification (3\u20135 sentences).  \n4. Cite up to 10 relevant PMIDs from the provided list only.\n\nReturn your answer in **this exact XML format**:\n\n<response>\n  <verdict>Established|Existing|Hypothesized|Novel</verdict>\n  <justification>Your brief explanation (3\u20135 sentences)</justification>\n  <pmids>\n    <pmid>12345678</pmid>\n    ...\n  </pmids>\n</response>\n\nAdditional rules:\n- If uncertain between two categories, choose the *less novel* one.  \n- Hypothesized can apply without phenotype measurements if the gene\u2019s biology is directly relevant.  \n- Think step by step internally: if the studies used to prove \"Existing\" or \"Established\" are not in human but in an animal or in vitro experiments, downgrade to \"Hypothesized\".\n- Maximum 10 PMIDs."
+    },
+    "prompt_texts": {},
+    "pubmed_articles": [
+        {
+            "pmid": "31434002",
+            "title": "Antihyperlipidemic effect of iridoid glycoside deacetylasperulosidic acid isolated from the seeds of Spermacoce hispida L. - A traditional antiobesity herb.",
+            "pubdate": "2019 Dec 5",
+            "abstract": "The interest on herbal health supplements for obesity is increasing globally. Our previous ethnobotanical survey in Tiruvallur district, Tamil Nadu, India indicated the use of Spermacoce hispida L. seeds for the treatment of obesity."
+        },
+        {
+            "pmid": "31983221",
+            "title": "Reevaluating the Genetic Contribution of Monogenic Dilated Cardiomyopathy.",
+            "pubdate": "2020 Feb 4",
+            "abstract": "Dilated cardiomyopathy (DCM) is genetically heterogeneous, with >100 purported disease genes tested in clinical laboratories. However, many genes were originally identified based on candidate-gene studies that did not adequately account for background population variation. Here we define the frequency of rare variation in 2538 patients with DCM across protein-coding regions of 56 commonly tested genes and compare this to both 912 confirmed healthy controls and a reference population of 60\u2009706 individuals to identify clinically interpretable genes robustly associated with dominant monogenic DCM."
+        },
+        {
+            "pmid": "30681346",
+            "title": "Evaluating the Clinical Validity of Hypertrophic Cardiomyopathy Genes.",
+            "pubdate": "2019 Feb",
+            "abstract": "Genetic testing for families with hypertrophic cardiomyopathy (HCM) provides a significant opportunity to improve care. Recent trends to increase gene panel sizes often mean variants in genes with questionable association are reported to patients. Classification of HCM genes and variants is critical, as misclassification can lead to genetic misdiagnosis. We show the validity of previously reported HCM genes using an established method for evaluating gene-disease associations."
+        },
+        {
+            "pmid": "33947203",
+            "title": "Evidence-Based Assessment of Genes in Dilated Cardiomyopathy.",
+            "pubdate": "2021 Jul 6",
+            "abstract": "Each of the cardiomyopathies, classically categorized as hypertrophic cardiomyopathy, dilated cardiomyopathy (DCM), and arrhythmogenic right ventricular cardiomyopathy, has a signature genetic theme. Hypertrophic cardiomyopathy and arrhythmogenic right ventricular cardiomyopathy are largely understood as genetic diseases of sarcomere or desmosome proteins, respectively. In contrast, >250 genes spanning >10 gene ontologies have been implicated in DCM, representing a complex and diverse genetic architecture. To clarify this, a systematic curation of evidence to establish the relationship of genes with DCM was conducted."
+        },
+        {
+            "pmid": "38884729",
+            "title": "Human Genetics of Ventricular Septal Defect.",
+            "pubdate": "2024",
+            "abstract": "Ventricular septal defects (VSDs) are recognized as one of the commonest congenital heart diseases (CHD), accounting for up to 40% of all cardiac malformations, and occur as isolated CHDs as well as together with other cardiac and extracardiac congenital malformations in individual patients and families. The genetic etiology of VSD is complex and extraordinarily heterogeneous. Chromosomal abnormalities such as aneuploidy and structural variations as well as rare point mutations in various genes have been reported to be associated with this cardiac defect. This includes both well-defined syndromes with known genetic cause (e.g., DiGeorge syndrome and Holt-Oram syndrome) and so far undefined syndromic forms characterized by unspecific symptoms. Mutations in genes encoding cardiac transcription factors (e.g., NKX2-5 and GATA4) and signaling molecules (e.g., CFC1) have been most frequently found in VSD cases. Moreover, new high-resolution methods such as comparative genomic hybridization enabled the discovery of a high number of different copy\u00a0number variations, leading to gain or loss of chromosomal regions often containing multiple genes, in patients with VSD. In this chapter, we will describe the broad genetic heterogeneity observed in VSD patients considering recent advances in this field."
+        },
+        {
+            "pmid": "40632839",
+            "title": "Regulatory T cells attenuate chronic inflammation and cardiac fibrosis in hypertrophic cardiomyopathy.",
+            "pubdate": "2025 Jul 9",
+            "abstract": "Hypertrophic cardiomyopathy (HCM) is a common, serious, genetic heart muscle disorder. Although the biophysical mechanisms by which gene variants in sarcomeric proteins disrupt cardiomyocyte function are largely understood, the cellular and molecular pathways leading to the complex, variable, and adverse remodeling of the non-myocyte compartment are unexplained. Here, we report that postmortem and explanted human HCM hearts exhibited chronic focal leukocyte infiltration and prominent activation of immune cells. Gene set enrichment analysis (GSEA) revealed that active immune responses were present in the mid- and late-stage HCM human hearts and in mouse hearts from several HCM mouse models. The alpha cardiac actin 1-E99K (Actc1E99K) HCM mouse model was selected for the study because it closely recapitulates the features of progressive remodeling and fibrosis seen in advanced disease in patients. Genetic depletion of lymphocytes in recombination activating gene 1-knockout (Rag-1KO) mice led to marked exacerbation of adverse cardiac remodeling in the Actc1E99K mice. Detailed characterization of cardiac regulatory T cells (Treg cells) demonstrated a time-dependent increase in Actc1E99K hearts with altered immunosuppressive profiles. Adoptive transfer of splenic Treg cells reduced cardiac fibrosis and improved systolic dysfunction in Actc1E99K mice with or without lymphocytes. In addition, low-dose interleukin-2 (IL-2)/anti-IL-2 complex (IL-2/c), which specifically induced Treg cell expansion in vivo, ameliorated cardiac fibrosis and reduced macrophage infiltration and activation in Actc1E99K mice. These data contribute to our understanding of HCM and support the use of Treg cells as a clinically testable therapeutic strategy for cardiac fibrosis in the HCM heart."
+        },
+        {
+            "pmid": "28771489",
+            "title": "Additional value of screening for minor genes and copy number variants in hypertrophic cardiomyopathy.",
+            "pubdate": "2017",
+            "abstract": "Hypertrophic cardiomyopathy (HCM) is the most prevalent inherited heart disease. Next-generation sequencing (NGS) is the preferred genetic test, but the diagnostic value of screening for minor and candidate genes, and the role of copy number variants (CNVs) deserves further evaluation."
+        },
+        {
+            "pmid": "30384889",
+            "title": "Genetic Basis of Severe Childhood-Onset\u00a0Cardiomyopathies.",
+            "pubdate": "2018 Nov 6",
+            "abstract": "Childhood cardiomyopathies are progressive and often lethal disorders, forming the most common cause of heart failure in children. Despite severe outcomes, their genetic background is still poorly characterized."
+        },
+        {
+            "pmid": "38884726",
+            "title": "Human Genetics of Atrial Septal Defect.",
+            "pubdate": "2024",
+            "abstract": "Although atrial septal defects (ASD) can be subdivided based on their anatomical location, an essential aspect of human genetics and genetic counseling is distinguishing between isolated and familiar cases without extracardiac features and syndromic cases with the co-occurrence of extracardiac abnormalities, such as developmental delay. Isolated or familial cases tend to show genetic alterations in genes related to important cardiac transcription factors and genes encoding for sarcomeric proteins. By contrast, the spectrum of genes with genetic alterations observed in syndromic cases is diverse. Currently, it points to different pathways and gene networks relevant to the dysregulation of cardiomyogenesis and ASD pathogenesis. Therefore, this chapter reflects the current knowledge and highlights stable associations observed in human genetics studies. It gives an overview of the different types of genetic alterations in these subtypes, including common associations based on genome-wide association studies (GWAS), and it highlights the most frequently observed syndromes associated with ASD pathogenesis."
+        },
+        {
+            "pmid": "40421724",
+            "title": "ACTC1 Variants Result in Isolated and Syndromic Cardiac Phenotypes.",
+            "pubdate": "2025 Dec",
+            "abstract": "Individuals carrying pathogenic variants in ACTC1 present with several cardiac phenotypes, including hypertrophic cardiomyopathy, dilated cardiomyopathy, and left ventricular noncompaction cardiomyopathy. In the current work, we expand the clinical and genetic spectrum of phenotypes caused by ACTC1 genetic variants by describing two individuals with heterozygous variants involving residues Gly57 or Glu101. These individuals presented with facial dysmorphism, short stature, and skeletal anomalies in addition to hypertrophic and left ventricular noncompaction cardiomyopathies. Protein structure analysis showed these variants alter the ATP binding or putative protein-protein interactions, while in\u00a0vivo zebrafish analysis validated the pathogenicity of these ACTC1 variants and their impact on the development of the cranial tissues. Combined with recent reports of other individuals with ACTC1 variants and extracardiac phenotypes, this study provides further evidence of the extensive molecular and clinical diversity related to ACTC1."
+        },
+        {
+            "pmid": "35223984",
+            "title": "Co-Overexpression of GRK5/ACTC1 Correlates With the Clinical Parameters and Poor Prognosis of Epithelial Ovarian Cancer.",
+            "pubdate": "2021",
+            "abstract": "Background: The prognosis of epithelial ovarian cancer (EOC) is poor, and the present prognostic predictors of EOC are neither sensitive nor specific. Objective: The aim of this study was to search the prognostic biomarkers of EOC and to investigate the expression of G protein-coupled receptor kinase 5 (GRK5) and actin alpha cardiac muscle 1 (ACTC1) in EOC tissues (both paraffin-embedded and fresh-frozen tissues) and to explore their association with clinicopathological parameters and prognostic value in patients with EOC. Methods: A total of 172 paraffin-embedded cancer tissues of EOC patients diagnosed and operated at the memorial hospital of Sun Yat-sen University between December 2009 and March 2017 and 41 paratumor tissues were collected and the expression of GRK5 and ACTC1 was examined using immunohistochemistry. Furthermore, 16 fresh-frozen EOC tissues and their matched paratumor tissues were collected from the Integrated Hospital of Traditional Chinese Medicine, Southern Medical University, between August 2013 and November 2019 and subjected to reverse-transcription quantitative PCR analysis to detect the mRNA expression of GRK5 and ACTC1. Results: The expression of GRK5 and ACTC1 was both higher in cancer tissues than in paratumor tissues. GRK5 expression was positively correlated with ACTC1 expression. In addition, GRK5, ACTC1, and GRK5/ACTC1 expression was associated with the recurrence-free survival and overall survival of EOC patients. Furthermore, multivariate logistic regression analysis indicated that GRK5+/ACTC1+ co-expression, intestinal metastasis, postoperative chemotherapy, platinum resistance, and hyperthermic intraperitoneal chemotherapy were independent prognostic factors of EOC. Conclusion: GRK5 and ACTC1 are both upregulated in EOC compared with those in paratumor tissues. The co-expression of GRK5+/ACTC1+ rather than GRK5 or ACTC1 is an independent prognostic biomarker of EOC."
+        }
+    ],
+    "pubmed_pmids": [
+        "31434002",
+        "31983221",
+        "30681346",
+        "33947203",
+        "38884729",
+        "40632839",
+        "28771489",
+        "30384889",
+        "38884726",
+        "40421724",
+        "35223984"
+    ],
+    "llm_raw_response": "Let me analyze the provided articles systematically for evidence of a genetic association between ACTC1 and LDL cholesterol.\n\n**Step 1: Identify relevant articles**\n\nScanning through the list:\n- PMID 31434002: About herbal treatment for obesity/lipids - no mention of ACTC1\n- PMID 31983221: Dilated cardiomyopathy genetics - mentions ACTC1 as CMD1R alias\n- PMID 30681346: Hypertrophic cardiomyopathy genes - no specific ACTC1 focus\n- PMID 33947203: Dilated cardiomyopathy genetics - general review\n- PMID 38884729: Ventricular septal defects - no ACTC1 mention\n- PMID 40632839: HCM and regulatory T cells - uses Actc1E99K mouse model\n- PMID 28771489: HCM genetic screening - general review\n- PMID 30384889: Childhood cardiomyopathies - general review\n- PMID 38884726: Atrial septal defects - no ACTC1 focus\n- PMID 40421724: **ACTC1 variants and cardiac phenotypes** - directly about ACTC1\n- PMID 35223984: GRK5/ACTC1 in ovarian cancer - ACTC1 mentioned but unrelated to LDL\n\n**Step 2: Assess relevance to LDL cholesterol**\n\nNone of the articles discuss LDL cholesterol levels or lipid metabolism in relation to ACTC1. The articles focus on:\n- Cardiac phenotypes (cardiomyopathies, congenital heart defects)\n- Cancer prognosis (ovarian cancer)\n- Immune responses in heart disease\n\nACTC1 is a cardiac actin gene involved in sarcomeric structure and cardiac function, not lipid metabolism.\n\n**Step 3: Determine category**\n\n- **Established**: No human studies showing ACTC1 variants cause LDL cholesterol changes\n- **Existing**: No credible studies reporting association between ACTC1 variation and LDL cholesterol\n- **Hypothesized**: No biological pathway or mechanism linking ACTC1 to lipid metabolism is discussed\n- **Novel**: The most appropriate classification - no evidence of any relationship\n\n<response>\n  <verdict>Novel</verdict>\n  <justification>The provided literature contains no evidence linking ACTC1 variants or expression to LDL cholesterol levels. ACTC1 is a cardiac actin gene associated with various cardiomyopathies and congenital heart defects, but none of the articles discuss lipid metabolism, cholesterol levels, or any mechanistic pathway connecting ACTC1 to LDL cholesterol. The co-mention of ACTC1 in one ovarian cancer study is unrelated to lipid phenotypes. There is no biological rationale presented suggesting ACTC1 influences LDL cholesterol.</justification>\n  <pmids>\n  </pmids>\n</response>",
+    "final_output": {
+        "verdict": "Novel",
+        "justification": "The provided literature contains no evidence linking ACTC1 variants or expression to LDL cholesterol levels. ACTC1 is a cardiac actin gene associated with various cardiomyopathies and congenital heart defects, but none of the articles discuss lipid metabolism, cholesterol levels, or any mechanistic pathway connecting ACTC1 to LDL cholesterol. The co-mention of ACTC1 in one ovarian cancer study is unrelated to lipid phenotypes. There is no biological rationale presented suggesting ACTC1 influences LDL cholesterol.",
+        "pmids": []
+    },
+    "api_response": {
+        "verdict": "Novel",
+        "justification": "The provided literature contains no evidence linking ACTC1 variants or expression to LDL cholesterol levels. ACTC1 is a cardiac actin gene associated with various cardiomyopathies and congenital heart defects, but none of the articles discuss lipid metabolism, cholesterol levels, or any mechanistic pathway connecting ACTC1 to LDL cholesterol. The co-mention of ACTC1 in one ovarian cancer study is unrelated to lipid phenotypes. There is no biological rationale presented suggesting ACTC1 influences LDL cholesterol.",
+        "articles_found": 11,
+        "cited_articles": [],
+        "open_targets_verdict": "Novel",
+        "open_targets_max_score": 0.0,
+        "open_targets_traits": {
+            "ensembl_id": "ENSG00000159251",
+            "traits_count": 47,
+            "file_path": "data/runs/novel/open_targets_traits_ACTC1_LDL_cholesterol.txt",
+            "traits": [
+                {
+                    "disease_id": "MONDO_0005045",
+                    "name": "hypertrophic cardiomyopathy",
+                    "score": 0.8003565117328012,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013011",
+                    "name": "atrial septal defect 5",
+                    "score": 0.7539352778532954,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018901",
+                    "name": "left ventricular noncompaction",
+                    "score": 0.7404919871576999,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012799",
+                    "name": "hypertrophic cardiomyopathy 11",
+                    "score": 0.736767689911198,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0700335",
+                    "name": "familial isolated dilated cardiomyopathy",
+                    "score": 0.6575794735348685,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0800350",
+                    "name": "left ventricular noncompaction 4",
+                    "score": 0.6343427561379923,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0006664",
+                    "name": "atrial septal defect",
+                    "score": 0.5543863022673435,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001626",
+                    "name": "Abnormality of the cardiovascular system",
+                    "score": 0.5062069932894121,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0011664",
+                    "name": "Left ventricular noncompaction cardiomyopathy",
+                    "score": 0.49178759330044314,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004994",
+                    "name": "cardiomyopathy",
+                    "score": 0.4810150832706128,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_99739",
+                    "name": "Rare familial disorder with hypertrophic cardiomyopathy",
+                    "score": 0.4766151678762082,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0024573",
+                    "name": "familial hypertrophic cardiomyopathy",
+                    "score": 0.434920286586887,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005021",
+                    "name": "dilated cardiomyopathy",
+                    "score": 0.384214431708946,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019942",
+                    "name": "distal arthrogryposis",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020434",
+                    "name": "atrial septal defect, ostium secundum type",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_1001366",
+                    "name": "mastodynia",
+                    "score": 0.31293800483345285,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007874",
+                    "name": "gut microbiome measurement",
+                    "score": 0.29275703019706495,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007944",
+                    "name": "allergen exposure measurement",
+                    "score": 0.29275703019706495,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0005416",
+                    "name": "blood protein amount",
+                    "score": 0.27971428967266393,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003749",
+                    "name": "esophageal disorder",
+                    "score": 0.27971428967266393,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2043286",
+                    "name": "level of Rho-related GTP-binding protein Rho6 in blood serum",
+                    "score": 0.2776328441390636,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008779",
+                    "name": "arthrogryposis",
+                    "score": 0.26702144500969704,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003847",
+                    "name": "hereditary disease",
+                    "score": 0.26702144500969704,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005090",
+                    "name": "schizophrenia",
+                    "score": 0.1490963177343718,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007269",
+                    "name": "dilated cardiomyopathy 1A",
+                    "score": 0.1478319418738807,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_1001087",
+                    "name": "heart rate",
+                    "score": 0.13314090993923103,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000540",
+                    "name": "Hypermetropia",
+                    "score": 0.11597566143706937,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0001384",
+                    "name": "myopia",
+                    "score": 0.11162796569678049,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008685",
+                    "name": "Wolff-Parkinson-White syndrome",
+                    "score": 0.11087395640541053,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_4000141",
+                    "name": "Left ventricular dilatation",
+                    "score": 0.11087395640541053,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0000188",
+                    "name": "blood glucose amount",
+                    "score": 0.10372555633482904,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000539",
+                    "name": "Abnormality of refraction",
+                    "score": 0.10367688091576897,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0000591",
+                    "name": "intrinsic cardiomyopathy",
+                    "score": 0.09239496367117545,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004892",
+                    "name": "refractive error",
+                    "score": 0.09208444646362868,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005318",
+                    "name": "axial length measurement",
+                    "score": 0.08777715711653208,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_1000110",
+                    "name": "bone tissue density",
+                    "score": 0.07959047635675,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_1331",
+                    "name": "Familial prostate cancer",
+                    "score": 0.07843253756153,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005159",
+                    "name": "prostate carcinoma",
+                    "score": 0.07843253756153,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008315",
+                    "name": "prostate cancer",
+                    "score": 0.07843253756153,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007959",
+                    "name": "medulloblastoma",
+                    "score": 0.07391597093694036,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000529",
+                    "name": "Progressive visual loss",
+                    "score": 0.06730695621431336,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005070",
+                    "name": "neoplasm",
+                    "score": 0.06273490720998412,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005267",
+                    "name": "heart disorder",
+                    "score": 0.056300240296217656,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013662",
+                    "name": "Barrett esophagus",
+                    "score": 0.054243235272073684,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004612",
+                    "name": "high density lipoprotein cholesterol measurement",
+                    "score": 0.052946126422186886,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012693",
+                    "name": "glycogen storage disease due to muscle and heart glycogen synthase deficiency",
+                    "score": 0.05234729061754116,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007152",
+                    "name": "arrhythmogenic right ventricular dysplasia 1",
+                    "score": 0.0522641351502371,
+                    "matched": false
+                }
+            ],
+            "articles": [],
+            "ot_synonym_selection_usage": {
+                "text": "VERDICT: NEW\nBASIS: NONE\nREASON: The list contains only HDL cholesterol measurement, which is largely uncorrelated with LDL cholesterol, and no other lipid trait strongly tied to LDL.",
+                "input_tokens": 1363,
+                "output_tokens": 80,
+                "flex": false
+            },
+            "match": {
+                "method": "broad_opus",
+                "matched_id": null,
+                "basis": "NONE",
+                "reason": "The list contains only HDL cholesterol measurement, which is largely uncorrelated with LDL cholesterol, and no other lipid trait strongly tied to LDL.",
+                "verdict_text": "NEW",
+                "unresolved_basis": false
+            }
+        },
+        "synonyms": [
+            "low-density lipoprotein cholesterol",
+            "LDL-C",
+            "LDL",
+            "bad cholesterol",
+            "low-density lipoprotein",
+            "LDL cholesterol level",
+            "serum LDL cholesterol",
+            "plasma LDL cholesterol",
+            "LDL-cholesterol concentration"
+        ],
+        "pubmed_pmids": [
+            "31434002",
+            "31983221",
+            "30681346",
+            "33947203",
+            "38884729",
+            "40632839",
+            "28771489",
+            "30384889",
+            "38884726",
+            "40421724",
+            "35223984"
+        ]
+    }
+}

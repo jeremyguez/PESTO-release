@@ -1,0 +1,574 @@
+gene	phenotype	panel	group	novelty	evidence	read	error
+CCT7	complex neurodevelopmental disorder	2a	Limited	90.0	10.0	8	
+ZFTRAF1	neurodevelopmental disorder	2a	Limited	2.0	98.0	1	
+PHKG2	primary ciliary dyskinesia 33	2a	Absent	95.0	5.0	16	
+SYCP2L	Weiss-Kruszka syndrome	2a	Absent	97.0	3.0	7	
+ATP11C	arterial tortuosity syndrome	2a	Absent	96.0	4.0	20	
+FKBP6	Charcot-Marie-Tooth disease type 2E	2a	Absent	96.0	4.0	15	
+MT-CO3	gonadal dysgenesis	2a	Absent	90.0	10.0	18	
+APC	complement component 2 deficiency	2a	Absent	100.0	0.0	0	
+RBFOX3	arthrogryposis, distal, with impaired proprioception and touch	2a	Absent	95.0	5.0	20	
+PSMB1	glycogen storage disease III	2a	Absent	97.0	3.0	9	
+CDH15	familial hypobetalipoproteinemia 1	2a	Absent	97.0	3.0	18	
+ANO3	arthrogryposis multiplex congenita 2, neurogenic type	2a	Absent	92.0	8.0	20	
+SCN9A	hypogonadotropic hypogonadism	2a	Absent	97.0	3.0	20	
+SELENBP1	neurodevelopmental disorder with spastic quadriplegia, optic atrophy, seizures, and structural brain anomalies	2a	Absent	92.0	8.0	20	
+CACNA1F	Malan overgrowth syndrome	2a	Absent	97.0	3.0	20	
+GET4	deafness-lymphedema-leukemia syndrome	2a	Absent	92.0	8.0	11	
+NFATC2	spondylometaphyseal dysplasia, 'corner fracture' type	2a	Absent	82.0	18.0	20	
+KCNE2	epidermolysis bullosa simplex 4, localized or generalized intermediate, autosomal recessive	2a	Absent	98.0	2.0	14	
+RPL3L	autosomal recessive mendelian susceptibility to mycobacterial diseases due to complete RORgamma receptor deficiency	2a	Absent	98.0	2.0	20	
+CASP2	Hoxha-Aliu syndrome	2a	Absent	12.0	88.0	20	
+AMIGO2	autosomal recessive nonsyndromic hearing loss 59	2a	Absent	95.0	5.0	13	
+KCND3	46,XY sex reversal 3	2a	Absent	98.0	2.0	2	
+KCNQ4	X-linked spondyloepimetaphyseal dysplasia	2a	Absent	97.0	3.0	20	
+NBEAL2	arrhythmogenic cardiomyopathy with wooly hair and keratoderma	2a	Absent	97.0	3.0	20	
+TSPEAR	tibial muscular dystrophy	2a	Absent	96.0	4.0	13	
+TNNT2	atrial septal defect 6	2a	Absent	92.0	8.0	20	
+PCCA	hypercholanemia, familial, 2	2a	Absent	95.0	5.0	20	
+STXBP2	autosomal recessive nonsyndromic hearing loss 44	2a	Absent	95.0	5.0	20	
+UQCRH	hereditary spastic paraplegia 45	2a	Absent	95.0	5.0	7	
+MC4R	agammaglobulinemia 2, autosomal recessive	2a	Absent	98.0	2.0	3	
+CDK9	congenital myopathy 2c, severe infantile, autosomal dominant	2a	Absent	82.0	18.0	20	
+PHGDH	Joubert syndrome 33	2a	Absent	85.0	15.0	20	
+CYBA	parathyroid gland carcinoma	2a	Absent	98.0	2.0	20	
+DNAJC13	craniofacial anomalies and anterior segment dysgenesis syndrome	2a	Absent	96.0	4.0	20	
+MRAS	gonadal dysgenesis, dysmorphic facies, retinal dystrophy, and myopathy	2a	Absent	90.0	10.0	20	
+GHR	familial long QT syndrome	2a	Absent	97.0	3.0	17	
+POU4F1	autosomal dominant polycystic kidney disease	2a	Absent	88.0	12.0	18	
+IFNAR2	Fuchs' endothelial dystrophy	2a	Absent	98.0	2.0	20	
+CEP120	hemochromatosis type 1	2a	Absent	98.0	2.0	20	
+MT-TG	minimal pigment oculocutaneous albinism type 1	2a	Absent	97.0	3.0	5	
+GYPC	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	2a	Absent	95.0	5.0	1	
+BRSK2	mitochondrial pyruvate carrier deficiency	2a	Absent	93.0	7.0	20	
+TRHR	metabolic encephalomyopathic crises, recurrent, with rhabdomyolysis, cardiac arrhythmias, and neurodegeneration	2a	Absent	98.0	2.0	20	
+TFRC	congenital stationary night blindness autosomal dominant 3	2a	Absent	95.0	5.0	20	
+SLC25A13	aldosterone-producing adenoma with seizures and neurological abnormalities	2a	Absent	95.0	5.0	20	
+KIF17	spinal muscular atrophy-progressive myoclonic epilepsy syndrome	2a	Absent	88.0	12.0	20	
+GGPS1	polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy 1	2a	Absent	95.0	5.0	20	
+KREMEN1	autosomal dominant hypocalcemia 1	2a	Absent	95.0	5.0	20	
+C1QBP	Antley-Bixler syndrome	2a	Absent	95.0	5.0	20	
+PCBD1	developmental delay, hypotonia, and impaired language	2a	Absent	80.0	20.0	20	
+TCF3	striate palmoplantar keratoderma	2a	Absent	97.0	3.0	13	
+TCTN1	congenital disorder of deglycosylation 2	2a	Absent	95.0	5.0	18	
+ADAM20	amyotrophic lateral sclerosis type 9	2a	Absent	97.0	3.0	8	
+SLK	degenerative myopia	2a	Absent	97.0	3.0	20	
+MC2R	congenital reticular ichthyosiform erythroderma	2a	Absent	95.0	5.0	20	
+ADCY5	3M syndrome 2	2a	Absent	97.0	3.0	20	
+SMAD2	intellectual disability, X-linked 96	2a	Absent	95.0	5.0	20	
+SBDS	immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome	2a	Absent	92.0	8.0	20	
+FGF3	surfactant metabolism dysfunction, pulmonary, 4	2a	Absent	95.0	5.0	20	
+PTS	3-hydroxy-3-methylglutaric aciduria	2a	Absent	95.0	5.0	10	
+PDCD1	polymicrogyria, perisylvian, with cerebellar hypoplasia and arthrogryposis	2a	Absent	98.0	2.0	16	
+PAX9	Knobloch syndrome 2	2a	Absent	97.0	3.0	19	
+LEPR	spastic paraplegia 83, autosomal recessive	2a	Absent	97.0	3.0	20	
+SMC3	asthma-related traits, susceptibility to, 5	2a	Absent	96.0	4.0	20	
+DBT	myofibrillar myopathy 5	2a	Absent	95.0	5.0	16	
+LPAR6	blepharophimosis - intellectual disability syndrome, MKB type	2a	Absent	97.0	3.0	20	
+SFRP4	Ritscher-Schinzel syndrome	2a	Absent	93.0	7.0	20	
+HPS1	myosclerosis	2a	Absent	95.0	5.0	20	
+IDH2	hereditary renal hypouricemia	2a	Absent	97.0	3.0	20	
+MYO18B	hypertrophic cardiomyopathy 16	2a	Absent	70.0	30.0	20	
+ATP5F1A	short stature-brachydactyly-obesity-global developmental delay syndrome	2a	Absent	75.0	25.0	20	
+IL17RD	microphthalmia, isolated, with coloboma 6	2a	Absent	82.0	18.0	20	
+FCGR2B	bardet-biedl syndrome 21	2a	Absent	98.0	2.0	20	
+MRPS14	robinow syndrome, autosomal recessive 2	2a	Absent	95.0	5.0	3	
+EDNRA	Charcot-Marie-Tooth disease axonal type 2CC	2a	Absent	98.0	2.0	15	
+HLA-DRB1	congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency	2a	Absent	85.0	15.0	4	
+SCNN1A	autosomal recessive limb-girdle muscular dystrophy type 2F	2a	Absent	98.0	2.0	20	
+RXYLT1	cholestasis, progressive familial intrahepatic, 8	2a	Absent	95.0	5.0	4	
+VWA2	hypercholesterolemia, familial, 4	2a	Absent	97.0	3.0	6	
+MTHFR	immunodeficiency 102	2a	Absent	85.0	15.0	3	
+WBP11	immunodeficiency, common variable, 3	2a	Absent	96.0	4.0	10	
+SEC16B	MHC class II deficiency 3	2a	Absent	98.0	2.0	2	
+PIGC	agammaglobulinemia	2a	Absent	93.0	7.0	14	
+AGPAT5	short-rib thoracic dysplasia 11 with or without polydactyly	2a	Absent	97.0	3.0	9	
+RNF220	myopathy, lactic acidosis, and sideroblastic anemia 1	2a	Absent	95.0	5.0	20	
+PNKP	amyloidosis, hereditary systemic 3	2a	Absent	95.0	5.0	20	
+TTC21A	spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 3	2a	Absent	95.0	5.0	5	
+RAB32	Silver-Russell syndrome 5	2a	Absent	96.0	4.0	20	
+PNPLA1	immunodeficiency-centromeric instability-facial anomalies syndrome	2a	Absent	95.0	5.0	20	
+ZNF81	acromelic frontonasal dysostosis	2a	Absent	95.0	5.0	7	
+SLC52A2	Guttmacher syndrome	2a	Absent	96.0	4.0	20	
+HELLS	autosomal recessive spondylocostal dysostosis	2a	Absent	95.0	5.0	20	
+IFT54	familial isolated deficiency of vitamin E	2a	Absent	98.0	2.0	8	
+FKTN	autosomal dominant hypophosphatemic rickets	2a	Absent	95.0	5.0	16	
+PRDM6	Long-Olsen-Distelmaier syndrome	2a	Absent	85.0	15.0	20	
+TRPA1	early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome	2a	Absent	90.0	10.0	20	
+MCCC2	vitamin D-dependent rickets, type 3	2a	Absent	96.0	4.0	20	
+ANAPC1	head and neck squamous cell carcinoma	2a	Absent	82.0	18.0	20	
+PDX1	arthrogryposis-renal dysfunction-cholestasis syndrome	2a	Absent	95.0	5.0	20	
+ISCA1	pulmonary hypertension, primary, 3	2a	Absent	90.0	10.0	20	
+CAV1	hereditary late onset Parkinson disease	2a	Absent	88.0	12.0	20	
+PLEKHM2	developmental malformations-deafness-dystonia syndrome	2a	Absent	93.0	7.0	18	
+FXYD2	renal hypomagnesemia 2	2a	Moderate	0.0	100.0	20	
+BLVRA	hyperbiliverdinemia	2a	Moderate	3.0	97.0	20	
+HAND1	congenital heart disease	2a	Moderate	0.0	100.0	20	
+PRDX3	spinocerebellar ataxia, autosomal recessive 32	2a	Moderate	0.0	100.0	20	
+ATP5MK	mitochondrial disease	2a	Moderate	3.0	97.0	8	
+TMEM63C	spastic paraplegia 87, autosomal recessive	2a	Moderate	2.0	98.0	7	
+ASPRV1	ichthyosis, lamellar, autosomal dominant	2a	Moderate	2.0	98.0	11	
+SEPHS1	neurodevelopmental disorder	2a	Moderate	2.0	98.0	10	
+JPH1	congenital myopathy 25	2a	Moderate	3.0	97.0	13	
+REL	immunodeficiency 92	2a	Moderate	3.0	97.0	20	
+INTS11	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	2a	Moderate	2.0	98.0	20	
+ETS1	congenital heart disease	2a	Moderate	2.0	98.0	20	
+FLI1	bleeding disorder, platelet-type, 21	2a	Moderate	3.0	97.0	20	
+CPSF3	neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures	2a	Moderate	5.0	95.0	20	
+TUBA4A	amyotrophic lateral sclerosis type 22	2a	Moderate	2.0	98.0	20	
+CAMSAP1	cortical dysplasia, complex, with other brain malformations 12	2a	Moderate	3.0	97.0	14	
+UBR5	neurodevelopmental disorder	2a	Moderate	2.0	98.0	20	
+RBBP5	neurodevelopmental disorder	2a	Moderate	3.0	97.0	20	
+CHKA	neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures	2a	Moderate	2.0	98.0	20	
+TMX2	neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity	2a	Strong	2.0	98.0	9	
+PYCR2	hypomyelinating leukodystrophy 10	2a	Strong	0.0	100.0	18	
+THUMPD1	neurodevelopmental disorder with speech delay and variable ocular anomalies	2a	Moderate	2.0	98.0	12	
+ALDH1A2	diaphragmatic hernia 4, with cardiovascular defects	2a	Strong	2.0	98.0	20	
+UNG	hyper-IgM syndrome type 5	2a	Moderate	2.0	98.0	20	
+GABRD	complex neurodevelopmental disorder	2a	Moderate	5.0	95.0	20	
+CDH11	Teebi hypertelorism syndrome 2	2a	Moderate	2.0	98.0	20	
+SLC31A1	neurodegeneration and seizures due to copper transport defect	2a	Moderate	2.0	98.0	20	
+TRAC	TCR-alpha-beta-positive T-cell deficiency	2a	Moderate	2.0	98.0	20	
+PRKG2	acromesomelic dysplasia 4	2a	Strong	2.0	98.0	20	
+RAC3	neurodevelopmental disorder with structural brain anomalies and dysmorphic facies	2a	Strong	0.0	100.0	20	
+ALPK1	retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome	2a	Strong	0.0	100.0	20	
+GDF11	vertebral hypersegmentation and orofacial anomalies	2a	Strong	3.0	97.0	20	
+SAMD11	retinitis pigmentosa	2a	Strong	3.0	97.0	5	
+TMEM106B	leukodystrophy, hypomyelinating, 16	2a	Strong	1.0	99.0	20	
+SELENOI	spastic paraplegia 81, autosomal recessive	2a	Strong	2.0	98.0	18	
+SACS	Charlevoix-Saguenay spastic ataxia	2a	Strong	0.0	100.0	20	
+SLC6A17	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	2a	Strong	2.0	98.0	9	
+UNC45A	osteootohepatoenteric syndrome	2a	Strong	0.0	100.0	20	
+BCAS3	Hengel-Maroofian-Schols syndrome	2a	Strong	3.0	97.0	12	
+SMPD4	neurodevelopmental disorder with microcephaly, arthrogryposis, and structural brain anomalies	2a	Strong	2.0	98.0	15	
+THAP1	torsion dystonia 6	2a	Strong	0.0	100.0	20	
+DHPS	neurodevelopmental disorder with seizures and speech and walking impairment	2a	Strong	2.0	98.0	18	
+GEMIN4	neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities	2a	Strong	2.0	98.0	20	
+TRNT1	retinitis pigmentosa and erythrocytic microcytosis	2a	Strong	2.0	98.0	20	
+ATG7	spinocerebellar ataxia, autosomal recessive 31	2a	Strong	3.0	97.0	20	
+GDAP2	spinocerebellar ataxia, autosomal recessive 27	2a	Strong	2.0	98.0	9	
+PITX1	clubfoot	2a	Strong	0.0	100.0	20	
+TRAPPC2L	encephalopathy, progressive, early-onset, with episodic rhabdomyolysis	2a	Limited	2.0	98.0	10	
+NRXN1	Pitt-Hopkins-like syndrome 2	2a	Strong	2.0	98.0	20	
+COX16	mitochondrial complex IV deficiency, nuclear type 22	2a	Strong	3.0	97.0	13	
+EPHB2	bleeding disorder, platelet-type, 22	2a	Limited	3.0	97.0	20	
+LIPT2	encephalopathy, neonatal severe, with lactic acidosis and brain abnormalities	2a	Strong	2.0	98.0	10	
+SUMO1	orofacial cleft 10	2a	Limited	2.0	98.0	20	
+SLC35B2	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	2a	Limited	2.0	98.0	15	
+SCLT1	retinitis pigmentosa	2a	Limited	4.0	96.0	15	
+VANGL1	neural tube defects, susceptibility to	2a	Limited	0.0	100.0	20	
+ATG5	spinocerebellar ataxia, autosomal recessive 25	2a	Limited	3.0	97.0	20	
+TMEM135	neurodevelopmental disorder	2a	Limited	70.0	30.0	14	
+USP44	congenital heart disease	2a	Limited	25.0	75.0	3	
+ASB10	glaucoma 1, open angle, F	2a	Limited	3.0	97.0	16	
+PITX2	ring dermoid of cornea	2a	Strong	3.0	97.0	20	
+DCC	gaze palsy, familial horizontal, with progressive scoliosis, 2	2a	Strong	2.0	98.0	20	
+ELP2	intellectual disability, autosomal recessive 58	2a	Limited	2.0	98.0	20	
+DHX34	intellectual disability	2a	Limited	15.0	85.0	7	
+CRIPTO	congenital heart disease	2a	Limited	5.0	95.0	20	
+KCNT1	malignant migrating partial seizures of infancy	2a	Definitive	0.0	100.0	20	
+TMOD1	dilated cardiomyopathy	2a	Limited	5.0	95.0	20	
+ASCL1	neurodevelopmental disorder	2a	Limited	18.0	82.0	20	
+SDHB	Carney-Stratakis syndrome	2a	Definitive	2.0	98.0	20	
+AP3B1	Hermansky-Pudlak syndrome 2	2a	Definitive	0.0	100.0	20	
+MT-TA	mitochondrial disease	2a	Definitive	5.0	95.0	20	
+AICDA	hyper-IgM syndrome type 2	2a	Definitive	0.0	100.0	20	
+TAFAZZIN	Barth syndrome	2a	Definitive	0.0	100.0	20	
+IL11RA	craniosynostosis and dental anomalies	2a	Definitive	0.0	100.0	20	
+POLD3	immunodeficiency 122	2a	Limited	2.0	98.0	20	
+ABCC9	hypertrichotic osteochondrodysplasia Cantu type	2a	Definitive	0.0	100.0	20	
+TDO2	familial hypertryptophanemia	2a	Limited	3.0	97.0	20	
+AKT1	Proteus syndrome	2a	Definitive	0.0	100.0	20	
+SS18L1	amyotrophic lateral sclerosis	2a	Limited	3.0	97.0	12	
+HEY2	congenital heart disease	2a	Limited	4.0	96.0	20	
+SLC24A5	oculocutaneous albinism type 6	2a	Definitive	0.0	100.0	20	
+LRPAP1	myopia 23, autosomal recessive	2a	Definitive	2.0	98.0	14	
+KIT	piebaldism	2a	Definitive	0.0	100.0	20	
+PIK3R1	SHORT syndrome	2a	Definitive	0.0	100.0	20	
+CHD2	developmental and epileptic encephalopathy 94	2a	Definitive	0.0	100.0	20	
+SAMD9	MIRAGE syndrome	2a	Definitive	0.0	100.0	20	
+FBXO11	intellectual developmental disorder with dysmorphic facies and behavioral abnormalities	2a	Definitive	2.0	98.0	20	
+CCDC88A	PEHO-like syndrome	2a	Moderate	0.0	100.0	16	
+ERCC6L2	pancytopenia-developmental delay syndrome	2a	Definitive	3.0	97.0	20	
+SRCAP	Floating-Harbor syndrome	2a	Definitive	1.0	99.0	20	
+PPP1R13L	dilated cardiomyopathy	2a	Definitive	2.0	98.0	20	
+EBP	MEND syndrome	2a	Definitive	2.0	98.0	20	
+ATP2B1	intellectual developmental disorder, autosomal dominant 66	2a	Moderate	2.0	98.0	20	
+IGSF1	X-linked central congenital hypothyroidism with late-onset testicular enlargement	2a	Definitive	0.0	100.0	20	
+ASNS	congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome	2a	Definitive	0.0	100.0	20	
+KLHL24	epidermolysis bullosa simplex 6, generalized, with scarring and hair loss	2a	Moderate	0.0	100.0	20	
+ATP1A1	Charcot-Marie-tooth disease, axonal, type 2DD	2a	Moderate	2.0	98.0	20	
+ASAH1	Farber lipogranulomatosis	2a	Definitive	0.0	100.0	20	
+RBM28	ANE syndrome	2a	Limited	2.0	98.0	8	
+DCLRE1C	Omenn syndrome	2a	Definitive	3.0	97.0	20	
+SLC38A3	developmental and epileptic encephalopathy 102	2a	Strong	2.0	98.0	20	
+AR	Kennedy disease	2a	Definitive	0.0	100.0	20	
+CALM2	catecholaminergic polymorphic ventricular tachycardia	2a	Moderate	3.0	97.0	20	
+TBX15	pelviscapular dysplasia	2a	Definitive	2.0	98.0	20	
+KIF4A	complex neurodevelopmental disorder with or without congenital anomalies	2a	Limited	3.0	97.0	20	
+PAK1	intellectual developmental disorder with macrocephaly, seizures, and speech delay	2a	Strong	2.0	98.0	20	
+CAMTA1	cerebellar dysfunction with variable cognitive and behavioral abnormalities	2a	Definitive	2.0	98.0	20	
+TOE1	pontocerebellar hypoplasia type 7	2a	Strong	0.0	100.0	20	
+KRT71	hypotrichosis 13	2a	Limited	3.0	97.0	20	
+PLS3	X-linked osteoporosis with fractures	2a	Definitive	0.0	100.0	20	
+ACP5	Spondyloenchondrodysplasia with immune dysregulation	2a	Definitive	0.0	100.0	20	
+TLR5	systemic lupus erythematosus, susceptibility to, 1	2a	Limited	2.0	98.0	20	
+SHANK3	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+SCN2A	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+JMJD1C	neurodevelopmental disorder	2a	Limited	7.0	93.0	20	
+ADNP	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+PTEN	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+SYNGAP1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+DYRK1A	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+MRTFB	neurodevelopmental disorder	2a	Limited	5.0	95.0	20	
+CHD2	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+CFAP43	normal pressure hydrocephalus	2a	Limited	2.0	98.0	8	
+CHD8	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+ANKRD11	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+EHMT1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+CRB2	ventriculomegaly-cystic kidney disease	2a	Definitive	2.0	98.0	20	
+KMT2A	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+STXBP1	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+ASXL3	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+ARID1B	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+POGZ	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+GRIN2B	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+FOXP1	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+DEAF1	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+MT-TC	mitochondrial disease	2a	Limited	12.0	88.0	10	
+NRXN1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+KDM5B	Autism Spectrum Disorder	2b	ASD candidate	3.0	97.0	20	
+TLK2	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	16	
+NAA15	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+MEF2C	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+KDM6B	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+SATB2	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+PPP2R5D	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+CTNNB1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+KMT5B	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+TCF20	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+WAC	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+TCF4	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+NF1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+GIGYF1	Autism Spectrum Disorder	2b	ASD candidate	2.0	98.0	18	
+DYNC1H1	Autism Spectrum Disorder	2b	ASD known	7.0	93.0	20	
+ASH1L	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+CTCF	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+AHDC1	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+EYA4	dilated cardiomyopathy 1J	2a	Limited	2.0	98.0	20	
+TBR1	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+EBF3	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+CDK13	Autism Spectrum Disorder	2b	ASD known	15.0	85.0	20	
+AUTS2	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+CUL3	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+MYT1L	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+SETD5	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+HNRNPU	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+KMT2C	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+BCL11A	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+SLC6A1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+SCN1A	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+TSC2	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+DLG4	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+MARK2	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+DNMT3A	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+EP300	Autism Spectrum Disorder	2b	ASD known	8.0	92.0	20	
+CNOT3	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+MBD5	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+RAI1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+TBL1XR1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+BRSK2	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+TANC2	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+GABRA1	Autism Spectrum Disorder	2b	ASD known	8.0	92.0	20	
+DLL1	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+MED13L	Autism Spectrum Disorder	2b	ASD known	20.0	80.0	20	
+NR3C2	Autism Spectrum Disorder	2b	ASD candidate	3.0	97.0	20	
+SRCAP	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+TRIP12	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+ZEB2	Autism Spectrum Disorder	2b	ASD known	25.0	75.0	20	
+TAOK1	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+MED13	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+PPP3CA	Autism Spectrum Disorder	2b	ASD known	15.0	85.0	20	
+IRF2BPL	Autism Spectrum Disorder	2b	ASD known	22.0	78.0	20	
+KCNQ3	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+ZNF292	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	15	
+BRAF	Autism Spectrum Disorder	2b	ASD known	15.0	85.0	9	
+AP2S1	Autism Spectrum Disorder	2b	ASD known	8.0	92.0	6	
+ACTB	Autism Spectrum Disorder	2b	ASD known	18.0	82.0	20	
+SOX5	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+CLTC	Autism Spectrum Disorder	2b	ASD known	80.0	20.0	20	
+GATAD2B	Autism Spectrum Disorder	2b	ASD known	68.0	32.0	20	
+SMAD4	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+CIC	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	17	
+SYNCRIP	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+DNM1	Autism Spectrum Disorder	2b	ASD known	12.0	88.0	20	
+SON	Autism Spectrum Disorder	2b	ASD known	12.0	88.0	20	
+ZBTB20	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+POU3F3	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	19	
+GRIN1	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+SHANK2	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+WDFY3	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+SMARCA4	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+CSNK2A1	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+SMARCA2	Autism Spectrum Disorder	2b	ASD known	10.0	90.0	20	
+PUF60	Autism Spectrum Disorder	2b	ASD known	75.0	25.0	20	
+PHF21A	Autism Spectrum Disorder	2b	ASD known	7.0	93.0	20	
+KMT2E	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+FOXP2	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+RFX7	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	6	
+RORB	Autism Spectrum Disorder	2b	ASD known	17.0	83.0	20	
+RFX3	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+CAMTA1	Autism Spectrum Disorder	2b	ASD known	68.0	32.0	16	
+PTPN11	Autism Spectrum Disorder	2b	ASD known	15.0	85.0	20	
+ANK2	Autism Spectrum Disorder	2b	ASD known	0.0	100.0	20	
+SPEN	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	17	
+TM9SF4	Autism Spectrum Disorder	2b	novel candidate	10.0	90.0	2	
+TCF12	Autism Spectrum Disorder	2b	ASD known	18.0	82.0	20	
+SIN3A	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+TUBB2A	Autism Spectrum Disorder	2b	ASD known	30.0	70.0	20	
+NR2F1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+QRICH1	Autism Spectrum Disorder	2b	ASD known	10.0	90.0	11	
+GRIA2	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+KCNB1	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+SPTBN1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+KCNQ2	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+NSD1	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+PACS1	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+GRIN2A	Autism Spectrum Disorder	2b	ASD known	6.0	94.0	20	
+PRR12	Autism Spectrum Disorder	2b	ASD known	25.0	75.0	8	
+SETD1A	Autism Spectrum Disorder	2b	ASD known	12.0	88.0	20	
+KCNMA1	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+VEZF1	Autism Spectrum Disorder	2b	ASD candidate	95.0	5.0	16	
+SETD1B	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+CHD7	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+FOXG1	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+CREBBP	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+ZMYM2	Autism Spectrum Disorder	2b	ASD known	65.0	35.0	15	
+ZNF865	Autism Spectrum Disorder	2b	ASD candidate	75.0	25.0	2	
+TRIO	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+EEF1A2	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+SOX11	Autism Spectrum Disorder	2b	ASD known	20.0	80.0	20	
+GABRB3	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+TCF7L2	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+CSNK1E	Autism Spectrum Disorder	2b	ASD candidate	82.0	18.0	20	
+WDR26	Autism Spectrum Disorder	2b	ASD known	28.0	72.0	20	
+TNRC6B	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	13	
+ATAT1	Autism Spectrum Disorder	2b	novel candidate	95.0	5.0	20	
+PBX1	Autism Spectrum Disorder	2b	ASD candidate	85.0	15.0	20	
+MSL2	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+SETBP1	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+SKI	Autism Spectrum Disorder	2b	ASD candidate	22.0	78.0	19	
+NSD2	Autism Spectrum Disorder	2b	ASD known	6.0	94.0	20	
+ARF3	Autism Spectrum Disorder	2b	ASD candidate	72.0	28.0	20	
+NBEA	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+YWHAG	Autism Spectrum Disorder	2b	ASD known	7.0	93.0	20	
+SCN8A	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+CACNA1A	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+FBXW11	Autism Spectrum Disorder	2b	ASD candidate	25.0	75.0	10	
+ZBTB34	Autism Spectrum Disorder	2b	novel candidate	97.0	3.0	2	
+USP7	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+ZMYND8	Autism Spectrum Disorder	2b	ASD known	28.0	72.0	6	
+KCNA2	Autism Spectrum Disorder	2b	ASD known	10.0	90.0	20	
+FBXO11	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+PPP2CA	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+BRD4	Autism Spectrum Disorder	2b	ASD candidate	22.0	78.0	20	
+YLPM1	Autism Spectrum Disorder	2b	novel candidate	85.0	15.0	8	
+ZNF536	Autism Spectrum Disorder	2b	ASD candidate	7.0	93.0	10	
+KCND3	Autism Spectrum Disorder	2b	ASD candidate	30.0	70.0	20	
+PTPRS	Autism Spectrum Disorder	2b	ASD candidate	62.0	38.0	20	
+TUBB3	Autism Spectrum Disorder	2b	ASD known	75.0	25.0	20	
+H1-4	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+REV3L	Autism Spectrum Disorder	2b	ASD candidate	93.0	7.0	20	
+SETD2	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+ZFHX3	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	12	
+DHDDS	Autism Spectrum Disorder	2b	ASD known	8.0	92.0	20	
+HIVEP2	Autism Spectrum Disorder	2b	ASD known	15.0	85.0	19	
+SCAF1	Autism Spectrum Disorder	2b	ASD candidate	5.0	95.0	16	
+DSCAM	Autism Spectrum Disorder	2b	ASD candidate	2.0	98.0	20	
+MTOR	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+ITSN1	Autism Spectrum Disorder	2b	ASD candidate	2.0	98.0	20	
+EMC7	Autism Spectrum Disorder	2b	novel candidate	100.0	0.0	0	
+ARID1A	Autism Spectrum Disorder	2b	ASD candidate	5.0	95.0	19	
+XPO1	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	17	
+NCKAP1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+PPP2R1A	Autism Spectrum Disorder	2b	ASD candidate	40.0	60.0	19	
+NRXN3	Autism Spectrum Disorder	2b	ASD candidate	3.0	97.0	20	
+CNOT1	Autism Spectrum Disorder	2b	ASD known	15.0	85.0	20	
+LMTK3	Autism Spectrum Disorder	2b	ASD candidate	10.0	90.0	1	
+PHF12	Autism Spectrum Disorder	2b	ASD known	97.0	3.0	3	
+KBTBD6	Autism Spectrum Disorder	2b	novel candidate	97.0	3.0	2	
+NR4A2	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+MAGEL2	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+EGR3	Autism Spectrum Disorder	2b	ASD candidate	10.0	90.0	20	
+PTK2	Autism Spectrum Disorder	2b	novel candidate	5.0	95.0	20	
+EP400	Autism Spectrum Disorder	2b	ASD candidate	20.0	80.0	20	
+KANSL1	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+PTPRT	Autism Spectrum Disorder	2b	ASD candidate	5.0	95.0	3	
+ATP2B2	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+SMARCB1	Autism Spectrum Disorder	2b	ASD candidate	10.0	90.0	20	
+MAP1A	Autism Spectrum Disorder	2b	ASD candidate	3.0	97.0	20	
+RAB14	Autism Spectrum Disorder	2b	ASD candidate	97.0	3.0	20	
+GNB1	Autism Spectrum Disorder	2b	ASD known	20.0	80.0	20	
+GSE1	Autism Spectrum Disorder	2b	ASD candidate	10.0	90.0	7	
+PCLO	Autism Spectrum Disorder	2b	ASD candidate	15.0	85.0	20	
+MAF	Autism Spectrum Disorder	2b	ASD known	8.0	92.0	20	
+NFIB	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	16	
+CAMK2A	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+YY1	Autism Spectrum Disorder	2b	ASD candidate	8.0	92.0	20	
+UBR5	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+PSMC5	Autism Spectrum Disorder	2b	ASD known	40.0	60.0	20	
+GABBR2	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+CGREF1	Autism Spectrum Disorder	2b	novel candidate	82.0	18.0	3	
+SYT1	Autism Spectrum Disorder	2b	ASD known	10.0	90.0	20	
+JARID2	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+ADGRB1	Autism Spectrum Disorder	2b	ASD candidate	6.0	94.0	15	
+KMT2D	Autism Spectrum Disorder	2b	ASD known	8.0	92.0	20	
+LEMD3	Autism Spectrum Disorder	2b	novel candidate	85.0	15.0	14	
+CHAMP1	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	20	
+LRRC4	Autism Spectrum Disorder	2b	ASD candidate	3.0	97.0	19	
+TLE3	Autism Spectrum Disorder	2b	ASD candidate	82.0	18.0	12	
+CAPRIN1	Autism Spectrum Disorder	2b	ASD known	2.0	98.0	20	
+GSK3B	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+RALGAPB	Autism Spectrum Disorder	2b	ASD candidate	3.0	97.0	10	
+SLTM	Autism Spectrum Disorder	2b	novel candidate	95.0	5.0	4	
+EFTUD2	Autism Spectrum Disorder	2b	ASD candidate	40.0	60.0	20	
+PSMD12	Autism Spectrum Disorder	2b	ASD known	3.0	97.0	19	
+MEIS2	Autism Spectrum Disorder	2b	ASD known	7.0	93.0	20	
+ZBTB7A	Autism Spectrum Disorder	2b	ASD candidate	72.0	28.0	20	
+TRIM8	Autism Spectrum Disorder	2b	ASD known	82.0	18.0	20	
+GNAI1	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	20	
+TOP3B	Autism Spectrum Disorder	2b	ASD candidate	2.0	98.0	19	
+FBXW7	Autism Spectrum Disorder	2b	ASD candidate	65.0	35.0	18	
+PTCH1	Autism Spectrum Disorder	2b	ASD candidate	25.0	75.0	20	
+GABRA4	Autism Spectrum Disorder	2b	ASD candidate	3.0	97.0	20	
+TRAF7	Autism Spectrum Disorder	2b	ASD known	78.0	22.0	14	
+DIP2C	Autism Spectrum Disorder	2b	ASD known	5.0	95.0	8	
+NACC1	Autism Spectrum Disorder	2b	ASD candidate	22.0	78.0	15	
+HNRNPD	Autism Spectrum Disorder	2b	ASD known	72.0	28.0	20	
+CERT1	Autism Spectrum Disorder	2b	ASD known	76.0	24.0	20	
+KIF1A	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	20	
+ACTG1	Autism Spectrum Disorder	2b	ASD candidate	22.0	78.0	20	
+CXXC1	Autism Spectrum Disorder	2b	novel candidate	96.0	4.0	17	
+BCR	Autism Spectrum Disorder	2b	novel candidate	70.0	30.0	5	
+SRSF1	Autism Spectrum Disorder	2b	ASD candidate	35.0	65.0	20	
+ZBTB18	Autism Spectrum Disorder	2b	ASD candidate	18.0	82.0	20	
+SPPL3	Autism Spectrum Disorder	2b	novel candidate	75.0	25.0	17	
+PPM1D	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	15	
+ZNF644	Autism Spectrum Disorder	2b	ASD candidate	22.0	78.0	9	
+ZCCHC14	Autism Spectrum Disorder	2b	novel candidate	88.0	12.0	3	
+RANBP2	Autism Spectrum Disorder	2b	ASD candidate	85.0	15.0	20	
+MAPK8IP3	Autism Spectrum Disorder	2b	ASD known	15.0	85.0	20	
+GNAO1	Autism Spectrum Disorder	2b	ASD candidate	8.0	92.0	20	
+HSF2	Autism Spectrum Disorder	2b	ASD candidate	35.0	65.0	20	
+INTS6	Autism Spectrum Disorder	2b	ASD known	8.0	92.0	9	
+PLXNA1	Autism Spectrum Disorder	2b	ASD candidate	78.0	22.0	20	
+TAF4	Autism Spectrum Disorder	2b	ASD candidate	72.0	28.0	20	
+CELF4	Autism Spectrum Disorder	2b	ASD known	4.0	96.0	11	
+C6ORF58	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+MAP1B	Autism Spectrum Disorder	2b	ASD candidate	5.0	95.0	20	
+PHF2	Autism Spectrum Disorder	2b	ASD candidate	88.0	12.0	16	
+ACY1	Autism Spectrum Disorder	2b	not in ASC	4.0	96.0	20	
+EXT1	Autism Spectrum Disorder	2b	ASD candidate	5.0	95.0	18	
+DDX28	Autism Spectrum Disorder	2b	not in ASC	98.0	2.0	3	
+BCAT1	Autism Spectrum Disorder	2b	novel candidate	85.0	15.0	20	
+MKX	Autism Spectrum Disorder	2b	novel candidate	82.0	18.0	4	
+CACNA1H	Autism Spectrum Disorder	2b	not in ASC	3.0	97.0	20	
+FAM81B	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+CGGBP1	Autism Spectrum Disorder	2b	not in ASC	78.0	22.0	11	
+BAZ2A	Autism Spectrum Disorder	2b	ASD candidate	12.0	88.0	20	
+FAM151A	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	1	
+BRD1	Autism Spectrum Disorder	2b	ASD candidate	15.0	85.0	19	
+FKBP1C	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+GOLGA6C	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+H4C7	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+DCLK3	Autism Spectrum Disorder	2b	not in ASC	88.0	12.0	4	
+FGF19	Autism Spectrum Disorder	2b	not in ASC	88.0	12.0	20	
+CLASP1	Autism Spectrum Disorder	2b	not in ASC	35.0	65.0	13	
+HAUS1	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	2	
+HACD3	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	4	
+GRIK3	Autism Spectrum Disorder	2b	novel candidate	20.0	80.0	20	
+L3MBTL3	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	7	
+LY6G5C	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	3	
+IFT20	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	20	
+MFAP3L	Autism Spectrum Disorder	2b	not in ASC	88.0	12.0	3	
+MYL6B	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	1	
+LARGE2	Autism Spectrum Disorder	2b	not in ASC	90.0	10.0	10	
+GAL3ST2	Autism Spectrum Disorder	2b	not in ASC	98.0	2.0	5	
+LAMB4	Autism Spectrum Disorder	2b	not in ASC	92.0	8.0	9	
+MRPL49	Autism Spectrum Disorder	2b	not in ASC	90.0	10.0	8	
+NOL4L	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	1	
+PCBD1	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	19	
+ICAM5	Autism Spectrum Disorder	2b	not in ASC	65.0	35.0	11	
+SGSM1	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	6	
+FABP1	Autism Spectrum Disorder	2b	not in ASC	25.0	75.0	20	
+HEPN1	Autism Spectrum Disorder	2b	not in ASC	98.0	2.0	2	
+PLB1	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	19	
+PTCHD1	Autism Spectrum Disorder	2b	not in ASC	2.0	98.0	20	
+PLOD3	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	20	
+PTH2	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	20	
+TBC1D25	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	2	
+RGL2	Autism Spectrum Disorder	2b	not in ASC	93.0	7.0	16	
+SIGLEC15	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	11	
+NPTX1	Autism Spectrum Disorder	2b	not in ASC	28.0	72.0	14	
+POU6F2	Autism Spectrum Disorder	2b	not in ASC	10.0	90.0	11	
+TLCD1	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	5	
+TPCN2	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	20	
+TRIM58	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	1	
+SKOR2	Autism Spectrum Disorder	2b	not in ASC	82.0	18.0	8	
+ZNF653	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+TSPAN2	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	10	
+SPR	Autism Spectrum Disorder	2b	not in ASC	78.0	22.0	13	
+CEACAM4	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+BHMT2	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	20	
+AOC3	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	20	
+PHB2	Autism Spectrum Disorder	2b	not in ASC	25.0	75.0	20	
+ARHGAP18	Autism Spectrum Disorder	2b	not in ASC	90.0	10.0	13	
+ANKFN1	Autism Spectrum Disorder	2b	not in ASC	92.0	8.0	2	
+C1QTNF2	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	8	
+C1QL4	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	1	
+CD79A	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	20	
+AMY2B	Autism Spectrum Disorder	2b	not in ASC	94.0	6.0	14	
+CWF19L2	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	1	
+VEPH1	Autism Spectrum Disorder	2b	not in ASC	85.0	15.0	9	
+ELMOD2	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	2	
+SLF1	Autism Spectrum Disorder	2b	not in ASC	82.0	18.0	6	
+PRDM16	Autism Spectrum Disorder	2b	not in ASC	30.0	70.0	20	
+FAM47E-STBD1	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+CGRRF1	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	3	
+DGKE	Autism Spectrum Disorder	2b	not in ASC	90.0	10.0	16	
+EGF	Autism Spectrum Disorder	2b	not in ASC	3.0	97.0	20	
+FKBPL	Autism Spectrum Disorder	2b	not in ASC	98.0	2.0	7	
+FAM189B	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+CETN1	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	11	
+ERP44	Autism Spectrum Disorder	2b	not in ASC	92.0	8.0	20	
+LRRC3C	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+EPS8L2	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	5	
+FZD2	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	20	
+HARS2	Autism Spectrum Disorder	2b	not in ASC	90.0	10.0	11	
+FERD3L	Autism Spectrum Disorder	2b	not in ASC	85.0	15.0	7	
+GREM1	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	20	
+LITAF	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	20	
+NTPCR	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+MANEAL	Autism Spectrum Disorder	2b	not in ASC	92.0	8.0	2	
+PROSER3	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+LIN9	Autism Spectrum Disorder	2b	not in ASC	93.0	7.0	20	
+RNFT1	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+NR2F6	Autism Spectrum Disorder	2b	not in ASC	92.0	8.0	10	
+GRHL3	Autism Spectrum Disorder	2b	not in ASC	88.0	12.0	20	
+MAP3K19	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	8	
+SPATA31A6	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+ELL	Autism Spectrum Disorder	2b	not in ASC	88.0	12.0	13	
+SPTSSB	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	3	
+ZNF652	Autism Spectrum Disorder	2b	not in ASC	100.0	0.0	0	
+TRIM34	Autism Spectrum Disorder	2b	not in ASC	95.0	5.0	3	
+PPP1CC	Autism Spectrum Disorder	2b	not in ASC	25.0	75.0	20	
+SOX21	Autism Spectrum Disorder	2b	not in ASC	93.0	7.0	15	
+SPIB	Autism Spectrum Disorder	2b	not in ASC	97.0	3.0	20	
+MIP	Autism Spectrum Disorder	2b	not in ASC	93.0	7.0	20	
+PIK3R5	Autism Spectrum Disorder	2b	not in ASC	92.0	8.0	20	
+SHFL	Autism Spectrum Disorder	2b	not in ASC	85.0	15.0	15	
+ATRAID	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	13	
+ARHGAP5	Autism Spectrum Disorder	2b	not in ASC	85.0	15.0	15	
+TTC21A	Autism Spectrum Disorder	2b	not in ASC	96.0	4.0	5	
+SNN	Autism Spectrum Disorder	2b	not in ASC	90.0	10.0	7	
+SLC2A1	Autism Spectrum Disorder	2b	not in ASC	25.0	75.0	20	

@@ -1,0 +1,21 @@
+You are helping to search the titles and abstracts of biomedical papers for a phenotype.
+
+Phenotype: {phenotype}
+
+Authors rarely write a phenotype under its exact name. A paper on adaptation to high altitude may say "ascending to high-altitude", "acclimatization" or "acute mountain sickness" and never "high altitude adaptation". Exact phrases miss such papers; single distinctive words do not.
+
+List between 1 and 4 anchor terms. Each anchor is one word, or at most a two-word phrase, chosen so that:
+- a title or abstract containing that anchor alone is likely to concern this phenotype or the condition it is measured by;
+- it is not a generic word (adaptation, disorder, disease, risk, level, trait, high, low, response);
+- it is not so common across medicine that it matches unrelated work (for "red hair colour", "hair" alone is too broad, "red hair" is right);
+- it names the phenotype itself, never a gene, protein, biomarker, mechanism or neighbouring condition ("telomerase" is not telomere length, "sickle cell" is not malaria resistance, "anti-dsDNA" is not lupus).
+
+Prefer the word authors actually write over the formal label: "altitude" and "mountain sickness" for high altitude adaptation, "lupus" for systemic lupus erythematosus, "height" or "stature" for adult height.
+
+Return your answer in this exact XML format:
+<response>
+<anchors>
+<anchor>term 1</anchor>
+<anchor>term 2</anchor>
+</anchors>
+</response>

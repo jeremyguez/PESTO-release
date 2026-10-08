@@ -1,0 +1,151 @@
+gene	phenotype	gencc_class	lit_mean	lit_argmax	ot_verdict	ot_score	both
+HAND1	congenital heart disease	Moderate	Existing	Established	Hypothesized	0.18719866845655941	Existing
+ATP5MK	mitochondrial disease	Moderate	Established	Established	Hypothesized	0.1847899273423509	Established
+TMEM63C	spastic paraplegia 87, autosomal recessive	Moderate	Existing	Existing	Established	0.6416316921609406	Established
+BLVRA	hyperbiliverdinemia	Moderate	Established	Established	Established	0.6058633431802722	Established
+RBBP5	neurodevelopmental disorder	Moderate	Existing	Existing	Established	0.5098205807162162	Established
+ETS1	congenital heart disease	Moderate	Existing	Existing	Hypothesized	0.18881556549208242	Existing
+TUBA4A	amyotrophic lateral sclerosis type 22	Moderate	Existing	Established	Established	0.7001561879870407	Established
+PRDX3	spinocerebellar ataxia, autosomal recessive 32	Moderate	Established	Established	Established	0.6533458006004046	Established
+CAMSAP1	cortical dysplasia, complex, with other brain malformations 12	Moderate	Established	Established	Established	0.6702253668904008	Established
+ASPRV1	ichthyosis, lamellar, autosomal dominant	Moderate	Existing	Existing	Established	0.6252514939765362	Established
+CDH11	Teebi hypertelorism syndrome 2	Moderate	Established	Established	Established	0.7509510608181269	Established
+UBR5	neurodevelopmental disorder	Moderate	Established	Established	Existing	0.4289179535757455	Established
+SEPHS1	neurodevelopmental disorder	Moderate	Existing	Existing	Established	0.509547958539458	Established
+FXYD2	renal hypomagnesemia 2	Moderate	Established	Established	Established	0.554590063650218	Established
+THUMPD1	neurodevelopmental disorder with speech delay and variable ocular anomalies	Moderate	Established	Established	Established	0.70238984274735	Established
+JPH1	congenital myopathy 25	Moderate	Existing	Existing	Established	0.5980007370939966	Established
+CPSF3	neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures	Moderate	Existing	Existing	Established	0.6007777418712406	Established
+INTS11	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	Moderate	Established	Established	Established	0.7277522931339131	Established
+CHKA	neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures	Moderate	Existing	Existing	Established	0.6779073004333662	Established
+REL	immunodeficiency 92	Moderate	Established	Established	Established	0.5944076289462776	Established
+FLI1	bleeding disorder, platelet-type, 21	Moderate	Established	Established	Hypothesized	0.7552494643160209	Established
+SLC31A1	neurodegeneration and seizures due to copper transport defect	Moderate	Established	Established	Established	0.5187463904782773	Established
+TRAC	TCR-alpha-beta-positive T-cell deficiency	Moderate	Established	Established	Established	0.6069835807842499	Established
+UNG	hyper-IgM syndrome type 5	Moderate	Established	Established	Established	0.7484499267460768	Established
+GABRD	complex neurodevelopmental disorder	Moderate	Existing	Established	Existing	0.23098740917793859	Existing
+ALDH1A2	diaphragmatic hernia 4, with cardiovascular defects	Strong	Established	Established	Established	0.7044643135489621	Established
+GDF11	vertebral hypersegmentation and orofacial anomalies	Strong	Established	Established	Established	0.6221441936741696	Established
+PRKG2	acromesomelic dysplasia 4	Strong	Established	Established	Hypothesized	0.6677455292545056	Established
+SELENOI	spastic paraplegia 81, autosomal recessive	Strong	Established	Established	Established	0.6405116808303434	Established
+ALPK1	retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome	Strong	Established	Established	Established	0.7388349907042374	Established
+TMX2	neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity	Strong	Established	Established	Established	0.7943558370844997	Established
+SAMD11	retinitis pigmentosa	Strong	Existing	Existing	Existing	0.44560817981330664	Existing
+PYCR2	hypomyelinating leukodystrophy 10	Strong	Established	Established	Established	0.7819061363264946	Established
+GEMIN4	neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities	Strong	Established	Established	Established	0.7383854705674645	Established
+RAC3	neurodevelopmental disorder with structural brain anomalies and dysmorphic facies	Strong	Established	Established	Established	0.7376837025556374	Established
+LIPT2	encephalopathy, neonatal severe, with lactic acidosis and brain abnormalities	Strong	Established	Established	Hypothesized	0.18579314285186485	Established
+TMEM106B	leukodystrophy, hypomyelinating, 16	Strong	Established	Established	Established	0.7103191199592546	Established
+ATG7	spinocerebellar ataxia, autosomal recessive 31	Strong	Existing	Established	Established	0.7645799087607739	Established
+SLC6A17	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	Strong	Established	Established	Established	0.7006130270656432	Established
+GDAP2	spinocerebellar ataxia, autosomal recessive 27	Strong	Established	Established	Established	0.6872450534552241	Established
+BCAS3	Hengel-Maroofian-Schols syndrome	Strong	Existing	Existing	Established	0.7243779584895861	Established
+DHPS	neurodevelopmental disorder with seizures and speech and walking impairment	Strong	Established	Established	Established	0.6167291962301439	Established
+NRXN1	Pitt-Hopkins-like syndrome 2	Strong	Existing	Existing	Established	0.7347545147484975	Established
+COX16	mitochondrial complex IV deficiency, nuclear type 22	Strong	Existing	Existing	Established	0.5357367976866988	Established
+THAP1	torsion dystonia 6	Strong	Established	Established	Established	0.7945071945109553	Established
+UNC45A	osteootohepatoenteric syndrome	Strong	Established	Established	Established	0.7224013782705505	Established
+SACS	Charlevoix-Saguenay spastic ataxia	Strong	Established	Established	Established	0.818324975470841	Established
+TRNT1	retinitis pigmentosa and erythrocytic microcytosis	Strong	Established	Established	Established	0.7590901941663888	Established
+SMPD4	neurodevelopmental disorder with microcephaly, arthrogryposis, and structural brain anomalies	Strong	Established	Established	Established	0.7614428584719926	Established
+ATG5	spinocerebellar ataxia, autosomal recessive 25	Limited	Existing	Existing	Hypothesized	0.5565315474611701	Existing
+TMEM135	neurodevelopmental disorder	Limited	Existing	Existing	Hypothesized	0.053006990658153355	Existing
+USP44	congenital heart disease	Limited	Hypothesized	Hypothesized	Novel	0.0	Hypothesized
+EPHB2	bleeding disorder, platelet-type, 22	Limited	Existing	Existing	Hypothesized	0.4496811551340736	Existing
+SLC35B2	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	Limited	Existing	Existing	Established	0.547414494484028	Established
+DHX34	intellectual disability	Limited	Existing	Existing	Existing	0.353051422294636	Existing
+SUMO1	orofacial cleft 10	Limited	Existing	Existing	Existing	0.42050566084633817	Existing
+TRAPPC2L	encephalopathy, progressive, early-onset, with episodic rhabdomyolysis	Limited	Established	Established	Established	0.5275926018278212	Established
+PITX1	clubfoot	Strong	Established	Established	Established	0.7442324481694818	Established
+SCLT1	retinitis pigmentosa	Limited	Established	Established	Hypothesized	0.517996405876191	Established
+ASCL1	neurodevelopmental disorder	Limited	Hypothesized	Hypothesized	Hypothesized	0.40640438076120244	Hypothesized
+CRIPTO	congenital heart disease	Limited	Existing	Existing	Hypothesized	0.3695798546847018	Existing
+ASB10	glaucoma 1, open angle, F	Limited	Existing	Existing	Hypothesized	0.7565958864271389	Existing
+DCC	gaze palsy, familial horizontal, with progressive scoliosis, 2	Strong	Established	Established	Hypothesized	0.6647060632890013	Established
+PITX2	ring dermoid of cornea	Strong	Existing	Existing	Established	0.6544009142386854	Established
+VANGL1	neural tube defects, susceptibility to	Limited	Established	Established	Existing	0.202020579886369	Established
+POLD3	immunodeficiency 122	Limited	Established	Established	Hypothesized	0.18654543165210322	Established
+TMOD1	dilated cardiomyopathy	Limited	Existing	Existing	Hypothesized	0.05095128256396917	Existing
+CCT7	complex neurodevelopmental disorder	Limited	Novel	Novel	Hypothesized	0.15405065513184898	Hypothesized
+TDO2	familial hypertryptophanemia	Limited	Existing	Existing	Established	0.5056529502912717	Established
+ELP2	intellectual disability, autosomal recessive 58	Limited	Established	Established	Established	0.7315459656789037	Established
+KCNT1	malignant migrating partial seizures of infancy	Definitive	Established	Established	Established	0.5817051684582398	Established
+SS18L1	amyotrophic lateral sclerosis	Limited	Existing	Existing	Existing	0.4094951765262083	Existing
+MT-TA	mitochondrial disease	Definitive	Existing	Existing	Existing	0.3695798546847018	Existing
+HEY2	congenital heart disease	Limited	Existing	Existing	Hypothesized	0.08100655959462293	Existing
+ABCC9	hypertrichotic osteochondrodysplasia Cantu type	Definitive	Established	Established	Established	0.772989487505329	Established
+ERCC6L2	pancytopenia-developmental delay syndrome	Definitive	Established	Established	Established	0.7735411483164056	Established
+AICDA	hyper-IgM syndrome type 2	Definitive	Established	Established	Established	0.8322442933389335	Established
+IGSF1	X-linked central congenital hypothyroidism with late-onset testicular enlargement	Definitive	Established	Established	Established	0.7791845421566718	Established
+SDHB	Carney-Stratakis syndrome	Definitive	Established	Established	Established	0.7914870327156592	Established
+TAFAZZIN	Barth syndrome	Definitive	Established	Established	Established	0.8074664743481191	Established
+AP3B1	Hermansky-Pudlak syndrome 2	Definitive	Established	Established	Established	0.8337692803782247	Established
+IL11RA	craniosynostosis and dental anomalies	Definitive	Established	Established	Established	0.7714688663106348	Established
+KIT	piebaldism	Definitive	Established	Established	Established	0.8158300841043036	Established
+LRPAP1	myopia 23, autosomal recessive	Definitive	Established	Established	Hypothesized	0.6458079445188778	Established
+SLC24A5	oculocutaneous albinism type 6	Definitive	Established	Established	Established	0.7535544826394945	Established
+AKT1	Proteus syndrome	Definitive	Established	Established	Established	0.7596695594512765	Established
+FBXO11	intellectual developmental disorder with dysmorphic facies and behavioral abnormalities	Definitive	Established	Established	Established	0.8112641346975937	Established
+PPP1R13L	dilated cardiomyopathy	Definitive	Established	Established	Established	0.576246038443526	Established
+DCLRE1C	Omenn syndrome	Definitive	Existing	Established	Established	0.6916415685927445	Established
+CHD2	developmental and epileptic encephalopathy 94	Definitive	Established	Established	Established	0.7837705089919949	Established
+CRB2	ventriculomegaly-cystic kidney disease	Definitive	Established	Established	Established	0.7933943358623115	Established
+ASNS	congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome	Definitive	Established	Established	Established	0.8135179299830293	Established
+SAMD9	MIRAGE syndrome	Definitive	Established	Established	Established	0.8116714432767598	Established
+EBP	MEND syndrome	Definitive	Established	Established	Established	0.8041736341461707	Established
+SRCAP	Floating-Harbor syndrome	Definitive	Established	Established	Established	0.7991732654594735	Established
+CCDC88A	PEHO-like syndrome	Moderate	Established	Established	Established	0.7376296104843626	Established
+PIK3R1	SHORT syndrome	Definitive	Established	Established	Established	0.8229202145040305	Established
+ZFTRAF1	neurodevelopmental disorder	Limited	Existing	Existing	Hypothesized	0.4445224363290996	Existing
+ATP2B1	intellectual developmental disorder, autosomal dominant 66	Moderate	Established	Established	Established	0.7758085468815618	Established
+CFAP43	normal pressure hydrocephalus	Limited	Existing	Existing	Established	0.5570292407949092	Established
+SLC38A3	developmental and epileptic encephalopathy 102	Strong	Established	Established	Established	0.6807683969655027	Established
+KLHL24	epidermolysis bullosa simplex 6, generalized, with scarring and hair loss	Moderate	Established	Established	Established	0.7250705905186685	Established
+ATP1A1	Charcot-Marie-tooth disease, axonal, type 2DD	Moderate	Established	Established	Established	0.7846806696578049	Established
+RBM28	ANE syndrome	Limited	Established	Established	Established	0.6568867904616422	Established
+TBX15	pelviscapular dysplasia	Definitive	Established	Established	Established	0.740557938510287	Established
+KRT71	hypotrichosis 13	Limited	Established	Established	Hypothesized	0.18789401000000125	Established
+PHKG2	primary ciliary dyskinesia 33	Absent	Novel	Novel	Established	0.7443962042085066	Established
+CALM2	catecholaminergic polymorphic ventricular tachycardia	Moderate	Established	Established	Existing	0.24618610248776526	Established
+CAMTA1	cerebellar dysfunction with variable cognitive and behavioral abnormalities	Definitive	Established	Established	Established	0.7820355623808676	Established
+SYCP2L	Weiss-Kruszka syndrome	Absent	Novel	Novel	Novel	0.0	Novel
+ATP11C	arterial tortuosity syndrome	Absent	Novel	Novel	Novel	0.0	Novel
+JMJD1C	neurodevelopmental disorder	Limited	Existing	Existing	Hypothesized	0.1620607662792417	Existing
+KIF4A	complex neurodevelopmental disorder with or without congenital anomalies	Limited	Established	Established	Hypothesized	0.6244875279296025	Established
+ASAH1	Farber lipogranulomatosis	Definitive	Established	Established	Established	0.8380706850855283	Established
+AR	Kennedy disease	Definitive	Established	Established	Established	0.7424409439078037	Established
+FKBP6	Charcot-Marie-Tooth disease type 2E	Absent	Novel	Novel	Hypothesized	0.2057188594370124	Hypothesized
+MT-CO3	gonadal dysgenesis	Absent	Novel	Novel	Hypothesized	0.4455079826082588	Hypothesized
+APC	complement component 2 deficiency	Absent	Novel	Novel	Hypothesized	0.48377059860755794	Hypothesized
+RBFOX3	arthrogryposis, distal, with impaired proprioception and touch	Absent	Novel	Novel	Hypothesized	0.30536042667785024	Hypothesized
+PSMB1	glycogen storage disease III	Absent	Novel	Novel	Novel	0.0	Novel
+CDH15	familial hypobetalipoproteinemia 1	Absent	Novel	Novel	Hypothesized	0.3242248678217521	Hypothesized
+ANO3	arthrogryposis multiplex congenita 2, neurogenic type	Absent	Novel	Novel	Hypothesized	0.7685753395942695	Hypothesized
+SCN9A	hypogonadotropic hypogonadism	Absent	Novel	Novel	Hypothesized	0.4619748183558772	Hypothesized
+SELENBP1	neurodevelopmental disorder with spastic quadriplegia, optic atrophy, seizures, and structural brain anomalies	Absent	Hypothesized	Hypothesized	Hypothesized	0.08259473066193437	Hypothesized
+CACNA1F	Malan overgrowth syndrome	Absent	Novel	Novel	Novel	0.0	Novel
+GET4	deafness-lymphedema-leukemia syndrome	Absent	Novel	Novel	Hypothesized	0.4289179535757456	Hypothesized
+NFATC2	spondylometaphyseal dysplasia, 'corner fracture' type	Absent	Hypothesized	Hypothesized	Hypothesized	0.3937730738457941	Hypothesized
+KCNE2	epidermolysis bullosa simplex 4, localized or generalized intermediate, autosomal recessive	Absent	Novel	Novel	Novel	0.0	Novel
+RPL3L	autosomal recessive mendelian susceptibility to mycobacterial diseases due to complete RORgamma receptor deficiency	Absent	Novel	Novel	Hypothesized	0.1154937045889693	Hypothesized
+CASP2	Hoxha-Aliu syndrome	Absent	Established	Established	Hypothesized	0.49469084838113303	Established
+AMIGO2	autosomal recessive nonsyndromic hearing loss 59	Absent	Novel	Novel	Hypothesized	0.05150464854886004	Hypothesized
+KCND3	46,XY sex reversal 3	Absent	Novel	Novel	Hypothesized	0.11881992328113164	Hypothesized
+KCNQ4	X-linked spondyloepimetaphyseal dysplasia	Absent	Novel	Novel	Hypothesized	0.05677627337090302	Hypothesized
+NBEAL2	arrhythmogenic cardiomyopathy with wooly hair and keratoderma	Absent	Novel	Novel	Hypothesized	0.19426183565690064	Hypothesized
+TSPEAR	tibial muscular dystrophy	Absent	Novel	Novel	Hypothesized	0.7701598065895099	Hypothesized
+TNNT2	atrial septal defect 6	Absent	Hypothesized	Hypothesized	Hypothesized	0.07151821896860261	Hypothesized
+PCCA	hypercholanemia, familial, 2	Absent	Novel	Novel	Hypothesized	0.486874478349603	Hypothesized
+STXBP2	autosomal recessive nonsyndromic hearing loss 44	Absent	Novel	Novel	Hypothesized	0.3419516471577573	Hypothesized
+UQCRH	hereditary spastic paraplegia 45	Absent	Novel	Novel	Hypothesized	0.3621882575910077	Hypothesized
+MC4R	agammaglobulinemia 2, autosomal recessive	Absent	Novel	Novel	Novel	0.0	Novel
+CDK9	congenital myopathy 2c, severe infantile, autosomal dominant	Absent	Hypothesized	Hypothesized	Hypothesized	0.4629911629562602	Hypothesized
+PHGDH	Joubert syndrome 33	Absent	Novel	Novel	Hypothesized	0.7960696857397422	Hypothesized
+PAK1	intellectual developmental disorder with macrocephaly, seizures, and speech delay	Strong	Established	Established	Established	0.7114821868252302	Established
+MT-TC	mitochondrial disease	Limited	Existing	Existing	Hypothesized	0.5030392466541774	Existing
+TOE1	pontocerebellar hypoplasia type 7	Strong	Established	Established	Established	0.8233895485392801	Established
+PLS3	X-linked osteoporosis with fractures	Definitive	Established	Established	Established	0.7191097623424819	Established
+ACP5	Spondyloenchondrodysplasia with immune dysregulation	Definitive	Established	Established	Established	0.8232299233400546	Established
+MRTFB	neurodevelopmental disorder	Limited	Existing	Established	Hypothesized	0.0780469859691328	Existing
+TLR5	systemic lupus erythematosus, susceptibility to, 1	Limited	Existing	Existing	Hypothesized	0.3695798546847018	Existing
+EYA4	dilated cardiomyopathy 1J	Limited	Existing	Existing	Established	0.6457866233491293	Established

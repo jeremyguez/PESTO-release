@@ -1,0 +1,401 @@
+gene	phenotype	gencc_class	source	current	score	novelty
+BLVRA	hyperbiliverdinemia	Moderate	original	3.65	3.91	3.0
+ETS1	congenital heart disease	Moderate	original	2.85	3.94	2.0
+RBBP5	neurodevelopmental disorder	Moderate	original	3.08	3.91	3.0
+PRDX3	spinocerebellar ataxia, autosomal recessive 32	Moderate	original	3.95	4.0	0.0
+ASPRV1	ichthyosis, lamellar, autosomal dominant	Moderate	original	3.15	3.94	2.0
+UBR5	neurodevelopmental disorder	Moderate	original	3.86	3.94	2.0
+JPH1	congenital myopathy 25	Moderate	original	3.14	3.91	3.0
+CHKA	neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures	Moderate	original	3.27	3.94	2.0
+CAMSAP1	cortical dysplasia, complex, with other brain malformations 12	Moderate	original	3.82	3.91	3.0
+TUBA4A	amyotrophic lateral sclerosis type 22	Moderate	original	3.47	3.94	2.0
+ATP5MK	mitochondrial disease	Moderate	original	3.86	3.91	3.0
+THUMPD1	neurodevelopmental disorder with speech delay and variable ocular anomalies	Moderate	original	3.89	3.94	2.0
+CDH11	Teebi hypertelorism syndrome 2	Moderate	original	3.89	3.94	2.0
+REL	immunodeficiency 92	Moderate	original	3.55	3.91	3.0
+CPSF3	neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures	Moderate	original	3.07	3.85	5.0
+INTS11	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	Moderate	original	3.9	3.94	2.0
+FLI1	bleeding disorder, platelet-type, 21	Moderate	original	3.83	3.91	3.0
+FXYD2	renal hypomagnesemia 2	Moderate	original	3.75	4.0	0.0
+TMEM63C	spastic paraplegia 87, autosomal recessive	Moderate	original	3.2	3.94	2.0
+HAND1	congenital heart disease	Moderate	original	3.34	4.0	0.0
+SEPHS1	neurodevelopmental disorder	Moderate	original	3.08	3.94	2.0
+GABRD	complex neurodevelopmental disorder	Moderate	original	3.44	3.85	5.0
+TRAC	TCR-alpha-beta-positive T-cell deficiency	Moderate	original	3.94	3.94	2.0
+UNG	hyper-IgM syndrome type 5	Moderate	original	3.83	3.94	2.0
+SLC31A1	neurodegeneration and seizures due to copper transport defect	Moderate	original	3.91	3.94	2.0
+GDF11	vertebral hypersegmentation and orofacial anomalies	Strong	original	3.65	3.91	3.0
+ALDH1A2	diaphragmatic hernia 4, with cardiovascular defects	Strong	original	3.82	3.94	2.0
+TMX2	neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity	Strong	original	3.94	3.94	2.0
+BCAS3	Hengel-Maroofian-Schols syndrome	Strong	original	3.23	3.91	3.0
+SLC6A17	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	Strong	original	3.8	3.94	2.0
+SELENOI	spastic paraplegia 81, autosomal recessive	Strong	original	3.82	3.94	2.0
+PRKG2	acromesomelic dysplasia 4	Strong	original	3.92	3.94	2.0
+ALPK1	retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome	Strong	original	3.97	4.0	0.0
+GEMIN4	neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities	Strong	original	3.88	3.94	2.0
+ATG7	spinocerebellar ataxia, autosomal recessive 31	Strong	original	3.4	3.91	3.0
+TMEM106B	leukodystrophy, hypomyelinating, 16	Strong	original	3.92	3.97	1.0
+LIPT2	encephalopathy, neonatal severe, with lactic acidosis and brain abnormalities	Strong	original	3.66	3.94	2.0
+PYCR2	hypomyelinating leukodystrophy 10	Strong	original	3.96	4.0	0.0
+PITX2	ring dermoid of cornea	Strong	original	2.96	3.91	3.0
+PITX1	clubfoot	Strong	original	3.71	4.0	0.0
+RAC3	neurodevelopmental disorder with structural brain anomalies and dysmorphic facies	Strong	original	3.94	4.0	0.0
+NRXN1	Pitt-Hopkins-like syndrome 2	Strong	original	3.27	3.94	2.0
+DHPS	neurodevelopmental disorder with seizures and speech and walking impairment	Strong	original	3.54	3.94	2.0
+SAMD11	retinitis pigmentosa	Strong	original	3.07	3.91	3.0
+GDAP2	spinocerebellar ataxia, autosomal recessive 27	Strong	original	3.89	3.94	2.0
+COX16	mitochondrial complex IV deficiency, nuclear type 22	Strong	original	3.11	3.91	3.0
+SACS	Charlevoix-Saguenay spastic ataxia	Strong	original	3.97	4.0	0.0
+THAP1	torsion dystonia 6	Strong	original	3.95	4.0	0.0
+TRNT1	retinitis pigmentosa and erythrocytic microcytosis	Strong	original	3.64	3.94	2.0
+UNC45A	osteootohepatoenteric syndrome	Strong	original	3.95	4.0	0.0
+DCC	gaze palsy, familial horizontal, with progressive scoliosis, 2	Strong	original	3.73	3.94	2.0
+SMPD4	neurodevelopmental disorder with microcephaly, arthrogryposis, and structural brain anomalies	Strong	original	3.94	3.94	2.0
+SLC35B2	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	Limited	original	3.08	3.94	2.0
+TMEM135	neurodevelopmental disorder	Limited	original	2.63	1.9	70.0
+EPHB2	bleeding disorder, platelet-type, 22	Limited	original	2.99	3.91	3.0
+ATG5	spinocerebellar ataxia, autosomal recessive 25	Limited	original	3.03	3.91	3.0
+CRIPTO	congenital heart disease	Limited	original	2.9	3.85	5.0
+SUMO1	orofacial cleft 10	Limited	original	3.06	3.94	2.0
+ASCL1	neurodevelopmental disorder	Limited	original	2.48	3.46	18.0
+TRAPPC2L	encephalopathy, progressive, early-onset, with episodic rhabdomyolysis	Limited	original	3.86	3.94	2.0
+USP44	congenital heart disease	Limited	original	2.13	3.25	25.0
+SCLT1	retinitis pigmentosa	Limited	original	3.67	3.88	4.0
+DHX34	intellectual disability	Limited	original	2.9	3.55	15.0
+ASB10	glaucoma 1, open angle, F	Limited	original	3.12	3.91	3.0
+ELP2	intellectual disability, autosomal recessive 58	Limited	original	3.92	3.94	2.0
+VANGL1	neural tube defects, susceptibility to	Limited	original	3.59	4.0	0.0
+POLD3	immunodeficiency 122	Limited	original	3.78	3.94	2.0
+CCT7	complex neurodevelopmental disorder	Limited	original	1.48	1.3	90.0
+HEY2	congenital heart disease	Limited	original	3.29	3.88	4.0
+SS18L1	amyotrophic lateral sclerosis	Limited	original	3.11	3.91	3.0
+TDO2	familial hypertryptophanemia	Limited	original	3.11	3.91	3.0
+TMOD1	dilated cardiomyopathy	Limited	original	2.96	3.85	5.0
+KIT	piebaldism	Definitive	original	3.95	4.0	0.0
+KCNT1	malignant migrating partial seizures of infancy	Definitive	original	3.97	4.0	0.0
+PPP1R13L	dilated cardiomyopathy	Definitive	original	3.95	3.94	2.0
+ERCC6L2	pancytopenia-developmental delay syndrome	Definitive	original	3.86	3.91	3.0
+ABCC9	hypertrichotic osteochondrodysplasia Cantu type	Definitive	original	3.97	4.0	0.0
+SDHB	Carney-Stratakis syndrome	Definitive	original	3.75	3.94	2.0
+AKT1	Proteus syndrome	Definitive	original	3.93	4.0	0.0
+AP3B1	Hermansky-Pudlak syndrome 2	Definitive	original	3.95	4.0	0.0
+FBXO11	intellectual developmental disorder with dysmorphic facies and behavioral abnormalities	Definitive	original	3.97	3.94	2.0
+MT-TA	mitochondrial disease	Definitive	original	3.08	3.85	5.0
+AICDA	hyper-IgM syndrome type 2	Definitive	original	3.97	4.0	0.0
+TAFAZZIN	Barth syndrome	Definitive	original	3.94	4.0	0.0
+IGSF1	X-linked central congenital hypothyroidism with late-onset testicular enlargement	Definitive	original	3.95	4.0	0.0
+SLC24A5	oculocutaneous albinism type 6	Definitive	original	3.95	4.0	0.0
+TBX15	pelviscapular dysplasia	Definitive	original	3.95	3.94	2.0
+IL11RA	craniosynostosis and dental anomalies	Definitive	original	3.95	4.0	0.0
+LRPAP1	myopia 23, autosomal recessive	Definitive	original	3.56	3.94	2.0
+DCLRE1C	Omenn syndrome	Definitive	original	3.42	3.91	3.0
+CHD2	developmental and epileptic encephalopathy 94	Definitive	original	3.97	4.0	0.0
+SAMD9	MIRAGE syndrome	Definitive	original	3.97	4.0	0.0
+CRB2	ventriculomegaly-cystic kidney disease	Definitive	original	3.94	3.94	2.0
+ASNS	congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome	Definitive	original	3.97	4.0	0.0
+PIK3R1	SHORT syndrome	Definitive	original	3.97	4.0	0.0
+EBP	MEND syndrome	Definitive	original	3.82	3.94	2.0
+SRCAP	Floating-Harbor syndrome	Definitive	original	3.97	3.97	1.0
+CCDC88A	PEHO-like syndrome	Moderate	original	3.94	4.0	0.0
+ATP2B1	intellectual developmental disorder, autosomal dominant 66	Moderate	original	3.73	3.94	2.0
+KLHL24	epidermolysis bullosa simplex 6, generalized, with scarring and hair loss	Moderate	original	3.97	4.0	0.0
+CALM2	catecholaminergic polymorphic ventricular tachycardia	Moderate	original	3.55	3.91	3.0
+ATP1A1	Charcot-Marie-tooth disease, axonal, type 2DD	Moderate	original	3.91	3.94	2.0
+SLC38A3	developmental and epileptic encephalopathy 102	Strong	original	3.88	3.94	2.0
+CFAP43	normal pressure hydrocephalus	Limited	original	3.01	3.94	2.0
+ZFTRAF1	neurodevelopmental disorder	Limited	original	3.09	3.94	2.0
+KRT71	hypotrichosis 13	Limited	original	3.75	3.91	3.0
+RBM28	ANE syndrome	Limited	original	3.82	3.94	2.0
+KIF4A	complex neurodevelopmental disorder with or without congenital anomalies	Limited	original	3.79	3.91	3.0
+CAMTA1	cerebellar dysfunction with variable cognitive and behavioral abnormalities	Definitive	original	3.94	3.94	2.0
+AR	Kennedy disease	Definitive	original	3.94	4.0	0.0
+JMJD1C	neurodevelopmental disorder	Limited	original	3.11	3.79	7.0
+ASAH1	Farber lipogranulomatosis	Definitive	original	3.95	4.0	0.0
+PAK1	intellectual developmental disorder with macrocephaly, seizures, and speech delay	Strong	original	3.92	3.94	2.0
+TOE1	pontocerebellar hypoplasia type 7	Strong	original	3.97	4.0	0.0
+MRTFB	neurodevelopmental disorder	Limited	original	3.34	3.85	5.0
+TLR5	systemic lupus erythematosus, susceptibility to, 1	Limited	original	2.92	3.94	2.0
+MT-TC	mitochondrial disease	Limited	original	3.17	3.64	12.0
+EYA4	dilated cardiomyopathy 1J	Limited	original	3.18	3.94	2.0
+PLS3	X-linked osteoporosis with fractures	Definitive	original	3.95	4.0	0.0
+ACP5	Spondyloenchondrodysplasia with immune dysregulation	Definitive	original	3.97	4.0	0.0
+CARD11	BENTA disease	Definitive	extra30	3.95	4.0	0.0
+SNRPN	Prader-Willi syndrome	Definitive	extra30	3.04	4.0	0.0
+EIF4A3	Richieri Costa-Pereira syndrome	Definitive	extra30	3.91	4.0	0.0
+KDR	pulmonary arterial hypertension	Definitive	extra30	3.77	3.94	2.0
+POGZ	intellectual disability-microcephaly-strabismus-behavioral abnormalities syndrome	Definitive	extra30	3.95	3.94	2.0
+GP6	platelet-type bleeding disorder 11	Definitive	extra30	3.81	3.91	3.0
+MPV17	mitochondrial DNA depletion syndrome 6 (hepatocerebral type)	Definitive	extra30	3.96	4.0	0.0
+WAS	Wiskott-Aldrich syndrome	Definitive	extra30	3.96	4.0	0.0
+MPIG6B	thrombocytopenia, anemia, and myelofibrosis	Definitive	extra30	3.95	3.94	2.0
+OPHN1	X-linked intellectual disability-cerebellar hypoplasia syndrome	Definitive	extra30	3.95	3.94	2.0
+AGK	Sengers syndrome	Definitive	extra30	3.98	4.0	0.0
+CLCN2	leukoencephalopathy with mild cerebellar ataxia and white matter edema	Definitive	extra30	3.95	3.94	2.0
+NR2F2	46,xx sex reversal 5	Definitive	extra30	2.97	3.91	3.0
+STRADA	polyhydramnios, megalencephaly, and symptomatic epilepsy	Definitive	extra30	3.94	4.0	0.0
+SLC29A3	H syndrome	Definitive	extra30	3.86	4.0	0.0
+SPINK5	Netherton syndrome	Definitive	extra30	3.95	4.0	0.0
+FLVCR2	Fowler syndrome	Definitive	extra30	3.95	4.0	0.0
+F12	congenital factor XII deficiency	Definitive	extra30	3.97	3.94	2.0
+SCARF2	van den Ende-Gupta syndrome	Definitive	extra30	3.97	4.0	0.0
+GATAD2B	severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome	Definitive	extra30	3.94	4.0	0.0
+RB1	hereditary retinoblastoma	Definitive	extra30	3.95	4.0	0.0
+SLC16A2	Allan-Herndon-Dudley syndrome	Definitive	extra30	3.97	4.0	0.0
+CTC1	dyskeratosis congenita	Definitive	extra30	3.73	3.94	2.0
+SLC52A2	Brown-Vialetto-van Laere syndrome 2	Definitive	extra30	3.95	3.94	2.0
+GLUD1	hyperinsulinism-hyperammonemia syndrome	Definitive	extra30	3.95	4.0	0.0
+GALNS	mucopolysaccharidosis type 4A	Definitive	extra30	3.97	4.0	0.0
+PDHA1	Leigh syndrome	Definitive	extra30	3.94	3.94	2.0
+AFG2A	microcephaly-intellectual disability-sensorineural hearing loss-epilepsy-abnormal muscle tone syndrome	Definitive	extra30	3.95	3.94	2.0
+AUH	3-methylglutaconic aciduria type 1	Definitive	extra30	3.97	4.0	0.0
+HYCC1	leukodystrophy, hypomyelinating, 5	Definitive	extra30	3.95	3.94	2.0
+INTS1	neurodevelopmental disorder with cataracts, poor growth, and dysmorphic facies	Strong	extra30	3.91	3.94	2.0
+STAT6	hyper-IgE syndrome 6, autosomal dominant, with recurrent infections	Strong	extra30	3.86	3.88	4.0
+SCYL1	acute infantile liver failure-cerebellar ataxia-peripheral sensory motor neuropathy syndrome	Strong	extra30	3.97	4.0	0.0
+LTBP1	cutis laxa, autosomal recessive, type 2E	Strong	extra30	3.12	3.94	2.0
+WNT4	mullerian aplasia and hyperandrogenism	Strong	extra30	3.03	3.91	3.0
+ABHD16A	spastic paraplegia 86, autosomal recessive	Strong	extra30	3.95	3.94	2.0
+CHRNA3	urinary bladder, atony of	Strong	extra30	3.64	3.91	3.0
+YAP1	uveal coloboma-cleft lip and palate-intellectual disability	Strong	extra30	3.44	3.91	3.0
+ASPH	facial dysmorphism-lens dislocation-anterior segment abnormalities-spontaneous filtering blebs syndrome	Strong	extra30	3.97	4.0	0.0
+NAXE	encephalopathy, progressive, early-onset, with brain edema and/or leukoencephalopathy, 1	Strong	extra30	3.97	4.0	0.0
+EDEM3	congenital disorder of glycosylation, type 2v	Strong	extra30	3.19	3.94	2.0
+H4C3	Tessadori-van Haaften neurodevelopmental syndrome 1	Strong	extra30	3.13	3.91	3.0
+P3H2	myopia, high, with cataract and vitreoretinal degeneration	Strong	extra30	3.91	3.94	2.0
+GALNT2	congenital disorder of glycosylation, type iit	Strong	extra30	3.46	3.91	3.0
+CENPF	Stromme syndrome	Strong	extra30	3.95	4.0	0.0
+PHACTR1	developmental and epileptic encephalopathy, 70	Strong	extra30	3.86	3.94	2.0
+HNRNPA2B1	oculopharyngeal muscular dystrophy 2	Strong	extra30	3.91	3.94	2.0
+COPB2	osteoporosis, childhood- or juvenile-onset, with developmental delay	Strong	extra30	3.37	3.94	2.0
+HDAC4	neurodevelopmental disorder with central hypotonia and dysmorphic facies	Strong	extra30	3.24	3.79	7.0
+WWOX	autosomal recessive spinocerebellar ataxia 12	Strong	extra30	2.96	4.0	0.0
+AFF3	KINSSHIP syndrome	Strong	extra30	3.92	4.0	0.0
+CFAP54	ciliary dyskinesia, primary, 54	Strong	extra30	3.74	3.91	3.0
+BMS1	aplasia cutis congenita	Strong	extra30	3.0	3.94	2.0
+MIR17HG	Feingold syndrome type 2	Strong	extra30	3.13	4.0	0.0
+EMG1	Bowen-Conradi syndrome	Strong	extra30	3.76	4.0	0.0
+PHF21A	Potocki-Shaffer syndrome	Strong	extra30	3.65	3.94	2.0
+EPRS1	leukodystrophy, hypomyelinating, 15	Strong	extra30	3.91	3.94	2.0
+H4C5	Tessadori-Van Haaften neurodevelopmental syndrome 3	Strong	extra30	3.76	3.85	5.0
+ZNF148	global developmental delay, absent or hypoplastic corpus callosum, and dysmorphic facies	Strong	extra30	3.9	3.94	2.0
+SLC39A5	myopia 24, autosomal dominant	Strong	extra30	3.46	3.94	2.0
+MAPK1	Noonan syndrome 13	Moderate	extra30	3.45	3.91	3.0
+TCEAL1	neurodevelopmental disorder with gait disturbance, dysmorphic facies, and behavioral abnormalities, X-linked	Moderate	extra30	3.91	3.94	2.0
+SBF1	Charcot-Marie-Tooth disease type 4B3	Moderate	extra30	3.88	4.0	0.0
+SLF2	Atelis syndrome 1	Moderate	extra30	3.24	3.94	2.0
+AMFR	spastic paraplegia 89, autosomal recessive	Moderate	extra30	3.86	3.94	2.0
+MYLK3	dilated cardiomyopathy	Moderate	extra30	3.17	3.94	2.0
+TAPBP	MHC class I deficiency	Moderate	extra30	3.14	3.94	2.0
+UBAP2L	neurodevelopmental disorder with impaired language, behavioral abnormalities, and dysmorphic facies	Moderate	extra30	3.7	3.94	2.0
+MAST3	developmental and epileptic encephalopathy 108	Moderate	extra30	3.67	3.88	4.0
+WDR83OS	neurodevelopmental disorder with variable familial hypercholanemia	Moderate	extra30	3.89	3.94	2.0
+RUSC2	intellectual disability, autosomal recessive 61	Moderate	extra30	3.31	3.91	3.0
+IRF9	immunodeficiency 65, susceptibility to viral infections	Moderate	extra30	3.86	3.94	2.0
+TRIM71	hydrocephalus, congenital communicating, 1	Moderate	extra30	3.89	3.94	2.0
+ESAM	neurodevelopmental disorder with intracranial hemorrhage, seizures, and spasticity	Moderate	extra30	3.94	3.94	2.0
+FOSL2	aplasia cutis-enamel dysplasia syndrome	Moderate	extra30	3.14	3.91	3.0
+GABBR1	neurodevelopmental disorder with language delay and variable cognitive abnormalities	Moderate	extra30	3.55	3.91	3.0
+IKZF3	immunodeficiency 84	Moderate	extra30	3.92	3.94	2.0
+NDC1	neurodevelopmental disorder with achalasia, polyneuropathy, and alacrima	Moderate	extra30	3.04	3.91	3.0
+RAB34	orofaciodigital syndrome 20	Moderate	extra30	3.68	3.91	3.0
+MYCN	megalencephaly-polydactyly syndrome	Moderate	extra30	3.7	3.94	2.0
+NDUFC2	Leigh syndrome	Moderate	extra30	3.12	3.94	2.0
+SMC5	Atelis syndrome 2	Moderate	extra30	3.7	3.94	2.0
+ZBTB7A	macrocephaly, neurodevelopmental delay, lymphoid hyperplasia, and persistent fetal hemoglobin	Moderate	extra30	3.16	3.4	20.0
+H3-3B	Bryant-Li-Bhoj neurodevelopmental syndrome 2	Moderate	extra30	3.92	3.94	2.0
+CFB	atypical hemolytic-uremic syndrome with B factor anomaly	Moderate	extra30	2.99	3.91	3.0
+TOP2B	B-cell immunodeficiency, distal limb anomalies, and urogenital malformations	Moderate	extra30	3.82	3.91	3.0
+CFAP74	ciliary dyskinesia, primary, 49, without situs inversus	Moderate	extra30	3.7	3.91	3.0
+MESP1	congenital heart disease	Moderate	extra30	3.22	3.94	2.0
+MDM4	bone marrow failure syndrome 6	Moderate	extra30	3.74	3.91	3.0
+ABCC4	qualitative platelet defect	Moderate	extra30	2.92	3.91	3.0
+MFSD6L	cataract	Limited	extra30	2.63	1.8399999999999999	72.0
+GSPT2	intellectual disability	Limited	extra30	3.02	3.4	20.0
+HCK	autoinflammation with pulmonary and cutaneous vasculitis	Limited	extra30	3.84	3.94	2.0
+CCNK	intellectual developmental disorder with hypertelorism and distinctive facies	Limited	extra30	3.76	3.94	2.0
+PET117	Leigh syndrome	Limited	extra30	2.87	3.1	30.0
+AKR1E2	cataract	Limited	extra30	2.74	3.55	15.0
+OFD1	Simpson-Golabi-Behmel syndrome type 2	Limited	extra30	3.03	3.91	3.0
+AQP1	pulmonary arterial hypertension	Limited	extra30	3.41	3.94	2.0
+ABCD3	congenital bile acid synthesis defect 5	Limited	extra30	3.02	3.88	4.0
+DLG5	Yuksel-Vogel-Bauer syndrome	Limited	extra30	3.1	3.46	18.0
+CRELD1	atrioventricular septal defect, susceptibility to, 2	Limited	extra30	3.46	4.0	0.0
+PIGM	hypercoagulability syndrome due to glycosylphosphatidylinositol deficiency	Limited	extra30	3.91	3.94	2.0
+GUF1	developmental and epileptic encephalopathy	Limited	extra30	2.87	3.76	8.0
+PDE1C	autosomal dominant nonsyndromic hearing loss	Limited	extra30	2.91	3.91	3.0
+LTV1	inflammatory poikiloderma with hair abnormalities and acral keratoses	Limited	extra30	3.06	3.94	2.0
+CFAP47	spermatogenic failure, X-linked, 3	Limited	extra30	3.79	3.91	3.0
+CTNNA3	arrhythmogenic right ventricular cardiomyopathy	Limited	extra30	2.94	3.91	3.0
+ILK	familial dilated cardiomyopathy	Limited	extra30	2.95	3.85	5.0
+NUDCD3	severe combined immunodeficiency	Limited	extra30	3.23	3.94	2.0
+HIBADH	3-hydroxyisobutyric aciduria	Limited	extra30	3.78	3.91	3.0
+RAX	coloboma	Limited	extra30	3.33	3.85	5.0
+PHYKPL	phosphohydroxylysinuria	Limited	extra30	3.07	3.94	2.0
+PLOD3	bone fragility with contractures, arterial rupture, and deafness	Limited	extra30	3.91	3.91	3.0
+CHST8	peeling skin syndrome type A	Limited	extra30	2.6	3.85	5.0
+LONP1	congenital diaphragmatic hernia	Limited	extra30	3.52	3.94	2.0
+C1GALT1C1	hemolytic uremic syndrome, atypical, 8, with rhizomelic short stature	Limited	extra30	3.58	3.91	3.0
+RNF125	Tenorio syndrome	Limited	extra30	3.92	3.94	2.0
+GET3	cardiomyopathy, dilated, 2H	Limited	extra30	2.97	3.91	3.0
+TBX4	autosomal recessive amelia	Limited	extra30	3.7	3.91	3.0
+AKT3	microcephaly	Limited	extra30	3.47	3.94	2.0
+ALDOB	hereditary fructose intolerance	Definitive	extra40	3.97	4.0	0.0
+LEMD3	Buschke-Ollendorff syndrome	Definitive	extra40	3.95	4.0	0.0
+BCL11A	Dias-Logan syndrome	Definitive	extra40	3.97	4.0	0.0
+NDUFA12	mitochondrial complex I deficiency, nuclear type 23	Definitive	extra40	3.92	3.94	2.0
+ATXN2	spinocerebellar ataxia type 2	Definitive	extra40	3.91	4.0	0.0
+SLC39A13	Ehlers-Danlos syndrome, spondylocheirodysplastic type	Definitive	extra40	3.95	3.97	1.0
+HACE1	spastic paraplegia-severe developmental delay-epilepsy syndrome	Definitive	extra40	3.94	4.0	0.0
+YY1	Gabriele de Vries syndrome	Definitive	extra40	3.97	4.0	0.0
+MUTYH	familial adenomatous polyposis 2	Definitive	extra40	3.92	3.94	2.0
+POLD1	mandibular hypoplasia-deafness-progeroid syndrome	Definitive	extra40	3.95	4.0	0.0
+PKD1L1	heterotaxy, visceral, 8, autosomal	Definitive	extra40	3.92	3.94	2.0
+SNX14	autosomal recessive spinocerebellar ataxia 20	Definitive	extra40	3.96	4.0	0.0
+DHFR	constitutional megaloblastic anemia with severe neurologic disease	Definitive	extra40	3.94	3.94	2.0
+SLC30A2	zinc deficiency, transient neonatal	Definitive	extra40	3.94	4.0	0.0
+GJB2	Bart-Pumphrey syndrome	Definitive	extra40	3.78	3.94	2.0
+CLDN16	renal hypomagnesemia 3	Definitive	extra40	3.95	4.0	0.0
+SUCLA2	Leigh syndrome	Definitive	extra40	3.67	3.85	5.0
+AURKC	spermatogenic failure 5	Definitive	extra40	3.95	4.0	0.0
+HGD	alkaptonuria	Definitive	extra40	3.96	4.0	0.0
+DYNC1H1	autosomal dominant childhood-onset proximal spinal muscular atrophy without contractures	Definitive	extra40	3.92	4.0	0.0
+LTBP3	brachyolmia-amelogenesis imperfecta syndrome	Definitive	extra40	3.91	3.94	2.0
+RBM8A	thrombocytopenia-absent radius syndrome	Definitive	extra40	3.92	4.0	0.0
+C9orf72	frontotemporal dementia and/or amyotrophic lateral sclerosis 1	Definitive	extra40	3.94	4.0	0.0
+NDUFAF5	Leigh syndrome	Definitive	extra40	3.94	3.94	2.0
+VHL	von Hippel-Lindau disease	Definitive	extra40	3.88	3.94	2.0
+IGF2	Silver-Russell syndrome 3	Definitive	extra40	3.89	3.94	2.0
+SLC35A2	X-linked complex neurodevelopmental disorder	Definitive	extra40	3.84	3.94	2.0
+RET	pheochromocytoma	Definitive	extra40	3.94	3.94	2.0
+IRF4	combined immunodeficiency	Definitive	extra40	3.92	3.94	2.0
+SMOC1	microphthalmia with limb anomalies	Definitive	extra40	3.96	4.0	0.0
+SPI1	agammaglobulinemia 10, autosomal dominant	Definitive	extra40	3.94	4.0	0.0
+ZBTB20	Primrose syndrome	Definitive	extra40	3.98	4.0	0.0
+ITGA3	epidermolysis bullosa, junctional 7, with interstitial lung disease and nephrotic syndrome	Definitive	extra40	3.94	4.0	0.0
+FOXL2	blepharophimosis, ptosis, and epicanthus inversus syndrome	Definitive	extra40	3.95	4.0	0.0
+ACAT1	beta-ketothiolase deficiency	Definitive	extra40	3.97	4.0	0.0
+ELAC2	combined oxidative phosphorylation defect type 17	Definitive	extra40	3.64	3.94	2.0
+HSD3B7	congenital bile acid synthesis defect 1	Definitive	extra40	3.97	4.0	0.0
+TERC	dyskeratosis congenita, autosomal dominant 1	Definitive	extra40	3.92	3.94	2.0
+MT-TK	Leigh syndrome	Definitive	extra40	3.92	3.94	2.0
+AGO2	Lessel-Kreienkamp syndrome	Definitive	extra40	3.92	3.94	2.0
+ERBB3	lethal congenital contracture syndrome 2	Strong	extra40	3.53	3.94	2.0
+POLR1A	acrofacial dysostosis Cincinnati type	Strong	extra40	3.91	3.97	1.0
+ACBD5	retinal dystrophy with leukodystrophy	Strong	extra40	3.94	3.94	2.0
+GPX4	spondylometaphyseal dysplasia, Sedaghatian type	Strong	extra40	3.92	3.94	2.0
+KIF2A	complex cortical dysplasia with other brain malformations 3	Strong	extra40	3.94	3.94	2.0
+MDH2	developmental and epileptic encephalopathy, 51	Strong	extra40	3.92	3.91	3.0
+TUBGCP2	pachygyria, microcephaly, developmental delay, and dysmorphic facies, with or without seizures	Strong	extra40	3.88	3.94	2.0
+CTNNA2	cortical dysplasia, complex, with other brain malformations 9	Strong	extra40	3.11	3.91	3.0
+LINGO1	intellectual disability, autosomal recessive 64	Strong	extra40	3.05	3.91	3.0
+CD151	epidermolysis bullosa simplex 7, with nephropathy and deafness	Strong	extra40	3.88	3.91	3.0
+PERP	Olmsted syndrome 2	Strong	extra40	3.86	3.94	2.0
+SPRED2	Noonan syndrome 14	Strong	extra40	3.9	3.94	2.0
+KLHL7	PERCHING syndrome	Strong	extra40	3.94	4.0	0.0
+PLAG1	silver-russell syndrome 4	Strong	extra40	3.89	3.94	2.0
+GALM	galactosemia 4	Strong	extra40	3.92	4.0	0.0
+EIF2AK2	leukoencephalopathy, developmental delay, and episodic neurologic regression syndrome	Strong	extra40	3.91	4.0	0.0
+DDX59	orofaciodigital syndrome V	Strong	extra40	3.86	3.91	3.0
+OXR1	isolated cerebellar hypoplasia/agenesis	Strong	extra40	3.36	3.55	15.0
+TP73	ciliary dyskinesia, primary, 47, and lissencephaly	Strong	extra40	3.14	3.94	2.0
+COQ7	distal hereditary motor neuropathy	Strong	extra40	3.95	4.0	0.0
+PRUNE1	neurodevelopmental disorder with microcephaly, hypotonia, and variable brain anomalies	Strong	extra40	3.97	4.0	0.0
+UGP2	developmental and epileptic encephalopathy, 83	Strong	extra40	3.17	3.94	2.0
+IARS1	growth retardation, intellectual developmental disorder, hypotonia, and hepatopathy	Strong	extra40	3.95	4.0	0.0
+GRM1	autosomal recessive spinocerebellar ataxia 13	Strong	extra40	3.97	4.0	0.0
+PRKACB	cardioacrofacial dysplasia 2	Strong	extra40	3.83	3.91	3.0
+DCDC2	nephronophthisis 19	Strong	extra40	3.82	3.94	2.0
+SLC25A42	metabolic crises, recurrent, with variable encephalomyopathic features and neurologic regression	Strong	extra40	3.95	3.91	3.0
+NDNF	hypogonadotropic hypogonadism 25 with anosmia	Strong	extra40	3.52	3.94	2.0
+UNC45B	myofibrillar myopathy 11	Strong	extra40	3.85	3.88	4.0
+ST14	autosomal recessive congenital ichthyosis 11	Strong	extra40	3.91	3.94	2.0
+DSG1	severe dermatitis-multiple allergies-metabolic wasting syndrome	Strong	extra40	3.97	4.0	0.0
+JUP	Naxos disease	Strong	extra40	3.9	4.0	0.0
+RNU4-2	neurodevelopmental disorder with hypotonia, brain anomalies, distinctive facies, and absent language	Strong	extra40	3.98	4.0	0.0
+RBFOX2	congenital heart disease	Strong	extra40	3.19	3.91	3.0
+PPP1R12A	genitourinary and/or brain malformation syndrome	Strong	extra40	3.96	4.0	0.0
+BGN	X-linked spondyloepimetaphyseal dysplasia	Strong	extra40	3.47	4.0	0.0
+JAM3	porencephaly-microcephaly-bilateral congenital cataract syndrome	Strong	extra40	3.94	3.94	2.0
+GRM7	neurodevelopmental disorder with seizures, hypotonia, and brain imaging abnormalities	Strong	extra40	3.9	3.94	2.0
+MAPKAPK5	neurocardiofaciodigital syndrome	Strong	extra40	3.83	3.94	2.0
+GNA11	congenital hemangioma	Strong	extra40	3.83	3.94	2.0
+PSKH1	cholestasis, progressive familial intrahepatic, 13	Moderate	extra40	3.46	3.91	3.0
+BAP1	Kury-Isidor syndrome	Moderate	extra40	3.18	3.94	2.0
+CAT	acatalasia	Moderate	extra40	3.94	4.0	0.0
+MCM4	primary immunodeficiency with natural-killer cell deficiency and adrenal insufficiency	Moderate	extra40	3.25	3.94	2.0
+CSGALNACT1	skeletal dysplasia, mild, with joint laxity and advanced bone age	Moderate	extra40	3.88	3.94	2.0
+TF	atransferrinemia	Moderate	extra40	3.91	3.94	2.0
+ADAMTS15	arthrogryposis, distal, type 12	Moderate	extra40	3.13	3.91	3.0
+SUGCT	glutaric acidemia type 3	Moderate	extra40	3.92	4.0	0.0
+CACNA1S	malignant hyperthermia, susceptibility to, 5	Moderate	extra40	3.59	3.94	2.0
+NSMCE2	Seckel syndrome 10	Moderate	extra40	3.57	3.88	4.0
+BUB1	microcephaly 30, primary, autosomal recessive	Moderate	extra40	3.29	3.91	3.0
+GSC	short stature-auditory canal atresia-mandibular hypoplasia-skeletal anomalies syndrome	Moderate	extra40	3.15	3.94	2.0
+RNF213	Moyamoya disease 2	Moderate	extra40	3.92	3.97	1.0
+CYP26B1	lethal occipital encephalocele-skeletal dysplasia syndrome	Moderate	extra40	3.82	3.88	4.0
+DAW1	visceral heterotaxy	Moderate	extra40	3.55	3.91	3.0
+FOXA2	combined pituitary hormone deficiencies, genetic form	Moderate	extra40	3.79	3.91	3.0
+CLDN11	leukodystrophy, hypomyelinating, 22	Moderate	extra40	3.73	4.0	0.0
+C3orf52	hypotrichosis 15	Moderate	extra40	3.73	3.94	2.0
+KLF13	congenital heart disease	Moderate	extra40	3.61	3.94	2.0
+ERI1	spondyloepimetaphyseal dysplasia, Guo-Campeau type	Moderate	extra40	3.23	3.94	2.0
+GPKOW	holoprosencephaly-hypokinesia-congenital contractures syndrome	Moderate	extra40	3.15	3.1	30.0
+SFTPA1	interstitial lung disease 1	Moderate	extra40	3.86	3.91	3.0
+FASTKD5	Leigh syndrome	Moderate	extra40	3.15	3.91	3.0
+CADM3	Charcot-Marie-Tooth disease, axonal, type 2FF	Moderate	extra40	3.86	3.94	2.0
+CD28	immunodeficiency 123 with HPV-related verrucosis	Moderate	extra40	3.11	3.91	3.0
+FRMD5	neurodevelopmental disorder with eye movement abnormalities and ataxia	Moderate	extra40	3.91	3.94	2.0
+IL2RB	immunodeficiency 63 with lymphoproliferation and autoimmunity	Moderate	extra40	3.9	3.91	3.0
+RHOG	hemophagocytic lymphohistiocytosis due to RhoG deficiency	Moderate	extra40	3.06	3.94	2.0
+TDRD7	cataract 36	Moderate	extra40	3.83	3.94	2.0
+PMM2	hyperinsulinemic hypoglycemia with polycystic kidney disease	Moderate	extra40	3.95	4.0	0.0
+NME5	ciliary dyskinesia, primary, 48, without situs inversus	Moderate	extra40	3.52	3.91	3.0
+MAP3K20	split-foot malformation-mesoaxial polydactyly syndrome	Moderate	extra40	3.6	3.85	5.0
+RRAGC	Long-Olsen-Distelmaier syndrome	Moderate	extra40	3.77	3.88	4.0
+ADAT3	intellectual disability-strabismus syndrome	Moderate	extra40	3.95	4.0	0.0
+SLFN14	platelet-type bleeding disorder 20	Moderate	extra40	3.92	3.94	2.0
+LNPK	neurodevelopmental disorder with epilepsy and hypoplasia of the corpus callosum	Moderate	extra40	3.95	3.94	2.0
+MTSS2	intellectual developmental disorder with ocular anomalies and distinctive facial features	Moderate	extra40	3.94	3.94	2.0
+PLAU	Quebec platelet disorder	Moderate	extra40	3.37	4.0	0.0
+SREBF1	hereditary mucoepithelial dysplasia	Moderate	extra40	3.94	4.0	0.0
+ABCA2	intellectual developmental disorder with poor growth and with or without seizures or ataxia	Moderate	extra40	3.77	3.91	3.0
+IFT43	retinitis pigmentosa 81	Limited	extra40	3.0	3.79	7.0
+VIP	Asperger syndrome	Limited	extra40	1.77	1.45	85.0
+NSMCE3	lung disease, immunodeficiency, and chromosome breakage syndrome;	Limited	extra40	3.88	3.94	2.0
+TCHH	uncombable hair syndrome 3	Limited	extra40	3.6	3.94	2.0
+ZNF713	autism	Limited	extra40	3.0	3.7	10.0
+FBXO32	dilated cardiomyopathy	Limited	extra40	3.6	4.0	0.0
+GAS1	holoprosencephaly	Limited	extra40	3.14	3.94	2.0
+CHD5	parenti-mignot neurodevelopmental syndrome	Limited	extra40	3.67	3.94	2.0
+NDRG4	achromatopsia	Limited	extra40	1.06	1.09	97.0
+TLL1	atrial septal defect 6	Limited	extra40	3.23	3.94	2.0
+DSCAML1	retinitis pigmentosa	Limited	extra40	1.96	1.75	75.0
+KLF10	familial hypertrophic cardiomyopathy	Limited	extra40	2.82	3.76	8.0
+TRAPPC10	neurodevelopmental disorder with microcephaly, short stature, and speech delay	Limited	extra40	3.66	3.91	3.0
+TEAD1	helicoid peripapillary chorioretinal degeneration	Limited	extra40	3.92	3.94	2.0
+CD81	immunodeficiency, common variable, 6	Limited	extra40	3.16	3.91	3.0
+EFNB2	congenital heart disease	Limited	extra40	2.93	3.7	10.0
+KIF1B	Charcot-Marie-Tooth disease type 2A1	Limited	extra40	3.1	3.88	4.0
+MARK3	visual impairment and progressive phthisis bulbi	Limited	extra40	2.99	3.94	2.0
+NOTCH3	inherited thrombocytopenia	Limited	extra40	2.75	3.76	8.0
+EOMES	microcephaly-polymicrogyria-corpus callosum agenesis syndrome	Limited	extra40	3.05	3.94	2.0
+B2M	hypoproteinemia, hypercatabolic	Limited	extra40	3.09	3.94	2.0
+HAS2	congenital heart disease	Limited	extra40	2.79	3.85	5.0
+CFAP57	primary ciliary dyskinesia	Limited	extra40	3.01	3.91	3.0
+GREM2	tooth agenesis, selective, 9	Limited	extra40	3.39	3.94	2.0
+THG1L	spinocerebellar ataxia, autosomal recessive 28	Limited	extra40	3.92	3.94	2.0
+DNAH7	primary ciliary dyskinesia	Limited	extra40	2.69	3.34	22.0
+TNFSF13	common variable immunodeficiency	Limited	extra40	2.79	3.64	12.0
+MAN2A2	disorder of glycosylation	Limited	extra40	3.39	3.91	3.0
+TNFSF12	common variable immunodeficiency	Limited	extra40	2.9	3.91	3.0
+CHRD	congenital heart disease	Limited	extra40	2.57	3.25	25.0
+SPP2	retinitis pigmentosa	Limited	extra40	2.9	3.91	3.0
+PRDM5	Axenfeld-Rieger syndrome	Limited	extra40	2.89	3.76	8.0
+LEFTY2	visceral heterotaxy	Limited	extra40	2.95	3.85	5.0
+CIAO1	multiple mitochondrial dysfunctions syndrome 10	Limited	extra40	3.73	3.82	6.0
+SLC30A7	Joubert syndrome	Limited	extra40	2.86	3.7	10.0
+KANK2	wooly hair-palmoplantar keratoderma syndrome	Limited	extra40	3.16	3.91	3.0
+NPM1	bone marrow failure syndrome	Limited	extra40	2.95	3.85	5.0
+AVIL	nephrotic syndrome, type 21	Limited	extra40	3.07	3.91	3.0
+MMP14	Winchester syndrome	Limited	extra40	3.82	3.94	2.0
+LAS1L	Wilson-Turner syndrome	Limited	extra40	3.12	3.91	3.0

@@ -1,0 +1,21 @@
+gene	phenotype	verdict	lit_score	found	read	cached	error	usd	bands_usd
+ADAM20	amyotrophic lateral sclerosis type 9	Novel	1.04	11	8	False		0.064274	0.006866
+SLK	degenerative myopia	Novel	1.06	77	20	False		0.122671	0.044905
+MC2R	congenital reticular ichthyosiform erythroderma	Novel	1.14	63	20	False		0.116412	0.032576
+ADCY5	3M syndrome 2	Novel	1.12	59	20	False		0.070723	0.022241
+SMAD2	intellectual disability, X-linked 96	Novel	1.19	86	20	False		0.134765	0.048306
+SBDS	immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome	Novel	1.27	58	20	False		0.118350	0.029044
+FGF3	surfactant metabolism dysfunction, pulmonary, 4	Novel	1.12	75	20	False		0.121622	0.037234
+PTS	3-hydroxy-3-methylglutaric aciduria	Novel	1.14	88	10	False		0.113726	0.048465
+PDCD1	polymicrogyria, perisylvian, with cerebellar hypoplasia and arthrogryposis	Novel	1.05	78	16	False		0.117344	0.038770
+PAX9	Knobloch syndrome 2	Novel	1.12	63	19	False		0.114809	0.031641
+LEPR	spastic paraplegia 83, autosomal recessive	Novel	1.06	69	20	False		0.109175	0.032206
+SMC3	asthma-related traits, susceptibility to, 5	Novel	1.17	69	20	False		0.137896	0.038852
+DBT	myofibrillar myopathy 5	Novel	1.14	68	16	False		0.119298	0.035982
+LPAR6	blepharophimosis - intellectual disability syndrome, MKB type	Novel	1.11	58	20	False		0.110386	0.030270
+SFRP4	Ritscher-Schinzel syndrome	Novel	1.17	66	20	False		0.125778	0.036492
+HPS1	myosclerosis	Novel	1.29	62	20	False		0.113552	0.032317
+IDH2	hereditary renal hypouricemia	Novel	1.21	82	20	False		0.160914	0.055920
+MYO18B	hypertrophic cardiomyopathy 16	Existing	2.4	49	20	False		0.140699	0.025191
+ATP5F1A	short stature-brachydactyly-obesity-global developmental delay syndrome	Novel	1.65	60	20	False		0.168824	0.037277
+IL17RD	microphthalmia, isolated, with coloboma 6	Hypothesized	1.96	57	20	False		0.151741	0.031491

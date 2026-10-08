@@ -1,0 +1,17 @@
+You are labelling phenotypes for a gene-burden literature review.
+
+Say whether the name denotes a DISEASE: a diagnosed medical condition that a
+person can have or not (an illness, disorder, syndrome, cancer, infection,
+or named congenital malformation).
+
+Answer OTHER for everything else, including:
+- laboratory or physical measurements (MCH, HDL, height, blood pressure reading)
+- symptoms or findings (pain, hematuria, a lump)
+- drugs, procedures, operations
+- family or personal history, screening, follow-up, susceptibility labels
+- umbrella or administrative wording that is not itself a diagnosis
+
+The name is:
+{phenotype}
+
+Reply with exactly one word: disease or other.

@@ -1,0 +1,544 @@
+{
+    "gene_name": "ABCC6",
+    "phenotype": "red cell distribution width",
+    "synonyms": [
+        "RDW",
+        "red cell distribution width-standard deviation",
+        "RDW-SD",
+        "red cell distribution width-coefficient of variation",
+        "RDW-CV",
+        "erythrocyte distribution width",
+        "RBC distribution width",
+        "anisocytosis index"
+    ],
+    "run_parameters": {
+        "model": "claude-haiku-4-5@vertex",
+        "temperature": 0.0,
+        "batch_size": null
+    },
+    "prompt_templates": {
+        "phenotype_synonyms_prompt": "You are a medical expert helping to identify alternative terms and synonyms for phenotypes/diseases.\n\nGiven the following phenotype: {phenotype}\n\nGenerate between 0 and 10 relevant synonyms or alternative terms that could be used to search for scientific literature about this phenotype. Include:\n- Alternative medical terminology\n- Common abbreviations\n- Related clinical terms\n- Different ways the condition might be described in literature\n\nIMPORTANT: \n- If the phenotype is already very specific and well-defined, you may return fewer synonyms (even 0).\n- Only include terms that are semantically equivalent or very closely related.\n- Do NOT include broader categories, subtypes, or related but distinct conditions.\n\nReturn your answer in this exact XML format:\n<response>\n<synonyms>\n<synonym>term 1</synonym>\n<synonym>term 2</synonym>\n...\n</synonyms>\n</response>\n\nIf you think no synonyms are needed, return:\n<response>\n<synonyms>\n</synonyms>\n</response>",
+        "novelty_assessment_prompt": "You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.\n\nBelow is a list of scientific articles about {gene_name} and/or {phenotype}:\n\n{alias_note}{dismiss_note}\n\n{articles_list}\n\nClassify the gene\u2013phenotype relationship into ONE of four categories:\n\n1. **Established**  \n   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical or mechanistic studies support a clear causal role.\n   Research used to prove this category has to be in Human.\n\n2. **Existing**\n   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.  \n   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.\n   Research used to prove this category has to be in Human.\n\n3. **Hypothesized**  \n   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.  \n   Includes expression, functional data, pathway links, or relevant animal models.  \n   Excludes cases where gene and phenotype are merely co-mentioned without relevance.\n\n4. **Novel**  \n   No evidence that variants or biological activity of {gene_name} influence {phenotype}.  \n   Co-mentions are incidental and provide no logical basis.\n\nYour task:\n1. Read the article titles and abstracts.  \n2. Choose the best category.  \n3. Provide a brief justification (3\u20135 sentences).  \n4. Cite up to 10 relevant PMIDs from the provided list only.\n\nReturn your answer in **this exact XML format**:\n\n<response>\n  <verdict>Established|Existing|Hypothesized|Novel</verdict>\n  <justification>Your brief explanation (3\u20135 sentences)</justification>\n  <pmids>\n    <pmid>12345678</pmid>\n    ...\n  </pmids>\n</response>\n\nAdditional rules:\n- If uncertain between two categories, choose the *less novel* one.  \n- Hypothesized can apply without phenotype measurements if the gene\u2019s biology is directly relevant.  \n- Think step by step internally: if the studies used to prove \"Existing\" or \"Established\" are not in human but in an animal or in vitro experiments, downgrade to \"Hypothesized\".\n- Maximum 10 PMIDs."
+    },
+    "prompt_texts": {},
+    "pubmed_articles": [
+        {
+            "pmid": "34906475",
+            "title": "Genetic heterogeneity of heritable ectopic mineralization disorders in a large international cohort.",
+            "pubdate": "2022 Jan",
+            "abstract": "Heritable ectopic mineralization disorders comprise a group of conditions with a broad range of clinical manifestations in nonskeletal connective tissues. We report the genetic findings from a large international cohort of 478 patients afflicted with ectopic mineralization."
+        },
+        {
+            "pmid": "38815804",
+            "title": "Pseudoxanthoma elasticum - Genetics, pathophysiology, and clinical presentation.",
+            "pubdate": "2024 Sep",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is an autosomal-recessively inherited multisystem disease. Mutations in the ABCC6-gene are causative, coding for a transmembrane transporter mainly expressed in hepatocytes, which promotes the efflux of adenosine triphosphate (ATP). This results in low levels of plasma inorganic pyrophosphate (PPi), a critical anti-mineralization factor. The clinical phenotype of PXE is characterized by the effects of elastic fiber calcification in the skin, the cardiovascular system, and the eyes. In the eyes, calcification of Bruch's membrane results in clinically visible lesions, including peau d'orange, angioid streaks, and comet tail lesions. Frequently, patients must be treated for secondary macular neovascularization. No effective therapy is available for treating the cause of PXE, but several promising approaches are emerging. Finding appropriate outcome measures remains a significant challenge for clinical trials in this slowly progressive disease. This review article provides an in-depth summary of the current understanding of PXE and its multi-systemic manifestations. The article offers a detailed overview of the ocular manifestations, including their morphological and functional consequences, as well as potential complications. Lastly, previous and future clinical trials of causative treatments for PXE are discussed."
+        },
+        {
+            "pmid": "28486967",
+            "title": "Pseudoxanthoma elasticum.",
+            "pubdate": "2017 May 10",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is a genetic metabolic disease with autosomal recessive inheritance caused by mutations in the ABCC6 gene. The lack of functional ABCC6 protein leads to ectopic mineralization that is most apparent in the elastic tissues of the skin, eyes and blood vessels. The clinical prevalence of PXE has been estimated at between 1 per 100,000 and 1 per 25,000, with slight female predominance. The first clinical sign of PXE is almost always small yellow papules on the nape and sides of the neck and in flexural areas. The papules coalesce, and the skin becomes loose and wrinkled. The mid-dermal elastic fibers are short, fragmented, clumped and calcified. Dystrophic calcification of Bruch's membrane, revealed by angioid streaks, may trigger choroidal neovascularization and, ultimately, loss of central vision and blindness in late-stage disease. Lesions in small and medium-sized artery walls may result in intermittent claudication and peripheral artery disease. Cardiac complications (myocardial infarction, angina pectoris) are thought to be relatively rare but merit thorough investigation. Ischemic strokes have been reported. PXE is a metabolic disease in which circulating levels of an anti-mineralization factor are low. There is good evidence to suggest that the factor is inorganic pyrophosphate (PPi), and that the circulating low levels of PPi and decreased PPi/Pi ratio result from the lack of ATP release by hepatocytes harboring the mutant ABCC6 protein. However, the substrate(s) bound, transported or modulated by the ABCC6 protein remain unknown. More than 300 sequence variants of the ABCC6 gene have been identified. There is no cure for PXE; the main symptomatic treatments are vascular endothelial growth factor inhibitor therapy (for ophthalmic manifestations), lifestyle, lipid-lowering and dietary measures (for reducing vascular risk factors), and vascular surgery (for severe cardiovascular manifestations). Future treatment options may include gene therapy/editing and pharmacologic chaperone therapy."
+        },
+        {
+            "pmid": "33946315",
+            "title": "Diverse Genetic Landscape of Suspected Retinitis Pigmentosa in a Large Korean Cohort.",
+            "pubdate": "2021 Apr 30",
+            "abstract": "We conducted targeted next-generation sequencing (TGS) and/or whole exome sequencing (WES) to assess the genetic profiles of clinically suspected retinitis pigmentosa (RP) in the Korean population. A cohort of 279 unrelated Korean patients with clinically diagnosed RP and available family members underwent molecular analyses using TGS consisting of 88 RP-causing genes and/or WES with clinical variant interpretation. The combined genetic tests (TGS and/or WES) found a mutation in the 44 RP-causing genes and seven inherited retinal disease (IRD)-causing genes, and the total mutation detection rate was 57%. The mutation detection rate was higher in patients who experienced visual deterioration at a younger age (75.4%, age of symptom onset under 10 years) and who had a family history of RP (70.7%). The most common causative genes were EYS (8.2%), USH2A (6.8%), and PDE6B (4.7%), but mutations were dispersed among the 51 RP/IRD genes generally. Meanwhile, the PDE6B mutation was the most common in patients experiencing initial symptoms in their first decade, EYS in their second to third decades, and USH2A in their fifth decades and older. Of note, WES revealed some unexpected genotypes: ABCC6, CHM, CYP4V2, RS1, TGFBI, VPS13B, and WDR19, which were verified by ophthalmological re-phenotyping."
+        },
+        {
+            "pmid": "17617515",
+            "title": "Mutation detection in the ABCC6 gene and genotype-phenotype analysis in a large international case series affected by pseudoxanthoma elasticum.",
+            "pubdate": "2007 Oct",
+            "abstract": "Pseudoxanthoma elasticum (PXE), an autosomal recessive disorder with considerable phenotypic variability, mainly affects the eyes, skin and cardiovascular system, characterised by dystrophic mineralization of connective tissues. It is caused by mutations in the ABCC6 (ATP binding cassette family C member 6) gene, which encodes MRP6 (multidrug resistance-associated protein 6)."
+        },
+        {
+            "pmid": "32873932",
+            "title": "Reassessment of causality of ABCC6 missense variants associated with pseudoxanthoma elasticum based on Sherloc.",
+            "pubdate": "2021 Jan",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is a heritable disorder affecting elastic fibers in the skin, eyes, and cardiovascular system. It is caused by biallelic pathogenic variants in the ABCC6 gene. To date, over 300 ABCC6 variants are associated with PXE, more than half being missense variants. Correct variant interpretation is essential for establishing a direct link between the variant and the patient's phenotype and has important implications for diagnosis and treatment."
+        },
+        {
+            "pmid": "16763870",
+            "title": "[Pseudoxanthoma elasticum].",
+            "pubdate": "2006 Jun",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is an inherited disorder that is associated with accumulation of mineralized and fragmented elastic fibers in the skin, vessel walls, and Bruch's membrane. Clinically, patients exhibit characteristic lesions of the skin (soft, ivory-colored papules in a reticular pattern that predominantly affect the neck), the posterior segment of the eye (peau d'orange, angioid streaks, choroidal neovascularizations), and the cardiovascular system (peripheral arterial occlusive disease, coronary occlusion, gastrointestinal bleeding). There is no causal therapy. Recent studies suggest that PXE is inherited almost exclusively as an autosomal recessive trait. Its prevalence has been estimated to be 1:25,000-100,000. The ABCC6 gene on chromosome 16p13.1 is associated with the disease. Mutations within the ABCC6 gene cause reduced or absent transmembraneous transport that leads to accumulation of substrate and calcification of elastic fibers. Although based on clinical features the diagnosis appears readily possible, variability in phenotypic expressions and the low prevalence may be responsible that the disease is underdiagnosed. This review covers current knowledge of PXE and presents therapeutic approaches."
+        },
+        {
+            "pmid": "34205333",
+            "title": "Phenotypic Features and Genetic Findings in a Cohort of Italian Pseudoxanthoma Elasticum Patients and Update of the Ophthalmologic Evaluation Score.",
+            "pubdate": "2021 Jun 19",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is a rare ectopic calcification genetic disease mainly caused by ABCC6 rare sequence variants. The clinical phenotype is characterized by typical dermatological, ophthalmological and cardiovascular manifestations, whose frequency and severity are differently reported in the literature."
+        }
+    ],
+    "pubmed_pmids": [
+        "34906475",
+        "38815804",
+        "28486967",
+        "33946315",
+        "17617515",
+        "32873932",
+        "16763870",
+        "34205333"
+    ],
+    "llm_raw_response": "Let me analyze this systematically.\n\n**Step 1: Identify the phenotype of interest**\nRed cell distribution width (RDW) - a hematological measure of variation in red blood cell size.\n\n**Step 2: Review the provided articles**\nAll articles focus on:\n- ABCC6 gene and pseudoxanthoma elasticum (PXE)\n- Genetic heterogeneity of ectopic mineralization disorders\n- Retinitis pigmentosa (one article mentions ABCC6 as an unexpected finding)\n\n**Step 3: Search for any mention of RDW or red cell distribution width**\nScanning all abstracts: None of the articles mention red cell distribution width, RDW, hematological parameters, or blood cell characteristics related to RDW.\n\n**Step 4: Assess for indirect relevance**\nThe articles discuss:\n- ABCC6 mutations causing PXE (ectopic mineralization)\n- Effects on skin, eyes, and cardiovascular system\n- ATP transport and pyrophosphate metabolism\n\nThere is no biological mechanism described that would connect ABCC6 function to red blood cell size distribution. PXE affects elastic fiber calcification, not erythrocyte morphology or hematological parameters.\n\n**Step 5: Determine category**\n- **Established**: No human studies showing ABCC6 variants cause RDW \u274c\n- **Existing**: No credible study reporting association between ABCC6 and RDW \u274c\n- **Hypothesized**: No biological pathway or mechanism linking ABCC6 to RDW \u274c\n- **Novel**: Correct - no evidence of any relationship \u2713\n\nThe articles are about ABCC6 and mineralization disorders, not hematological traits. This is a case of incidental co-mention with no logical basis for connection.\n\n<response>\n  <verdict>Novel</verdict>\n  <justification>None of the provided articles mention red cell distribution width or any hematological parameters related to RDW. The ABCC6 gene is exclusively discussed in the context of pseudoxanthoma elasticum and ectopic mineralization affecting skin, eyes, and cardiovascular tissues. There is no biological mechanism, genetic association, or clinical evidence presented linking ABCC6 variants to red cell distribution width. The gene and phenotype are not meaningfully connected in the literature provided.</justification>\n  <pmids>\n  </pmids>\n</response>",
+    "final_output": {
+        "verdict": "Novel",
+        "justification": "None of the provided articles mention red cell distribution width or any hematological parameters related to RDW. The ABCC6 gene is exclusively discussed in the context of pseudoxanthoma elasticum and ectopic mineralization affecting skin, eyes, and cardiovascular tissues. There is no biological mechanism, genetic association, or clinical evidence presented linking ABCC6 variants to red cell distribution width. The gene and phenotype are not meaningfully connected in the literature provided.",
+        "pmids": []
+    },
+    "api_response": {
+        "verdict": "Novel",
+        "justification": "None of the provided articles mention red cell distribution width or any hematological parameters related to RDW. The ABCC6 gene is exclusively discussed in the context of pseudoxanthoma elasticum and ectopic mineralization affecting skin, eyes, and cardiovascular tissues. There is no biological mechanism, genetic association, or clinical evidence presented linking ABCC6 variants to red cell distribution width. The gene and phenotype are not meaningfully connected in the literature provided.",
+        "articles_found": 8,
+        "cited_articles": [],
+        "open_targets_verdict": "Existing",
+        "open_targets_max_score": 0.3937859606212275,
+        "open_targets_traits": {
+            "ensembl_id": "ENSG00000091262",
+            "traits_count": 66,
+            "file_path": "data/runs/novel/open_targets_traits_ABCC6_red_cell_distribution_width.txt",
+            "traits": [
+                {
+                    "disease_id": "Orphanet_758",
+                    "name": "Pseudoxanthoma elasticum",
+                    "score": 0.8656263103902633,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013768",
+                    "name": "arterial calcification, generalized, of infancy, 2",
+                    "score": 0.8073057192234084,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_51608",
+                    "name": "Generalized arterial calcification of infancy",
+                    "score": 0.7650204549084912,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009925",
+                    "name": "autosomal recessive inherited pseudoxanthoma elasticum",
+                    "score": 0.7543566956510941,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0024308",
+                    "name": "pseudoxanthoma elasticum (inherited or acquired)",
+                    "score": 0.6229455925046676,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000556",
+                    "name": "Retinal dystrophy",
+                    "score": 0.502876497010971,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004509",
+                    "name": "hemoglobin measurement",
+                    "score": 0.4918088532213142,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004838",
+                    "name": "calcium measurement",
+                    "score": 0.49125712686524137,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004305",
+                    "name": "erythrocyte count",
+                    "score": 0.4857031579142363,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004348",
+                    "name": "hematocrit",
+                    "score": 0.48443591466761515,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010968",
+                    "name": "phosphate measurement",
+                    "score": 0.4784377782394607,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0100091",
+                    "name": "inherited pseudoxanthoma elasticum",
+                    "score": 0.46197481835587717,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005001",
+                    "name": "phenylalanine measurement",
+                    "score": 0.4405802803618209,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005058",
+                    "name": "tyrosine measurement",
+                    "score": 0.4352775504737311,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004541",
+                    "name": "HbA1c measurement",
+                    "score": 0.43297152715112475,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003847",
+                    "name": "hereditary disease",
+                    "score": 0.4178050162658971,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010972",
+                    "name": "blood phosphate measurement",
+                    "score": 0.40104765092913297,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2045260",
+                    "name": "red blood cell density",
+                    "score": 0.40068532357298525,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000478",
+                    "name": "Abnormality of the eye",
+                    "score": 0.39729834378605444,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008171",
+                    "name": "nephrolithiasis",
+                    "score": 0.3962352003405634,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009188",
+                    "name": "Red cell distribution width",
+                    "score": 0.3937859606212275,
+                    "matched": true
+                },
+                {
+                    "disease_id": "MONDO_0006678",
+                    "name": "bladder calculus",
+                    "score": 0.3910213012100636,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004696",
+                    "name": "sex hormone-binding globulin measurement",
+                    "score": 0.3906444952006908,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004617",
+                    "name": "cystatin C measurement",
+                    "score": 0.37693482205544493,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016175",
+                    "name": "cutis laxa",
+                    "score": 0.3409374159466374,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0200034",
+                    "name": "Papule",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0001253",
+                    "name": "body height",
+                    "score": 0.33316873016364584,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0800130",
+                    "name": "5-methylthioadenosine (MTA) measurement",
+                    "score": 0.31563433679897457,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050200",
+                    "name": "prostate specific antigen amount",
+                    "score": 0.29988889708902566,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003608",
+                    "name": "optic atrophy",
+                    "score": 0.2938159844743379,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020245",
+                    "name": "CD166 antigen measurement",
+                    "score": 0.2673079816904562,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2044990",
+                    "name": "level of nodal modulator 1 in blood serum",
+                    "score": 0.263313323621521,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2045210",
+                    "name": "brain attribute",
+                    "score": 0.2573929407293087,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003900",
+                    "name": "connective tissue disorder",
+                    "score": 0.2419309712835953,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020507",
+                    "name": "interleukin-4 receptor subunit alpha measurement",
+                    "score": 0.240277276315494,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004846",
+                    "name": "placental abruption",
+                    "score": 0.240277276315494,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2044065",
+                    "name": "level of ubiquitin carboxyl-terminal hydrolase 4 in blood serum",
+                    "score": 0.22797483354041237,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050062",
+                    "name": "serum alanine aminotransferase amount",
+                    "score": 0.22541038725783097,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0006945",
+                    "name": "diastolic blood pressure change measurement",
+                    "score": 0.22479532459650198,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2045291",
+                    "name": "cerebrospinal fluid composition attribute",
+                    "score": 0.21725554764883748,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0800931",
+                    "name": "X-25520 measurement",
+                    "score": 0.21725554764883748,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005093",
+                    "name": "skin disorder",
+                    "score": 0.12929238475608365,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007256",
+                    "name": "hepatocellular carcinoma",
+                    "score": 0.09239936817983817,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005070",
+                    "name": "neoplasm",
+                    "score": 0.08307385370231708,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008895",
+                    "name": "hereditary arterial and articular multiple calcification syndrome",
+                    "score": 0.07798217062703805,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018328",
+                    "name": "homozygous familial hypercholesterolemia",
+                    "score": 0.07091144070995985,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018891",
+                    "name": "familial tumoral calcinosis",
+                    "score": 0.0650982678450888,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0060714",
+                    "name": "tumoral calcinosis, hyperphosphatemic, familial, 2",
+                    "score": 0.06314045962932488,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_411",
+                    "name": "Hyperlipoproteinemia type 1",
+                    "score": 0.06225711244609309,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0002474",
+                    "name": "primary hyperoxaluria",
+                    "score": 0.060032033664613,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005382",
+                    "name": "bone Paget disease",
+                    "score": 0.05948182439008783,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0700513",
+                    "name": "apolipoprotein A-I deficiency",
+                    "score": 0.05927321709433247,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008877",
+                    "name": "blue diaper syndrome",
+                    "score": 0.0588592876570856,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013533",
+                    "name": "hyperlipidemia due to hepatic triglyceride lipase deficiency",
+                    "score": 0.05883156916798426,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008261",
+                    "name": "hereditary sclerosing poikiloderma, Weary type",
+                    "score": 0.05858949436316578,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018999",
+                    "name": "LCAT deficiency",
+                    "score": 0.056672606850201125,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008380",
+                    "name": "retinoblastoma",
+                    "score": 0.0566537172131839,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019200",
+                    "name": "retinitis pigmentosa",
+                    "score": 0.05649574030429893,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015612",
+                    "name": "Dent disease",
+                    "score": 0.05576849115427192,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004981",
+                    "name": "atrial fibrillation",
+                    "score": 0.055705334241634666,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009823",
+                    "name": "primary hyperoxaluria type 1",
+                    "score": 0.05557341476572637,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009824",
+                    "name": "primary hyperoxaluria type 2",
+                    "score": 0.054716297486070105,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010225",
+                    "name": "Dent disease type 1",
+                    "score": 0.05385816386181345,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018160",
+                    "name": "hereditary retinoblastoma",
+                    "score": 0.05304579654289524,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_300547",
+                    "name": "Autosomal recessive infantile hypercalcemia",
+                    "score": 0.05087543884625934,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000544",
+                    "name": "infection",
+                    "score": 0.05024232802297029,
+                    "matched": false
+                }
+            ],
+            "articles": [
+                {
+                    "pmid": "39024449",
+                    "title": "Diversity and scale: Genetic architecture of 2068 traits in the VA Million Veteran Program.",
+                    "abstract": "",
+                    "year": "2024 Jul 19",
+                    "source": "gwas_credible_sets"
+                }
+            ],
+            "ot_synonym_selection_usage": {
+                "text": "VERDICT: ALREADY KNOWN\nBASIS: Red cell distribution width (0.394)\nREASON: The exact trait \"Red cell distribution width\" is already present in the list.",
+                "input_tokens": 1733,
+                "output_tokens": 64,
+                "flex": false
+            },
+            "match": {
+                "method": "broad_opus",
+                "matched_id": "EFO_0009188",
+                "basis": "Red cell distribution width (0.394)",
+                "reason": "The exact trait \"Red cell distribution width\" is already present in the list.",
+                "verdict_text": "ALREADY KNOWN",
+                "unresolved_basis": false
+            }
+        },
+        "synonyms": [
+            "RDW",
+            "red cell distribution width-standard deviation",
+            "RDW-SD",
+            "red cell distribution width-coefficient of variation",
+            "RDW-CV",
+            "erythrocyte distribution width",
+            "RBC distribution width",
+            "anisocytosis index"
+        ],
+        "pubmed_pmids": [
+            "34906475",
+            "38815804",
+            "28486967",
+            "33946315",
+            "17617515",
+            "32873932",
+            "16763870",
+            "34205333"
+        ]
+    }
+}

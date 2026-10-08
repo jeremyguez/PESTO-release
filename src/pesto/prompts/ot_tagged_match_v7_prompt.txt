@@ -1,0 +1,219 @@
+A study reports that the gene {gene} is associated with:
+
+```
+"{phenotype}"
+```
+
+Below are traits already linked to {gene} in a public database. They are the 20
+nearest entries by embedding similarity, selected from hundreds of traits.
+Most are expected to be near-misses rather than true matches.
+
+Your task is to determine whether each existing gene-trait association provides
+meaningful prior evidence for the reported gene-trait association.
+
+For each entry, classify its relationship to the reported trait using exactly
+one of the following tags.
+
+EXACT
+The same trait: synonyms, abbreviations, spelling variants, or trivially
+different measurements of essentially the same quantity.
+
+```
+Example:
+  Reported: "systolic blood pressure"
+  Existing: "SBP"
+  -> EXACT
+```
+
+PARENT_FIRST
+The existing trait contains the reported trait and is close enough that its
+association provides meaningful prior evidence.
+
+```
+Example:
+  Reported: "stage III breast cancer"
+  Existing: "breast cancer"
+  -> PARENT_FIRST
+```
+
+PARENT_DISTANT
+The existing trait contains the reported trait, but is broad enough to
+include substantially different phenotypes, so it is not meaningful prior
+evidence.
+
+```
+Example:
+  Reported: "stage III breast cancer"
+  Existing: "cancer"
+  -> PARENT_DISTANT
+```
+
+CHILD_FIRST
+The existing trait is contained within the reported trait and is close
+enough that its association provides meaningful prior evidence.
+
+```
+Example:
+  Reported: "breast cancer"
+  Existing: "stage III breast cancer"
+  -> CHILD_FIRST
+```
+
+CHILD_DISTANT
+The existing trait is contained within the reported trait, but is much more
+specific, so it is not meaningful prior evidence for the broader trait.
+
+```
+Example:
+  Reported: "cancer"
+  Existing: "stage III breast cancer"
+  -> CHILD_DISTANT
+```
+
+PARENT and CHILD require meaningful phenotypic containment. Do not infer them
+merely from shared ontology membership, organ system, correlation, causal
+influence, or mathematical dependence.
+
+FIRST versus DISTANT is determined by how informative the existing association
+is for the reported trait, not simply by the number of ontology levels between
+them.
+
+CLOSE_VERY
+Different traits that capture nearly the same underlying biological
+quantity, such that an association with one is very strong prior evidence
+for association with the other.
+
+```
+Example:
+  Reported: "hemoglobin concentration"
+  Existing: "hematocrit"
+  -> CLOSE_VERY
+```
+
+CLOSE_MODERATE
+Different traits linked by one concrete and specific biological or
+phenotypic axis, such that an association with one provides meaningful prior
+evidence for association with the other.
+
+```
+Example:
+  Reported: "red blood cell count"
+  Existing: "hemoglobin concentration"
+  -> CLOSE_MODERATE
+
+Different units or measurement types do not prevent CLOSE_MODERATE. However,
+sharing only an organ, broad field, sample type, general risk factor, or
+broad correlation is not enough.
+```
+
+CLOSE_VAGUE
+A specific biological or epidemiological relationship exists, but an
+association with one is too weak or unreliable to provide meaningful prior
+evidence for the other.
+
+```
+Example:
+  Reported: "HDL cholesterol"
+  Existing: "LDL cholesterol"
+  -> CLOSE_VAGUE
+
+Mere membership in the same broad biological field is DIFFERENT, not
+CLOSE_VAGUE.
+```
+
+If one trait is primarily a manifestation, consequence, complication, or marker
+of the other, use SYMPTOM rather than CLOSE.
+
+SYMPTOM_SPECIFIC
+One trait is defining, near-constant, or directly used to diagnose the
+other. The relationship provides meaningful prior evidence.
+
+```
+Example:
+  Reported: "A1C >=6.5%"
+  Existing: "diabetes mellitus"
+  -> SYMPTOM_SPECIFIC
+```
+
+SYMPTOM_MODERATE
+One trait is a common and characteristic manifestation or consequence of the
+other, though not defining or highly specific. The relationship still
+provides meaningful prior evidence.
+
+```
+Example:
+  Reported: "peripheral neuropathy"
+  Existing: "diabetes mellitus"
+  -> SYMPTOM_MODERATE
+```
+
+SYMPTOM_NONSPECIFIC
+The relationship is real but occasional, indirect, or highly nonspecific,
+so it does not provide meaningful prior evidence.
+
+```
+Example:
+  Reported: "fatigue"
+  Existing: "iron-deficiency anemia"
+  -> SYMPTOM_NONSPECIFIC
+```
+
+DIFFERENT
+No relationship stronger than sharing a broad organ, field, disease family,
+laboratory context, risk factor, or similar wording.
+
+```
+Example:
+  Reported: "platelet count"
+  Existing: "eosinophil count"
+  -> DIFFERENT
+```
+
+Use this decision order:
+
+```
+1. Same trait -> EXACT
+2. One meaningfully contains the other -> PARENT or CHILD
+3. Parallel traits sharing a direct biological or phenotypic axis -> CLOSE
+4. One is a manifestation, consequence, complication, or marker of the other
+   -> SYMPTOM
+5. Otherwise -> DIFFERENT
+```
+
+The following relationships are strong enough to constitute meaningful prior
+evidence:
+
+```
+EXACT
+PARENT_FIRST
+CHILD_FIRST
+CLOSE_VERY
+CLOSE_MODERATE
+SYMPTOM_SPECIFIC
+SYMPTOM_MODERATE
+```
+
+The following relationships are too broad, weak, or indirect to constitute
+meaningful prior evidence:
+
+```
+PARENT_DISTANT
+CHILD_DISTANT
+CLOSE_VAGUE
+SYMPTOM_NONSPECIFIC
+DIFFERENT
+```
+
+Judge each entry independently. Do not rank the entries against each other.
+Do not assume that an entry matches because it was retrieved by embedding
+similarity.
+
+Reply with one line per entry and nothing else:
+
+```
+<number> | <TAG>
+```
+
+Traits already linked to {gene}:
+
+{traits}

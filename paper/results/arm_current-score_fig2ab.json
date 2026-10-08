@@ -1,0 +1,5732 @@
+[
+ {
+  "gene": "CCT7",
+  "phenotype": "complex neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 8,
+  "cached": true
+ },
+ {
+  "gene": "ZFTRAF1",
+  "phenotype": "neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 1,
+  "cached": true
+ },
+ {
+  "gene": "PHKG2",
+  "phenotype": "primary ciliary dyskinesia 33",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 16,
+  "cached": true
+ },
+ {
+  "gene": "SYCP2L",
+  "phenotype": "Weiss-Kruszka syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 7,
+  "cached": true
+ },
+ {
+  "gene": "ATP11C",
+  "phenotype": "arterial tortuosity syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "FKBP6",
+  "phenotype": "Charcot-Marie-Tooth disease type 2E",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 15,
+  "cached": true
+ },
+ {
+  "gene": "MT-CO3",
+  "phenotype": "gonadal dysgenesis",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 18,
+  "cached": true
+ },
+ {
+  "gene": "APC",
+  "phenotype": "complement component 2 deficiency",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "cached": true
+ },
+ {
+  "gene": "RBFOX3",
+  "phenotype": "arthrogryposis, distal, with impaired proprioception and touch",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PSMB1",
+  "phenotype": "glycogen storage disease III",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 9,
+  "cached": true
+ },
+ {
+  "gene": "CDH15",
+  "phenotype": "familial hypobetalipoproteinemia 1",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 18,
+  "cached": true
+ },
+ {
+  "gene": "ANO3",
+  "phenotype": "arthrogryposis multiplex congenita 2, neurogenic type",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "SCN9A",
+  "phenotype": "hypogonadotropic hypogonadism",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "SELENBP1",
+  "phenotype": "neurodevelopmental disorder with spastic quadriplegia, optic atrophy, seizures, and structural brain anomalies",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "CACNA1F",
+  "phenotype": "Malan overgrowth syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "GET4",
+  "phenotype": "deafness-lymphedema-leukemia syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 11,
+  "cached": true
+ },
+ {
+  "gene": "NFATC2",
+  "phenotype": "spondylometaphyseal dysplasia, 'corner fracture' type",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "KCNE2",
+  "phenotype": "epidermolysis bullosa simplex 4, localized or generalized intermediate, autosomal recessive",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 14,
+  "cached": true
+ },
+ {
+  "gene": "RPL3L",
+  "phenotype": "autosomal recessive mendelian susceptibility to mycobacterial diseases due to complete RORgamma receptor deficiency",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "CASP2",
+  "phenotype": "Hoxha-Aliu syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 12.0,
+  "evidence": 88.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "AMIGO2",
+  "phenotype": "autosomal recessive nonsyndromic hearing loss 59",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 13,
+  "cached": true
+ },
+ {
+  "gene": "KCND3",
+  "phenotype": "46,XY sex reversal 3",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 2,
+  "cached": true
+ },
+ {
+  "gene": "KCNQ4",
+  "phenotype": "X-linked spondyloepimetaphyseal dysplasia",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "NBEAL2",
+  "phenotype": "arrhythmogenic cardiomyopathy with wooly hair and keratoderma",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "TSPEAR",
+  "phenotype": "tibial muscular dystrophy",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 13,
+  "cached": true
+ },
+ {
+  "gene": "TNNT2",
+  "phenotype": "atrial septal defect 6",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PCCA",
+  "phenotype": "hypercholanemia, familial, 2",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "STXBP2",
+  "phenotype": "autosomal recessive nonsyndromic hearing loss 44",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "UQCRH",
+  "phenotype": "hereditary spastic paraplegia 45",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 7,
+  "cached": true
+ },
+ {
+  "gene": "MC4R",
+  "phenotype": "agammaglobulinemia 2, autosomal recessive",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 3,
+  "cached": true
+ },
+ {
+  "gene": "CDK9",
+  "phenotype": "congenital myopathy 2c, severe infantile, autosomal dominant",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PHGDH",
+  "phenotype": "Joubert syndrome 33",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "CYBA",
+  "phenotype": "parathyroid gland carcinoma",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "DNAJC13",
+  "phenotype": "craniofacial anomalies and anterior segment dysgenesis syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "MRAS",
+  "phenotype": "gonadal dysgenesis, dysmorphic facies, retinal dystrophy, and myopathy",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "GHR",
+  "phenotype": "familial long QT syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 17,
+  "cached": true
+ },
+ {
+  "gene": "POU4F1",
+  "phenotype": "autosomal dominant polycystic kidney disease",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 18,
+  "cached": true
+ },
+ {
+  "gene": "IFNAR2",
+  "phenotype": "Fuchs' endothelial dystrophy",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "CEP120",
+  "phenotype": "hemochromatosis type 1",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "MT-TG",
+  "phenotype": "minimal pigment oculocutaneous albinism type 1",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 5,
+  "cached": true
+ },
+ {
+  "gene": "GYPC",
+  "phenotype": "ceroid lipofuscinosis, neuronal, 6B (Kufs type)",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 1,
+  "cached": true
+ },
+ {
+  "gene": "BRSK2",
+  "phenotype": "mitochondrial pyruvate carrier deficiency",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "TRHR",
+  "phenotype": "metabolic encephalomyopathic crises, recurrent, with rhabdomyolysis, cardiac arrhythmias, and neurodegeneration",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "TFRC",
+  "phenotype": "congenital stationary night blindness autosomal dominant 3",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "SLC25A13",
+  "phenotype": "aldosterone-producing adenoma with seizures and neurological abnormalities",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "KIF17",
+  "phenotype": "spinal muscular atrophy-progressive myoclonic epilepsy syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "GGPS1",
+  "phenotype": "polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy 1",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "KREMEN1",
+  "phenotype": "autosomal dominant hypocalcemia 1",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "C1QBP",
+  "phenotype": "Antley-Bixler syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PCBD1",
+  "phenotype": "developmental delay, hypotonia, and impaired language",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 80.0,
+  "evidence": 20.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "TCF3",
+  "phenotype": "striate palmoplantar keratoderma",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 13,
+  "cached": true
+ },
+ {
+  "gene": "TCTN1",
+  "phenotype": "congenital disorder of deglycosylation 2",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 18,
+  "cached": true
+ },
+ {
+  "gene": "ADAM20",
+  "phenotype": "amyotrophic lateral sclerosis type 9",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 8,
+  "cached": true
+ },
+ {
+  "gene": "SLK",
+  "phenotype": "degenerative myopia",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "MC2R",
+  "phenotype": "congenital reticular ichthyosiform erythroderma",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "ADCY5",
+  "phenotype": "3M syndrome 2",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "SMAD2",
+  "phenotype": "intellectual disability, X-linked 96",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "SBDS",
+  "phenotype": "immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "FGF3",
+  "phenotype": "surfactant metabolism dysfunction, pulmonary, 4",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PTS",
+  "phenotype": "3-hydroxy-3-methylglutaric aciduria",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 10,
+  "cached": true
+ },
+ {
+  "gene": "PDCD1",
+  "phenotype": "polymicrogyria, perisylvian, with cerebellar hypoplasia and arthrogryposis",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 16,
+  "cached": true
+ },
+ {
+  "gene": "PAX9",
+  "phenotype": "Knobloch syndrome 2",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 19,
+  "cached": true
+ },
+ {
+  "gene": "LEPR",
+  "phenotype": "spastic paraplegia 83, autosomal recessive",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "SMC3",
+  "phenotype": "asthma-related traits, susceptibility to, 5",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "DBT",
+  "phenotype": "myofibrillar myopathy 5",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 16,
+  "cached": true
+ },
+ {
+  "gene": "LPAR6",
+  "phenotype": "blepharophimosis - intellectual disability syndrome, MKB type",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "SFRP4",
+  "phenotype": "Ritscher-Schinzel syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "HPS1",
+  "phenotype": "myosclerosis",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "IDH2",
+  "phenotype": "hereditary renal hypouricemia",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "MYO18B",
+  "phenotype": "hypertrophic cardiomyopathy 16",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 70.0,
+  "evidence": 30.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "ATP5F1A",
+  "phenotype": "short stature-brachydactyly-obesity-global developmental delay syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 75.0,
+  "evidence": 25.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "IL17RD",
+  "phenotype": "microphthalmia, isolated, with coloboma 6",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "FCGR2B",
+  "phenotype": "bardet-biedl syndrome 21",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "MRPS14",
+  "phenotype": "robinow syndrome, autosomal recessive 2",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 3,
+  "cached": true
+ },
+ {
+  "gene": "EDNRA",
+  "phenotype": "Charcot-Marie-Tooth disease axonal type 2CC",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 15,
+  "cached": true
+ },
+ {
+  "gene": "HLA-DRB1",
+  "phenotype": "congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 4,
+  "cached": true
+ },
+ {
+  "gene": "SCNN1A",
+  "phenotype": "autosomal recessive limb-girdle muscular dystrophy type 2F",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "RXYLT1",
+  "phenotype": "cholestasis, progressive familial intrahepatic, 8",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 4,
+  "cached": true
+ },
+ {
+  "gene": "VWA2",
+  "phenotype": "hypercholesterolemia, familial, 4",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 6,
+  "cached": true
+ },
+ {
+  "gene": "MTHFR",
+  "phenotype": "immunodeficiency 102",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 3,
+  "cached": true
+ },
+ {
+  "gene": "WBP11",
+  "phenotype": "immunodeficiency, common variable, 3",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 10,
+  "cached": true
+ },
+ {
+  "gene": "SEC16B",
+  "phenotype": "MHC class II deficiency 3",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 2,
+  "cached": true
+ },
+ {
+  "gene": "PIGC",
+  "phenotype": "agammaglobulinemia",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 14,
+  "cached": true
+ },
+ {
+  "gene": "AGPAT5",
+  "phenotype": "short-rib thoracic dysplasia 11 with or without polydactyly",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 9,
+  "cached": true
+ },
+ {
+  "gene": "RNF220",
+  "phenotype": "myopathy, lactic acidosis, and sideroblastic anemia 1",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PNKP",
+  "phenotype": "amyloidosis, hereditary systemic 3",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "TTC21A",
+  "phenotype": "spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 3",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 5,
+  "cached": true
+ },
+ {
+  "gene": "RAB32",
+  "phenotype": "Silver-Russell syndrome 5",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PNPLA1",
+  "phenotype": "immunodeficiency-centromeric instability-facial anomalies syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "ZNF81",
+  "phenotype": "acromelic frontonasal dysostosis",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 7,
+  "cached": true
+ },
+ {
+  "gene": "SLC52A2",
+  "phenotype": "Guttmacher syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "HELLS",
+  "phenotype": "autosomal recessive spondylocostal dysostosis",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "IFT54",
+  "phenotype": "familial isolated deficiency of vitamin E",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 8,
+  "cached": true
+ },
+ {
+  "gene": "FKTN",
+  "phenotype": "autosomal dominant hypophosphatemic rickets",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 16,
+  "cached": true
+ },
+ {
+  "gene": "PRDM6",
+  "phenotype": "Long-Olsen-Distelmaier syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "TRPA1",
+  "phenotype": "early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "MCCC2",
+  "phenotype": "vitamin D-dependent rickets, type 3",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "ANAPC1",
+  "phenotype": "head and neck squamous cell carcinoma",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PDX1",
+  "phenotype": "arthrogryposis-renal dysfunction-cholestasis syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "ISCA1",
+  "phenotype": "pulmonary hypertension, primary, 3",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "CAV1",
+  "phenotype": "hereditary late onset Parkinson disease",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 20,
+  "cached": true
+ },
+ {
+  "gene": "PLEKHM2",
+  "phenotype": "developmental malformations-deafness-dystonia syndrome",
+  "panel": "2a",
+  "group": "Absent",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 18,
+  "cached": true
+ },
+ {
+  "gene": "FXYD2",
+  "phenotype": "renal hypomagnesemia 2",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "BLVRA",
+  "phenotype": "hyperbiliverdinemia",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "HAND1",
+  "phenotype": "congenital heart disease",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "PRDX3",
+  "phenotype": "spinocerebellar ataxia, autosomal recessive 32",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "ATP5MK",
+  "phenotype": "mitochondrial disease",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "TMEM63C",
+  "phenotype": "spastic paraplegia 87, autosomal recessive",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 7,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ASPRV1",
+  "phenotype": "ichthyosis, lamellar, autosomal dominant",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SEPHS1",
+  "phenotype": "neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "JPH1",
+  "phenotype": "congenital myopathy 25",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 13,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "REL",
+  "phenotype": "immunodeficiency 92",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "INTS11",
+  "phenotype": "neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ETS1",
+  "phenotype": "congenital heart disease",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "FLI1",
+  "phenotype": "bleeding disorder, platelet-type, 21",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "CPSF3",
+  "phenotype": "neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "TUBA4A",
+  "phenotype": "amyotrophic lateral sclerosis type 22",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CAMSAP1",
+  "phenotype": "cortical dysplasia, complex, with other brain malformations 12",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 14,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "UBR5",
+  "phenotype": "neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "RBBP5",
+  "phenotype": "neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "CHKA",
+  "phenotype": "neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TMX2",
+  "phenotype": "neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 9,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "PYCR2",
+  "phenotype": "hypomyelinating leukodystrophy 10",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 18,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "THUMPD1",
+  "phenotype": "neurodevelopmental disorder with speech delay and variable ocular anomalies",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 12,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ALDH1A2",
+  "phenotype": "diaphragmatic hernia 4, with cardiovascular defects",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "UNG",
+  "phenotype": "hyper-IgM syndrome type 5",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "GABRD",
+  "phenotype": "complex neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "CDH11",
+  "phenotype": "Teebi hypertelorism syndrome 2",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SLC31A1",
+  "phenotype": "neurodegeneration and seizures due to copper transport defect",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TRAC",
+  "phenotype": "TCR-alpha-beta-positive T-cell deficiency",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "PRKG2",
+  "phenotype": "acromesomelic dysplasia 4",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "RAC3",
+  "phenotype": "neurodevelopmental disorder with structural brain anomalies and dysmorphic facies",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "ALPK1",
+  "phenotype": "retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "GDF11",
+  "phenotype": "vertebral hypersegmentation and orofacial anomalies",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SAMD11",
+  "phenotype": "retinitis pigmentosa",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 5,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "TMEM106B",
+  "phenotype": "leukodystrophy, hypomyelinating, 16",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 1.0,
+  "evidence": 99.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>1</novelty>\n</response>"
+ },
+ {
+  "gene": "SELENOI",
+  "phenotype": "spastic paraplegia 81, autosomal recessive",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 18,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SACS",
+  "phenotype": "Charlevoix-Saguenay spastic ataxia",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "SLC6A17",
+  "phenotype": "progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 9,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "UNC45A",
+  "phenotype": "osteootohepatoenteric syndrome",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "BCAS3",
+  "phenotype": "Hengel-Maroofian-Schols syndrome",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 12,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SMPD4",
+  "phenotype": "neurodevelopmental disorder with microcephaly, arthrogryposis, and structural brain anomalies",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "THAP1",
+  "phenotype": "torsion dystonia 6",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "DHPS",
+  "phenotype": "neurodevelopmental disorder with seizures and speech and walking impairment",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 18,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "GEMIN4",
+  "phenotype": "neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TRNT1",
+  "phenotype": "retinitis pigmentosa and erythrocytic microcytosis",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ATG7",
+  "phenotype": "spinocerebellar ataxia, autosomal recessive 31",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "GDAP2",
+  "phenotype": "spinocerebellar ataxia, autosomal recessive 27",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 9,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "PITX1",
+  "phenotype": "clubfoot",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "TRAPPC2L",
+  "phenotype": "encephalopathy, progressive, early-onset, with episodic rhabdomyolysis",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "NRXN1",
+  "phenotype": "Pitt-Hopkins-like syndrome 2",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "COX16",
+  "phenotype": "mitochondrial complex IV deficiency, nuclear type 22",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 13,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "EPHB2",
+  "phenotype": "bleeding disorder, platelet-type, 22",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "LIPT2",
+  "phenotype": "encephalopathy, neonatal severe, with lactic acidosis and brain abnormalities",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SUMO1",
+  "phenotype": "orofacial cleft 10",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SLC35B2",
+  "phenotype": "leukodystrophy, hypomyelinating, 26, with chondrodysplasia",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SCLT1",
+  "phenotype": "retinitis pigmentosa",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "VANGL1",
+  "phenotype": "neural tube defects, susceptibility to",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "ATG5",
+  "phenotype": "spinocerebellar ataxia, autosomal recessive 25",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "TMEM135",
+  "phenotype": "neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 70.0,
+  "evidence": 30.0,
+  "read": 14,
+  "raw": "<response>\n  <novelty>70</novelty>\n</response>"
+ },
+ {
+  "gene": "USP44",
+  "phenotype": "congenital heart disease",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ },
+ {
+  "gene": "ASB10",
+  "phenotype": "glaucoma 1, open angle, F",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "PITX2",
+  "phenotype": "ring dermoid of cornea",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "DCC",
+  "phenotype": "gaze palsy, familial horizontal, with progressive scoliosis, 2",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ELP2",
+  "phenotype": "intellectual disability, autosomal recessive 58",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "DHX34",
+  "phenotype": "intellectual disability",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 7,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "CRIPTO",
+  "phenotype": "congenital heart disease",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "KCNT1",
+  "phenotype": "malignant migrating partial seizures of infancy",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "TMOD1",
+  "phenotype": "dilated cardiomyopathy",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "ASCL1",
+  "phenotype": "neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 18.0,
+  "evidence": 82.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>18</novelty>\n</response>"
+ },
+ {
+  "gene": "SDHB",
+  "phenotype": "Carney-Stratakis syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "AP3B1",
+  "phenotype": "Hermansky-Pudlak syndrome 2",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "MT-TA",
+  "phenotype": "mitochondrial disease",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "AICDA",
+  "phenotype": "hyper-IgM syndrome type 2",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "TAFAZZIN",
+  "phenotype": "Barth syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "IL11RA",
+  "phenotype": "craniosynostosis and dental anomalies",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "POLD3",
+  "phenotype": "immunodeficiency 122",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ABCC9",
+  "phenotype": "hypertrichotic osteochondrodysplasia Cantu type",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "TDO2",
+  "phenotype": "familial hypertryptophanemia",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "AKT1",
+  "phenotype": "Proteus syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "SS18L1",
+  "phenotype": "amyotrophic lateral sclerosis",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 12,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "HEY2",
+  "phenotype": "congenital heart disease",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "SLC24A5",
+  "phenotype": "oculocutaneous albinism type 6",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "LRPAP1",
+  "phenotype": "myopia 23, autosomal recessive",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 14,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "KIT",
+  "phenotype": "piebaldism",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "PIK3R1",
+  "phenotype": "SHORT syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "CHD2",
+  "phenotype": "developmental and epileptic encephalopathy 94",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "SAMD9",
+  "phenotype": "MIRAGE syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "FBXO11",
+  "phenotype": "intellectual developmental disorder with dysmorphic facies and behavioral abnormalities",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CCDC88A",
+  "phenotype": "PEHO-like syndrome",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "ERCC6L2",
+  "phenotype": "pancytopenia-developmental delay syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SRCAP",
+  "phenotype": "Floating-Harbor syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 1.0,
+  "evidence": 99.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>1</novelty>\n</response>"
+ },
+ {
+  "gene": "PPP1R13L",
+  "phenotype": "dilated cardiomyopathy",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "EBP",
+  "phenotype": "MEND syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ATP2B1",
+  "phenotype": "intellectual developmental disorder, autosomal dominant 66",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "IGSF1",
+  "phenotype": "X-linked central congenital hypothyroidism with late-onset testicular enlargement",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "ASNS",
+  "phenotype": "congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "KLHL24",
+  "phenotype": "epidermolysis bullosa simplex 6, generalized, with scarring and hair loss",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "ATP1A1",
+  "phenotype": "Charcot-Marie-tooth disease, axonal, type 2DD",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ASAH1",
+  "phenotype": "Farber lipogranulomatosis",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "RBM28",
+  "phenotype": "ANE syndrome",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "DCLRE1C",
+  "phenotype": "Omenn syndrome",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SLC38A3",
+  "phenotype": "developmental and epileptic encephalopathy 102",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "AR",
+  "phenotype": "Kennedy disease",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "CALM2",
+  "phenotype": "catecholaminergic polymorphic ventricular tachycardia",
+  "panel": "2a",
+  "group": "Moderate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "TBX15",
+  "phenotype": "pelviscapular dysplasia",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "KIF4A",
+  "phenotype": "complex neurodevelopmental disorder with or without congenital anomalies",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "PAK1",
+  "phenotype": "intellectual developmental disorder with macrocephaly, seizures, and speech delay",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CAMTA1",
+  "phenotype": "cerebellar dysfunction with variable cognitive and behavioral abnormalities",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TOE1",
+  "phenotype": "pontocerebellar hypoplasia type 7",
+  "panel": "2a",
+  "group": "Strong",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "KRT71",
+  "phenotype": "hypotrichosis 13",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "PLS3",
+  "phenotype": "X-linked osteoporosis with fractures",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "ACP5",
+  "phenotype": "Spondyloenchondrodysplasia with immune dysregulation",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "TLR5",
+  "phenotype": "systemic lupus erythematosus, susceptibility to, 1",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SHANK3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "SCN2A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "JMJD1C",
+  "phenotype": "neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 7.0,
+  "evidence": 93.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>7</novelty>\n</response>"
+ },
+ {
+  "gene": "ADNP",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "PTEN",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "SYNGAP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "DYRK1A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "MRTFB",
+  "phenotype": "neurodevelopmental disorder",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "CHD2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CFAP43",
+  "phenotype": "normal pressure hydrocephalus",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CHD8",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ANKRD11",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "EHMT1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CRB2",
+  "phenotype": "ventriculomegaly-cystic kidney disease",
+  "panel": "2a",
+  "group": "Definitive",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "KMT2A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "STXBP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "ASXL3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ARID1B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "POGZ",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "GRIN2B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "FOXP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "DEAF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "MT-TC",
+  "phenotype": "mitochondrial disease",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 12.0,
+  "evidence": 88.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>12</novelty>\n</response>"
+ },
+ {
+  "gene": "NRXN1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "KDM5B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "TLK2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "NAA15",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "MEF2C",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "KDM6B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SATB2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "PPP2R5D",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CTNNB1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "KMT5B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TCF20",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "WAC",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "TCF4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "NF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "GIGYF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 18,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "DYNC1H1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 7.0,
+  "evidence": 93.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>7</novelty>\n</response>"
+ },
+ {
+  "gene": "ASH1L",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "CTCF",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "AHDC1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "EYA4",
+  "phenotype": "dilated cardiomyopathy 1J",
+  "panel": "2a",
+  "group": "Limited",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TBR1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "EBF3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CDK13",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "AUTS2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "CUL3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "MYT1L",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SETD5",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "HNRNPU",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "KMT2C",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "BCL11A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SLC6A1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SCN1A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TSC2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "DLG4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "MARK2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "DNMT3A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "EP300",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "CNOT3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "MBD5",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "RAI1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TBL1XR1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "BRSK2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TANC2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "GABRA1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "DLL1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "MED13L",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 20.0,
+  "evidence": 80.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>20</novelty>\n</response>"
+ },
+ {
+  "gene": "NR3C2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SRCAP",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "TRIP12",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ZEB2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ },
+ {
+  "gene": "TAOK1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "MED13",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "PPP3CA",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "IRF2BPL",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 22.0,
+  "evidence": 78.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>22</novelty>\n</response>"
+ },
+ {
+  "gene": "KCNQ3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ZNF292",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "BRAF",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 9,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "AP2S1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 6,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "ACTB",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 18.0,
+  "evidence": 82.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>18</novelty>\n</response>"
+ },
+ {
+  "gene": "SOX5",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "CLTC",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 80.0,
+  "evidence": 20.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>80</novelty>\n</response>"
+ },
+ {
+  "gene": "GATAD2B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 68.0,
+  "evidence": 32.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>68</novelty>\n</response>"
+ },
+ {
+  "gene": "SMAD4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "CIC",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 17,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SYNCRIP",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "DNM1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 12.0,
+  "evidence": 88.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>12</novelty>\n</response>"
+ },
+ {
+  "gene": "SON",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 12.0,
+  "evidence": 88.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>12</novelty>\n</response>"
+ },
+ {
+  "gene": "ZBTB20",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "POU3F3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "GRIN1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "SHANK2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "WDFY3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "SMARCA4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "CSNK2A1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "SMARCA2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "PUF60",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 75.0,
+  "evidence": 25.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>75</novelty>\n</response>"
+ },
+ {
+  "gene": "PHF21A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 7.0,
+  "evidence": 93.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>7</novelty>\n</response>"
+ },
+ {
+  "gene": "KMT2E",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "FOXP2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "RFX7",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 6,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "RORB",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 17.0,
+  "evidence": 83.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>17</novelty>\n</response>"
+ },
+ {
+  "gene": "RFX3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "CAMTA1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 68.0,
+  "evidence": 32.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>68</novelty>\n</response>"
+ },
+ {
+  "gene": "PTPN11",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "ANK2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 0.0,
+  "evidence": 100.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>0</novelty>\n</response>"
+ },
+ {
+  "gene": "SPEN",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 17,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "TM9SF4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "TCF12",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 18.0,
+  "evidence": 82.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>18</novelty>\n</response>"
+ },
+ {
+  "gene": "SIN3A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "TUBB2A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 30.0,
+  "evidence": 70.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>30</novelty>\n</response>"
+ },
+ {
+  "gene": "NR2F1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "QRICH1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "GRIA2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "KCNB1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "SPTBN1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "KCNQ2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "NSD1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "PACS1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "GRIN2A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 6.0,
+  "evidence": 94.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>6</novelty>\n</response>"
+ },
+ {
+  "gene": "PRR12",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ },
+ {
+  "gene": "SETD1A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 12.0,
+  "evidence": 88.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>12</novelty>\n</response>"
+ },
+ {
+  "gene": "KCNMA1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "VEZF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "SETD1B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "CHD7",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "FOXG1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "CREBBP",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "ZMYM2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 65.0,
+  "evidence": 35.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>65</novelty>\n</response>"
+ },
+ {
+  "gene": "ZNF865",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 75.0,
+  "evidence": 25.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>75</novelty>\n</response>"
+ },
+ {
+  "gene": "TRIO",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "EEF1A2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SOX11",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 20.0,
+  "evidence": 80.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>20</novelty>\n</response>"
+ },
+ {
+  "gene": "GABRB3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "TCF7L2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "CSNK1E",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>82</novelty>\n</response>"
+ },
+ {
+  "gene": "WDR26",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 28.0,
+  "evidence": 72.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>28</novelty>\n</response>"
+ },
+ {
+  "gene": "TNRC6B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 13,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "ATAT1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "PBX1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "MSL2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SETBP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "SKI",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 22.0,
+  "evidence": 78.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>22</novelty>\n</response>"
+ },
+ {
+  "gene": "NSD2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 6.0,
+  "evidence": 94.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>6</novelty>\n</response>"
+ },
+ {
+  "gene": "ARF3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 72.0,
+  "evidence": 28.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>72</novelty>\n</response>"
+ },
+ {
+  "gene": "NBEA",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "YWHAG",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 7.0,
+  "evidence": 93.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>7</novelty>\n</response>"
+ },
+ {
+  "gene": "SCN8A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "CACNA1A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "FBXW11",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ },
+ {
+  "gene": "ZBTB34",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "USP7",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ZMYND8",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 28.0,
+  "evidence": 72.0,
+  "read": 6,
+  "raw": "<response>\n  <novelty>28</novelty>\n</response>"
+ },
+ {
+  "gene": "KCNA2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "FBXO11",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "PPP2CA",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "BRD4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 22.0,
+  "evidence": 78.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>22</novelty>\n</response>"
+ },
+ {
+  "gene": "YLPM1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "ZNF536",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 7.0,
+  "evidence": 93.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>7</novelty>\n</response>"
+ },
+ {
+  "gene": "KCND3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 30.0,
+  "evidence": 70.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>30</novelty>\n</response>"
+ },
+ {
+  "gene": "PTPRS",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 62.0,
+  "evidence": 38.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>62</novelty>\n</response>"
+ },
+ {
+  "gene": "TUBB3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 75.0,
+  "evidence": 25.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>75</novelty>\n</response>"
+ },
+ {
+  "gene": "H1-4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "REV3L",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>93</novelty>\n</response>"
+ },
+ {
+  "gene": "SETD2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ZFHX3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 12,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "DHDDS",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "HIVEP2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "SCAF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "DSCAM",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "MTOR",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "ITSN1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "EMC7",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "ARID1A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "XPO1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 17,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "NCKAP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "PPP2R1A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 40.0,
+  "evidence": 60.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>40</novelty>\n</response>"
+ },
+ {
+  "gene": "NRXN3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "CNOT1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "LMTK3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 1,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "PHF12",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "KBTBD6",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "NR4A2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "MAGEL2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "EGR3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "PTK2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "EP400",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 20.0,
+  "evidence": 80.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>20</novelty>\n</response>"
+ },
+ {
+  "gene": "KANSL1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "PTPRT",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "ATP2B2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SMARCB1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "MAP1A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "RAB14",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "GNB1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 20.0,
+  "evidence": 80.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>20</novelty>\n</response>"
+ },
+ {
+  "gene": "GSE1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 7,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "PCLO",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "MAF",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "NFIB",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "CAMK2A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "YY1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "UBR5",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "PSMC5",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 40.0,
+  "evidence": 60.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>40</novelty>\n</response>"
+ },
+ {
+  "gene": "GABBR2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "CGREF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>82</novelty>\n</response>"
+ },
+ {
+  "gene": "SYT1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "JARID2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "ADGRB1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 6.0,
+  "evidence": 94.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>6</novelty>\n</response>"
+ },
+ {
+  "gene": "KMT2D",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "LEMD3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 14,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "CHAMP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "LRRC4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "TLE3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 12,
+  "raw": "<response>\n  <novelty>82</novelty>\n</response>"
+ },
+ {
+  "gene": "CAPRIN1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "GSK3B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "RALGAPB",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "SLTM",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 4,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "EFTUD2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 40.0,
+  "evidence": 60.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>40</novelty>\n</response>"
+ },
+ {
+  "gene": "PSMD12",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "MEIS2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 7.0,
+  "evidence": 93.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>7</novelty>\n</response>"
+ },
+ {
+  "gene": "ZBTB7A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 72.0,
+  "evidence": 28.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>72</novelty>\n</response>"
+ },
+ {
+  "gene": "TRIM8",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>82</novelty>\n</response>"
+ },
+ {
+  "gene": "GNAI1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "TOP3B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "FBXW7",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 65.0,
+  "evidence": 35.0,
+  "read": 18,
+  "raw": "<response>\n  <novelty>65</novelty>\n</response>"
+ },
+ {
+  "gene": "PTCH1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ },
+ {
+  "gene": "GABRA4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "TRAF7",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 78.0,
+  "evidence": 22.0,
+  "read": 14,
+  "raw": "<response>\n  <novelty>78</novelty>\n</response>"
+ },
+ {
+  "gene": "DIP2C",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "NACC1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 22.0,
+  "evidence": 78.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>22</novelty>\n</response>"
+ },
+ {
+  "gene": "HNRNPD",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 72.0,
+  "evidence": 28.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>72</novelty>\n</response>"
+ },
+ {
+  "gene": "CERT1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 76.0,
+  "evidence": 24.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>76</novelty>\n</response>"
+ },
+ {
+  "gene": "KIF1A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "ACTG1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 22.0,
+  "evidence": 78.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>22</novelty>\n</response>"
+ },
+ {
+  "gene": "CXXC1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 17,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "BCR",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 70.0,
+  "evidence": 30.0,
+  "read": 5,
+  "raw": "<response>\n  <novelty>70</novelty>\n</response>"
+ },
+ {
+  "gene": "SRSF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 35.0,
+  "evidence": 65.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>35</novelty>\n</response>"
+ },
+ {
+  "gene": "ZBTB18",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 18.0,
+  "evidence": 82.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>18</novelty>\n</response>"
+ },
+ {
+  "gene": "SPPL3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 75.0,
+  "evidence": 25.0,
+  "read": 17,
+  "raw": "<response>\n  <novelty>75</novelty>\n</response>"
+ },
+ {
+  "gene": "PPM1D",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "ZNF644",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 22.0,
+  "evidence": 78.0,
+  "read": 9,
+  "raw": "<response>\n  <novelty>22</novelty>\n</response>"
+ },
+ {
+  "gene": "ZCCHC14",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>88</novelty>\n</response>"
+ },
+ {
+  "gene": "RANBP2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "MAPK8IP3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "GNAO1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "HSF2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 35.0,
+  "evidence": 65.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>35</novelty>\n</response>"
+ },
+ {
+  "gene": "INTS6",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 8.0,
+  "evidence": 92.0,
+  "read": 9,
+  "raw": "<response>\n  <novelty>8</novelty>\n</response>"
+ },
+ {
+  "gene": "PLXNA1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 78.0,
+  "evidence": 22.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>78</novelty>\n</response>"
+ },
+ {
+  "gene": "TAF4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 72.0,
+  "evidence": 28.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>72</novelty>\n</response>"
+ },
+ {
+  "gene": "CELF4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD known",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "C6ORF58",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "MAP1B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "PHF2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>88</novelty>\n</response>"
+ },
+ {
+  "gene": "ACY1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 4.0,
+  "evidence": 96.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>4</novelty>\n</response>"
+ },
+ {
+  "gene": "EXT1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 5.0,
+  "evidence": 95.0,
+  "read": 18,
+  "raw": "<response>\n  <novelty>5</novelty>\n</response>"
+ },
+ {
+  "gene": "DDX28",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>98</novelty>\n</response>"
+ },
+ {
+  "gene": "BCAT1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "MKX",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 4,
+  "raw": "<response>\n  <novelty>82</novelty>\n</response>"
+ },
+ {
+  "gene": "CACNA1H",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "FAM81B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "CGGBP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 78.0,
+  "evidence": 22.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>78</novelty>\n</response>"
+ },
+ {
+  "gene": "BAZ2A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 12.0,
+  "evidence": 88.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>12</novelty>\n</response>"
+ },
+ {
+  "gene": "FAM151A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 1,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "BRD1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "ASD candidate",
+  "novelty": 15.0,
+  "evidence": 85.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>15</novelty>\n</response>"
+ },
+ {
+  "gene": "FKBP1C",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "GOLGA6C",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "H4C7",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "DCLK3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 4,
+  "raw": "<response>\n  <novelty>88</novelty>\n</response>"
+ },
+ {
+  "gene": "FGF19",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>88</novelty>\n</response>"
+ },
+ {
+  "gene": "CLASP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 35.0,
+  "evidence": 65.0,
+  "read": 13,
+  "raw": "<response>\n  <novelty>35</novelty>\n</response>"
+ },
+ {
+  "gene": "HAUS1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "HACD3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 4,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "GRIK3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "novel candidate",
+  "novelty": 20.0,
+  "evidence": 80.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>20</novelty>\n</response>"
+ },
+ {
+  "gene": "L3MBTL3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 7,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "LY6G5C",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "IFT20",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "MFAP3L",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>88</novelty>\n</response>"
+ },
+ {
+  "gene": "MYL6B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 1,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "LARGE2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>90</novelty>\n</response>"
+ },
+ {
+  "gene": "GAL3ST2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 5,
+  "raw": "<response>\n  <novelty>98</novelty>\n</response>"
+ },
+ {
+  "gene": "LAMB4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 9,
+  "raw": "<response>\n  <novelty>92</novelty>\n</response>"
+ },
+ {
+  "gene": "MRPL49",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>90</novelty>\n</response>"
+ },
+ {
+  "gene": "NOL4L",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 1,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "PCBD1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "ICAM5",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 65.0,
+  "evidence": 35.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>65</novelty>\n</response>"
+ },
+ {
+  "gene": "SGSM1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 6,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "FABP1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ },
+ {
+  "gene": "HEPN1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>98</novelty>\n</response>"
+ },
+ {
+  "gene": "PLB1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 19,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "PTCHD1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 2.0,
+  "evidence": 98.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>2</novelty>\n</response>"
+ },
+ {
+  "gene": "PLOD3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "PTH2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "TBC1D25",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "RGL2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>93</novelty>\n</response>"
+ },
+ {
+  "gene": "SIGLEC15",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "NPTX1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 28.0,
+  "evidence": 72.0,
+  "read": 14,
+  "raw": "<response>\n  <novelty>28</novelty>\n</response>"
+ },
+ {
+  "gene": "POU6F2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 10.0,
+  "evidence": 90.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>10</novelty>\n</response>"
+ },
+ {
+  "gene": "TLCD1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 5,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "TPCN2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "TRIM58",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 1,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "SKOR2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>82</novelty>\n</response>"
+ },
+ {
+  "gene": "ZNF653",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "TSPAN2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "SPR",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 78.0,
+  "evidence": 22.0,
+  "read": 13,
+  "raw": "<response>\n  <novelty>78</novelty>\n</response>"
+ },
+ {
+  "gene": "CEACAM4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "BHMT2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "AOC3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "PHB2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ },
+ {
+  "gene": "ARHGAP18",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 13,
+  "raw": "<response>\n  <novelty>90</novelty>\n</response>"
+ },
+ {
+  "gene": "ANKFN1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>92</novelty>\n</response>"
+ },
+ {
+  "gene": "C1QTNF2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "C1QL4",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 1,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "CD79A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "AMY2B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 94.0,
+  "evidence": 6.0,
+  "read": 14,
+  "raw": "<response>\n  <novelty>94</novelty>\n</response>"
+ },
+ {
+  "gene": "CWF19L2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 1,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "VEPH1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 9,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "ELMOD2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "SLF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 82.0,
+  "evidence": 18.0,
+  "read": 6,
+  "raw": "<response>\n  <novelty>82</novelty>\n</response>"
+ },
+ {
+  "gene": "PRDM16",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 30.0,
+  "evidence": 70.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>30</novelty>\n</response>"
+ },
+ {
+  "gene": "FAM47E-STBD1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "CGRRF1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "DGKE",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 16,
+  "raw": "<response>\n  <novelty>90</novelty>\n</response>"
+ },
+ {
+  "gene": "EGF",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 3.0,
+  "evidence": 97.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>3</novelty>\n</response>"
+ },
+ {
+  "gene": "FKBPL",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 98.0,
+  "evidence": 2.0,
+  "read": 7,
+  "raw": "<response>\n  <novelty>98</novelty>\n</response>"
+ },
+ {
+  "gene": "FAM189B",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "CETN1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "ERP44",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>92</novelty>\n</response>"
+ },
+ {
+  "gene": "LRRC3C",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "EPS8L2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 5,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "FZD2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "HARS2",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 11,
+  "raw": "<response>\n  <novelty>90</novelty>\n</response>"
+ },
+ {
+  "gene": "FERD3L",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 7,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "GREM1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "LITAF",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "NTPCR",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "MANEAL",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 2,
+  "raw": "<response>\n  <novelty>92</novelty>\n</response>"
+ },
+ {
+  "gene": "PROSER3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "LIN9",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>93</novelty>\n</response>"
+ },
+ {
+  "gene": "RNFT1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "NR2F6",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 10,
+  "raw": "<response>\n  <novelty>92</novelty>\n</response>"
+ },
+ {
+  "gene": "GRHL3",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>88</novelty>\n</response>"
+ },
+ {
+  "gene": "MAP3K19",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 8,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "SPATA31A6",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "ELL",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 88.0,
+  "evidence": 12.0,
+  "read": 13,
+  "raw": "<response>\n  <novelty>88</novelty>\n</response>"
+ },
+ {
+  "gene": "SPTSSB",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "ZNF652",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 100.0,
+  "evidence": 0.0,
+  "read": 0,
+  "raw": "<response>\n  <novelty>100</novelty>\n</response>"
+ },
+ {
+  "gene": "TRIM34",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 95.0,
+  "evidence": 5.0,
+  "read": 3,
+  "raw": "<response>\n  <novelty>95</novelty>\n</response>"
+ },
+ {
+  "gene": "PPP1CC",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ },
+ {
+  "gene": "SOX21",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>93</novelty>\n</response>"
+ },
+ {
+  "gene": "SPIB",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 97.0,
+  "evidence": 3.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>97</novelty>\n</response>"
+ },
+ {
+  "gene": "MIP",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 93.0,
+  "evidence": 7.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>93</novelty>\n</response>"
+ },
+ {
+  "gene": "PIK3R5",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 92.0,
+  "evidence": 8.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>92</novelty>\n</response>"
+ },
+ {
+  "gene": "SHFL",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "ATRAID",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 13,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "ARHGAP5",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 85.0,
+  "evidence": 15.0,
+  "read": 15,
+  "raw": "<response>\n  <novelty>85</novelty>\n</response>"
+ },
+ {
+  "gene": "TTC21A",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 96.0,
+  "evidence": 4.0,
+  "read": 5,
+  "raw": "<response>\n  <novelty>96</novelty>\n</response>"
+ },
+ {
+  "gene": "SNN",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 90.0,
+  "evidence": 10.0,
+  "read": 7,
+  "raw": "<response>\n  <novelty>90</novelty>\n</response>"
+ },
+ {
+  "gene": "SLC2A1",
+  "phenotype": "Autism Spectrum Disorder",
+  "panel": "2b",
+  "group": "not in ASC",
+  "novelty": 25.0,
+  "evidence": 75.0,
+  "read": 20,
+  "raw": "<response>\n  <novelty>25</novelty>\n</response>"
+ }
+]

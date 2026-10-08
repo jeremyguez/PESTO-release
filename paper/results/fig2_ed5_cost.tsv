@@ -1,0 +1,504 @@
+gene	phenotype	panel	prior_usd	titles_usd	current_usd
+HAND1	congenital heart disease	A	0.025690	0.014731	0.106474
+ATP5MK	mitochondrial disease	A	0.028240	0.051409	0.101536
+TMEM63C	spastic paraplegia 87, autosomal recessive	A	0.024765	0.045845	0.062257
+BLVRA	hyperbiliverdinemia	A	0.025965	0.049914	0.099862
+RBBP5	neurodevelopmental disorder	A	0.027990	0.048651	0.108535
+ETS1	congenital heart disease	A	0.029665	0.065975	0.141636
+TUBA4A	amyotrophic lateral sclerosis type 22	A	0.022640	0.066412	0.109188
+PRDX3	spinocerebellar ataxia, autosomal recessive 32	A	0.019065	0.063116	0.128419
+CAMSAP1	cortical dysplasia, complex, with other brain malformations 12	A	0.027640	0.060466	0.095561
+ASPRV1	ichthyosis, lamellar, autosomal dominant	A	0.026765	0.057232	0.101458
+CDH11	Teebi hypertelorism syndrome 2	A	0.036140	0.052322	0.129815
+UBR5	neurodevelopmental disorder	A	0.031615	0.054254	0.128496
+SEPHS1	neurodevelopmental disorder	A	0.036740	0.050198	0.091426
+FXYD2	renal hypomagnesemia 2	A	0.023840	0.065788	0.127568
+THUMPD1	neurodevelopmental disorder with speech delay and variable ocular anomalies	A	0.023740	0.051876	0.095919
+JPH1	congenital myopathy 25	A	0.041215	0.063649	0.090762
+CPSF3	neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures	A	0.026290	0.066766	0.137815
+INTS11	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	A	0.022115	0.053227	0.101623
+CHKA	neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures	A	0.024590	0.074114	0.147348
+REL	immunodeficiency 92	A	0.025715	0.083513	0.173545
+FLI1	bleeding disorder, platelet-type, 21	A	0.021640	0.072083	0.128605
+SLC31A1	neurodegeneration and seizures due to copper transport defect	A	0.026965	0.057901	0.152094
+TRAC	TCR-alpha-beta-positive T-cell deficiency	A	0.025290	0.059663	0.142117
+UNG	hyper-IgM syndrome type 5	A	0.023915	0.069834	0.146215
+GABRD	complex neurodevelopmental disorder	A	0.029290	0.060961	0.116578
+ALDH1A2	diaphragmatic hernia 4, with cardiovascular defects	A	0.034315	0.071889	0.150169
+GDF11	vertebral hypersegmentation and orofacial anomalies	A	0.023840	0.068266	0.137985
+PRKG2	acromesomelic dysplasia 4	A	0.028065	0.055407	0.111664
+SELENOI	spastic paraplegia 81, autosomal recessive	A	0.020215	0.049950	0.115107
+ALPK1	retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome	A	0.018915	0.057473	0.095290
+TMX2	neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity	A	0.017815	0.053609	0.085294
+SAMD11	retinitis pigmentosa	A	0.028090	0.033590	0.049560
+PYCR2	hypomyelinating leukodystrophy 10	A	0.015940	0.053956	0.090772
+GEMIN4	neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities	A	0.030815	0.073355	0.145356
+RAC3	neurodevelopmental disorder with structural brain anomalies and dysmorphic facies	A	0.017340	0.074325	0.134270
+LIPT2	encephalopathy, neonatal severe, with lactic acidosis and brain abnormalities	A	0.024090	0.068586	0.090553
+TMEM106B	leukodystrophy, hypomyelinating, 16	A	0.020940	0.057733	0.117856
+ATG7	spinocerebellar ataxia, autosomal recessive 31	A	0.017915	0.066965	0.142531
+SLC6A17	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	A	0.036115	0.052082	0.073463
+GDAP2	spinocerebellar ataxia, autosomal recessive 27	A	0.023040	0.042338	0.054622
+BCAS3	Hengel-Maroofian-Schols syndrome	A	0.020440	0.095777	0.148838
+DHPS	neurodevelopmental disorder with seizures and speech and walking impairment	A	0.021315	0.082448	0.158603
+NRXN1	Pitt-Hopkins-like syndrome 2	A	0.023340	0.071500	0.123198
+COX16	mitochondrial complex IV deficiency, nuclear type 22	A	0.029940	0.047901	0.089347
+THAP1	torsion dystonia 6	A	0.015740	0.067672	0.126041
+UNC45A	osteootohepatoenteric syndrome	A	0.019815	0.052993	0.096491
+SACS	Charlevoix-Saguenay spastic ataxia	A	0.015865	0.068206	0.147501
+TRNT1	retinitis pigmentosa and erythrocytic microcytosis	A	0.023240	0.067499	0.117013
+SMPD4	neurodevelopmental disorder with microcephaly, arthrogryposis, and structural brain anomalies	A	0.018540	0.058080	0.101394
+ATG5	spinocerebellar ataxia, autosomal recessive 25	A	0.027765	0.017249	0.147887
+TMEM135	neurodevelopmental disorder	A	0.028815	0.048430	0.083729
+USP44	congenital heart disease	A	0.032965	0.040243	0.056794
+EPHB2	bleeding disorder, platelet-type, 22	A	0.024615	0.064144	0.149917
+SLC35B2	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	A	0.027590	0.064154	0.119295
+DHX34	intellectual disability	A	0.024590	0.040956	0.059298
+SUMO1	orofacial cleft 10	A	0.023140	0.063005	0.132533
+TRAPPC2L	encephalopathy, progressive, early-onset, with episodic rhabdomyolysis	A	0.027865	0.066218	0.093542
+PITX1	clubfoot	A	0.023915	0.065621	0.123225
+SCLT1	retinitis pigmentosa	A	0.032540	0.060157	0.075152
+ASCL1	neurodevelopmental disorder	A	0.027790	0.058451	0.149592
+CRIPTO	congenital heart disease	A	0.034040	0.063772	0.150331
+ASB10	glaucoma 1, open angle, F	A	0.018865	0.053173	0.083021
+DCC	gaze palsy, familial horizontal, with progressive scoliosis, 2	A	0.025890	0.064083	0.124574
+PITX2	ring dermoid of cornea	A	0.025065	0.055971	0.120049
+VANGL1	neural tube defects, susceptibility to	A	0.025190	0.061354	0.123791
+POLD3	immunodeficiency 122	A	0.030315	0.062785	0.155388
+TMOD1	dilated cardiomyopathy	A	0.028740	0.052513	0.122376
+CCT7	complex neurodevelopmental disorder	A	0.023340	0.043648	0.080259
+TDO2	familial hypertryptophanemia	A	0.036840	0.068081	0.128486
+ELP2	intellectual disability, autosomal recessive 58	A	0.029540	0.052773	0.115903
+KCNT1	malignant migrating partial seizures of infancy	A	0.016440	0.021101	0.118090
+SS18L1	amyotrophic lateral sclerosis	A	0.023640	0.058584	0.107298
+MT-TA	mitochondrial disease	A	0.023690	0.066372	0.150370
+HEY2	congenital heart disease	A	0.033765	0.059490	0.120206
+ABCC9	hypertrichotic osteochondrodysplasia Cantu type	A	0.015265	0.064886	0.144349
+ERCC6L2	pancytopenia-developmental delay syndrome	A	0.020365	0.068251	0.110204
+AICDA	hyper-IgM syndrome type 2	A	0.013865	0.062976	0.133954
+IGSF1	X-linked central congenital hypothyroidism with late-onset testicular enlargement	A	0.016265	0.058027	0.103256
+SDHB	Carney-Stratakis syndrome	A	0.017090	0.068158	0.173030
+TAFAZZIN	Barth syndrome	A	0.014890	0.058686	0.140001
+AP3B1	Hermansky-Pudlak syndrome 2	A	0.016565	0.064623	0.134553
+IL11RA	craniosynostosis and dental anomalies	A	0.016965	0.060943	0.116656
+KIT	piebaldism	A	0.015240	0.061636	0.121984
+LRPAP1	myopia 23, autosomal recessive	A	0.026640	0.054786	0.102617
+SLC24A5	oculocutaneous albinism type 6	A	0.019415	0.055219	0.125843
+AKT1	Proteus syndrome	A	0.015390	0.070541	0.131782
+FBXO11	intellectual developmental disorder with dysmorphic facies and behavioral abnormalities	A	0.017365	0.055065	0.153530
+PPP1R13L	dilated cardiomyopathy	A	0.030265	0.051678	0.111700
+DCLRE1C	Omenn syndrome	A	0.016090	0.066540	0.142652
+CHD2	developmental and epileptic encephalopathy 94	A	0.016265	0.057462	0.118303
+CRB2	ventriculomegaly-cystic kidney disease	A	0.023190	0.061653	0.120714
+ASNS	congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome	A	0.017340	0.063063	0.123311
+SAMD9	MIRAGE syndrome	A	0.015415	0.063422	0.133507
+EBP	MEND syndrome	A	0.020465	0.061175	0.107114
+SRCAP	Floating-Harbor syndrome	A	0.015115	0.061003	0.132413
+CCDC88A	PEHO-like syndrome	A	0.024665	0.051962	0.118709
+PIK3R1	SHORT syndrome	A	0.015965	0.067812	0.135956
+ZFTRAF1	neurodevelopmental disorder	A	0.024415	0.045945	0.045357
+ATP2B1	intellectual developmental disorder, autosomal dominant 66	A	0.021890	0.062367	0.122448
+CFAP43	normal pressure hydrocephalus	A	0.024890	0.047314	0.086510
+SLC38A3	developmental and epileptic encephalopathy 102	A	0.020090	0.057607	0.136210
+KLHL24	epidermolysis bullosa simplex 6, generalized, with scarring and hair loss	A	0.017815	0.063798	0.102275
+ATP1A1	Charcot-Marie-tooth disease, axonal, type 2DD	A	0.021365	0.056384	0.131576
+RBM28	ANE syndrome	A	0.024740	0.041541	0.062527
+TBX15	pelviscapular dysplasia	A	0.020915	0.052951	0.120287
+KRT71	hypotrichosis 13	A	0.026865	0.055831	0.115325
+PHKG2	primary ciliary dyskinesia 33	A	0.022915	0.015211	0.071006
+CALM2	catecholaminergic polymorphic ventricular tachycardia	A	0.028740	0.085825	0.097647
+CAMTA1	cerebellar dysfunction with variable cognitive and behavioral abnormalities	A	0.019490	0.064136	0.132249
+SYCP2L	Weiss-Kruszka syndrome	A	0.018565	0.037067	0.048230
+ATP11C	arterial tortuosity syndrome	A	0.024290	0.051933	0.120259
+JMJD1C	neurodevelopmental disorder	A	0.030965	0.051112	0.125685
+KIF4A	complex neurodevelopmental disorder with or without congenital anomalies	A	0.032540	0.061574	0.116659
+ASAH1	Farber lipogranulomatosis	A	0.014990	0.061388	0.147424
+AR	Kennedy disease	A	0.014340	0.070098	0.168300
+FKBP6	Charcot-Marie-Tooth disease type 2E	A	0.016940	0.052557	0.105062
+MT-CO3	gonadal dysgenesis	A	0.026390	0.057789	0.134984
+APC	complement component 2 deficiency	A	0.018490	0.029603	0.031443
+RBFOX3	arthrogryposis, distal, with impaired proprioception and touch	A	0.022215	0.073380	0.169864
+PSMB1	glycogen storage disease III	A	0.019340	0.042868	0.093440
+CDH15	familial hypobetalipoproteinemia 1	A	0.018840	0.048522	0.134371
+ANO3	arthrogryposis multiplex congenita 2, neurogenic type	A	0.064140	0.055725	0.114856
+SCN9A	hypogonadotropic hypogonadism	A	0.031640	0.056606	0.116516
+SELENBP1	neurodevelopmental disorder with spastic quadriplegia, optic atrophy, seizures, and structural brain anomalies	A	0.051615	0.076651	0.154058
+CACNA1F	Malan overgrowth syndrome	A	0.019565	0.053732	0.116880
+GET4	deafness-lymphedema-leukemia syndrome	A	0.024465	0.075278	0.096317
+NFATC2	spondylometaphyseal dysplasia, 'corner fracture' type	A	0.038790	0.059531	0.153092
+KCNE2	epidermolysis bullosa simplex 4, localized or generalized intermediate, autosomal recessive	A	0.023215	0.068834	0.120974
+RPL3L	autosomal recessive mendelian susceptibility to mycobacterial diseases due to complete RORgamma receptor deficiency	A	0.018890	0.046350	0.101460
+CASP2	Hoxha-Aliu syndrome	A	0.023340	0.071787	0.146321
+AMIGO2	autosomal recessive nonsyndromic hearing loss 59	A	0.022740	0.052838	0.095590
+KCND3	46,XY sex reversal 3	A	0.019440	0.052201	0.085548
+KCNQ4	X-linked spondyloepimetaphyseal dysplasia	A	0.019815	0.054499	0.113225
+NBEAL2	arrhythmogenic cardiomyopathy with wooly hair and keratoderma	A	0.021040	0.056302	0.124535
+TSPEAR	tibial muscular dystrophy	A	0.021115	0.042211	0.075225
+TNNT2	atrial septal defect 6	A	0.033990	0.074361	0.122317
+PCCA	hypercholanemia, familial, 2	A	0.020290	0.055506	0.131673
+STXBP2	autosomal recessive nonsyndromic hearing loss 44	A	0.031340	0.065964	0.127239
+UQCRH	hereditary spastic paraplegia 45	A	0.017690	0.054462	0.074406
+MC4R	agammaglobulinemia 2, autosomal recessive	A	0.014340	0.051733	0.115533
+CDK9	congenital myopathy 2c, severe infantile, autosomal dominant	A	0.026790	0.066383	0.138985
+PHGDH	Joubert syndrome 33	A	0.033290	0.062649	0.150331
+PAK1	intellectual developmental disorder with macrocephaly, seizures, and speech delay	A	0.020315	0.077967	0.147236
+MT-TC	mitochondrial disease	A	0.032065	0.055195	0.069707
+TOE1	pontocerebellar hypoplasia type 7	A	0.016765	0.052188	0.106058
+PLS3	X-linked osteoporosis with fractures	A	0.016765	0.059314	0.135371
+ACP5	Spondyloenchondrodysplasia with immune dysregulation	A	0.017765	0.058278	0.108243
+MRTFB	neurodevelopmental disorder	A	0.021865	0.056669	0.124061
+TLR5	systemic lupus erythematosus, susceptibility to, 1	A	0.025115	0.066050	0.119120
+EYA4	dilated cardiomyopathy 1J	A	0.029965	0.077295	0.122100
+CHD8	Autism Spectrum Disorder	B	0.017415	0.057637	0.135696
+ADNP	Autism Spectrum Disorder	B	0.015990	0.059324	0.129130
+EHMT1	Autism Spectrum Disorder	B	0.020415	0.071770	0.141474
+TCF20	Autism Spectrum Disorder	B	0.023565	0.055160	0.114212
+KDM6B	Autism Spectrum Disorder	B	0.026240	0.064880	0.140286
+DYNC1H1	Autism Spectrum Disorder	B	0.027365	0.061859	0.218675
+POGZ	Autism Spectrum Disorder	B	0.019565	0.057812	0.127277
+DYRK1A	Autism Spectrum Disorder	B	0.017715	0.060832	0.151841
+ASXL3	Autism Spectrum Disorder	B	0.021115	0.065289	0.115395
+DEAF1	Autism Spectrum Disorder	B	0.020990	0.064961	0.118543
+STXBP1	Autism Spectrum Disorder	B	0.030140	0.060595	0.132386
+KDM5B	Autism Spectrum Disorder	B	0.025840	0.067299	0.126461
+SYNGAP1	Autism Spectrum Disorder	B	0.019615	0.060771	0.145456
+ANKRD11	Autism Spectrum Disorder	B	0.019890	0.067075	0.138252
+CHD2	Autism Spectrum Disorder	B	0.023340	0.066786	0.134479
+SATB2	Autism Spectrum Disorder	B	0.021865	0.068594	0.127910
+GRIN2B	Autism Spectrum Disorder	B	0.021015	0.067663	0.152333
+ARID1B	Autism Spectrum Disorder	B	0.017990	0.070376	0.141810
+SCN2A	Autism Spectrum Disorder	B	0.017290	0.018744	0.134581
+PPP2R5D	Autism Spectrum Disorder	B	0.028615	0.058848	0.117849
+KMT2A	Autism Spectrum Disorder	B	0.026915	0.065715	0.147798
+SHANK3	Autism Spectrum Disorder	B	0.015090	0.019261	0.135380
+FOXP1	Autism Spectrum Disorder	B	0.017290	0.065655	0.160825
+NRXN1	Autism Spectrum Disorder	B	0.018065	0.075106	0.141456
+PTEN	Autism Spectrum Disorder	B	0.017690	0.066295	0.161507
+TLK2	Autism Spectrum Disorder	B	0.030115	0.055993	0.088200
+NAA15	Autism Spectrum Disorder	B	0.020640	0.055737	0.103516
+CDK13	Autism Spectrum Disorder	B	0.030340	0.067860	0.111122
+TCF4	Autism Spectrum Disorder	B	0.027140	0.066974	0.140635
+CTCF	Autism Spectrum Disorder	B	0.023615	0.063118	0.141970
+WAC	Autism Spectrum Disorder	B	0.027315	0.066291	0.124519
+KMT5B	Autism Spectrum Disorder	B	0.021240	0.056707	0.114244
+MEF2C	Autism Spectrum Disorder	B	0.024590	0.072457	0.139873
+AHDC1	Autism Spectrum Disorder	B	0.024965	0.053966	0.108130
+GIGYF1	Autism Spectrum Disorder	B	0.030015	0.048077	0.092697
+ASH1L	Autism Spectrum Disorder	B	0.019415	0.062803	0.124626
+EBF3	Autism Spectrum Disorder	B	0.024865	0.054932	0.108977
+DLG4	Autism Spectrum Disorder	B	0.029415	0.076445	0.134456
+SLC6A1	Autism Spectrum Disorder	B	0.022840	0.064337	0.129366
+HNRNPU	Autism Spectrum Disorder	B	0.025140	0.067024	0.123487
+MED13L	Autism Spectrum Disorder	B	0.026165	0.064581	0.137070
+SETD5	Autism Spectrum Disorder	B	0.022190	0.062926	0.132781
+TBR1	Autism Spectrum Disorder	B	0.017865	0.058502	0.115781
+MARK2	Autism Spectrum Disorder	B	0.032665	0.058190	0.123600
+CUL3	Autism Spectrum Disorder	B	0.020740	0.062929	0.121845
+MYT1L	Autism Spectrum Disorder	B	0.018790	0.059226	0.132045
+AUTS2	Autism Spectrum Disorder	B	0.022165	0.065629	0.145420
+BCL11A	Autism Spectrum Disorder	B	0.024440	0.065140	0.136518
+KMT2C	Autism Spectrum Disorder	B	0.020890	0.064409	0.144845
+EP300	Autism Spectrum Disorder	B	0.023140	0.064123	0.147159
+NF1	Autism Spectrum Disorder	B	0.019440	0.076259	0.150953
+BRSK2	Autism Spectrum Disorder	B	0.027090	0.053865	0.132597
+CTNNB1	Autism Spectrum Disorder	B	0.020940	0.073184	0.152929
+TSC2	Autism Spectrum Disorder	B	0.018965	0.074044	0.146669
+ZEB2	Autism Spectrum Disorder	B	0.025565	0.057644	0.125017
+CNOT3	Autism Spectrum Disorder	B	0.034540	0.055689	0.114584
+GATAD2B	Autism Spectrum Disorder	B	0.031040	0.057492	0.103987
+TRIP12	Autism Spectrum Disorder	B	0.022940	0.057569	0.108744
+BRAF	Autism Spectrum Disorder	B	0.026265	0.064939	0.115429
+DNMT3A	Autism Spectrum Disorder	B	0.027315	0.063583	0.138115
+GABRA1	Autism Spectrum Disorder	B	0.036015	0.065095	0.138963
+PPP3CA	Autism Spectrum Disorder	B	0.023715	0.064765	0.119764
+MBD5	Autism Spectrum Disorder	B	0.018390	0.063117	0.147340
+NR3C2	Autism Spectrum Disorder	B	0.025865	0.063134	0.162054
+SCN1A	Autism Spectrum Disorder	B	0.021415	0.072208	0.182344
+DLL1	Autism Spectrum Disorder	B	0.025990	0.059107	0.130429
+SRCAP	Autism Spectrum Disorder	B	0.026365	0.054296	0.107601
+TBL1XR1	Autism Spectrum Disorder	B	0.019590	0.067244	0.125104
+IRF2BPL	Autism Spectrum Disorder	B	0.028315	0.060069	0.093860
+ZNF292	Autism Spectrum Disorder	B	0.022340	0.051697	0.098385
+ACTB	Autism Spectrum Disorder	B	0.030415	0.063794	0.115114
+TANC2	Autism Spectrum Disorder	B	0.023215	0.053947	0.101281
+RAI1	Autism Spectrum Disorder	B	0.023440	0.065227	0.134900
+AP2S1	Autism Spectrum Disorder	B	0.029690	0.054604	0.091811
+MED13	Autism Spectrum Disorder	B	0.026765	0.059146	0.126992
+TAOK1	Autism Spectrum Disorder	B	0.023290	0.061781	0.120030
+CLTC	Autism Spectrum Disorder	B	0.025440	0.070479	0.129183
+KCNQ3	Autism Spectrum Disorder	B	0.028015	0.060938	0.128325
+RORB	Autism Spectrum Disorder	B	0.027215	0.069447	0.136166
+SON	Autism Spectrum Disorder	B	0.025715	0.071840	0.128041
+CIC	Autism Spectrum Disorder	B	0.026965	0.061246	0.118600
+SHANK2	Autism Spectrum Disorder	B	0.016790	0.062656	0.138826
+SMAD4	Autism Spectrum Disorder	B	0.025390	0.059476	0.121978
+DNM1	Autism Spectrum Disorder	B	0.023140	0.066353	0.126726
+SMARCA2	Autism Spectrum Disorder	B	0.026990	0.061336	0.137888
+SOX5	Autism Spectrum Disorder	B	0.024640	0.067616	0.132260
+SYNCRIP	Autism Spectrum Disorder	B	0.023815	0.057529	0.100410
+PUF60	Autism Spectrum Disorder	B	0.022815	0.058067	0.136197
+PHF21A	Autism Spectrum Disorder	B	0.035240	0.053945	0.102332
+CAMTA1	Autism Spectrum Disorder	B	0.023740	0.061166	0.117981
+TM9SF4	Autism Spectrum Disorder	B	0.028390	0.002331	0.036408
+POU3F3	Autism Spectrum Disorder	B	0.024215	0.059393	0.116420
+ZBTB20	Autism Spectrum Disorder	B	0.024515	0.066880	0.132374
+WDFY3	Autism Spectrum Disorder	B	0.024865	0.055600	0.115407
+GRIN1	Autism Spectrum Disorder	B	0.030115	0.069651	0.183796
+TCF12	Autism Spectrum Disorder	B	0.032690	0.065907	0.215741
+CSNK2A1	Autism Spectrum Disorder	B	0.030715	0.059167	0.110583
+KMT2E	Autism Spectrum Disorder	B	0.024790	0.058499	0.098895
+PTPN11	Autism Spectrum Disorder	B	0.023965	0.051979	0.099550
+RFX3	Autism Spectrum Disorder	B	0.028240	0.049014	0.106450
+SMARCA4	Autism Spectrum Disorder	B	0.027490	0.069149	0.160244
+TUBB2A	Autism Spectrum Disorder	B	0.028715	0.061559	0.116393
+ZMYM2	Autism Spectrum Disorder	B	0.034165	0.072787	0.127965
+RFX7	Autism Spectrum Disorder	B	0.033440	0.040348	0.050105
+FOXP2	Autism Spectrum Disorder	B	0.027640	0.059403	0.168354
+SIN3A	Autism Spectrum Disorder	B	0.022690	0.064961	0.136227
+SPEN	Autism Spectrum Disorder	B	0.024290	0.066914	0.140201
+KCNQ2	Autism Spectrum Disorder	B	0.022590	0.064425	0.136884
+SETD1A	Autism Spectrum Disorder	B	0.035240	0.064543	0.131449
+QRICH1	Autism Spectrum Disorder	B	0.021840	0.049155	0.067107
+SPTBN1	Autism Spectrum Disorder	B	0.029065	0.058506	0.136028
+NSD1	Autism Spectrum Disorder	B	0.024540	0.067591	0.130373
+KCNB1	Autism Spectrum Disorder	B	0.025265	0.066332	0.116452
+PRR12	Autism Spectrum Disorder	B	0.025940	0.047403	0.066574
+ANK2	Autism Spectrum Disorder	B	0.018240	0.062598	0.133403
+GRIA2	Autism Spectrum Disorder	B	0.028740	0.067872	0.133316
+GRIN2A	Autism Spectrum Disorder	B	0.032090	0.072484	0.157845
+PACS1	Autism Spectrum Disorder	B	0.021390	0.059953	0.111076
+SETD1B	Autism Spectrum Disorder	B	0.028865	0.051112	0.091133
+WDR26	Autism Spectrum Disorder	B	0.027715	0.054983	0.105048
+CSNK1E	Autism Spectrum Disorder	B	0.033040	0.057804	0.134254
+NR2F1	Autism Spectrum Disorder	B	0.024090	0.064986	0.131643
+VEZF1	Autism Spectrum Disorder	B	0.023015	0.048851	0.107749
+ZNF865	Autism Spectrum Disorder	B	0.031165	0.034451	0.043727
+TRIO	Autism Spectrum Disorder	B	0.021265	0.078965	0.245544
+YWHAG	Autism Spectrum Disorder	B	0.027365	0.064498	0.109449
+TCF7L2	Autism Spectrum Disorder	B	0.029190	0.072137	0.147112
+ATAT1	Autism Spectrum Disorder	B	0.026640	0.051253	0.119414
+FBXW11	Autism Spectrum Disorder	B	0.026465	0.057456	0.111678
+SKI	Autism Spectrum Disorder	B	0.026565	0.063860	0.145387
+CREBBP	Autism Spectrum Disorder	B	0.023765	0.068005	0.146111
+EEF1A2	Autism Spectrum Disorder	B	0.027140	0.062729	0.127953
+NSD2	Autism Spectrum Disorder	B	0.026240	0.062255	0.115301
+MSL2	Autism Spectrum Disorder	B	0.032690	0.056516	0.116486
+NBEA	Autism Spectrum Disorder	B	0.024190	0.063197	0.107419
+ARF3	Autism Spectrum Disorder	B	0.028140	0.064626	0.135365
+PTPRS	Autism Spectrum Disorder	B	0.031415	0.052623	0.127194
+FOXG1	Autism Spectrum Disorder	B	0.029640	0.065750	0.139168
+TNRC6B	Autism Spectrum Disorder	B	0.026940	0.046966	0.092536
+BRD4	Autism Spectrum Disorder	B	0.029565	0.057807	0.137618
+ZMYND8	Autism Spectrum Disorder	B	0.032315	0.047779	0.063104
+HIVEP2	Autism Spectrum Disorder	B	0.027840	0.054768	0.096505
+KCNMA1	Autism Spectrum Disorder	B	0.024640	0.060566	0.123043
+ZBTB34	Autism Spectrum Disorder	B	0.023815	0.030838	0.038265
+PBX1	Autism Spectrum Disorder	B	0.027090	0.056601	0.120793
+SOX11	Autism Spectrum Disorder	B	0.028915	0.059771	0.113422
+USP7	Autism Spectrum Disorder	B	0.029240	0.061855	0.118413
+CNOT1	Autism Spectrum Disorder	B	0.027090	0.059488	0.114403
+GABRB3	Autism Spectrum Disorder	B	0.022090	0.062984	0.171439
+SETBP1	Autism Spectrum Disorder	B	0.025565	0.063544	0.141245
+YLPM1	Autism Spectrum Disorder	B	0.028815	0.098393	0.100245
+PPP2CA	Autism Spectrum Disorder	B	0.036140	0.058499	0.114407
+KCND3	Autism Spectrum Disorder	B	0.027440	0.054460	0.113250
+TUBB3	Autism Spectrum Disorder	B	0.026290	0.060748	0.132285
+H1-4	Autism Spectrum Disorder	B	0.024215	0.059231	0.124740
+ZNF536	Autism Spectrum Disorder	B	0.027665	0.045307	0.072639
+SCAF1	Autism Spectrum Disorder	B	0.026140	0.065209	0.124262
+REV3L	Autism Spectrum Disorder	B	0.028915	0.058216	0.143798
+EMC7	Autism Spectrum Disorder	B	0.027915	0.023287	0.027392
+PPP2R1A	Autism Spectrum Disorder	B	0.028240	0.062248	0.115724
+DHDDS	Autism Spectrum Disorder	B	0.029215	0.072937	0.156876
+FBXO11	Autism Spectrum Disorder	B	0.026315	0.057031	0.146374
+EP400	Autism Spectrum Disorder	B	0.022940	0.057487	0.142401
+KCNA2	Autism Spectrum Disorder	B	0.023765	0.059670	0.135774
+NR4A2	Autism Spectrum Disorder	B	0.025740	0.070086	0.156980
+XPO1	Autism Spectrum Disorder	B	0.031390	0.061055	0.136610
+LMTK3	Autism Spectrum Disorder	B	0.028565	0.038256	0.059272
+ITSN1	Autism Spectrum Disorder	B	0.033440	0.062054	0.120440
+PHF12	Autism Spectrum Disorder	B	0.027890	0.064561	0.087726
+SETD2	Autism Spectrum Disorder	B	0.023315	0.059340	0.133700
+NCKAP1	Autism Spectrum Disorder	B	0.021040	0.057438	0.125832
+ZFHX3	Autism Spectrum Disorder	B	0.032390	0.059360	0.112586
+CACNA1A	Autism Spectrum Disorder	B	0.023040	0.067277	0.150428
+ARID1A	Autism Spectrum Disorder	B	0.022465	0.059230	0.134145
+GNB1	Autism Spectrum Disorder	B	0.027215	0.058886	0.102633
+RAB14	Autism Spectrum Disorder	B	0.021840	0.045840	0.145831
+KBTBD6	Autism Spectrum Disorder	B	0.029540	0.031333	0.038535
+PCLO	Autism Spectrum Disorder	B	0.028815	0.063165	0.126188
+PSMC5	Autism Spectrum Disorder	B	0.034690	0.059344	0.219431
+PTK2	Autism Spectrum Disorder	B	0.026640	0.055081	0.136932
+NRXN3	Autism Spectrum Disorder	B	0.019790	0.064577	0.139785
+MTOR	Autism Spectrum Disorder	B	0.026865	0.070357	0.168926
+KANSL1	Autism Spectrum Disorder	B	0.029965	0.067456	0.102959
+CHD7	Autism Spectrum Disorder	B	0.033590	0.063842	0.129026
+SMARCB1	Autism Spectrum Disorder	B	0.026640	0.061780	0.128626
+MAGEL2	Autism Spectrum Disorder	B	0.023915	0.062736	0.116067
+YY1	Autism Spectrum Disorder	B	0.021815	0.077728	0.163609
+CGREF1	Autism Spectrum Disorder	B	0.019115	0.048935	0.063120
+NFIB	Autism Spectrum Disorder	B	0.025515	0.066065	0.121646
+LEMD3	Autism Spectrum Disorder	B	0.027665	0.049820	0.089547
+SYT1	Autism Spectrum Disorder	B	0.025790	0.062741	0.141130
+GSE1	Autism Spectrum Disorder	B	0.033740	0.048158	0.068735
+MAP1A	Autism Spectrum Disorder	B	0.026015	0.059905	0.130782
+CAMK2A	Autism Spectrum Disorder	B	0.029015	0.064233	0.141478
+GABBR2	Autism Spectrum Disorder	B	0.023915	0.056520	0.123976
+PTPRT	Autism Spectrum Disorder	B	0.026840	0.044367	0.083727
+EFTUD2	Autism Spectrum Disorder	B	0.034015	0.061501	0.100729
+CHAMP1	Autism Spectrum Disorder	B	0.028040	0.070506	0.144819
+ADGRB1	Autism Spectrum Disorder	B	0.037615	0.050383	0.095999
+UBR5	Autism Spectrum Disorder	B	0.030715	0.050849	0.129003
+TLE3	Autism Spectrum Disorder	B	0.030540	0.052455	0.100651
+JARID2	Autism Spectrum Disorder	B	0.026990	0.062270	0.121590
+EGR3	Autism Spectrum Disorder	B	0.026815	0.081002	0.177149
+LRRC4	Autism Spectrum Disorder	B	0.031765	0.048997	0.095214
+CAPRIN1	Autism Spectrum Disorder	B	0.026515	0.054854	0.114249
+DSCAM	Autism Spectrum Disorder	B	0.025765	0.056881	0.156522
+TRIM8	Autism Spectrum Disorder	B	0.025490	0.066816	0.128633
+SCN8A	Autism Spectrum Disorder	B	0.027940	0.065794	0.138780
+KMT2D	Autism Spectrum Disorder	B	0.023065	0.062284	0.119320
+HNRNPD	Autism Spectrum Disorder	B	0.026440	0.051162	0.132927
+MAF	Autism Spectrum Disorder	B	0.033790	0.074352	0.149646
+RALGAPB	Autism Spectrum Disorder	B	0.021115	0.039543	0.066342
+MEIS2	Autism Spectrum Disorder	B	0.022040	0.062260	0.132876
+ZBTB7A	Autism Spectrum Disorder	B	0.025740	0.061012	0.121531
+TOP3B	Autism Spectrum Disorder	B	0.032615	0.050824	0.103752
+SLTM	Autism Spectrum Disorder	B	0.024315	0.073910	0.144036
+SPPL3	Autism Spectrum Disorder	B	0.030240	0.052109	0.125702
+GNAI1	Autism Spectrum Disorder	B	0.029440	0.058621	0.101567
+FBXW7	Autism Spectrum Disorder	B	0.027365	0.072711	0.166177
+PSMD12	Autism Spectrum Disorder	B	0.025965	0.059496	0.210357
+BCR	Autism Spectrum Disorder	B	0.031115	0.069033	0.103803
+SRSF1	Autism Spectrum Disorder	B	0.029990	0.057273	0.134273
+GSK3B	Autism Spectrum Disorder	B	0.025265	0.062232	0.172210
+ACTG1	Autism Spectrum Disorder	B	0.028415	0.057150	0.120704
+DIP2C	Autism Spectrum Disorder	B	0.027140	0.040667	0.060221
+TRAF7	Autism Spectrum Disorder	B	0.024340	0.063427	0.098707
+NACC1	Autism Spectrum Disorder	B	0.025440	0.059680	0.102450
+RANBP2	Autism Spectrum Disorder	B	0.026940	0.049787	0.103585
+GABRA4	Autism Spectrum Disorder	B	0.021065	0.053988	0.112855
+ZBTB18	Autism Spectrum Disorder	B	0.025465	0.058306	0.116142
+ZCCHC14	Autism Spectrum Disorder	B	0.035140	0.038626	0.058677
+HSF2	Autism Spectrum Disorder	B	0.029390	0.049987	0.119851
+PPM1D	Autism Spectrum Disorder	B	0.023615	0.058112	0.114864
+CERT1	Autism Spectrum Disorder	B	0.030790	0.063204	0.130578
+ZNF644	Autism Spectrum Disorder	B	0.030515	0.046589	0.056397
+KIF1A	Autism Spectrum Disorder	B	0.026965	0.062150	0.132509
+PLXNA1	Autism Spectrum Disorder	B	0.028840	0.064666	0.107882
+BRD1	Autism Spectrum Disorder	B	0.029990	0.060563	0.128188
+GNAO1	Autism Spectrum Disorder	B	0.025565	0.059460	0.095771
+INTS6	Autism Spectrum Disorder	B	0.022940	0.044744	0.085743
+CXXC1	Autism Spectrum Disorder	B	0.030015	0.059211	0.118424
+TAF4	Autism Spectrum Disorder	B	0.029440	0.046585	0.116038
+PHF2	Autism Spectrum Disorder	B	0.025615	0.045514	0.097419
+BAZ2A	Autism Spectrum Disorder	B	0.026640	0.040524	0.096196
+CELF4	Autism Spectrum Disorder	B	0.027065	0.044092	0.095188
+ATP2B2	Autism Spectrum Disorder	B	0.025415	0.057520	0.118984
+MKX	Autism Spectrum Disorder	B	0.020515	0.033179	0.058788
+EXT1	Autism Spectrum Disorder	B	0.028490	0.059310	0.130892
+BCAT1	Autism Spectrum Disorder	B	0.030090	0.057937	0.116400
+MAPK8IP3	Autism Spectrum Disorder	B	0.024990	0.058182	0.115221
+PTCH1	Autism Spectrum Disorder	B	0.030665	0.064040	0.119353
+GRIK3	Autism Spectrum Disorder	B	0.030365	0.056311	0.124247
+MAP1B	Autism Spectrum Disorder	B	0.024290	0.069947	0.138361
+ACY1	Autism Spectrum Disorder	B	0.030215	0.059471	0.114908
+C6ORF58	Autism Spectrum Disorder	B	0.019840	0.000900	0.015535
+CACNA1H	Autism Spectrum Disorder	B	0.022090	0.061258	0.144236
+CGGBP1	Autism Spectrum Disorder	B	0.023490	0.040277	0.076255
+CLASP1	Autism Spectrum Disorder	B	0.027215	0.051981	0.091269
+DCLK3	Autism Spectrum Disorder	B	0.023440	0.038304	0.060261
+DDX28	Autism Spectrum Disorder	B	0.021415	0.028457	0.040317
+FABP1	Autism Spectrum Disorder	B	0.026740	0.048832	0.142803
+FAM151A	Autism Spectrum Disorder	B	0.019140	0.023162	0.034693
+FAM81B	Autism Spectrum Disorder	B	0.018365	0.023582	0.026807
+FGF19	Autism Spectrum Disorder	B	0.026040	0.046992	0.134805
+FKBP1C	Autism Spectrum Disorder	B	0.022590	0.023967	0.025437
+GAL3ST2	Autism Spectrum Disorder	B	0.027315	0.038128	0.056898
+GOLGA6C	Autism Spectrum Disorder	B	0.023915	0.024247	0.026652
+H4C7	Autism Spectrum Disorder	B	0.040040	0.023987	0.026692
+HACD3	Autism Spectrum Disorder	B	0.027190	0.033706	0.046852
+HAUS1	Autism Spectrum Disorder	B	0.022040	0.034607	0.044728
+HEPN1	Autism Spectrum Disorder	B	0.022965	0.021892	0.035681
+ICAM5	Autism Spectrum Disorder	B	0.030415	0.049427	0.105134
+IFT20	Autism Spectrum Disorder	B	0.023690	0.047857	0.117856
+L3MBTL3	Autism Spectrum Disorder	B	0.028965	0.040528	0.068920
+LAMB4	Autism Spectrum Disorder	B	0.033190	0.041899	0.079322
+LARGE2	Autism Spectrum Disorder	B	0.023315	0.038206	0.076920
+LY6G5C	Autism Spectrum Disorder	B	0.021815	0.038322	0.044563
+MFAP3L	Autism Spectrum Disorder	B	0.034765	0.023467	0.048108
+MRPL49	Autism Spectrum Disorder	B	0.032265	0.052249	0.096569
+MYL6B	Autism Spectrum Disorder	B	0.019790	0.023487	0.051203
+NOL4L	Autism Spectrum Disorder	B	0.027340	0.034211	0.040616
+NPTX1	Autism Spectrum Disorder	B	0.034915	0.050328	0.085593
+PCBD1	Autism Spectrum Disorder	B	0.027115	0.057864	0.130419
+PHB2	Autism Spectrum Disorder	B	0.023415	0.066548	0.277745
+PLB1	Autism Spectrum Disorder	B	0.028440	0.048446	0.140694
+PLOD3	Autism Spectrum Disorder	B	0.023940	0.055638	0.121312
+POU6F2	Autism Spectrum Disorder	B	0.026665	0.045634	0.086264
+PRDM16	Autism Spectrum Disorder	B	0.026840	0.053415	0.122958
+PTCHD1	Autism Spectrum Disorder	B	0.018490	0.062726	0.127946
+PTH2	Autism Spectrum Disorder	B	0.026090	0.053195	0.128220
+RGL2	Autism Spectrum Disorder	B	0.023165	0.044674	0.105644
+SGSM1	Autism Spectrum Disorder	B	0.023615	0.042079	0.062501
+SIGLEC15	Autism Spectrum Disorder	B	0.022390	0.047183	0.110260
+SKOR2	Autism Spectrum Disorder	B	0.025315	0.046643	0.066429
+SLF1	Autism Spectrum Disorder	B	0.021340	0.038669	0.063367
+SPR	Autism Spectrum Disorder	B	0.024215	0.057349	0.119663
+TBC1D25	Autism Spectrum Disorder	B	0.024315	0.033089	0.040760
+TLCD1	Autism Spectrum Disorder	B	0.024815	0.032605	0.053138
+TPCN2	Autism Spectrum Disorder	B	0.027715	0.050670	0.116453
+TRIM58	Autism Spectrum Disorder	B	0.026115	0.048571	0.062405
+TSPAN2	Autism Spectrum Disorder	B	0.025590	0.042491	0.079097
+VEPH1	Autism Spectrum Disorder	B	0.030590	0.041503	0.068544
+ZNF653	Autism Spectrum Disorder	B	0.022990	0.024342	0.027612
+AOC3	Autism Spectrum Disorder	B	0.028115	0.010932	0.101790
+AMY2B	Autism Spectrum Disorder	B	0.031115	0.012577	0.089408
+ARHGAP18	Autism Spectrum Disorder	B	0.030940	0.041968	0.089537
+ANKFN1	Autism Spectrum Disorder	B	0.030940	0.035019	0.044863
+BHMT2	Autism Spectrum Disorder	B	0.036065	0.047253	0.109364
+C1QL4	Autism Spectrum Disorder	B	0.022715	0.031920	0.038726
+C1QTNF2	Autism Spectrum Disorder	B	0.023240	0.032169	0.058221
+CD79A	Autism Spectrum Disorder	B	0.018615	0.055402	0.119480
+CEACAM4	Autism Spectrum Disorder	B	0.024915	0.031784	0.028177
+CGRRF1	Autism Spectrum Disorder	B	0.022890	0.028423	0.037111
+CETN1	Autism Spectrum Disorder	B	0.022415	0.035581	0.079196
+CWF19L2	Autism Spectrum Disorder	B	0.028240	0.023627	0.033686
+DGKE	Autism Spectrum Disorder	B	0.024090	0.054685	0.111899
+ELMOD2	Autism Spectrum Disorder	B	0.024040	0.034179	0.041448
+EGF	Autism Spectrum Disorder	B	0.027490	0.056738	0.150511
+ELL	Autism Spectrum Disorder	B	0.025265	0.076090	0.452267
+EPS8L2	Autism Spectrum Disorder	B	0.023265	0.032568	0.059322
+FAM47E-STBD1	Autism Spectrum Disorder	B	0.021115	0.022317	0.025702
+FAM189B	Autism Spectrum Disorder	B	0.022415	0.029276	0.025772
+ERP44	Autism Spectrum Disorder	B	0.025265	0.045009	0.096515
+FKBPL	Autism Spectrum Disorder	B	0.020665	0.040251	0.061216
+FERD3L	Autism Spectrum Disorder	B	0.026665	0.020912	0.056665
+FZD2	Autism Spectrum Disorder	B	0.026990	0.055474	0.123539
+GREM1	Autism Spectrum Disorder	B	0.031390	0.047471	0.127097
+HARS2	Autism Spectrum Disorder	B	0.026615	0.046964	0.103026
+LIN9	Autism Spectrum Disorder	B	0.022415	0.049956	0.132085
+LRRC3C	Autism Spectrum Disorder	B	0.022665	0.028433	0.025912
+GRHL3	Autism Spectrum Disorder	B	0.021215	0.060256	0.150402
+LITAF	Autism Spectrum Disorder	B	0.023640	0.072536	0.160271
+MANEAL	Autism Spectrum Disorder	B	0.018690	0.033218	0.038660
+MAP3K19	Autism Spectrum Disorder	B	0.023665	0.047350	0.102804
+NTPCR	Autism Spectrum Disorder	B	0.017765	0.030052	0.026102
+NR2F6	Autism Spectrum Disorder	B	0.025465	0.043627	0.082680
+MIP	Autism Spectrum Disorder	B	0.018290	0.059009	0.165425
+PIK3R5	Autism Spectrum Disorder	B	0.024765	0.055623	0.208964
+PROSER3	Autism Spectrum Disorder	B	0.018640	0.022167	0.025677
+PPP1CC	Autism Spectrum Disorder	B	0.027640	0.051896	0.132273
+RNFT1	Autism Spectrum Disorder	B	0.031365	0.023442	0.026552
+SHFL	Autism Spectrum Disorder	B	0.020665	0.051965	0.115806
+SNN	Autism Spectrum Disorder	B	0.022440	0.075686	0.083880
+SPATA31A6	Autism Spectrum Disorder	B	0.017690	0.023897	0.027467
+SLC2A1	Autism Spectrum Disorder	B	0.025890	0.055239	0.119075
+SOX21	Autism Spectrum Disorder	B	0.023865	0.042217	0.102694
+SPIB	Autism Spectrum Disorder	B	0.022140	0.048308	0.137522
+TTC21A	Autism Spectrum Disorder	B	0.021290	0.026082	0.055142
+SPTSSB	Autism Spectrum Disorder	B	0.025915	0.038287	0.053826
+TRIM34	Autism Spectrum Disorder	B	0.019565	0.032483	0.046769
+ARHGAP5	Autism Spectrum Disorder	B	0.027315	0.047085	0.104892
+ZNF652	Autism Spectrum Disorder	B	0.028940	0.036517	0.026337
+ATRAID	Autism Spectrum Disorder	B	0.021465	0.051456	0.130304

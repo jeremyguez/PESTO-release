@@ -1,0 +1,854 @@
+gene	phenotype	panel	group	lit_mean	verdict	read	error
+CCT7	complex neurodevelopmental disorder	2a	Limited	Hypothesized	Novel	8	
+ZFTRAF1	neurodevelopmental disorder	2a	Limited	Existing	Existing	1	
+PHKG2	primary ciliary dyskinesia 33	2a	Absent	Novel	Novel	16	
+SYCP2L	Weiss-Kruszka syndrome	2a	Absent	Novel	Novel	7	
+ATP11C	arterial tortuosity syndrome	2a	Absent	Novel	Novel	20	
+FKBP6	Charcot-Marie-Tooth disease type 2E	2a	Absent	Novel	Novel	15	
+MT-CO3	gonadal dysgenesis	2a	Absent	Novel	Novel	18	
+APC	complement component 2 deficiency	2a	Absent	Novel	Novel	0	
+RBFOX3	arthrogryposis, distal, with impaired proprioception and touch	2a	Absent	Novel	Novel	20	
+PSMB1	glycogen storage disease III	2a	Absent	Novel	Novel	9	
+CDH15	familial hypobetalipoproteinemia 1	2a	Absent	Novel	Novel	18	
+ANO3	arthrogryposis multiplex congenita 2, neurogenic type	2a	Absent	Novel	Novel	20	
+SCN9A	hypogonadotropic hypogonadism	2a	Absent	Novel	Novel	20	
+SELENBP1	neurodevelopmental disorder with spastic quadriplegia, optic atrophy, seizures, and structural brain anomalies	2a	Absent	Novel	Novel	20	
+CACNA1F	Malan overgrowth syndrome	2a	Absent	Novel	Novel	20	
+GET4	deafness-lymphedema-leukemia syndrome	2a	Absent	Novel	Novel	11	
+NFATC2	spondylometaphyseal dysplasia, 'corner fracture' type	2a	Absent	Hypothesized	Hypothesized	20	
+KCNE2	epidermolysis bullosa simplex 4, localized or generalized intermediate, autosomal recessive	2a	Absent	Novel	Novel	14	
+RPL3L	autosomal recessive mendelian susceptibility to mycobacterial diseases due to complete RORgamma receptor deficiency	2a	Absent	Novel	Novel	20	
+CASP2	Hoxha-Aliu syndrome	2a	Absent	Established	Established	20	
+AMIGO2	autosomal recessive nonsyndromic hearing loss 59	2a	Absent	Novel	Novel	13	
+KCND3	46,XY sex reversal 3	2a	Absent	Novel	Novel	2	
+KCNQ4	X-linked spondyloepimetaphyseal dysplasia	2a	Absent	Novel	Novel	20	
+NBEAL2	arrhythmogenic cardiomyopathy with wooly hair and keratoderma	2a	Absent	Novel	Novel	20	
+TSPEAR	tibial muscular dystrophy	2a	Absent	Novel	Novel	13	
+TNNT2	atrial septal defect 6	2a	Absent	Hypothesized	Novel	20	
+PCCA	hypercholanemia, familial, 2	2a	Absent	Novel	Novel	20	
+STXBP2	autosomal recessive nonsyndromic hearing loss 44	2a	Absent	Novel	Novel	20	
+UQCRH	hereditary spastic paraplegia 45	2a	Absent	Novel	Novel	7	
+MC4R	agammaglobulinemia 2, autosomal recessive	2a	Absent	Novel	Novel	3	
+CDK9	congenital myopathy 2c, severe infantile, autosomal dominant	2a	Absent	Hypothesized	Novel	20	
+PHGDH	Joubert syndrome 33	2a	Absent	Novel	Novel	20	
+CIAO1	multiple mitochondrial dysfunctions syndrome 10	2a	Limited	Established	Established	20	
+CYBA	parathyroid gland carcinoma	2a	Absent	Novel	Novel	20	
+DNAJC13	craniofacial anomalies and anterior segment dysgenesis syndrome	2a	Absent	Novel	Novel	20	
+MRAS	gonadal dysgenesis, dysmorphic facies, retinal dystrophy, and myopathy	2a	Absent	Hypothesized	Novel	20	
+GHR	familial long QT syndrome	2a	Absent	Novel	Novel	17	
+POU4F1	autosomal dominant polycystic kidney disease	2a	Absent	Novel	Novel	18	
+IFNAR2	Fuchs' endothelial dystrophy	2a	Absent	Novel	Novel	20	
+CEP120	hemochromatosis type 1	2a	Absent	Novel	Novel	20	
+MT-TG	minimal pigment oculocutaneous albinism type 1	2a	Absent	Novel	Novel	5	
+GYPC	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	2a	Absent	Novel	Novel	1	
+BRSK2	mitochondrial pyruvate carrier deficiency	2a	Absent	Novel	Novel	20	
+TRHR	metabolic encephalomyopathic crises, recurrent, with rhabdomyolysis, cardiac arrhythmias, and neurodegeneration	2a	Absent	Novel	Novel	20	
+TFRC	congenital stationary night blindness autosomal dominant 3	2a	Absent	Novel	Novel	20	
+SLC25A13	aldosterone-producing adenoma with seizures and neurological abnormalities	2a	Absent	Novel	Novel	20	
+KIF17	spinal muscular atrophy-progressive myoclonic epilepsy syndrome	2a	Absent	Novel	Novel	20	
+GGPS1	polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy 1	2a	Absent	Novel	Novel	20	
+KREMEN1	autosomal dominant hypocalcemia 1	2a	Absent	Novel	Novel	20	
+C1QBP	Antley-Bixler syndrome	2a	Absent	Novel	Novel	20	
+PCBD1	developmental delay, hypotonia, and impaired language	2a	Absent	Hypothesized	Hypothesized	20	
+TCF3	striate palmoplantar keratoderma	2a	Absent	Novel	Novel	13	
+TCTN1	congenital disorder of deglycosylation 2	2a	Absent	Novel	Novel	18	
+ADAM20	amyotrophic lateral sclerosis type 9	2a	Absent	Novel	Novel	8	
+SLK	degenerative myopia	2a	Absent	Novel	Novel	20	
+MC2R	congenital reticular ichthyosiform erythroderma	2a	Absent	Novel	Novel	20	
+ADCY5	3M syndrome 2	2a	Absent	Novel	Novel	20	
+SMAD2	intellectual disability, X-linked 96	2a	Absent	Novel	Novel	20	
+SBDS	immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome	2a	Absent	Novel	Novel	20	
+FGF3	surfactant metabolism dysfunction, pulmonary, 4	2a	Absent	Novel	Novel	20	
+PTS	3-hydroxy-3-methylglutaric aciduria	2a	Absent	Novel	Novel	10	
+PDCD1	polymicrogyria, perisylvian, with cerebellar hypoplasia and arthrogryposis	2a	Absent	Novel	Novel	16	
+PAX9	Knobloch syndrome 2	2a	Absent	Novel	Novel	19	
+LEPR	spastic paraplegia 83, autosomal recessive	2a	Absent	Novel	Novel	20	
+SMC3	asthma-related traits, susceptibility to, 5	2a	Absent	Novel	Novel	20	
+DBT	myofibrillar myopathy 5	2a	Absent	Novel	Novel	16	
+LPAR6	blepharophimosis - intellectual disability syndrome, MKB type	2a	Absent	Novel	Novel	20	
+SFRP4	Ritscher-Schinzel syndrome	2a	Absent	Novel	Novel	20	
+HPS1	myosclerosis	2a	Absent	Novel	Novel	20	
+IDH2	hereditary renal hypouricemia	2a	Absent	Novel	Novel	20	
+MYO18B	hypertrophic cardiomyopathy 16	2a	Absent	Hypothesized	Existing	20	
+ATP5F1A	short stature-brachydactyly-obesity-global developmental delay syndrome	2a	Absent	Hypothesized	Novel	20	
+IL17RD	microphthalmia, isolated, with coloboma 6	2a	Absent	Hypothesized	Hypothesized	20	
+FCGR2B	bardet-biedl syndrome 21	2a	Absent	Novel	Novel	20	
+MRPS14	robinow syndrome, autosomal recessive 2	2a	Absent	Novel	Novel	3	
+EDNRA	Charcot-Marie-Tooth disease axonal type 2CC	2a	Absent	Novel	Novel	15	
+HLA-DRB1	congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency	2a	Absent	Novel	Novel	4	
+SCNN1A	autosomal recessive limb-girdle muscular dystrophy type 2F	2a	Absent	Novel	Novel	20	
+RXYLT1	cholestasis, progressive familial intrahepatic, 8	2a	Absent	Novel	Novel	4	
+VWA2	hypercholesterolemia, familial, 4	2a	Absent	Novel	Novel	6	
+MTHFR	immunodeficiency 102	2a	Absent	Hypothesized	Novel	3	
+WBP11	immunodeficiency, common variable, 3	2a	Absent	Novel	Novel	10	
+SEC16B	MHC class II deficiency 3	2a	Absent	Novel	Novel	2	
+PIGC	agammaglobulinemia	2a	Absent	Novel	Novel	14	
+AGPAT5	short-rib thoracic dysplasia 11 with or without polydactyly	2a	Absent	Novel	Novel	9	
+RNF220	myopathy, lactic acidosis, and sideroblastic anemia 1	2a	Absent	Novel	Novel	20	
+PNKP	amyloidosis, hereditary systemic 3	2a	Absent	Novel	Novel	20	
+TTC21A	spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 3	2a	Absent	Novel	Novel	5	
+RAB32	Silver-Russell syndrome 5	2a	Absent	Novel	Novel	20	
+PNPLA1	immunodeficiency-centromeric instability-facial anomalies syndrome	2a	Absent	Novel	Novel	20	
+ZNF81	acromelic frontonasal dysostosis	2a	Absent	Novel	Novel	7	
+SLC52A2	Guttmacher syndrome	2a	Absent	Novel	Novel	20	
+HELLS	autosomal recessive spondylocostal dysostosis	2a	Absent	Novel	Novel	20	
+IFT54	familial isolated deficiency of vitamin E	2a	Absent	Novel	Novel	8	
+FKTN	autosomal dominant hypophosphatemic rickets	2a	Absent	Novel	Novel	16	
+PRDM6	Long-Olsen-Distelmaier syndrome	2a	Absent	Novel	Novel	20	
+TRPA1	early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome	2a	Absent	Hypothesized	Novel	20	
+MCCC2	vitamin D-dependent rickets, type 3	2a	Absent	Novel	Novel	20	
+ANAPC1	head and neck squamous cell carcinoma	2a	Absent	Novel	Novel	20	
+PDX1	arthrogryposis-renal dysfunction-cholestasis syndrome	2a	Absent	Novel	Novel	20	
+ISCA1	pulmonary hypertension, primary, 3	2a	Absent	Novel	Novel	20	
+CAV1	hereditary late onset Parkinson disease	2a	Absent	Hypothesized	Novel	20	
+PLEKHM2	developmental malformations-deafness-dystonia syndrome	2a	Absent	Novel	Novel	18	
+TMEM63C	spastic paraplegia 87, autosomal recessive	2a	Moderate	Existing	Existing	7	
+UBR5	neurodevelopmental disorder	2a	Moderate	Established	Established	20	
+CAMSAP1	cortical dysplasia, complex, with other brain malformations 12	2a	Moderate	Established	Established	14	
+CDH11	Teebi hypertelorism syndrome 2	2a	Moderate	Established	Established	20	
+ATP5MK	mitochondrial disease	2a	Moderate	Established	Established	8	
+PRDX3	spinocerebellar ataxia, autosomal recessive 32	2a	Moderate	Established	Established	20	
+ETS1	congenital heart disease	2a	Moderate	Established	Established	20	
+THUMPD1	neurodevelopmental disorder with speech delay and variable ocular anomalies	2a	Moderate	Established	Established	12	
+CHKA	neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures	2a	Moderate	Established	Established	20	
+REL	immunodeficiency 92	2a	Moderate	Established	Established	20	
+RBBP5	neurodevelopmental disorder	2a	Moderate	Existing	Existing	20	
+INTS11	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	2a	Moderate	Established	Established	20	
+TUBA4A	amyotrophic lateral sclerosis type 22	2a	Moderate	Established	Established	20	
+JPH1	congenital myopathy 25	2a	Moderate	Existing	Existing	13	
+BLVRA	hyperbiliverdinemia	2a	Moderate	Established	Established	20	
+ASPRV1	ichthyosis, lamellar, autosomal dominant	2a	Moderate	Established	Established	11	
+FXYD2	renal hypomagnesemia 2	2a	Moderate	Established	Established	20	
+CPSF3	neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures	2a	Moderate	Existing	Existing	20	
+SEPHS1	neurodevelopmental disorder	2a	Moderate	Existing	Existing	10	
+HAND1	congenital heart disease	2a	Moderate	Established	Established	20	
+ALDH1A2	diaphragmatic hernia 4, with cardiovascular defects	2a	Strong	Established	Established	20	
+SLC31A1	neurodegeneration and seizures due to copper transport defect	2a	Moderate	Established	Established	20	
+TRAC	TCR-alpha-beta-positive T-cell deficiency	2a	Moderate	Established	Established	20	
+FLI1	bleeding disorder, platelet-type, 21	2a	Moderate	Established	Established	20	
+PRKG2	acromesomelic dysplasia 4	2a	Strong	Established	Established	20	
+UNG	hyper-IgM syndrome type 5	2a	Moderate	Established	Established	20	
+TMX2	neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity	2a	Strong	Established	Established	9	
+PYCR2	hypomyelinating leukodystrophy 10	2a	Strong	Established	Established	18	
+RAC3	neurodevelopmental disorder with structural brain anomalies and dysmorphic facies	2a	Strong	Established	Established	20	
+ALPK1	retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome	2a	Strong	Established	Established	20	
+GABRD	complex neurodevelopmental disorder	2a	Moderate	Established	Established	20	
+SLC6A17	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	2a	Strong	Established	Established	9	
+GDAP2	spinocerebellar ataxia, autosomal recessive 27	2a	Strong	Established	Established	9	
+SELENOI	spastic paraplegia 81, autosomal recessive	2a	Strong	Established	Established	18	
+TMEM106B	leukodystrophy, hypomyelinating, 16	2a	Strong	Established	Established	20	
+GEMIN4	neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities	2a	Strong	Established	Established	20	
+LIPT2	encephalopathy, neonatal severe, with lactic acidosis and brain abnormalities	2a	Strong	Established	Established	10	
+GDF11	vertebral hypersegmentation and orofacial anomalies	2a	Strong	Established	Established	20	
+SAMD11	retinitis pigmentosa	2a	Strong	Existing	Existing	5	
+UNC45A	osteootohepatoenteric syndrome	2a	Strong	Established	Established	20	
+BCAS3	Hengel-Maroofian-Schols syndrome	2a	Strong	Existing	Established	12	
+ATG7	spinocerebellar ataxia, autosomal recessive 31	2a	Strong	Established	Established	20	
+NRXN1	Pitt-Hopkins-like syndrome 2	2a	Strong	Established	Established	20	
+SACS	Charlevoix-Saguenay spastic ataxia	2a	Strong	Established	Established	20	
+THAP1	torsion dystonia 6	2a	Strong	Established	Established	20	
+SMPD4	neurodevelopmental disorder with microcephaly, arthrogryposis, and structural brain anomalies	2a	Strong	Established	Established	15	
+DHPS	neurodevelopmental disorder with seizures and speech and walking impairment	2a	Strong	Established	Established	18	
+COX16	mitochondrial complex IV deficiency, nuclear type 22	2a	Strong	Existing	Existing	13	
+TRNT1	retinitis pigmentosa and erythrocytic microcytosis	2a	Strong	Established	Established	20	
+EPHB2	bleeding disorder, platelet-type, 22	2a	Limited	Existing	Existing	20	
+SCLT1	retinitis pigmentosa	2a	Limited	Established	Established	15	
+ATG5	spinocerebellar ataxia, autosomal recessive 25	2a	Limited	Existing	Existing	20	
+TRAPPC2L	encephalopathy, progressive, early-onset, with episodic rhabdomyolysis	2a	Limited	Established	Established	10	
+SLC35B2	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	2a	Limited	Existing	Existing	15	
+DCC	gaze palsy, familial horizontal, with progressive scoliosis, 2	2a	Strong	Established	Established	20	
+TMEM135	neurodevelopmental disorder	2a	Limited	Hypothesized	Existing	14	
+SUMO1	orofacial cleft 10	2a	Limited	Existing	Established	20	
+PITX1	clubfoot	2a	Strong	Established	Established	20	
+DHX34	intellectual disability	2a	Limited	Existing	Existing	7	
+USP44	congenital heart disease	2a	Limited	Hypothesized	Hypothesized	3	
+VANGL1	neural tube defects, susceptibility to	2a	Limited	Established	Established	20	
+PITX2	ring dermoid of cornea	2a	Strong	Existing	Existing	20	
+CRIPTO	congenital heart disease	2a	Limited	Established	Established	20	
+TDO2	familial hypertryptophanemia	2a	Limited	Existing	Existing	20	
+ELP2	intellectual disability, autosomal recessive 58	2a	Limited	Established	Established	20	
+ASB10	glaucoma 1, open angle, F	2a	Limited	Existing	Established	16	
+KCNT1	malignant migrating partial seizures of infancy	2a	Definitive	Established	Established	20	
+POLD3	immunodeficiency 122	2a	Limited	Established	Established	20	
+TMOD1	dilated cardiomyopathy	2a	Limited	Existing	Existing	20	
+ABCC9	hypertrichotic osteochondrodysplasia Cantu type	2a	Definitive	Established	Established	20	
+AICDA	hyper-IgM syndrome type 2	2a	Definitive	Established	Established	20	
+SS18L1	amyotrophic lateral sclerosis	2a	Limited	Established	Established	12	
+TAFAZZIN	Barth syndrome	2a	Definitive	Established	Established	20	
+AP3B1	Hermansky-Pudlak syndrome 2	2a	Definitive	Established	Established	20	
+ASCL1	neurodevelopmental disorder	2a	Limited	Hypothesized	Hypothesized	20	
+IGSF1	X-linked central congenital hypothyroidism with late-onset testicular enlargement	2a	Definitive	Established	Established	20	
+SDHB	Carney-Stratakis syndrome	2a	Definitive	Established	Established	20	
+AKT1	Proteus syndrome	2a	Definitive	Established	Established	20	
+ERCC6L2	pancytopenia-developmental delay syndrome	2a	Definitive	Established	Established	20	
+MT-TA	mitochondrial disease	2a	Definitive	Established	Established	20	
+KIT	piebaldism	2a	Definitive	Established	Established	20	
+HEY2	congenital heart disease	2a	Limited	Established	Established	20	
+SLC24A5	oculocutaneous albinism type 6	2a	Definitive	Established	Established	20	
+CHD2	developmental and epileptic encephalopathy 94	2a	Definitive	Established	Established	20	
+FBXO11	intellectual developmental disorder with dysmorphic facies and behavioral abnormalities	2a	Definitive	Established	Established	20	
+IL11RA	craniosynostosis and dental anomalies	2a	Definitive	Established	Established	20	
+LRPAP1	myopia 23, autosomal recessive	2a	Definitive	Established	Established	14	
+SAMD9	MIRAGE syndrome	2a	Definitive	Established	Established	20	
+EBP	MEND syndrome	2a	Definitive	Established	Established	20	
+PPP1R13L	dilated cardiomyopathy	2a	Definitive	Established	Established	20	
+CCDC88A	PEHO-like syndrome	2a	Moderate	Established	Established	16	
+PIK3R1	SHORT syndrome	2a	Definitive	Established	Established	20	
+SRCAP	Floating-Harbor syndrome	2a	Definitive	Established	Established	20	
+DCLRE1C	Omenn syndrome	2a	Definitive	Established	Established	20	
+CRB2	ventriculomegaly-cystic kidney disease	2a	Definitive	Established	Established	20	
+KLHL24	epidermolysis bullosa simplex 6, generalized, with scarring and hair loss	2a	Moderate	Established	Established	20	
+ASNS	congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome	2a	Definitive	Established	Established	20	
+SLC38A3	developmental and epileptic encephalopathy 102	2a	Strong	Established	Established	20	
+RBM28	ANE syndrome	2a	Limited	Established	Established	8	
+TBX15	pelviscapular dysplasia	2a	Definitive	Established	Established	20	
+ATP2B1	intellectual developmental disorder, autosomal dominant 66	2a	Moderate	Established	Established	20	
+CFAP43	normal pressure hydrocephalus	2a	Limited	Existing	Established	8	
+ATP1A1	Charcot-Marie-tooth disease, axonal, type 2DD	2a	Moderate	Established	Established	20	
+CAMTA1	cerebellar dysfunction with variable cognitive and behavioral abnormalities	2a	Definitive	Established	Established	20	
+AR	Kennedy disease	2a	Definitive	Established	Established	20	
+ACP5	Spondyloenchondrodysplasia with immune dysregulation	2a	Definitive	Established	Established	20	
+TOE1	pontocerebellar hypoplasia type 7	2a	Strong	Established	Established	20	
+KRT71	hypotrichosis 13	2a	Limited	Established	Established	20	
+PLS3	X-linked osteoporosis with fractures	2a	Definitive	Established	Established	20	
+JMJD1C	neurodevelopmental disorder	2a	Limited	Existing	Established	20	
+MRTFB	neurodevelopmental disorder	2a	Limited	Established	Established	20	
+CALM2	catecholaminergic polymorphic ventricular tachycardia	2a	Moderate	Established	Established	20	
+ASAH1	Farber lipogranulomatosis	2a	Definitive	Established	Established	20	
+EYA4	dilated cardiomyopathy 1J	2a	Limited	Established	Established	20	
+CARD11	BENTA disease	2a	Definitive	Established	Established	20	
+POGZ	intellectual disability-microcephaly-strabismus-behavioral abnormalities syndrome	2a	Definitive	Established	Established	20	
+MPV17	mitochondrial DNA depletion syndrome 6 (hepatocerebral type)	2a	Definitive	Established	Established	20	
+GP6	platelet-type bleeding disorder 11	2a	Definitive	Established	Established	20	
+EIF4A3	Richieri Costa-Pereira syndrome	2a	Definitive	Established	Established	20	
+KIF4A	complex neurodevelopmental disorder with or without congenital anomalies	2a	Limited	Established	Established	20	
+MPIG6B	thrombocytopenia, anemia, and myelofibrosis	2a	Definitive	Established	Established	20	
+PAK1	intellectual developmental disorder with macrocephaly, seizures, and speech delay	2a	Strong	Established	Established	20	
+KDR	pulmonary arterial hypertension	2a	Definitive	Established	Established	20	
+OPHN1	X-linked intellectual disability-cerebellar hypoplasia syndrome	2a	Definitive	Established	Established	20	
+TLR5	systemic lupus erythematosus, susceptibility to, 1	2a	Limited	Established	Established	20	
+AGK	Sengers syndrome	2a	Definitive	Established	Established	20	
+WAS	Wiskott-Aldrich syndrome	2a	Definitive	Established	Established	20	
+SLC29A3	H syndrome	2a	Definitive	Established	Established	20	
+CLCN2	leukoencephalopathy with mild cerebellar ataxia and white matter edema	2a	Definitive	Established	Established	20	
+SPINK5	Netherton syndrome	2a	Definitive	Established	Established	20	
+STRADA	polyhydramnios, megalencephaly, and symptomatic epilepsy	2a	Definitive	Established	Established	20	
+FLVCR2	Fowler syndrome	2a	Definitive	Established	Established	20	
+MT-TC	mitochondrial disease	2a	Limited	Existing	Established	10	
+SLC16A2	Allan-Herndon-Dudley syndrome	2a	Definitive	Established	Established	20	
+F12	congenital factor XII deficiency	2a	Definitive	Established	Established	20	
+SLC52A2	Brown-Vialetto-van Laere syndrome 2	2a	Definitive	Established	Established	20	
+RB1	hereditary retinoblastoma	2a	Definitive	Established	Established	20	
+GALNS	mucopolysaccharidosis type 4A	2a	Definitive	Established	Established	20	
+AUH	3-methylglutaconic aciduria type 1	2a	Definitive	Established	Established	20	
+SCARF2	van den Ende-Gupta syndrome	2a	Definitive	Established	Established	20	
+CTC1	dyskeratosis congenita	2a	Definitive	Established	Established	20	
+GLUD1	hyperinsulinism-hyperammonemia syndrome	2a	Definitive	Established	Established	20	
+AFG2A	microcephaly-intellectual disability-sensorineural hearing loss-epilepsy-abnormal muscle tone syndrome	2a	Definitive	Established	Established	17	
+NR2F2	46,xx sex reversal 5	2a	Definitive	Established	Established	20	
+HYCC1	leukodystrophy, hypomyelinating, 5	2a	Definitive	Established	Established	20	
+GATAD2B	severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome	2a	Definitive	Established	Established	20	
+SNRPN	Prader-Willi syndrome	2a	Definitive	Established	Established	20	
+INTS1	neurodevelopmental disorder with cataracts, poor growth, and dysmorphic facies	2a	Strong	Established	Established	15	
+STAT6	hyper-IgE syndrome 6, autosomal dominant, with recurrent infections	2a	Strong	Established	Established	20	
+SCYL1	acute infantile liver failure-cerebellar ataxia-peripheral sensory motor neuropathy syndrome	2a	Strong	Established	Established	20	
+PDHA1	Leigh syndrome	2a	Definitive	Established	Established	20	
+ASPH	facial dysmorphism-lens dislocation-anterior segment abnormalities-spontaneous filtering blebs syndrome	2a	Strong	Established	Established	20	
+ABHD16A	spastic paraplegia 86, autosomal recessive	2a	Strong	Established	Established	13	
+CHRNA3	urinary bladder, atony of	2a	Strong	Established	Established	10	
+CENPF	Stromme syndrome	2a	Strong	Established	Established	20	
+LTBP1	cutis laxa, autosomal recessive, type 2E	2a	Strong	Existing	Established	20	
+YAP1	uveal coloboma-cleft lip and palate-intellectual disability	2a	Strong	Existing	Established	20	
+H4C3	Tessadori-van Haaften neurodevelopmental syndrome 1	2a	Strong	Established	Established	4	
+WNT4	mullerian aplasia and hyperandrogenism	2a	Strong	Established	Established	20	
+HNRNPA2B1	oculopharyngeal muscular dystrophy 2	2a	Strong	Established	Established	20	
+NAXE	encephalopathy, progressive, early-onset, with brain edema and/or leukoencephalopathy, 1	2a	Strong	Established	Established	20	
+GALNT2	congenital disorder of glycosylation, type iit	2a	Strong	Established	Established	20	
+PHACTR1	developmental and epileptic encephalopathy, 70	2a	Strong	Established	Established	17	
+EDEM3	congenital disorder of glycosylation, type 2v	2a	Strong	Existing	Established	13	
+P3H2	myopia, high, with cataract and vitreoretinal degeneration	2a	Strong	Established	Established	20	
+BMS1	aplasia cutis congenita	2a	Strong	Existing	Existing	8	
+MIR17HG	Feingold syndrome type 2	2a	Strong	Established	Established	20	
+CFAP54	ciliary dyskinesia, primary, 54	2a	Strong	Established	Established	10	
+WWOX	autosomal recessive spinocerebellar ataxia 12	2a	Strong	Established	Established	20	
+AFF3	KINSSHIP syndrome	2a	Strong	Established	Established	20	
+H4C5	Tessadori-Van Haaften neurodevelopmental syndrome 3	2a	Strong	Established	Established	4	
+EMG1	Bowen-Conradi syndrome	2a	Strong	Established	Established	20	
+TCEAL1	neurodevelopmental disorder with gait disturbance, dysmorphic facies, and behavioral abnormalities, X-linked	2a	Moderate	Established	Established	6	
+HDAC4	neurodevelopmental disorder with central hypotonia and dysmorphic facies	2a	Strong	Established	Established	20	
+COPB2	osteoporosis, childhood- or juvenile-onset, with developmental delay	2a	Strong	Established	Established	20	
+PHF21A	Potocki-Shaffer syndrome	2a	Strong	Established	Established	20	
+ZNF148	global developmental delay, absent or hypoplastic corpus callosum, and dysmorphic facies	2a	Strong	Established	Established	20	
+EPRS1	leukodystrophy, hypomyelinating, 15	2a	Strong	Established	Established	14	
+AMFR	spastic paraplegia 89, autosomal recessive	2a	Moderate	Established	Established	20	
+SBF1	Charcot-Marie-Tooth disease type 4B3	2a	Moderate	Established	Established	20	
+MAST3	developmental and epileptic encephalopathy 108	2a	Moderate	Established	Established	12	
+UBAP2L	neurodevelopmental disorder with impaired language, behavioral abnormalities, and dysmorphic facies	2a	Moderate	Established	Established	10	
+SLC39A5	myopia 24, autosomal dominant	2a	Strong	Established	Established	18	
+WDR83OS	neurodevelopmental disorder with variable familial hypercholanemia	2a	Moderate	Established	Established	4	
+TAPBP	MHC class I deficiency	2a	Moderate	Established	Established	16	
+SLF2	Atelis syndrome 1	2a	Moderate	Established	Established	4	
+MAPK1	Noonan syndrome 13	2a	Moderate	Established	Established	20	
+MYLK3	dilated cardiomyopathy	2a	Moderate	Established	Established	20	
+TRIM71	hydrocephalus, congenital communicating, 1	2a	Moderate	Established	Established	20	
+ESAM	neurodevelopmental disorder with intracranial hemorrhage, seizures, and spasticity	2a	Moderate	Established	Established	17	
+MYCN	megalencephaly-polydactyly syndrome	2a	Moderate	Established	Established	12	
+FOSL2	aplasia cutis-enamel dysplasia syndrome	2a	Moderate	Existing	Existing	20	
+GABBR1	neurodevelopmental disorder with language delay and variable cognitive abnormalities	2a	Moderate	Established	Established	20	
+IKZF3	immunodeficiency 84	2a	Moderate	Established	Established	20	
+IRF9	immunodeficiency 65, susceptibility to viral infections	2a	Moderate	Established	Established	20	
+NDC1	neurodevelopmental disorder with achalasia, polyneuropathy, and alacrima	2a	Moderate	Existing	Existing	20	
+RUSC2	intellectual disability, autosomal recessive 61	2a	Moderate	Existing	Established	6	
+RAB34	orofaciodigital syndrome 20	2a	Moderate	Established	Established	16	
+CFAP74	ciliary dyskinesia, primary, 49, without situs inversus	2a	Moderate	Established	Established	7	
+MDM4	bone marrow failure syndrome 6	2a	Moderate	Established	Established	20	
+NDUFC2	Leigh syndrome	2a	Moderate	Existing	Existing	14	
+SMC5	Atelis syndrome 2	2a	Moderate	Established	Established	20	
+HCK	autoinflammation with pulmonary and cutaneous vasculitis	2a	Limited	Established	Established	20	
+MFSD6L	cataract	2a	Limited	Existing	Existing	1	
+H3-3B	Bryant-Li-Bhoj neurodevelopmental syndrome 2	2a	Moderate	Established	Established	20	
+CFB	atypical hemolytic-uremic syndrome with B factor anomaly	2a	Moderate	Established	Established	20	
+TOP2B	B-cell immunodeficiency, distal limb anomalies, and urogenital malformations	2a	Moderate	Established	Established	20	
+MESP1	congenital heart disease	2a	Moderate	Established	Established	20	
+ABCC4	qualitative platelet defect	2a	Moderate	Existing	Existing	20	
+CCNK	intellectual developmental disorder with hypertelorism and distinctive facies	2a	Limited	Established	Established	16	
+PET117	Leigh syndrome	2a	Limited	Existing	Existing	3	
+GSPT2	intellectual disability	2a	Limited	Existing	Established	10	
+CRELD1	atrioventricular septal defect, susceptibility to, 2	2a	Limited	Established	Established	20	
+GUF1	developmental and epileptic encephalopathy	2a	Limited	Existing	Existing	3	
+PDE1C	autosomal dominant nonsyndromic hearing loss	2a	Limited	Existing	Existing	15	
+AQP1	pulmonary arterial hypertension	2a	Limited	Established	Established	20	
+OFD1	Simpson-Golabi-Behmel syndrome type 2	2a	Limited	Existing	Existing	20	
+HIBADH	3-hydroxyisobutyric aciduria	2a	Limited	Established	Established	8	
+AKR1E2	cataract	2a	Limited	Existing	Existing	3	
+PIGM	hypercoagulability syndrome due to glycosylphosphatidylinositol deficiency	2a	Limited	Established	Established	20	
+PHYKPL	phosphohydroxylysinuria	2a	Limited	Existing	Existing	2	
+CFAP47	spermatogenic failure, X-linked, 3	2a	Limited	Established	Established	12	
+ABCD3	congenital bile acid synthesis defect 5	2a	Limited	Existing	Existing	20	
+LTV1	inflammatory poikiloderma with hair abnormalities and acral keratoses	2a	Limited	Existing	Existing	13	
+NUDCD3	severe combined immunodeficiency	2a	Limited	Existing	Existing	4	
+DLG5	Yuksel-Vogel-Bauer syndrome	2a	Limited	Existing	Existing	20	
+CHST8	peeling skin syndrome type A	2a	Limited	Existing	Existing	6	
+RNF125	Tenorio syndrome	2a	Limited	Established	Established	17	
+RAX	coloboma	2a	Limited	Established	Established	20	
+LONP1	congenital diaphragmatic hernia	2a	Limited	Established	Established	20	
+ZBTB7A	macrocephaly, neurodevelopmental delay, lymphoid hyperplasia, and persistent fetal hemoglobin	2a	Moderate	Existing	Established	20	
+PLOD3	bone fragility with contractures, arterial rupture, and deafness	2a	Limited	Established	Established	20	
+ALDOB	hereditary fructose intolerance	2a	Definitive	Established	Established	20	
+BCL11A	Dias-Logan syndrome	2a	Definitive	Established	Established	20	
+C1GALT1C1	hemolytic uremic syndrome, atypical, 8, with rhizomelic short stature	2a	Limited	Established	Established	20	
+LEMD3	Buschke-Ollendorff syndrome	2a	Definitive	Established	Established	20	
+ILK	familial dilated cardiomyopathy	2a	Limited	Existing	Existing	20	
+GET3	cardiomyopathy, dilated, 2H	2a	Limited	Existing	Existing	20	
+AKT3	microcephaly	2a	Limited	Established	Established	20	
+CTNNA3	arrhythmogenic right ventricular cardiomyopathy	2a	Limited	Existing	Existing	20	
+TBX4	autosomal recessive amelia	2a	Limited	Established	Established	20	
+HACE1	spastic paraplegia-severe developmental delay-epilepsy syndrome	2a	Definitive	Established	Established	20	
+PKD1L1	heterotaxy, visceral, 8, autosomal	2a	Definitive	Established	Established	20	
+MUTYH	familial adenomatous polyposis 2	2a	Definitive	Established	Established	20	
+ATXN2	spinocerebellar ataxia type 2	2a	Definitive	Established	Established	20	
+DHFR	constitutional megaloblastic anemia with severe neurologic disease	2a	Definitive	Established	Established	20	
+POLD1	mandibular hypoplasia-deafness-progeroid syndrome	2a	Definitive	Established	Established	20	
+SLC39A13	Ehlers-Danlos syndrome, spondylocheirodysplastic type	2a	Definitive	Established	Established	20	
+SLC30A2	zinc deficiency, transient neonatal	2a	Definitive	Established	Established	20	
+SNX14	autosomal recessive spinocerebellar ataxia 20	2a	Definitive	Established	Established	20	
+AURKC	spermatogenic failure 5	2a	Definitive	Established	Established	20	
+NDUFA12	mitochondrial complex I deficiency, nuclear type 23	2a	Definitive	Established	Established	20	
+HGD	alkaptonuria	2a	Definitive	Established	Established	20	
+YY1	Gabriele de Vries syndrome	2a	Definitive	Established	Established	20	
+GJB2	Bart-Pumphrey syndrome	2a	Definitive	Established	Established	20	
+CLDN16	renal hypomagnesemia 3	2a	Definitive	Established	Established	20	
+LTBP3	brachyolmia-amelogenesis imperfecta syndrome	2a	Definitive	Established	Established	20	
+SPI1	agammaglobulinemia 10, autosomal dominant	2a	Definitive	Established	Established	20	
+RBM8A	thrombocytopenia-absent radius syndrome	2a	Definitive	Established	Established	20	
+SUCLA2	Leigh syndrome	2a	Definitive	Established	Established	20	
+ZBTB20	Primrose syndrome	2a	Definitive	Established	Established	20	
+IRF4	combined immunodeficiency	2a	Definitive	Established	Established	20	
+IGF2	Silver-Russell syndrome 3	2a	Definitive	Established	Established	20	
+VHL	von Hippel-Lindau disease	2a	Definitive	Established	Established	20	
+NDUFAF5	Leigh syndrome	2a	Definitive	Established	Established	20	
+SLC35A2	X-linked complex neurodevelopmental disorder	2a	Definitive	Established	Established	20	
+DYNC1H1	autosomal dominant childhood-onset proximal spinal muscular atrophy without contractures	2a	Definitive	Established	Established	20	
+C9orf72	frontotemporal dementia and/or amyotrophic lateral sclerosis 1	2a	Definitive	Established	Established	20	
+RET	pheochromocytoma	2a	Definitive	Established	Established	20	
+TERC	dyskeratosis congenita, autosomal dominant 1	2a	Definitive	Established	Established	20	
+ACAT1	beta-ketothiolase deficiency	2a	Definitive	Established	Established	20	
+ITGA3	epidermolysis bullosa, junctional 7, with interstitial lung disease and nephrotic syndrome	2a	Definitive	Established	Established	20	
+FOXL2	blepharophimosis, ptosis, and epicanthus inversus syndrome	2a	Definitive	Established	Established	20	
+SMOC1	microphthalmia with limb anomalies	2a	Definitive	Established	Established	20	
+HSD3B7	congenital bile acid synthesis defect 1	2a	Definitive	Established	Established	20	
+POLR1A	acrofacial dysostosis Cincinnati type	2a	Strong	Established	Established	12	
+MT-TK	Leigh syndrome	2a	Definitive	Established	Established	20	
+KIF2A	complex cortical dysplasia with other brain malformations 3	2a	Strong	Established	Established	20	
+GPX4	spondylometaphyseal dysplasia, Sedaghatian type	2a	Strong	Established	Established	20	
+MDH2	developmental and epileptic encephalopathy, 51	2a	Strong	Established	Established	20	
+AGO2	Lessel-Kreienkamp syndrome	2a	Definitive	Established	Established	20	
+TUBGCP2	pachygyria, microcephaly, developmental delay, and dysmorphic facies, with or without seizures	2a	Strong	Established	Established	18	
+ELAC2	combined oxidative phosphorylation defect type 17	2a	Definitive	Established	Established	19	
+ERBB3	lethal congenital contracture syndrome 2	2a	Strong	Established	Established	20	
+PERP	Olmsted syndrome 2	2a	Strong	Established	Established	20	
+SPRED2	Noonan syndrome 14	2a	Strong	Established	Established	20	
+ACBD5	retinal dystrophy with leukodystrophy	2a	Strong	Established	Established	20	
+GALM	galactosemia 4	2a	Strong	Established	Established	20	
+CTNNA2	cortical dysplasia, complex, with other brain malformations 9	2a	Strong	Existing	Established	20	
+KLHL7	PERCHING syndrome	2a	Strong	Established	Established	20	
+PLAG1	silver-russell syndrome 4	2a	Strong	Established	Established	20	
+CD151	epidermolysis bullosa simplex 7, with nephropathy and deafness	2a	Strong	Established	Established	20	
+LINGO1	intellectual disability, autosomal recessive 64	2a	Strong	Existing	Existing	20	
+EIF2AK2	leukoencephalopathy, developmental delay, and episodic neurologic regression syndrome	2a	Strong	Established	Established	20	
+PRUNE1	neurodevelopmental disorder with microcephaly, hypotonia, and variable brain anomalies	2a	Strong	Established	Established	20	
+GRM1	autosomal recessive spinocerebellar ataxia 13	2a	Strong	Established	Established	20	
+SLC25A42	metabolic crises, recurrent, with variable encephalomyopathic features and neurologic regression	2a	Strong	Established	Established	9	
+DDX59	orofaciodigital syndrome V	2a	Strong	Established	Established	7	
+IARS1	growth retardation, intellectual developmental disorder, hypotonia, and hepatopathy	2a	Strong	Established	Established	20	
+TP73	ciliary dyskinesia, primary, 47, and lissencephaly	2a	Strong	Existing	Established	20	
+JUP	Naxos disease	2a	Strong	Established	Established	20	
+PRKACB	cardioacrofacial dysplasia 2	2a	Strong	Established	Established	20	
+DSG1	severe dermatitis-multiple allergies-metabolic wasting syndrome	2a	Strong	Established	Established	20	
+COQ7	distal hereditary motor neuropathy	2a	Strong	Established	Established	20	
+ST14	autosomal recessive congenital ichthyosis 11	2a	Strong	Established	Established	16	
+NDNF	hypogonadotropic hypogonadism 25 with anosmia	2a	Strong	Established	Established	12	
+UNC45B	myofibrillar myopathy 11	2a	Strong	Established	Established	20	
+UGP2	developmental and epileptic encephalopathy, 83	2a	Strong	Existing	Existing	20	
+RNU4-2	neurodevelopmental disorder with hypotonia, brain anomalies, distinctive facies, and absent language	2a	Strong	Established	Established	20	
+DCDC2	nephronophthisis 19	2a	Strong	Established	Established	20	
+OXR1	isolated cerebellar hypoplasia/agenesis	2a	Strong	Existing	Established	20	
+PPP1R12A	genitourinary and/or brain malformation syndrome	2a	Strong	Established	Established	20	
+MAPKAPK5	neurocardiofaciodigital syndrome	2a	Strong	Established	Established	19	
+RBFOX2	congenital heart disease	2a	Strong	Established	Established	20	
+BGN	X-linked spondyloepimetaphyseal dysplasia	2a	Strong	Established	Established	20	
+CSGALNACT1	skeletal dysplasia, mild, with joint laxity and advanced bone age	2a	Moderate	Established	Established	18	
+GRM7	neurodevelopmental disorder with seizures, hypotonia, and brain imaging abnormalities	2a	Strong	Established	Established	20	
+CAT	acatalasia	2a	Moderate	Established	Established	20	
+ADAMTS15	arthrogryposis, distal, type 12	2a	Moderate	Existing	Existing	11	
+BAP1	Kury-Isidor syndrome	2a	Moderate	Established	Established	20	
+TF	atransferrinemia	2a	Moderate	Established	Established	16	
+PSKH1	cholestasis, progressive familial intrahepatic, 13	2a	Moderate	Established	Established	7	
+NSMCE2	Seckel syndrome 10	2a	Moderate	Established	Established	20	
+SUGCT	glutaric acidemia type 3	2a	Moderate	Established	Established	13	
+RNF213	Moyamoya disease 2	2a	Moderate	Established	Established	20	
+GNA11	congenital hemangioma	2a	Strong	Established	Established	20	
+MCM4	primary immunodeficiency with natural-killer cell deficiency and adrenal insufficiency	2a	Moderate	Established	Established	20	
+GSC	short stature-auditory canal atresia-mandibular hypoplasia-skeletal anomalies syndrome	2a	Moderate	Existing	Established	4	
+JAM3	porencephaly-microcephaly-bilateral congenital cataract syndrome	2a	Strong	Established	Established	20	
+CACNA1S	malignant hyperthermia, susceptibility to, 5	2a	Moderate	Established	Established	20	
+CYP26B1	lethal occipital encephalocele-skeletal dysplasia syndrome	2a	Moderate	Established	Established	20	
+FOXA2	combined pituitary hormone deficiencies, genetic form	2a	Moderate	Established	Established	20	
+BUB1	microcephaly 30, primary, autosomal recessive	2a	Moderate	Existing	Existing	20	
+CLDN11	leukodystrophy, hypomyelinating, 22	2a	Moderate	Established	Established	16	
+DAW1	visceral heterotaxy	2a	Moderate	Established	Established	8	
+C3orf52	hypotrichosis 15	2a	Moderate	Established	Established	6	
+FASTKD5	Leigh syndrome	2a	Moderate	Existing	Existing	8	
+KLF13	congenital heart disease	2a	Moderate	Established	Established	17	
+CADM3	Charcot-Marie-Tooth disease, axonal, type 2FF	2a	Moderate	Established	Established	17	
+IL2RB	immunodeficiency 63 with lymphoproliferation and autoimmunity	2a	Moderate	Established	Established	20	
+PMM2	hyperinsulinemic hypoglycemia with polycystic kidney disease	2a	Moderate	Established	Established	20	
+SFTPA1	interstitial lung disease 1	2a	Moderate	Established	Established	20	
+FRMD5	neurodevelopmental disorder with eye movement abnormalities and ataxia	2a	Moderate	Established	Established	6	
+RHOG	hemophagocytic lymphohistiocytosis due to RhoG deficiency	2a	Moderate	Existing	Existing	20	
+ERI1	spondyloepimetaphyseal dysplasia, Guo-Campeau type	2a	Moderate	Established	Established	12	
+LNPK	neurodevelopmental disorder with epilepsy and hypoplasia of the corpus callosum	2a	Moderate	Established	Established	10	
+TDRD7	cataract 36	2a	Moderate	Established	Established	20	
+NME5	ciliary dyskinesia, primary, 48, without situs inversus	2a	Moderate	Established	Established	14	
+ADAT3	intellectual disability-strabismus syndrome	2a	Moderate	Established	Established	20	
+SREBF1	hereditary mucoepithelial dysplasia	2a	Moderate	Established	Established	20	
+SLFN14	platelet-type bleeding disorder 20	2a	Moderate	Established	Established	16	
+MTSS2	intellectual developmental disorder with ocular anomalies and distinctive facial features	2a	Moderate	Established	Established	7	
+RRAGC	Long-Olsen-Distelmaier syndrome	2a	Moderate	Established	Established	20	
+CD28	immunodeficiency 123 with HPV-related verrucosis	2a	Moderate	Existing	Existing	20	
+MAP3K20	split-foot malformation-mesoaxial polydactyly syndrome	2a	Moderate	Established	Established	20	
+PLAU	Quebec platelet disorder	2a	Moderate	Established	Established	20	
+ABCA2	intellectual developmental disorder with poor growth and with or without seizures or ataxia	2a	Moderate	Established	Established	20	
+NSMCE3	lung disease, immunodeficiency, and chromosome breakage syndrome;	2a	Limited	Established	Established	15	
+FBXO32	dilated cardiomyopathy	2a	Limited	Established	Established	20	
+ZNF713	autism	2a	Limited	Existing	Existing	2	
+CHD5	parenti-mignot neurodevelopmental syndrome	2a	Limited	Established	Established	20	
+TCHH	uncombable hair syndrome 3	2a	Limited	Established	Established	20	
+GAS1	holoprosencephaly	2a	Limited	Established	Established	20	
+VIP	Asperger syndrome	2a	Limited	Hypothesized	Hypothesized	20	
+GPKOW	holoprosencephaly-hypokinesia-congenital contractures syndrome	2a	Moderate	Existing	Established	3	
+NOTCH3	inherited thrombocytopenia	2a	Limited	Existing	Existing	1	
+IFT43	retinitis pigmentosa 81	2a	Limited	Existing	Existing	20	
+TLL1	atrial septal defect 6	2a	Limited	Established	Established	20	
+MARK3	visual impairment and progressive phthisis bulbi	2a	Limited	Existing	Existing	20	
+NDRG4	achromatopsia	2a	Limited	Novel	Novel	13	
+KLF10	familial hypertrophic cardiomyopathy	2a	Limited	Existing	Existing	18	
+DSCAML1	retinitis pigmentosa	2a	Limited	Hypothesized	Hypothesized	19	
+TEAD1	helicoid peripapillary chorioretinal degeneration	2a	Limited	Established	Established	20	
+CD81	immunodeficiency, common variable, 6	2a	Limited	Established	Established	20	
+TRAPPC10	neurodevelopmental disorder with microcephaly, short stature, and speech delay	2a	Limited	Established	Established	18	
+EOMES	microcephaly-polymicrogyria-corpus callosum agenesis syndrome	2a	Limited	Existing	Existing	20	
+B2M	hypoproteinemia, hypercatabolic	2a	Limited	Existing	Existing	20	
+THG1L	spinocerebellar ataxia, autosomal recessive 28	2a	Limited	Established	Established	8	
+EFNB2	congenital heart disease	2a	Limited	Existing	Existing	20	
+MAN2A2	disorder of glycosylation	2a	Limited	Established	Established	12	
+GREM2	tooth agenesis, selective, 9	2a	Limited	Established	Established	20	
+CFAP57	primary ciliary dyskinesia	2a	Limited	Existing	Existing	8	
+SPP2	retinitis pigmentosa	2a	Limited	Existing	Existing	10	
+KIF1B	Charcot-Marie-Tooth disease type 2A1	2a	Limited	Existing	Existing	20	
+CHRD	congenital heart disease	2a	Limited	Existing	Existing	20	
+SLC30A7	Joubert syndrome	2a	Limited	Existing	Existing	11	
+TNFSF12	common variable immunodeficiency	2a	Limited	Existing	Existing	20	
+HAS2	congenital heart disease	2a	Limited	Existing	Existing	20	
+SHANK3	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+KANK2	wooly hair-palmoplantar keratoderma syndrome	2a	Limited	Established	Established	10	
+PRDM5	Axenfeld-Rieger syndrome	2a	Limited	Existing	Existing	20	
+DNAH7	primary ciliary dyskinesia	2a	Limited	Existing	Existing	14	
+NPM1	bone marrow failure syndrome	2a	Limited	Existing	Existing	20	
+TNFSF13	common variable immunodeficiency	2a	Limited	Existing	Existing	20	
+ARID1B	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+AVIL	nephrotic syndrome, type 21	2a	Limited	Existing	Established	16	
+MMP14	Winchester syndrome	2a	Limited	Established	Established	20	
+CHD8	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+PTEN	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SCN2A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ADNP	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+GRIN2B	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+DYRK1A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ANKRD11	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+LAS1L	Wilson-Turner syndrome	2a	Limited	Established	Established	12	
+FOXP1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SYNGAP1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CHD2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+POGZ	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+LEFTY2	visceral heterotaxy	2a	Limited	Existing	Existing	20	
+STXBP1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+EHMT1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+NRXN1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TCF20	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+DEAF1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+DYNC1H1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+TCF4	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ASXL3	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+KDM5B	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	20	
+PPP2R5D	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+MEF2C	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TLK2	Autism Spectrum Disorder	2b	ASD known	Established	Established	16	
+KMT2A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+KDM6B	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+NAA15	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SATB2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CDK13	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+CTCF	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CTNNB1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+WAC	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+KMT5B	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+AHDC1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ASH1L	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+NF1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+GIGYF1	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	18	
+EBF3	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SLC6A1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CUL3	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+DLG4	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+AUTS2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+BCL11A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TBR1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+MED13L	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+MARK2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+HNRNPU	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+KMT2C	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+EP300	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SETD5	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+MYT1L	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+BRAF	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	9	
+BRSK2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+MBD5	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TSC2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SCN1A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+DNMT3A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TRIP12	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TBL1XR1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+GABRA1	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+CNOT3	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ZEB2	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+RAI1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+PPP3CA	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+GATAD2B	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Existing	20	
+NR3C2	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	20	
+IRF2BPL	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+TANC2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+DLL1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+MED13	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TAOK1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ZNF292	Autism Spectrum Disorder	2b	ASD known	Established	Established	15	
+SRCAP	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+KCNQ3	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+AP2S1	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	6	
+ACTB	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+SHANK2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SOX5	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+SON	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+SMAD4	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CIC	Autism Spectrum Disorder	2b	ASD known	Established	Established	17	
+RORB	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Existing	20	
+CLTC	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	20	
+SYNCRIP	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SMARCA2	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+PTPN11	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+TM9SF4	Autism Spectrum Disorder	2b	novel candidate	Existing	Existing	2	
+ZBTB20	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+POU3F3	Autism Spectrum Disorder	2b	ASD known	Established	Established	19	
+WDFY3	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CAMTA1	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	16	
+GRIN1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+PHF21A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SPEN	Autism Spectrum Disorder	2b	ASD known	Established	Established	17	
+PUF60	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	20	
+DNM1	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+KMT2E	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CSNK2A1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TCF12	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+SMARCA4	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+FOXP2	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+RFX3	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TUBB2A	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+RFX7	Autism Spectrum Disorder	2b	ASD known	Established	Established	6	
+SIN3A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ANK2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+QRICH1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	11	
+KCNQ2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+NSD1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+KCNB1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+PRR12	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	8	
+NR2F1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+GRIA2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SPTBN1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ZMYM2	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	15	
+SOX11	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+PACS1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+GRIN2A	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+SETD1B	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SETD1A	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+CHD7	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SKI	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	19	
+CSNK1E	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Novel	20	
+CREBBP	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+TCF7L2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+VEZF1	Autism Spectrum Disorder	2b	ASD candidate	Novel	Novel	16	
+EEF1A2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+KCNMA1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+FOXG1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+ZNF865	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	2	
+CACNA1A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+WDR26	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+TRIO	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+YWHAG	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+NSD2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ATAT1	Autism Spectrum Disorder	2b	novel candidate	Novel	Novel	20	
+NBEA	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+FBXW11	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	10	
+PBX1	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+GABRB3	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+TNRC6B	Autism Spectrum Disorder	2b	ASD known	Established	Established	13	
+MSL2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+ARF3	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+SETBP1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SCN8A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+PTPRS	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+BRD4	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+YLPM1	Autism Spectrum Disorder	2b	novel candidate	Hypothesized	Novel	8	
+ZMYND8	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	6	
+KCND3	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+ZBTB34	Autism Spectrum Disorder	2b	novel candidate	Novel	Novel	2	
+USP7	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+FBXO11	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+HIVEP2	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	19	
+PPP2CA	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+REV3L	Autism Spectrum Disorder	2b	ASD candidate	Novel	Novel	20	
+H1-4	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+DHDDS	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+ZNF536	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	10	
+CNOT1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+TUBB3	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	20	
+NR4A2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+SETD2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+DSCAM	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	20	
+XPO1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	17	
+ITSN1	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	20	
+PPP2R1A	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	19	
+EMC7	Autism Spectrum Disorder	2b	novel candidate	Novel	Novel	0	
+KCNA2	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	20	
+LMTK3	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	1	
+PHF12	Autism Spectrum Disorder	2b	ASD known	Novel	Novel	3	
+SCAF1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	16	
+ZFHX3	Autism Spectrum Disorder	2b	ASD known	Existing	Established	12	
+KBTBD6	Autism Spectrum Disorder	2b	novel candidate	Novel	Novel	2	
+EP400	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+RAB14	Autism Spectrum Disorder	2b	ASD candidate	Novel	Novel	20	
+GNB1	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+MAGEL2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+NRXN3	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	20	
+NCKAP1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+MTOR	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	20	
+KANSL1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+NFIB	Autism Spectrum Disorder	2b	ASD known	Established	Established	16	
+SMARCB1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Established	20	
+PTK2	Autism Spectrum Disorder	2b	novel candidate	Hypothesized	Hypothesized	20	
+PTPRT	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	3	
+EGR3	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+ARID1A	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	19	
+PCLO	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+PSMC5	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+YY1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Established	20	
+ATP2B2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CGREF1	Autism Spectrum Disorder	2b	novel candidate	Hypothesized	Novel	3	
+MAF	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+MAP1A	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	20	
+LEMD3	Autism Spectrum Disorder	2b	novel candidate	Hypothesized	Novel	14	
+GSE1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	7	
+UBR5	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CAMK2A	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+TLE3	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Existing	12	
+CHAMP1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CAPRIN1	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+EFTUD2	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+JARID2	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+GSK3B	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+GABBR2	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+KMT2D	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+SYT1	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+PTCH1	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Existing	20	
+LRRC4	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	19	
+ADGRB1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Established	15	
+ZBTB7A	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+RALGAPB	Autism Spectrum Disorder	2b	ASD candidate	Existing	Established	10	
+SLTM	Autism Spectrum Disorder	2b	novel candidate	Novel	Novel	4	
+TRIM8	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Novel	20	
+HNRNPD	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	20	
+FBXW7	Autism Spectrum Disorder	2b	ASD candidate	Existing	Hypothesized	18	
+PSMD12	Autism Spectrum Disorder	2b	ASD known	Established	Established	19	
+MEIS2	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+TRAF7	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	14	
+BCR	Autism Spectrum Disorder	2b	novel candidate	Hypothesized	Hypothesized	5	
+SPPL3	Autism Spectrum Disorder	2b	novel candidate	Existing	Existing	17	
+TOP3B	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	19	
+SRSF1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+GABRA4	Autism Spectrum Disorder	2b	ASD candidate	Established	Established	20	
+RANBP2	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Novel	20	
+ACTG1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+GNAI1	Autism Spectrum Disorder	2b	ASD known	Existing	Established	20	
+NACC1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	15	
+ZCCHC14	Autism Spectrum Disorder	2b	novel candidate	Novel	Novel	3	
+DIP2C	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	8	
+PPM1D	Autism Spectrum Disorder	2b	ASD known	Established	Established	15	
+CERT1	Autism Spectrum Disorder	2b	ASD known	Hypothesized	Hypothesized	20	
+ZNF644	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	9	
+KIF1A	Autism Spectrum Disorder	2b	ASD known	Established	Established	20	
+CXXC1	Autism Spectrum Disorder	2b	novel candidate	Novel	Novel	17	
+PLXNA1	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+MAPK8IP3	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	20	
+INTS6	Autism Spectrum Disorder	2b	ASD known	Existing	Existing	9	
+C6ORF58	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+GNAO1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+BRD1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	19	
+MKX	Autism Spectrum Disorder	2b	novel candidate	Hypothesized	Hypothesized	4	
+TAF4	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Existing	20	
+HSF2	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+CELF4	Autism Spectrum Disorder	2b	ASD known	Existing	Established	11	
+ZBTB18	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+PHF2	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	16	
+FAM81B	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+DCLK3	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	4	
+EXT1	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	18	
+BAZ2A	Autism Spectrum Disorder	2b	ASD candidate	Hypothesized	Hypothesized	20	
+FAM151A	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	1	
+GOLGA6C	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+FKBP1C	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+GRIK3	Autism Spectrum Disorder	2b	novel candidate	Existing	Existing	20	
+MAP1B	Autism Spectrum Disorder	2b	ASD candidate	Existing	Existing	20	
+CLASP1	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	13	
+DDX28	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	3	
+CGGBP1	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	11	
+ACY1	Autism Spectrum Disorder	2b	not in ASC	Existing	Existing	20	
+CACNA1H	Autism Spectrum Disorder	2b	not in ASC	Established	Established	20	
+HEPN1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	2	
+FABP1	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	20	
+GAL3ST2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	5	
+FGF19	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+HAUS1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	2	
+HACD3	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	4	
+LY6G5C	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	3	
+BCAT1	Autism Spectrum Disorder	2b	novel candidate	Hypothesized	Hypothesized	20	
+ICAM5	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	11	
+H4C7	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+MYL6B	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	1	
+MFAP3L	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	3	
+IFT20	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+L3MBTL3	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	7	
+NOL4L	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	1	
+LARGE2	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Novel	10	
+LAMB4	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	9	
+MRPL49	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	8	
+SGSM1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	6	
+PLB1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	19	
+SIGLEC15	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	11	
+RGL2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	16	
+TBC1D25	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	2	
+PCBD1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	19	
+PLOD3	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+PHB2	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	20	
+PTH2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+TLCD1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	5	
+SLF1	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Novel	6	
+POU6F2	Autism Spectrum Disorder	2b	not in ASC	Existing	Existing	11	
+PTCHD1	Autism Spectrum Disorder	2b	not in ASC	Established	Established	20	
+TRIM58	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	1	
+ZNF653	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+NPTX1	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Existing	14	
+SKOR2	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	8	
+CEACAM4	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+PRDM16	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	20	
+AMY2B	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	14	
+VEPH1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	9	
+TSPAN2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	10	
+CGRRF1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	3	
+ARHGAP18	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	13	
+TPCN2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+CWF19L2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	1	
+C1QL4	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	1	
+C1QTNF2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	8	
+ANKFN1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	2	
+AOC3	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+CETN1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	11	
+SPR	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	13	
+BHMT2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+FAM47E-STBD1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+ELMOD2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	2	
+FAM189B	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+CD79A	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+EPS8L2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	5	
+DGKE	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	16	
+FKBPL	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	7	
+LRRC3C	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+NTPCR	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+MANEAL	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	2	
+FERD3L	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Novel	7	
+LITAF	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+HARS2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	11	
+LIN9	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+ERP44	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	20	
+RNFT1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+GRHL3	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+FZD2	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+EGF	Autism Spectrum Disorder	2b	not in ASC	Existing	Existing	20	
+PROSER3	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+NR2F6	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	10	
+MAP3K19	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	8	
+GREM1	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+PPP1CC	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	20	
+ZNF652	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+ELL	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	13	
+TTC21A	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	5	
+SPTSSB	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	3	
+TRIM34	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	3	
+SHFL	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	15	
+SNN	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	7	
+SPIB	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+MIP	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+PIK3R5	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	20	
+ATRAID	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	13	
+SPATA31A6	Autism Spectrum Disorder	2b	not in ASC	Novel	Novel	0	
+SLC2A1	Autism Spectrum Disorder	2b	not in ASC	Existing	Existing	20	
+SOX21	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	15	
+ARHGAP5	Autism Spectrum Disorder	2b	not in ASC	Hypothesized	Hypothesized	15	

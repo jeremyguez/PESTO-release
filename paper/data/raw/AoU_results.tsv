@@ -1,0 +1,273 @@
+gene_symbol	annotation	gene_id	phenoname	description	n_cases	n_controls	META_Pvalue_Burden	META_BETA_Burden	aou_Pvalue_Burden	aou_BETA_Burden	ukb_Pvalue_Burden	ukb_BETA_Burden	category	CAF.aou	CAF_0.01	CAF_0.001	CAF_0.0001	CAF.genebass
+ABCB4	pLoF	ENSG00000005471	3013721	aspartate aminotransferase	196568	0	4.2277e-11	positive	3.546e-6	positive	1.6956e-6	positive	lab_measurement	2.4694e-4	2.4694e-4	2.4694e-4	2.4694e-4	1.4334e-4
+ABCB4	pLoF	ENSG00000005471	3026910	gamma-glutamyl transferase	19697	0	1.5685e-7	positive	0.0056547	positive	2.0656e-6	positive	lab_measurement	2.4694e-4	2.4694e-4	2.4694e-4	2.4694e-4	1.4334e-4
+ABCC6	pLoF	ENSG00000091262	3011904	phosphate	83444	0	6.4485e-7	negative	0.10834	negative	1.963e-6	negative	lab_measurement	0.0026881	0.0026881	0.0013737	9.6876e-4	0.0036035
+ABCE1	pLoF	ENSG00000164163	3009744	mean corpuscular hemoglobin concentration	206085	0	1.3372e-7	negative	0.0011252	negative	3.3081e-5	negative	lab_measurement	4.0541e-5	4.0541e-5	4.0541e-5	4.0541e-5	3.4223e-5
+ABCG8	pLoF	ENSG00000143921	3028288	low density lipoprotein	115722	0	4.5248e-9	positive	4.7542e-4	positive	1.8678e-6	positive	lab_measurement	0.0014982	0.0014982	0.0014982	5.852e-4	0.0015007
+ADAMTS3	pLoF	ENSG00000156140	height	height	349848	0	4.4976e-7	negative	9.0409e-4	negative	1.4076e-4	negative	physical_measurement	2.2834e-4	2.2834e-4	2.2834e-4	2.2834e-4	1.2562e-4
+ADAMTS6	pLoF	ENSG00000049192	height	height	349848	0	4.3468e-8	negative	0.0018602	negative	4.3856e-6	negative	physical_measurement	2.5774e-5	2.5774e-5	2.5774e-5	2.5774e-5	2.4065e-5
+ADCY6	pLoF	ENSG00000174233	height	height	349848	0	2.5079e-11	negative	1.8129e-6	negative	2.9992e-6	negative	physical_measurement	1.3131e-4	1.3131e-4	1.3131e-4	1.3131e-4	1.8869e-4
+ADGRG6	pLoF	ENSG00000112414	height	height	349848	0	9.1418e-7	negative	0.019705	negative	5.4136e-6	negative	physical_measurement	3.2039e-4	3.2039e-4	3.2039e-4	3.2039e-4	1.8225e-4
+ALOX15	pLoF	ENSG00000161905	3010457	Eosinophils/100 leukocytes in Blood by Automated count	153943	0	2.3843e-8	negative	0.003456	negative	1.9848e-6	negative	lab_measurement	0.0013096	0.0013096	0.0013096	5.745e-4	7.879e-4
+ALOX15	pLoF	ENSG00000161905	3028615	Eosinophils [#/volume] in Blood by Automated count	151443	0	5.255e-7	negative	0.011776	negative	1.4097e-5	negative	lab_measurement	0.0013096	0.0013096	0.0013096	5.745e-4	7.879e-4
+AMD1	pLoF	ENSG00000123505	height	height	349848	0	3.7369e-7	positive	0.0035726	positive	2.264e-5	positive	physical_measurement	2.332e-5	2.332e-5	2.332e-5	2.332e-5	3.0437e-5
+ANGPTL3	pLoF	ENSG00000132855	3020149	vitamin D	62860	0	3.306e-7	positive	0.051403	positive	2.3719e-6	positive	lab_measurement	0.0013221	0.0013221	0.0013221	4.014e-4	0.0010139
+ANKRD11	pLoF	ENSG00000167522	MB_302.3	Specific developmental disorders of scholastic skills	212	176156	1.0288e-7	positive	0.010589	positive	1.2246e-6	positive	mcc2_phecodex	6.6302e-5	6.6302e-5	6.6302e-5	6.6302e-5	2.5327e-5
+ANKRD12	pLoF	ENSG00000101745	3007070	high density lipoprotein	152307	0	7.503e-11	negative	3.705e-6	negative	2.1193e-6	negative	lab_measurement	3.6357e-4	3.6357e-4	3.6357e-4	3.6357e-4	3.5613e-4
+ANKRD12	pLoF	ENSG00000101745	3033575	Monocytes [#/volume] in Blood by Automated count	147314	0	1.3788e-7	negative	0.0097903	negative	4.2873e-6	negative	lab_measurement	3.6357e-4	3.6357e-4	3.6357e-4	3.6357e-4	3.5613e-4
+ANKRD12	pLoF	ENSG00000101745	MB_302.3	Specific developmental disorders of scholastic skills	212	176156	4.5432e-7	positive	4.5109e-6	positive	0.0076228	positive	mcc2_phecodex	3.6357e-4	3.6357e-4	3.6357e-4	3.6357e-4	3.5613e-4
+ANKRD12	pLoF	ENSG00000101745	NS_331.6	Migraine	25947	258831	6.8085e-7	positive	3.6902e-5	positive	0.004591	positive	mcc2_phecodex	3.6357e-4	3.6357e-4	3.6357e-4	3.6357e-4	3.5613e-4
+ANTXR1	pLoF	ENSG00000169604	height	height	349848	0	1.7664e-8	negative	3.4675e-5	negative	1.2354e-4	negative	physical_measurement	6.6299e-5	6.6299e-5	6.6299e-5	6.6299e-5	2.281e-5
+APBA1	pLoF	ENSG00000107282	hip-circumference-mean	hip-circumference-mean	317479	0	1.335e-8	positive	3.6477e-4	positive	9.1982e-6	positive	physical_measurement	8.5935e-5	8.5935e-5	8.5935e-5	8.5935e-5	1.6843e-4
+APBA1	pLoF	ENSG00000107282	waist-circumference-mean	waist-circumference-mean	317523	0	5.215e-7	positive	0.0011246	positive	1.3373e-4	positive	physical_measurement	8.5935e-5	8.5935e-5	8.5935e-5	8.5935e-5	1.6843e-4
+APC	pLoF	ENSG00000134982	GI_513.2	Gastric ulcer	2228	284559	2.8521e-9	positive	2.5586e-4	positive	1.7022e-6	positive	mcc2_phecodex	2.1979e-4	2.1979e-4	2.1979e-4	2.1979e-4	1.1165e-4
+APC	pLoF	ENSG00000134982	GU_582.1	Acute kidney failure	16449	264301	1.3169e-9	positive	2.8504e-6	positive	9.5559e-5	positive	mcc2_phecodex	2.1979e-4	2.1979e-4	2.1979e-4	2.1979e-4	1.1165e-4
+APOB	pLoF	ENSG00000084674	3000963	Hemoglobin [Mass/volume] in Blood	212716	0	2.5299e-9	positive	2.9131e-4	positive	2.2177e-6	positive	lab_measurement	0.0011021	0.0011021	0.0011021	6.0382e-4	0.0012056
+APOB	pLoF	ENSG00000084674	3023314	hematocrit	197297	0	1.5895e-7	positive	9.7063e-4	positive	4.4142e-5	positive	lab_measurement	0.0011021	0.0011021	0.0011021	6.0382e-4	0.0012056
+APOB	pLoF	ENSG00000084674	3024929	platelets	199816	0	5.5332e-7	negative	8.895e-4	negative	1.5933e-4	negative	lab_measurement	0.0011021	0.0011021	0.0011021	6.0382e-4	0.0012056
+APOC3	pLoF	ENSG00000110245	3004410	Hemoglobin A1c/Hemoglobin.total in Blood	114580	0	2.5989e-7	positive	1.0751e-4	positive	1.7966e-4	positive	lab_measurement	0.0025979	0.0025979	7.6455e-4	3.4367e-5	0.0025137
+ARMC8	pLoF	ENSG00000114098	height	height	349848	0	3.4379e-7	negative	7.1872e-5	negative	0.0011008	negative	physical_measurement	4.7864e-5	4.7864e-5	4.7864e-5	4.7864e-5	3.6827e-5
+ATM	pLoF	ENSG00000149311	CA_121.21	Chronic lymphoid leukemia	638	175880	2.3236e-7	positive	0.0010347	positive	5.2968e-5	positive	mcc2_phecodex	0.0017335	0.0017335	0.0017335	0.0017335	0.001428
+ATP13A1	pLoF	ENSG00000105726	BMI	BMI	348874	0	5.4054e-8	positive	3.3073e-4	positive	4.3471e-5	positive	physical_measurement	1.1415e-4	1.1415e-4	1.1415e-4	1.1415e-4	1.7096e-4
+ATP13A1	pLoF	ENSG00000105726	hip-circumference-mean	hip-circumference-mean	317479	0	2.1047e-9	positive	2.4954e-4	positive	1.9287e-6	positive	physical_measurement	1.1415e-4	1.1415e-4	1.1415e-4	1.1415e-4	1.7096e-4
+BAG3	pLoF	ENSG00000151929	CV_414	Cardiomyopathy	8771	277532	1.5551e-7	positive	1.0612e-5	positive	0.0029504	positive	mcc2_phecodex	2.9454e-5	2.9454e-5	2.9454e-5	2.9454e-5	2.0262e-5
+BAG3	pLoF	ENSG00000151929	CV_424	Heart failure	16761	267017	3.0425e-8	positive	1.1016e-6	positive	0.0068922	positive	mcc2_phecodex	2.9454e-5	2.9454e-5	2.9454e-5	2.9454e-5	2.0262e-5
+BAK1	pLoF	ENSG00000030110	3024929	platelets	199816	0	1.1718e-8	positive	0.0024566	positive	1.245e-6	positive	lab_measurement	7.6094e-5	7.6094e-5	7.6094e-5	7.6094e-5	1.2412e-4
+BAZ1B	pLoF	ENSG00000009954	height	height	349848	0	5.8611e-7	negative	5.1965e-4	negative	3.2556e-4	negative	physical_measurement	5.1824e-5	5.1824e-5	5.1824e-5	5.1824e-5	7.2274e-5
+BRCA1	pLoF	ENSG00000012048	BI_170	Decreased white blood cell count	6117	279045	1.881e-8	positive	8.3291e-5	positive	4.8254e-5	positive	mcc2_phecodex	0.0011489	0.0011489	0.0011489	8.2483e-4	6.3774e-4
+BRCA2	pLoF	ENSG00000139618	BI_177.4	Lymphedema	3242	284744	2.9174e-7	positive	2.8576e-4	positive	1.3772e-4	positive	mcc2_phecodex	0.0020477	0.0020477	0.0020477	0.0018106	0.0014854
+BRCA2	pLoF	ENSG00000139618	CA_101.8	Malignant neoplasm of the pancreas	454	175930	8.9648e-7	positive	4.3527e-4	positive	5.4346e-4	positive	mcc2_phecodex	0.0020477	0.0020477	0.0020477	0.0018106	0.0014854
+BRCA2	pLoF	ENSG00000139618	CA_142	Lump or mass in breast or nonspecific abnormal breast exam	31801	255116	2.3251e-8	positive	1.002e-6	positive	0.0061754	positive	mcc2_phecodex	0.0020477	0.0020477	0.0020477	0.0018106	0.0014854
+BSN	pLoF	ENSG00000164061	BMI	BMI	348874	0	3.0993e-8	positive	7.7022e-6	positive	6.95e-4	positive	physical_measurement	1.8198e-4	1.8198e-4	1.8198e-4	1.8198e-4	1.0004e-4
+BSN	pLoF	ENSG00000164061	EM_202.2	Type 2 diabetes	48828	241224	1.4721e-7	positive	8.3905e-6	positive	0.0048195	positive	mcc2_phecodex	1.8198e-4	1.8198e-4	1.8198e-4	1.8198e-4	1.0004e-4
+BSN	pLoF	ENSG00000164061	hip-circumference-mean	hip-circumference-mean	317479	0	2.1961e-7	positive	2.4235e-6	positive	0.0063017	positive	physical_measurement	1.8198e-4	1.8198e-4	1.8198e-4	1.8198e-4	1.0004e-4
+BSN	pLoF	ENSG00000164061	waist-circumference-mean	waist-circumference-mean	317523	0	4.4026e-7	positive	3.4828e-6	positive	0.0087406	positive	physical_measurement	1.8198e-4	1.8198e-4	1.8198e-4	1.8198e-4	1.0004e-4
+BSN	pLoF	ENSG00000164061	weight	weight	349524	0	3.662e-9	positive	9.8524e-6	positive	8.1571e-5	positive	physical_measurement	1.8198e-4	1.8198e-4	1.8198e-4	1.8198e-4	1.0004e-4
+C2	pLoF	ENSG00000166278	3010457	Eosinophils/100 leukocytes in Blood by Automated count	153943	0	2.1439e-7	negative	0.026302	negative	2.2183e-6	negative	lab_measurement	0.0058667	0.0058667	4.7498e-4	3.2896e-4	0.0059509
+C2	pLoF	ENSG00000166278	NS_326	Demyelinating diseases of the central nervous system	2589	286308	7.2767e-9	positive	1.1175e-4	positive	1.2015e-5	positive	mcc2_phecodex	0.0058667	0.0058667	4.7498e-4	3.2896e-4	0.0059509
+CAVIN2	pLoF	ENSG00000168497	3043111	mean platelet volume	139928	0	1.8971e-8	negative	0.0054228	negative	1.0222e-6	negative	lab_measurement	1.718e-4	1.718e-4	1.718e-4	1.718e-4	3.6725e-5
+CBFA2T3	pLoF	ENSG00000129993	3020416	Erythrocytes [#/volume] in Blood by Automated count	207553	0	5.5293e-7	negative	1.9319e-4	negative	5.137e-4	negative	lab_measurement	9.4648e-5	9.4648e-5	9.4648e-5	9.4648e-5	1.1529e-4
+CBLB	pLoF	ENSG00000114423	EM_200.12	Hypothyroidism (not specified as secondary)	29909	262452	1.8445e-7	positive	7.5139e-5	positive	6.5697e-4	positive	mcc2_phecodex	9.4534e-5	9.4534e-5	9.4534e-5	9.4534e-5	8.2386e-5
+CCDC66	pLoF	ENSG00000180376	height	height	349848	0	2.7837e-8	positive	0.0020861	positive	2.2239e-6	positive	physical_measurement	0.013306	0.013306	0.004997	0.0019883	0.86982
+CCNA2	pLoF	ENSG00000145386	hip-circumference-mean	hip-circumference-mean	317479	0	6.1639e-10	negative	8.7171e-5	negative	1.6618e-6	negative	physical_measurement	4.2967e-5	4.2967e-5	4.2967e-5	4.2967e-5	3.04e-5
+CCNA2	pLoF	ENSG00000145386	weight	weight	349524	0	2.3969e-9	negative	1.5808e-4	negative	3.4748e-6	negative	physical_measurement	4.2967e-5	4.2967e-5	4.2967e-5	4.2967e-5	3.04e-5
+CCND3	pLoF	ENSG00000112576	3023599	mean corpuscular volume	202243	0	5.559e-8	positive	0.0070338	positive	1.9698e-6	positive	lab_measurement	4.9312e-5	4.9312e-5	4.9312e-5	4.9312e-5	2.0262e-5
+CCT3	pLoF	ENSG00000163468	3043111	mean platelet volume	139928	0	2.4703e-7	positive	0.0062726	positive	1.2017e-5	positive	lab_measurement	3.0684e-5	3.0684e-5	3.0684e-5	3.0684e-5	8.88e-6
+CDH4	pLoF	ENSG00000179242	NS_329.5	Mild cognitive impairment	2776	285018	4.1680000000000003e-07	positive	6.5592e-6	positive	0.020941	positive	mcc2_phecodex	7.8557e-5	7.8557e-5	7.8557e-5	7.8557e-5	6.9654e-5
+CEACAM1	pLoF	ENSG00000079385	3013721	aspartate aminotransferase	196568	0	1.7485e-7	positive	0.013595	positive	3.1191e-6	positive	lab_measurement	0.0012041	0.0012041	0.0012041	1.5345e-4	0.0021604
+CEBPE	pLoF	ENSG00000092067	3013869	basophil percentage	159822	0	5.4329e-7	positive	1.1466e-4	positive	5.1487e-4	positive	lab_measurement	3.0693e-5	3.0693e-5	3.0693e-5	3.0693e-5	3.4194e-5
+CETP	pLoF	ENSG00000087237	3028288	low density lipoprotein	115722	0	3.7545e-10	negative	1.9952e-6	negative	6.0092e-6	negative	lab_measurement	6.5179e-4	6.5179e-4	6.5179e-4	6.5179e-4	4.9782e-4
+CGN	pLoF	ENSG00000143375	3006923	alanine aminotransferase	180159	0	3.8707e-7	positive	0.023792	positive	4.0777e-6	positive	lab_measurement	0.0016684	0.0016684	0.0016684	9.2353e-4	0.0018414
+CGNL1	pLoF	ENSG00000128849	3035995	alkaline phosphatase	202023	0	6.736e-8	positive	2.5453e-6	positive	0.0011713	positive	lab_measurement	6.8369e-4	6.8369e-4	6.8369e-4	6.8369e-4	2.3735e-4
+CHD2	pLoF	ENSG00000173575	3000905	Leukocytes [#/volume] in Blood by Automated count	199027	0	2.2956e-9	positive	2.0451e-5	positive	1.7423e-5	positive	lab_measurement	2.4617e-5	2.4617e-5	2.4617e-5	2.4617e-5	6.3325e-6
+CHEK2	pLoF	ENSG00000183765	3009744	mean corpuscular hemoglobin concentration	206085	0	1.5379e-7	negative	7.9132e-5	negative	3.0201e-4	negative	lab_measurement	0.0018385	0.0018385	5.9035e-4	4.6517e-4	0.0032761
+CHEK2	pLoF	ENSG00000183765	3033575	Monocytes [#/volume] in Blood by Automated count	147314	0	1.1517e-7	positive	0.028148	positive	1.0805e-6	positive	lab_measurement	0.0018385	0.0018385	5.9035e-4	4.6517e-4	0.0032761
+CHSY1	pLoF	ENSG00000131873	height	height	349848	0	5.8942e-8	negative	0.0043111	negative	1.9342e-6	negative	physical_measurement	4.0744e-5	4.0744e-5	4.0744e-5	4.0744e-5	3.4192e-5
+CKAP5	pLoF	ENSG00000175216	WHR	WHR	317315	0	4.4793e-7	positive	0.001353	positive	9.3817e-5	positive	physical_measurement	6.6277e-5	6.6277e-5	6.6277e-5	6.6277e-5	3.9389e-5
+COL18A1	pLoF	ENSG00000182871	3007070	high density lipoprotein	152307	0	4.0712e-7	negative	0.0019885	negative	5.6395e-5	negative	lab_measurement	0.0010489	0.0010489	0.0010489	7.2736e-4	0.0028775
+COL1A1	pLoF	ENSG00000108821	3016723	Creatinine [Mass/volume] in Serum or Plasma	216128	0	1.1057e-7	negative	9.2069e-6	negative	9.6701e-4	negative	lab_measurement	4.9187e-5	4.9187e-5	4.9187e-5	4.9187e-5	5.9537e-5
+COL1A1	pLoF	ENSG00000108821	height	height	349848	0	2.8265e-9	negative	1.8102e-5	negative	3.7265e-5	negative	physical_measurement	4.9187e-5	4.9187e-5	4.9187e-5	4.9187e-5	5.9537e-5
+COL4A4	pLoF	ENSG00000081052	CM_761.13	Cystic kidney disease	1636	286481	9.2745e-7	positive	5.6418e-5	positive	0.0050522	positive	mcc2_phecodex	4.3945e-4	4.3945e-4	4.3945e-4	4.3945e-4	8.1369e-4
+COL8A1	pLoF	ENSG00000144810	height	height	349848	0	6.5612e-8	negative	0.0036039	negative	2.8601e-6	negative	physical_measurement	9.8302e-5	9.8302e-5	9.8302e-5	9.8302e-5	9.1184e-5
+COL9A3	pLoF	ENSG00000092758	SO_374.1	Retinal detachments and breaks	3320	284783	5.3535e-7	positive	0.014112	positive	7.9394e-6	positive	mcc2_phecodex	3.7349e-4	3.7349e-4	3.7349e-4	3.7349e-4	2.4452e-4
+CRISPLD1	pLoF	ENSG00000121005	height	height	349848	0	6.9958e-7	negative	2.0845e-5	negative	0.0049997	negative	physical_measurement	1.657e-4	1.657e-4	1.657e-4	1.657e-4	3.9258e-5
+CUL3	pLoF	ENSG00000036257	WHR	WHR	317315	0	5.5303e-7	positive	1.2305e-4	positive	0.0010326	positive	physical_measurement	2.8267e-5	2.8267e-5	2.8267e-5	2.8267e-5	1.9081e-5
+DGKH	pLoF	ENSG00000102780	CV_401.1	Essential hypertension	106344	176132	6.4717e-7	positive	1.2001e-5	positive	0.0067825	positive	mcc2_phecodex	2.7896e-4	2.7896e-4	2.7896e-4	2.7896e-4	2.6633e-4
+DGKH	pLoF	ENSG00000102780	blood-pressure-diastolic-mean	blood-pressure-diastolic-mean	353045	0	4.3213e-7	positive	1.6571e-4	positive	7.06e-4	positive	physical_measurement	2.7896e-4	2.7896e-4	2.7896e-4	2.7896e-4	2.6633e-4
+DGKH	pLoF	ENSG00000102780	blood-pressure-systolic-mean	blood-pressure-systolic-mean	353045	0	4.0968e-8	positive	3.7339e-6	positive	0.00161	positive	physical_measurement	2.7896e-4	2.7896e-4	2.7896e-4	2.7896e-4	2.6633e-4
+DIDO1	pLoF	ENSG00000101191	weight	weight	349524	0	2.5296e-9	positive	3.509e-4	positive	1.434e-6	positive	physical_measurement	2.8238e-5	2.8238e-5	2.8238e-5	2.8238e-5	3.2925e-5
+DNAJC13	pLoF	ENSG00000138246	3023599	mean corpuscular volume	202243	0	3.3907e-8	negative	0.0024691	negative	3.7702e-6	negative	lab_measurement	1.3047e-4	1.3047e-4	1.3047e-4	1.3047e-4	1.3285e-4
+DNMT3A	pLoF	ENSG00000119772	3010457	Eosinophils/100 leukocytes in Blood by Automated count	153943	0	2.6716e-7	negative	0.0028767	negative	2.6404e-5	negative	lab_measurement	7.475e-4	7.475e-4	7.475e-4	7.475e-4	3.1787e-4
+DOCK11	pLoF	ENSG00000147251	3043111	mean platelet volume	139928	0	2.1645e-7	negative	0.0069672	negative	9.5502e-6	negative	lab_measurement	2.513e-4	2.513e-4	2.513e-4	2.513e-4	2.0394e-4
+DOCK5	pLoF	ENSG00000147459	3043111	mean platelet volume	139928	0	5.1519e-7	negative	0.061794	negative	2.1667e-6	negative	lab_measurement	4.4957e-4	4.4957e-4	4.4957e-4	4.4957e-4	5.1166e-4
+DPP9	pLoF	ENSG00000142002	height	height	349848	0	8.0293e-10	positive	8.1274e-6	positive	2.2543e-5	positive	physical_measurement	9.3273e-5	9.3273e-5	9.3273e-5	9.3273e-5	5.9519e-5
+DYRK2	pLoF	ENSG00000127334	MB_282	Nicotine dependence (current and history of)	52360	225948	5.5076e-7	positive	0.0022448	positive	2.9571e-5	positive	mcc2_phecodex	2.2093e-5	2.2093e-5	2.2093e-5	2.2093e-5	3.1658e-5
+E2F4	pLoF	ENSG00000205250	3020416	Erythrocytes [#/volume] in Blood by Automated count	207553	0	6.3319e-9	negative	7.691e-4	negative	2.1852e-6	negative	lab_measurement	4.6135e-5	4.6135e-5	4.6135e-5	4.6135e-5	2.5327e-5
+EGLN1	pLoF	ENSG00000135766	3000963	Hemoglobin [Mass/volume] in Blood	212716	0	7.713e-7	positive	0.03152	positive	5.0894e-6	positive	lab_measurement	2.8327e-5	2.8327e-5	2.8327e-5	2.8327e-5	1.6462e-5
+EIF3M	pLoF	ENSG00000149100	3023599	mean corpuscular volume	202243	0	3.0117e-8	negative	6.9731e-6	negative	3.3878e-4	negative	lab_measurement	4.5448e-5	4.5448e-5	4.5448e-5	4.5448e-5	3.6739e-5
+ELK4	pLoF	ENSG00000158711	height	height	349848	0	4.1737e-8	negative	4.7006e-4	negative	2.2477e-5	negative	physical_measurement	6.2602e-5	6.2602e-5	6.2602e-5	6.2602e-5	5.8263e-5
+EMD	pLoF	ENSG00000102119	CV_416.2	Atrial fibrillation and flutter	16544	269200	9.676e-7	positive	6.3857e-5	positive	0.0027984	positive	mcc2_phecodex	9.1539e-6	9.1539e-6	9.1539e-6	9.1539e-6	3.8041e-6
+ENTPD7	pLoF	ENSG00000198018	3035995	alkaline phosphatase	202023	0	7.2038e-7	negative	6.504e-5	negative	0.0012909	negative	lab_measurement	8.7262e-4	8.7262e-4	8.7262e-4	3.8658e-4	7.6235e-4
+ERF	pLoF	ENSG00000105722	height	height	349848	0	1.0153e-8	negative	1.0492e-4	negative	2.4923e-5	negative	physical_measurement	3.4384e-5	3.4384e-5	3.4384e-5	3.4384e-5	7.5982e-6
+EXOC1	pLoF	ENSG00000090989	3023599	mean corpuscular volume	202243	0	6.6726e-7	negative	0.0017569	negative	1.0833e-4	negative	lab_measurement	3.253e-4	3.253e-4	3.253e-4	3.253e-4	1.9528e-4
+FAM117A	pLoF	ENSG00000121104	3023599	mean corpuscular volume	202243	0	5.1709e-8	positive	9.6723e-5	positive	9.6801e-5	positive	lab_measurement	1.058e-4	1.058e-4	1.058e-4	1.058e-4	8.2337e-5
+FAM234A	pLoF	ENSG00000167930	3004410	Hemoglobin A1c/Hemoglobin.total in Blood	114580	0	5.2065e-7	negative	9.8913e-6	negative	9.8742e-4	negative	lab_measurement	0.0012925	0.0012925	0.0012925	4.3724e-4	0.0019855
+FBN1	pLoF	ENSG00000166147	CV_413.1	Mitral valve disorders	10171	270346	3.4357e-9	positive	2.9134e-5	positive	6.0175e-6	positive	mcc2_phecodex	4.9111e-5	4.9111e-5	4.9111e-5	4.9111e-5	2.9277e-5
+FBN1	pLoF	ENSG00000166147	CV_413.2	Aortic valve disorders	7769	276145	2.1338e-9	positive	3.434e-5	positive	6.0836e-6	positive	mcc2_phecodex	4.9111e-5	4.9111e-5	4.9111e-5	4.9111e-5	2.9277e-5
+FGF2	pLoF	ENSG00000138685	height	height	349848	0	2.0689e-8	negative	2.8768e-4	negative	1.819e-5	negative	physical_measurement	5.0347e-5	5.0347e-5	5.0347e-5	5.0347e-5	1.9557e-4
+FLNA	pLoF	ENSG00000196924	3024929	platelets	199816	0	8.4706e-8	negative	1.4237e-6	negative	0.0017714	negative	lab_measurement	1.9791e-5	1.9791e-5	1.9791e-5	1.9791e-5	1.5227e-5
+FLT3	pLoF	ENSG00000122025	3033575	Monocytes [#/volume] in Blood by Automated count	147314	0	1.8528e-7	positive	3.7924e-6	positive	0.0010845	positive	lab_measurement	1.0311e-4	1.0311e-4	1.0311e-4	1.0311e-4	5.239e-5
+GAK	pLoF	ENSG00000178950	3019897	red cell distribution width	198324	0	7.7622e-7	positive	0.0016682000000000001	positive	1.3049e-4	positive	lab_measurement	1.7801e-4	1.7801e-4	1.7801e-4	1.7801e-4	1.2416e-4
+GAS6	pLoF	ENSG00000183087	3022192	triglycerides	143386	0	9.0822e-7	positive	0.055813	positive	4.4304e-6	positive	lab_measurement	1.5839e-4	1.5839e-4	1.5839e-4	1.5839e-4	1.4437e-4
+GDF11	pLoF	ENSG00000135414	height	height	349848	0	4.571e-7	positive	0.025662	positive	1.3836e-6	positive	physical_measurement	9.8196e-6	9.8196e-6	9.8196e-6	9.8196e-6	8.8646e-6
+GIGYF1	pLoF	ENSG00000146830	3020416	Erythrocytes [#/volume] in Blood by Automated count	207553	0	6.7785e-7	positive	0.0036348	positive	5.6358e-5	positive	lab_measurement	3.2272e-4	3.2272e-4	3.2272e-4	3.2272e-4	1.7351e-4
+GIGYF1	pLoF	ENSG00000146830	3035995	alkaline phosphatase	202023	0	1.6072e-7	positive	4.2761e-5	positive	4.6861e-4	positive	lab_measurement	3.2272e-4	3.2272e-4	3.2272e-4	3.2272e-4	1.7351e-4
+GLS	pLoF	ENSG00000115419	height	height	349848	0	7.9322e-9	negative	6.7638e-4	negative	2.3e-6	negative	physical_measurement	9.6997e-5	9.6997e-5	9.6997e-5	9.6997e-5	7.2249e-5
+GMPR	pLoF	ENSG00000137198	3000963	Hemoglobin [Mass/volume] in Blood	212716	0	2.8345e-7	positive	0.018665	positive	3.3226e-6	positive	lab_measurement	0.0023299	0.0023299	7.648e-4	1.4364e-4	0.0018629
+GOLGA6C	pLoF	ENSG00000167195	height	height	349848	0	3.4208e-7	positive	0.0070464	positive	7.9507e-6	positive	physical_measurement	0.0025016	0.0025016	1.947e-4	3.5348e-5	0.0072144
+GOLIM4	pLoF	ENSG00000173905	height	height	349848	0	2.6286e-7	positive	0.010023	positive	3.3612e-6	positive	physical_measurement	3.3703e-4	3.3703e-4	3.3703e-4	3.3703e-4	2.0773e-4
+GPAM	pLoF	ENSG00000119927	3035995	alkaline phosphatase	202023	0	1.5266e-7	negative	0.0095355	negative	4.0659e-6	negative	lab_measurement	1.9517e-4	1.9517e-4	1.9517e-4	1.9517e-4	1.884e-4
+GYPA	pLoF	ENSG00000170180	3009744	mean corpuscular hemoglobin concentration	206085	0	3.2631e-8	positive	0.0065536	positive	1.1759e-6	positive	lab_measurement	1.0072e-4	1.0072e-4	1.0072e-4	1.0072e-4	9.6026e-5
+H2BC6	pLoF	ENSG00000274290	3023599	mean corpuscular volume	202243	0	2.0189e-7	positive	0.024415	positive	1.6743e-6	positive	lab_measurement	0.0021512	0.0021512	4.5036e-4	1.9144e-4	NA
+HBA1	pLoF	ENSG00000206172	3019897	red cell distribution width	198324	0	1.963e-8	positive	1.4383e-5	positive	1.4654e-4	positive	lab_measurement	1.1145e-4	1.1145e-4	1.1145e-4	1.1145e-4	2.3251e-5
+HBA2	pLoF	ENSG00000188536	3009744	mean corpuscular hemoglobin concentration	206085	0	9.61e-8	negative	4.7374e-4	negative	5.0907e-5	negative	lab_measurement	2.4983e-5	2.4983e-5	2.4983e-5	2.4983e-5	1.0132e-5
+HBB	pLoF	ENSG00000244734	3007124	reticulocyte percentage	13486	0	3.2634e-7	positive	0.057374	positive	1.3068e-6	positive	lab_measurement	6.8603e-4	6.8603e-4	6.8603e-4	4.4919e-4	7.4797e-5
+HDHD5	pLoF	ENSG00000069998	3035995	alkaline phosphatase	202023	0	6.6357e-7	negative	0.0060226	negative	3.311e-5	negative	lab_measurement	4.7961e-4	4.7961e-4	4.7961e-4	2.2792e-4	7.1804e-4
+HGFAC	pLoF	ENSG00000109758	3024561	Albumin [Mass/volume] in Serum or Plasma	179811	0	5.8193e-10	positive	1.0862e-4	positive	1.2547e-6	positive	lab_measurement	0.0032882	0.0032882	7.3093e-4	6.2418e-4	0.0012909
+HMGA2	pLoF	ENSG00000149948	height	height	349848	0	2.0504e-7	negative	3.2418e-6	negative	0.0059357	negative	physical_measurement	7.3651e-6	7.3651e-6	7.3651e-6	7.3651e-6	3.8325e-6
+HNRNPA1	pLoF	ENSG00000135486	3024561	Albumin [Mass/volume] in Serum or Plasma	179811	0	7.4478e-7	positive	0.0053587	positive	4.2406e-5	positive	lab_measurement	5.5241e-5	5.5241e-5	5.5241e-5	5.5241e-5	6.0896e-5
+HOXC9	pLoF	ENSG00000180806	WHR	WHR	317315	0	3.4433e-7	positive	2.9883e-4	positive	3.1366e-4	positive	physical_measurement	3.1913e-5	3.1913e-5	3.1913e-5	3.1913e-5	1.4183e-4
+ICE1	pLoF	ENSG00000164151	weight	weight	349524	0	4.0917e-8	positive	5.6161e-6	positive	0.0011113	positive	physical_measurement	2.283e-4	2.283e-4	2.283e-4	2.283e-4	1.9779e-4
+IGF1R	pLoF	ENSG00000140443	weight	weight	349524	0	2.6319e-8	negative	0.0016794	negative	2.8003e-6	negative	physical_measurement	1.0939e-4	1.0939e-4	1.0939e-4	1.0939e-4	9.5077e-5
+IGF2BP3	pLoF	ENSG00000136231	height	height	349848	0	3.8186e-7	negative	3.4944e-4	negative	3.0894e-4	negative	physical_measurement	1.4729e-5	1.4729e-5	1.4729e-5	1.4729e-5	2.2818e-5
+IL17RA	pLoF	ENSG00000177663	3011948	monocyte percentage	156445	0	3.8556e-7	negative	0.0013065	negative	7.2016e-5	negative	lab_measurement	1.7307e-4	1.7307e-4	1.7307e-4	1.7307e-4	1.0892e-4
+IL5	pLoF	ENSG00000113525	3010457	Eosinophils/100 leukocytes in Blood by Automated count	153943	0	1.9774e-7	negative	2.8253e-4	negative	1.1495e-4	negative	lab_measurement	7.4871e-5	7.4871e-5	7.4871e-5	7.4871e-5	3.0402e-5
+IQGAP2	pLoF	ENSG00000145703	3020416	Erythrocytes [#/volume] in Blood by Automated count	207553	0	3.7739e-7	positive	0.001538	positive	6.9954e-5	positive	lab_measurement	0.0011377	0.0011377	0.0011377	7.5604e-4	0.0013328
+IRS2	pLoF	ENSG00000185950	3004410	Hemoglobin A1c/Hemoglobin.total in Blood	114580	0	1.3921e-8	positive	3.467e-5	positive	2.7062e-5	positive	lab_measurement	8.1324e-5	8.1324e-5	8.1324e-5	8.1324e-5	4.433e-5
+IRS2	pLoF	ENSG00000185950	3016723	Creatinine [Mass/volume] in Serum or Plasma	216128	0	7.1872e-7	positive	4.0119e-6	positive	0.0064309	positive	lab_measurement	8.1324e-5	8.1324e-5	8.1324e-5	8.1324e-5	4.433e-5
+IRS2	pLoF	ENSG00000185950	EM_202.2	Type 2 diabetes	48828	241224	1.0326e-7	positive	0.0010258	positive	6.9529e-6	positive	mcc2_phecodex	8.1324e-5	8.1324e-5	8.1324e-5	8.1324e-5	4.433e-5
+IRS2	pLoF	ENSG00000185950	GU_582.1	Acute kidney failure	16449	264301	9.3179e-7	positive	1.3363e-4	positive	0.0018944	positive	mcc2_phecodex	8.1324e-5	8.1324e-5	8.1324e-5	8.1324e-5	4.433e-5
+KDM5B	pLoF	ENSG00000117139	3016723	Creatinine [Mass/volume] in Serum or Plasma	216128	0	9.1293e-9	negative	0.0017221	negative	1.3358e-6	negative	lab_measurement	4.5042e-4	4.5042e-4	4.5042e-4	4.5042e-4	2.9659e-4
+KDM5B	pLoF	ENSG00000117139	3020149	vitamin D	62860	0	2.3913e-7	negative	0.023939	negative	3.2341e-6	negative	lab_measurement	4.5042e-4	4.5042e-4	4.5042e-4	4.5042e-4	2.9659e-4
+KIAA0586	pLoF	ENSG00000100578	hip-circumference-mean	hip-circumference-mean	317479	0	3.616e-7	negative	6.9715e-4	negative	1.484e-4	negative	physical_measurement	0.005445	0.005445	0.0013552	6.7885e-4	0.0058101
+KIAA0586	pLoF	ENSG00000100578	weight	weight	349524	0	1.1454e-9	negative	2.4482e-5	negative	1.141e-5	negative	physical_measurement	0.005445	0.005445	0.0013552	6.7885e-4	0.0058101
+KIF1B	pLoF	ENSG00000054523	BMI	BMI	348874	0	3.0237e-9	positive	8.3264e-5	positive	8.9758e-6	positive	physical_measurement	1.0446e-4	1.0446e-4	1.0446e-4	1.0446e-4	1.1827e-4
+KIF1B	pLoF	ENSG00000054523	hip-circumference-mean	hip-circumference-mean	317479	0	2.0307e-9	positive	8.6596e-5	positive	5.8192e-6	positive	physical_measurement	1.0446e-4	1.0446e-4	1.0446e-4	1.0446e-4	1.1827e-4
+KIF1B	pLoF	ENSG00000054523	waist-circumference-mean	waist-circumference-mean	317523	0	2.9173e-10	positive	6.5582e-5	positive	1.0247e-6	positive	physical_measurement	1.0446e-4	1.0446e-4	1.0446e-4	1.0446e-4	1.1827e-4
+KIF1B	pLoF	ENSG00000054523	weight	weight	349524	0	1.73e-7	positive	3.0604e-4	positive	1.5739e-4	positive	physical_measurement	1.0446e-4	1.0446e-4	1.0446e-4	1.0446e-4	1.1827e-4
+KLF2	pLoF	ENSG00000127528	3008342	neutrophil percentage	132533	0	1.4372e-7	positive	0.015932	positive	2.7972e-6	positive	lab_measurement	9.9678e-6	9.9678e-6	9.9678e-6	9.9678e-6	2.2796e-5
+KLHL9	pLoF	ENSG00000198642	height	height	349848	0	4.7902e-7	negative	0.018453	negative	2.6383e-6	negative	physical_measurement	1.2641e-4	1.2641e-4	1.2641e-4	1.2641e-4	2.1148e-4
+KNL1	pLoF	ENSG00000137812	3007070	high density lipoprotein	152307	0	8.9775e-7	negative	0.045249	negative	4.9235e-6	negative	lab_measurement	3.1216e-4	3.1216e-4	3.1216e-4	2.0905e-4	1.238e-4
+LARP1	pLoF	ENSG00000155506	3019897	red cell distribution width	198324	0	1.4079e-7	positive	6.8059e-5	positive	2.9487e-4	positive	lab_measurement	7.494e-5	7.494e-5	7.494e-5	7.494e-5	7.8528e-5
+LCAT	pLoF	ENSG00000213398	3019897	red cell distribution width	198324	0	2.5384e-7	positive	0.037379	positive	1.2195e-6	positive	lab_measurement	1.105e-4	1.105e-4	1.105e-4	1.105e-4	6.2051e-5
+LIPG	pLoF	ENSG00000101670	3027114	total cholesterol	156706	0	1.3968e-9	positive	1.7506e-4	positive	1.7019e-6	positive	lab_measurement	1.4114e-4	1.4114e-4	1.4114e-4	1.4114e-4	1.4945e-4
+LMX1B	pLoF	ENSG00000136944	weight	weight	349524	0	5.589e-8	negative	2.492e-6	negative	0.0024786	negative	physical_measurement	5.6558e-5	5.6558e-5	5.6558e-5	5.6558e-5	6.3369e-6
+LY75-CD302	pLoF	ENSG00000248672	3043111	mean platelet volume	139928	0	6.1356e-7	positive	0.038017	positive	4.8103e-6	positive	lab_measurement	0.0045784	0.0045784	0.0031842	0.0015505	NA
+LYST	pLoF	ENSG00000143669	3000905	Leukocytes [#/volume] in Blood by Automated count	199027	0	1.4275e-7	positive	0.0015178	positive	2.666e-5	positive	lab_measurement	4.3088e-4	4.3088e-4	4.3088e-4	4.3088e-4	3.5206e-4
+MAPK8IP1	pLoF	ENSG00000121653	CA_121.21	Chronic lymphoid leukemia	638	175880	4.4723e-7	positive	8.7914e-4	positive	1.3439e-4	positive	mcc2_phecodex	4.7934e-5	4.7934e-5	4.7934e-5	4.7934e-5	2.9144e-5
+MARCHF8	pLoF	ENSG00000165406	3019897	red cell distribution width	198324	0	7.7414e-7	positive	0.044798	positive	3.4179e-6	positive	lab_measurement	7.5485e-4	7.5485e-4	7.5485e-4	2.7622e-4	5.0701e-6
+MARK3	pLoF	ENSG00000075413	height	height	349848	0	5.4348e-7	positive	3.3276e-4	positive	4.6019e-4	positive	physical_measurement	1.3637e-4	1.3637e-4	1.3637e-4	1.3637e-4	1.153e-4
+MEN1	pLoF	ENSG00000133895	3006906	Calcium [Mass/volume] in Serum or Plasma	211231	0	7.1265e-10	positive	1.0127e-4	positive	1.7192e-6	positive	lab_measurement	1.4732e-5	1.4732e-5	1.4732e-5	1.4732e-5	1.1397e-5
+MIB1	pLoF	ENSG00000101752	3007070	high density lipoprotein	152307	0	9.4764e-8	negative	0.0017954	negative	1.4737e-5	negative	lab_measurement	0.0016929	0.0016929	0.0016929	0.0016929	0.0012317
+MIB1	pLoF	ENSG00000101752	BMI	BMI	348874	0	1.8274e-7	positive	1.3058e-5	positive	0.0022132	positive	physical_measurement	0.0016929	0.0016929	0.0016929	0.0016929	0.0012317
+MIB1	pLoF	ENSG00000101752	EM_202.2	Type 2 diabetes	48828	241224	3.9986e-8	positive	1.0114e-5	positive	0.0010942	positive	mcc2_phecodex	0.0016929	0.0016929	0.0016929	0.0016929	0.0012317
+MICA	pLoF	ENSG00000204520	height	height	349848	0	2.4093e-7	negative	0.012444	negative	2.1243e-6	negative	physical_measurement	0.003662	0.003662	2.6065e-4	2.6065e-4	0.26407
+MLXIPL	pLoF	ENSG00000009950	3022192	triglycerides	143386	0	2.578e-7	negative	0.0016017	negative	4.0149e-5	negative	lab_measurement	1.4781e-4	1.4781e-4	1.4781e-4	1.4781e-4	1.9923e-4
+MON2	pLoF	ENSG00000061987	WHR	WHR	317315	0	5.8792e-7	positive	0.0021333	positive	7.6327e-5	positive	physical_measurement	1.56e-4	1.56e-4	1.56e-4	1.56e-4	2.2491e-4
+MSH2	pLoF	ENSG00000095002	CA_108.5	Malignant neoplasm of the bladder	1343	174855	3.4777e-9	positive	5.6936e-6	positive	8.5815e-5	positive	mcc2_phecodex	1.737e-4	1.737e-4	1.737e-4	1.737e-4	8.771e-5
+MTM1	pLoF	ENSG00000171100	3016723	Creatinine [Mass/volume] in Serum or Plasma	216128	0	5.439e-7	negative	0.061703	negative	1.116e-6	negative	lab_measurement	2.1311e-5	2.1311e-5	2.1311e-5	2.1311e-5	1.1753e-5
+MTOR	pLoF	ENSG00000198793	height	height	349848	0	5.1405e-8	negative	0.0048882	negative	1.3549e-6	negative	physical_measurement	1.0187e-4	1.0187e-4	1.0187e-4	1.0187e-4	8.6137e-5
+MYBPC3	pLoF	ENSG00000134571	CV_416.1	Paroxysmal tachycardia	7401	277305	5.4015e-7	positive	4.3404e-5	positive	0.0035492	positive	mcc2_phecodex	4.1273e-4	4.1273e-4	4.1273e-4	4.1273e-4	1.7731e-4
+MYBPC3	pLoF	ENSG00000134571	CV_416.2	Atrial fibrillation and flutter	16544	269200	8.2783e-8	positive	3.4427e-4	positive	6.5816e-5	positive	mcc2_phecodex	4.1273e-4	4.1273e-4	4.1273e-4	4.1273e-4	1.7731e-4
+MYO1B	pLoF	ENSG00000128641	3035995	alkaline phosphatase	202023	0	2.3087e-7	positive	0.030926	positive	1.3598e-6	positive	lab_measurement	1.927e-4	1.927e-4	1.927e-4	1.927e-4	1.4957e-4
+MYO1B	pLoF	ENSG00000128641	hip-circumference-mean	hip-circumference-mean	317479	0	1.164e-7	negative	0.0038106	negative	6.0837e-6	negative	physical_measurement	1.927e-4	1.927e-4	1.927e-4	1.927e-4	1.4957e-4
+MYO1B	pLoF	ENSG00000128641	weight	weight	349524	0	4.6126e-7	negative	0.011255	negative	5.6525e-6	negative	physical_measurement	1.927e-4	1.927e-4	1.927e-4	1.927e-4	1.4957e-4
+MYO1C	pLoF	ENSG00000197879	3037511	Lymphocytes/100 leukocytes in Blood by Automated count	164691	0	1.8141e-9	positive	2.7172e-4	positive	1.5575e-6	positive	lab_measurement	4.0516e-4	4.0516e-4	4.0516e-4	4.0516e-4	2.9418e-4
+NAA15	pLoF	ENSG00000164134	EM_202.2	Type 2 diabetes	48828	241224	9.0131e-8	positive	1.4637e-6	positive	0.01295	positive	mcc2_phecodex	8.8405e-5	8.8405e-5	8.8405e-5	8.8405e-5	1.91e-5
+NEUROD1	pLoF	ENSG00000162992	3004410	Hemoglobin A1c/Hemoglobin.total in Blood	114580	0	3.9132e-7	positive	0.017997	positive	7.1624e-6	positive	lab_measurement	1.9653e-5	1.9653e-5	1.9653e-5	1.9653e-5	4.939e-5
+NF1	pLoF	ENSG00000196712	3020149	vitamin D	62860	0	8.3828e-8	negative	3.0966e-4	negative	1.7025e-5	negative	lab_measurement	2.9182e-4	2.9182e-4	2.9182e-4	2.9182e-4	1.6474e-4
+NF1	pLoF	ENSG00000196712	3023599	mean corpuscular volume	202243	0	2.4942e-7	negative	1.8539e-4	negative	2.521e-4	negative	lab_measurement	2.9182e-4	2.9182e-4	2.9182e-4	2.9182e-4	1.6474e-4
+NOS3	pLoF	ENSG00000164867	CV_401.1	Essential hypertension	106344	176132	4.4726e-7	positive	2.3048e-5	positive	0.0032585	positive	mcc2_phecodex	3.5836e-4	3.5836e-4	3.5836e-4	3.5836e-4	1.3446e-4
+NOTCH1	pLoF	ENSG00000148400	3033575	Monocytes [#/volume] in Blood by Automated count	147314	0	3.6886e-7	positive	0.014171	positive	8.1357e-6	positive	lab_measurement	5.2778e-5	5.2778e-5	5.2778e-5	5.2778e-5	2.786e-5
+NPC1L1	pLoF	ENSG00000015520	3027114	total cholesterol	156706	0	6.6322e-10	negative	1.9181e-5	negative	4.4146e-6	negative	lab_measurement	8.7387e-4	8.7387e-4	8.7387e-4	6.1118e-4	6.9907e-4
+NPR3	pLoF	ENSG00000113389	height	height	349848	0	2.1589e-7	positive	4.0137e-4	positive	1.5097e-4	positive	physical_measurement	8.8383e-5	8.8383e-5	8.8383e-5	8.8383e-5	8.2279e-5
+OSBP	pLoF	ENSG00000110048	3007070	high density lipoprotein	152307	0	1.1191e-7	negative	0.0015171	negative	2.0121e-5	negative	lab_measurement	4.0542e-5	4.0542e-5	4.0542e-5	4.0542e-5	3.9266e-5
+PARN	pLoF	ENSG00000140694	3020416	Erythrocytes [#/volume] in Blood by Automated count	207553	0	3.3151e-7	negative	0.0010289	negative	8.7715e-5	negative	lab_measurement	1.6081e-4	1.6081e-4	1.6081e-4	1.6081e-4	1.99e-4
+PCSK1	pLoF	ENSG00000175426	BMI	BMI	348874	0	8.8955e-8	positive	0.0020431	positive	8.9221e-6	positive	physical_measurement	1.4381e-4	1.4381e-4	1.4381e-4	1.4381e-4	1.4637e-4
+PCSK1	pLoF	ENSG00000175426	weight	weight	349524	0	1.9506e-7	positive	0.0016852	positive	2.7795e-5	positive	physical_measurement	1.4381e-4	1.4381e-4	1.4381e-4	1.4381e-4	1.4637e-4
+PDX1	pLoF	ENSG00000139515	3004501	blood glucose	215067	0	2.2219e-8	positive	4.4908e-6	positive	4.5681e-4	positive	lab_measurement	4.9114e-5	4.9114e-5	4.9114e-5	4.9114e-5	2.2807e-5
+PDX1	pLoF	ENSG00000139515	EM_202.2	Type 2 diabetes	48828	241224	4.0905e-7	positive	1.0351e-4	positive	0.0010919	positive	mcc2_phecodex	4.9114e-5	4.9114e-5	4.9114e-5	4.9114e-5	2.2807e-5
+PHF20L1	pLoF	ENSG00000129292	height	height	349848	0	2.9656e-8	negative	4.9519e-4	negative	1.4611e-5	negative	physical_measurement	7.9809e-5	7.9809e-5	7.9809e-5	7.9809e-5	8.3418e-5
+PIK3R4	pLoF	ENSG00000196455	3024561	Albumin [Mass/volume] in Serum or Plasma	179811	0	7.5377e-7	positive	0.090661	positive	1.0618e-6	positive	lab_measurement	1.0311e-4	1.0311e-4	1.0311e-4	1.0311e-4	1.3397e-4
+PKD1	pLoF	ENSG00000008710	3020416	Erythrocytes [#/volume] in Blood by Automated count	207553	0	6.1897e-9	negative	3.0562e-5	negative	3.3601e-5	negative	lab_measurement	2.9855e-4	2.9855e-4	2.9855e-4	2.9855e-4	2.4858e-4
+PKD1	pLoF	ENSG00000008710	3020630	protein	199433	0	3.9373e-7	negative	1.8902e-5	negative	0.0018156	negative	lab_measurement	2.9855e-4	2.9855e-4	2.9855e-4	2.9855e-4	2.4858e-4
+PKD1	pLoF	ENSG00000008710	3023314	hematocrit	197297	0	6.1325e-9	negative	3.917e-5	negative	2.6203e-5	negative	lab_measurement	2.9855e-4	2.9855e-4	2.9855e-4	2.9855e-4	2.4858e-4
+PKD1	pLoF	ENSG00000008710	3024929	platelets	199816	0	6.6983e-7	negative	6.7759e-5	negative	0.0011395	negative	lab_measurement	2.9855e-4	2.9855e-4	2.9855e-4	2.9855e-4	2.4858e-4
+PKD1	pLoF	ENSG00000008710	ID_092	Bacteremia, Sepsis, and SIRS	11951	270507	7.9128e-10	positive	4.1081e-6	positive	3.582e-5	positive	mcc2_phecodex	2.9855e-4	2.9855e-4	2.9855e-4	2.9855e-4	2.4858e-4
+PKD1	pLoF	ENSG00000008710	WHRadjBMI	WHRadjBMI	316628	0	2.8307e-8	positive	7.9288e-5	positive	8.9393e-5	positive	physical_measurement	2.9855e-4	2.9855e-4	2.9855e-4	2.9855e-4	2.4858e-4
+PKD2	pLoF	ENSG00000118762	blood-pressure-systolic-mean	blood-pressure-systolic-mean	353045	0	1.289e-7	positive	1.4715e-6	positive	0.0073204	positive	physical_measurement	1.2788e-4	1.2788e-4	1.2788e-4	1.2788e-4	1.0301e-4
+PKHD1	pLoF	ENSG00000170927	CM_761.13	Cystic kidney disease	1636	286481	2.2934e-8	positive	1.2865e-6	positive	0.0048959	positive	mcc2_phecodex	0.0020298	0.0020298	0.0020298	0.0014909	8.5526e-4
+PKP2	pLoF	ENSG00000057294	CV_416.2	Atrial fibrillation and flutter	16544	269200	3.1289e-7	positive	0.020199	positive	1.6222e-6	positive	mcc2_phecodex	6.2124e-4	6.2124e-4	6.2124e-4	6.2124e-4	8.0989e-4
+PLCD1	pLoF	ENSG00000187091	height	height	349848	0	4.0131e-7	negative	1.3259e-4	negative	7.7132e-4	negative	physical_measurement	8.873e-4	8.873e-4	8.873e-4	6.2591e-4	7.0922e-4
+PLIN4	pLoF	ENSG00000167676	WHR	WHR	317315	0	6.8138e-7	positive	0.011225	positive	1.094e-5	positive	physical_measurement	0.0067784	0.0067784	0.0042391	0.0014445	0.0044349
+PLIN4	pLoF	ENSG00000167676	weight	weight	349524	0	5.9686e-7	negative	0.0015917	negative	1.0268e-4	negative	physical_measurement	0.0067784	0.0067784	0.0042391	0.0014445	0.0044349
+PLOD2	pLoF	ENSG00000152952	height	height	349848	0	1.6007e-8	positive	0.0015691	positive	1.7131e-6	positive	physical_measurement	2.4304e-4	2.4304e-4	2.4304e-4	2.4304e-4	2.6132e-4
+PMS2	pLoF	ENSG00000122512	CA_101.41	Colorectal cancer	2437	285424	2.6382e-7	positive	4.2412e-5	positive	0.0012348	positive	mcc2_phecodex	5.1008e-4	5.1008e-4	5.1008e-4	5.1008e-4	4.3479e-4
+PRR14L	pLoF	ENSG00000183530	3004501	blood glucose	215067	0	8.3152e-9	positive	6.1562e-6	positive	1.6222e-4	positive	lab_measurement	2.2953e-4	2.2953e-4	2.2953e-4	2.2953e-4	2.09e-4
+PSD4	pLoF	ENSG00000125637	3004327	Lymphocytes [#/volume] in Blood by Automated count	155486	0	6.5657e-7	positive	0.04552	positive	3.7726e-6	positive	lab_measurement	1.6323e-4	1.6323e-4	1.6323e-4	1.6323e-4	2.8494e-4
+PTPN14	pLoF	ENSG00000152104	height	height	349848	0	2.1577e-7	negative	0.0066748	negative	4.9129e-6	negative	physical_measurement	1.1292e-4	1.1292e-4	1.1292e-4	1.1292e-4	1.4101e-4
+PTPRH	pLoF	ENSG00000080031	3004327	Lymphocytes [#/volume] in Blood by Automated count	155486	0	9.4164e-7	negative	0.0017736	negative	1.3209e-4	negative	lab_measurement	0.0058312	0.0058312	0.0026634	0.0010876	0.0038725
+PYGM	pLoF	ENSG00000068976	WHR	WHR	317315	0	3.4248e-7	positive	0.0066063	positive	1.0198e-5	positive	physical_measurement	0.0027065	0.0027065	6.242e-4	4.9045e-4	4.3254e-4
+RASAL3	pLoF	ENSG00000105122	3010457	Eosinophils/100 leukocytes in Blood by Automated count	153943	0	5.1426e-8	negative	0.011641	negative	1.2393e-6	negative	lab_measurement	0.0031064	0.0031064	5.1432e-4	5.1432e-4	0.0050084
+RB1	pLoF	ENSG00000139687	3019897	red cell distribution width	198324	0	3.0384e-9	positive	2.2849e-6	positive	9.4393e-5	positive	lab_measurement	2.4553e-5	2.4553e-5	2.4553e-5	2.4553e-5	1.5207e-5
+RB1CC1	pLoF	ENSG00000023287	hip-circumference-mean	hip-circumference-mean	317479	0	9.1846e-7	positive	6.4909e-6	positive	0.01084	positive	physical_measurement	1.0066e-4	1.0066e-4	1.0066e-4	1.0066e-4	7.0617e-5
+RGL3	pLoF	ENSG00000205517	3006906	Calcium [Mass/volume] in Serum or Plasma	211231	0	9.4356e-7	negative	0.0012018	negative	2.2281e-4	negative	lab_measurement	0.0032349	0.0032349	0.0032349	0.0011655	0.002741
+RGL3	pLoF	ENSG00000205517	blood-pressure-diastolic-mean	blood-pressure-diastolic-mean	353045	0	3.9872e-9	negative	3.7396e-5	negative	2.6812e-5	negative	physical_measurement	0.0032349	0.0032349	0.0032349	0.0011655	0.002741
+RIF1	pLoF	ENSG00000080345	3011948	monocyte percentage	156445	0	5.0158e-9	negative	1.7027e-5	negative	2.791e-5	negative	lab_measurement	7.8695e-5	7.8695e-5	7.8695e-5	7.8695e-5	1.1018e-4
+RRBP1	pLoF	ENSG00000125844	3027114	total cholesterol	156706	0	2.0545e-7	negative	0.020453	negative	2.7863e-6	negative	lab_measurement	4.7868e-4	4.7868e-4	4.7868e-4	3.5351e-4	1.4692e-4
+SBF1	pLoF	ENSG00000100241	3037511	Lymphocytes/100 leukocytes in Blood by Automated count	164691	0	2.0429e-7	negative	0.039357	negative	1.1631e-6	negative	lab_measurement	1.7487e-4	1.7487e-4	1.7487e-4	1.7487e-4	1.1779e-4
+SCAF11	pLoF	ENSG00000139218	height	height	349848	0	3.2766e-9	negative	1.9069e-4	negative	3.941e-6	negative	physical_measurement	1.0563e-4	1.0563e-4	1.0563e-4	1.0563e-4	1.9596e-4
+SCARF1	pLoF	ENSG00000074660	3043111	mean platelet volume	139928	0	2.3428e-8	positive	3.3619e-4	positive	1.3103e-5	positive	lab_measurement	4.5127e-4	4.5127e-4	4.5127e-4	3.272e-4	3.1912e-4
+SCUBE3	pLoF	ENSG00000146197	weight	weight	349524	0	1.0525e-8	negative	8.6776e-4	negative	2.3116e-6	negative	physical_measurement	1.0555e-4	1.0555e-4	1.0555e-4	1.0555e-4	9.3894e-5
+SETX	pLoF	ENSG00000107290	weight	weight	349524	0	9.7686e-8	negative	8.2375e-4	negative	3.0043e-5	negative	physical_measurement	4.9223e-4	4.9223e-4	4.9223e-4	4.9223e-4	4.0035e-4
+SF3B2	pLoF	ENSG00000087365	height	height	349848	0	2.3359e-8	negative	3.1784e-5	negative	1.742e-4	negative	physical_measurement	1.326e-4	1.326e-4	1.326e-4	1.326e-4	3.3442e-4
+SIGIRR	pLoF	ENSG00000185187	3004327	Lymphocytes [#/volume] in Blood by Automated count	155486	0	5.2396e-9	negative	0.0014139	negative	1.0069e-6	negative	lab_measurement	8.4499e-4	8.4499e-4	8.4499e-4	3.5655e-4	8.9024e-4
+SIN3A	pLoF	ENSG00000169375	EM_202.2	Type 2 diabetes	48828	241224	4.4064e-8	positive	1.9312e-4	positive	3.244e-5	positive	mcc2_phecodex	2.0871e-5	2.0871e-5	2.0871e-5	2.0871e-5	1.0136e-5
+SLC13A1	pLoF	ENSG00000081800	height	height	349848	0	1.9405e-10	negative	1.077e-5	negative	4.2289e-6	negative	physical_measurement	0.0036347	0.0036347	0.0012698	5.1994e-4	0.0043899
+SLC22A7	pLoF	ENSG00000137204	3016723	Creatinine [Mass/volume] in Serum or Plasma	216128	0	3.5049e-7	positive	0.0062937	positive	1.553e-5	positive	lab_measurement	2.0375e-4	2.0375e-4	2.0375e-4	2.0375e-4	2.2669e-4
+SLC30A8	pLoF	ENSG00000164756	3004410	Hemoglobin A1c/Hemoglobin.total in Blood	114580	0	2.5594e-8	negative	3.4588e-4	negative	1.1509e-5	negative	lab_measurement	5.8049e-4	5.8049e-4	5.8049e-4	4.4551e-4	2.5078e-4
+SLC38A2	pLoF	ENSG00000134294	height	height	349848	0	7.4494e-7	negative	2.9707e-4	negative	6.9565e-4	negative	physical_measurement	3.682e-5	3.682e-5	3.682e-5	3.682e-5	1.7735e-5
+SLC4A1	pLoF	ENSG00000004939	3000905	Leukocytes [#/volume] in Blood by Automated count	199027	0	7.191e-7	positive	0.012568	positive	1.6301e-5	positive	lab_measurement	3.3221e-5	3.3221e-5	3.3221e-5	3.3221e-5	3.9258e-5
+SMAD5	pLoF	ENSG00000113658	height	height	349848	0	4.1409e-7	negative	0.01857	negative	2.1626e-6	negative	physical_measurement	3.6821e-5	3.6821e-5	3.6821e-5	3.6821e-5	1.5337e-5
+SMAD6	pLoF	ENSG00000137834	CV_413.2	Aortic valve disorders	7769	276145	1.316e-7	positive	4.5816e-5	positive	7.282e-4	positive	mcc2_phecodex	5.6271e-4	5.6271e-4	5.6271e-4	5.6271e-4	5.0786e-4
+SOCS5	pLoF	ENSG00000171150	height	height	349848	0	4.0616e-7	positive	0.013197	positive	3.7376e-6	positive	physical_measurement	1.215e-4	1.215e-4	1.215e-4	1.215e-4	1.5957e-4
+SP100	pLoF	ENSG00000067066	3011948	monocyte percentage	156445	0	5.8279e-7	positive	0.0058564	positive	3.0599e-5	positive	lab_measurement	0.0028496	0.0028496	6.9714e-4	3.5842e-4	0.0041072
+SPECC1	pLoF	ENSG00000128487	3023599	mean corpuscular volume	202243	0	4.7542e-7	positive	0.0010173	positive	1.2418e-4	positive	lab_measurement	2.5784e-4	2.5784e-4	2.5784e-4	2.5784e-4	2.9257e-4
+SPIN4	pLoF	ENSG00000186767	height	height	349848	0	6.0165e-7	positive	2.6473e-4	positive	6.2578e-4	positive	physical_measurement	4.5678e-6	4.5678e-6	4.5678e-6	4.5678e-6	1.1398e-5
+SPRED2	pLoF	ENSG00000198369	3016723	Creatinine [Mass/volume] in Serum or Plasma	216128	0	7.2419e-8	negative	1.3091e-4	negative	1.1414e-4	negative	lab_measurement	1.3256e-4	1.3256e-4	1.3256e-4	1.3256e-4	1.2285e-4
+SPRED2	pLoF	ENSG00000198369	3020416	Erythrocytes [#/volume] in Blood by Automated count	207553	0	9.6987e-7	positive	0.02512	positive	9.3076e-6	positive	lab_measurement	1.3256e-4	1.3256e-4	1.3256e-4	1.3256e-4	1.2285e-4
+SPTB	pLoF	ENSG00000070182	3004410	Hemoglobin A1c/Hemoglobin.total in Blood	114580	0	1.6164e-7	negative	0.0026418	negative	1.5282e-5	negative	lab_measurement	1.6076e-4	1.6076e-4	1.6076e-4	1.6076e-4	1.2157e-4
+SPTB	pLoF	ENSG00000070182	3024128	Bilirubin.total [Mass/volume] in Serum or Plasma	192318	0	1.1525e-7	positive	0.0013455	positive	2.4002e-5	positive	lab_measurement	1.6076e-4	1.6076e-4	1.6076e-4	1.6076e-4	1.2157e-4
+SPTB	pLoF	ENSG00000070182	3024929	platelets	199816	0	2.8858e-7	positive	4.6005e-4	positive	1.4517e-4	positive	lab_measurement	1.6076e-4	1.6076e-4	1.6076e-4	1.6076e-4	1.2157e-4
+SREK1	pLoF	ENSG00000153914	height	height	349848	0	4.275e-11	negative	3.7209e-6	negative	2.5872e-6	negative	physical_measurement	6.3827e-5	6.3827e-5	6.3827e-5	6.3827e-5	2.4086e-5
+SRPK2	pLoF	ENSG00000135250	waist-circumference-mean	waist-circumference-mean	317523	0	2.6026e-7	positive	0.013448	positive	2.5772e-6	positive	physical_measurement	4.6664e-5	4.6664e-5	4.6664e-5	4.6664e-5	6.5962e-5
+STAB1	pLoF	ENSG00000010327	WHRadjBMI	WHRadjBMI	316628	0	3.5901e-7	negative	0.015309	negative	3.1333e-6	negative	physical_measurement	0.0017449	0.0017449	0.0017449	0.0016234	0.0022909
+STK38	pLoF	ENSG00000112079	3043111	mean platelet volume	139928	0	6.548e-7	negative	0.086306	negative	1.7941e-6	negative	lab_measurement	8.72e-5	8.72e-5	8.72e-5	8.72e-5	3.9274e-5
+SVEP1	pLoF	ENSG00000165124	3024929	platelets	199816	0	3.9182e-8	positive	0.0047548	positive	2.1527e-6	positive	lab_measurement	5.4265e-4	5.4265e-4	5.4265e-4	5.4265e-4	3.5459e-4
+TACR3	pLoF	ENSG00000169836	height	height	349848	0	1.3393e-8	positive	4.0899e-4	positive	7.6236e-6	positive	physical_measurement	5.9314e-4	5.9314e-4	5.9314e-4	1.2802e-4	1.279e-4
+TAOK1	pLoF	ENSG00000160551	3043111	mean platelet volume	139928	0	5.1625e-7	negative	0.0027623	negative	4.9703e-5	negative	lab_measurement	1.8439e-5	1.8439e-5	1.8439e-5	1.8439e-5	1.0132e-5
+TBX15	pLoF	ENSG00000092607	height	height	349848	0	1.5128e-7	negative	3.2099e-5	negative	9.7782e-4	negative	physical_measurement	2.8228e-5	2.8228e-5	2.8228e-5	2.8228e-5	3.0392e-5
+TET2	pLoF	ENSG00000168769	3004327	Lymphocytes [#/volume] in Blood by Automated count	155486	0	1.2122e-10	negative	1.5324e-6	negative	4.8664e-6	negative	lab_measurement	9.2418e-4	9.2418e-4	9.2418e-4	9.2418e-4	5.4719e-4
+TET2	pLoF	ENSG00000168769	BI_171	Elevated white blood cell count [Leukocytosis]	9616	267852	1.3624e-8	positive	1.7539e-6	positive	9.5729e-5	positive	mcc2_phecodex	9.2418e-4	9.2418e-4	9.2418e-4	9.2418e-4	5.4719e-4
+TET2	pLoF	ENSG00000168769	ID_092	Bacteremia, Sepsis, and SIRS	11951	270507	6.4031e-9	positive	2.2106e-4	positive	1.345e-6	positive	mcc2_phecodex	9.2418e-4	9.2418e-4	9.2418e-4	9.2418e-4	5.4719e-4
+THBS3	pLoF	ENSG00000169231	NS_336	Mononeuropathies	23720	257930	6.8253e-7	positive	0.0020717	positive	6.1043e-5	positive	mcc2_phecodex	7.5349e-4	7.5349e-4	7.5349e-4	6.5042e-4	7.5737e-4
+THBS3	pLoF	ENSG00000169231	height	height	349848	0	8.6504e-9	negative	0.0011342	negative	1.2935e-6	negative	physical_measurement	7.5349e-4	7.5349e-4	7.5349e-4	6.5042e-4	7.5737e-4
+TIMD4	pLoF	ENSG00000145850	3028288	low density lipoprotein	115722	0	2.2588e-7	positive	0.014277	positive	5.1004e-6	positive	lab_measurement	8.5297e-4	8.5297e-4	8.5297e-4	3.387e-4	3.3053e-4
+TIMD4	pLoF	ENSG00000145850	EM_239	Hyperlipidemia	101940	179115	7.0849e-8	positive	8.3883e-5	positive	2.2618e-4	positive	mcc2_phecodex	8.5297e-4	8.5297e-4	8.5297e-4	3.387e-4	3.3053e-4
+TMEM127	pLoF	ENSG00000135956	DE_660.12	Dermatophytosis	17439	257379	6.8065e-8	positive	0.0011798	positive	1.5693e-5	positive	mcc2_phecodex	8.471e-5	8.471e-5	8.471e-5	8.471e-5	8.991e-5
+TNFRSF10B	pLoF	ENSG00000120889	3024929	platelets	199816	0	1.968e-7	positive	0.0019473	positive	2.9187e-5	positive	lab_measurement	8.9096e-4	8.9096e-4	8.9096e-4	1.5834e-4	0.0013626
+TNPO3	pLoF	ENSG00000064419	WHR	WHR	317315	0	2.0487e-7	positive	0.011976	positive	2.3029e-6	positive	physical_measurement	1.6451e-4	1.6451e-4	1.6451e-4	1.6451e-4	9.6313e-5
+TPM4	pLoF	ENSG00000167460	3024929	platelets	199816	0	1.0959e-7	negative	5.0722e-6	negative	0.0011298	negative	lab_measurement	2.4552e-5	2.4552e-5	2.4552e-5	2.4552e-5	3.7991e-5
+TPM4	pLoF	ENSG00000167460	3043111	mean platelet volume	139928	0	4.4208e-10	positive	1.1206e-5	positive	3.5716e-6	positive	lab_measurement	2.4552e-5	2.4552e-5	2.4552e-5	2.4552e-5	3.7991e-5
+TRIM58	pLoF	ENSG00000162722	3043111	mean platelet volume	139928	0	6.8963e-7	negative	0.018719	negative	1.1896e-5	negative	lab_measurement	0.001577	0.001577	0.001577	3.67e-4	0.0015817
+TRPM4	pLoF	ENSG00000130529	blood-pressure-systolic-mean	blood-pressure-systolic-mean	353045	0	4.3259e-7	positive	8.7065e-5	positive	0.0012235	positive	physical_measurement	0.0040418	0.0040418	0.0017348	0.0010203	0.0042173
+TRPS1	pLoF	ENSG00000104447	height	height	349848	0	4.6515e-8	negative	2.2179e-5	negative	4.4672e-4	negative	physical_measurement	2.3324e-5	2.3324e-5	2.3324e-5	2.3324e-5	1.6462e-5
+UBR2	pLoF	ENSG00000024048	3019897	red cell distribution width	198324	0	4.3757e-7	positive	0.002658	positive	4.8721e-5	positive	lab_measurement	1.8903e-4	1.8903e-4	1.8903e-4	1.8903e-4	1.7618e-4
+UBR2	pLoF	ENSG00000024048	hip-circumference-mean	hip-circumference-mean	317479	0	1.1154e-8	positive	7.5856e-4	positive	3.2699e-6	positive	physical_measurement	1.8903e-4	1.8903e-4	1.8903e-4	1.8903e-4	1.7618e-4
+UBR2	pLoF	ENSG00000024048	weight	weight	349524	0	1.6095e-9	positive	1.0399e-4	positive	3.6168e-6	positive	physical_measurement	1.8903e-4	1.8903e-4	1.8903e-4	1.8903e-4	1.7618e-4
+UBR3	pLoF	ENSG00000144357	3004410	Hemoglobin A1c/Hemoglobin.total in Blood	114580	0	1.9102e-7	positive	0.0037804	positive	1.3594e-5	positive	lab_measurement	1.7813e-4	1.7813e-4	1.7813e-4	1.7813e-4	7.2218e-5
+UBR3	pLoF	ENSG00000144357	BMI	BMI	348874	0	2.6701e-7	positive	7.6967e-6	positive	0.0043005	positive	physical_measurement	1.7813e-4	1.7813e-4	1.7813e-4	1.7813e-4	7.2218e-5
+UBR3	pLoF	ENSG00000144357	waist-circumference-mean	waist-circumference-mean	317523	0	3.5585e-7	positive	3.177e-6	positive	0.0078269	positive	physical_measurement	1.7813e-4	1.7813e-4	1.7813e-4	1.7813e-4	7.2218e-5
+VARS1	pLoF	ENSG00000204394	3019897	red cell distribution width	198324	0	2.8833e-8	positive	1.3677e-4	positive	4.2888e-5	positive	lab_measurement	3.7817e-4	3.7817e-4	3.7817e-4	3.7817e-4	NA
+VARS1	pLoF	ENSG00000204394	3023599	mean corpuscular volume	202243	0	4.0201e-8	negative	3.513e-5	negative	1.5665e-4	negative	lab_measurement	3.7817e-4	3.7817e-4	3.7817e-4	3.7817e-4	NA
+VCAM1	pLoF	ENSG00000162692	3008342	neutrophil percentage	132533	0	1.4274e-7	negative	0.036744	negative	1.0824e-6	negative	lab_measurement	1.3896e-4	1.3896e-4	1.3896e-4	1.3896e-4	7.598e-5
+XKR6	pLoF	ENSG00000171044	EM_236.1	Obesity	67952	212095	7.279e-7	positive	4.6894e-6	positive	0.03631	positive	mcc2_phecodex	5.3229e-5	5.3229e-5	5.3229e-5	5.3229e-5	2.2794e-5
+XYLT1	pLoF	ENSG00000103489	height	height	349848	0	3.0528e-9	negative	3.9396e-4	negative	1.5352e-6	negative	physical_measurement	9.084e-5	9.084e-5	9.084e-5	9.084e-5	5.3186e-5
+YLPM1	pLoF	ENSG00000119596	hip-circumference-mean	hip-circumference-mean	317479	0	5.0518e-7	positive	1.0136e-5	positive	0.0052813	positive	physical_measurement	1.7868e-4	1.7868e-4	1.7868e-4	1.7868e-4	8.7382e-5
+YLPM1	pLoF	ENSG00000119596	weight	weight	349524	0	5.243e-8	positive	3.1859e-6	positive	0.0020082	positive	physical_measurement	1.7868e-4	1.7868e-4	1.7868e-4	1.7868e-4	8.7382e-5
+ZFR	pLoF	ENSG00000056097	height	height	349848	0	2.3983e-7	negative	7.3092e-5	negative	7.7857e-4	negative	physical_measurement	2.0883e-5	2.0883e-5	2.0883e-5	2.0883e-5	3.2972e-5
+ZMYM4	pLoF	ENSG00000146463	EM_236.1	Obesity	67952	212095	2.363e-8	positive	9.4473e-5	positive	3.1262e-5	positive	mcc2_phecodex	6.5073e-5	6.5073e-5	6.5073e-5	6.5073e-5	3.0392e-5
+ZNF124	pLoF	ENSG00000196418	3024929	platelets	199816	0	4.4365e-8	positive	0.001796	positive	6.9339e-6	positive	lab_measurement	0.0051621	0.0051621	8.0637e-4	3.6828e-4	0.007365
+ZNF417	pLoF	ENSG00000173480	3024929	platelets	199816	0	6.7978e-7	negative	0.038437	negative	3.6284e-6	negative	lab_measurement	0.0031724	0.0031724	1.08e-4	1.08e-4	0.0049096
+ZNF518A	pLoF	ENSG00000177853	weight	weight	349524	0	4.7677e-8	positive	1.6069e-6	positive	0.0028707	positive	physical_measurement	1.3747e-4	1.3747e-4	1.3747e-4	1.3747e-4	1.1651e-4
+ZNF638	pLoF	ENSG00000075292	height	height	349848	0	6.2539e-7	negative	0.0294	negative	1.6296e-6	negative	physical_measurement	1.2396e-4	1.2396e-4	1.2396e-4	1.2396e-4	5.7143e-5

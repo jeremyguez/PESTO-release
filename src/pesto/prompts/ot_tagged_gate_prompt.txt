@@ -1,0 +1,30 @@
+A study reports that the gene {gene} is associated with this trait:
+
+    "{phenotype}"
+
+Below is a numbered list of traits that a public database already links to {gene}. A careful reader will next be asked how each one relates to the reported trait, which is slow and expensive, so your job is only to remove the entries that would waste that reader's time.
+
+Remove an entry only if it has no bearing whatsoever on the reported trait: a different organ, a different system, a measurement of something else entirely, with no biological route between them.
+
+Keep everything else. In particular, keep an entry when any of these holds, even a little:
+
+- it might be the same trait under another name;
+- it might be a broader or narrower form of the reported trait;
+- it might be a component, a subfraction, or a measurement the reported trait is derived from;
+- it is a disease that might produce the reported trait, or be diagnosed by it;
+- it might be correlated with the reported trait in the population;
+- you are unsure.
+
+Being unsure is a reason to keep, never a reason to remove. Removing something that mattered is a far worse error than keeping something that did not, so err heavily towards keeping. It is entirely acceptable to remove nothing.
+
+Reply with one line and nothing else, either
+
+    DROP: 3, 7, 12
+
+listing the numbers to remove, or
+
+    DROP: NONE
+
+Traits already linked to {gene}:
+
+{traits}

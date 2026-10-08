@@ -1,0 +1,578 @@
+{
+    "gene_name": "ACVR1C",
+    "phenotype": "Atrial fibrillation",
+    "synonyms": [
+        "AF",
+        "AFib",
+        "Auricular fibrillation",
+        "Irregular heart rhythm",
+        "Cardiac arrhythmia - atrial fibrillation",
+        "Atrial flutter-fibrillation"
+    ],
+    "run_parameters": {
+        "model": "claude-haiku-4-5@vertex",
+        "temperature": 0.0,
+        "batch_size": null
+    },
+    "prompt_templates": {
+        "phenotype_synonyms_prompt": "You are a medical expert helping to identify alternative terms and synonyms for phenotypes/diseases.\n\nGiven the following phenotype: {phenotype}\n\nGenerate between 0 and 10 relevant synonyms or alternative terms that could be used to search for scientific literature about this phenotype. Include:\n- Alternative medical terminology\n- Common abbreviations\n- Related clinical terms\n- Different ways the condition might be described in literature\n\nIMPORTANT: \n- If the phenotype is already very specific and well-defined, you may return fewer synonyms (even 0).\n- Only include terms that are semantically equivalent or very closely related.\n- Do NOT include broader categories, subtypes, or related but distinct conditions.\n\nReturn your answer in this exact XML format:\n<response>\n<synonyms>\n<synonym>term 1</synonym>\n<synonym>term 2</synonym>\n...\n</synonyms>\n</response>\n\nIf you think no synonyms are needed, return:\n<response>\n<synonyms>\n</synonyms>\n</response>",
+        "novelty_assessment_prompt": "You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.\n\nBelow is a list of scientific articles about {gene_name} and/or {phenotype}:\n\n{alias_note}{dismiss_note}\n\n{articles_list}\n\nClassify the gene\u2013phenotype relationship into ONE of four categories:\n\n1. **Established**  \n   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical or mechanistic studies support a clear causal role.\n   Research used to prove this category has to be in Human.\n\n2. **Existing**\n   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.  \n   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.\n   Research used to prove this category has to be in Human.\n\n3. **Hypothesized**  \n   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.  \n   Includes expression, functional data, pathway links, or relevant animal models.  \n   Excludes cases where gene and phenotype are merely co-mentioned without relevance.\n\n4. **Novel**  \n   No evidence that variants or biological activity of {gene_name} influence {phenotype}.  \n   Co-mentions are incidental and provide no logical basis.\n\nYour task:\n1. Read the article titles and abstracts.  \n2. Choose the best category.  \n3. Provide a brief justification (3\u20135 sentences).  \n4. Cite up to 10 relevant PMIDs from the provided list only.\n\nReturn your answer in **this exact XML format**:\n\n<response>\n  <verdict>Established|Existing|Hypothesized|Novel</verdict>\n  <justification>Your brief explanation (3\u20135 sentences)</justification>\n  <pmids>\n    <pmid>12345678</pmid>\n    ...\n  </pmids>\n</response>\n\nAdditional rules:\n- If uncertain between two categories, choose the *less novel* one.  \n- Hypothesized can apply without phenotype measurements if the gene\u2019s biology is directly relevant.  \n- Think step by step internally: if the studies used to prove \"Existing\" or \"Established\" are not in human but in an animal or in vitro experiments, downgrade to \"Hypothesized\".\n- Maximum 10 PMIDs."
+    },
+    "prompt_texts": {},
+    "pubmed_articles": [
+        {
+            "pmid": "35896531",
+            "title": "Rare loss of function variants in the hepatokine gene INHBE protect from abdominal obesity.",
+            "pubdate": "2022 Jul 27",
+            "abstract": "Identifying genetic variants associated with lower waist-to-hip ratio can reveal new therapeutic targets for abdominal obesity. We use exome sequences from 362,679 individuals to identify genes associated with waist-to-hip ratio adjusted for BMI (WHRadjBMI), a surrogate for abdominal fat that is causally linked to type 2 diabetes and coronary heart disease. Predicted loss of function (pLOF) variants in INHBE associate with lower WHRadjBMI and this association replicates in data from AMP-T2D-GENES. INHBE encodes a secreted protein, the hepatokine activin E. In vitro characterization of the most common INHBE pLOF variant in our study, indicates an in-frame deletion resulting in a 90% reduction in secreted protein levels. We detect associations with lower WHRadjBMI for variants in ACVR1C, encoding an activin receptor, further highlighting the involvement of activins in regulating fat distribution. These findings highlight activin E as a potential therapeutic target for abdominal obesity, a phenotype linked to cardiometabolic disease."
+        },
+        {
+            "pmid": "37523551",
+            "title": "Activin E-ACVR1C cross talk controls energy storage via suppression of adipose lipolysis in mice.",
+            "pubdate": "2023 Aug 8",
+            "abstract": "Body fat distribution is a heritable risk factor for cardiovascular and metabolic disease. In humans, rare Inhibin beta E (INHBE, activin E) loss-of-function variants are associated with a lower waist-to-hip ratio and protection from type 2 diabetes. Hepatic fatty acid sensing promotes INHBE expression during fasting and in obese individuals, yet it is unclear how the hepatokine activin E governs body shape and energy metabolism. Here, we uncover activin E as a regulator of adipose energy storage. By suppressing \u03b2-agonist-induced lipolysis, activin E promotes fat accumulation and adipocyte hypertrophy and contributes to adipose dysfunction in mice. Mechanistically, we demonstrate that activin E elicits its effect on adipose tissue through ACVR1C, activating SMAD2/3 signaling and suppressing PPARG target genes. Conversely, loss of activin E or ACVR1C in mice increases fat utilization, lowers adiposity, and drives PPARG-regulated gene signatures indicative of healthy adipose function. Our studies identify activin E-ACVR1C as a metabolic rheostat promoting liver-adipose cross talk to restrain excessive fat breakdown and preserve fat mass during prolonged fasting, a mechanism that is maladaptive in obese individuals."
+        },
+        {
+            "pmid": "41578299",
+            "title": "A paracrine-to-autocrine shunt of GREM1 fuels colorectal cancer metastasis via ACVR1C.",
+            "pubdate": "2026 Jan 24",
+            "abstract": "Tumor cells typically rely on paracrine stromal signals to guide malignant behavior, yet whether they gain signaling autonomy and thereby reduce microenvironment dependency during metastasis remains unclear."
+        },
+        {
+            "pmid": "40682848",
+            "title": "MEIS1\u2011regulated miR\u2011488\u20113p suppresses the malignant progression of laryngeal squamous cell carcinoma by targeting ACVR1C.",
+            "pubdate": "2025 Sep",
+            "abstract": "Laryngeal squamous cell carcinoma (LSCC) is a common malignant tumor originating from the mucosal epithelium of the larynx. MicroRNA (miR)\u2011488\u20113p has non\u2011negligible multifaceted roles in some types of cancer; however, its association with LSCC has not yet been reported. Our prior RNA sequencing data indicated that miR\u2011488\u20113p expression is downregulated in LSCC tissue, yet the detailed function and regulatory mechanism of miR\u2011488\u20113p in LSCC remain unknown. In the present study, quantitative PCR analysis corroborated the significant downregulation of miR\u2011488\u20113p in LSCC tumor tissues, with this downregulation being strongly associated with malignant progression in LSCC. Furthermore, overexpression of miR\u2011488\u20113p suppressed LSCC cell proliferation, colony formation, migration, invasion, xenograft tumor growth and epithelial\u2011mesenchymal transition. Mechanistically, miR\u2011488\u20113p directly interacted with the 3' untranslated region of activin A receptor type 1C (ACVR1C) and downregulated ACVR1C expression. Functional experiments revealed that miR\u2011488\u20113p suppressed the malignant phenotypes of LSCC via ACVR1C. Additionally, bioinformatics analysis coupled with chromatin immunoprecipitation assay revealed that myeloid ecotropic viral integration site 1 (MEIS1) promoted the expression of miR\u2011488\u20113p transcriptionally by directly binding its promoter region. Collectively, the results demonstrated that miR\u2011488\u20113p acts as a tumor suppressor molecule in LSCC, and a role was established for the MEIS1/miR\u2011488\u20113p/ACVR1C axis in regulating LSCC progression, thus providing novel potential biomarkers and targets for patients with LSCC."
+        },
+        {
+            "pmid": "28927503",
+            "title": "Learning induces the translin/trax RNase complex to express activin receptors for persistent memory.",
+            "pubdate": "2017 Sep 20",
+            "abstract": "Long-lasting forms of synaptic plasticity and memory require de novo protein synthesis. Yet, how learning triggers this process to form memory is unclear. Translin/trax is a candidate to drive this learning-induced memory mechanism by suppressing microRNA-mediated translational silencing at activated synapses. We find that mice lacking translin/trax display defects in synaptic tagging, which requires protein synthesis at activated synapses, and long-term memory. Hippocampal samples harvested from these mice following learning show increases in several disease-related microRNAs targeting the activin A receptor type 1C (ACVR1C), a component of the transforming growth factor-\u03b2 receptor superfamily. Furthermore, the absence of translin/trax abolishes synaptic upregulation of ACVR1C protein after learning. Finally, synaptic tagging and long-term memory deficits in mice lacking translin/trax are mimicked by ACVR1C inhibition. Thus, we define a new memory mechanism by which learning reverses microRNA-mediated silencing of the novel plasticity protein ACVR1C via translin/trax."
+        },
+        {
+            "pmid": "34173336",
+            "title": "Regulation of metabolic homeostasis by the TGF-\u03b2 superfamily receptor ALK7.",
+            "pubdate": "2022 Oct",
+            "abstract": "ALK7 (Activin receptor-like kinase 7) is a member of the TGF-\u03b2 receptor superfamily predominantly expressed by cells and tissues involved in endocrine functions, such as neurons of the hypothalamus and pituitary, pancreatic \u03b2-cells and adipocytes. Recent studies have begun to delineate the processes regulated by ALK7 in these tissues and how these become integrated with the homeostatic regulation of mammalian metabolism. The picture emerging indicates that ALK7's primary function in metabolic regulation is to limit catabolic activities and preserve energy. Aside of the hypothalamic arcuate nucleus, the function of ALK7 elsewhere in the brain, particularly in the cerebellum, where it is abundantly expressed, remains to be elucidated. Although our understanding of the basic molecular events underlying ALK7 signaling has benefited from the vast knowledge available on TGF-\u03b2 receptor mechanisms, how these connect to the physiological functions regulated by ALK7 in different cell types is still incompletely understood. Findings of missense and nonsense variants in the Acvr1c gene, encoding ALK7, of some mouse strains and human subjects indicate a tolerance to ALK7 loss of function. Recent discoveries suggest that specific inhibitors of ALK7 may have therapeutic applications in obesity and metabolic syndrome without overt adverse effects."
+        },
+        {
+            "pmid": "38558282",
+            "title": "Identification of a gene expression signature associated with brain metastasis in colorectal cancer.",
+            "pubdate": "2024 Aug",
+            "abstract": "Brain metastasis (BM) in colorectal cancer (CRC) is a rare event with poor prognosis. Apart from (K)RAS status and lung and bone metastasis no biomarkers exist to identify patients at risk. This study aimed to identify a gene expression signature associated with colorectal BM."
+        },
+        {
+            "pmid": "34875679",
+            "title": "Identification of Rare Loss-of-Function Genetic Variation Regulating Body Fat Distribution.",
+            "pubdate": "2022 Mar 24",
+            "abstract": "Biological and translational insights from large-scale, array-based genetic studies of fat distribution, a key determinant of metabolic health, have been limited by the difficulty in linking predominantly noncoding variants to specific gene targets. Rare coding variant analyses provide greater confidence that a specific gene is involved, but do not necessarily indicate whether gain or loss of function (LoF) would be of most therapeutic benefit."
+        },
+        {
+            "pmid": "40384613",
+            "title": "Investigating Overlapping Immune-related Genetic Markers in Cholangiocarcinoma and Inflammatory Bowel Disease for Predictive Prognosis.",
+            "pubdate": "2025 Sep 1",
+            "abstract": "This study aims to explore the common immune-related gene characteristics of cholangiocarcinoma (CHOL) and inflammatory bowel disease (IBD) to predict disease prognosis. By analyzing the gene expression data from the TCGA, GEO, and NGDC databases, differentially expressed immune-related genes (DE-IRGs) were screened, and a prognostic model was constructed. The results showed that CCR7, OSM, S100P, ACVR1C, OSMR, SPP1, and PIK3R3 were key immune-related genes, and their expressions were closely related to the occurrence and development of CHOL and IBD. Patients in the low immune risk score (IRS) group had more abundant antitumor immune cell infiltration, while those in the high IRS group had more macrophage infiltration. In addition, the model based on these genes had good predictive ability for the diagnosis and prognosis of CHOL and IBD, with an area under the ROC curve (AUC) value exceeding 0.7. This study also predicted potential small molecule drugs that might be effective for the treatment of CHOL, such as Umbralisib and Tamoxifen. In conclusion, this study provides new biomarkers and potential targets for diagnosis, prognosis assessment, and treatment of CHOL and IBD."
+        },
+        {
+            "pmid": "42086781",
+            "title": "Transcriptional and ubiquitinative suppression of macrophage CST3 disrupts colonic homeostasis through defective efferocytosis.",
+            "pubdate": "2026 May 5",
+            "abstract": "To elucidate the role and regulatory mechanisms of macrophage-derived cystatin C (CST3) in Crohn's disease (CD), focusing on colonic inflammation, macrophage-epithelial interactions, and barrier dysfunction. Colonic samples from CD patients, including inflamed and non-inflamed regions, were subjected to scRNA-seq. In vitro macrophage-epithelial co-culture models and untargeted metabolomics were employed, and the findings were validated using macrophage-specific CST3 knockout (KO) and overexpression mice under TNBS-induced and IL-10 KO colitis conditions. Mechanistic investigations included Co-IP, ChIP-qPCR, ubiquitination assays, rescue experiments, and functional analyses of efferocytosis, macrophage polarization, and barrier integrity. CST3 expression was considerably reduced in macrophages from inflamed CD tissues through suppressor of SMAD5-dependent transcriptional repression and MYCBP2-mediated K48-linked ubiquitination and degradation. Loss of CST3 impaired efferocytosis and M2 polarization by inhibiting the ACVR1C/TGF-\u03b2/SMAD pathway. CST3 deficiency also disrupted intestinal epithelial proliferation, compromised barrier function, and increased apoptosis via enhanced NAMPT-INSR signaling and accumulation of the inflammatory cytokines. In mice, macrophage-specific CST3 deletion exacerbated colitis, whereas its overexpression alleviated inflammation and restored epithelial integrity. These findings establish macrophage CST3 as a key regulator of immune-metabolic-epithelial crosstalk in CD, and indicate that restoring CST3 function or targeting its regulatory axis may represent a novel therapeutic strategy for CD."
+        }
+    ],
+    "pubmed_pmids": [
+        "35896531",
+        "37523551",
+        "41578299",
+        "40682848",
+        "28927503",
+        "34173336",
+        "38558282",
+        "34875679",
+        "40384613",
+        "42086781"
+    ],
+    "llm_raw_response": "Let me analyze the provided literature systematically.\n\n**Step 1: Identify relevant papers**\n\nI need to find papers that discuss ACVR1C and Atrial fibrillation (AF).\n\nReviewing the abstracts:\n- PMID 35896531: ACVR1C associated with waist-to-hip ratio (obesity-related)\n- PMID 37523551: ACVR1C in energy metabolism and adipose tissue (mouse studies)\n- PMID 41578299: ACVR1C in colorectal cancer metastasis\n- PMID 40682848: ACVR1C in laryngeal squamous cell carcinoma\n- PMID 28927503: ACVR1C in memory and synaptic plasticity (mouse studies)\n- PMID 34173336: ALK7/ACVR1C in metabolic homeostasis (review)\n- PMID 38558282: Gene expression in brain metastasis (no ACVR1C mention in abstract)\n- PMID 34875679: Rare loss-of-function variants in fat distribution\n- PMID 40384613: ACVR1C in cholangiocarcinoma and inflammatory bowel disease\n- PMID 42086781: ACVR1C in macrophage function and colitis (mouse studies)\n\n**Step 2: Check for Atrial Fibrillation mentions**\n\nNone of the abstracts mention atrial fibrillation, arrhythmia, cardiac conduction, or heart rhythm disorders. The papers focus on:\n- Metabolic/obesity phenotypes\n- Cancer biology\n- Memory/neurobiology\n- Inflammatory bowel disease\n- Colitis\n\n**Step 3: Assess indirect relevance**\n\nWhile ACVR1C is involved in metabolic regulation and some metabolic disorders (obesity, type 2 diabetes) are risk factors for AF, none of the papers establish a mechanistic or genetic link between ACVR1C variants and AF specifically. The papers do not discuss cardiac phenotypes, arrhythmias, or AF as outcomes.\n\n**Step 4: Determine category**\n\n- **Established**: No human genetic studies linking ACVR1C to AF\n- **Existing**: No credible study reports ACVR1C variation contributes to AF\n- **Hypothesized**: While ACVR1C regulates metabolic pathways and metabolic disease is a risk factor for AF, there is no direct biological evidence linking ACVR1C to cardiac electrophysiology or AF mechanisms\n- **Novel**: Most appropriate\u2014no evidence of any relationship between ACVR1C and AF\n\n<response>\n  <verdict>Novel</verdict>\n  <justification>None of the provided literature discusses any association between ACVR1C variants or function and atrial fibrillation. The papers focus on ACVR1C's roles in metabolic regulation, adipose tissue function, cancer biology, and immune responses, with no mention of cardiac phenotypes, arrhythmias, or AF. While ACVR1C is involved in metabolic pathways and metabolic disease is a general risk factor for AF, there is no direct evidence\u2014genetic, mechanistic, or functional\u2014linking ACVR1C to atrial fibrillation specifically. The co-mention of ACVR1C and AF is incidental and provides no logical biological basis for a relationship.</justification>\n  <pmids>\n  </pmids>\n</response>",
+    "final_output": {
+        "verdict": "Novel",
+        "justification": "None of the provided literature discusses any association between ACVR1C variants or function and atrial fibrillation. The papers focus on ACVR1C's roles in metabolic regulation, adipose tissue function, cancer biology, and immune responses, with no mention of cardiac phenotypes, arrhythmias, or AF. While ACVR1C is involved in metabolic pathways and metabolic disease is a general risk factor for AF, there is no direct evidence\u2014genetic, mechanistic, or functional\u2014linking ACVR1C to atrial fibrillation specifically. The co-mention of ACVR1C and AF is incidental and provides no logical biological basis for a relationship.",
+        "pmids": []
+    },
+    "api_response": {
+        "verdict": "Novel",
+        "justification": "None of the provided literature discusses any association between ACVR1C variants or function and atrial fibrillation. The papers focus on ACVR1C's roles in metabolic regulation, adipose tissue function, cancer biology, and immune responses, with no mention of cardiac phenotypes, arrhythmias, or AF. While ACVR1C is involved in metabolic pathways and metabolic disease is a general risk factor for AF, there is no direct evidence\u2014genetic, mechanistic, or functional\u2014linking ACVR1C to atrial fibrillation specifically. The co-mention of ACVR1C and AF is incidental and provides no logical biological basis for a relationship.",
+        "articles_found": 10,
+        "cited_articles": [],
+        "open_targets_verdict": "Novel",
+        "open_targets_max_score": 0.0,
+        "open_targets_traits": {
+            "ensembl_id": "ENSG00000123612",
+            "traits_count": 71,
+            "file_path": "data/runs/novel/open_targets_traits_ACVR1C_Atrial_fibrillation.txt",
+            "traits": [
+                {
+                    "disease_id": "EFO_0007788",
+                    "name": "BMI-adjusted waist-hip ratio",
+                    "score": 0.6360560414908619,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004344",
+                    "name": "birth weight",
+                    "score": 0.6261393318755087,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004343",
+                    "name": "waist-hip ratio",
+                    "score": 0.5571473197015835,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007986",
+                    "name": "reticulocyte count",
+                    "score": 0.5418929855669647,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004541",
+                    "name": "HbA1c measurement",
+                    "score": 0.5182805613561403,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007789",
+                    "name": "BMI-adjusted waist circumference",
+                    "score": 0.5136154120379562,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004611",
+                    "name": "low density lipoprotein cholesterol measurement",
+                    "score": 0.5109699091148532,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004574",
+                    "name": "total cholesterol measurement",
+                    "score": 0.5106630960722303,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005148",
+                    "name": "type 2 diabetes mellitus",
+                    "score": 0.506511504717005,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_0002272",
+                    "name": "reticulocyte amount",
+                    "score": 0.5013881315195183,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004615",
+                    "name": "apolipoprotein B measurement",
+                    "score": 0.49308427811409034,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010351",
+                    "name": "cholesteryl ester measurement",
+                    "score": 0.47599769123844604,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004533",
+                    "name": "alkaline phosphatase measurement",
+                    "score": 0.47051100240410926,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021900",
+                    "name": "cholesterol in large HDL measurement ",
+                    "score": 0.4594826414281186,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022330",
+                    "name": "triglycerides to total lipids in large HDL percentage ",
+                    "score": 0.4594826414281186,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004468",
+                    "name": "glucose measurement",
+                    "score": 0.4570849556164538,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005689",
+                    "name": "non-high density lipoprotein cholesterol measurement",
+                    "score": 0.45496473301895624,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005058",
+                    "name": "tyrosine measurement",
+                    "score": 0.4389959795518998,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004842",
+                    "name": "eosinophil count",
+                    "score": 0.43123575442104223,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022339",
+                    "name": "triglycerides to total lipids in very large HDL percentage ",
+                    "score": 0.421973854372762,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004509",
+                    "name": "hemoglobin measurement",
+                    "score": 0.4187167231057719,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005015",
+                    "name": "diabetes mellitus",
+                    "score": 0.4160849304556553,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0006336",
+                    "name": "diastolic blood pressure",
+                    "score": 0.4107412344901797,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004570",
+                    "name": "bilirubin measurement",
+                    "score": 0.40680384576297846,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004612",
+                    "name": "high density lipoprotein cholesterol measurement",
+                    "score": 0.40533684177612606,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009768",
+                    "name": "glutamine measurement",
+                    "score": 0.40227855796383355,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2040561",
+                    "name": "level of aldehyde dehydrogenase X, mitochondrial in blood serum",
+                    "score": 0.3972479977749305,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005091",
+                    "name": "monocyte count",
+                    "score": 0.3940354078405687,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007991",
+                    "name": "eosinophil percentage of leukocytes",
+                    "score": 0.3918863741987628,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004530",
+                    "name": "triglyceride measurement",
+                    "score": 0.38244535211522734,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009770",
+                    "name": "leucine measurement",
+                    "score": 0.37170436750360875,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004532",
+                    "name": "serum gamma-glutamyl transferase measurement",
+                    "score": 0.36397817166186297,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004309",
+                    "name": "platelet count",
+                    "score": 0.3630908290585658,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0006335",
+                    "name": "systolic blood pressure",
+                    "score": 0.34588160335080287,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010114",
+                    "name": "citrate measurement",
+                    "score": 0.3458604558218864,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005044",
+                    "name": "hypertensive disorder",
+                    "score": 0.3446962962505216,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022248",
+                    "name": "cholesteryl esters to total lipids in large HDL percentage ",
+                    "score": 0.34422368114110613,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022234",
+                    "name": "cholesterol to total lipids in large HDL percentage ",
+                    "score": 0.34422368114110613,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0008039",
+                    "name": "BMI-adjusted hip circumference",
+                    "score": 0.34422368114110613,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009792",
+                    "name": "valine measurement",
+                    "score": 0.3413611538298448,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005134",
+                    "name": "amino acid measurement",
+                    "score": 0.3413611538298448,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009793",
+                    "name": "isoleucine measurement",
+                    "score": 0.34125492054005363,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000924",
+                    "name": "Abnormality of the skeletal system",
+                    "score": 0.3407772727593295,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022188",
+                    "name": "concentration of large HDL particles measurement",
+                    "score": 0.3375790834982096,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021886",
+                    "name": "e3 ubiquitin-protein ligase RNF43 measurement",
+                    "score": 0.33039421605601904,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0802288",
+                    "name": "armadillo repeat-containing protein 5 measurement",
+                    "score": 0.32908208225613567,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0012115",
+                    "name": "Hepatitis",
+                    "score": 0.2943526532459737,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0100053",
+                    "name": "anaphylaxis",
+                    "score": 0.2943526532459737,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2043190",
+                    "name": "level of Ran-specific GTPase-activating protein in blood serum",
+                    "score": 0.29251396372139327,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0000188",
+                    "name": "blood glucose amount",
+                    "score": 0.2853244647500833,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007990",
+                    "name": "neutrophil percentage of leukocytes",
+                    "score": 0.2767708179916073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004348",
+                    "name": "hematocrit",
+                    "score": 0.2767708179916073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007805",
+                    "name": "HDL cholesterol change measurement",
+                    "score": 0.2730889230638758,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0920022",
+                    "name": "cholesteryl esters in HDL measurement",
+                    "score": 0.2730889230638758,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005081",
+                    "name": "preeclampsia",
+                    "score": 0.2686327400902624,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022229",
+                    "name": "cholesterol in very large HDL measurement ",
+                    "score": 0.26424079696523844,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022298",
+                    "name": "phospholipids in very large HDL measurement ",
+                    "score": 0.26424079696523844,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022312",
+                    "name": "total lipids in very large HDL measurement ",
+                    "score": 0.26424079696523844,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020946",
+                    "name": "phospholipids:total lipids ratio",
+                    "score": 0.26424079696523844,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0011011",
+                    "name": "sitting height measurement",
+                    "score": 0.1672154799551828,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003330",
+                    "name": "urinary tract obstruction",
+                    "score": 0.13286343673690662,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2040609",
+                    "name": "level of AP-1 complex subunit gamma-like 2 in blood serum",
+                    "score": 0.12338030101086335,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050096",
+                    "name": "serum creatinine amount",
+                    "score": 0.11352984812761474,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005070",
+                    "name": "neoplasm",
+                    "score": 0.08181139889203337,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008380",
+                    "name": "retinoblastoma",
+                    "score": 0.07797825693560635,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011122",
+                    "name": "obesity disorder",
+                    "score": 0.07166602883045914,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001513",
+                    "name": "Obesity",
+                    "score": 0.07166602883045914,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019115",
+                    "name": "obesity due to melanocortin 4 receptor deficiency",
+                    "score": 0.07166602883045914,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005580",
+                    "name": "esophageal squamous cell carcinoma",
+                    "score": 0.05502497165017596,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004989",
+                    "name": "breast carcinoma",
+                    "score": 0.05490818641775175,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007254",
+                    "name": "breast cancer",
+                    "score": 0.051582225044835416,
+                    "matched": false
+                }
+            ],
+            "articles": [],
+            "ot_synonym_selection_usage": {
+                "text": "VERDICT: NEW\nBASIS: NONE\nREASON: The list contains cardiometabolic and blood pressure traits but no atrial fibrillation or arrhythmia trait strongly enough tied to it to make this finding redundant.",
+                "input_tokens": 1827,
+                "output_tokens": 81,
+                "flex": false
+            },
+            "match": {
+                "method": "broad_opus",
+                "matched_id": null,
+                "basis": "NONE",
+                "reason": "The list contains cardiometabolic and blood pressure traits but no atrial fibrillation or arrhythmia trait strongly enough tied to it to make this finding redundant.",
+                "verdict_text": "NEW",
+                "unresolved_basis": false
+            }
+        },
+        "synonyms": [
+            "AF",
+            "AFib",
+            "Auricular fibrillation",
+            "Irregular heart rhythm",
+            "Cardiac arrhythmia - atrial fibrillation",
+            "Atrial flutter-fibrillation"
+        ],
+        "pubmed_pmids": [
+            "35896531",
+            "37523551",
+            "41578299",
+            "40682848",
+            "28927503",
+            "34173336",
+            "38558282",
+            "34875679",
+            "40384613",
+            "42086781"
+        ]
+    }
+}

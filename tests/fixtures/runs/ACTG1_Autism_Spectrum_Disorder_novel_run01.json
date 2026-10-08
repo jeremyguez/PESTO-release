@@ -1,0 +1,594 @@
+{
+    "gene_name": "ACTG1",
+    "phenotype": "Autism Spectrum Disorder",
+    "synonyms": [
+        "ASD",
+        "Autism",
+        "Autistic Disorder",
+        "Pervasive Developmental Disorder",
+        "PDD",
+        "Autistic Spectrum Disorder",
+        "Infantile Autism",
+        "Kanner Syndrome",
+        "Childhood Autism",
+        "Autism Spectrum Condition",
+        "Kanner's Syndrome",
+        "Autistic Spectrum Disorders"
+    ],
+    "run_parameters": {
+        "model": "claude-opus-4-8@vertex",
+        "temperature": 0.0,
+        "batch_size": null
+    },
+    "prompt_templates": {
+        "phenotype_synonyms_prompt": "You are a medical expert helping to identify alternative terms and synonyms for phenotypes/diseases.\n\nGiven the following phenotype: {phenotype}\n\nGenerate between 0 and 10 relevant synonyms or alternative terms that could be used to search for scientific literature about this phenotype. Include:\n- Alternative medical terminology\n- Common abbreviations\n- Related clinical terms\n- Different ways the condition might be described in literature\n\nIMPORTANT: \n- If the phenotype is already very specific and well-defined, you may return fewer synonyms (even 0).\n- Only include terms that are semantically equivalent or very closely related.\n- Do NOT include broader categories, subtypes, or related but distinct conditions.\n\nReturn your answer in this exact XML format:\n<response>\n<synonyms>\n<synonym>term 1</synonym>\n<synonym>term 2</synonym>\n...\n</synonyms>\n</response>\n\nIf you think no synonyms are needed, return:\n<response>\n<synonyms>\n</synonyms>\n</response>",
+        "novelty_assessment_prompt": "You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.\n\nBelow is a list of scientific articles about {gene_name} and/or {phenotype}:\n\n{alias_note}{dismiss_note}\n\n{articles_list}\n\nClassify the gene\u2013phenotype relationship into ONE of four categories:\n\n1. **Established**  \n   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical or mechanistic studies support a clear causal role.\n   Research used to prove this category has to be in Human.\n\n2. **Existing**\n   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.  \n   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.\n   Research used to prove this category has to be in Human.\n\n3. **Hypothesized**  \n   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.  \n   Includes expression, functional data, pathway links, or relevant animal models.  \n   Excludes cases where gene and phenotype are merely co-mentioned without relevance.\n\n4. **Novel**  \n   No evidence that variants or biological activity of {gene_name} influence {phenotype}.  \n   Co-mentions are incidental and provide no logical basis.\n\nYour task:\n1. Read the article titles and abstracts.  \n2. Choose the best category.  \n3. Provide a brief justification (3\u20135 sentences).  \n4. Cite up to 10 relevant PMIDs from the provided list only.\n\nReturn your answer in **this exact XML format**:\n\n<response>\n  <verdict>Established|Existing|Hypothesized|Novel</verdict>\n  <justification>Your brief explanation (3\u20135 sentences)</justification>\n  <pmids>\n    <pmid>12345678</pmid>\n    ...\n  </pmids>\n</response>\n\nAdditional rules:\n- If uncertain between two categories, choose the *less novel* one.  \n- Hypothesized can apply without phenotype measurements if the gene\u2019s biology is directly relevant.  \n- Think step by step internally: if the studies used to prove \"Existing\" or \"Established\" are not in human but in an animal or in vitro experiments, downgrade to \"Hypothesized\".\n- Maximum 10 PMIDs."
+    },
+    "prompt_texts": {},
+    "pubmed_articles": [
+        {
+            "pmid": "35190550",
+            "title": "Analysis of recent shared ancestry in a familial cohort identifies coding and noncoding autism spectrum disorder variants.",
+            "pubdate": "2022 Feb 21",
+            "abstract": "Autism spectrum disorder (ASD) is a collection of neurodevelopmental disorders characterized by deficits in social communication and restricted, repetitive patterns of behavior or interests. ASD is highly heritable, but genetically and phenotypically heterogeneous, reducing the power to identify causative genes. We performed whole genome sequencing (WGS) in an ASD cohort of 68 individuals from 22 families enriched for recent shared ancestry. We identified an average of 3.07 million variants per genome, of which an average of 112,512 were rare. We mapped runs of homozygosity (ROHs) in affected individuals and found an average genomic homozygosity of 9.65%, consistent with expectations for multiple generations of consanguineous unions. We identified potentially pathogenic rare exonic or splice site variants in 12 known (including KMT2C, SCN1A, SPTBN1, SYNE1, ZNF292) and 12 candidate (including CHD5, GRB10, PPP1R13B) ASD genes. Furthermore, we annotated noncoding variants in ROHs with brain-specific regulatory elements and identified putative disease-causing variants within brain-specific promoters and enhancers for 5 known ASD and neurodevelopmental disease genes (ACTG1, AUTS2, CTNND2, CNTNAP4, SPTBN4). We also identified copy number variants in two known ASD and neurodevelopmental disease loci in two affected individuals. In total we identified potentially etiological variants in known ASD or neurodevelopmental disease genes for ~61% (14/23) of affected individuals. We combined WGS with homozygosity mapping and regulatory element annotations to identify candidate ASD variants. Our analyses add to the growing number of ASD genes and variants and emphasize the importance of leveraging recent shared ancestry to map disease variants in complex neurodevelopmental disorders."
+        },
+        {
+            "pmid": "31171384",
+            "title": "Genomic backgrounds of Japanese patients with undiagnosed neurodevelopmental disorders.",
+            "pubdate": "2019 Oct",
+            "abstract": "Recently, many genes related to neurodevelopmental disorders have been identified by high-throughput genomic analysis; however, a comprehensive understanding of the mechanism underlying neurodevelopmental disorders remains to be established. To further understand these underlying mechanisms, we performed a comprehensive genomic analysis of patients with undiagnosed neurodevelopmental disorders."
+        },
+        {
+            "pmid": "28496999",
+            "title": "The Clinical Manifestations and Genetic Implications of Baraitser-Winter Syndrome Type 2.",
+            "pubdate": "2017 Jun",
+            "abstract": "An 18-year-old Caucasian male was born by cesarean section weighing 2.6\u2009kg (5 lb 14 oz) at birth after an uncomplicated pregnancy with no perinatal complications. Around 4 to 5 months of age, the patient's mother initially became concerned as he was experiencing signs of developmental delay and a mild floppy tone, in addition to facial features that resembled some form of mental retardation. The patient's older brother also experienced similar developmental symptoms and facial features that presented around the same age period as our patient. It was initially thought to be Down syndrome; however, both the patient and his brother tested negative for Down syndrome on chromosomal analyses. There was also a question of whether the patient had some form of autism spectrum disorder, but doctors were unable to specifically confirm this. Now at the age of 18 years, the patient has no understandable speech with distinctive facial features such as a broad nasal bridge and prominent epicanthic folds, lissencephaly, smaller than average head size, intellectual disability, and hearing loss. It was discovered, through trio-based exome sequencing, that the patient had a de novo missense mutation (p.Ser155Phe) in the ACTG1 gene, which has been linked to the rare syndrome known as Baraister-Winter syndrome type 2. Baraitser-Winter syndrome 2 is a unique variant that is clinically similar to Baraitser-Winter syndrome type 1; however, only seven previous cases have been reported."
+        },
+        {
+            "pmid": "27625340",
+            "title": "Baraitser-Winter cerebrofrontofacial syndrome.",
+            "pubdate": "2017 Jul",
+            "abstract": "Baraitser-Winter cerebrofrontofacial syndrome (BWCFF) (BRWS; MIM #243310, 614583) is a rare developmental disorder affecting multiple organ systems. It is characterised by intellectual disability (mild to severe) and distinctive facial appearance (metopic ridging/trigonocephaly, bilateral ptosis, hypertelorism). The additional presence of cortical malformations (pachygyria/lissencephaly) and ocular colobomata are also suggestive of this syndrome. Other features include moderate short stature, contractures, congenital cardiac disease and genitourinary malformations. BWCFF is caused by missense mutations in the cytoplasmic beta- and gamma-actin genes ACTB and ACTG1. We provide an overview of the clinical characteristics (including some novel findings in four recently diagnosed patients), diagnosis, management, mutation spectrum and genetic counselling."
+        },
+        {
+            "pmid": "41529692",
+            "title": "Molecular genotype-phenotype correlation in ACTB- and ACTG1-related non-muscle actinopathies.",
+            "pubdate": "2026 Feb 5",
+            "abstract": "Recent advances in Mendelian genomics reveal the importance of variant-level characterization of allelic disorders. Non-muscle actin isoforms, encoded by the genes ACTB and ACTG1, are the most abundant intracellular proteins, but historically, they are often regarded as merely being \"housekeeping\" molecules. Here, we illuminate the extraordinary clinical heterogeneity and complex pathobiology of genetic non-muscle actinopathies. To do this, we combine human genomics studies with molecular biology. Strikingly, variants in ACTB and ACTG1 isoforms generate at least eight distinct clinical disorders. A subset of disease-associated missense variants causes dysregulated actin polymerization-depolymerization and neuronal migration defects. In contrast, nonsense, frameshift, and missense variants enhancing protein degradation cause milder phenotypes or are benign. These results emphasize the essential functional aspects of the non-muscle actin isoforms. Critically, they additionally constitute a template for the personalized genetic variant-level-driven management of the pleiotropic allelic single-gene disorders."
+        },
+        {
+            "pmid": "39734360",
+            "title": "Extreme Phenotypic Variability of ACTG1-Related Disorders in Hearing Loss.",
+            "pubdate": "2024 Dec",
+            "abstract": "Hearing loss is the most common sensory defect in humans, affecting normal communication. In most cases, hearing loss is a multifactorial disorder caused by both genetic and environmental factors, but single-gene mutations can lead to syndromic or non-syndromic hearing loss. Monoallelic variants in ACTG1, coding for gamma (\u03b3)-actin, are associated with classical Baraitser-Winter Syndrome type 2 (BRWS2, nonsyndromic deafness, and a variety of clinical presentations not fitting the original BRWS2 description or nonsyndromic deafness. Here two unrelated patients with ACTG1 variants are reported, having severe hearing loss as a common phenotype but with different clinical presentations, supporting the extreme variability of ACTG1-related disorders."
+        },
+        {
+            "pmid": "35594181",
+            "title": "Nucleotide- and Protein-Dependent Functions of Actg1.",
+            "pubdate": "2022 Aug 1",
+            "abstract": "Cytoplasmic \u03b2- and \u03b3-actin proteins are 99% identical but support unique organismal functions. The cytoplasmic actin nucleotide sequences\u00a0Actb\u00a0and\u00a0Actg1, respectively, are more divergent but still 89% similar.\u00a0Actb-/- mice are embryonic lethal and\u00a0Actb-/- cells fail to proliferate, but editing the\u00a0Actb\u00a0gene to express \u03b3-actin (Actbc-g) resulted in none of the overt phenotypes of the knockout revealing protein-independent functions for\u00a0Actb. To determine if\u00a0Actg1 has a protein-independent function, we crossed\u00a0Actbc-g\u00a0and\u00a0Actg1-/- mice to generate the\u00a0bG/0\u00a0line, where the only cytoplasmic actin expressed is \u03b3-actin from\u00a0Actbc-g. The bG/0 mice were viable but showed a survival defect despite expressing \u03b3-actin protein at levels no different from\u00a0bG/gG\u00a0with normal survival. A unique myopathy phenotype was also observed in\u00a0bG/0\u00a0mice. We conclude that impaired survival and myopathy in\u00a0bG/0\u00a0mice are due to loss of\u00a0Actg1\u00a0nucleotide-dependent function(s). On the other hand, the\u00a0bG/0\u00a0genotype rescued functions impaired by\u00a0Actg1-/-, including cell proliferation and auditory function, suggesting a role for \u03b3-actin protein in both fibroblasts and hearing. Together, these results identify nucleotide-dependent functions for\u00a0Actg1\u00a0while implicating \u03b3-actin protein in more cell-/tissue-specific functions."
+        },
+        {
+            "pmid": "40368919",
+            "title": "Inherited deficiency of DIAPH1 identifies a DNA double strand break repair pathway regulated by \u03b3-actin.",
+            "pubdate": "2025 May 14",
+            "abstract": "DNA double strand break repair (DSBR) represents a fundamental process required to maintain genome stability and prevent the onset of disease. Whilst cell cycle phase and the chromatin context largely dictate which repair pathway is utilised to restore damaged DNA, it has been recently shown that nuclear actin filaments play a major role in clustering DNA breaks to facilitate DSBR by homologous recombination (HR). However, the mechanism with which nuclear actin and the different actin nucleating factors regulate HR is unclear. Interestingly, patients with biallelic mutations in the actin nucleating factor DIAPH1 exhibit a striking overlap of clinical features with the HR deficiency disorders, Nijmegen Breakage Syndrome (NBS) and Warsaw Breakage Syndrome\u00a0(WABS). This suggests that DIAPH1 may play a role in regulating HR and that some of the clinical deficits associated with DIAPH1 mutations may be caused by an underlying DSBR defect. In keeping with this clinical similarity, we demonstrate that cells from DIAL (DIAPH1 Loss-of-function) Syndrome patients display an HR repair defect comparable to loss of NBS1. Moreover, we show that this DSBR defect is also observed in a subset of patients with Baraitser-Winter Cerebrofrontofacial (BWCFF) syndrome associated with mutations in ACTG1 (\u03b3-actin) but not ACTB (\u03b2-actin). Lastly, we demonstrate that DIAPH1 and \u03b3-actin promote HR-dependent repair by facilitating the relocalisation of the MRE11/RAD50/NBS1 complex to sites of DNA breaks to initiate end-resection. Taken together, these data provide a mechanistic explanation for the overlapping clinical symptoms exhibited by patients with DIAL syndrome, BWCFF syndrome and NBS."
+        },
+        {
+            "pmid": "37371710",
+            "title": "Autosomal Dominant Non-Syndromic Hearing Loss (DFNA): A Comprehensive Narrative Review.",
+            "pubdate": "2023 Jun 1",
+            "abstract": "Autosomal dominant non-syndromic hearing loss (HL) typically occurs when only one dominant allele within the disease gene is sufficient to express the phenotype. Therefore, most patients diagnosed with autosomal dominant non-syndromic HL have a hearing-impaired parent, although de novo mutations should be considered in all cases of negative family history. To date, more than 50 genes and 80 loci have been identified for autosomal dominant non-syndromic HL. DFNA22 (MYO6 gene), DFNA8/12 (TECTA gene), DFNA20/26 (ACTG1 gene), DFNA6/14/38 (WFS1 gene), DFNA15 (POU4F3 gene), DFNA2A (KCNQ4 gene), and DFNA10 (EYA4 gene) are some of the most common forms of autosomal dominant non-syndromic HL. The characteristics of autosomal dominant non-syndromic HL are heterogenous. However, in most cases, HL tends to be bilateral, post-lingual in onset (childhood to early adulthood), high-frequency (sloping audiometric configuration), progressive, and variable in severity (mild to profound degree). DFNA1 (DIAPH1 gene) and DFNA6/14/38 (WFS1 gene) are the most common forms of autosomal dominant non-syndromic HL affecting low frequencies, while DFNA16 (unknown gene) is characterized by fluctuating HL. A long audiological follow-up is of paramount importance to identify hearing threshold deteriorations early and ensure prompt treatment with hearing aids or cochlear implants."
+        },
+        {
+            "pmid": "41272221",
+            "title": "ACTG1 mediates cisplatin resistance in NSCLC through induction of mitochondrial fragmentation.",
+            "pubdate": "2025 Dec",
+            "abstract": "Actin gamma 1 (ACTG1) encodes the cytoskeletal protein \u03b3-actin and is overexpressed in various cancers. Cisplatin-based chemotherapy is the standard first-line treatment for patients with advanced non-small cell lung cancer (NSCLC). However, most patients eventually develop cisplatin resistance. The association between ACTG1 and cisplatin resistance remains unclear. In this study, we found that high expression of ACTG1 was associated with poor prognosis in NSCLC. Knockdown of ACTG1 promoted mitochondrial fragmentation via interaction with the fusion protein MFN2 and induced ferroptosis. Mechanistically, ACTG1 knockdown disrupted mitochondrial dynamics, elevated mitochondrial ROS, reduced glutathione (GSH) levels, and enhanced lipid peroxidation. This cascade significantly inhibited the growth of cisplatin-resistant NSCLC cells and sensitized them to cisplatin. Furthermore, the ferroptosis inducer RSL3 synergized with cisplatin to enhance ferroptosis and mitochondrial fragmentation, effectively sensitizing ACTG1-overexpressing cells both in vitro and in xenograft models. Our findings establish ACTG1 as a critical mediator of cisplatin resistance in NSCLC through regulation of mitochondrial integrity and ferroptosis. Targeting the ACTG1-MFN2 axis combined with ferroptosis induction represents a promising therapeutic strategy to overcome cisplatin resistance."
+        },
+        {
+            "pmid": "39606011",
+            "title": "Unveiling biomarker detection in Alzheimer's disease: a computational approach to microarray analysis.",
+            "pubdate": "2024 Dec",
+            "abstract": "Alzheimer's disease (AD) is a major neurodegenerative condition that affects a significant number of people around the world, making understanding the underlying molecular mechanisms fundamental for identifying predictive biomarkers and therapeutic targets for treating AD. Analysis of the gene expression profile GSE5281, consisting of 161 samples (87 AD and 74 control samples) revealed differentially expressed genes (DEGs) used for KEGG screening to connect dysregulated genes to metabolic pathways or other neurological diseases including Parkinson's, prion, and Huntington's and construction of a protein interaction network. Protein-protein interaction (PPI) network and module analysis uncovered the hub genes ACTB, ACTG1, ATP5A1, CCT2, CDC42, EGFR, FN1, GAPDH, GFAP, GRIA1, HSP90AB1, MAPK1, PSMA3, PSMD14, SNAP25, SNCA, SOD1, SOX2, TPI1, and YWHAZ. The analysis revealed a link between dysregulated genes and processes in AD pathology, including the promotion of osteoporosis, an altered nucleotide metabolism, microtubule stability, and the dysfunctionality of the blood-brain barrier (BBB). These targets might be used as predictive biomarkers or to develop curative and preventive therapeutic approaches for treating AD."
+        },
+        {
+            "pmid": "40375105",
+            "title": "Genome-wide enhancer-gene regulatory maps of liver reveal novel regulatory mechanisms underlying NAFLD pathogenesis.",
+            "pubdate": "2025 May 15",
+            "abstract": "Non-alcoholic fatty liver disease (NAFLD) represents the most widespread liver disease globally, ranging from non-alcoholic fatty liver (NAFL) and steatohepatitis (NASH) to fibrosis/cirrhosis, with potential progression to hepatocellular carcinoma (HCC). Genome-wide association studies (GWASs) have identified several single nucleotide polymorphisms (SNPs) associated with NAFLD. However, numerous GWAS signals associated with NAFLD locate in non-coding regions, posing a challenge for interpreting their functional annotation."
+        }
+    ],
+    "pubmed_pmids": [
+        "35190550",
+        "31171384",
+        "28496999",
+        "27625340",
+        "41529692",
+        "39734360",
+        "35594181",
+        "40368919",
+        "37371710",
+        "41272221",
+        "39606011",
+        "40375105"
+    ],
+    "llm_raw_response": "<response>\n  <verdict>Existing</verdict>\n  <justification>One human whole-genome sequencing study of a familial ASD cohort (PMID: 35190550) identified putative disease-causing noncoding variants within brain-specific promoters/enhancers for ACTG1, listing it among known ASD and neurodevelopmental disease genes. This represents a credible human genetic association, though it is limited (a single cohort study with regulatory variant annotation rather than replicated causal validation). Other articles link ACTG1 to Baraitser-Winter syndrome, hearing loss, and neurodevelopmental phenotypes, with some cases mentioning possible autism features (PMID: 28496999), supporting a neurodevelopmental connection. However, the evidence specifically for ASD causation is not definitive or widely replicated, placing this in the Existing category rather than Established.</justification>\n  <pmids>\n    <pmid>35190550</pmid>\n    <pmid>28496999</pmid>\n    <pmid>31171384</pmid>\n  </pmids>\n</response>",
+    "final_output": {
+        "verdict": "Existing",
+        "justification": "One human whole-genome sequencing study of a familial ASD cohort (PMID: 35190550) identified putative disease-causing noncoding variants within brain-specific promoters/enhancers for ACTG1, listing it among known ASD and neurodevelopmental disease genes. This represents a credible human genetic association, though it is limited (a single cohort study with regulatory variant annotation rather than replicated causal validation). Other articles link ACTG1 to Baraitser-Winter syndrome, hearing loss, and neurodevelopmental phenotypes, with some cases mentioning possible autism features (PMID: 28496999), supporting a neurodevelopmental connection. However, the evidence specifically for ASD causation is not definitive or widely replicated, placing this in the Existing category rather than Established.",
+        "pmids": [
+            "35190550",
+            "28496999",
+            "31171384"
+        ]
+    },
+    "api_response": {
+        "verdict": "Existing",
+        "justification": "One human whole-genome sequencing study of a familial ASD cohort (PMID: 35190550) identified putative disease-causing noncoding variants within brain-specific promoters/enhancers for ACTG1, listing it among known ASD and neurodevelopmental disease genes. This represents a credible human genetic association, though it is limited (a single cohort study with regulatory variant annotation rather than replicated causal validation). Other articles link ACTG1 to Baraitser-Winter syndrome, hearing loss, and neurodevelopmental phenotypes, with some cases mentioning possible autism features (PMID: 28496999), supporting a neurodevelopmental connection. However, the evidence specifically for ASD causation is not definitive or widely replicated, placing this in the Existing category rather than Established.",
+        "articles_found": 12,
+        "cited_articles": [
+            {
+                "pmid": "35190550",
+                "title": "Analysis of recent shared ancestry in a familial cohort identifies coding and noncoding autism spectrum disorder variants.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/35190550/"
+            },
+            {
+                "pmid": "28496999",
+                "title": "The Clinical Manifestations and Genetic Implications of Baraitser-Winter Syndrome Type 2.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/28496999/"
+            },
+            {
+                "pmid": "31171384",
+                "title": "Genomic backgrounds of Japanese patients with undiagnosed neurodevelopmental disorders.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/31171384/"
+            }
+        ],
+        "open_targets_verdict": "Novel",
+        "open_targets_max_score": 0.0,
+        "open_targets_traits": {
+            "ensembl_id": "ENSG00000184009",
+            "traits_count": 67,
+            "file_path": "Scratch/app/data/runs/novel/open_targets_traits_ACTG1_Autism_Spectrum_Disorder.txt",
+            "traits": [
+                {
+                    "disease_id": "Orphanet_2995",
+                    "name": "Baraitser-Winter syndrome",
+                    "score": 0.834386021888207,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019587",
+                    "name": "autosomal dominant nonsyndromic hearing loss",
+                    "score": 0.7413589739390484,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017579",
+                    "name": "Baraitser-Winter cerebrofrontofacial syndrome",
+                    "score": 0.6607409340411177,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004992",
+                    "name": "cancer",
+                    "score": 0.6018546652927933,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018997",
+                    "name": "Noonan syndrome",
+                    "score": 0.5261379875719714,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000538",
+                    "name": "hypertrophic cardiomyopathy",
+                    "score": 0.5048480320596468,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009026",
+                    "name": "Costello syndrome",
+                    "score": 0.5030392466541774,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005772",
+                    "name": "neurodegenerative disease",
+                    "score": 0.4970831774327541,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000508",
+                    "name": "genetic disorder",
+                    "score": 0.48212136794927507,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019497",
+                    "name": "nonsyndromic genetic hearing loss",
+                    "score": 0.4545832212621832,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004238",
+                    "name": "hearing loss",
+                    "score": 0.44177056085916516,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009668",
+                    "name": "external ear disease",
+                    "score": 0.4283966068043075,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0021205",
+                    "name": "disorder of ear",
+                    "score": 0.4283966068043075,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004532",
+                    "name": "serum gamma-glutamyl transferase measurement",
+                    "score": 0.40737296908910775,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004696",
+                    "name": "sex hormone-binding globulin measurement",
+                    "score": 0.40036288550241883,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_87884",
+                    "name": "Non-syndromic genetic deafness",
+                    "score": 0.38087791084241307,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050062",
+                    "name": "serum alanine aminotransferase amount",
+                    "score": 0.3804847398092015,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0000728",
+                    "name": "ptosis",
+                    "score": 0.36994943453938645,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000154",
+                    "name": "Wide mouth",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020354",
+                    "name": "coloboma of choroid and retina",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000474",
+                    "name": "epilepsy",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000408",
+                    "name": "Progressive sensorineural hearing impairment",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000307",
+                    "name": "Pointed chin",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0002553",
+                    "name": "Highly arched eyebrow",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000343",
+                    "name": "Long philtrum",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000377",
+                    "name": "Abnormal pinna morphology",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020356",
+                    "name": "coloboma of iris",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000637",
+                    "name": "Long palpebral fissure",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005046",
+                    "name": "cutaneous Leishmaniasis",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000219",
+                    "name": "Thin upper lip vermilion",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015280",
+                    "name": "cardiofaciocutaneous syndrome",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_96210",
+                    "name": "Rare genetic deafness",
+                    "score": 0.3621882575910077,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0802260",
+                    "name": "alanine aminotransferase 1 measurement",
+                    "score": 0.3526459819192026,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007984",
+                    "name": "platelet component distribution width",
+                    "score": 0.34237420253705775,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0012758",
+                    "name": "Neurodevelopmental delay",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001339",
+                    "name": "Lissencephaly",
+                    "score": 0.337787671635087,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019719",
+                    "name": "congenital anomaly of kidney and urinary tract",
+                    "score": 0.3326218692162316,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007741",
+                    "name": "congenital hydronephrosis",
+                    "score": 0.3326218692162316,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_1001176",
+                    "name": "sensorineural hearing loss",
+                    "score": 0.30887349152708643,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000365",
+                    "name": "Hearing impairment",
+                    "score": 0.2997016976517979,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000924",
+                    "name": "Abnormality of the skeletal system",
+                    "score": 0.299092447800581,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_1001455",
+                    "name": "auditory system disease",
+                    "score": 0.2602679923862723,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0001149",
+                    "name": "microcephaly",
+                    "score": 0.2599449147421217,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010486",
+                    "name": "glucuronate measurement",
+                    "score": 0.24295737314683716,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010934",
+                    "name": "aspartate aminotransferase to alanine aminotransferase ratio",
+                    "score": 0.20865707253479387,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0006941",
+                    "name": "grip strength measurement",
+                    "score": 0.20041852395717283,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009270",
+                    "name": "heel bone mineral density",
+                    "score": 0.19485425664044295,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0011015",
+                    "name": "educational attainment",
+                    "score": 0.17249061539283927,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004908",
+                    "name": "testosterone measurement",
+                    "score": 0.16646117127956012,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000616",
+                    "name": "neoplasm",
+                    "score": 0.14168859090543262,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0003924",
+                    "name": "hair color",
+                    "score": 0.13453978593403942,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010282",
+                    "name": "gastrointestinal disease",
+                    "score": 0.13257026810296452,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0003966",
+                    "name": "eye disease",
+                    "score": 0.12952944068852645,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004264",
+                    "name": "vascular disease",
+                    "score": 0.12903578907472135,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004747",
+                    "name": "protein measurement",
+                    "score": 0.12291316090856963,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009470",
+                    "name": "Baraitser-Winter syndrome 1",
+                    "score": 0.11863513335378928,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004698",
+                    "name": "insomnia",
+                    "score": 0.1085623045994816,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000095",
+                    "name": "chronic lymphocytic leukemia",
+                    "score": 0.09897751836023584,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003864",
+                    "name": "chronic lymphocytic leukemia/small lymphocytic lymphoma",
+                    "score": 0.09791497627801733,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004975",
+                    "name": "Alzheimer disease",
+                    "score": 0.08346233355935237,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000182",
+                    "name": "hepatocellular carcinoma",
+                    "score": 0.08255065667136809,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007254",
+                    "name": "breast cancer",
+                    "score": 0.08085163644929641,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0002715",
+                    "name": "uterine cancer",
+                    "score": 0.07428555079162505,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004736",
+                    "name": "aspartate aminotransferase measurement",
+                    "score": 0.0678270973109539,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004612",
+                    "name": "high density lipoprotein cholesterol measurement",
+                    "score": 0.06588900889329725,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0001063",
+                    "name": "deafness",
+                    "score": 0.0533629186491473,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_1000049",
+                    "name": "pulmonary tuberculosis",
+                    "score": 0.05153585751436675,
+                    "matched": false
+                }
+            ],
+            "articles": [],
+            "ot_synonym_selection_usage": {
+                "text": "None",
+                "input_tokens": 942,
+                "output_tokens": 3,
+                "flex": false
+            }
+        },
+        "synonyms": [
+            "ASD",
+            "Autism",
+            "Autistic Disorder",
+            "Pervasive Developmental Disorder",
+            "PDD",
+            "Autistic Spectrum Disorder",
+            "Infantile Autism",
+            "Kanner Syndrome",
+            "Childhood Autism",
+            "Autism Spectrum Condition",
+            "Kanner's Syndrome",
+            "Autistic Spectrum Disorders"
+        ],
+        "pubmed_pmids": [
+            "35190550",
+            "31171384",
+            "28496999",
+            "27625340",
+            "41529692",
+            "39734360",
+            "35594181",
+            "40368919",
+            "37371710",
+            "41272221",
+            "39606011",
+            "40375105"
+        ]
+    }
+}

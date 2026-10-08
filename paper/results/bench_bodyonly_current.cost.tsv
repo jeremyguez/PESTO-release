@@ -1,0 +1,276 @@
+gene	phenotype	step	model	calls	input_tokens	output_tokens	usd	cached
+ANAPC4	body mass index	SynonymsGeneral	opus5	1	375	358	0.010825	False
+ANAPC4	body mass index	Broadened	haiku	1	399	95	0.000874	False
+ANAPC4	body mass index	BandsGeneral	haiku	3	13068	536	0.015748	False
+ANAPC4	body mass index	ProbabilityReadGeneral	opus5	1	13213	1298	0.098515	False
+ANAPC4	body mass index	ot_gate	claude-haiku-4-5@vertex	1	469	16	0.000549	False
+ANAPC4	body mass index	ot_read	claude-opus-5@vertex	1	2348	1461	0.048265	False
+ANAPC4	body mass index	total		8	29872	3764	0.174776	False
+ANKDD1B	type 2 diabetes	Synonyms	opus5	1	345	373	0.011050	False
+ANKDD1B	type 2 diabetes	Broadened	haiku	1	401	104	0.000921	False
+ANKDD1B	type 2 diabetes	Bands	haiku	2	6918	284	0.008338	False
+ANKDD1B	type 2 diabetes	ProbabilityRead	opus5	1	1137	657	0.022110	False
+ANKDD1B	type 2 diabetes	ot_gate	claude-haiku-4-5@vertex	1	506	13	0.000571	False
+ANKDD1B	type 2 diabetes	ot_read	claude-opus-5@vertex	1	2405	1193	0.041850	False
+ANKDD1B	type 2 diabetes	total		7	11712	2624	0.084840	False
+ATAD2B	adult height	SynonymsGeneral	opus5	1	374	225	0.007495	False
+ATAD2B	adult height	Broadened	haiku	1	398	85	0.000823	False
+ATAD2B	adult height	BandsGeneral	haiku	1	2743	98	0.003233	False
+ATAD2B	adult height	ProbabilityReadGeneral	opus5	1	3244	483	0.028295	False
+ATAD2B	adult height	ot_gate	claude-haiku-4-5@vertex	1	473	13	0.000538	False
+ATAD2B	adult height	ot_read	claude-opus-5@vertex	1	2346	1368	0.045930	False
+ATAD2B	adult height	total		6	9578	2272	0.086314	False
+BICRAL	blood pressure	SynonymsGeneral	opus5	1	376	427	0.012555	False
+BICRAL	blood pressure	Broadened	haiku	1	398	82	0.000808	False
+BICRAL	blood pressure	BandsGeneral	haiku	1	2351	98	0.002841	False
+BICRAL	blood pressure	ProbabilityReadGeneral	opus5	1	1119	267	0.012270	False
+BICRAL	blood pressure	ot_gate	claude-haiku-4-5@vertex	1	550	25	0.000675	False
+BICRAL	blood pressure	ot_read	claude-opus-5@vertex	1	2439	846	0.033345	False
+BICRAL	blood pressure	total		6	7233	1745	0.062494	False
+C18orf63	body mass index	SynonymsGeneral	opus5	1	375	363	0.010950	False
+C18orf63	body mass index	Broadened	haiku	1	399	95	0.000874	False
+C18orf63	body mass index	BandsGeneral	haiku	1	1363	213	0.002428	False
+C18orf63	body mass index	ProbabilityReadGeneral	opus5	1	1119	235	0.011470	False
+C18orf63	body mass index	ot_gate	claude-haiku-4-5@vertex	1	509	25	0.000634	True
+C18orf63	body mass index	ot_read	claude-opus-5@vertex	1	2394	917	0.034895	True
+C18orf63	body mass index	total		6	6159	1848	0.061251	False
+CALHM4	schizophrenia	Synonyms	opus5	1	343	372	0.011015	False
+CALHM4	schizophrenia	Broadened	haiku	1	401	71	0.000756	False
+CALHM4	schizophrenia	ProbabilityRead	opus5	1	1119	238	0.011545	False
+CALHM4	schizophrenia	ot_gate	claude-haiku-4-5@vertex	1	577	7	0.000612	True
+CALHM4	schizophrenia	ot_read	claude-opus-5@vertex	1	2471	221	0.017880	True
+CALHM4	schizophrenia	total		5	4911	909	0.041808	False
+CLVS1	body mass index	SynonymsGeneral	opus5	1	375	182	0.006425	False
+CLVS1	body mass index	Broadened	haiku	1	399	95	0.000874	False
+CLVS1	body mass index	BandsGeneral	haiku	1	3965	164	0.004785	False
+CLVS1	body mass index	ProbabilityReadGeneral	opus5	1	3941	608	0.034905	False
+CLVS1	body mass index	ot_gate	claude-haiku-4-5@vertex	1	499	22	0.000609	False
+CLVS1	body mass index	ot_read	claude-opus-5@vertex	1	2389	1004	0.037045	False
+CLVS1	body mass index	total		6	11568	2075	0.084643	False
+CREB5	atrial fibrillation	Synonyms	opus5	1	345	351	0.010500	False
+CREB5	atrial fibrillation	Broadened	haiku	1	402	73	0.000767	False
+CREB5	atrial fibrillation	Bands	haiku	3	16183	668	0.019523	False
+CREB5	atrial fibrillation	ProbabilityRead	opus5	1	14607	795	0.092910	False
+CREB5	atrial fibrillation	ot_gate	claude-haiku-4-5@vertex	1	501	25	0.000626	False
+CREB5	atrial fibrillation	ot_read	claude-opus-5@vertex	1	2376	230	0.017630	False
+CREB5	atrial fibrillation	total		8	34414	2142	0.141956	False
+CUL4A	bipolar disorder	Synonyms	opus5	1	344	204	0.006820	False
+CUL4A	bipolar disorder	Broadened	haiku	1	399	64	0.000719	False
+CUL4A	bipolar disorder	Bands	haiku	7	34867	1566	0.042697	False
+CUL4A	bipolar disorder	ProbabilityRead	opus5	1	14454	669	0.088995	False
+CUL4A	bipolar disorder	ot_gate	claude-haiku-4-5@vertex	1	494	13	0.000559	False
+CUL4A	bipolar disorder	ot_read	claude-opus-5@vertex	1	2371	222	0.017405	False
+CUL4A	bipolar disorder	total		12	52929	2738	0.157195	False
+CYP7B1	schizophrenia	Synonyms	opus5	1	343	317	0.009640	False
+CYP7B1	schizophrenia	Broadened	haiku	1	401	71	0.000756	False
+CYP7B1	schizophrenia	Bands	haiku	7	36833	1544	0.044553	False
+CYP7B1	schizophrenia	ProbabilityRead	opus5	1	14898	569	0.088715	False
+CYP7B1	schizophrenia	ot_gate	claude-haiku-4-5@vertex	1	494	13	0.000559	False
+CYP7B1	schizophrenia	ot_read	claude-opus-5@vertex	1	2379	922	0.034945	False
+CYP7B1	schizophrenia	total		12	55348	3436	0.179168	False
+DCST1	adult height	SynonymsGeneral	opus5	1	374	206	0.007020	False
+DCST1	adult height	Broadened	haiku	1	398	85	0.000823	False
+DCST1	adult height	BandsGeneral	haiku	2	7180	262	0.008490	False
+DCST1	adult height	ProbabilityReadGeneral	opus5	1	4174	643	0.036945	False
+DCST1	adult height	ot_gate	claude-haiku-4-5@vertex	1	472	16	0.000552	True
+DCST1	adult height	ot_read	claude-opus-5@vertex	1	2344	1053	0.038045	True
+DCST1	adult height	total		7	14942	2265	0.091875	False
+FBXL14	atrial fibrillation	Synonyms	opus5	1	345	318	0.009675	False
+FBXL14	atrial fibrillation	Broadened	haiku	1	402	78	0.000792	False
+FBXL14	atrial fibrillation	Bands	haiku	1	3242	164	0.004062	False
+FBXL14	atrial fibrillation	ProbabilityRead	opus5	1	4681	529	0.036630	False
+FBXL14	atrial fibrillation	ot_gate	claude-haiku-4-5@vertex	1	523	31	0.000678	False
+FBXL14	atrial fibrillation	ot_read	claude-opus-5@vertex	1	2406	501	0.024555	False
+FBXL14	atrial fibrillation	total		6	11599	1621	0.076392	False
+H3Y2	type 2 diabetes	Synonyms	opus5	1	345	361	0.010750	False
+H3Y2	type 2 diabetes	Broadened	haiku	1	401	107	0.000936	False
+H3Y2	type 2 diabetes	Bands	haiku	1	3576	186	0.004506	False
+H3Y2	type 2 diabetes	ProbabilityRead	opus5	1	3748	428	0.029440	False
+H3Y2	type 2 diabetes	ot_gate	claude-haiku-4-5@vertex	1	426	13	0.000491	True
+H3Y2	type 2 diabetes	ot_read	claude-opus-5@vertex	1	2278	310	0.019140	True
+H3Y2	type 2 diabetes	total		6	10774	1405	0.065263	False
+H4C15	adult height	SynonymsGeneral	opus5	1	374	164	0.005970	False
+H4C15	adult height	Broadened	haiku	1	398	84	0.000818	False
+H4C15	adult height	BandsGeneral	haiku	1	2003	76	0.002383	False
+H4C15	adult height	ProbabilityReadGeneral	opus5	1	1107	376	0.014935	False
+H4C15	adult height	ot_gate	claude-haiku-4-5@vertex	1	566	7	0.000601	False
+H4C15	adult height	ot_read	claude-opus-5@vertex	1	2441	221	0.017730	False
+H4C15	adult height	total		6	6889	928	0.042437	False
+H4C16	adult height	SynonymsGeneral	opus5	1	374	203	0.006945	False
+H4C16	adult height	Broadened	haiku	1	398	85	0.000823	False
+H4C16	adult height	BandsGeneral	haiku	1	4035	142	0.004745	False
+H4C16	adult height	ProbabilityReadGeneral	opus5	1	3599	431	0.028770	False
+H4C16	adult height	ot_gate	claude-haiku-4-5@vertex	1	545	16	0.000625	True
+H4C16	adult height	ot_read	claude-opus-5@vertex	1	2415	619	0.027550	True
+H4C16	adult height	total		6	11366	1496	0.069458	False
+KRTAP5-4	type 2 diabetes	Synonyms	opus5	1	345	253	0.008050	False
+KRTAP5-4	type 2 diabetes	Broadened	haiku	1	401	104	0.000921	False
+KRTAP5-4	type 2 diabetes	Bands	haiku	1	1875	76	0.002255	False
+KRTAP5-4	type 2 diabetes	ProbabilityRead	opus5	1	1149	256	0.012145	False
+KRTAP5-4	type 2 diabetes	ot_gate	claude-haiku-4-5@vertex	1	375	7	0.000410	True
+KRTAP5-4	type 2 diabetes	ot_read	claude-opus-5@vertex	1	2208	236	0.016940	True
+KRTAP5-4	type 2 diabetes	total		6	6353	932	0.040721	False
+LMTK2	type 2 diabetes	Synonyms	opus5	1	345	222	0.007275	False
+LMTK2	type 2 diabetes	Broadened	haiku	1	401	101	0.000906	False
+LMTK2	type 2 diabetes	Bands	haiku	4	18895	744	0.022615	False
+LMTK2	type 2 diabetes	ProbabilityRead	opus5	1	8879	974	0.068745	False
+LMTK2	type 2 diabetes	ot_gate	claude-haiku-4-5@vertex	1	581	46	0.000811	False
+LMTK2	type 2 diabetes	ot_read	claude-opus-5@vertex	1	2482	222	0.017960	False
+LMTK2	type 2 diabetes	total		9	31583	2309	0.118312	False
+LRRC8E	schizophrenia	Synonyms	opus5	1	343	282	0.008765	False
+LRRC8E	schizophrenia	Broadened	haiku	1	401	71	0.000756	False
+LRRC8E	schizophrenia	Bands	haiku	1	2727	98	0.003217	False
+LRRC8E	schizophrenia	ProbabilityRead	opus5	1	3924	706	0.037270	False
+LRRC8E	schizophrenia	ot_gate	claude-haiku-4-5@vertex	1	480	13	0.000545	True
+LRRC8E	schizophrenia	ot_read	claude-opus-5@vertex	1	2344	155	0.015595	True
+LRRC8E	schizophrenia	total		6	10219	1325	0.066148	False
+MACROD2	bipolar disorder	Synonyms	opus5	1	344	319	0.009695	False
+MACROD2	bipolar disorder	Broadened	haiku	1	399	19	0.000494	False
+MACROD2	bipolar disorder	Bands	haiku	6	26814	1248	0.033054	False
+MACROD2	bipolar disorder	ProbabilityRead	opus5	1	13210	806	0.086200	False
+MACROD2	bipolar disorder	ot_gate	claude-haiku-4-5@vertex	1	468	22	0.000578	False
+MACROD2	bipolar disorder	ot_read	claude-opus-5@vertex	1	2355	1285	0.043900	False
+MACROD2	bipolar disorder	total		11	43590	3699	0.173921	False
+MBD3L2	asthma	Synonyms	opus5	1	340	191	0.006475	False
+MBD3L2	asthma	Broadened	haiku	1	399	62	0.000709	False
+MBD3L2	asthma	Bands	haiku	1	3047	120	0.003647	False
+MBD3L2	asthma	ProbabilityRead	opus5	1	3695	421	0.029000	False
+MBD3L2	asthma	ot_gate	claude-haiku-4-5@vertex	1	356	7	0.000391	True
+MBD3L2	asthma	ot_read	claude-opus-5@vertex	1	2181	64	0.012505	True
+MBD3L2	asthma	total		6	10018	865	0.052727	False
+MICU2	atrial fibrillation	Synonyms	opus5	1	345	309	0.009450	False
+MICU2	atrial fibrillation	Broadened	haiku	1	402	78	0.000792	False
+MICU2	atrial fibrillation	Bands	haiku	4	17673	788	0.021613	False
+MICU2	atrial fibrillation	ProbabilityRead	opus5	1	13354	869	0.088495	False
+MICU2	atrial fibrillation	ot_gate	claude-haiku-4-5@vertex	1	514	19	0.000609	False
+MICU2	atrial fibrillation	ot_read	claude-opus-5@vertex	1	2395	1148	0.040675	False
+MICU2	atrial fibrillation	total		9	34683	3211	0.161634	False
+MYO18A	schizophrenia	Synonyms	opus5	1	343	273	0.008540	False
+MYO18A	schizophrenia	Broadened	haiku	1	401	71	0.000756	False
+MYO18A	schizophrenia	Bands	haiku	4	17824	788	0.021764	False
+MYO18A	schizophrenia	ProbabilityRead	opus5	1	9717	648	0.064785	False
+MYO18A	schizophrenia	ot_gate	claude-haiku-4-5@vertex	1	520	25	0.000645	False
+MYO18A	schizophrenia	ot_read	claude-opus-5@vertex	1	2420	762	0.031150	False
+MYO18A	schizophrenia	total		9	31225	2567	0.127640	False
+NMT1	blood pressure	SynonymsGeneral	opus5	1	376	409	0.012105	False
+NMT1	blood pressure	Broadened	haiku	1	398	82	0.000808	False
+NMT1	blood pressure	BandsGeneral	haiku	8	41649	1796	0.050629	False
+NMT1	blood pressure	ProbabilityReadGeneral	opus5	1	15084	679	0.092395	False
+NMT1	blood pressure	ot_gate	claude-haiku-4-5@vertex	1	485	34	0.000655	False
+NMT1	blood pressure	ot_read	claude-opus-5@vertex	1	2373	889	0.034090	False
+NMT1	blood pressure	total		13	60365	3889	0.190682	False
+NOP16	adult height	SynonymsGeneral	opus5	1	374	166	0.006020	False
+NOP16	adult height	Broadened	haiku	1	398	85	0.000823	False
+NOP16	adult height	BandsGeneral	haiku	2	7020	400	0.009020	False
+NOP16	adult height	ProbabilityReadGeneral	opus5	1	2801	625	0.029630	False
+NOP16	adult height	ot_gate	claude-haiku-4-5@vertex	1	411	16	0.000491	True
+NOP16	adult height	ot_read	claude-opus-5@vertex	1	2267	120	0.014335	True
+NOP16	adult height	total		7	13271	1412	0.060319	False
+NT5DC4	body mass index	SynonymsGeneral	opus5	1	375	287	0.009050	False
+NT5DC4	body mass index	Broadened	haiku	1	399	95	0.000874	False
+NT5DC4	body mass index	BandsGeneral	haiku	1	2276	98	0.002766	False
+NT5DC4	body mass index	ProbabilityReadGeneral	opus5	1	1854	374	0.018620	False
+NT5DC4	body mass index	ot_gate	claude-haiku-4-5@vertex	1	442	22	0.000552	True
+NT5DC4	body mass index	ot_read	claude-opus-5@vertex	1	2295	332	0.019775	True
+NT5DC4	body mass index	total		6	7641	1208	0.051637	False
+OPN5	body mass index	SynonymsGeneral	opus5	1	375	322	0.009925	False
+OPN5	body mass index	Broadened	haiku	1	399	95	0.000874	False
+OPN5	body mass index	BandsGeneral	haiku	4	20174	876	0.024554	False
+OPN5	body mass index	ProbabilityReadGeneral	opus5	1	14363	707	0.089490	False
+OPN5	body mass index	ot_gate	claude-haiku-4-5@vertex	1	568	13	0.000633	False
+OPN5	body mass index	ot_read	claude-opus-5@vertex	1	2462	626	0.027960	False
+OPN5	body mass index	total		9	38341	2639	0.153436	False
+OR13G1	atrial fibrillation	Synonyms	opus5	1	345	223	0.007300	False
+OR13G1	atrial fibrillation	Broadened	haiku	1	402	78	0.000792	False
+OR13G1	atrial fibrillation	Bands	haiku	1	2493	98	0.002983	False
+OR13G1	atrial fibrillation	ProbabilityRead	opus5	1	3143	682	0.032765	False
+OR13G1	atrial fibrillation	total		4	6383	1081	0.043840	False
+PPP2R5E	blood pressure	SynonymsGeneral	opus5	1	376	467	0.013555	False
+PPP2R5E	blood pressure	Broadened	haiku	1	398	82	0.000808	False
+PPP2R5E	blood pressure	BandsGeneral	haiku	3	15475	602	0.018485	False
+PPP2R5E	blood pressure	ProbabilityReadGeneral	opus5	1	15558	822	0.098340	False
+PPP2R5E	blood pressure	ot_gate	claude-haiku-4-5@vertex	1	513	31	0.000668	False
+PPP2R5E	blood pressure	ot_read	claude-opus-5@vertex	1	2412	891	0.034335	False
+PPP2R5E	blood pressure	total		8	34732	2895	0.166191	False
+QTMAN	body mass index	SynonymsGeneral	opus5	1	375	333	0.010200	False
+QTMAN	body mass index	Broadened	haiku	1	399	95	0.000874	False
+QTMAN	body mass index	BandsGeneral	haiku	2	7703	350	0.009453	False
+QTMAN	body mass index	ProbabilityReadGeneral	opus5	1	2176	983	0.035455	False
+QTMAN	body mass index	ot_gate	claude-haiku-4-5@vertex	1	490	28	0.000630	True
+QTMAN	body mass index	ot_read	claude-opus-5@vertex	1	2403	1066	0.038665	True
+QTMAN	body mass index	total		7	13546	2855	0.095277	False
+RAB5B	adult height	SynonymsGeneral	opus5	1	374	200	0.006870	False
+RAB5B	adult height	Broadened	haiku	1	398	85	0.000823	False
+RAB5B	adult height	BandsGeneral	haiku	4	18342	913	0.022907	False
+RAB5B	adult height	ProbabilityReadGeneral	opus5	1	15290	1136	0.104850	False
+RAB5B	adult height	ot_gate	claude-haiku-4-5@vertex	1	478	25	0.000603	True
+RAB5B	adult height	ot_read	claude-opus-5@vertex	1	2347	992	0.036535	True
+RAB5B	adult height	total		9	37229	3351	0.172588	False
+SRGAP2	asthma	Synonyms	opus5	1	340	282	0.008750	False
+SRGAP2	asthma	Broadened	haiku	1	399	62	0.000709	False
+SRGAP2	asthma	Bands	haiku	3	13935	624	0.017055	False
+SRGAP2	asthma	ProbabilityRead	opus5	1	12797	628	0.079685	False
+SRGAP2	asthma	ot_gate	claude-haiku-4-5@vertex	1	504	13	0.000569	False
+SRGAP2	asthma	ot_read	claude-opus-5@vertex	1	2389	222	0.017495	False
+SRGAP2	asthma	total		8	30364	1831	0.124263	False
+SSBP2	bipolar disorder	Synonyms	opus5	1	344	204	0.006820	False
+SSBP2	bipolar disorder	Broadened	haiku	1	399	64	0.000719	False
+SSBP2	bipolar disorder	Bands	haiku	3	15107	646	0.018337	False
+SSBP2	bipolar disorder	ProbabilityRead	opus5	1	10915	744	0.073175	False
+SSBP2	bipolar disorder	ot_gate	claude-haiku-4-5@vertex	1	471	25	0.000596	True
+SSBP2	bipolar disorder	ot_read	claude-opus-5@vertex	1	2361	1079	0.038780	True
+SSBP2	bipolar disorder	total		8	29597	2762	0.138427	False
+TCEAL2	asthma	Synonyms	opus5	1	340	269	0.008425	False
+TCEAL2	asthma	Broadened	haiku	1	399	69	0.000744	False
+TCEAL2	asthma	Bands	haiku	1	5195	208	0.006235	False
+TCEAL2	asthma	ProbabilityRead	opus5	1	1107	266	0.012185	False
+TCEAL2	asthma	ot_gate	claude-haiku-4-5@vertex	1	376	7	0.000411	True
+TCEAL2	asthma	ot_read	claude-opus-5@vertex	1	2213	61	0.012590	True
+TCEAL2	asthma	total		6	9630	880	0.040590	False
+TCEAL3	asthma	Synonyms	opus5	1	340	348	0.010400	False
+TCEAL3	asthma	Broadened	haiku	1	399	69	0.000744	False
+TCEAL3	asthma	Bands	haiku	1	1986	76	0.002366	False
+TCEAL3	asthma	ProbabilityRead	opus5	1	2303	349	0.020240	False
+TCEAL3	asthma	ot_gate	claude-haiku-4-5@vertex	1	364	10	0.000414	True
+TCEAL3	asthma	ot_read	claude-opus-5@vertex	1	2196	80	0.012980	True
+TCEAL3	asthma	total		6	7588	932	0.047144	False
+TCEAL4	bipolar disorder	Synonyms	opus5	1	344	204	0.006820	False
+TCEAL4	bipolar disorder	Broadened	haiku	1	399	64	0.000719	False
+TCEAL4	bipolar disorder	Bands	haiku	1	2111	76	0.002491	False
+TCEAL4	bipolar disorder	ProbabilityRead	opus5	1	1915	499	0.022050	False
+TCEAL4	bipolar disorder	ot_gate	claude-haiku-4-5@vertex	1	350	7	0.000385	True
+TCEAL4	bipolar disorder	ot_read	claude-opus-5@vertex	1	2179	48	0.012095	True
+TCEAL4	bipolar disorder	total		6	7298	898	0.044560	False
+UBAC2	asthma	Synonyms	opus5	1	340	298	0.009150	False
+UBAC2	asthma	Broadened	haiku	1	399	62	0.000709	False
+UBAC2	asthma	Bands	haiku	2	10835	460	0.013135	False
+UBAC2	asthma	ProbabilityRead	opus5	1	11623	691	0.075390	False
+UBAC2	asthma	ot_gate	claude-haiku-4-5@vertex	1	510	10	0.000560	False
+UBAC2	asthma	ot_read	claude-opus-5@vertex	1	2393	1071	0.038740	False
+UBAC2	asthma	total		7	26100	2592	0.137684	False
+WASHC1	blood pressure	SynonymsGeneral	opus5	1	376	437	0.012805	False
+WASHC1	blood pressure	Broadened	haiku	1	398	82	0.000808	False
+WASHC1	blood pressure	BandsGeneral	haiku	2	9716	394	0.011686	False
+WASHC1	blood pressure	ProbabilityReadGeneral	opus5	1	7610	812	0.058350	False
+WASHC1	blood pressure	ot_gate	claude-haiku-4-5@vertex	1	374	10	0.000424	False
+WASHC1	blood pressure	ot_read	claude-opus-5@vertex	1	2219	328	0.019295	False
+WASHC1	blood pressure	total		7	20693	2063	0.103368	False
+WASHC2A	blood pressure	SynonymsGeneral	opus5	1	376	359	0.010855	False
+WASHC2A	blood pressure	Broadened	haiku	1	398	82	0.000808	False
+WASHC2A	blood pressure	BandsGeneral	haiku	1	1312	54	0.001582	False
+WASHC2A	blood pressure	ProbabilityReadGeneral	opus5	1	1125	320	0.013625	False
+WASHC2A	blood pressure	ot_gate	claude-haiku-4-5@vertex	1	427	16	0.000507	True
+WASHC2A	blood pressure	ot_read	claude-opus-5@vertex	1	2276	467	0.023055	True
+WASHC2A	blood pressure	total		6	5914	1298	0.050432	False
+XAGE1A	bipolar disorder	Synonyms	opus5	1	344	321	0.009745	False
+XAGE1A	bipolar disorder	Broadened	haiku	1	399	64	0.000719	False
+XAGE1A	bipolar disorder	Bands	haiku	3	12162	536	0.014842	False
+XAGE1A	bipolar disorder	ProbabilityRead	opus5	1	7164	484	0.047920	False
+XAGE1A	bipolar disorder	total		6	20069	1405	0.073226	False
+ZNF765	type 2 diabetes	Synonyms	opus5	1	345	221	0.007250	False
+ZNF765	type 2 diabetes	Broadened	haiku	1	401	101	0.000906	False
+ZNF765	type 2 diabetes	Bands	haiku	1	1715	76	0.002095	False
+ZNF765	type 2 diabetes	ProbabilityRead	opus5	1	1131	249	0.011880	False
+ZNF765	type 2 diabetes	ot_gate	claude-haiku-4-5@vertex	1	442	7	0.000477	True
+ZNF765	type 2 diabetes	ot_read	claude-opus-5@vertex	1	2298	181	0.016015	True
+ZNF765	type 2 diabetes	total		6	6332	835	0.038623	False

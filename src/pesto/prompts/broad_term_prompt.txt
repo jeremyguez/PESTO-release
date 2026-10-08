@@ -1,0 +1,31 @@
+You are a medical expert preparing a literature search for the disease below.
+
+Disease name: {phenotype}
+
+Disease names are often written the way OMIM writes them, with a genetic subtype
+index (a trailing number, a locus number, "type N") and/or a mode of inheritance
+("autosomal recessive", "X-linked", "familial"), and with the words inverted
+after commas. The literature rarely uses these parts.
+
+Return the same disease with those parts removed and the words in natural order,
+so that it can be searched the way authors write it. "nephronophthisis 7" gives
+"nephronophthisis". "neutropenia, severe congenital, 9, autosomal dominant"
+gives "severe congenital neutropenia".
+
+Do this only when nothing clinical is added or removed. The number must index a
+gene or a locus, not a distinct clinical entity, and it must not be part of the
+name of a protein or a molecule. "Type 2 diabetes" must NOT give "diabetes" and
+"glycogen storage disease type II" must NOT give "glycogen storage disease",
+because there the number names a different disease. "Plasminogen activator
+inhibitor type 1 deficiency" must NOT give "plasminogen activator inhibitor
+deficiency", because there the number is part of the protein name. Usher
+syndrome types differ clinically, so "Usher syndrome type 3" must NOT give
+"Usher syndrome".
+
+If the name carries no such part, or if removing it would change the clinical
+meaning, return NONE.
+
+Return your answer in this exact XML format:
+<response>
+<term>the broader name, or NONE</term>
+</response>

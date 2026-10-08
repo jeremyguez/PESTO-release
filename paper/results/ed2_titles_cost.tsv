@@ -1,0 +1,4 @@
+method	n	mean_usd	sd_usd
+Model knowledge	503	0.0253	0.0054
+PESTO-titles	503	0.0556	0.0138
+PESTO	503	0.1139	0.0395

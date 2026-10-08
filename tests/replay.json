@@ -1,0 +1,455 @@
+{
+ "aliases": {
+  "APC": "ef2b68fc3dc3ccbf",
+  "DDX41": "3b58cc24bdbb5eae",
+  "DMD": "e374aa6a5167cd92",
+  "ERBB3": "4715ad6cbeef61a5",
+  "NLRP1": "4e3b3fff97afb00e",
+  "TTN": "9d8c8e0ac84fa4ff"
+ },
+ "arms": {
+  "+aliases": "0bef80216fd3fcf4",
+  "abstracts": {
+   "blocks": [
+    "cba813bac4dd",
+    "300de4c6305b",
+    "5a97f73e3e1c",
+    "5f7a22f857d6",
+    "32d65c01c4a2",
+    "a08ad4d16c40",
+    "7290a5cdc7bf",
+    "1fcad6eb8d44",
+    "c88575c2237f",
+    "613d3e498a21",
+    "e46ab153b92a",
+    "1820dfc36e20",
+    "e19f36fea193",
+    "5290f57ef16e",
+    "2409b4c1fe43"
+   ],
+   "fingerprint": "0bbbaf3a5c9c"
+  },
+  "abstracts-bare": {
+   "blocks": [
+    "cba813bac4dd",
+    "300de4c6305b",
+    "5a97f73e3e1c",
+    "5f7a22f857d6",
+    "32d65c01c4a2",
+    "a08ad4d16c40",
+    "7290a5cdc7bf",
+    "1fcad6eb8d44",
+    "c88575c2237f",
+    "613d3e498a21",
+    "e46ab153b92a",
+    "1820dfc36e20",
+    "e19f36fea193",
+    "655d10c984ed",
+    "2409b4c1fe43"
+   ],
+   "fingerprint": "d1b40e2840fd"
+  },
+  "abstracts-open": {
+   "blocks": [
+    "cba813bac4dd",
+    "300de4c6305b",
+    "5a97f73e3e1c",
+    "5f7a22f857d6",
+    "32d65c01c4a2",
+    "a08ad4d16c40",
+    "7290a5cdc7bf",
+    "1fcad6eb8d44",
+    "c88575c2237f",
+    "613d3e498a21",
+    "e46ab153b92a",
+    "1820dfc36e20",
+    "e19f36fea193",
+    "c31c1aa16bd9",
+    "2409b4c1fe43"
+   ],
+   "fingerprint": "0e1888619094"
+  },
+  "abstracts-score": {
+   "blocks": [
+    "cba813bac4dd",
+    "300de4c6305b",
+    "5a97f73e3e1c",
+    "5f7a22f857d6",
+    "32d65c01c4a2",
+    "a08ad4d16c40",
+    "7290a5cdc7bf",
+    "1fcad6eb8d44",
+    "c88575c2237f",
+    "613d3e498a21",
+    "e46ab153b92a",
+    "1820dfc36e20",
+    "e19f36fea193",
+    "4be91512497a",
+    "c12630d78ae7"
+   ],
+   "fingerprint": "5cb9b2a13412"
+  },
+  "abstracts-trait": {
+   "blocks": [
+    "8508333f90fe",
+    "300de4c6305b",
+    "5a97f73e3e1c",
+    "5f7a22f857d6",
+    "32d65c01c4a2",
+    "a08ad4d16c40",
+    "7290a5cdc7bf",
+    "1fcad6eb8d44",
+    "c88575c2237f",
+    "613d3e498a21",
+    "e46ab153b92a",
+    "5fbbeadfa27a",
+    "e19f36fea193",
+    "6965453da1d0",
+    "2409b4c1fe43"
+   ],
+   "fingerprint": "07c2a0cb2619"
+  },
+  "fulltext": {
+   "blocks": [
+    "cba813bac4dd",
+    "300de4c6305b",
+    "5a97f73e3e1c",
+    "5f7a22f857d6",
+    "c144cee56f95",
+    "32d65c01c4a2",
+    "a08ad4d16c40",
+    "7290a5cdc7bf",
+    "1fcad6eb8d44",
+    "c88575c2237f",
+    "df94cc6bddaa",
+    "dfe829d61ad3",
+    "2949041a5ef0",
+    "1fb0b2eecad5",
+    "1820dfc36e20",
+    "bc0979b92832",
+    "5290f57ef16e",
+    "2409b4c1fe43"
+   ],
+   "fingerprint": "54db504f3231"
+  },
+  "fulltext-trait": {
+   "blocks": [
+    "8508333f90fe",
+    "300de4c6305b",
+    "5a97f73e3e1c",
+    "5f7a22f857d6",
+    "c144cee56f95",
+    "32d65c01c4a2",
+    "a08ad4d16c40",
+    "7290a5cdc7bf",
+    "1fcad6eb8d44",
+    "c88575c2237f",
+    "df94cc6bddaa",
+    "dfe829d61ad3",
+    "2949041a5ef0",
+    "1fb0b2eecad5",
+    "5fbbeadfa27a",
+    "bc0979b92832",
+    "6965453da1d0",
+    "2409b4c1fe43"
+   ],
+   "fingerprint": "ed94c1e343a5"
+  },
+  "knowledge": {
+   "blocks": [
+    "613d3e498a21",
+    "e64aef8686d4",
+    "5a90e0d5aaf1",
+    "c35e0e58ff56",
+    "2409b4c1fe43"
+   ],
+   "fingerprint": "2b18abb989c5"
+  },
+  "titles": {
+   "blocks": [
+    "cba813bac4dd",
+    "300de4c6305b",
+    "5a97f73e3e1c",
+    "5f7a22f857d6",
+    "32d65c01c4a2",
+    "a08ad4d16c40",
+    "7290a5cdc7bf",
+    "1fcad6eb8d44",
+    "c88575c2237f",
+    "613d3e498a21",
+    "e64aef8686d4",
+    "1820dfc36e20",
+    "e19f36fea193",
+    "5290f57ef16e",
+    "2409b4c1fe43"
+   ],
+   "fingerprint": "1ec6267b715a"
+  }
+ },
+ "constants": {
+  "config": "c2cef4cbfdd39800",
+  "reading": "bbbc42f41a465228",
+  "scoring": "e0e6b0555d45fa9b"
+ },
+ "judge": {
+  "<established>70</established><existing>2": [
+   "Established",
+   "PARSE_FAIL"
+  ],
+  "<novelty>0</novelty>": [
+   "PARSE_FAIL",
+   "Established"
+  ],
+  "<novelty>100</novelty>": [
+   "PARSE_FAIL",
+   "Novel"
+  ],
+  "<novelty>50</novelty>": [
+   "PARSE_FAIL",
+   "Hypothesized"
+  ],
+  "<novelty>83</novelty>": [
+   "PARSE_FAIL",
+   "Hypothesized"
+  ],
+  "nothing": [
+   "PARSE_FAIL",
+   "PARSE_FAIL"
+  ]
+ },
+ "novelty_parses": {
+  "ABCA1_C-reactive_protein_novel_run01.json": "f4f8bd592ad31370",
+  "ABCA1_HDL_cholesterol_novel_run01.json": "6ccb066584260cf7",
+  "ABCA1_LDL_cholesterol_novel_run01.json": "89b58a2c8d476859",
+  "ABCA1_Total_cholesterol_novel_run01.json": "56b600bd14d73173",
+  "ABCA1_Waist_to_hip_ratio_adjusted_for_BMI_novel_run01.json": "7633f1a5c5493429",
+  "ABCA6_LDL_cholesterol_novel_run01.json": "fbcf2df9456d119e",
+  "ABCA6_Total_cholesterol_novel_run01.json": "fbae68614feea0d8",
+  "ABCB11_Alanine_transaminase_novel_run01.json": "980c3dafd2af3732",
+  "ABCB11_Aspartate_aminotransferase_novel_run01.json": "a1fd9a378ee135c9",
+  "ABCB11_C-reactive_protein_novel_run01.json": "3c4e9ddda36227d2",
+  "ABCB4_Alanine_transaminase_novel_run01.json": "805fdccb4093b542",
+  "ABCB4_Aspartate_aminotransferase_novel_run01.json": "c54b699603a4ca98",
+  "ABCB4_Height_novel_run01.json": "e2cb6da92e5b6434",
+  "ABCB4_gamma-glutamyl_transferase_novel_run01.json": "7711ac6a406641eb",
+  "ABCC2_Alanine_transaminase_novel_run01.json": "5b2a0784a0840763",
+  "ABCC6_Height_novel_run01.json": "896a46471093070b",
+  "ABCC6_phosphate_novel_run01.json": "608a358961bd4d96",
+  "ABCC6_red_cell_distribution_width_novel_run01.json": "29603b7957390c3b",
+  "ABCC9_atrial_fibrillation,_familial,_12_novel_run01.json": "73048277bfc1653f",
+  "ABCE1_mean_corpuscular_hemoglobin_concentration_novel_run01.json": "52620786402ef56f",
+  "ABCG2_Gout_novel_run01.json": "01ccc54ccad6e263",
+  "ABCG5_LDL_cholesterol_novel_run01.json": "f13c45f7cd50d7fd",
+  "ABCG5_Total_cholesterol_novel_run01.json": "704ed90cb6dd32ff",
+  "ABCG8_Chronic_renal_failure_novel_run01.json": "f5e6b94d3e8e892c",
+  "ABCG8_LDL_cholesterol_novel_run01.json": "c5e47074a26c8486",
+  "ABCG8_Total_cholesterol_novel_run01.json": "df6fec2e3777db12",
+  "ABCG8_low_density_lipoprotein_novel_run01.json": "50d6c47c4bee572f",
+  "ACAN_Gout_novel_run01.json": "65dc30cd29453f2c",
+  "ACAN_Height_novel_run01.json": "8f324b1fb3fdfbd7",
+  "ACAN_Triglycerides_novel_run01.json": "d13f5e517cc6fb4a",
+  "ACTB_Autism_Spectrum_Disorder_novel_run01.json": "188779da3a2a1009",
+  "ACTC1_Heart_failure_novel_run01.json": "b3fa20d7807cb3e9",
+  "ACTC1_LDL_cholesterol_novel_run01.json": "7208a1490f4bb11c",
+  "ACTG1_Autism_Spectrum_Disorder_novel_run01.json": "f983cd50e8042709",
+  "ACTN3_Height_novel_run01.json": "3ad0e36d58695ff6",
+  "ACTR6_Benign_and_in_situ_cervical_and_uterine_neoplasms_novel_run01.json": "94ed1f0cc6bd5c97",
+  "ACVR1C_Atrial_fibrillation_novel_run01.json": "347e7932d1dcb1ea",
+  "ACVR1C_Waist_to_hip_ratio_adjusted_for_BMI_novel_run01.json": "25f801e13150314b",
+  "ADAMTS10_Height_novel_run01.json": "b53f199c1d54b5d9",
+  "ADAMTS17_Height_novel_run01.json": "407233c118849289"
+ },
+ "ot_verdicts": {
+  "ABCA1_C-reactive_protein_novel_run01.json": "165b25172ab5a1eb",
+  "ABCA1_HDL_cholesterol_novel_run01.json": "8f2caa2aab49c66b",
+  "ABCA1_LDL_cholesterol_novel_run01.json": "86b20b797967375e",
+  "ABCA1_Total_cholesterol_novel_run01.json": "4b922af760aa9a82",
+  "ABCA1_Waist_to_hip_ratio_adjusted_for_BMI_novel_run01.json": "2af353844f917574",
+  "ABCA6_LDL_cholesterol_novel_run01.json": "c2699ce85004728a",
+  "ABCA6_Total_cholesterol_novel_run01.json": "82c3bcf9820dc726",
+  "ABCB11_Alanine_transaminase_novel_run01.json": "6e60d27cece4162b",
+  "ABCB11_Aspartate_aminotransferase_novel_run01.json": "1f871901ac81a09c",
+  "ABCB11_C-reactive_protein_novel_run01.json": "cbb9c7d085ab8131",
+  "ABCB4_Alanine_transaminase_novel_run01.json": "60d1840e2778769f",
+  "ABCB4_Aspartate_aminotransferase_novel_run01.json": "2dbcfcbfca71d1da",
+  "ABCB4_Height_novel_run01.json": "850e6124d1806b48",
+  "ABCB4_gamma-glutamyl_transferase_novel_run01.json": "0b101c8cc58e3b6c",
+  "ABCC2_Alanine_transaminase_novel_run01.json": "5499ac220329bc43",
+  "ABCC6_Height_novel_run01.json": "b5bc1f8c39f0566d",
+  "ABCC6_phosphate_novel_run01.json": "febd451251b36395",
+  "ABCC6_red_cell_distribution_width_novel_run01.json": "01442d9a659bc8b2",
+  "ABCC9_atrial_fibrillation,_familial,_12_novel_run01.json": "0406af40bdb6bac4",
+  "ABCE1_mean_corpuscular_hemoglobin_concentration_novel_run01.json": "d959558b370400b4",
+  "ABCG2_Gout_novel_run01.json": "b527a2dda2b0a6f2",
+  "ABCG5_LDL_cholesterol_novel_run01.json": "3cba4dff36f87e83",
+  "ABCG5_Total_cholesterol_novel_run01.json": "3dea4e2943798dfc",
+  "ABCG8_Chronic_renal_failure_novel_run01.json": "e075a072897697be",
+  "ABCG8_LDL_cholesterol_novel_run01.json": "8d7c2c625615e7b4",
+  "ABCG8_Total_cholesterol_novel_run01.json": "f7aa4b4adb74d83b",
+  "ABCG8_low_density_lipoprotein_novel_run01.json": "8d7c2c625615e7b4",
+  "ACAN_Gout_novel_run01.json": "e075a072897697be",
+  "ACAN_Height_novel_run01.json": "8a83f998e91ec312",
+  "ACAN_Triglycerides_novel_run01.json": "e075a072897697be",
+  "ACTB_Autism_Spectrum_Disorder_novel_run01.json": "3dc09ffc1c65d722",
+  "ACTC1_Heart_failure_novel_run01.json": "d5f336723fb718e4",
+  "ACTC1_LDL_cholesterol_novel_run01.json": "e075a072897697be",
+  "ACTG1_Autism_Spectrum_Disorder_novel_run01.json": "e075a072897697be",
+  "ACTN3_Height_novel_run01.json": "aa4336667897edb6",
+  "ACTR6_Benign_and_in_situ_cervical_and_uterine_neoplasms_novel_run01.json": "e075a072897697be",
+  "ACVR1C_Atrial_fibrillation_novel_run01.json": "e075a072897697be",
+  "ACVR1C_Waist_to_hip_ratio_adjusted_for_BMI_novel_run01.json": "d44e4144e82e0a45",
+  "ADAMTS10_Height_novel_run01.json": "e4a5a08fe7375cc7",
+  "ADAMTS17_Height_novel_run01.json": "392f32d0f8e6482c"
+ },
+ "prompts": {
+  "+BareProbabilityRead": "1c6e7d9576f54b02",
+  "+KnowledgeRead": "6e1bd5032785f100",
+  "+NoveltyScoreRead": "dffc95e9d5295d04",
+  "+OpenProbabilityRead": "a5593012273eb959",
+  "+ProbabilityRead": "0eb23c305406441e",
+  "+ProbabilityReadGeneral": "5747b3abbae7e9ed",
+  "broad_term_prompt": "1fcea4897f5802b9",
+  "evidence_band_general": "4037d2e8ba02b0e4",
+  "evidence_band_prompt": "6fb325e9ea8ea590",
+  "knowledge_probabilities": "6e1bd5032785f100",
+  "novelty_assessment_general": "abba3731f4b086d7",
+  "novelty_assessment_prompt": "21e4ad4c70ec3fd8",
+  "novelty_probabilities": "7da799c03383aa21",
+  "novelty_probabilities_bare": "1c6e7d9576f54b02",
+  "novelty_probabilities_general": "a7a97635b2e5ccfe",
+  "novelty_probabilities_open": "a5593012273eb959",
+  "novelty_score": "dffc95e9d5295d04",
+  "ot_tagged_gate_prompt": "2b1b05e119613243",
+  "ot_tagged_match_reasons_prompt": "f83ab7165d9e9227",
+  "ot_tagged_match_v7_prompt": "eacc3df301497f4d",
+  "phenotype_anchors_prompt": "6bac77bc349a9792",
+  "phenotype_kind_prompt": "e6f52eabb001efdd",
+  "phenotype_synonyms_general": "4f1d3c306abdb12e",
+  "phenotype_synonyms_prompt": "0f1de91d8e7c7b84",
+  "title_kick_prompt": "51e0ddd494810af5"
+ },
+ "render": {
+  "ABCC9_atrial_fibrillation_familial_12": {
+   "n": 34,
+   "titles_only": "5456bfc1985752df",
+   "with_abstracts": "965808501e00c882"
+  },
+  "DDX41_acromesomelic_dysplasia": {
+   "n": 24,
+   "titles_only": "5251d78ee9424bef",
+   "with_abstracts": "bc92a66a76da9632"
+  },
+  "FRY_neurodevelopmental_disorder": {
+   "n": 11,
+   "titles_only": "e329a3287ea8636f",
+   "with_abstracts": "9dbe72b86aeac5db"
+  }
+ },
+ "select": {
+  "ABCC9_atrial_fibrillation_familial_12": {
+   "keep_all": 34,
+   "strength_14_14": [
+    "31039256",
+    "20301690",
+    "38510289",
+    "38217872",
+    "26226329",
+    "35876283",
+    "12961066",
+    "12939542",
+    "12166651",
+    "11310586",
+    "40923965",
+    "20033705",
+    "19744493",
+    "15613976"
+   ],
+   "strength_20_20": [
+    "31039256",
+    "20301690",
+    "36129056",
+    "38510289",
+    "38217872",
+    "42290677",
+    "26226329",
+    "35876283",
+    "12961066",
+    "12939542",
+    "12166651",
+    "11310586",
+    "40923965",
+    "35495129",
+    "20033705",
+    "39344622",
+    "19744493",
+    "24176758",
+    "15613976",
+    "15115899"
+   ]
+  },
+  "DDX41_acromesomelic_dysplasia": {
+   "keep_all": 24,
+   "strength_14_14": [
+    "33328584",
+    "35671390",
+    "36445482",
+    "39357070",
+    "40818987",
+    "31203998",
+    "35338116",
+    "26712909",
+    "27384852",
+    "27248996",
+    "22237025",
+    "20941364",
+    "39453476",
+    "35612271"
+   ],
+   "strength_20_20": [
+    "33328584",
+    "35671390",
+    "36445482",
+    "39357070",
+    "40818987",
+    "31203998",
+    "35338116",
+    "26712909",
+    "27174803",
+    "27384852",
+    "27248996",
+    "26876264",
+    "22237025",
+    "20941364",
+    "39945023",
+    "39453476",
+    "35612271",
+    "38123227"
+   ]
+  },
+  "FRY_neurodevelopmental_disorder": {
+   "keep_all": 11,
+   "strength_14_14": [
+    "33837569",
+    "36952649",
+    "38479391",
+    "31985936",
+    "34750959",
+    "16099592",
+    "1778836",
+    "35238157",
+    "34615699"
+   ],
+   "strength_20_20": [
+    "33837569",
+    "36952649",
+    "38479391",
+    "31985936",
+    "34750959",
+    "16099592",
+    "1778836",
+    "35238157",
+    "34615699"
+   ]
+  }
+ }
+}

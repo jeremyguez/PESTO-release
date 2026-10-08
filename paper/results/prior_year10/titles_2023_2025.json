@@ -1,0 +1,1002 @@
+[
+ {
+  "gene": "TBC1D31",
+  "phenotype": "congenital anomaly of kidney and urinary tract",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 5,
+  "read": 4,
+  "justification": "Only one human genetic report exists (PMID 37468454), describing a homozygous missense TBC1D31 variant in a single consanguineous family with CAKUT \u2014 credible but a single family, so no replication in independent probands and Established cannot be supported. Biological plausibility is strong because TBC1D31 functions in primary ciliogenesis via the praja2/PKA/OFD1 axis (PMID 33934390), and ciliopathy genes are well-linked to renal developmental anomalies, which reinforces the single family's plausibility rather than replacing it. The remaining papers concern cancer biology (breast, hepatocellular) and are not relevant to CAKUT. Therefore the evidence best fits Existing, with residual probability on Hypothesized if the single-family report is judged insufficient.",
+  "pmids": "",
+  "distribution": {
+   "Established": 5,
+   "Existing": 78,
+   "Hypothesized": 15,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 5,
+   "Existing": 78,
+   "Hypothesized": 15,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "IL1R1",
+  "phenotype": "chronic recurrent multifocal osteomyelitis 3",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 71,
+  "read": 20,
+  "justification": "Only one article in this list provides primary human genetic evidence linking IL1R1 to an IL-1-driven autoinflammatory phenotype of the DIRA/CRMO spectrum: PMID 37315560, which identified an IL1R1 receptor mutation driving autoinflammation and used it to guide IL-1-targeted drug design. That is a single report (single proband/family), so the replication requirement for \"Established\" is not met; a second independent proband/family paper cannot be cited from this list. The other IL1R1 genetic studies concern unrelated phenotypes (celiac disease, ankylosing spondylitis, thyroid cancer, rheumatoid arthritis, aortic dissection, osteoarthritis, type 1 diabetes), and CRMO-related papers here implicate IL1RN rather than IL1R1 (PMID 32259833, 27000045), though they support the IL-1 pathway biology underlying the phenotype. Therefore \"Existing\" is most probable, with residual weight on \"Established\" (if the mutation report is considered supported by additional cases) and \"Hypothesized\" (strong pathway/mechanistic rationale via IL-1 signaling).",
+  "pmids": "",
+  "distribution": {
+   "Established": 18,
+   "Existing": 62,
+   "Hypothesized": 16,
+   "Novel": 4
+  },
+  "detail": {
+   "Established": 18,
+   "Existing": 62,
+   "Hypothesized": 16,
+   "Novel": 4
+  }
+ },
+ {
+  "gene": "GTF2IRD1",
+  "phenotype": "neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 70,
+  "read": 20,
+  "justification": "The only report of intragenic GTF2IRD1 sequence variants in patients is the single family with two brothers carrying biallelic variants and profound neurodevelopmental disorder (PMID 36308390); one family is insufficient for \"Established,\" and the many atypical 7q11.23 deletion studies (PMIDs 19568270, 23653586, 25057328, 17270452, 35379245, 36520254) are multigene CNVs that cannot isolate GTF2IRD1 from neighbouring genes such as GTF2I. Supporting human evidence includes methylation signatures correlating with GTF2IRD1 copy number (PMID 37709781) and an imaging endophenotype association (PMID 29884845), plus a human forebrain organoid model implicating a GTF2IRD1-TTR-ERK axis (PMID 39671308). Mouse knockout studies (PMIDs 22198572, 31418010, 37370259, 21909369) provide strong biological plausibility but are non-human and would only support \"Hypothesized.\" Overall the weight of evidence fits \"Existing\": credible but limited and not definitively replicated human genetic evidence for GTF2IRD1 alone.",
+  "pmids": "",
+  "distribution": {
+   "Established": 10,
+   "Existing": 65,
+   "Hypothesized": 24,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 10,
+   "Existing": 65,
+   "Hypothesized": 24,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "NUP50",
+  "phenotype": "amyotrophic lateral sclerosis",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 17,
+  "read": 8,
+  "justification": "The integrative genetic analysis of ALS heritability (PMID 36670122) is a human study reporting rare-variant burden evidence implicating NUP50 as an ALS risk gene, which meets the bar for \"Existing.\" However, no second independent human cohort study with NUP50 variants in ALS probands or families is present in this list, so \"Established\" cannot be supported (replication is lacking). Supporting biological plausibility comes from nucleoporin/nuclear pore complex mislocalization in ALS mice and patients (PMID 28344074), nuclear pore pathology in multisystem proteinopathy/IBM (PMID 38158701), and Drosophila TDP-43 modifier screens (PMID 23468938), all of which would only justify \"Hypothesized\" on their own. The remaining papers (PMIDs 10891500, 38780165, 12802065, 25602437) are basic cell-biology characterizations of NUP50/nucleoporin function with no ALS phenotype data.",
+  "pmids": "",
+  "distribution": {
+   "Established": 7,
+   "Existing": 65,
+   "Hypothesized": 26,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 7,
+   "Existing": 65,
+   "Hypothesized": 26,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "MPC2",
+  "phenotype": "metabolic disease",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 33,
+  "read": 20,
+  "justification": "The strongest human genetic evidence is PMID 36417180, which reports biallelic MPC2 variants in patients with an early-onset mitochondriopathy featuring hyperpyruvatemia/lactic acidosis and defective mitochondrial pyruvate metabolism \u2014 a bona fide inborn error of metabolism. However, this appears to be the single primary report of patient-derived MPC2 variants; related clinical papers (PMID 37899339, PMID 31145700) concern mitochondrial pyruvate carrier deficiency largely attributable to MPC1 mutations, so they cannot serve as independent replication for MPC2. The MPC2 variant literature in schizophrenia (PMIDs 27460766, 23933155) is a different phenotype with conflicting replication and does not support metabolic disease. Extensive supporting biology exists \u2014 structural studies of the MPC1/MPC2 complex, thiazolidinedione inhibition, hepatic steatosis, diabetic nephropathy, and mouse models \u2014 but these are functional/animal rather than human genetic evidence, so they buttress a \"Hypothesized\" floor while the single credible human variant study places the weight on \"Existing.\"",
+  "pmids": "",
+  "distribution": {
+   "Established": 13,
+   "Existing": 62,
+   "Hypothesized": 23,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 13,
+   "Existing": 62,
+   "Hypothesized": 23,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "MIR145",
+  "phenotype": "multisystemic smooth muscle dysfunction syndrome",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 68,
+  "read": 20,
+  "justification": "Only one article in this list provides direct human genetic evidence: PMID 36649075, reporting a seed-sequence variant in miR-145-5p causing multisystem smooth muscle dysfunction syndrome. This is a single, credible report and cannot be confirmed as replicated across independent probands/families from the title alone, so \"Established\" cannot be supported (no second independent variant-in-patient study is present). Supporting biological plausibility exists, as miR-143/145 are central regulators of vascular smooth muscle cell phenotypic switching (PMIDs 30169548, 38995239) and are implicated in aortopathy/aneurysm (PMIDs 30059548, 35478113), but these are mechanistic or association studies for other phenotypes. Remaining papers concern cancer, renal, asthma, or other unrelated contexts and do not bear on MSMDS causation. Therefore \"Existing\" is the most probable classification.",
+  "pmids": "",
+  "distribution": {
+   "Established": 15,
+   "Existing": 70,
+   "Hypothesized": 13,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 15,
+   "Existing": 70,
+   "Hypothesized": 13,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "LY96",
+  "phenotype": "inborn error of immunity",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 60,
+  "read": 20,
+  "justification": "One human report explicitly describes \"Human MD2 deficiency\u2014an inborn error of immunity with pleiotropic features\" (PMID 36462957), which directly links LY96 variants to an IEI phenotype, but this appears to be a single study and cannot alone establish replicated causality across independent probands/families. A second human genetic study reports LY96 mutations alongside TLR4/CD14 polymorphisms in children with urinary tract infection (PMID 21390520), which supports susceptibility to infection but is an association study of a common infectious phenotype rather than a definitive second IEI cohort. The remaining literature is mechanistic or in vitro/animal (TLR4\u2013MD-2 LPS recognition, zebrafish Md-2, cell-line MD-2 point mutations abolishing endotoxin signaling), which strongly supports biological plausibility but not causal human genetic proof. Because I cannot cite two independent human clinical studies reporting probands/families with LY96-caused IEI, the weight falls on \"Existing\" with meaningful residual probability for \"Established.\"",
+  "pmids": "",
+  "distribution": {
+   "Established": 28,
+   "Existing": 57,
+   "Hypothesized": 14,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 28,
+   "Existing": 57,
+   "Hypothesized": 14,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "TUFM",
+  "phenotype": "inherited primary ovarian failure",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 65,
+  "read": 20,
+  "justification": "Only one article in this list reports a direct genetic link between TUFM and premature ovarian insufficiency: a homozygous TUFM variant identified in a single consanguineous family (PMID 37461298). No second independent proband or family is reported, so replication required for \"Established\" is absent. All other TUFM articles concern combined oxidative phosphorylation deficiency 4, leukoencephalopathy, mitophagy, cardiomyopathy, or non-ovarian phenotypes, and thus do not add ovarian-specific evidence, though they support TUFM's role in mitochondrial translation, a plausible mechanism for gonadal dysfunction. This yields a credible but limited human genetic association, best classified as \"Existing\".",
+  "pmids": "",
+  "distribution": {
+   "Established": 7,
+   "Existing": 80,
+   "Hypothesized": 11,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 7,
+   "Existing": 80,
+   "Hypothesized": 11,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "TRPV1",
+  "phenotype": "channelopathy-associated congenital insensitivity to pain, autosomal recessive",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Hypothesized",
+  "cached": false,
+  "found": 66,
+  "read": 20,
+  "justification": "No article in this list reports biallelic TRPV1 variants segregating in probands or families with congenital insensitivity to pain; the disorder-focused reviews (PMIDs 18370847, 20142270, 39988004) attribute channelopathy-associated CIP to SCN9A/SCN11A/NTRK1/NGF rather than TRPV1. The one direct human genetic study, \"Nociception and pain in humans lacking a functional TRPV1 channel\" (PMID 36454632), is essentially a negative/limited finding, showing that individuals with non-functional TRPV1 retain largely normal nociception, while other human TRPV1 variant papers describe gain-of-function pain phenotypes (corneal neuralgia, PMID 39226353) or altered thermal sensation (PMIDs 40632671, 17913835) \u2014 the opposite direction from CIP. Human studies of CIP/HSAN patients only assess TRPV1 expression or fiber immunoreactivity (PMIDs 19482060, 21436684, 22032467), which supports mechanistic plausibility rather than causation. Most remaining papers concern TRPV1 biology in unrelated contexts, so the weight falls on a biologically plausible but genetically unproven relationship (Hypothesized), with some probability for limited human association evidence (Existing).",
+  "pmids": "",
+  "distribution": {
+   "Established": 3,
+   "Existing": 25,
+   "Hypothesized": 57,
+   "Novel": 15
+  },
+  "detail": {
+   "Established": 3,
+   "Existing": 25,
+   "Hypothesized": 57,
+   "Novel": 15
+  }
+ },
+ {
+  "gene": "PLXNC1",
+  "phenotype": "cerebral cortical dysplasia",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Hypothesized",
+  "cached": false,
+  "found": 27,
+  "read": 7,
+  "justification": "None of the listed articles report human genetic variants in PLXNC1 in patients with cerebral cortical dysplasia or any malformation of cortical development, so Established and Existing are essentially excluded. The human-relevant genetic study (PMID 22933835) concerns bilateral convergent strabismus in cattle, not human cortical phenotypes, and the remaining reports involve lung fibrosis, hepatic ischemia-reperfusion, cancer plexin profiling, mouse fusion transcripts, and Rnd/R-Ras GAP signaling \u2014 mechanistic work unrelated to cortical malformation. The only potentially supportive item is the study of competing programs shaping the cortical sensorimotor-association axis (PMID 42386980), which places plexin/semaphorin-type guidance signaling within cortical patterning biology and could provide a plausible, indirect biological rationale. Because that link is developmental/patterning rather than dysplasia-specific and not variant-based, probability is split between Hypothesized and Novel, with a slight lean toward Hypothesized given plexin-C1's role in axon guidance and cell migration, processes central to cortical development.",
+  "pmids": "",
+  "distribution": {
+   "Established": 1,
+   "Existing": 4,
+   "Hypothesized": 50,
+   "Novel": 45
+  },
+  "detail": {
+   "Established": 1,
+   "Existing": 4,
+   "Hypothesized": 50,
+   "Novel": 45
+  }
+ },
+ {
+  "gene": "SUPT7L",
+  "phenotype": "lipodystrophy",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 5,
+  "read": 2,
+  "justification": "PMID 38592547 directly reports biallelic loss-of-function variants in SUPT7L in patients with a developmental disorder featuring generalized lipodystrophy, providing credible human genetic evidence of causation. However, this is a single publication, and the rule requires at least two independent studies reporting distinct probands/families to reach \"Established\"; no replication paper is present in the provided list. The other article (PMID 17967894) concerns STAGA/Mediator recruitment to MYC and provides only mechanistic background on the complex, not phenotype-linked variant evidence. Therefore the evidence best fits \"Existing\", with residual probability for \"Established\" given that the single report may itself describe multiple independent families.",
+  "pmids": "",
+  "distribution": {
+   "Established": 20,
+   "Existing": 72,
+   "Hypothesized": 7,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 20,
+   "Existing": 72,
+   "Hypothesized": 7,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "SGSM3",
+  "phenotype": "intellectual disability",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 14,
+  "read": 5,
+  "justification": "Two human genetic reports directly implicate SGSM3 in intellectual disability: PMID 37833060 describes an ID syndrome caused by a homozygous founder variant in Ashkenazi Jewish patients, and PMID 39390489 reports SGSM3 as a strong candidate gene for nonsyndromic ID, suggesting an additional independent proband/family. This constitutes credible, potentially replicated human evidence, though the founder-variant study reflects a single recurring allele in one population and the second paper frames the gene as a \"candidate,\" so definitive, broadly replicated causality is not firmly established. PMID 17509819 provides supportive biological context (SGSM3 modulates RAP/RAB small G protein signaling, a pathway relevant to neurodevelopment) but is in vitro. The breast cancer association studies (PMIDs 27432265, 27730527) are unrelated to the ID phenotype and do not contribute.",
+  "pmids": "",
+  "distribution": {
+   "Established": 40,
+   "Existing": 50,
+   "Hypothesized": 8,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 40,
+   "Existing": 50,
+   "Hypothesized": 8,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "APOA4",
+  "phenotype": "autosomal dominant medullary cystic kidney disease with or without hyperuricemia",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 80,
+  "read": 15,
+  "justification": "The only primary human genetic evidence in this list is PMID 38096951, which reports autosomal dominant ApoA4 mutations presenting as tubulointerstitial kidney disease (ADTKD) with medullary amyloidosis \u2014 directly relevant to the phenotype. The ADTKD reviews (PMIDs 40835155, 42175989) likely cite APOA4 as an emerging cause, but reviews restate background rather than provide independent proband/family evidence, so replication cannot be documented from this set. Supporting but non-causal human/animal data include apolipoprotein A-IV expression in kidney tubular cells under inflammatory stimulation (PMID 28821873), murine TFEB-related ApoA4 amyloidosis (PMID 39699959), and urinary apolipoprotein excretion in nephrolithiasis (PMID 28188435), which strengthen biological plausibility. The remaining papers concern APOA4 polymorphisms and lipid traits, unrelated to the renal phenotype. Because only one qualifying primary genetic study can be cited, the evidence is best scored as Existing, with some probability that additional independent families exist beyond this list.",
+  "pmids": "",
+  "distribution": {
+   "Established": 22,
+   "Existing": 63,
+   "Hypothesized": 13,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 22,
+   "Existing": 63,
+   "Hypothesized": 13,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "CCDC91",
+  "phenotype": "punctate palmoplantar keratoderma",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 58,
+  "read": 2,
+  "justification": "PMID 38627542 reports a CCDC91 mutation causing autosomal-dominant acrokeratoelastoidosis (Costa), which is classified as punctate palmoplantar keratoderma type III \u2014 a directly relevant human genetic finding. However, this appears to be a single report, with no independent replication in additional unrelated probands or families provided in this list, so the criteria for \"Established\" (at least two independent human studies with variants in patients) are not met. The other article (PMID 36990086) concerns a CCDC91 isoform in ossification of the posterior longitudinal ligament and osteogenic gene regulation, which is unrelated to the keratoderma phenotype and does not support the dermatologic association. Therefore the evidence best fits \"Existing,\" with some residual probability for \"Established\" should the single report contain multiple affected families, and modest weight on \"Hypothesized.\"",
+  "pmids": "",
+  "distribution": {
+   "Established": 10,
+   "Existing": 72,
+   "Hypothesized": 13,
+   "Novel": 5
+  },
+  "detail": {
+   "Established": 10,
+   "Existing": 72,
+   "Hypothesized": 13,
+   "Novel": 5
+  }
+ },
+ {
+  "gene": "CELSR1",
+  "phenotype": "hydrops fetalis",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 55,
+  "read": 20,
+  "justification": "The strongest direct evidence is PMID 38272662, which reports de novo heterozygous missense CELSR1 variants in human fetuses with pleural effusions and progressive hydrops \u2014 this is primary patient-level evidence with single-gene resolution. PMID 36959127 (genetics of fetal congenital lymphatic anomalies) plausibly provides a second, independent human cohort implicating CELSR1, but the abstract detail available does not confirm that CELSR1 variants were identified in hydrops probands there, so replication cannot be firmly asserted. Substantial supporting human evidence links CELSR1 loss-of-function to hereditary/primary lymphedema and lymphatic dysfunction (PMIDs 26855770, 31215153, 37225411, 37232218), a mechanism strongly related to non-immune hydrops fetalis, which itself justifies at least \"Existing.\" Because only one clearly documented primary study of CELSR1 variants in hydrops fetalis can be cited with confidence, the weight sits slightly toward Existing over Established.",
+  "pmids": "",
+  "distribution": {
+   "Established": 40,
+   "Existing": 48,
+   "Hypothesized": 10,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 40,
+   "Existing": 48,
+   "Hypothesized": 10,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "CIAO1",
+  "phenotype": "multiple mitochondrial dysfunctions syndrome 10",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Established",
+  "cached": false,
+  "found": 33,
+  "read": 20,
+  "justification": "Multiple independent human clinical reports describe biallelic CIAO1 variants causing a multisystem neuromuscular/neurodegenerative disorder with impaired cytosolic-nuclear Fe-S enzyme maturation, which corresponds to the OMIM entity multiple mitochondrial dysfunctions syndrome 10. Primary patient-based evidence comes from PMID 38950322 (cohort of affected individuals with loss-of-function CIAO1 variants; preprint version PMID 38196629), PMID 38411040 (independent families with CIAO1 and MMS19 deficiency and a lethal neurodegenerative phenotype), and PMID 40935480 (a fetus with a homozygous CIAO1 missense variant via maternal uniparental isodisomy 2). These are supported by mechanistic/model work (PMID 40047889, 39011897) and by extensive functional literature establishing CIAO1 as a core CIA-targeting complex component (PMIDs 35654137, 29309586, 25897079, 32311335). A small residual probability is retained for \"Existing\" in case the specific MMDS10 nosology is judged to rest on a single primary cohort, and homonym/unrelated papers (e.g., the Alzheimer variant report) do not affect this assessment.",
+  "pmids": "",
+  "distribution": {
+   "Established": 72,
+   "Existing": 21,
+   "Hypothesized": 6,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 72,
+   "Existing": 21,
+   "Hypothesized": 6,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "CCT7",
+  "phenotype": "complex neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Novel",
+  "cached": false,
+  "found": 22,
+  "read": 8,
+  "justification": "None of the provided articles report human genetic variants in CCT7 in patients with a complex neurodevelopmental disorder; there are no probands, families, or cohort association studies for neurodevelopmental phenotypes. The bulk of the literature concerns cancer prognosis/immune infiltration (PMIDs 41429196, 41604027, 35073517), viral replication (PMIDs 38384266, 30691230), and a swine Salmonella shedding variant (PMID 18996651), which are irrelevant to neurodevelopment. Only weak indirect biological relevance exists: the CCT7 apical domain inhibits tau aggregation (PMID 40400346), a neurodegenerative rather than neurodevelopmental mechanism, and yeast CCT subunit mutations perturb cytoskeletal protein folding (PMID 20600117), a pathway broadly relevant to neuronal development. These support at most a speculative \"hypothesized\" link, with a substantial chance the relationship is entirely novel/incidental.",
+  "pmids": "",
+  "distribution": {
+   "Established": 1,
+   "Existing": 4,
+   "Hypothesized": 45,
+   "Novel": 50
+  },
+  "detail": {
+   "Established": 1,
+   "Existing": 4,
+   "Hypothesized": 45,
+   "Novel": 50
+  }
+ },
+ {
+  "gene": "MARK4",
+  "phenotype": "neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 33,
+  "read": 19,
+  "justification": "Only one article in this list provides human genetic evidence: PMID 38041405 reports a gain-of-function MARK4 variant in a pediatric patient with neurodevelopmental disorder and dysmorphism, which is credible but appears to be a single proband/family without independent replication. The remaining literature concerns MARK4 biology in tau phosphorylation, synaptic and mitochondrial function, mouse tauopathy models, glioma, and inhibitor/drug-design studies (e.g., PMIDs 37550059, 38712317, 27708431, 33020179), which support biological plausibility but are animal or in vitro and cannot establish causation for a neurodevelopmental phenotype. Because at least two independent human probands/families with point variants are not demonstrated, the evidence cannot reach \"Established.\" The strong neuronal/microtubule biology combined with one human report makes \"Existing\" the most likely category, with residual probability on \"Hypothesized\" if the single report is judged insufficient.",
+  "pmids": "",
+  "distribution": {
+   "Established": 5,
+   "Existing": 75,
+   "Hypothesized": 19,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 5,
+   "Existing": 75,
+   "Hypothesized": 19,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "PRMT9",
+  "phenotype": "Mendelian neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 18,
+  "read": 11,
+  "justification": "Only one article in this list reports patient-derived variants: \"Bi-allelic PRMT9 loss-of-function variants cause a syndromic form of intellectual disability\" (PMID 41260215), which directly implicates PRMT9 in a Mendelian neurodevelopmental phenotype, likely across a small cohort. Because a single publication cannot satisfy the requirement of two independent PMIDs reporting probands/families, the evidence falls short of Established. Supporting biological plausibility comes from non-human/experimental work showing that PRMT9 loss-of-function disrupts synapse development via dysregulated RNA alternative splicing (PMID 38561334) and from mechanistic studies of PRMT9 methylation of the splicing factor SF3B2 (PMIDs 25979344, 16487488), which reinforce a neurodevelopmental mechanism but are not human genetic evidence. Other listed papers concern cancer, Parkinson's models, or chemical probes and do not bear on Mendelian NDD; none appear to be homonym misassignments except peripherally (TLR9 methylation paper).",
+  "pmids": "",
+  "distribution": {
+   "Established": 18,
+   "Existing": 64,
+   "Hypothesized": 17,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 18,
+   "Existing": 64,
+   "Hypothesized": 17,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "CCT4",
+  "phenotype": "complex neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Hypothesized",
+  "cached": false,
+  "found": 25,
+  "read": 13,
+  "justification": "No article in this list reports CCT4 variants in human patients with a complex neurodevelopmental disorder; the hereditary sensory neuropathy link for CCT4 derives from a spontaneous rat mutation in the delta subunit (PMIDs 12874111, 15193290) and in vitro biochemical characterization (PMID 25124038), while the human mutilating sensory neuropathy with spastic paraplegia mutation is in CCT5, a paralog, not CCT4 (PMID 16399879). Supporting biology is plausible and directly relevant to neural function: TRiC/CCT chaperonins restrict neuropathogenic polyglutamine aggregation (PMIDs 27929117, 24298020) and control organ growth via insulin/TOR signaling in Drosophila (PMID 30792539), which supports a Hypothesized relationship. The remaining papers are yeast/biochemical mechanistic studies with no phenotype data in humans. Therefore, evidence best fits Hypothesized, with only small residual probability for Existing given the paralog/neuropathy analogy, which is not itself a neurodevelopmental phenotype.",
+  "pmids": "",
+  "distribution": {
+   "Established": 2,
+   "Existing": 8,
+   "Hypothesized": 78,
+   "Novel": 12
+  },
+  "detail": {
+   "Established": 2,
+   "Existing": 8,
+   "Hypothesized": 78,
+   "Novel": 12
+  }
+ },
+ {
+  "gene": "IRAK2",
+  "phenotype": "immune dysregulation, autoimmunity, and autoinflammation",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 53,
+  "read": 20,
+  "justification": "There is substantial human genetic evidence: a recent report describes IRAK2 deficiency in patients causing immune dysregulation via defective Myddosome assembly and enhanced interferon responses (PMID 42168171), and a separate report links IRAK2 immune variants to severe invasive infections (PMID 39299377), suggesting monogenic/patient-level variant evidence in independent cohorts. In addition, multiple independent human case-control association studies implicate IRAK2 variants (notably rs708035) in SLE (PMID 31650390), rheumatoid arthritis (PMIDs 29129009, 35588430), Hashimoto's thyroiditis (PMID 31073143), leprosy (PMID 36670053), and HCV clearance (PMID 26250868), with functional support showing increased NF-\u03baB activity via TRAF6 ubiquitination (PMID 24662294). However, most of these are common-variant risk associations rather than definitive causal proof, and only one paper clearly demonstrates a deficiency phenotype in probands, so replication of causal patient-level evidence is borderline. I therefore split points nearly evenly between Established and Existing, with small residual weight for Hypothesized (mechanistic/pathway and animal-model papers such as PMIDs 33864770, 38847613).",
+  "pmids": "",
+  "distribution": {
+   "Established": 44,
+   "Existing": 47,
+   "Hypothesized": 8,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 44,
+   "Existing": 47,
+   "Hypothesized": 8,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "ZFTRAF1",
+  "phenotype": "neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 16,
+  "read": 1,
+  "justification": "Only a single primary report is available (PMID: 38641995), which describes biallelic loss-of-function variants in ZFTRAF1 in humans with a neurodevelopmental disorder featuring microcephaly and hypotonia. This is credible, direct human genetic evidence of causation, likely involving multiple families within that one study, but replication in an independent publication is not present in the provided list. Per the requirement of at least two independent primary reports for \"Established,\" the evidence is best classified as \"Existing.\" Some probability is retained for \"Established\" because the single study may itself include multiple unrelated probands with functional support.",
+  "pmids": "",
+  "distribution": {
+   "Established": 18,
+   "Existing": 75,
+   "Hypothesized": 5,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 18,
+   "Existing": 75,
+   "Hypothesized": 5,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "ATP6V1C1",
+  "phenotype": "neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 24,
+  "read": 12,
+  "justification": "Only one article in this set reports patient-derived variants in ATP6V1C1 with a multisystem phenotype attributable to altered lysosomal/autophagosome function (PMID 39210597), alongside the paralog ATP6V1B2, which is already linked to syndromes featuring intellectual disability; this single report supports \"Existing\" but not replication across independent publications. The second human-relevant paper (PMID 41539473) concerns auditory and vestibular hair cell dysfunction and sensorineural hearing loss, a sensory rather than a core neurodevelopmental phenotype, and is partly murine. The remaining articles are yeast, C. elegans, mouse, dental/bone, kidney, and immunology studies that only establish V-ATPase biology (PMIDs 26586472, 26274612, 12947086, 39817304, 11777935, 1491234, 9712884), which would support at most a \"Hypothesized\" mechanistic rationale. Because no two independent human papers with probands demonstrate causation of neurodevelopmental disorder, \"Established\" is capped low.",
+  "pmids": "",
+  "distribution": {
+   "Established": 8,
+   "Existing": 62,
+   "Hypothesized": 25,
+   "Novel": 5
+  },
+  "detail": {
+   "Established": 8,
+   "Existing": 62,
+   "Hypothesized": 25,
+   "Novel": 5
+  }
+ },
+ {
+  "gene": "MMS19",
+  "phenotype": "neurodegenerative disease",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 35,
+  "read": 18,
+  "justification": "Only one article in this list reports human patient variants in MMS19 linked to neurodegeneration: PMID 38411040, which describes biallelic CIAO1 and MMS19 deficiency causing a lethal neurodegenerative phenotype through defective cytosolic Fe-S cluster protein assembly. That is credible primary clinical/genetic evidence, but it is a single report and cannot be considered replicated across independent publications, so \"Established\" is not supported. The companion paper (PMID 38950322) concerns CIAO1, not MMS19, and the remaining literature covers MMS19 biology in yeast, plants, C. elegans, and cancer association studies, which support mechanistic plausibility (CIA pathway, genome stability, iron homeostasis) rather than direct human causation. Hence the bulk of probability falls on \"Existing,\" with residual weight on \"Established\" (in case the single report includes multiple independent families) and \"Hypothesized\" (given the strong non-human functional literature).",
+  "pmids": "",
+  "distribution": {
+   "Established": 14,
+   "Existing": 70,
+   "Hypothesized": 15,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 14,
+   "Existing": 70,
+   "Hypothesized": 15,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "CFAP47",
+  "phenotype": "polycystic kidney disease",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 15,
+  "read": 7,
+  "justification": "The only primary human genetic evidence appears to come from a single report (PMID 38633811) proposing CFAP47 as a novel causative gene for X-linked polycystic kidney disease; the second title (PMID 39698362) reads as a commentary/editorial restating that finding rather than an independent proband cohort, so replication cannot be confirmed. All other listed papers concern CFAP47 in multiple morphological abnormalities of the sperm flagella, primary ciliary dyskinesia, fertilization failure, or sperm axoneme structure in mice \u2014 ciliary biology that is mechanistically supportive of a cystic kidney phenotype but not direct evidence for PKD variants. Because at least two independent primary studies reporting patients with CFAP47 variants and polycystic kidney disease cannot be cited, Established is capped and most weight goes to Existing. The strong ciliopathy-related biology also provides a plausible mechanism, warranting a small share for Hypothesized, and essentially rules out Novel.",
+  "pmids": "",
+  "distribution": {
+   "Established": 22,
+   "Existing": 68,
+   "Hypothesized": 9,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 22,
+   "Existing": 68,
+   "Hypothesized": 9,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "KAT2B",
+  "phenotype": "steroid-resistant nephrotic syndrome",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 58,
+  "read": 19,
+  "justification": "Only one article in the list directly reports KAT2B variants in patients with early onset steroid-resistant nephrotic syndrome (PMID 39366742), which is a credible human genetic study but represents a single, as-yet-unreplicated report. The other KAT2B human variant papers concern unrelated phenotypes (ADD3 deficiency modification, congenital heart disease) and do not support the renal phenotype (PMIDs 29768408, 30365502, 32239175). The remaining articles are mechanistic/biochemical studies of KAT2B/GCN5 acetyltransferase biology with no relevance to nephrotic syndrome. Because I cannot cite two independent publications with patient variants demonstrating causality, Established is not warranted; Existing is the best fit, with some residual probability that the single paper contains multiple independent families sufficient for a stronger claim.",
+  "pmids": "",
+  "distribution": {
+   "Established": 13,
+   "Existing": 75,
+   "Hypothesized": 10,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 13,
+   "Existing": 75,
+   "Hypothesized": 10,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "AFDN",
+  "phenotype": "cleft lip/palate",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 61,
+  "read": 20,
+  "justification": "One human genetic study directly reports damaging AFDN variants contributing to risk of nonsyndromic cleft lip with/without cleft palate (PMID 36384317), which supports at least \"Existing.\" The nectin\u2013afadin complex disruption study (PMID 32554531) recapitulates the human CLPED1 cleft lip/palate syndrome but is a model-system/functional study, supporting biological plausibility rather than human causal genetic evidence. The remaining papers concern afadin/AF-6 cell junction biology, cancer, and leukemia fusion transcripts, which are mechanistically relevant (adherens/tight junction formation in keratinocytes and epithelia, relevant to palatal fusion) but do not provide additional patient variant data. Since I cannot cite two independent human studies reporting probands or families with single-gene AFDN variants, \"Established\" is not supportable, and most weight goes to \"Existing,\" with residual weight on \"Hypothesized\" if the single association is considered insufficiently definitive.",
+  "pmids": "",
+  "distribution": {
+   "Established": 8,
+   "Existing": 67,
+   "Hypothesized": 23,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 8,
+   "Existing": 67,
+   "Hypothesized": 23,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "ME2",
+  "phenotype": "inborn disorder of energy metabolism",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 84,
+  "read": 14,
+  "justification": "One clinical human report describes biallelic ME2 deficiency causing a recessive neurodevelopmental disorder (PMID 39401966), and an earlier human association study implicated ME2 variants in adolescent-onset idiopathic generalized epilepsy (PMID 15532013), with follow-up biochemical work showing that human single-nucleotide variants dysregulate the mitochondrial NAD(P)+-dependent malic enzyme (PMID 33554057). Because ME2 is a mitochondrial enzyme central to pyruvate/NAD(P)H handling and its suppression impairs respiration and energy metabolism (PMIDs 37217557, 33770508, 37079187), a deficiency state plausibly constitutes an inborn error of energy metabolism. However, only a single clinical cohort paper reports patient variants with this phenotype; there is no independent replication in separate probands/families explicitly framed as an energy-metabolism disorder, so \"Established\" is not supported. Most remaining literature concerns ME2 in cancer metabolism and is only mechanistically, not clinically, relevant. Therefore the evidence best fits \"Existing,\" with meaningful residual probability for \"Hypothesized.\"",
+  "pmids": "",
+  "distribution": {
+   "Established": 12,
+   "Existing": 60,
+   "Hypothesized": 26,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 12,
+   "Existing": 60,
+   "Hypothesized": 26,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "LRRC45",
+  "phenotype": "complex neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 5,
+  "read": 3,
+  "justification": "The single most relevant report, \"Biallelic Variants in LRRC45 Impair Ciliogenesis and Cause a Severe Neurological Disorder\" (PMID 39638757), provides direct human genetic evidence of biallelic LRRC45 variants causing a severe neurological/neurodevelopmental ciliopathy phenotype with supporting functional ciliogenesis data. However, only one primary clinical article is available in this list, so independent replication across separate publications cannot be demonstrated, precluding an \"Established\" call per the stated criteria. The ciliopathy cohort paper (PMID 34716235) and the cell-biology study of LRRC45 in axoneme extension (PMID 30131441) provide supportive biological plausibility (centrosomal/ciliary function, ciliopathy context) but are not independent proband-level evidence for this gene\u2013phenotype link. Therefore the evidence best fits \"Existing,\" with some residual probability for \"Established\" if the single report contains multiple independent families and for \"Hypothesized\" if the human evidence is judged insufficient.",
+  "pmids": "",
+  "distribution": {
+   "Established": 20,
+   "Existing": 65,
+   "Hypothesized": 13,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 20,
+   "Existing": 65,
+   "Hypothesized": 13,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "BMP5",
+  "phenotype": "skeletal dysplasia",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 56,
+  "read": 20,
+  "justification": "The only article reporting BMP5 variants in a patient with a skeletal dysplasia/dysostosis phenotype is the compound heterozygous case with atrioventricular septal defect (PMID 39239663), which is a single proband report and therefore not replicated. The microtia report (PMID 34183628) describes rare BMP5/BMP2 variants but in monozygotic twins (a single genotype) and for an ear malformation rather than a generalized skeletal dysplasia, and the axial skeletal malformation case (PMID 17345627) reports over-expression rather than causative variants. Very strong supporting biology comes from the mouse short ear Bmp5 model with molecular, skeletal and soft-tissue alterations, regulatory element studies and mechanical-response phenotypes (PMIDs 7958439, 9071596, 18380899, 19096511, 10677507), which are animal data and count toward Hypothesized. Osteoarthritis SNP associations (PMIDs 25030405, 28764194) are human but concern a degenerative joint disease, not skeletal dysplasia. Overall the evidence best fits Existing, with residual probability for Established given the definitive human case, and for Hypothesized if that single case is judged insufficient.",
+  "pmids": "",
+  "distribution": {
+   "Established": 15,
+   "Existing": 62,
+   "Hypothesized": 21,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 15,
+   "Existing": 62,
+   "Hypothesized": 21,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "SERPINA11",
+  "phenotype": "hydrops fetalis",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 9,
+  "read": 3,
+  "justification": "Two human reports directly implicate SERPINA11 variants in a perinatally lethal serpinopathy (PMID 38831697) and in a case with a SERPINA11 pathogenic variant on a background of immune fetal hydrops (PMID 40406169). This constitutes credible human genetic evidence, but the total body of work is very small (single case report plus an initial novel-disorder description), and in the case report the hydrops is explicitly described as immune in origin, i.e., a blended phenotype rather than clear SERPINA11-caused hydrops. That undercuts confident claims of replicated, independent proband-level causation for hydrops fetalis specifically. The third paper (PMID 28749478) is a general molecular autopsy review and provides only contextual, not primary, evidence. Therefore \"Existing\" is the best fit, with residual probability for \"Established\" should both primary reports contain independent hydrops probands.",
+  "pmids": "",
+  "distribution": {
+   "Established": 28,
+   "Existing": 57,
+   "Hypothesized": 10,
+   "Novel": 5
+  },
+  "detail": {
+   "Established": 28,
+   "Existing": 57,
+   "Hypothesized": 10,
+   "Novel": 5
+  }
+ },
+ {
+  "gene": "RAB35",
+  "phenotype": "neurodevelopmental disorder",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 34,
+  "read": 20,
+  "justification": "Only one article in this list reports a human patient-level genetic finding: PMID 38432637 describes a neurodevelopmental disorder associated with a loss-of-function missense variant in RAB35, which appears to be a single report rather than replicated across independent probands or families. Because at least two independent patient-based studies are required for \"Established,\" and only one exists here, the evidence best fits \"Existing.\" Supporting biology is abundant and directly relevant (Rab35 roles in neurite outgrowth, synaptic vesicle trafficking, myelin growth, LRRK2-mediated phosphorylation), which would justify \"Hypothesized\" if the human report were discounted. The remaining papers concern cancer, kidney development, Chlamydia infection, and LRRK2/Parkinson biology and do not add neurodevelopmental variant evidence.",
+  "pmids": "",
+  "distribution": {
+   "Established": 8,
+   "Existing": 72,
+   "Hypothesized": 18,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 8,
+   "Existing": 72,
+   "Hypothesized": 18,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "ATG9A",
+  "phenotype": "immunodeficiency disease",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 66,
+  "read": 20,
+  "justification": "The strongest human evidence is a single case report of a patient with compound heterozygous ATG9A mutations presenting with autophagy-associated immune dysregulation and lymphoid hyperplasia (PMID 35838483), which is credible but represents only one proband and therefore cannot support \"Established\" (no second independent family/proband in the list). Other human variant reports for ATG9A concern ovarian failure (PMID 30224786), a different phenotype, and AP-4 deficiency papers use ATG9A mislocalization as a diagnostic readout rather than implicating ATG9A variants themselves (PMIDs 31915823, 34729478). Considerable supporting biology exists: ATG9A limits TNF cytotoxicity, STING activation and ZBP1-dependent inflammatory death, and core autophagy genes affect definitive hematopoiesis, but these are mouse/in vitro studies (PMIDs 41118755, 36520901, 37014272, 37921505), which would only justify \"Hypothesized.\" Given one credible human genetic report plus strong mechanistic immunologic relevance, \"Existing\" is most likely, with residual probability on \"Hypothesized\" if the single case is judged insufficiently definitive.",
+  "pmids": "",
+  "distribution": {
+   "Established": 5,
+   "Existing": 63,
+   "Hypothesized": 30,
+   "Novel": 2
+  },
+  "detail": {
+   "Established": 5,
+   "Existing": 63,
+   "Hypothesized": 30,
+   "Novel": 2
+  }
+ },
+ {
+  "gene": "VEZF1",
+  "phenotype": "cardiomyopathy, dilated, 100",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 40,
+  "read": 10,
+  "justification": "Only one human genetic report (PMID 36657711) describes a VEZF1 loss-of-function mutation segregating in a family with dilated cardiomyopathy; a single family/proband does not meet the bar of replicated independent evidence required for \"Established.\" Supporting biological plausibility comes from a mouse study showing Vezf1 regulates cardiac structure and contractile function (PMID 31911272) and from developmental/vascular roles of Vezf1 (PMIDs 15882861, 20431070, 11504723), which are animal or in vitro and therefore support \"Hypothesized\" rather than human genetic evidence. Together, the combination of one credible human family study plus strong supporting functional data best fits \"Existing,\" with residual probability for \"Hypothesized\" if the single human report is considered insufficient and for \"Established\" if additional probands are described within that paper.",
+  "pmids": "",
+  "distribution": {
+   "Established": 10,
+   "Existing": 68,
+   "Hypothesized": 21,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 10,
+   "Existing": 68,
+   "Hypothesized": 21,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "MCF2L",
+  "phenotype": "vascular malformation",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 62,
+  "read": 5,
+  "justification": "PMID 36760094 directly reports human variants at MCF2L associated with systemic artery to pulmonary artery aneurysm malformations, which is a vascular malformation phenotype, providing credible but single-report evidence. PMID 25898923 adds supporting human genetic evidence linking a rare MCF2L variant to a vascular phenotype (premature atherosclerosis) in a pedigree, a related vascular risk trait rather than malformation per se. The remaining papers concern Dbs/Dbl RhoGEF signaling in vitro (12637530, 10523665) and an osteoarthritis susceptibility locus (26584642), which provide mechanistic plausibility (Rho GTPase exchange factor activity relevant to endothelial/vascular remodeling) but not disease-causing variant evidence. Because no second independent clinical study replicates the malformation association, the evidence falls short of Established and best fits Existing.",
+  "pmids": "",
+  "distribution": {
+   "Established": 12,
+   "Existing": 72,
+   "Hypothesized": 13,
+   "Novel": 3
+  },
+  "detail": {
+   "Established": 12,
+   "Existing": 72,
+   "Hypothesized": 13,
+   "Novel": 3
+  }
+ },
+ {
+  "gene": "DAAM2",
+  "phenotype": "androgen insensitivity syndrome",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Hypothesized",
+  "cached": false,
+  "found": 32,
+  "read": 14,
+  "justification": "No article reports DAAM2 variants in patients with androgen insensitivity syndrome, so Established is excluded (the only human variant reports concern nephrotic syndrome, pulmonary ossification, and cryptorchidism). The closest human genetic evidence is the pilot case-control study of DAAM2 variants p.(Asp165Glu) and p.(Asn614ThrfsTer2) in pediatric cryptorchidism (PMID 42677286); cryptorchidism is an androgen-action\u2013dependent phenotype and a feature of partial androgen insensitivity, giving some weight to \"Existing,\" though it is a small hypothesis-generating study of a different diagnosis. Strong mechanistic plausibility comes from formin/nuclear-actin regulation of androgen receptor transcription (PMIDs 36972684, 41443423, 34685534), placing most weight on \"Hypothesized,\" since these are cell-based functional studies rather than patient variant data. Remaining papers (nephrotic syndrome, gliomagenesis, Wnt signalosome, pancreatic cancer) are unrelated to androgen insensitivity, supporting a residual chance that co-mentions are incidental (Novel).",
+  "pmids": "",
+  "distribution": {
+   "Established": 2,
+   "Existing": 30,
+   "Hypothesized": 55,
+   "Novel": 13
+  },
+  "detail": {
+   "Established": 2,
+   "Existing": 30,
+   "Hypothesized": 55,
+   "Novel": 13
+  }
+ },
+ {
+  "gene": "PPCDC",
+  "phenotype": "dilated cardiomyopathy",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 19,
+  "read": 10,
+  "justification": "Only one primary human genetic study is present in this list: PMID 36564894, which reports biallelic pathogenic PPCDC variants causing autosomal-recessive dilated cardiomyopathy (CoA biosynthesis defect). The other supportive items (PMIDs 36983025, 42601840) are reviews of inborn errors of CoA biosynthesis that restate this association as background rather than providing independent proband-level evidence. The remaining papers concern PPCDC/HAL3 orthologs in Drosophila, yeast, Candida, rice, tobacco, and bacteria, which are relevant to the enzyme's biology but not to human DCM genetics, and thus support at most the hypothesized/mechanistic tier. Because I cannot cite two independent primary human studies reporting distinct probands or families, the evidence best fits \"Existing,\" with residual probability for \"Established\" since the single report may itself describe multiple unrelated families.",
+  "pmids": "",
+  "distribution": {
+   "Established": 22,
+   "Existing": 68,
+   "Hypothesized": 9,
+   "Novel": 1
+  },
+  "detail": {
+   "Established": 22,
+   "Existing": 68,
+   "Hypothesized": 9,
+   "Novel": 1
+  }
+ },
+ {
+  "gene": "VPS50",
+  "phenotype": "hydrocephalus",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 11,
+  "read": 7,
+  "justification": "Human genetic evidence links VPS50 to a biallelic neurodevelopmental disorder with neonatal cholestasis (PMID 34037727) and to a VPS50-related disorder caused by a structural variant plus nonsense variant in trans (PMID 38876772), but neither abstract establishes hydrocephalus as the reported phenotype, so an \"Established\" call for hydrocephalus is unsupported. The strongest link to hydrocephalus is indirect: a rare VPS50 mutation associated with human neural tube defects (PMID 30828385), and NTDs (e.g., myelomeningocele with Chiari II malformation) are a well-recognized precursor/risk factor for hydrocephalus, which supports \"Existing\" at a moderate level. Remaining support comes from mechanistic/animal work \u2014 GARP/EARP trafficking biology, VPS50 knockout mouse brain synaptic and behavioral deficits (PMID 38926759), and related complex subunits (PMIDs 30624672, 36239632, 29311744) \u2014 which is \"Hypothesized\"-level evidence. Because no article reports hydrocephalus directly attributable to VPS50 variants in independent probands, points are split mainly between Existing and Hypothesized.",
+  "pmids": "",
+  "distribution": {
+   "Established": 3,
+   "Existing": 47,
+   "Hypothesized": 42,
+   "Novel": 8
+  },
+  "detail": {
+   "Established": 3,
+   "Existing": 47,
+   "Hypothesized": 42,
+   "Novel": 8
+  }
+ },
+ {
+  "gene": "PHF10",
+  "phenotype": "multiple congenital anomalies/dysmorphic syndrome",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Hypothesized",
+  "cached": false,
+  "found": 29,
+  "read": 16,
+  "justification": "No article in this set reports pathogenic PHF10 point variants in patients with a multiple congenital anomalies/dysmorphic syndrome, so Established is untenable. The only human patient-derived material is an iPSC line carrying a 6q27 deletion (PMID 39106599), a multigenic copy-number change that cannot single out PHF10, giving at most weak support for Existing. The strongest rationale is biological: PHF10/BAF45a is a signature subunit of the PBAF/SWI-SNF chromatin-remodelling complex (PMIDs 35477757, 34465901, 31911482, 28717195), the same family whose subunits (ARID1A/B, SMARCB1, SMARCA4) cause Coffin-Siris and related BAF-opathies, and PHF10 switching is central to neural development and neuronal maintenance (PMIDs 19561591, 21753754, 38033872). Model-organism work (C. elegans phf-10 alleles, PMID 35622521) and proliferation studies (PMID 20068294) further support a plausible developmental role without human variant evidence, so Hypothesized receives the bulk of the probability.",
+  "pmids": "",
+  "distribution": {
+   "Established": 2,
+   "Existing": 22,
+   "Hypothesized": 62,
+   "Novel": 14
+  },
+  "detail": {
+   "Established": 2,
+   "Existing": 22,
+   "Hypothesized": 62,
+   "Novel": 14
+  }
+ },
+ {
+  "gene": "NALCN",
+  "phenotype": "temporal lobe epilepsy",
+  "truth": "",
+  "arm": "titles",
+  "fingerprint": "1ec6267b715a",
+  "verdict": "Existing",
+  "cached": false,
+  "found": 56,
+  "read": 20,
+  "justification": "Only one article in this list directly addresses the specific phenotype: \"Novel NALCN variant linked to temporal lobe epilepsy\" (PMID 37046053), which appears to report a human variant in a patient/family with temporal lobe epilepsy. A single report cannot satisfy the requirement of two or more independent probands/families demonstrated in their own results, so Established is not supportable. The remaining literature documents NALCN as a well-validated human disease gene for IHPRF1 and CLIFAHDD syndromes (PMIDs 24075186, 26763878, 28133733, 29168298, 30167850), neurodevelopmental disorders in which seizures/epileptic encephalopathy can occur, providing supportive but non-specific context for epilepsy susceptibility. The gene's biology (sodium leak channel controlling neuronal excitability) further supports plausibility, keeping some weight on Hypothesized. Novel is nearly excluded given the explicit temporal lobe epilepsy report.",
+  "pmids": "",
+  "distribution": {
+   "Established": 10,
+   "Existing": 72,
+   "Hypothesized": 13,
+   "Novel": 5
+  },
+  "detail": {
+   "Established": 10,
+   "Existing": 72,
+   "Hypothesized": 13,
+   "Novel": 5
+  }
+ }
+]

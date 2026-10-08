@@ -1,0 +1,41 @@
+gene	phenotype	type	accept	key_pmids	status	note	split
+SSBP2	bipolar disorder	disease	Existing|Established	31043756;33263727;34002096	gwas_body_only	3 catalog GWAS article(s), 3 naming the gene in body/table/supplement	bodyonly
+CUL4A	bipolar disorder	disease	Existing|Established	34002096	gwas_body_only	1 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+MYO18A	schizophrenia	disease	Existing|Established	31835028	gwas_body_only	1 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+CYP7B1	schizophrenia	disease	Existing|Established	35396580	gwas_body_only	3 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+ZNF765	type 2 diabetes	disease	Existing|Established	35893037	gwas_body_only	1 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+LMTK2	type 2 diabetes	disease	Existing|Established	33290408	gwas_body_only	2 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+UBAC2	asthma	disease	Existing|Established	30929738;31361310;34103634	gwas_body_only	9 catalog GWAS article(s), 3 naming the gene in body/table/supplement	bodyonly
+SRGAP2	asthma	disease	Existing|Established	32296059	gwas_body_only	1 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+CREB5	atrial fibrillation	disease	Existing|Established	29892015	gwas_body_only	7 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+MICU2	atrial fibrillation	disease	Existing|Established	36653681	gwas_body_only	3 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+RAB5B	adult height	trait	Existing|Established	35831902	gwas_body_only	1 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+ATAD2B	adult height	trait	Existing|Established	31562340	gwas_body_only	6 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+ANAPC4	body mass index	trait	Existing|Established	36376304	gwas_body_only	16 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+CLVS1	body mass index	trait	Existing|Established	30108127	gwas_body_only	11 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+NMT1	blood pressure	trait	Existing|Established	30578418	gwas_body_only	11 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+PPP2R5E	blood pressure	trait	Existing|Established	28135244	gwas_body_only	1 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+TCEAL4	bipolar disorder	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+NOP16	adult height	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+FBXL14	atrial fibrillation	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+QTMAN	body mass index	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+KRTAP5-4	type 2 diabetes	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+MBD3L2	asthma	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+MACROD2	bipolar disorder	disease	Existing|Established	38858783	gwas_body_only	3 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+DCST1	adult height	trait	Existing|Established	29782485	gwas_body_only	7 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+OPN5	body mass index	trait	Existing|Established	35186008	gwas_body_only	1 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+ANKDD1B	type 2 diabetes	disease	Existing|Established	32541925	gwas_body_only	3 catalog GWAS article(s), 1 naming the gene in body/table/supplement	bodyonly
+H4C15	adult height	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+H4C16	adult height	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+TCEAL2	asthma	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+TCEAL3	asthma	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+OR13G1	atrial fibrillation	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+XAGE1A	bipolar disorder	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+WASHC1	blood pressure	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+WASHC2A	blood pressure	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+BICRAL	blood pressure	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+C18orf63	body mass index	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+NT5DC4	body mass index	trait	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+LRRC8E	schizophrenia	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+CALHM4	schizophrenia	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly
+H3Y2	type 2 diabetes	disease	Novel|Hypothesized		negative_control	no catalog association, no PubMed or Europe PMC pairing	bodyonly

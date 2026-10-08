@@ -1,0 +1,41 @@
+You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.
+
+Below is a list of scientific articles about {gene_name} and/or {phenotype}:
+
+{alias_note}{dismiss_note}
+
+{articles_list}
+
+Four categories describe the gene–phenotype relationship:
+
+1. **Established**
+   At least two human studies that variants in {gene_name} cause {phenotype}.
+
+2. **Existing**
+   At least one credible human study links variation in {gene_name} to {phenotype}, but the evidence is limited or not definitive.
+
+3. **Hypothesized**
+   Biology suggests a possible relationship, without direct evidence from genetic variants.
+
+4. **Novel**
+   No evidence that {gene_name} influences {phenotype}.
+
+Your task:
+1. Read the article titles and abstracts.
+2. Distribute 100 points across the four categories. The four numbers must be whole and must sum to exactly 100.
+3. Cite up to 10 relevant PMIDs from the provided list only.
+
+Return your answer in this exact XML format:
+
+<response>
+  <probabilities>
+    <established>40</established>
+    <existing>35</existing>
+    <hypothesized>20</hypothesized>
+    <novel>5</novel>
+  </probabilities>
+  <pmids>
+    <pmid>12345678</pmid>
+    ...
+  </pmids>
+</response>

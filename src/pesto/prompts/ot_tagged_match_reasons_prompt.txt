@@ -1,0 +1,76 @@
+A study reports that the gene {gene} is associated with this trait:
+
+    "{phenotype}"
+
+Below are traits that a public database already links to {gene}. They are the ones closest in meaning to the reported trait, drawn from a longer list.
+
+For each numbered entry, say how it relates to the reported trait, using exactly one of these eleven tags.
+
+EXACT
+    The same trait as the reported one, under any wording, abbreviation, synonym
+    or spelling, or a trivially different way of measuring the same quantity.
+
+PARENT_FIRST
+    The immediate parent: the reported trait is directly one of its stages,
+    grades, subtypes or forms, with no intervening category.
+
+PARENT_DISTANT
+    A parent further up: it still covers the reported trait, but only through one
+    or more intervening categories, and it covers a great many other conditions
+    besides.
+
+CHILD_FIRST
+    The immediate child: directly one of the reported trait's stages, grades,
+    subtypes or named forms, or a component the reported trait directly
+    aggregates or is directly derived from.
+
+CHILD_DISTANT
+    A child further down: inside the reported trait, but a subtype of a subtype,
+    or a component of a component.
+
+CLOSE_VERY
+    Not the same trait, but so tightly linked in the population that a genetic
+    signal on one would almost certainly appear on the other, as with two
+    measurements of the same underlying quantity.
+
+CLOSE_MODERATE
+    Linked firmly enough that a genetic signal on one would often appear on the
+    other, but not dependably.
+
+CLOSE_VAGUE
+    Some shared biology or resemblance, but no reliable expectation that a
+    genetic signal on one would appear on the other.
+
+SYMPTOM_SPECIFIC
+    The reported trait is a defining or near-constant feature of this entry, or
+    the measurement by which this entry is diagnosed, and few other conditions
+    produce it in the same way. May also be read in reverse, the entry being a
+    defining feature of the reported trait.
+
+SYMPTOM_MODERATE
+    This entry commonly produces the reported trait, or the reverse, but so do
+    many other conditions.
+
+SYMPTOM_NONSPECIFIC
+    The link exists only through a marker that a very large number of conditions
+    produce, such as a general inflammatory or biochemical derangement, or it
+    runs through a third condition rather than between these two directly.
+
+DIFFERENT
+    The tie is no stronger than belonging to the same broad field, organ,
+    category or class of disease. Two distinct conditions that merely sit under
+    a common heading are DIFFERENT: LDL cholesterol and HDL cholesterol are both
+    lipid measurements yet are largely uncorrelated, so each is DIFFERENT from
+    the other. Judge the strength of the biological tie, not the similarity of
+    the words.
+
+Judge every entry on its own. Do not decide an overall verdict, and do not rank
+the entries against each other.
+
+Reply with one line per entry and nothing else, in exactly this format:
+
+    <number> | <TAG> | <reason, at most twelve words>
+
+Traits already linked to {gene}:
+
+{traits}

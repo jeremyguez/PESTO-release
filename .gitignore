@@ -1,0 +1,20 @@
+.env
+.venv*/
+__pycache__/
+*.egg-info/
+*.pyc
+build/
+dist/
+
+# Downloaded from Zenodo by paper/fetch_data.sh, too large for git.
+paper/downloads/
+paper/data/runs/
+paper/efo/data/
+paper/efo/cache/
+paper/benchmark/*/runs/
+paper/results/**/runs/
+paper/results/auto_cohort/
+paper/results/auto_cohort_ot_v7/
+paper/results/auto_cohort_ot_tight/
+paper/results/auto_fig1c_absent50_hgnc/
+paper/results/auto_fig1c_absent50_hgnc_v7/

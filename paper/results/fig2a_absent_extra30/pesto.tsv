@@ -1,0 +1,31 @@
+gene	phenotype	verdict	lit_score	found	read	cached	error	usd	bands_usd
+FCGR2B	bardet-biedl syndrome 21	Novel	1.08	68	20	False		0.117265	0.037670
+MRPS14	robinow syndrome, autosomal recessive 2	Novel	1.14	3	3	False		0.042646	0.002048
+EDNRA	Charcot-Marie-Tooth disease axonal type 2CC	Novel	1.44	68	15	False		0.126281	0.037249
+HLA-DRB1	congenital adrenal hyperplasia due to 11-beta-hydroxylase deficiency	Existing	2.04	90	4	False		0.103067	0.042130
+SCNN1A	autosomal recessive limb-girdle muscular dystrophy type 2F	Novel	1.08	61	20	False		0.117297	0.032242
+RXYLT1	cholestasis, progressive familial intrahepatic, 8	Novel	1.06	14	4	False		0.050896	0.007866
+VWA2	hypercholesterolemia, familial, 4	Novel	1.05	14	6	False		0.059055	0.008142
+MTHFR	immunodeficiency 102	Novel	1.28	69	3	False		0.087004	0.035002
+WBP11	immunodeficiency, common variable, 3	Novel	1.08	22	10	False		0.071294	0.012518
+SEC16B	MHC class II deficiency 3	Novel	1.06	63	2	False		0.074346	0.030306
+PIGC	agammaglobulinemia	Novel	1.19	41	14	False		0.105830	0.024352
+AGPAT5	short-rib thoracic dysplasia 11 with or without polydactyly	Novel	1.06	11	9	False		0.070307	0.006880
+RNF220	myopathy, lactic acidosis, and sideroblastic anemia 1	Novel	1.14	29	20	False		0.109863	0.015849
+PNKP	amyloidosis, hereditary systemic 3	Novel	1.11	72	20	False		0.133542	0.039025
+TTC21A	spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 3	Novel	1.17	17	5	False		0.066254	0.009905
+RAB32	Silver-Russell syndrome 5	Novel	1.06	57	20	False		0.110485	0.027948
+PNPLA1	immunodeficiency-centromeric instability-facial anomalies syndrome	Novel	1.11	56	20	False		0.102076	0.028174
+ZNF81	acromelic frontonasal dysostosis	Novel	1.17	12	7	False		0.063129	0.007733
+SLC52A2	Guttmacher syndrome	Novel	1.12	57	20	False		0.113684	0.029162
+HELLS	autosomal recessive spondylocostal dysostosis	Novel	1.14	63	20	False		0.126961	0.035251
+IFT54	familial isolated deficiency of vitamin E	Novel	1.06	12	8	False		0.064752	0.007768
+FKTN	autosomal dominant hypophosphatemic rickets	Novel	1.08	61	16	False		0.105216	0.032914
+PRDM6	Long-Olsen-Distelmaier syndrome	Established	3.37	56	20	False		0.155014	0.027991
+TRPA1	early-onset progressive encephalopathy-hearing loss-pons hypoplasia-brain atrophy syndrome	Novel	1.62	78	20	False		0.188878	0.043369
+MCCC2	vitamin D-dependent rickets, type 3	Novel	1.14	54	20	False		0.110251	0.027615
+ANAPC1	head and neck squamous cell carcinoma	Hypothesized	1.7	67	20	False		0.118045	0.036985
+PDX1	arthrogryposis-renal dysfunction-cholestasis syndrome	Novel	1.19	69	20	False		0.121924	0.035385
+ISCA1	pulmonary hypertension, primary, 3	Hypothesized	1.61	49	20	False		0.117256	0.028029
+CAV1	hereditary late onset Parkinson disease	Hypothesized	1.75	86	20	False		0.143550	0.046161
+PLEKHM2	developmental malformations-deafness-dystonia syndrome	Novel	1.36	23	18	False		0.130184	0.014111

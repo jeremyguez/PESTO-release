@@ -1,0 +1,121 @@
+gene	phenotype	gencc_class	lit_mean	score_mean	novelty
+CARD11	BENTA disease	Definitive	Established	Established	0.0
+SNRPN	Prader-Willi syndrome	Definitive	Existing	Established	0.0
+EIF4A3	Richieri Costa-Pereira syndrome	Definitive	Established	Established	0.0
+KDR	pulmonary arterial hypertension	Definitive	Established	Established	2.0
+POGZ	intellectual disability-microcephaly-strabismus-behavioral abnormalities syndrome	Definitive	Established	Established	2.0
+GP6	platelet-type bleeding disorder 11	Definitive	Established	Established	3.0
+MPV17	mitochondrial DNA depletion syndrome 6 (hepatocerebral type)	Definitive	Established	Established	0.0
+WAS	Wiskott-Aldrich syndrome	Definitive	Established	Established	0.0
+MPIG6B	thrombocytopenia, anemia, and myelofibrosis	Definitive	Established	Established	2.0
+OPHN1	X-linked intellectual disability-cerebellar hypoplasia syndrome	Definitive	Established	Established	2.0
+AGK	Sengers syndrome	Definitive	Established	Established	0.0
+CLCN2	leukoencephalopathy with mild cerebellar ataxia and white matter edema	Definitive	Established	Established	2.0
+NR2F2	46,xx sex reversal 5	Definitive	Existing	Established	3.0
+STRADA	polyhydramnios, megalencephaly, and symptomatic epilepsy	Definitive	Established	Established	0.0
+SLC29A3	H syndrome	Definitive	Established	Established	0.0
+SPINK5	Netherton syndrome	Definitive	Established	Established	0.0
+FLVCR2	Fowler syndrome	Definitive	Established	Established	0.0
+F12	congenital factor XII deficiency	Definitive	Established	Established	2.0
+SCARF2	van den Ende-Gupta syndrome	Definitive	Established	Established	0.0
+GATAD2B	severe intellectual disability-poor language-strabismus-grimacing face-long fingers syndrome	Definitive	Established	Established	0.0
+RB1	hereditary retinoblastoma	Definitive	Established	Established	0.0
+SLC16A2	Allan-Herndon-Dudley syndrome	Definitive	Established	Established	0.0
+CTC1	dyskeratosis congenita	Definitive	Established	Established	2.0
+SLC52A2	Brown-Vialetto-van Laere syndrome 2	Definitive	Established	Established	2.0
+GLUD1	hyperinsulinism-hyperammonemia syndrome	Definitive	Established	Established	0.0
+GALNS	mucopolysaccharidosis type 4A	Definitive	Established	Established	0.0
+PDHA1	Leigh syndrome	Definitive	Established	Established	2.0
+AFG2A	microcephaly-intellectual disability-sensorineural hearing loss-epilepsy-abnormal muscle tone syndrome	Definitive	Established	Established	2.0
+AUH	3-methylglutaconic aciduria type 1	Definitive	Established	Established	0.0
+HYCC1	leukodystrophy, hypomyelinating, 5	Definitive	Established	Established	2.0
+INTS1	neurodevelopmental disorder with cataracts, poor growth, and dysmorphic facies	Strong	Established	Established	2.0
+STAT6	hyper-IgE syndrome 6, autosomal dominant, with recurrent infections	Strong	Established	Established	4.0
+SCYL1	acute infantile liver failure-cerebellar ataxia-peripheral sensory motor neuropathy syndrome	Strong	Established	Established	0.0
+LTBP1	cutis laxa, autosomal recessive, type 2E	Strong	Existing	Established	2.0
+WNT4	mullerian aplasia and hyperandrogenism	Strong	Existing	Established	3.0
+ABHD16A	spastic paraplegia 86, autosomal recessive	Strong	Established	Established	2.0
+CHRNA3	urinary bladder, atony of	Strong	Established	Established	3.0
+YAP1	uveal coloboma-cleft lip and palate-intellectual disability	Strong	Existing	Established	3.0
+ASPH	facial dysmorphism-lens dislocation-anterior segment abnormalities-spontaneous filtering blebs syndrome	Strong	Established	Established	0.0
+NAXE	encephalopathy, progressive, early-onset, with brain edema and/or leukoencephalopathy, 1	Strong	Established	Established	0.0
+EDEM3	congenital disorder of glycosylation, type 2v	Strong	Existing	Established	2.0
+H4C3	Tessadori-van Haaften neurodevelopmental syndrome 1	Strong	Existing	Established	3.0
+P3H2	myopia, high, with cataract and vitreoretinal degeneration	Strong	Established	Established	2.0
+GALNT2	congenital disorder of glycosylation, type iit	Strong	Existing	Established	3.0
+CENPF	Stromme syndrome	Strong	Established	Established	0.0
+PHACTR1	developmental and epileptic encephalopathy, 70	Strong	Established	Established	2.0
+HNRNPA2B1	oculopharyngeal muscular dystrophy 2	Strong	Established	Established	2.0
+COPB2	osteoporosis, childhood- or juvenile-onset, with developmental delay	Strong	Existing	Established	2.0
+HDAC4	neurodevelopmental disorder with central hypotonia and dysmorphic facies	Strong	Existing	Established	7.0
+WWOX	autosomal recessive spinocerebellar ataxia 12	Strong	Existing	Established	0.0
+AFF3	KINSSHIP syndrome	Strong	Established	Established	0.0
+CFAP54	ciliary dyskinesia, primary, 54	Strong	Established	Established	3.0
+BMS1	aplasia cutis congenita	Strong	Existing	Established	2.0
+MIR17HG	Feingold syndrome type 2	Strong	Existing	Established	0.0
+EMG1	Bowen-Conradi syndrome	Strong	Established	Established	0.0
+PHF21A	Potocki-Shaffer syndrome	Strong	Established	Established	2.0
+EPRS1	leukodystrophy, hypomyelinating, 15	Strong	Established	Established	2.0
+H4C5	Tessadori-Van Haaften neurodevelopmental syndrome 3	Strong	Established	Established	5.0
+ZNF148	global developmental delay, absent or hypoplastic corpus callosum, and dysmorphic facies	Strong	Established	Established	2.0
+SLC39A5	myopia 24, autosomal dominant	Strong	Existing	Established	2.0
+MAPK1	Noonan syndrome 13	Moderate	Existing	Established	3.0
+TCEAL1	neurodevelopmental disorder with gait disturbance, dysmorphic facies, and behavioral abnormalities, X-linked	Moderate	Established	Established	2.0
+SBF1	Charcot-Marie-Tooth disease type 4B3	Moderate	Established	Established	0.0
+SLF2	Atelis syndrome 1	Moderate	Existing	Established	2.0
+AMFR	spastic paraplegia 89, autosomal recessive	Moderate	Established	Established	2.0
+MYLK3	dilated cardiomyopathy	Moderate	Existing	Established	2.0
+TAPBP	MHC class I deficiency	Moderate	Existing	Established	2.0
+UBAP2L	neurodevelopmental disorder with impaired language, behavioral abnormalities, and dysmorphic facies	Moderate	Established	Established	2.0
+MAST3	developmental and epileptic encephalopathy 108	Moderate	Established	Established	4.0
+WDR83OS	neurodevelopmental disorder with variable familial hypercholanemia	Moderate	Established	Established	2.0
+RUSC2	intellectual disability, autosomal recessive 61	Moderate	Existing	Established	3.0
+IRF9	immunodeficiency 65, susceptibility to viral infections	Moderate	Established	Established	2.0
+TRIM71	hydrocephalus, congenital communicating, 1	Moderate	Established	Established	2.0
+ESAM	neurodevelopmental disorder with intracranial hemorrhage, seizures, and spasticity	Moderate	Established	Established	2.0
+FOSL2	aplasia cutis-enamel dysplasia syndrome	Moderate	Existing	Established	3.0
+GABBR1	neurodevelopmental disorder with language delay and variable cognitive abnormalities	Moderate	Established	Established	3.0
+IKZF3	immunodeficiency 84	Moderate	Established	Established	2.0
+NDC1	neurodevelopmental disorder with achalasia, polyneuropathy, and alacrima	Moderate	Existing	Established	3.0
+RAB34	orofaciodigital syndrome 20	Moderate	Established	Established	3.0
+MYCN	megalencephaly-polydactyly syndrome	Moderate	Established	Established	2.0
+NDUFC2	Leigh syndrome	Moderate	Existing	Established	2.0
+SMC5	Atelis syndrome 2	Moderate	Established	Established	2.0
+ZBTB7A	macrocephaly, neurodevelopmental delay, lymphoid hyperplasia, and persistent fetal hemoglobin	Moderate	Existing	Existing	20.0
+H3-3B	Bryant-Li-Bhoj neurodevelopmental syndrome 2	Moderate	Established	Established	2.0
+CFB	atypical hemolytic-uremic syndrome with B factor anomaly	Moderate	Existing	Established	3.0
+TOP2B	B-cell immunodeficiency, distal limb anomalies, and urogenital malformations	Moderate	Established	Established	3.0
+CFAP74	ciliary dyskinesia, primary, 49, without situs inversus	Moderate	Established	Established	3.0
+MESP1	congenital heart disease	Moderate	Existing	Established	2.0
+MDM4	bone marrow failure syndrome 6	Moderate	Established	Established	3.0
+ABCC4	qualitative platelet defect	Moderate	Existing	Established	3.0
+MFSD6L	cataract	Limited	Existing	Hypothesized	72.0
+GSPT2	intellectual disability	Limited	Existing	Existing	20.0
+HCK	autoinflammation with pulmonary and cutaneous vasculitis	Limited	Established	Established	2.0
+CCNK	intellectual developmental disorder with hypertelorism and distinctive facies	Limited	Established	Established	2.0
+PET117	Leigh syndrome	Limited	Existing	Existing	30.0
+AKR1E2	cataract	Limited	Existing	Established	15.0
+OFD1	Simpson-Golabi-Behmel syndrome type 2	Limited	Existing	Established	3.0
+AQP1	pulmonary arterial hypertension	Limited	Existing	Established	2.0
+ABCD3	congenital bile acid synthesis defect 5	Limited	Existing	Established	4.0
+DLG5	Yuksel-Vogel-Bauer syndrome	Limited	Existing	Existing	18.0
+CRELD1	atrioventricular septal defect, susceptibility to, 2	Limited	Existing	Established	0.0
+PIGM	hypercoagulability syndrome due to glycosylphosphatidylinositol deficiency	Limited	Established	Established	2.0
+GUF1	developmental and epileptic encephalopathy	Limited	Existing	Established	8.0
+PDE1C	autosomal dominant nonsyndromic hearing loss	Limited	Existing	Established	3.0
+LTV1	inflammatory poikiloderma with hair abnormalities and acral keratoses	Limited	Existing	Established	2.0
+CFAP47	spermatogenic failure, X-linked, 3	Limited	Established	Established	3.0
+CTNNA3	arrhythmogenic right ventricular cardiomyopathy	Limited	Existing	Established	3.0
+ILK	familial dilated cardiomyopathy	Limited	Existing	Established	5.0
+NUDCD3	severe combined immunodeficiency	Limited	Existing	Established	2.0
+HIBADH	3-hydroxyisobutyric aciduria	Limited	Established	Established	3.0
+RAX	coloboma	Limited	Existing	Established	5.0
+PHYKPL	phosphohydroxylysinuria	Limited	Existing	Established	2.0
+PLOD3	bone fragility with contractures, arterial rupture, and deafness	Limited	Established	Established	3.0
+CHST8	peeling skin syndrome type A	Limited	Existing	Established	5.0
+LONP1	congenital diaphragmatic hernia	Limited	Established	Established	2.0
+C1GALT1C1	hemolytic uremic syndrome, atypical, 8, with rhizomelic short stature	Limited	Established	Established	3.0
+RNF125	Tenorio syndrome	Limited	Established	Established	2.0
+GET3	cardiomyopathy, dilated, 2H	Limited	Existing	Established	3.0
+TBX4	autosomal recessive amelia	Limited	Established	Established	3.0
+AKT3	microcephaly	Limited	Existing	Established	2.0

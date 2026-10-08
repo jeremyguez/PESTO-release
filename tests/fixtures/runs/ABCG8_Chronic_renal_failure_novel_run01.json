@@ -1,0 +1,2002 @@
+{
+    "gene_name": "ABCG8",
+    "phenotype": "Chronic renal failure",
+    "synonyms": [
+        "Chronic kidney disease",
+        "CKD",
+        "CRF",
+        "Chronic renal insufficiency",
+        "End-stage renal disease",
+        "ESRD",
+        "Chronic kidney failure",
+        "Progressive renal failure"
+    ],
+    "run_parameters": {
+        "model": "claude-haiku-4-5@vertex",
+        "temperature": 0.0,
+        "batch_size": null
+    },
+    "prompt_templates": {
+        "phenotype_synonyms_prompt": "You are a medical expert helping to identify alternative terms and synonyms for phenotypes/diseases.\n\nGiven the following phenotype: {phenotype}\n\nGenerate between 0 and 10 relevant synonyms or alternative terms that could be used to search for scientific literature about this phenotype. Include:\n- Alternative medical terminology\n- Common abbreviations\n- Related clinical terms\n- Different ways the condition might be described in literature\n\nIMPORTANT: \n- If the phenotype is already very specific and well-defined, you may return fewer synonyms (even 0).\n- Only include terms that are semantically equivalent or very closely related.\n- Do NOT include broader categories, subtypes, or related but distinct conditions.\n\nReturn your answer in this exact XML format:\n<response>\n<synonyms>\n<synonym>term 1</synonym>\n<synonym>term 2</synonym>\n...\n</synonyms>\n</response>\n\nIf you think no synonyms are needed, return:\n<response>\n<synonyms>\n</synonyms>\n</response>",
+        "novelty_assessment_prompt": "You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.\n\nBelow is a list of scientific articles about {gene_name} and/or {phenotype}:\n\n{alias_note}{dismiss_note}\n\n{articles_list}\n\nClassify the gene\u2013phenotype relationship into ONE of four categories:\n\n1. **Established**  \n   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical or mechanistic studies support a clear causal role.\n   Research used to prove this category has to be in Human.\n\n2. **Existing**\n   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.  \n   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.\n   Research used to prove this category has to be in Human.\n\n3. **Hypothesized**  \n   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.  \n   Includes expression, functional data, pathway links, or relevant animal models.  \n   Excludes cases where gene and phenotype are merely co-mentioned without relevance.\n\n4. **Novel**  \n   No evidence that variants or biological activity of {gene_name} influence {phenotype}.  \n   Co-mentions are incidental and provide no logical basis.\n\nYour task:\n1. Read the article titles and abstracts.  \n2. Choose the best category.  \n3. Provide a brief justification (3\u20135 sentences).  \n4. Cite up to 10 relevant PMIDs from the provided list only.\n\nReturn your answer in **this exact XML format**:\n\n<response>\n  <verdict>Established|Existing|Hypothesized|Novel</verdict>\n  <justification>Your brief explanation (3\u20135 sentences)</justification>\n  <pmids>\n    <pmid>12345678</pmid>\n    ...\n  </pmids>\n</response>\n\nAdditional rules:\n- If uncertain between two categories, choose the *less novel* one.  \n- Hypothesized can apply without phenotype measurements if the gene\u2019s biology is directly relevant.  \n- Think step by step internally: if the studies used to prove \"Existing\" or \"Established\" are not in human but in an animal or in vitro experiments, downgrade to \"Hypothesized\".\n- Maximum 10 PMIDs."
+    },
+    "prompt_texts": {},
+    "pubmed_articles": [
+        {
+            "pmid": "39877840",
+            "title": "Genetic association analysis of lipid-lowering drug target genes in chronic kidney disease.",
+            "pubdate": "2024",
+            "abstract": "The impact of lipid-lowering medications on chronic kidney disease (CKD) remains a subject of debate. This Mendelian randomization (MR) study aims to elucidate the potential effects of lipid-lowering drug targets on CKD development."
+        },
+        {
+            "pmid": "25804128",
+            "title": "ABCG8 polymorphisms and renal disease in type 2 diabetic patients.",
+            "pubdate": "2015 Jun",
+            "abstract": "Sterols, bile acids and their receptors have been involved in diabetic nephropathy. The ATP-binding cassette transporters G5 and G8 (ABCG5 and ABCG8) play an important role in intestinal sterol absorption and bile acid secretion. The aim of our study was to assess the associations between two ABCG8 coding polymorphisms, T400K and D19H, and the incidence of renal events in type 2 diabetic subjects."
+        },
+        {
+            "pmid": "38172964",
+            "title": "Revisiting the interconnection between lipids and vitamin K metabolism: insights from recent research and potential therapeutic implications: a review.",
+            "pubdate": "2024 Jan 3",
+            "abstract": "Vitamin K is a lipophilic vitamin, whose absorption, transportation, and distribution are influenced by lipids. The plasma vitamin K level after supplementation is predominantly a lipid-driven effect and independent of existing vitamin K status. However, previous studies examining the efficacy of vitamin K supplementation often overlooked the influence of lipid levels on vitamin K absorption, resulting in inconsistent outcomes. Recent research discovered that impaired transportation of vitamin K2 within uremic high-density lipoproteins (HDL) in individuals with uremia might elucidate the lack of beneficial effects in preventing calcification observed in multiple trials involving menaquinone-7 (MK-7) supplementation among patients with chronic kidney disease. Clinical findings have shown that drugs used to regulate hyperlipidemia interact with the vitamin K antagonist warfarin, because cholesterol and vitamin K share common transport receptors, such as Niemann-Pick C1-like 1 (NPC1L1) and ATP-binding cassette protein G5/G8 (ABCG5/ABCG8), in enterocytes and hepatocytes. Additionally, cholesterol and vitamin K share a common biosynthetic intermediate called geranylgeranyl pyrophosphate (GGPP). It is important to note that statins, which hinder cholesterol synthesis, can also impede vitamin K conversion, ultimately impacting the functionality of vitamin K-dependent proteins. Furthermore, certain studies have indicated that vitamin K supplementation holds potential in managing hyperlipidemia, potentially opening a novel avenue for controlling hyperlipidemia using dietary vitamin K supplements. Therefore, attaining a more comprehensive understanding of the intricate interplay between vitamin K and lipids will yield valuable insights concerning the utilization of vitamin K and lipid regulation."
+        },
+        {
+            "pmid": "17855625",
+            "title": "Gender differences in mRNA expression of ATP-binding cassette efflux and bile acid transporters in kidney, liver, and intestine of 5/6 nephrectomized rats.",
+            "pubdate": "2008 Jan",
+            "abstract": "ATP-binding cassette (ABC) transporters including multidrug resistance proteins (Mdr), multidrug resistance-associated proteins (Mrp), and breast cancer resistance protein (Bcrp/Abcg2) play major roles in tissue defense. Abcg5/g8 is essential in cholesterol efflux. The present study was aimed at elucidating alteration in expression of these transporters and bile-acid transporters during chronic kidney disease (CKD) and underlying molecular mechanisms. Seven weeks after 5/6 nephrectomy (Nx), mRNA expression of 16 aforementioned transporters in kidney, liver, jejunum, and large intestine of male and female Nx rats was quantified with the branched DNA signal amplification assay. In Nx males, intestinal expression of all the transporters remained unchanged; hepatic expression of most transporters was not altered, except increases in Mdr1a, Mrp3, and Abcg8. In male remnant kidneys, kidney-predominant transporter Abcg2 decreased and correlated with CKD severity, whereas Mdr1b, Mrp3, and ileal bile-acid transporter increased and correlated with CKD severity. Such changes were largely absent in Nx females. Renal alterations of these transporters correlated with increases of cytokines and/or decreases of nuclear receptors such as estrogen receptor alpha and glucocorticoid receptor. Renal protein expression of Mrp2 increased, whereas that of Mrp4 remained unchanged in both genders of Nx rats. Treatment of rat proximal tubule NRK-52E cells with interleukin (IL)-1beta and IL-6 increased Mrp3 mRNA expression. In conclusion, during CKD, renal expression of many ABC transporters was altered at the transcriptional level, whereas hepatic mRNA expression of most ABC transporters remained unchanged. Down-regulation of steroid hormone receptors and increase of inflammatory cytokines may contribute to alteration of transporter gene expression in kidney during CKD."
+        },
+        {
+            "pmid": "27121416",
+            "title": "Gallstones.",
+            "pubdate": "2016 Apr 28",
+            "abstract": "Gallstones grow inside the gallbladder or biliary tract. These stones can be asymptomatic or symptomatic; only gallstones with symptoms or complications are defined as gallstone disease. Based on their composition, gallstones are classified into cholesterol gallstones, which represent the predominant entity, and bilirubin ('pigment') stones. Black pigment stones can be caused by chronic haemolysis; brown pigment stones typically develop in obstructed and infected bile ducts. For treatment, localization of the gallstones in the biliary tract is more relevant than composition. Overall, up to 20% of adults develop gallstones and >20% of those develop symptoms or complications. Risk factors for gallstones are female sex, age, pregnancy, physical inactivity, obesity and overnutrition. Factors involved in metabolic syndrome increase the risk of developing gallstones and form the basis of primary prevention by lifestyle changes. Common mutations in the hepatic cholesterol transporter ABCG8 confer most of the genetic risk of developing gallstones, which accounts for \u223c25% of the total risk. Diagnosis is mainly based on clinical symptoms, abdominal ultrasonography and liver biochemistry tests. Symptoms often precede the onset of the three common and potentially life-threatening complications of gallstones (acute cholecystitis, acute cholangitis and biliary pancreatitis). Although our knowledge on the genetics and pathophysiology of gallstones has expanded recently, current treatment algorithms remain predominantly invasive and are based on surgery. Hence, our future efforts should focus on novel preventive strategies to overcome the onset of gallstones in at-risk patients in particular, but also in the population in general."
+        },
+        {
+            "pmid": "36210074",
+            "title": "Sitosterolemia.",
+            "pubdate": "2022",
+            "abstract": "Sitosterolemia is an inherited metabolic disorder characterized by increased levels of plant sterols, such as sitosterol. This disease is caused by loss-of-function genetic mutations in the ATP-binding cassette (ABC) subfamily G member 5 or member 8 (ABCG5 or ABCG8, respectively), both of which play important roles in the selective excretion of plant sterols from the liver and intestine, leading to a failure to excrete plant sterols. Sitosterolemia, which is currently considered a rare genetic disorder, has been described as a phenocopy of homozygous familial hypercholesterolemia (FH). Typical phenotypes of sitosterolemia, including elevated low-density lipoprotein (LDL) cholesterol, tendon xanthomas, and premature coronary artery disease, overlap those of homozygous FH; however, there are substantial differences between these two diseases in terms of treatments and prognoses. Moreover, it is of note that sitosterolemia appears to be quite underdiagnosed, although accurate diagnosis and appropriate interventions will likely to lead to better prognoses compared with homozygous FH. Unlike cases of homozygous FH, dietary counseling is quite effective in reducing the LDL cholesterol as well as sitosterol of patients with sitosterolemia. In this chapter, we summarize the current understandings of this disease and provide useful tips for the diagnosis as well as better treatment of patients with sitosterolemia."
+        },
+        {
+            "pmid": "34969652",
+            "title": "Clinical, genetic profile and therapy evaluation of 55 children and 5 adults with sitosterolemia.",
+            "pubdate": "2022 Jan-Feb",
+            "abstract": "Sitosterolemia is a rare autosomal recessive disease characterized by phytosterol accumulation in the blood and tissues. However, the detailed clinical and genetic spectra are lacking."
+        },
+        {
+            "pmid": "19158321",
+            "title": "Intestinal lipid absorption.",
+            "pubdate": "2009 Jun",
+            "abstract": "Our knowledge of the uptake and transport of dietary fat and fat-soluble vitamins has advanced considerably. Researchers have identified several new mechanisms by which lipids are taken up by enterocytes and packaged as chylomicrons for export into the lymphatic system or clarified the actions of mechanisms previously known to participate in these processes. Fatty acids are taken up by enterocytes involving protein-mediated as well as protein-independent processes. Net cholesterol uptake depends on the competing activities of NPC1L1, ABCG5, and ABCG8 present in the apical membrane. We have considerably more detailed information about the uptake of products of lipid hydrolysis, the active transport systems by which they reach the endoplasmic reticulum, the mechanisms by which they are resynthesized into neutral lipids and utilized within the endoplasmic reticulum to form lipoproteins, and the mechanisms by which lipoproteins are secreted from the basolateral side of the enterocyte. apoB and MTP are known to be central to the efficient assembly and secretion of lipoproteins. In recent studies, investigators found that cholesterol, phospholipids, and vitamin E can also be secreted from enterocytes as components of high-density apoB-free/apoAI-containing lipoproteins. Several of these advances will probably be investigated further for their potential as targets for the development of drugs that can suppress cholesterol absorption, thereby reducing the risk of hypercholesterolemia and cardiovascular disease."
+        },
+        {
+            "pmid": "36897412",
+            "title": "Update on Sitosterolemia and Atherosclerosis.",
+            "pubdate": "2023 May",
+            "abstract": "The purpose of this review was to summarize important and updated information on sitosterolemia. Sitosterolemia is an inherited lipid disorder consisting of high levels of plasma plant sterols. This sterol storage condition is caused by biallelic loss-of-function genetic variants in either ABCG5 or ABCG8, leading to increased intestinal absorption and decreased hepatic excretion of plant sterols. Clinically, patients with sitosterolemia usually exhibit xanthomatosis, high levels of plasma cholesterol, and premature atherosclerotic disease, but presentation can be highly heterogeneous. Therefore, recognition of this condition requires a high level of suspicion, with confirmation upon genetic diagnosis or through measurement of plasma phytosterols. Treatment of sitosterolemia with both a plant sterol-restricted diet and the intestinal cholesterol absorption inhibitor ezetimibe can reduce efficiently the levels of plasma plant sterols, consisting in the first-line therapy for this disease."
+        },
+        {
+            "pmid": "33141631",
+            "title": "The ABCs of Sterol Transport.",
+            "pubdate": "2021 Feb 10",
+            "abstract": "Cholesterol homeostasis and trafficking are critical to the maintenance of the asymmetric plasma membrane of eukaryotic cells. Disruption or dysfunction of cholesterol trafficking leads to numerous human diseases. ATP-binding cassette (ABC) transporters play several critical roles in this process, and mutations in these sterol transporters lead to disorders such as Tangier disease and sitosterolemia. Biochemical and structural information on ABC sterol transporters is beginning to emerge, with published structures of ABCA1 and ABCG5/G8; these two proteins function in the reverse cholesterol transport pathway and mediate the efflux of cholesterol and xenosterols to high-density lipoprotein and bile salt micelles, respectively. Although both of these transporters belong to the ABC family and mediate the efflux of a sterol substrate, they have many distinct differences. Here, we summarize the current understanding of sterol transport driven by ABC transporters, with an emphasis on these two extensively characterized transporters."
+        },
+        {
+            "pmid": "17483372",
+            "title": "Update on dyslipidemia.",
+            "pubdate": "2007 May",
+            "abstract": "Recently, considerable progress has been made in understanding the genetic basis of dyslipidemias and in studying the safety and efficacy of lipid-lowering drugs for coronary heart disease (CHD) prevention. Novel loci have been identified for monogenic hypercholesterolemia, such as low-density lipoprotein (LDL) receptor (LDLR)-associated protein, proprotein convertase subtilisin-like kexin type 9, and ATP-binding cassette transporters ABCG5 and ABCG8. LDLR-associated protein promotes clustering of LDLRs into clathrin-coated pits for LDL uptake; proprotein convertase subtilisin-like kexin type 9 is involved in LDLR degradation; and ABCG5 and 8 pump sterols out of the hepatic and intestinal cells into bile and intestinal lumen, respectively. A novel gene encoding apolipoprotein AV, an activator of lipoprotein lipase, has also been linked to familial hypertriglyceridemia. Linkage of familial combined hyperlipidemia to upstream stimulatory factor 1 remains controversial. Recent guidelines of the Adult Treatment Panel III emphasize intensive reduction of LDL or non-high-density lipoprotein cholesterol in patients at high risk of CHD. However, of the four recently concluded trials comparing high- vs. low-dose statin therapy, only two showed an unequivocal reduction in cardiovascular endpoints. Because intensive statin therapy can increase the risk of myopathy and hepatotoxicity, it is important to consider its risk-benefit ratio in individual patients. Restriction of dietary saturated and trans-fat and cholesterol, along with increased intake of soluble fiber, can also achieve substantial LDL cholesterol lowering. Fibrates may reduce the risk of acute pancreatitis in severely hypertriglyceridemic patients and may be beneficial for CHD prevention. However, the safety and efficacy of combined therapy of fibrates and statins needs to be established."
+        }
+    ],
+    "pubmed_pmids": [
+        "39877840",
+        "25804128",
+        "38172964",
+        "17855625",
+        "27121416",
+        "36210074",
+        "34969652",
+        "19158321",
+        "36897412",
+        "33141631",
+        "17483372"
+    ],
+    "llm_raw_response": "Let me analyze the provided articles systematically for evidence of a genetic association between ABCG8 and Chronic renal failure.\n\n**Step 1: Identify relevant articles**\n\n1. PMID 39877840 - Lipid-lowering drug targets in CKD (Mendelian randomization study)\n2. PMID 25804128 - ABCG8 polymorphisms and renal disease in type 2 diabetic patients (DIRECT MATCH)\n3. PMID 38172964 - Lipids and vitamin K metabolism in CKD (mentions ABCG5/G8)\n4. PMID 17855625 - ABC transporters in 5/6 nephrectomized rats (animal model, mentions Abcg8)\n5. PMID 27121416 - Gallstones (ABCG8 role, not renal disease)\n6. PMID 36210074 - Sitosterolemia (ABCG5/G8 mutations, not renal disease)\n7. PMID 34969652 - Sitosterolemia clinical/genetic profile (not renal disease)\n8. PMID 19158321 - Intestinal lipid absorption (ABCG5/G8 function, not renal disease)\n9. PMID 36897412 - Sitosterolemia and atherosclerosis (not renal disease)\n10. PMID 33141631 - ABC sterol transporters (not renal disease)\n11. PMID 17483372 - Dyslipidemia (mentions ABCG5/G8, not renal disease)\n\n**Step 2: Evaluate evidence quality**\n\n**Most relevant article:**\n- PMID 25804128: This is a human study directly examining ABCG8 polymorphisms (T400K and D19H) and their association with renal events in type 2 diabetic subjects. This is direct evidence in humans.\n\n**Supporting articles:**\n- PMID 17855625: Animal study (5/6 nephrectomized rats) showing altered Abcg8 expression in CKD, but this is not human evidence.\n- PMID 38172964: Discusses ABCG5/G8 in context of CKD and vitamin K metabolism, suggesting a biological link.\n- PMID 39877840: Mendelian randomization study on lipid-lowering drug targets in CKD, potentially relevant to ABCG8.\n\n**Step 3: Determine category**\n\nThe key study (PMID 25804128) is a human genetic association study examining ABCG8 polymorphisms and renal disease in diabetic patients. This represents at least one credible human study reporting an association between ABCG8 variation and renal disease. However, the evidence appears limited to one study population (type 2 diabetics with nephropathy), and there is no indication of multiple replicated studies or strong causal evidence. This fits the \"Existing\" category definition.\n\n<response>\n  <verdict>Existing</verdict>\n  <justification>One human genetic association study (PMID 25804128) directly examined ABCG8 polymorphisms (T400K and D19H) and their association with renal events in type 2 diabetic patients, providing credible evidence of a relationship. Additionally, animal studies (PMID 17855625) demonstrate altered Abcg8 expression during CKD, and biological literature (PMID 38172964) suggests ABCG5/G8 involvement in pathways relevant to kidney disease. However, evidence is limited to a single human study in a specific population (diabetic nephropathy) without clear replication or definitive causal demonstration, placing this in the \"Existing\" rather than \"Established\" category.</justification>\n  <pmids>\n    <pmid>25804128</pmid>\n    <pmid>17855625</pmid>\n    <pmid>38172964</pmid>\n    <pmid>39877840</pmid>\n  </pmids>\n</response>",
+    "final_output": {
+        "verdict": "Existing",
+        "justification": "One human genetic association study (PMID 25804128) directly examined ABCG8 polymorphisms (T400K and D19H) and their association with renal events in type 2 diabetic patients, providing credible evidence of a relationship. Additionally, animal studies (PMID 17855625) demonstrate altered Abcg8 expression during CKD, and biological literature (PMID 38172964) suggests ABCG5/G8 involvement in pathways relevant to kidney disease. However, evidence is limited to a single human study in a specific population (diabetic nephropathy) without clear replication or definitive causal demonstration, placing this in the \"Existing\" rather than \"Established\" category.",
+        "pmids": [
+            "25804128",
+            "17855625",
+            "38172964",
+            "39877840"
+        ]
+    },
+    "api_response": {
+        "verdict": "Existing",
+        "justification": "One human genetic association study (PMID 25804128) directly examined ABCG8 polymorphisms (T400K and D19H) and their association with renal events in type 2 diabetic patients, providing credible evidence of a relationship. Additionally, animal studies (PMID 17855625) demonstrate altered Abcg8 expression during CKD, and biological literature (PMID 38172964) suggests ABCG5/G8 involvement in pathways relevant to kidney disease. However, evidence is limited to a single human study in a specific population (diabetic nephropathy) without clear replication or definitive causal demonstration, placing this in the \"Existing\" rather than \"Established\" category.",
+        "articles_found": 11,
+        "cited_articles": [
+            {
+                "pmid": "25804128",
+                "title": "ABCG8 polymorphisms and renal disease in type 2 diabetic patients.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/25804128/"
+            },
+            {
+                "pmid": "17855625",
+                "title": "Gender differences in mRNA expression of ATP-binding cassette efflux and bile acid transporters in kidney, liver, and intestine of 5/6 nephrectomized rats.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/17855625/"
+            },
+            {
+                "pmid": "38172964",
+                "title": "Revisiting the interconnection between lipids and vitamin K metabolism: insights from recent research and potential therapeutic implications: a review.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/38172964/"
+            },
+            {
+                "pmid": "39877840",
+                "title": "Genetic association analysis of lipid-lowering drug target genes in chronic kidney disease.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/39877840/"
+            }
+        ],
+        "open_targets_verdict": "Novel",
+        "open_targets_max_score": 0.0,
+        "open_targets_traits": {
+            "ensembl_id": "ENSG00000143921",
+            "traits_count": 302,
+            "file_path": "data/runs/novel/open_targets_traits_ABCG8_Chronic_renal_failure.txt",
+            "traits": [
+                {
+                    "disease_id": "MONDO_0008863",
+                    "name": "sitosterolemia",
+                    "score": 0.8121947720617653,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020747",
+                    "name": "sitosterolemia 1",
+                    "score": 0.7413204059367772,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012672",
+                    "name": "cholelithiasis",
+                    "score": 0.6940409828502888,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0003124",
+                    "name": "Hypercholesterolemia",
+                    "score": 0.646699482128619,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004574",
+                    "name": "total cholesterol measurement",
+                    "score": 0.5860619157519592,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004611",
+                    "name": "low density lipoprotein cholesterol measurement",
+                    "score": 0.5837867417571584,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001626",
+                    "name": "Abnormality of the cardiovascular system",
+                    "score": 0.555731635774622,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_309005",
+                    "name": "Disorder of lipid metabolism",
+                    "score": 0.5470652832244304,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001082",
+                    "name": "Cholecystitis",
+                    "score": 0.5400283857446976,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0005144",
+                    "name": "blood VLDL cholesterol amount",
+                    "score": 0.5384682876189151,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010351",
+                    "name": "cholesteryl ester measurement",
+                    "score": 0.5382671965263317,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004615",
+                    "name": "apolipoprotein B measurement",
+                    "score": 0.5374195867471604,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020946",
+                    "name": "phospholipids:total lipids ratio",
+                    "score": 0.5359906657220963,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005346",
+                    "name": "gallstones",
+                    "score": 0.5339815840331457,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0006807",
+                    "name": "linoleic acid measurement",
+                    "score": 0.5303988937785007,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005680",
+                    "name": "omega-6 polyunsaturated fatty acid measurement",
+                    "score": 0.5282320549789087,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0010046",
+                    "name": "fatty acid amount",
+                    "score": 0.5257755583714169,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0008595",
+                    "name": "intermediate density lipoprotein measurement",
+                    "score": 0.5257663391243242,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010733",
+                    "name": "polyunsaturated fatty acid measurement",
+                    "score": 0.5255941321059141,
+                    "matched": false
+                },
+                {
+                    "disease_id": "GO_0036273",
+                    "name": "response to statin",
+                    "score": 0.5181426464371245,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0008591",
+                    "name": "free cholesterol measurement",
+                    "score": 0.5173135226383556,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005066",
+                    "name": "metabolic disease",
+                    "score": 0.5158226204446553,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050062",
+                    "name": "serum alanine aminotransferase amount",
+                    "score": 0.5117210304449802,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022176",
+                    "name": "free cholesterol in large LDL measurement",
+                    "score": 0.5115794385209824,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022181",
+                    "name": "free cholesterol in IDL measurement",
+                    "score": 0.5112377559346468,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0008589",
+                    "name": "esterified cholesterol measurement",
+                    "score": 0.5108533953728474,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004529",
+                    "name": "lipid measurement",
+                    "score": 0.5104234162247526,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010815",
+                    "name": "remnant cholesterol measurement",
+                    "score": 0.5095829585924533,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021899",
+                    "name": "cholesterol in IDL measurement ",
+                    "score": 0.5080365822836634,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022164",
+                    "name": "phospholipids in IDL measurement",
+                    "score": 0.5075241018311191,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022161",
+                    "name": "total lipids in IDL",
+                    "score": 0.5075241018311191,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022268",
+                    "name": "free cholesterol in medium LDL measurement ",
+                    "score": 0.5075109500494652,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022266",
+                    "name": "free cholesterol in LDL measurement ",
+                    "score": 0.5064505875865721,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022174",
+                    "name": "phospholipids in large LDL measurement",
+                    "score": 0.5063877196694672,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022153",
+                    "name": "total lipids in medium VLDL",
+                    "score": 0.5057775599748403,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022163",
+                    "name": "total lipids in large LDL",
+                    "score": 0.5053425259908859,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005689",
+                    "name": "non-high density lipoprotein cholesterol measurement",
+                    "score": 0.5050855571906573,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021901",
+                    "name": "cholesterol in large LDL measurement ",
+                    "score": 0.5050709105619106,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022272",
+                    "name": "free cholesterol in small VLDL measurement ",
+                    "score": 0.5039245786474615,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022297",
+                    "name": "phospholipids in small LDL measurement ",
+                    "score": 0.5026330597919852,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022231",
+                    "name": "cholesterol in very small VLDL measurement ",
+                    "score": 0.5025442375745491,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022242",
+                    "name": "cholesterol to total lipids in small VLDL percentage ",
+                    "score": 0.5021893524057013,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022168",
+                    "name": "total lipids in small LDL",
+                    "score": 0.5021890544891422,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022269",
+                    "name": "free cholesterol in medium VLDL measurement ",
+                    "score": 0.5020191777871543,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021897",
+                    "name": "apolipoprotein B to apolipoprotein A1 ratio ",
+                    "score": 0.5018568550413284,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022256",
+                    "name": "cholesteryl esters to total lipids in small VLDL percentage ",
+                    "score": 0.5017811728718004,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022154",
+                    "name": "phospholipids in medium VLDL measurement",
+                    "score": 0.5002436294329725,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022289",
+                    "name": "free cholesterol to total lipids in very large VLDL percentage ",
+                    "score": 0.5000345310446355,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022271",
+                    "name": "free cholesterol in small LDL measurement ",
+                    "score": 0.4999317610469334,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022183",
+                    "name": "phospholipids in medium LDL measurement",
+                    "score": 0.49933588158388187,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022227",
+                    "name": "cholesterol in small LDL measurement ",
+                    "score": 0.49897955755522627,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022225",
+                    "name": "cholesterol in medium VLDL measurement ",
+                    "score": 0.49897069254461685,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022160",
+                    "name": "concentration of large LDL particles measurement",
+                    "score": 0.4989075078501757,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010118",
+                    "name": "sphingomyelin measurement",
+                    "score": 0.49888673871419514,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022294",
+                    "name": "phospholipids in LDL measurement ",
+                    "score": 0.4985322084219888,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005010",
+                    "name": "coronary artery disorder",
+                    "score": 0.49837962512425976,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022250",
+                    "name": "cholesteryl esters to total lipids in large VLDL percentage ",
+                    "score": 0.4982533815917519,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022279",
+                    "name": "free cholesterol to total lipids in large HDL percentage ",
+                    "score": 0.4975397985749029,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022290",
+                    "name": "free cholesterol to total lipids in very small VLDL percentage ",
+                    "score": 0.4974705819290804,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022341",
+                    "name": "triglycerides to total lipids in very small VLDL percentage ",
+                    "score": 0.4969462194266871,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022236",
+                    "name": "cholesterol to total lipids in large VLDL percentage ",
+                    "score": 0.49687192749215875,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022338",
+                    "name": "triglycerides to total lipids in small VLDL percentage ",
+                    "score": 0.49667836430354007,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004736",
+                    "name": "aspartate aminotransferase measurement",
+                    "score": 0.49644740597861287,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022224",
+                    "name": "cholesterol in medium LDL measurement ",
+                    "score": 0.4959219430203816,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022245",
+                    "name": "cholesterol to total lipids in very small VLDL percentage ",
+                    "score": 0.4955256574729995,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022180",
+                    "name": "total lipids in medium LDL",
+                    "score": 0.4954937880788596,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022235",
+                    "name": "cholesterol to total lipids in large LDL percentage ",
+                    "score": 0.4946225741494385,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022308",
+                    "name": "total lipids in LDL measurement ",
+                    "score": 0.4944836738534572,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022284",
+                    "name": "free cholesterol to total lipids in medium VLDL percentage ",
+                    "score": 0.4944209236223546,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005281",
+                    "name": "gallbladder disorder",
+                    "score": 0.4937266352529546,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022146",
+                    "name": "phospholipids in small VLDL measurement",
+                    "score": 0.4928392960979066,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022331",
+                    "name": "triglycerides to total lipids in large LDL percentage ",
+                    "score": 0.49256198654725314,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022309",
+                    "name": "total lipids in lipoprotein particles measurement ",
+                    "score": 0.4919152245179018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022276",
+                    "name": "free cholesterol in VLDL measurement ",
+                    "score": 0.49143543051574645,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007010",
+                    "name": "drug use measurement",
+                    "score": 0.4911542921966829,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022287",
+                    "name": "free cholesterol to total lipids in small VLDL percentage ",
+                    "score": 0.48968030697706694,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022241",
+                    "name": "cholesterol to total lipids in small LDL percentage ",
+                    "score": 0.4896245659537898,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022239",
+                    "name": "cholesterol to total lipids in medium VLDL percentage ",
+                    "score": 0.48953268940093125,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0021187",
+                    "name": "hyperlipidemia",
+                    "score": 0.48920063991442847,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022303",
+                    "name": "polyunsaturated fatty acids to total fatty acids percentage ",
+                    "score": 0.4875483271921088,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022238",
+                    "name": "cholesterol to total lipids in medium LDL percentage ",
+                    "score": 0.48710960122777797,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_1001011",
+                    "name": "phospholipid level",
+                    "score": 0.4869608540959189,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022172",
+                    "name": "concentration of medium LDL particles measurement",
+                    "score": 0.486366319621059,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0920023",
+                    "name": "cholesteryl esters in LDL measurement",
+                    "score": 0.48623178817787394,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022329",
+                    "name": "triglycerides to total lipids in IDL percentage ",
+                    "score": 0.4858636711249608,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020748",
+                    "name": "sitosterolemia 2",
+                    "score": 0.4858515471326407,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022335",
+                    "name": "triglycerides to total lipids in medium VLDL percentage ",
+                    "score": 0.48461307154047245,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022166",
+                    "name": "concentration of small LDL particles measurement",
+                    "score": 0.4845034448581044,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022259",
+                    "name": "cholesteryl esters to total lipids in very small VLDL percentage ",
+                    "score": 0.4831743492884122,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022304",
+                    "name": "saturated fatty acids measurement ",
+                    "score": 0.4831426242440735,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022337",
+                    "name": "triglycerides to total lipids in small LDL percentage ",
+                    "score": 0.48274291974099964,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022156",
+                    "name": "total lipids in very small VLDL measurement",
+                    "score": 0.4812169911742432,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0920021",
+                    "name": "cholesteryl esters in VLDL measurement",
+                    "score": 0.4811235809463513,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022253",
+                    "name": "cholesteryl esters to total lipids in medium VLDL percentage ",
+                    "score": 0.4802194765641832,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022334",
+                    "name": "triglycerides to total lipids in medium LDL percentage ",
+                    "score": 0.4794392781016543,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022275",
+                    "name": "free cholesterol in very small VLDL measurement ",
+                    "score": 0.4766011842787569,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022152",
+                    "name": "concentration of medium VLDL particles",
+                    "score": 0.47603814249610155,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004612",
+                    "name": "high density lipoprotein cholesterol measurement",
+                    "score": 0.4760206897477768,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022228",
+                    "name": "cholesterol in small VLDL measurement ",
+                    "score": 0.4756677791717237,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020947",
+                    "name": "triglycerides:total lipids ratio",
+                    "score": 0.47530889089194284,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022301",
+                    "name": "phospholipids in VLDL measurement ",
+                    "score": 0.474947667613869,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020944",
+                    "name": "cholesteryl esters:total lipids ratio",
+                    "score": 0.474940849026039,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0021661",
+                    "name": "coronary atherosclerosis",
+                    "score": 0.4731363825554991,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022300",
+                    "name": "phospholipids in very small VLDL measurement ",
+                    "score": 0.4724929252617127,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020943",
+                    "name": "cholesterol:total lipids ratio",
+                    "score": 0.4695564970222125,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009048",
+                    "name": "Intrahepatic cholestasis of pregnancy",
+                    "score": 0.4681966615025359,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022148",
+                    "name": "total lipids in small VLDL",
+                    "score": 0.46753346716128974,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004868",
+                    "name": "biliary tract disorder",
+                    "score": 0.46668166818116186,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022315",
+                    "name": "total phospholipids in lipoprotein particles measurement ",
+                    "score": 0.4659390864199345,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020945",
+                    "name": "free cholesterol:total lipids ratio",
+                    "score": 0.4649206513409611,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022332",
+                    "name": "triglycerides to total lipids in large VLDL percentage ",
+                    "score": 0.46244159272937124,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0001336",
+                    "name": "familial hyperlipidemia",
+                    "score": 0.46045176524613424,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005439",
+                    "name": "familial hypercholesterolemia",
+                    "score": 0.4591421937520996,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022151",
+                    "name": "concentration of very small VLDL particles",
+                    "score": 0.45833442290948206,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010116",
+                    "name": "choline measurement",
+                    "score": 0.45390459225176955,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0006515",
+                    "name": "acute pancreatitis",
+                    "score": 0.4538954770650279,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022340",
+                    "name": "triglycerides to total lipids in very large VLDL percentage ",
+                    "score": 0.4530496869814699,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022285",
+                    "name": "free cholesterol to total lipids in small HDL percentage ",
+                    "score": 0.4523642805601281,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022230",
+                    "name": "cholesterol in very large VLDL measurement ",
+                    "score": 0.4500473651307747,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022273",
+                    "name": "free cholesterol in very large HDL measurement ",
+                    "score": 0.44965224452591196,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050296",
+                    "name": "chylomicron amount",
+                    "score": 0.44875970865152603,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022314",
+                    "name": "total lipids in VLDL measurement ",
+                    "score": 0.4484837973282822,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004335",
+                    "name": "digestive system disorder",
+                    "score": 0.44748866235888446,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022280",
+                    "name": "free cholesterol to total lipids in large LDL percentage ",
+                    "score": 0.4455857137544464,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004530",
+                    "name": "triglyceride measurement",
+                    "score": 0.4440789118088647,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0006322",
+                    "name": "non-neoplastic bile duct disorder",
+                    "score": 0.4427881713249727,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022147",
+                    "name": "concentration of small VLDL particles",
+                    "score": 0.4384680634891527,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007985",
+                    "name": "platelet crit",
+                    "score": 0.43600438745968445,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_0003277",
+                    "name": "platelet volume",
+                    "score": 0.43571892997456196,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0802260",
+                    "name": "alanine aminotransferase 1 measurement",
+                    "score": 0.43487372646597866,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0002027",
+                    "name": "Abdominal pain",
+                    "score": 0.43427793002344883,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004614",
+                    "name": "apolipoprotein A 1 measurement",
+                    "score": 0.43098927051995245,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021902",
+                    "name": "cholesterol in large VLDL measurement ",
+                    "score": 0.4300349924385703,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022281",
+                    "name": "free cholesterol to total lipids in large VLDL percentage ",
+                    "score": 0.42960094840260316,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022182",
+                    "name": "cholesteryl esters in medium VLDL measurement",
+                    "score": 0.4268968491871306,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005267",
+                    "name": "heart disorder",
+                    "score": 0.42600194524081203,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022240",
+                    "name": "cholesterol to total lipids in small HDL percentage ",
+                    "score": 0.4240093895450653,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004732",
+                    "name": "lipoprotein measurement",
+                    "score": 0.42381215675350903,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004570",
+                    "name": "bilirubin measurement",
+                    "score": 0.41722649602750267,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004995",
+                    "name": "cardiovascular disorder",
+                    "score": 0.4160780346690817,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022234",
+                    "name": "cholesterol to total lipids in large HDL percentage ",
+                    "score": 0.41464056926786547,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020008",
+                    "name": "campesterol measurement",
+                    "score": 0.41293212880268576,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022233",
+                    "name": "cholesterol to total lipids in IDL percentage ",
+                    "score": 0.4122002576848398,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022165",
+                    "name": "cholesteryl esters in large LDL measurement",
+                    "score": 0.41186331319587083,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022170",
+                    "name": "cholesteryl esters in large VLDL measurement",
+                    "score": 0.4093168013150548,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009150",
+                    "name": "cholestasis, intrahepatic, of pregnancy 3",
+                    "score": 0.409080432350175,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022186",
+                    "name": "cholesteryl esters in medium LDL measurement",
+                    "score": 0.4051578943786636,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000195",
+                    "name": "metabolic syndrome",
+                    "score": 0.404034850664396,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005068",
+                    "name": "myocardial infarction",
+                    "score": 0.4015493327761178,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004627",
+                    "name": "IGF-1 measurement",
+                    "score": 0.4015218788802966,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022295",
+                    "name": "phospholipids in medium HDL measurement ",
+                    "score": 0.4000510855611454,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0003119",
+                    "name": "Abnormal circulating lipid concentration",
+                    "score": 0.39729834378605444,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022265",
+                    "name": "free cholesterol in large VLDL measurement ",
+                    "score": 0.395162002057686,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022247",
+                    "name": "cholesteryl esters to total lipids in IDL percentage ",
+                    "score": 0.38872423264767736,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0920029",
+                    "name": "cholesteryl esters in IDL measurement",
+                    "score": 0.38638132409337567,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004458",
+                    "name": "C-reactive protein measurement",
+                    "score": 0.3858412433735502,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004982",
+                    "name": "pancreatitis",
+                    "score": 0.37911148429393415,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050113",
+                    "name": "LDL particle size",
+                    "score": 0.37727356251276817,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0920028",
+                    "name": "cholesteryl esters in small LDL measurement",
+                    "score": 0.37697424237106575,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022185",
+                    "name": "total cholesterol in medium LDL",
+                    "score": 0.37697424237106575,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022179",
+                    "name": "total cholesterol in small LDL",
+                    "score": 0.37697424237106575,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009541",
+                    "name": "disease of peritoneum",
+                    "score": 0.37545790947606733,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0920025",
+                    "name": "cholesteryl esters in small VLDL measurement",
+                    "score": 0.37476548210478566,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022278",
+                    "name": "free cholesterol to total lipids in IDL percentage ",
+                    "score": 0.37401076314507337,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0920024",
+                    "name": "cholesteryl esters in very large VLDL measurement",
+                    "score": 0.3732134737690787,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021447",
+                    "name": "cholesteryl ester 24:4 measurement",
+                    "score": 0.373149572863488,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022249",
+                    "name": "cholesteryl esters to total lipids in large LDL percentage ",
+                    "score": 0.3731466877188456,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005311",
+                    "name": "atherosclerosis",
+                    "score": 0.3729596663667605,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021440",
+                    "name": "cholesteryl ester 20:2 measurement",
+                    "score": 0.37259556818473627,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021448",
+                    "name": "cholesteryl ester 24:5 measurement",
+                    "score": 0.37259556818473627,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005154",
+                    "name": "liver disorder",
+                    "score": 0.3706355675836587,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0002245",
+                    "name": "blood platelet disease",
+                    "score": 0.3695798546847018,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022291",
+                    "name": "phosphoglycerides measurement ",
+                    "score": 0.36712220342314844,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022149",
+                    "name": "triglycerides in IDL measurement",
+                    "score": 0.3631963794594024,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020044",
+                    "name": "eicosanoids measurement",
+                    "score": 0.34812516892509127,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009925",
+                    "name": "Antithrombotic agent use measurement",
+                    "score": 0.34812516892509127,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021283",
+                    "name": "X-12063 measurement",
+                    "score": 0.34774298241161655,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0008111",
+                    "name": "diet measurement",
+                    "score": 0.34774298241161655,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009932",
+                    "name": "HMG CoA reductase inhibitor use measurement",
+                    "score": 0.34637755390170694,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2045200",
+                    "name": "level of Sterol ester (27:1/20:2) in blood serum",
+                    "score": 0.3462142363577177,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_1000840",
+                    "name": "alcohol consumption quality",
+                    "score": 0.3457086562158831,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0024644",
+                    "name": "myocardial ischemia",
+                    "score": 0.34184514036207475,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2040171",
+                    "name": "sleep duration trait",
+                    "score": 0.3407861337942323,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_0003460",
+                    "name": "erythrocyte volume",
+                    "score": 0.33950869638279274,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0002571",
+                    "name": "medical procedure",
+                    "score": 0.33477135251838536,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010934",
+                    "name": "aspartate aminotransferase to alanine aminotransferase ratio",
+                    "score": 0.33084681172501373,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009749",
+                    "name": "age at first sexual intercourse measurement",
+                    "score": 0.31582879463001023,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010282",
+                    "name": "gastrointestinal disease",
+                    "score": 0.30782556768922825,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022162",
+                    "name": "total cholesterol in medium VLDL",
+                    "score": 0.30240219578390404,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005252",
+                    "name": "heart failure",
+                    "score": 0.30225681128079757,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022171",
+                    "name": "total cholesterol in small VLDL",
+                    "score": 0.30188723142611285,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0002356",
+                    "name": "pancreas disorder",
+                    "score": 0.3008402745440175,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0021416",
+                    "name": "polyp of gallbladder",
+                    "score": 0.2992086105160587,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022177",
+                    "name": "total cholesterol in large VLDL",
+                    "score": 0.2991356074839451,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005490",
+                    "name": "large artery stroke",
+                    "score": 0.2991356074839451,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022274",
+                    "name": "free cholesterol in very large VLDL measurement ",
+                    "score": 0.2991356074839451,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022243",
+                    "name": "cholesterol to total lipids in very large HDL percentage ",
+                    "score": 0.29671342239067866,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009767",
+                    "name": "glycine measurement",
+                    "score": 0.2963744891824408,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004627",
+                    "name": "duodenitis",
+                    "score": 0.2806365910357261,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004966",
+                    "name": "gastritis",
+                    "score": 0.2806365910357261,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_0000061",
+                    "name": "circulating fibrinogen levels",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004619",
+                    "name": "factor VII measurement",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021443",
+                    "name": "cholesteryl ester 22:4 measurement",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022312",
+                    "name": "total lipids in very large HDL measurement ",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022244",
+                    "name": "cholesterol to total lipids in very large VLDL percentage ",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050207",
+                    "name": "tissue plasminogen activator amount",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022319",
+                    "name": "triglycerides in large LDL measurement ",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004694",
+                    "name": "factor XI measurement",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022255",
+                    "name": "cholesteryl esters to total lipids in small LDL percentage ",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004792",
+                    "name": "plasminogen activator inhibitor 1 measurement",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004630",
+                    "name": "factor VIII measurement",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022322",
+                    "name": "triglycerides in medium LDL measurement ",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_1000199",
+                    "name": "von Willebrand factor quality",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020875",
+                    "name": "fatty acid change measurement",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022296",
+                    "name": "phospholipids in small HDL measurement ",
+                    "score": 0.278500135140073,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004329",
+                    "name": "alcohol drinking",
+                    "score": 0.27697138908617414,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0800659",
+                    "name": "metabolonic lactone sulfate measurement",
+                    "score": 0.27697138908617414,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022167",
+                    "name": "total cholesterol in large LDL",
+                    "score": 0.27697138908617414,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022189",
+                    "name": "total lipids in large HDL",
+                    "score": 0.27697138908617414,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022324",
+                    "name": "triglycerides in very large HDL measurement ",
+                    "score": 0.27697138908617414,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0021446",
+                    "name": "cholesteryl ester 24:1 measurement",
+                    "score": 0.27697138908617414,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0003940",
+                    "name": "physical activity",
+                    "score": 0.27484330884557784,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004862",
+                    "name": "phytosterol measurement",
+                    "score": 0.27484330884557784,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022184",
+                    "name": "total cholesterol in IDL",
+                    "score": 0.27484330884557784,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020965",
+                    "name": "total sitosterol measurement",
+                    "score": 0.27484330884557784,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022323",
+                    "name": "triglycerides in small LDL measurement ",
+                    "score": 0.27401694712449215,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022282",
+                    "name": "free cholesterol to total lipids in medium HDL percentage ",
+                    "score": 0.27194638375681335,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2040179",
+                    "name": "level of phosphatidylcholine",
+                    "score": 0.27194638375681335,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2042538",
+                    "name": "level of protein NDRG4 in blood serum",
+                    "score": 0.2664734473305913,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0803367",
+                    "name": "antihyperlipidemic drug use measurement",
+                    "score": 0.2596800680102973,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009188",
+                    "name": "Red cell distribution width",
+                    "score": 0.25833180289849467,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022929",
+                    "name": "cholecystectomy",
+                    "score": 0.2571758376808966,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2041159",
+                    "name": "level of gamma-crystallin C in blood serum",
+                    "score": 0.25595107577337484,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0001369",
+                    "name": "chronic laryngitis",
+                    "score": 0.25595107577337484,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010119",
+                    "name": "omega-3 polyunsaturated fatty acid measurement",
+                    "score": 0.22256029513414602,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001873",
+                    "name": "Thrombocytopenia",
+                    "score": 0.14653841238248427,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014891",
+                    "name": "hyperuricemic nephropathy, familial juvenile type 4",
+                    "score": 0.12678621704886037,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0022144",
+                    "name": "triglycerides in very small VLDL measurement",
+                    "score": 0.1263806947905867,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0004804",
+                    "name": "Congenital hemolytic anemia",
+                    "score": 0.11826555349910459,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0005181",
+                    "name": "Premature coronary artery atherosclerosis",
+                    "score": 0.11826555349910459,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003689",
+                    "name": "familial hemolytic anemia",
+                    "score": 0.11826555349910459,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0001892",
+                    "name": "Abnormal bleeding",
+                    "score": 0.11087395640541053,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_0003747",
+                    "name": "glomerular filtration rate",
+                    "score": 0.09633547741005896,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004309",
+                    "name": "platelet count",
+                    "score": 0.09633547741005896,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007863",
+                    "name": "illness severity status",
+                    "score": 0.09552419216221941,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004587",
+                    "name": "lymphocyte count",
+                    "score": 0.0945411865288882,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050096",
+                    "name": "serum creatinine amount",
+                    "score": 0.09195740766000227,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004833",
+                    "name": "neutrophil count",
+                    "score": 0.08792025317736803,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004842",
+                    "name": "eosinophil count",
+                    "score": 0.08792025317736803,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2041130",
+                    "name": "level of DNA-directed RNA polymerase III subunit RPC9 in blood serum",
+                    "score": 0.08513574944763803,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010817",
+                    "name": "self-injurious ideation",
+                    "score": 0.07946220337666622,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0001253",
+                    "name": "body height",
+                    "score": 0.07092250490044628,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004532",
+                    "name": "serum gamma-glutamyl transferase measurement",
+                    "score": 0.07018916064037119,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_411",
+                    "name": "Hyperlipoproteinemia type 1",
+                    "score": 0.06584060003295913,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011601",
+                    "name": "neonatal intrahepatic cholestasis due to citrin deficiency",
+                    "score": 0.06464465169111305,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004541",
+                    "name": "HbA1c measurement",
+                    "score": 0.06459447172214794,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004527",
+                    "name": "mean corpuscular hemoglobin",
+                    "score": 0.06459447172214794,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007990",
+                    "name": "neutrophil percentage of leukocytes",
+                    "score": 0.06459447172214794,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0007993",
+                    "name": "lymphocyte percentage of leukocytes",
+                    "score": 0.06459447172214794,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010701",
+                    "name": "mean reticulocyte volume",
+                    "score": 0.06459447172214794,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018883",
+                    "name": "Berardinelli-Seip congenital lipodystrophy",
+                    "score": 0.06435416192533087,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_540",
+                    "name": "Familial hemophagocytic lymphohistiocytosis",
+                    "score": 0.06223380125961255,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011448",
+                    "name": "PPARG-related familial partial lipodystrophy",
+                    "score": 0.06209762847268956,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013478",
+                    "name": "PLIN1-related familial partial lipodystrophy",
+                    "score": 0.05984278071482991,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007762",
+                    "name": "hyperlipoproteinemia type V",
+                    "score": 0.05917343053356761,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_70470",
+                    "name": "Hyperlipoproteinemia type 5",
+                    "score": 0.05917343053356761,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_228429",
+                    "name": "Generalized congenital lipodystrophy with myopathy",
+                    "score": 0.05902046553815643,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018150",
+                    "name": "Gaucher disease",
+                    "score": 0.05797080742031652,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011871",
+                    "name": "Niemann-Pick disease type B",
+                    "score": 0.057828159862515285,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015762",
+                    "name": "progressive familial intrahepatic cholestasis",
+                    "score": 0.05763648137732589,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0957260",
+                    "name": "combined low LDL and fibrinogen",
+                    "score": 0.056867252240335064,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014098",
+                    "name": "CIDEC-related familial partial lipodystrophy",
+                    "score": 0.05684630938190294,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0020693",
+                    "name": "glycogen storage disease due to liver phosphorylase kinase deficiency",
+                    "score": 0.05614351838345592,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79301",
+                    "name": "Congenital bile acid synthesis defect type 1",
+                    "score": 0.05586244469108254,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004340",
+                    "name": "body mass index",
+                    "score": 0.055690431116864454,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0012923",
+                    "name": "congenital generalized lipodystrophy type 3",
+                    "score": 0.055165337009512004,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018999",
+                    "name": "LCAT deficiency",
+                    "score": 0.05500552246746069,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009294",
+                    "name": "glycogen storage disease VI",
+                    "score": 0.053914309201404303,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79259",
+                    "name": "Glycogen storage disease due to glucose-6-phosphatase deficiency type b",
+                    "score": 0.053815343929205395,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011382",
+                    "name": "sickle cell disease",
+                    "score": 0.053779412554444385,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013534",
+                    "name": "apolipoprotein c-III deficiency",
+                    "score": 0.05347635707360292,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_77259",
+                    "name": "Gaucher disease type 1",
+                    "score": 0.053395049505572285,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0859149",
+                    "name": "hypertriglyceridemia 2",
+                    "score": 0.053335916728822735,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030839",
+                    "name": "thyroid hormone metabolism, abnormal, 2",
+                    "score": 0.05305503603926237,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_364",
+                    "name": "Glycogen storage disease due to glucose-6-phosphatase deficiency",
+                    "score": 0.05303399051975949,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0030505",
+                    "name": "cholestasis, progressive familial intrahepatic, 8",
+                    "score": 0.05195368807230195,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0017214",
+                    "name": "vitamin B12-responsive methylmalonic acidemia",
+                    "score": 0.05187073792713939,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011906",
+                    "name": "congenital bile acid synthesis defect 1",
+                    "score": 0.05176355976928083,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019149",
+                    "name": "cholesteryl ester storage disease",
+                    "score": 0.05174117965585824,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_667",
+                    "name": "Autosomal recessive malignant osteopetrosis",
+                    "score": 0.05146748524125008,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011156",
+                    "name": "progressive familial intrahepatic cholestasis type 2",
+                    "score": 0.05091886447918479,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_26",
+                    "name": "Methylmalonic acidemia with homocystinuria",
+                    "score": 0.050792796684309006,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007620",
+                    "name": "fish eye disease",
+                    "score": 0.050467361090044974,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_79292",
+                    "name": "Fish-eye disease",
+                    "score": 0.050467361090044974,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004980",
+                    "name": "appendicular lean mass",
+                    "score": 0.050457579942607154,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0011505",
+                    "name": "familial hypobetalipoproteinemia 2",
+                    "score": 0.05043101907100098,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_1369",
+                    "name": "Congenital cataract - hypertrophic cardiomyopathy - mitochondrial myopathy",
+                    "score": 0.050412540078266746,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019338",
+                    "name": "sarcoidosis",
+                    "score": 0.05039734623979638,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014252",
+                    "name": "familial hypobetalipoproteinemia 1",
+                    "score": 0.050191613454021886,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009612",
+                    "name": "methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency",
+                    "score": 0.050107636698151874,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_255132",
+                    "name": "Adult-onset autosomal recessive sideroblastic anemia",
+                    "score": 0.05006513501486314,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0014804",
+                    "name": "sideroblastic anemia 3",
+                    "score": 0.05006513501486314,
+                    "matched": false
+                }
+            ],
+            "articles": [],
+            "ot_synonym_selection_usage": {
+                "text": "VERDICT: NEW\nBASIS: NONE\nREASON: The list contains only kidney-related measurements (glomerular filtration rate, serum creatinine) at very low confidence and one unrelated familial nephropathy, none representing chronic renal failure itself or a trait strongly tied to it.",
+                "input_tokens": 6719,
+                "output_tokens": 100,
+                "flex": false
+            },
+            "match": {
+                "method": "broad_opus",
+                "matched_id": null,
+                "basis": "NONE",
+                "reason": "The list contains only kidney-related measurements (glomerular filtration rate, serum creatinine) at very low confidence and one unrelated familial nephropathy, none representing chronic renal failure itself or a trait strongly tied to it.",
+                "verdict_text": "NEW",
+                "unresolved_basis": false
+            }
+        },
+        "synonyms": [
+            "Chronic kidney disease",
+            "CKD",
+            "CRF",
+            "Chronic renal insufficiency",
+            "End-stage renal disease",
+            "ESRD",
+            "Chronic kidney failure",
+            "Progressive renal failure"
+        ],
+        "pubmed_pmids": [
+            "39877840",
+            "25804128",
+            "38172964",
+            "17855625",
+            "27121416",
+            "36210074",
+            "34969652",
+            "19158321",
+            "36897412",
+            "33141631",
+            "17483372"
+        ]
+    }
+}

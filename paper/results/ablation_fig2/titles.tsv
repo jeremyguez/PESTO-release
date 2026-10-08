@@ -1,0 +1,504 @@
+gene	phenotype	set	verdict	lit_score	found	read	cached	error
+KCNT1	malignant migrating partial seizures of infancy	gencc_definitive	Established	3.95	93	20	False	
+HAND1	congenital heart disease	gencc_moderate	Established	3.43	67	20	False	
+ATG5	spinocerebellar ataxia, autosomal recessive 25	gencc_limited	Hypothesized	2.48	78	20	False	
+PHKG2	primary ciliary dyskinesia 33	gencc_absent	Novel	1.14	47	5	False	
+SHANK3	Autism Spectrum Disorder	asd_known	Established	3.9	90	20	False	
+SCN2A	Autism Spectrum Disorder	asd_known	Established	3.86	88	20	False	
+TM9SF4	Autism Spectrum Disorder	asd_novel_candidate	Existing	2.59	10	9	False	
+C6ORF58	Autism Spectrum Disorder	not_in_asc	Novel	1.09	12	0	False	
+AOC3	Autism Spectrum Disorder	not_in_asc	Novel	1.17	47	19	False	
+AMY2B	Autism Spectrum Disorder	not_in_asc	Novel	1.05	51	8	False	
+SEPHS1	neurodevelopmental disorder	gencc_moderate	Existing	3.16	60	10	False	
+RBBP5	neurodevelopmental disorder	gencc_moderate	Existing	3.06	37	20	False	
+ETS1	congenital heart disease	gencc_moderate	Existing	2.72	71	20	False	
+TUBA4A	amyotrophic lateral sclerosis type 22	gencc_moderate	Existing	3.34	58	20	False	
+BLVRA	hyperbiliverdinemia	gencc_moderate	Established	3.54	32	20	False	
+UBR5	neurodevelopmental disorder	gencc_moderate	Established	3.71	57	20	False	
+CDH11	Teebi hypertelorism syndrome 2	gencc_moderate	Established	3.83	68	20	False	
+TMEM63C	spastic paraplegia 87, autosomal recessive	gencc_moderate	Existing	3.04	24	5	False	
+ATP5MK	mitochondrial disease	gencc_moderate	Established	3.78	54	9	False	
+ASPRV1	ichthyosis, lamellar, autosomal dominant	gencc_moderate	Existing	3.11	53	9	False	
+PRDX3	spinocerebellar ataxia, autosomal recessive 32	gencc_moderate	Established	3.92	50	20	False	
+REL	immunodeficiency 92	gencc_moderate	Established	3.52	92	20	False	
+SLC31A1	neurodegeneration and seizures due to copper transport defect	gencc_moderate	Established	3.9	60	20	False	
+INTS11	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	gencc_moderate	Established	3.92	24	20	False	
+FXYD2	renal hypomagnesemia 2	gencc_moderate	Established	2.97	61	20	False	
+THUMPD1	neurodevelopmental disorder with speech delay and variable ocular anomalies	gencc_moderate	Established	3.86	36	6	False	
+CPSF3	neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures	gencc_moderate	Existing	2.92	46	20	False	
+TRAC	TCR-alpha-beta-positive T-cell deficiency	gencc_moderate	Established	3.86	74	13	False	
+CHKA	neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures	gencc_moderate	Existing	3.28	62	11	False	
+CAMSAP1	cortical dysplasia, complex, with other brain malformations 12	gencc_moderate	Established	3.45	23	14	False	
+JPH1	congenital myopathy 25	gencc_moderate	Existing	3.33	25	13	False	
+FLI1	bleeding disorder, platelet-type, 21	gencc_moderate	Established	3.77	82	20	False	
+UNG	hyper-IgM syndrome type 5	gencc_moderate	Existing	3.21	84	20	False	
+GABRD	complex neurodevelopmental disorder	gencc_moderate	Existing	3.16	50	20	False	
+PRKG2	acromesomelic dysplasia 4	gencc_strong	Established	3.92	52	20	False	
+SAMD11	retinitis pigmentosa	gencc_strong	Existing	3.0	9	3	False	
+ALDH1A2	diaphragmatic hernia 4, with cardiovascular defects	gencc_strong	Established	3.54	76	20	False	
+SELENOI	spastic paraplegia 81, autosomal recessive	gencc_strong	Established	3.83	28	15	False	
+ALPK1	retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome	gencc_strong	Established	3.95	54	20	False	
+GDF11	vertebral hypersegmentation and orofacial anomalies	gencc_strong	Established	2.65	71	20	False	
+TMX2	neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity	gencc_strong	Established	3.9	19	9	False	
+PYCR2	hypomyelinating leukodystrophy 10	gencc_strong	Established	3.94	26	18	False	
+TMEM106B	leukodystrophy, hypomyelinating, 16	gencc_strong	Established	3.9	68	20	False	
+ATG7	spinocerebellar ataxia, autosomal recessive 31	gencc_strong	Established	3.65	86	20	False	
+GDAP2	spinocerebellar ataxia, autosomal recessive 27	gencc_strong	Established	3.62	10	8	False	
+USP44	congenital heart disease	gencc_limited	Novel	1.29	15	3	False	
+SACS	Charlevoix-Saguenay spastic ataxia	gencc_strong	Established	3.97	110	20	False	
+THAP1	torsion dystonia 6	gencc_strong	Established	3.94	106	20	False	
+NRXN1	Pitt-Hopkins-like syndrome 2	gencc_strong	Established	3.39	58	20	False	
+UNC45A	osteootohepatoenteric syndrome	gencc_strong	Established	3.94	35	20	False	
+RAC3	neurodevelopmental disorder with structural brain anomalies and dysmorphic facies	gencc_strong	Established	3.92	75	20	False	
+SLC6A17	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	gencc_strong	Established	3.86	15	9	False	
+GEMIN4	neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities	gencc_strong	Established	3.68	64	20	False	
+SMPD4	neurodevelopmental disorder with microcephaly, arthrogryposis, and structural brain anomalies	gencc_strong	Established	3.92	22	15	False	
+COX16	mitochondrial complex IV deficiency, nuclear type 22	gencc_strong	Existing	2.93	16	8	False	
+EPHB2	bleeding disorder, platelet-type, 22	gencc_limited	Existing	2.9	74	20	False	
+LIPT2	encephalopathy, neonatal severe, with lactic acidosis and brain abnormalities	gencc_strong	Established	3.45	20	10	False	
+TMEM135	neurodevelopmental disorder	gencc_limited	Novel	1.49	24	13	False	
+TRNT1	retinitis pigmentosa and erythrocytic microcytosis	gencc_strong	Established	3.59	54	20	False	
+SLC35B2	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	gencc_limited	Existing	3.01	16	7	False	
+DHPS	neurodevelopmental disorder with seizures and speech and walking impairment	gencc_strong	Established	3.5	82	13	False	
+BCAS3	Hengel-Maroofian-Schols syndrome	gencc_strong	Existing	3.11	35	7	False	
+SUMO1	orofacial cleft 10	gencc_limited	Existing	2.82	62	20	False	
+ASCL1	neurodevelopmental disorder	gencc_limited	Hypothesized	2.2	70	20	False	
+PITX1	clubfoot	gencc_strong	Existing	3.16	71	20	False	
+DHX34	intellectual disability	gencc_limited	Hypothesized	1.92	12	6	False	
+SCLT1	retinitis pigmentosa	gencc_limited	Established	3.42	19	12	False	
+CRIPTO	congenital heart disease	gencc_limited	Existing	2.88	84	20	False	
+ASB10	glaucoma 1, open angle, F	gencc_limited	Existing	3.14	21	11	False	
+DCC	gaze palsy, familial horizontal, with progressive scoliosis, 2	gencc_strong	Established	3.5	70	20	False	
+TMOD1	dilated cardiomyopathy	gencc_limited	Existing	2.81	48	20	False	
+POLD3	immunodeficiency 122	gencc_limited	Established	3.65	84	17	False	
+VANGL1	neural tube defects, susceptibility to	gencc_limited	Established	3.55	69	20	False	
+ABCC9	hypertrichotic osteochondrodysplasia Cantu type	gencc_definitive	Established	3.97	98	20	False	
+ELP2	intellectual disability, autosomal recessive 58	gencc_limited	Established	3.79	42	14	False	
+TRAPPC2L	encephalopathy, progressive, early-onset, with episodic rhabdomyolysis	gencc_limited	Established	3.66	12	8	False	
+SS18L1	amyotrophic lateral sclerosis	gencc_limited	Existing	2.95	66	19	False	
+PITX2	ring dermoid of cornea	gencc_strong	Existing	3.0	83	20	False	
+HEY2	congenital heart disease	gencc_limited	Existing	3.29	63	20	False	
+TDO2	familial hypertryptophanemia	gencc_limited	Existing	2.93	58	20	False	
+MT-TA	mitochondrial disease	gencc_definitive	Existing	3.16	98	20	False	
+CCT7	complex neurodevelopmental disorder	gencc_limited	Novel	1.47	22	8	False	
+AICDA	hyper-IgM syndrome type 2	gencc_definitive	Established	3.95	103	20	False	
+TAFAZZIN	Barth syndrome	gencc_definitive	Established	3.95	84	20	False	
+IGSF1	X-linked central congenital hypothyroidism with late-onset testicular enlargement	gencc_definitive	Established	3.95	62	20	False	
+ERCC6L2	pancytopenia-developmental delay syndrome	gencc_definitive	Established	3.89	38	20	False	
+AP3B1	Hermansky-Pudlak syndrome 2	gencc_definitive	Established	3.95	87	20	False	
+SDHB	Carney-Stratakis syndrome	gencc_definitive	Established	3.82	101	20	False	
+IL11RA	craniosynostosis and dental anomalies	gencc_definitive	Established	3.93	45	20	False	
+SLC24A5	oculocutaneous albinism type 6	gencc_definitive	Established	3.95	74	20	False	
+KIT	piebaldism	gencc_definitive	Established	3.97	115	20	False	
+PPP1R13L	dilated cardiomyopathy	gencc_definitive	Established	3.9	62	20	False	
+AKT1	Proteus syndrome	gencc_definitive	Established	3.95	114	20	False	
+LRPAP1	myopia 23, autosomal recessive	gencc_definitive	Established	3.9	58	14	False	
+CHD2	developmental and epileptic encephalopathy 94	gencc_definitive	Established	3.95	66	20	False	
+DCLRE1C	Omenn syndrome	gencc_definitive	Established	3.6	83	20	False	
+FBXO11	intellectual developmental disorder with dysmorphic facies and behavioral abnormalities	gencc_definitive	Established	3.95	61	20	False	
+SAMD9	MIRAGE syndrome	gencc_definitive	Established	3.95	92	20	False	
+ASNS	congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome	gencc_definitive	Established	3.97	88	20	False	
+CRB2	ventriculomegaly-cystic kidney disease	gencc_definitive	Established	3.86	51	20	False	
+SRCAP	Floating-Harbor syndrome	gencc_definitive	Established	3.95	92	20	False	
+CCDC88A	PEHO-like syndrome	gencc_moderate	Established	3.92	52	9	False	
+EBP	MEND syndrome	gencc_definitive	Established	3.73	64	20	False	
+CFAP43	normal pressure hydrocephalus	gencc_limited	Existing	3.0	35	13	False	
+ZFTRAF1	neurodevelopmental disorder	gencc_limited	Existing	3.06	16	1	False	
+PIK3R1	SHORT syndrome	gencc_definitive	Established	3.97	99	20	False	
+SLC38A3	developmental and epileptic encephalopathy 102	gencc_strong	Established	3.73	66	14	False	
+ATP2B1	intellectual developmental disorder, autosomal dominant 66	gencc_moderate	Established	3.52	56	20	False	
+RBM28	ANE syndrome	gencc_limited	Established	3.82	11	9	False	
+KLHL24	epidermolysis bullosa simplex 6, generalized, with scarring and hair loss	gencc_moderate	Established	3.97	54	20	False	
+ATP1A1	Charcot-Marie-tooth disease, axonal, type 2DD	gencc_moderate	Established	3.86	63	20	False	
+TBX15	pelviscapular dysplasia	gencc_definitive	Established	3.92	40	15	False	
+KRT71	hypotrichosis 13	gencc_limited	Established	3.77	37	20	False	
+JMJD1C	neurodevelopmental disorder	gencc_limited	Existing	3.29	54	13	False	
+AR	Kennedy disease	gencc_definitive	Established	3.94	133	20	False	
+APC	complement component 2 deficiency	gencc_absent	Novel	1.1	58	0	False	
+ASAH1	Farber lipogranulomatosis	gencc_definitive	Established	3.95	95	20	False	
+CAMTA1	cerebellar dysfunction with variable cognitive and behavioral abnormalities	gencc_definitive	Established	3.92	73	20	False	
+CALM2	catecholaminergic polymorphic ventricular tachycardia	gencc_moderate	Established	3.49	57	20	False	
+SYCP2L	Weiss-Kruszka syndrome	gencc_absent	Novel	1.12	10	5	False	
+ATP11C	arterial tortuosity syndrome	gencc_absent	Novel	1.06	41	20	False	
+PSMB1	glycogen storage disease III	gencc_absent	Novel	1.05	48	6	False	
+SCN9A	hypogonadotropic hypogonadism	gencc_absent	Novel	1.12	66	20	False	
+CDH15	familial hypobetalipoproteinemia 1	gencc_absent	Novel	1.14	58	8	False	
+FKBP6	Charcot-Marie-Tooth disease type 2E	gencc_absent	Novel	1.05	58	16	False	
+KIF4A	complex neurodevelopmental disorder with or without congenital anomalies	gencc_limited	Established	3.64	51	20	False	
+MT-CO3	gonadal dysgenesis	gencc_absent	Novel	1.57	54	14	False	
+ANO3	arthrogryposis multiplex congenita 2, neurogenic type	gencc_absent	Novel	1.14	58	20	False	
+CACNA1F	Malan overgrowth syndrome	gencc_absent	Novel	1.06	59	20	False	
+RBFOX3	arthrogryposis, distal, with impaired proprioception and touch	gencc_absent	Novel	1.59	75	12	False	
+SELENBP1	neurodevelopmental disorder with spastic quadriplegia, optic atrophy, seizures, and structural brain anomalies	gencc_absent	Hypothesized	1.74	75	20	False	
+NFATC2	spondylometaphyseal dysplasia, 'corner fracture' type	gencc_absent	Hypothesized	1.88	77	20	False	
+KCNE2	epidermolysis bullosa simplex 4, localized or generalized intermediate, autosomal recessive	gencc_absent	Novel	1.04	67	20	False	
+RPL3L	autosomal recessive mendelian susceptibility to mycobacterial diseases due to complete RORgamma receptor deficiency	gencc_absent	Novel	1.02	28	12	False	
+KCND3	46,XY sex reversal 3	gencc_absent	Novel	1.02	61	20	False	
+KCNQ4	X-linked spondyloepimetaphyseal dysplasia	gencc_absent	Novel	1.05	65	20	False	
+GET4	deafness-lymphedema-leukemia syndrome	gencc_absent	Existing	2.45	34	11	False	
+AMIGO2	autosomal recessive nonsyndromic hearing loss 59	gencc_absent	Novel	1.42	40	5	False	
+NBEAL2	arrhythmogenic cardiomyopathy with wooly hair and keratoderma	gencc_absent	Novel	1.11	53	20	False	
+TSPEAR	tibial muscular dystrophy	gencc_absent	Novel	1.08	29	10	False	
+CASP2	Hoxha-Aliu syndrome	gencc_absent	Established	3.66	62	20	False	
+TNNT2	atrial septal defect 6	gencc_absent	Novel	1.42	72	20	False	
+TOE1	pontocerebellar hypoplasia type 7	gencc_strong	Established	3.95	47	20	False	
+PLS3	X-linked osteoporosis with fractures	gencc_definitive	Established	3.95	64	20	False	
+STXBP2	autosomal recessive nonsyndromic hearing loss 44	gencc_absent	Existing	2.39	67	20	False	
+PCCA	hypercholanemia, familial, 2	gencc_absent	Novel	1.14	65	15	False	
+MC4R	agammaglobulinemia 2, autosomal recessive	gencc_absent	Novel	1.05	66	20	False	
+ACP5	Spondyloenchondrodysplasia with immune dysregulation	gencc_definitive	Established	3.97	67	20	False	
+PAK1	intellectual developmental disorder with macrocephaly, seizures, and speech delay	gencc_strong	Established	3.86	60	20	False	
+MT-TC	mitochondrial disease	gencc_limited	Existing	3.07	25	6	False	
+CDK9	congenital myopathy 2c, severe infantile, autosomal dominant	gencc_absent	Novel	1.31	68	20	False	
+UQCRH	hereditary spastic paraplegia 45	gencc_absent	Novel	1.44	24	12	False	
+ADNP	Autism Spectrum Disorder	asd_curated	Established	3.92	83	20	False	
+MRTFB	neurodevelopmental disorder	gencc_limited	Existing	3.2	43	18	False	
+CHD8	Autism Spectrum Disorder	asd_curated	Established	3.92	76	20	False	
+TLR5	systemic lupus erythematosus, susceptibility to, 1	gencc_limited	Existing	3.0	86	20	False	
+PHGDH	Joubert syndrome 33	gencc_absent	Novel	1.43	66	20	False	
+TCF20	Autism Spectrum Disorder	asd_curated	Established	3.45	50	20	False	
+EHMT1	Autism Spectrum Disorder	asd_curated	Established	3.4	82	20	False	
+EYA4	dilated cardiomyopathy 1J	gencc_limited	Existing	3.12	66	20	False	
+KDM6B	Autism Spectrum Disorder	asd_curated	Established	3.44	60	20	False	
+DYNC1H1	Autism Spectrum Disorder	asd_curated	Existing	2.99	70	20	False	
+POGZ	Autism Spectrum Disorder	asd_curated	Established	3.91	70	20	False	
+DYRK1A	Autism Spectrum Disorder	asd_curated	Established	3.91	90	20	False	
+ASXL3	Autism Spectrum Disorder	asd_curated	Established	3.52	60	20	False	
+STXBP1	Autism Spectrum Disorder	asd_curated	Existing	3.26	72	20	False	
+SYNGAP1	Autism Spectrum Disorder	asd_curated	Established	3.85	90	20	False	
+DEAF1	Autism Spectrum Disorder	asd_curated	Established	3.44	74	20	False	
+ANKRD11	Autism Spectrum Disorder	asd_curated	Established	3.51	77	20	False	
+KDM5B	Autism Spectrum Disorder	asd_curated	Existing	3.12	65	20	False	
+FOXP1	Autism Spectrum Disorder	asd_curated	Established	3.84	102	20	False	
+PPP2R5D	Autism Spectrum Disorder	asd_curated	Established	3.47	58	20	False	
+KMT2A	Autism Spectrum Disorder	asd_curated	Established	3.43	77	20	False	
+GRIN2B	Autism Spectrum Disorder	asd_curated	Established	3.6	97	20	False	
+NAA15	Autism Spectrum Disorder	asd_curated	Established	3.67	55	20	False	
+PTEN	Autism Spectrum Disorder	asd_curated	Established	3.89	106	20	False	
+ARID1B	Autism Spectrum Disorder	asd_curated	Established	3.71	93	20	False	
+CHD2	Autism Spectrum Disorder	asd_curated	Existing	3.25	85	20	False	
+SATB2	Autism Spectrum Disorder	asd_curated	Established	3.32	78	20	False	
+NRXN1	Autism Spectrum Disorder	asd_curated	Established	3.39	89	20	False	
+TLK2	Autism Spectrum Disorder	asd_curated	Existing	3.21	28	13	False	
+TCF4	Autism Spectrum Disorder	asd_curated	Existing	3.22	92	20	False	
+CTCF	Autism Spectrum Disorder	asd_curated	Existing	3.1	71	20	False	
+CDK13	Autism Spectrum Disorder	asd_curated	Existing	3.15	56	20	False	
+KMT5B	Autism Spectrum Disorder	asd_curated	Established	3.59	46	20	False	
+WAC	Autism Spectrum Disorder	asd_curated	Existing	3.23	59	20	False	
+GIGYF1	Autism Spectrum Disorder	asd_curated	Existing	3.27	26	7	False	
+ASH1L	Autism Spectrum Disorder	asd_curated	Established	3.62	70	20	False	
+AHDC1	Autism Spectrum Disorder	asd_curated	Existing	3.28	54	20	False	
+MEF2C	Autism Spectrum Disorder	asd_curated	Established	3.45	90	20	False	
+EBF3	Autism Spectrum Disorder	asd_curated	Established	3.51	50	20	False	
+SLC6A1	Autism Spectrum Disorder	asd_curated	Established	3.5	79	20	False	
+DLG4	Autism Spectrum Disorder	asd_curated	Established	3.43	108	20	False	
+TBR1	Autism Spectrum Disorder	asd_curated	Established	3.88	70	20	False	
+CUL3	Autism Spectrum Disorder	asd_curated	Established	3.58	80	20	False	
+MARK2	Autism Spectrum Disorder	asd_curated	Established	3.66	56	20	False	
+HNRNPU	Autism Spectrum Disorder	asd_curated	Established	3.4	60	20	False	
+MED13L	Autism Spectrum Disorder	asd_curated	Established	3.33	59	20	False	
+AUTS2	Autism Spectrum Disorder	asd_curated	Established	3.72	95	20	False	
+MYT1L	Autism Spectrum Disorder	asd_curated	Established	3.73	61	20	False	
+BRSK2	Autism Spectrum Disorder	asd_curated	Established	3.73	40	17	False	
+SETD5	Autism Spectrum Disorder	asd_curated	Established	3.51	60	20	False	
+KMT2C	Autism Spectrum Disorder	asd_curated	Established	3.29	72	20	False	
+EP300	Autism Spectrum Disorder	asd_curated	Existing	3.11	73	20	False	
+BCL11A	Autism Spectrum Disorder	asd_curated	Existing	3.27	75	18	False	
+NF1	Autism Spectrum Disorder	asd_curated	Established	3.39	117	20	False	
+CNOT3	Autism Spectrum Disorder	asd_curated	Established	3.67	51	20	False	
+CTNNB1	Autism Spectrum Disorder	asd_curated	Established	3.35	106	20	False	
+ZEB2	Autism Spectrum Disorder	asd_curated	Existing	2.9	64	20	False	
+TRIP12	Autism Spectrum Disorder	asd_curated	Established	3.62	54	20	False	
+TSC2	Autism Spectrum Disorder	asd_curated	Existing	3.35	109	20	False	
+GATAD2B	Autism Spectrum Disorder	asd_curated	Existing	3.26	30	20	False	
+BRAF	Autism Spectrum Disorder	asd_curated	Hypothesized	2.2	69	5	False	
+DNMT3A	Autism Spectrum Disorder	asd_curated	Established	3.52	83	20	False	
+GABRA1	Autism Spectrum Disorder	asd_curated	Existing	2.75	67	20	False	
+NR3C2	Autism Spectrum Disorder	asd_curated	Existing	2.8	118	20	False	
+PPP3CA	Autism Spectrum Disorder	asd_curated	Existing	2.62	57	17	False	
+MBD5	Autism Spectrum Disorder	asd_curated	Established	3.6	70	20	False	
+SRCAP	Autism Spectrum Disorder	asd_curated	Existing	3.11	51	20	False	
+SCN1A	Autism Spectrum Disorder	asd_curated	Existing	3.23	109	20	False	
+DLL1	Autism Spectrum Disorder	asd_curated	Existing	3.0	61	20	False	
+ZNF292	Autism Spectrum Disorder	asd_curated	Established	3.53	33	13	False	
+TBL1XR1	Autism Spectrum Disorder	asd_curated	Established	3.36	67	20	False	
+AP2S1	Autism Spectrum Disorder	asd_curated	Hypothesized	1.71	52	13	False	
+ACTB	Autism Spectrum Disorder	asd_curated	Existing	2.51	65	20	False	
+IRF2BPL	Autism Spectrum Disorder	asd_curated	Existing	2.59	50	20	False	
+TANC2	Autism Spectrum Disorder	asd_curated	Established	3.33	28	17	False	
+RAI1	Autism Spectrum Disorder	asd_curated	Existing	3.06	84	20	False	
+MED13	Autism Spectrum Disorder	asd_curated	Established	3.44	54	20	False	
+KCNQ3	Autism Spectrum Disorder	asd_curated	Established	3.59	67	20	False	
+CLTC	Autism Spectrum Disorder	asd_curated	Existing	2.66	105	20	False	
+TAOK1	Autism Spectrum Disorder	asd_curated	Established	3.32	50	18	False	
+SON	Autism Spectrum Disorder	asd_curated	Existing	3.1	96	14	False	
+CIC	Autism Spectrum Disorder	asd_curated	Established	3.36	63	16	False	
+RORB	Autism Spectrum Disorder	asd_curated	Existing	2.7	61	20	False	
+SHANK2	Autism Spectrum Disorder	asd_curated	Established	3.82	83	20	False	
+SMAD4	Autism Spectrum Disorder	asd_curated	Existing	2.99	69	20	False	
+SMARCA2	Autism Spectrum Disorder	asd_curated	Existing	2.87	75	20	False	
+DNM1	Autism Spectrum Disorder	asd_curated	Existing	2.88	75	20	False	
+SYNCRIP	Autism Spectrum Disorder	asd_curated	Established	3.29	37	20	False	
+SOX5	Autism Spectrum Disorder	asd_curated	Established	3.27	69	20	False	
+PHF21A	Autism Spectrum Disorder	asd_curated	Established	3.29	31	20	False	
+PUF60	Autism Spectrum Disorder	asd_curated	Existing	2.75	60	20	False	
+POU3F3	Autism Spectrum Disorder	asd_curated	Existing	3.19	38	14	False	
+CAMTA1	Autism Spectrum Disorder	asd_curated	Existing	2.62	57	15	False	
+PTPN11	Autism Spectrum Disorder	asd_curated	Existing	2.83	62	20	False	
+CSNK2A1	Autism Spectrum Disorder	asd_curated	Established	3.44	54	20	False	
+RFX3	Autism Spectrum Disorder	asd_curated	Established	3.71	32	16	False	
+WDFY3	Autism Spectrum Disorder	asd_curated	Established	3.38	37	20	False	
+ZBTB20	Autism Spectrum Disorder	asd_curated	Existing	3.08	64	20	False	
+KMT2E	Autism Spectrum Disorder	asd_curated	Established	3.46	48	20	False	
+GRIN1	Autism Spectrum Disorder	asd_curated	Existing	3.05	83	20	False	
+TCF12	Autism Spectrum Disorder	asd_curated	Existing	2.9	61	20	False	
+RFX7	Autism Spectrum Disorder	asd_curated	Established	3.62	13	6	False	
+FOXP2	Autism Spectrum Disorder	asd_curated	Existing	2.67	105	20	False	
+TUBB2A	Autism Spectrum Disorder	asd_curated	Existing	2.19	51	20	False	
+SMARCA4	Autism Spectrum Disorder	asd_curated	Existing	3.08	86	20	False	
+ZMYM2	Autism Spectrum Disorder	asd_curated	Existing	2.49	83	11	False	
+SIN3A	Autism Spectrum Disorder	asd_curated	Existing	3.27	63	20	False	
+SPEN	Autism Spectrum Disorder	asd_curated	Established	3.38	84	19	False	
+KCNQ2	Autism Spectrum Disorder	asd_curated	Established	3.3	81	20	False	
+SETD1A	Autism Spectrum Disorder	asd_curated	Existing	2.99	60	20	False	
+QRICH1	Autism Spectrum Disorder	asd_curated	Existing	3.17	21	11	False	
+SPTBN1	Autism Spectrum Disorder	asd_curated	Established	3.7	54	19	False	
+KCNB1	Autism Spectrum Disorder	asd_curated	Existing	3.2	67	20	False	
+ANK2	Autism Spectrum Disorder	asd_curated	Established	3.44	69	20	False	
+NSD1	Autism Spectrum Disorder	asd_curated	Existing	3.32	61	20	False	
+SETD1B	Autism Spectrum Disorder	asd_curated	Established	3.71	56	20	False	
+PRR12	Autism Spectrum Disorder	asd_curated	Existing	3.13	15	7	False	
+WDR26	Autism Spectrum Disorder	asd_curated	Existing	2.97	27	18	False	
+GRIA2	Autism Spectrum Disorder	asd_curated	Established	3.4	91	20	False	
+PACS1	Autism Spectrum Disorder	asd_curated	Established	3.42	55	20	False	
+NR2F1	Autism Spectrum Disorder	asd_curated	Established	3.3	71	20	False	
+GRIN2A	Autism Spectrum Disorder	asd_curated	Existing	3.21	94	20	False	
+VEZF1	Autism Spectrum Disorder	asd_curated	Novel	1.4	52	10	False	
+ZNF865	Autism Spectrum Disorder	asd_curated	Existing	2.53	3	2	False	
+CSNK1E	Autism Spectrum Disorder	asd_curated	Hypothesized	2.01	62	20	False	
+ATAT1	Autism Spectrum Disorder	asd_curated	Novel	1.6	33	20	False	
+YWHAG	Autism Spectrum Disorder	asd_curated	Existing	2.82	53	20	False	
+TCF7L2	Autism Spectrum Disorder	asd_curated	Established	3.26	100	20	False	
+TRIO	Autism Spectrum Disorder	asd_curated	Existing	3.16	111	20	False	
+FBXW11	Autism Spectrum Disorder	asd_curated	Existing	2.88	72	9	False	
+SKI	Autism Spectrum Disorder	asd_curated	Hypothesized	2.07	81	10	False	
+CREBBP	Autism Spectrum Disorder	asd_curated	Existing	3.12	88	20	False	
+EEF1A2	Autism Spectrum Disorder	asd_curated	Established	3.29	64	20	False	
+NSD2	Autism Spectrum Disorder	asd_curated	Existing	3.25	56	20	False	
+MSL2	Autism Spectrum Disorder	asd_curated	Existing	3.15	43	20	False	
+NBEA	Autism Spectrum Disorder	asd_curated	Existing	2.92	67	20	False	
+PTPRS	Autism Spectrum Disorder	asd_curated	Hypothesized	2.0	46	20	False	
+ARF3	Autism Spectrum Disorder	asd_curated	Existing	2.62	63	13	False	
+FOXG1	Autism Spectrum Disorder	asd_curated	Existing	2.98	82	20	False	
+ZMYND8	Autism Spectrum Disorder	asd_curated	Existing	2.89	25	11	False	
+BRD4	Autism Spectrum Disorder	asd_curated	Hypothesized	2.0	88	20	False	
+TNRC6B	Autism Spectrum Disorder	asd_curated	Established	3.58	33	8	False	
+KCNMA1	Autism Spectrum Disorder	asd_curated	Existing	2.9	66	20	False	
+HIVEP2	Autism Spectrum Disorder	asd_curated	Existing	3.04	40	17	False	
+ZBTB34	Autism Spectrum Disorder	asd_curated	Novel	1.14	4	2	False	
+PBX1	Autism Spectrum Disorder	asd_curated	Hypothesized	2.19	57	13	False	
+GABRB3	Autism Spectrum Disorder	asd_curated	Existing	3.04	105	20	False	
+YLPM1	Autism Spectrum Disorder	asd_curated	Novel	1.78	58	1	False	
+CNOT1	Autism Spectrum Disorder	asd_curated	Established	3.36	52	20	False	
+KCND3	Autism Spectrum Disorder	asd_curated	Existing	2.39	53	20	False	
+PPP2CA	Autism Spectrum Disorder	asd_curated	Existing	3.15	55	20	False	
+SOX11	Autism Spectrum Disorder	asd_curated	Existing	3.07	62	20	False	
+USP7	Autism Spectrum Disorder	asd_curated	Established	3.52	65	20	False	
+SETBP1	Autism Spectrum Disorder	asd_curated	Existing	3.18	62	20	False	
+H1-4	Autism Spectrum Disorder	asd_curated	Existing	3.0	52	20	False	
+TUBB3	Autism Spectrum Disorder	asd_curated	Hypothesized	2.04	76	20	False	
+EMC7	Autism Spectrum Disorder	asd_curated	Novel	1.13	3	0	False	
+ZNF536	Autism Spectrum Disorder	asd_curated	Existing	2.58	19	6	False	
+REV3L	Autism Spectrum Disorder	asd_curated	Existing	2.48	70	20	False	
+SCAF1	Autism Spectrum Disorder	asd_curated	Existing	2.74	59	19	False	
+PPP2R1A	Autism Spectrum Disorder	asd_curated	Existing	3.03	53	19	False	
+EP400	Autism Spectrum Disorder	asd_curated	Existing	2.64	74	20	False	
+FBXO11	Autism Spectrum Disorder	asd_curated	Established	3.35	54	20	False	
+LMTK3	Autism Spectrum Disorder	asd_curated	Hypothesized	1.98	20	3	False	
+KCNA2	Autism Spectrum Disorder	asd_curated	Existing	2.44	58	20	False	
+DHDDS	Autism Spectrum Disorder	asd_curated	Existing	2.6	112	20	False	
+XPO1	Autism Spectrum Disorder	asd_curated	Existing	2.9	72	15	False	
+NR4A2	Autism Spectrum Disorder	asd_curated	Established	3.49	107	20	False	
+RAB14	Autism Spectrum Disorder	asd_curated	Novel	1.09	74	10	False	
+PHF12	Autism Spectrum Disorder	asd_curated	Novel	1.7	47	2	False	
+ZFHX3	Autism Spectrum Disorder	asd_curated	Existing	3.05	56	20	False	
+NCKAP1	Autism Spectrum Disorder	asd_curated	Established	3.67	54	18	False	
+KBTBD6	Autism Spectrum Disorder	asd_curated	Novel	1.12	3	2	False	
+SETD2	Autism Spectrum Disorder	asd_curated	Established	2.53	73	20	False	
+ITSN1	Autism Spectrum Disorder	asd_curated	Existing	3.15	54	20	False	
+ARID1A	Autism Spectrum Disorder	asd_curated	Existing	2.66	67	20	False	
+GNB1	Autism Spectrum Disorder	asd_curated	Existing	2.75	53	20	False	
+PCLO	Autism Spectrum Disorder	asd_curated	Hypothesized	2.14	60	20	False	
+PSMC5	Autism Spectrum Disorder	asd_curated	Existing	2.88	57	18	False	
+CACNA1A	Autism Spectrum Disorder	asd_curated	Existing	3.13	81	20	False	
+PTK2	Autism Spectrum Disorder	asd_curated	Hypothesized	2.16	69	18	False	
+NRXN3	Autism Spectrum Disorder	asd_curated	Existing	3.09	73	20	False	
+MTOR	Autism Spectrum Disorder	asd_curated	Existing	2.92	117	20	False	
+CHD7	Autism Spectrum Disorder	asd_curated	Existing	3.14	85	20	False	
+KANSL1	Autism Spectrum Disorder	asd_curated	Existing	3.26	59	20	False	
+SMARCB1	Autism Spectrum Disorder	asd_curated	Existing	2.92	65	20	False	
+MAGEL2	Autism Spectrum Disorder	asd_curated	Established	3.54	86	20	False	
+LEMD3	Autism Spectrum Disorder	asd_curated	Novel	1.06	55	19	False	
+YY1	Autism Spectrum Disorder	asd_curated	Existing	3.06	113	20	False	
+NFIB	Autism Spectrum Disorder	asd_curated	Existing	3.16	61	11	False	
+CGREF1	Autism Spectrum Disorder	asd_curated	Novel	1.06	22	1	False	
+PTPRT	Autism Spectrum Disorder	asd_curated	Hypothesized	1.94	52	7	False	
+GSE1	Autism Spectrum Disorder	asd_curated	Existing	3.02	18	2	False	
+SYT1	Autism Spectrum Disorder	asd_curated	Existing	3.0	75	20	False	
+CAMK2A	Autism Spectrum Disorder	asd_curated	Existing	2.93	74	20	False	
+UBR5	Autism Spectrum Disorder	asd_curated	Established	3.62	62	20	False	
+GABBR2	Autism Spectrum Disorder	asd_curated	Existing	2.93	61	20	False	
+MAP1A	Autism Spectrum Disorder	asd_curated	Existing	2.48	52	17	False	
+ADGRB1	Autism Spectrum Disorder	asd_curated	Existing	2.72	32	13	False	
+EFTUD2	Autism Spectrum Disorder	asd_curated	Existing	2.51	59	20	False	
+TLE3	Autism Spectrum Disorder	asd_curated	Existing	2.26	47	18	False	
+CHAMP1	Autism Spectrum Disorder	asd_curated	Established	3.48	94	20	False	
+LRRC4	Autism Spectrum Disorder	asd_curated	Existing	2.51	25	14	False	
+DSCAM	Autism Spectrum Disorder	asd_curated	Existing	3.01	62	20	False	
+CAPRIN1	Autism Spectrum Disorder	asd_curated	Established	3.39	38	17	False	
+JARID2	Autism Spectrum Disorder	asd_curated	Existing	3.13	63	20	False	
+TRIM8	Autism Spectrum Disorder	asd_curated	Existing	2.66	67	20	False	
+SCN8A	Autism Spectrum Disorder	asd_curated	Existing	3.04	84	20	False	
+HNRNPD	Autism Spectrum Disorder	asd_curated	Novel	1.41	54	17	False	
+RALGAPB	Autism Spectrum Disorder	asd_curated	Established	1.31	14	8	False	
+EGR3	Autism Spectrum Disorder	asd_curated	Hypothesized	2.23	121	20	False	
+KMT2D	Autism Spectrum Disorder	asd_curated	Existing	3.05	70	20	False	
+MEIS2	Autism Spectrum Disorder	asd_curated	Existing	2.82	61	20	False	
+TOP3B	Autism Spectrum Disorder	asd_curated	Existing	3.01	27	18	False	
+MAF	Autism Spectrum Disorder	asd_curated	Existing	2.36	79	20	False	
+SLTM	Autism Spectrum Disorder	asd_curated	Novel	1.35	125	5	False	
+SPPL3	Autism Spectrum Disorder	asd_curated	Existing	2.63	53	13	False	
+ZBTB7A	Autism Spectrum Disorder	asd_curated	Existing	2.82	69	20	False	
+PSMD12	Autism Spectrum Disorder	asd_curated	Established	3.3	56	14	False	
+FBXW7	Autism Spectrum Disorder	asd_curated	Existing	3.14	112	20	False	
+DIP2C	Autism Spectrum Disorder	asd_curated	Existing	2.85	17	8	False	
+SRSF1	Autism Spectrum Disorder	asd_curated	Existing	2.92	72	20	False	
+BCR	Autism Spectrum Disorder	asd_curated	Hypothesized	2.04	78	4	False	
+GNAI1	Autism Spectrum Disorder	asd_curated	Existing	3.03	33	20	False	
+GSK3B	Autism Spectrum Disorder	asd_curated	Existing	3.24	83	20	False	
+ACTG1	Autism Spectrum Disorder	asd_curated	Existing	2.59	56	20	False	
+ZCCHC14	Autism Spectrum Disorder	asd_curated	Novel	1.15	13	1	False	
+RANBP2	Autism Spectrum Disorder	asd_curated	Novel	1.31	57	20	False	
+NACC1	Autism Spectrum Disorder	asd_curated	Existing	2.8	46	14	False	
+GABRA4	Autism Spectrum Disorder	asd_curated	Existing	3.01	33	18	False	
+TRAF7	Autism Spectrum Disorder	asd_curated	Existing	2.56	70	16	False	
+HSF2	Autism Spectrum Disorder	asd_curated	Hypothesized	1.93	40	12	False	
+ZBTB18	Autism Spectrum Disorder	asd_curated	Existing	2.96	46	20	False	
+ZNF644	Autism Spectrum Disorder	asd_curated	Hypothesized	1.91	19	2	False	
+PPM1D	Autism Spectrum Disorder	asd_curated	Established	3.4	55	16	False	
+CERT1	Autism Spectrum Disorder	asd_curated	Existing	2.8	54	20	False	
+PLXNA1	Autism Spectrum Disorder	asd_curated	Existing	2.38	64	11	False	
+KIF1A	Autism Spectrum Disorder	asd_curated	Existing	3.26	64	20	False	
+INTS6	Autism Spectrum Disorder	asd_curated	Existing	2.75	45	9	False	
+BAZ2A	Autism Spectrum Disorder	asd_curated	Novel	1.39	26	15	False	
+BRD1	Autism Spectrum Disorder	asd_curated	Hypothesized	2.14	60	13	False	
+CXXC1	Autism Spectrum Disorder	asd_curated	Hypothesized	1.73	58	13	False	
+PHF2	Autism Spectrum Disorder	asd_curated	Novel	1.47	24	11	False	
+GNAO1	Autism Spectrum Disorder	asd_curated	Existing	2.89	56	20	False	
+MKX	Autism Spectrum Disorder	asd_curated	Novel	1.06	19	7	False	
+TAF4	Autism Spectrum Disorder	asd_curated	Existing	2.6	44	20	False	
+ATP2B2	Autism Spectrum Disorder	asd_curated	Existing	2.96	63	20	False	
+EXT1	Autism Spectrum Disorder	asd_curated	Existing	2.62	78	20	False	
+CELF4	Autism Spectrum Disorder	asd_curated	Existing	2.83	32	9	False	
+GRIK3	Autism Spectrum Disorder	asd_curated	Existing	2.48	44	20	False	
+MAPK8IP3	Autism Spectrum Disorder	asd_curated	Existing	2.85	43	20	False	
+PTCH1	Autism Spectrum Disorder	asd_curated	Existing	2.71	64	20	False	
+BCAT1	Autism Spectrum Disorder	asd_curated	Hypothesized	2.14	60	20	False	
+CLASP1	Autism Spectrum Disorder	not_in_asc	Hypothesized	2.0	39	11	False	
+CGGBP1	Autism Spectrum Disorder	not_in_asc	Hypothesized	1.97	17	9	False	
+DDX28	Autism Spectrum Disorder	not_in_asc	Novel	1.06	3	2	False	
+ACY1	Autism Spectrum Disorder	not_in_asc	Existing	3.07	41	20	False	
+CACNA1H	Autism Spectrum Disorder	not_in_asc	Existing	3.06	72	20	False	
+FABP1	Autism Spectrum Disorder	not_in_asc	Novel	1.05	61	20	False	
+MAP1B	Autism Spectrum Disorder	asd_curated	Hypothesized	2.51	66	20	False	
+DCLK3	Autism Spectrum Disorder	not_in_asc	Novel	1.37	14	3	False	
+FAM151A	Autism Spectrum Disorder	not_in_asc	Novel	1.13	3	0	False	
+FGF19	Autism Spectrum Disorder	not_in_asc	Novel	1.06	60	19	False	
+FAM81B	Autism Spectrum Disorder	not_in_asc	Novel	1.13	4	0	False	
+FKBP1C	Autism Spectrum Disorder	not_in_asc	Novel	1.09	1	0	False	
+GOLGA6C	Autism Spectrum Disorder	not_in_asc	Novel	1.13	1	0	False	
+H4C7	Autism Spectrum Disorder	not_in_asc	Novel	1.21	2	0	False	
+GAL3ST2	Autism Spectrum Disorder	not_in_asc	Novel	1.09	12	1	False	
+ICAM5	Autism Spectrum Disorder	not_in_asc	Hypothesized	2.01	48	5	False	
+HEPN1	Autism Spectrum Disorder	not_in_asc	Novel	1.09	4	0	False	
+HAUS1	Autism Spectrum Disorder	not_in_asc	Novel	1.1	14	2	False	
+HACD3	Autism Spectrum Disorder	not_in_asc	Novel	1.12	11	2	False	
+MRPL49	Autism Spectrum Disorder	not_in_asc	Novel	1.47	62	8	False	
+MYL6B	Autism Spectrum Disorder	not_in_asc	Novel	1.13	9	0	False	
+IFT20	Autism Spectrum Disorder	not_in_asc	Novel	1.35	44	20	False	
+MFAP3L	Autism Spectrum Disorder	not_in_asc	Novel	1.44	8	0	False	
+NPTX1	Autism Spectrum Disorder	not_in_asc	Hypothesized	2.09	29	15	False	
+PLB1	Autism Spectrum Disorder	not_in_asc	Novel	1.06	67	10	False	
+L3MBTL3	Autism Spectrum Disorder	not_in_asc	Novel	1.36	27	8	False	
+NOL4L	Autism Spectrum Disorder	not_in_asc	Novel	1.36	5	1	False	
+LAMB4	Autism Spectrum Disorder	not_in_asc	Novel	1.27	18	2	False	
+LARGE2	Autism Spectrum Disorder	not_in_asc	Novel	1.36	17	8	False	
+LY6G5C	Autism Spectrum Disorder	not_in_asc	Novel	1.12	11	1	False	
+PCBD1	Autism Spectrum Disorder	not_in_asc	Hypothesized	1.76	59	9	False	
+PHB2	Autism Spectrum Disorder	not_in_asc	Hypothesized	2.2	79	20	False	
+PRDM16	Autism Spectrum Disorder	not_in_asc	Hypothesized	2.15	57	15	False	
+PLOD3	Autism Spectrum Disorder	not_in_asc	Novel	1.36	53	20	False	
+POU6F2	Autism Spectrum Disorder	not_in_asc	Novel	1.62	26	6	False	
+PTCHD1	Autism Spectrum Disorder	not_in_asc	Established	3.52	46	20	False	
+RGL2	Autism Spectrum Disorder	not_in_asc	Novel	1.06	33	16	False	
+PTH2	Autism Spectrum Disorder	not_in_asc	Novel	1.24	50	19	False	
+ZNF653	Autism Spectrum Disorder	not_in_asc	Novel	1.13	1	0	False	
+SPR	Autism Spectrum Disorder	not_in_asc	Hypothesized	2.04	68	6	False	
+SGSM1	Autism Spectrum Disorder	not_in_asc	Novel	1.23	14	1	False	
+SLF1	Autism Spectrum Disorder	not_in_asc	Novel	1.06	19	2	False	
+SIGLEC15	Autism Spectrum Disorder	not_in_asc	Novel	1.11	44	11	False	
+TLCD1	Autism Spectrum Disorder	not_in_asc	Novel	1.08	8	5	False	
+TRIM58	Autism Spectrum Disorder	not_in_asc	Novel	1.06	21	1	False	
+TBC1D25	Autism Spectrum Disorder	not_in_asc	Novel	1.14	9	2	False	
+BHMT2	Autism Spectrum Disorder	not_in_asc	Novel	1.53	29	13	False	
+ANKFN1	Autism Spectrum Disorder	not_in_asc	Novel	1.17	11	2	False	
+TPCN2	Autism Spectrum Disorder	not_in_asc	Novel	1.39	58	20	False	
+C1QL4	Autism Spectrum Disorder	not_in_asc	Novel	1.19	3	1	False	
+CEACAM4	Autism Spectrum Disorder	not_in_asc	Novel	1.06	8	2	False	
+CD79A	Autism Spectrum Disorder	not_in_asc	Novel	1.06	82	15	False	
+SKOR2	Autism Spectrum Disorder	not_in_asc	Existing	2.41	19	8	False	
+C1QTNF2	Autism Spectrum Disorder	not_in_asc	Novel	1.06	11	4	False	
+CGRRF1	Autism Spectrum Disorder	not_in_asc	Novel	1.08	4	2	False	
+ARHGAP18	Autism Spectrum Disorder	not_in_asc	Novel	1.55	22	5	False	
+VEPH1	Autism Spectrum Disorder	not_in_asc	Novel	1.43	15	8	False	
+TSPAN2	Autism Spectrum Disorder	not_in_asc	Novel	1.43	27	5	False	
+CETN1	Autism Spectrum Disorder	not_in_asc	Novel	1.09	23	10	False	
+EGF	Autism Spectrum Disorder	not_in_asc	Existing	2.83	98	20	False	
+DGKE	Autism Spectrum Disorder	not_in_asc	Novel	1.26	60	20	False	
+CWF19L2	Autism Spectrum Disorder	not_in_asc	Novel	1.37	3	0	False	
+ELMOD2	Autism Spectrum Disorder	not_in_asc	Novel	1.17	5	1	False	
+ELL	Autism Spectrum Disorder	not_in_asc	Hypothesized	1.81	129	6	False	
+GREM1	Autism Spectrum Disorder	not_in_asc	Novel	1.09	74	10	False	
+HARS2	Autism Spectrum Disorder	not_in_asc	Novel	1.14	39	13	False	
+LIN9	Autism Spectrum Disorder	not_in_asc	Novel	1.28	73	20	False	
+EPS8L2	Autism Spectrum Disorder	not_in_asc	Novel	1.09	14	5	False	
+FERD3L	Autism Spectrum Disorder	not_in_asc	Novel	1.13	14	0	False	
+FAM47E-STBD1	Autism Spectrum Disorder	not_in_asc	Novel	1.13	2	0	False	
+LRRC3C	Autism Spectrum Disorder	not_in_asc	Novel	1.09	4	1	False	
+FAM189B	Autism Spectrum Disorder	not_in_asc	Novel	1.29	3	1	False	
+MAP3K19	Autism Spectrum Disorder	not_in_asc	Novel	1.06	58	6	False	
+GRHL3	Autism Spectrum Disorder	not_in_asc	Novel	1.5	81	20	False	
+FKBPL	Autism Spectrum Disorder	not_in_asc	Novel	1.06	32	12	False	
+MANEAL	Autism Spectrum Disorder	not_in_asc	Novel	1.42	3	1	False	
+NTPCR	Autism Spectrum Disorder	not_in_asc	Novel	1.09	5	1	False	
+FZD2	Autism Spectrum Disorder	not_in_asc	Novel	1.44	63	20	False	
+LITAF	Autism Spectrum Disorder	not_in_asc	Novel	1.54	130	20	False	
+PROSER3	Autism Spectrum Disorder	not_in_asc	Novel	1.13	1	0	False	
+ERP44	Autism Spectrum Disorder	not_in_asc	Hypothesized	1.89	25	14	False	
+NR2F6	Autism Spectrum Disorder	not_in_asc	Novel	1.17	42	5	False	
+MIP	Autism Spectrum Disorder	not_in_asc	Novel	1.2	92	5	False	
+PIK3R5	Autism Spectrum Disorder	not_in_asc	Novel	1.53	56	18	False	
+PPP1CC	Autism Spectrum Disorder	not_in_asc	Hypothesized	1.87	54	20	False	
+SNN	Autism Spectrum Disorder	not_in_asc	Novel	1.14	47	1	False	
+SHFL	Autism Spectrum Disorder	not_in_asc	Novel	1.29	41	7	False	
+SPATA31A6	Autism Spectrum Disorder	not_in_asc	Novel	1.13	1	0	False	
+RNFT1	Autism Spectrum Disorder	not_in_asc	Novel	1.16	3	0	False	
+SLC2A1	Autism Spectrum Disorder	not_in_asc	Existing	2.5	74	20	False	
+TTC21A	Autism Spectrum Disorder	not_in_asc	Novel	1.37	17	0	False	
+TRIM34	Autism Spectrum Disorder	not_in_asc	Novel	1.06	11	2	False	
+SOX21	Autism Spectrum Disorder	not_in_asc	Novel	1.4	33	8	False	
+ZNF652	Autism Spectrum Disorder	not_in_asc	Novel	1.1	25	6	False	
+ATRAID	Autism Spectrum Disorder	not_in_asc	Novel	1.14	63	7	False	
+SPIB	Autism Spectrum Disorder	not_in_asc	Novel	1.06	62	20	False	
+ARHGAP5	Autism Spectrum Disorder	not_in_asc	Novel	1.46	39	14	False	
+SPTSSB	Autism Spectrum Disorder	not_in_asc	Novel	1.36	14	2	False	

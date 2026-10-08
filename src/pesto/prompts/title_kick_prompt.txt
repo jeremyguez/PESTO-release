@@ -1,0 +1,26 @@
+A reading list is being assembled to answer whether variants in {gene_name}
+cause {phenotype}. Your only task is to throw out the articles that have no
+bearing on that question at all. You are given titles, nothing else.
+
+{articles_list}
+
+Name an article only when its title makes it certain it does not belong. The
+clearest case is a title where the letters {gene_name} are not this gene: a
+different gene whose symbol merely starts the same way, a person's name inside a
+disease eponym, a laboratory abbreviation, or an ordinary word of English. Next
+comes an article about neither this gene nor this phenotype, on a subject that
+has nothing to do with either.
+
+Everything else stays, including work you suspect is weak, indirect, or
+concerned with a different disease, and including titles you cannot make sense
+of. A later step reads the abstracts and decides what is worth reading; it can
+only choose among the articles you leave it. You are removing noise, not
+selecting evidence, and a title is thin ground on which to end an article's
+chances.
+
+Return the PMIDs to remove, one per line, nothing else. If nothing should be
+removed, return the empty tags.
+<remove>
+12345678
+23456789
+</remove>

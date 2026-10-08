@@ -1,0 +1,267 @@
+{
+ "gene": "ABCC9",
+ "phenotype": "atrial fibrillation, familial, 12",
+ "articles": [
+  {
+   "pmid": "31039256",
+   "title": "Limbic-predominant age-related TDP-43 encephalopathy (LATE): consensus working group report.",
+   "pubdate": "2019 Jun 1",
+   "abstract": "We describe a recently recognized disease entity, limbic-predominant age-related TDP-43 encephalopathy (LATE). LATE neuropathological change (LATE-NC) is defined by a stereotypical TDP-43 proteinopathy in older adults, with or without coexisting hippocampal sclerosis pathology. LATE-NC is a common TDP-43 proteinopathy, associated with an amnestic dementia syndrome that mimicked Alzheimer's-type dementia in retrospective autopsy studies. LATE is distinguished from frontotemporal lobar degeneration with TDP-43 pathology based on its epidemiology (LATE generally affects older subjects), and relatively restricted neuroanatomical distribution of TDP-43 proteinopathy. In community-based autopsy cohorts, \u223c25% of brains had sufficient burden of LATE-NC to be associated with discernible cognitive impairment. Many subjects with LATE-NC have comorbid brain pathologies, often including amyloid-\u03b2 plaques and tauopathy. Given that the 'oldest-old' are at greatest risk for LATE-NC, and subjects of advanced age constitute a rapidly growing demographic group in many countries, LATE has an expanding but under-recognized impact on public health. For these reasons, a working group was convened to develop diagnostic criteria for LATE, aiming both to stimulate research and to promote awareness of this pathway to dementia. We report consensus-based recommendations including guidelines for diagnosis and staging of LATE-NC. For routine autopsy workup of LATE-NC, an anatomically-based preliminary staging scheme is proposed with TDP-43 immunohistochemistry on tissue from three brain areas, reflecting a hierarchical pattern of brain involvement: amygdala, hippocampus, and middle frontal gyrus. LATE-NC appears to affect the medial temporal lobe structures preferentially, but other areas also are impacted. Neuroimaging studies demonstrated that subjects with LATE-NC also had atrophy in the medial temporal lobes, frontal cortex, and other brain regions. Genetic studies have thus far indicated five genes with risk alleles for LATE-NC: GRN, TMEM106B, ABCC9, KCNMB2, and APOE. The discovery of these genetic risk variants indicate that LATE shares pathogenetic mechanisms with both frontotemporal lobar degeneration and Alzheimer's disease, but also suggests disease-specific underlying mechanisms. Large gaps remain in our understanding of LATE. For advances in prevention, diagnosis, and treatment, there is an urgent need for research focused on LATE, including in vitro and animal models. An obstacle to clinical progress is lack of diagnostic tools, such as biofluid or neuroimaging biomarkers, for ante-mortem detection of LATE. Development of a disease biomarker would augment observational studies seeking to further define the risk factors, natural history, and clinical features of LATE, as well as eventual subject recruitment for targeted therapies in clinical trials.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "20301690",
+   "title": "Brugada Syndrome.",
+   "pubdate": "1993",
+   "abstract": "",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "36129056",
+   "title": "Determining the Likelihood of Disease Pathogenicity Among Incidentally Identified Genetic Variants in Rare Dilated Cardiomyopathy-Associated Genes.",
+   "pubdate": "2022 Oct 4",
+   "abstract": "Background As utilization of clinical exome sequencing (ES) has expanded, criteria for evaluating the diagnostic weight of incidentally identified variants are critical to guide clinicians and researchers. This is particularly important in genes associated with dilated cardiomyopathy (DCM), which can cause heart failure and sudden death. We sought to compare the frequency and distribution of incidentally identified variants in DCM-associated genes between a clinical referral cohort with those in control and known case cohorts to determine the likelihood of pathogenicity among those undergoing genetic testing for non-DCM indications. Methods and Results A total of 39 rare, non-TTN DCM-associated genes were identified and evaluated from a clinical ES testing referral cohort (n=14\u2009005, Baylor Genetic Laboratories) and compared with a DCM case cohort (n=9442) as well as a control cohort of population variants (n=141\u2009456) derived from the gnomAD database. Variant frequencies in each cohort were compared. Signal-to-noise ratios were calculated comparing the DCM and ES cohort with the gnomAD cohort. The likely pathogenic/pathogenic variant yield in the DCM cohort (8.2%) was significantly higher than in the ES cohort (1.9%). Based on signal-to-noise and correlation analysis, incidental variants found in FLNC, RBM20, MYH6, DSP, ABCC9, JPH2, and NEXN had the greatest chance of being DCM-associated. Conclusions The distribution of pathogenic variants between the ES cohort and the DCM case cohort was gene specific, and variants found in the ES cohort were similar to variants found in the control cohort. Incidentally identified variants in specific genes are more associated with DCM than others.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "25275207",
+   "title": "Cant\u00fa Syndrome.",
+   "pubdate": "1993",
+   "abstract": "",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "38510289",
+   "title": "Functional Validation of Doxorubicin-Induced Cardiotoxicity-Related Genes.",
+   "pubdate": "2024 Feb",
+   "abstract": "Genome-wide association studies and candidate gene association studies have identified more than 180\u00a0genetic variants statistically associated with anthracycline-induced cardiotoxicity (AIC). However, the lack of functional validation has hindered the clinical translation of these findings.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "38217872",
+   "title": "Novel loss-of-function variants expand ABCC9-related intellectual disability and myopathy syndrome.",
+   "pubdate": "2024 May 3",
+   "abstract": "Loss-of-function mutation of ABCC9, the gene encoding the SUR2 subunit of ATP sensitive-potassium (KATP) channels, was recently associated with autosomal recessive ABCC9-related intellectual disability and myopathy syndrome (AIMS). Here we identify nine additional subjects, from seven unrelated families, harbouring different homozygous loss-of-function variants in ABCC9 and presenting with a conserved range of clinical features. All variants are predicted to result in severe truncations or in-frame deletions within SUR2, leading to the generation of non-functional SUR2-dependent KATP channels. Affected individuals show psychomotor delay and intellectual disability of variable severity, microcephaly, corpus callosum and white matter abnormalities, seizures, spasticity, short stature, muscle fatigability and weakness. Heterozygous parents do not show any conserved clinical pathology but report multiple incidences of intra-uterine fetal death, which were also observed in an eighth family included in this study. In vivo studies of abcc9 loss-of-function in zebrafish revealed an exacerbated motor response to pentylenetetrazole, a pro-convulsive drug, consistent with impaired neurodevelopment associated with an increased seizure susceptibility. Our findings define an ABCC9 loss-of-function-related phenotype, expanding the genotypic and phenotypic spectrum of AIMS and reveal novel human pathologies arising from KATP channel dysfunction.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "42290677",
+   "title": "Cognitive Decline, Neurologic Involvement, and Neonatal Crisis in ABCC9-Related Intellectual Disability and Myopathy Syndrome.",
+   "pubdate": "2026 Aug",
+   "abstract": "The ABCC9 gene encodes the widely expressed SUR2 subunit of ATP-sensitive potassium (KATP) channels. Autosomal recessive loss-of-function variants in ABCC9 cause ABCC9-related Intellectual disability and Myopathy Syndrome (AIMS). Here, we sought to compile multiple case reports from previously unidentified individuals with the primary objective of further establishing the clinical consequences of ABCC9 variants.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "41347799",
+   "title": "ABCC9 knockdown attenuates isoproterenol\u2011induced myocardial hypertrophy by inhibiting the PI3K/AKT signaling pathway.",
+   "pubdate": "2026 Feb",
+   "abstract": "Myocardial hypertrophy (MH) represents an early pathological manifestation that progresses to severe cardiovascular disease (CVD), and its reversal is important for preventing and treating heart failure. Dysregulated expression of ATP\u2011binding cassette subfamily C member 9 (ABCC9) has been associated with complex CVD pathogenesis, although its precise mechanistic role remains ambiguous. The present study was designed to investigate the protective effects of ABCC9 knockdown against isoproterenol (ISO)\u2011induced MH and elucidate its underlying molecular mechanisms. AC16 cardiomyocytes were treated with ISO to establish an MH model, in which ABCC9 protein expression was significantly elevated. Fluorescence staining of cardiomyocyte surface area and quantification of MH\u2011related biomarkers, including atrial natriuretic peptide, brain natriuretic peptide and \u03b2\u2011myosin heavy chain, demonstrated that ABCC9 knockdown effectively attenuated MH and improved cardiac function. Furthermore, western blot analysis and flow cytometry revealed that ABCC9 knockdown not only decreased cardiomyocyte apoptosis but also reduced oxidative stress, as indicated by lower reactive oxygen species levels. Mechanistically, western blotting and mitochondrial membrane potential assays showed that ABCC9 knockdown inhibited the phosphatidylinositol 3\u2011kinase/protein kinase B (PI3K/AKT) signaling pathway and improved mitochondrial function. Notably, these protective effects were diminished by treatment with the PI3K/AKT activator 740Y\u2011P. These findings collectively suggest that ABCC9 knockdown protects against MH by inhibiting the PI3K/AKT signaling pathway, thereby alleviating mitochondrial dysfunction and reducing apoptosis and oxidative stress, positioning ABCC9 as a potential therapeutic target for MH treatment.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "26226329",
+   "title": "ABCC9/SUR2 in the brain: Implications for hippocampal sclerosis of aging and a potential therapeutic target.",
+   "pubdate": "2015 Nov",
+   "abstract": "The ABCC9 gene and its polypeptide product, SUR2, are increasingly implicated in human neurologic disease, including prevalent diseases of the aged brain. SUR2 proteins are a component of the ATP-sensitive potassium (\"KATP\") channel, a metabolic sensor for stress and/or hypoxia that has been shown to change in aging. The KATP channel also helps regulate the neurovascular unit. Most brain cell types express SUR2, including neurons, astrocytes, oligodendrocytes, microglia, vascular smooth muscle, pericytes, and endothelial cells. Thus it is not surprising that ABCC9 gene variants are associated with risk for human brain diseases. For example, Cantu syndrome is a result of ABCC9 mutations; we discuss neurologic manifestations of this genetic syndrome. More common brain disorders linked to ABCC9 gene variants include hippocampal sclerosis of aging (HS-Aging), sleep disorders, and depression. HS-Aging is a prevalent neurological disease with pathologic features of both neurodegenerative (aberrant TDP-43) and cerebrovascular (arteriolosclerosis) disease. As to potential therapeutic intervention, the human pharmacopeia features both SUR2 agonists and antagonists, so ABCC9/SUR2 may provide a \"druggable target\", relevant perhaps to both HS-Aging and Alzheimer's disease. We conclude that more work is required to better understand the roles of ABCC9/SUR2 in the human brain during health and disease conditions.",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "35876283",
+   "title": "Kir6.1 and SUR2B in Cant\u00fa syndrome.",
+   "pubdate": "2022 Sep 1",
+   "abstract": "Kir6.1 and SUR2 are subunits of ATP-sensitive potassium (KATP) channels expressed in a wide range of tissues. Extensive study has implicated roles of these channel subunits in diverse physiological functions. Together they generate the predominant KATP conductance in vascular smooth muscle and are the target of vasodilatory drugs. Roles for Kir6.1/SUR2 dysfunction in disease have been suggested based on studies of animal models and human genetic discoveries. In recent years, it has become clear that gain-of-function (GoF) mutations in both genes result in Cant\u00fa syndrome (CS)-a complex, multisystem disorder. There is currently no targeted therapy for CS, but studies of mouse models of the disease reveal that pharmacological reversibility of cardiovascular and gastrointestinal pathologies can be achieved by administration of the KATP channel inhibitor, glibenclamide. Here we review the function, structure, and physiological and pathological roles of Kir6.1/SUR2B channels, with a focus on CS. Recent studies have led to much improved understanding of the underlying pathologies and the potential for treatment, but important questions remain: Can the study of genetically defined CS reveal new insights into Kir6.1/SUR2 function? Do these reveal new pathophysiological mechanisms that may be important in more common diseases? And is our pharmacological armory adequately stocked?",
+   "query_tier": "secondary"
+  },
+  {
+   "pmid": "15910874",
+   "title": "ATP-sensitive K+ channel channel/enzyme multimer: metabolic gating in the heart.",
+   "pubdate": "2005 Jun",
+   "abstract": "Cardiac ATP-sensitive K(+) (K(ATP)) channels, gated by cellular metabolism, are formed by association of the inwardly rectifying potassium channel Kir6.2, the potassium conducting subunit, and SUR2A, the ATP-binding cassette protein that serves as the regulatory subunit. Kir6.2 is the principal site of ATP-induced channel inhibition, while SUR2A regulates K(+) flux through adenine nucleotide binding and catalysis. The ATPase-driven conformations within the regulatory SUR2A subunit of the K(ATP) channel complex have determinate linkage with the states of the channel's pore. The probability and life-time of ATPase-induced SUR2A intermediates, rather than competitive nucleotide binding alone, defines nucleotide-dependent K(ATP) channel gating. Cooperative interaction, instead of independent contribution of individual nucleotide binding domains within the SUR2A subunit, serves a decisive role in defining K(ATP) channel behavior. Integration of K(ATP) channels with the cellular energetic network renders these channel/enzyme heteromultimers high-fidelity metabolic sensors. This vital function is facilitated through phosphotransfer enzyme-mediated transmission of controllable energetic signals. By virtue of coupling with cellular energetic networks and the ability to decode metabolic signals, K(ATP) channels set membrane excitability to match demand for homeostatic maintenance. This new paradigm in the operation of an ion channel multimer is essential in providing the basis for K(ATP) channel function in the cardiac cell, and for understanding genetic defects associated with life-threatening diseases that result from the inability of the channel complex to optimally fulfill its physiological role.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "15563985",
+   "title": "Sulfonylurea and non-sulfonylurea hypoglycemic agents: pharmachological properties and tissue selectivity.",
+   "pubdate": "2004 Dec",
+   "abstract": "ATP-sensitive K+ (K(ATP)) channels play many important roles in cellular functions, including control of membrane excitability of skeletal muscle and neurons, K+ recycling in renal epithelia, cytoprotection in cardiac ischemia, and insulin secretion from pancreatic beta-cells. K(ATP) channels are composed of pore-forming inwardly rectifying potassium channel (Kir6.2 or Kir6.1) subunits and sulfonylurea receptor (SUR1, SUR2A, or SUR2B) subunits. Kir6.2 or Kir6.1 subunits conjoined with a SUR subunit constitute the various tissue-specific K(ATP) channels with distinct pharmacological properties. Both sulfonylureas and non-sulfonylurea hypoglycemic agents are used in treatment of type 2 diabetes mellitus. While the sulfonylurea receptor (SUR) is the target molecule of all of these hypoglycemic agents, the binding sites differ according to the moiety containing in the agent, and alter the pharmachological properties. In addition, chronic exposure of pancreatic beta-cells to the various agents affects the agent-specific sensitivities differently. Here we distinguish differences in pharmacological profile among the various hypoglycemic agents that reflect their chemical composition. We also suggest possible risk in the use of certain hypoglycemic agents in patients with ischemic heart disease.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "12961066",
+   "title": "Potent and selective activation of the pancreatic beta-cell type K(ATP) channel by two novel diazoxide analogues.",
+   "pubdate": "2003 Oct",
+   "abstract": "We investigated the pharmacological properties of two novel ATP sensitive potassium (K(ATP)) channel openers, 6-Chloro-3-isopropylamino-4 H-thieno[3,2- e]-1,2,4-thiadiazine 1,1-dioxide (NNC 55-0118) and 6-chloro-3-(1-methylcyclopropyl)amino-4 H-thieno[3,2-e]-1,2,4-thiadiazine 1,1-dioxide (NN414), on the cloned cardiac (Kir6.2/SUR2A), smooth muscle (Kir6.2/SUR2B) and pancreatic beta cell (Kir6.2/SUR1) types of K(ATP) channel.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "12939542",
+   "title": "[Molecular and functional diversity of ATP-sensitive K+ channels: the pathophysiological roles and potential drug targets].",
+   "pubdate": "2003 Sep",
+   "abstract": "ATP-sensitive K(+) (K(ATP)) channels comprise the pore-forming subunit (Kir6.1 or Kir6.2) and the regulatory subunit sulfonylurea receptors (SUR1 or SUR2). K(ATP) channels with different combinations of these subunits are present in various tissues and regulate cellular functions. From the analysis of mouse models with targeted deletion of the gene encoding the pore-forming subunit Kir6.1 or Kir6.2, functional roles of K(ATP) channels in various organs have been clarified. Kir6.1(-/-) mice showed sudden death associated with ST elevation and atrioventricular block in ECG, a phenotype resembling Prinzmetal angina in humans. Kir6.2(-/-) mice were more susceptible to generalized seizure during hypoxia than wild-type (WT) mice, suggesting that neuronal K(ATP) channels, probably composed of Kir6.2 and SUR1, play a crucial role for the protection of the brain against lethal damage due to seizure. In Kir6.2(-/-) mice lacking the sarcolemmal K(ATP) channel activity in cardiac cells, ischemic preconditioning failed to reduce the infarct size, suggesting that sarcolemmal K(ATP) channels play an important role in cardioprotection against ischemia/reperfusion injuries in the heart. Mitochondrial K(ATP) channels have been also proposed to play a crucial role in cardioprotection, although the molecular identity of the channel has not been established. Nicorandil and minoxidil, K(+) channel openers activating mitochondrial K(ATP) channels, decreased the mitochondrial membrane potential, thereby preventing the Ca(2+) overload in the mitochondria of guinea-pig ventricular cells. SURs are the receptors for K(+) channel openers and the activating effects on sarcolemmal K(ATP) channels in cardiovascular tissues could be modulated by the interaction of nucleotides. Due to the molecular diversity of the accessory and pore subunits of K(ATP) channels, there would be considerable differences in the tissue selectivity of K(ATP) channel-acting drugs. Studies of Kir6.1 and Kir6.2 knockout mice indicate that K(ATP) channels are involved in the mechanisms of the protection against metabolic stress. Further clarification of physiological as well as pathophysiological roles of K(ATP) channels may lead to a new therapeutic strategy to improve the quality of life.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "11927600",
+   "title": "Intrinsic sensitivity of Kir1.1 (ROMK) to glibenclamide in the absence of SUR2B. Implications for the identity of the renal ATP-regulated secretory K+ channel.",
+   "pubdate": "2002 Jun 14",
+   "abstract": "The precise molecular identity of the renal ATP-regulated secretory K+ channel is still a matter of some controversy. The inwardly rectifying K+ channel, Kir1.1 (ROMK) appears to form the pore of the channel, and mutations in Kir1.1 are responsible for Bartter syndrome. The native channel is sensitive to inhibition by the sulfonylurea glibenclamide, and it has been proposed that an accessory protein is required to confer glibenclamide sensitivity to Kir1.1. Several recent studies have suggested that the native channel is composed of the splice variant Kir1.1b (ROMK2) and the sulfonylurea receptor isoform SUR2B and that there is a direct physical interaction between these subunits. In this study, we have monitored the interaction between Kir1.1b and SUR2B. We find that SUR2B reaches the plasma membrane when coexpressed with Kir6.1 or Kir6.2 but not when coexpressed with Kir1.1b. Furthermore, we find that Kir1.1b exhibits an intrinsic sensitivity to inhibition by glibenclamide with an affinity similar to the native channel. These results demonstrate that SUR2B does not traffic to the membrane in the presence of Kir1.1b and is not required to confer glibenclamide sensitivity to Kir1.1b. This has important implications for the presumed structure of the renal ATP-regulated secretory K+ channel.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "11967023",
+   "title": "Putative subunits of the rat mesangial KATP: a type 2B sulfonylurea receptor and an inwardly rectifying K+ channel.",
+   "pubdate": "2002 May",
+   "abstract": "Sulfonylurea agents exert their physiological effects in many cell types via binding to specific sulfonylurea receptors (SUR). SUR couple to inwardly-rectifying K+ channel (Kir6.x) to form tetradimeric ATP-sensitive K+ channels (KATP). The SUR subunits confer ATP-sensitivity on KATP and also provide the binding sites for sulfonylureas and other pharmacological agents. Our previous work demonstrated that the exposure of mesangial cells (MC) to sulfonylureas generated profound effects on MC glucose uptake and matrix metabolism and induced heightened cell contractility in association with Ca2+ transients. Because these responses likely resulted from the binding of sulfonylurea to a mesangial SUR2, we subsequently documented [3H]-glibenclamide binding to MC and the gene expression of several mesangial SUR2 transcripts. From these data, we inferred that MC expressed the components of a mesangial KATP and sought to establish their presence in primary MC.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "12166651",
+   "title": "Identification of 779 genetic variations in eight genes encoding members of the ATP-binding cassette, subfamily C (ABCC/MRP/CFTR.",
+   "pubdate": "2002",
+   "abstract": "We screened DNAs from 48 Japanese individuals for single-nucleotide polymorphisms (SNPs) in eight genes encoding the ATP-binding cassette, subfamily C (ABCC/ MRP/CFTR), by direct sequencing of their entire genomic regions, except repetitive sequence elements. This approach identified 688 SNPs and 91 insertion/deletion polymorphisms among the eight genes. Of the 688 SNPs, 81 were identified in the ABCC1 gene, 41 in ABCC2, 30 in ABCC3, 230 in ABCC4, 76 in ABCC5, 58 in CFTR, 102 in ABCC8. and 70 in ABCC9. Six SNPs were located in the 5' flanking regions, 617 in introns, 46 in exons, and 19 in the 3' flanking regions. These variants should contribute to studies that investigate possible correlations of genotypes with disease-susceptibility phenotypes and responsiveness or adverse effects to drugs.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "11310586",
+   "title": "Multiple single-nucleotide polymorphisms (SNPs) in the Japanese population in six candidate genes for long QT syndrome.",
+   "pubdate": "2001",
+   "abstract": "We report here 20 single-nucleotide polymorphisms (SNPs), including 15 novel ones, in six genes that are considered to be candidates for long QT syndrome (LQTS): 2 SNPs in KCNB1, 3 in KCND3, 3 in KCNJ11, 7 in ABCC9, 3 in ADRB1, and 2 in SLC18A2. We also examined their allelic frequencies in a Japanese sample population of LQTS-affected and nonaffected individuals. These data will be useful for genetic association studies designed to investigate acquired arrhythmias.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "10220561",
+   "title": "ATP-Sensitive K+ channel modulator binding to sulfonylurea receptors SUR2A and SUR2B: opposite effects of MgADP.",
+   "pubdate": "1999 May",
+   "abstract": "KATP channels are heteromeric complexes of inwardly rectifying K+ channel subunits and sulfonylurea receptors (SURs). SUR2A and SUR2B, which differ within the carboxyl terminal exon 38, are characteristic for the cardiac and smooth muscle type channels, respectively. Here we compare binding of the tritiated KATP channel opener, [3H]P1075, to membranes from human embryonic kidney (HEK) cells transfected with murine SUR2A and 2B at 37 degrees C. Binding to both SURs required addition of Mg2+ and ATP in the low micromolar range. In the presence of MgATP, micromolar concentrations of MgADP, formed by the ATPase activity of the membrane preparation, increased binding to SUR2A but inhibited binding to SUR2B. Decreasing temperatures strongly reduced [3H]P1075 binding to SUR2A, whereas binding to SUR2B was increased in a bell-shaped manner. Kinetic experiments revealed a faster dissociation of the [3H]P1075-SUR2A complex, whereas the association rate constants for [3H]P1075 binding to SUR2A and 2B were similar. Openers inhibited [3H]P1075 binding to SUR2A with potencies approximately 4 times lower than to SUR2B; in contrast, glibenclamide inhibited [3H]P1075 binding to SUR2A approximately 8 times more potently than to SUR2B. The data suggest that SUR2A and 2B represent the opener receptors of cardiac and vascular smooth muscle KATP channels, respectively, and show that MgADP is an important modulator of opener binding to SUR. The different carboxyl termini of SUR2A and 2B lead to differences in the MgADP dependence and the thermodynamics of [3H]P1075 binding, as well as in the affinities for openers and glibenclamide, underlining the importance of this part of the molecule for KATP channel modulator binding.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "10022826",
+   "title": "Alternative sulfonylurea receptor expression defines metabolic sensitivity of K-ATP channels in dopaminergic midbrain neurons.",
+   "pubdate": "1999 Feb 15",
+   "abstract": "ATP-sensitive potassium (K-ATP) channels couple the metabolic state to cellular excitability in various tissues. Several isoforms of the K-ATP channel subunits, the sulfonylurea receptor (SUR) and inwardly rectifying K channel (Kir6.X), have been cloned, but the molecular composition and functional diversity of native neuronal K-ATP channels remain unresolved. We combined functional analysis of K-ATP channels with expression profiling of K-ATP subunits at the level of single substantia nigra (SN) neurons in mouse brain slices using an RT-multiplex PCR protocol. In contrast to GABAergic neurons, single dopaminergic SN neurons displayed alternative co-expression of either SUR1, SUR2B or both SUR isoforms with Kir6.2. Dopaminergic SN neurons expressed alternative K-ATP channel species distinguished by significant differences in sulfonylurea affinity and metabolic sensitivity. In single dopaminergic SN neurons, co-expression of SUR1 + Kir6.2, but not of SUR2B + Kir6.2, correlated with functional K-ATP channels highly sensitive to metabolic inhibition. In contrast to wild-type, surviving dopaminergic SN neurons of homozygous weaver mouse exclusively expressed SUR1 + Kir6.2 during the active period of dopaminergic neurodegeneration. Therefore, alternative expression of K-ATP channel subunits defines the differential response to metabolic stress and constitutes a novel candidate mechanism for the differential vulnerability of dopaminergic neurons in response to respiratory chain dysfunction in Parkinson's disease.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "40923965",
+   "title": "Beyond Tachycardia-Induced Cardiomyopathy: ABCC9-Related Dilated Cardiomyopathy and Familial Atrial Fibrillation.",
+   "pubdate": "2025 Oct 8",
+   "abstract": "Tachycardia-induced cardiomyopathy (TICM) is typically reversible with rhythm control, but individual susceptibility remains poorly understood and may reflect genetic predisposition.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "35495129",
+   "title": "Case Report: Loss-of-Function ABCC9 Genetic Variant Associated With Ventricular Fibrillation.",
+   "pubdate": "2022",
+   "abstract": "Genetic variants in the ABCC9 gene, encoding the SUR2 auxiliary subunit from KATP channels, were previously linked with various inherited diseases. This wide range of congenital disorders includes multisystem and cardiovascular pathologies. The gain-of-function mutations result in Cantu syndrome, acromegaloid facial appearance, hypertrichosis, and acromegaloid facial features. The loss-of-function mutations in the ABCC9 gene were associated with the Brugada syndrome, early repolarization syndrome, and dilated cardiomyopathy. Here, we reported a patient with a loss-of-function variant in the ABCC9 gene, identified by target high-throughput sequencing. The female proband presented with several episodes of ventricular fibrillation and hypokalemia upon emotional stress. This case sheds light on the consequences of KATP channel dysfunction in the cardiovascular system and underlines the complexity of the clinical presentation of ABCC9-related diseases.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "23538276",
+   "title": "KATP channels and cardiovascular disease: suddenly a syndrome.",
+   "pubdate": "2013 Mar 29",
+   "abstract": "ATP-sensitive potassium (KATP) channels were first discovered in the heart 30 years ago. Reconstitution of KATP channel activity by coexpression of members of the pore-forming inward rectifier gene family (Kir6.1, KCNJ8, and Kir6.2 KCNJ11) with sulfonylurea receptors (SUR1, ABCC8, and SUR2, ABCC9) of the ABCC protein subfamily has led to the elucidation of many details of channel gating and pore properties. In addition, the essential roles of Kir6.x and SURx subunits in generating cardiac and vascular KATP(2) and the detrimental consequences of genetic deletions or mutations in mice have been recognized. However, despite this extensive body of knowledge, there has been a paucity of defined roles of KATP subunits in human cardiovascular diseases, although there are reports of association of a single Kir6.1 variant with the J-wave syndrome in the ECG, and 2 isolated studies have reported association of loss of function mutations in SUR2 with atrial fibrillation and heart failure. Two new studies convincingly demonstrate that mutations in the SUR2 gene are associated with Cantu syndrome, a complex multi-organ disorder characterized by hypertrichosis, craniofacial dysmorphology, osteochondrodysplasia, patent ductus arteriosus, cardiomegaly, pericardial effusion, and lymphoedema. This realization of previously unconsidered consequences provides significant insight into the roles of the KATP channel in the cardiovascular system and suggests novel therapeutic possibilities.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "22844491",
+   "title": "Promoter DNA methylation regulates murine SUR1 (Abcc8) and SUR2 (Abcc9) expression in HL-1 cardiomyocytes.",
+   "pubdate": "2012",
+   "abstract": "Two mammalian genes encode the SURx (SUR1, Abcc8 and SUR2, Abcc9) subunits that combine with Kir6.2 (Kcnj11) subunits to form the ATP-sensitive potassium (KATP) channel in cardiac myocytes. Different isoform combinations endow the channel with distinct physiological and pharmacological properties, and we have recently reported that the molecular composition of sarcolemmal KATP channels is chamber specific in the mouse heart. KATP channel composition is determined by what subunits are expressed in a cell or tissue. In the present study, we explore the role of CpG methylation in regulating SUR1 and SUR2 expression. In HL-1 cardiomyocytes, as in atrial myocytes, SUR1 expression is markedly greater than SUR2. Consistent with CpG methylation-dependent silencing of SUR2 expression, bisulfite sequencing of genomic DNA isolated from HL-1 cells demonstrates that 57.6% of the CpGs in the promoter region of the SUR2 gene are methylated, compared with 0.14% of the the CpG residues in the SUR1 sequence. Moreover, treatment with 10 \u00b5M 5-aza-2'-deoxycytidine (Aza-dC) significantly increased both the unmethylated fraction of the SUR2 CpG island and mRNA expression. However, we cannot rule out additional mechanisms of Aza-dC action, as Aza-dC also causes a decrease in SUR1 expression and lower doses of Aza-dC do not alter the unmethylated DNA fraction but do elicit a small increase in SUR2 expression. The conclusion that DNA methylation alone is not the only regulator of SUR subunit expression is also consistent with observations in native myocytes, where the CpG islands of both SUR genes are essentially unmethylated in both atrial and ventricular myocytes. Collectively, these data demonstrate the potential for CpG methylation to regulate SURx subunit expression and raises the possibility that regulated or aberrant CpG methylation might play a role in controlling channel structure and function under different physiological conditions or different species.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "20033705",
+   "title": "Human K(ATP) channelopathies: diseases of metabolic homeostasis.",
+   "pubdate": "2010 Jul",
+   "abstract": "Assembly of an inward rectifier K+ channel pore (Kir6.1/Kir6.2) and an adenosine triphosphate (ATP)-binding regulatory subunit (SUR1/SUR2A/SUR2B) forms ATP-sensitive K+ (KATP) channel heteromultimers, widely distributed in metabolically active tissues throughout the body. KATP channels are metabolism-gated biosensors functioning as molecular rheostats that adjust membrane potential-dependent functions to match cellular energetic demands. Vital in the adaptive response to (patho)physiological stress, KATP channels serve a homeostatic role ranging from glucose regulation to cardioprotection. Accordingly, genetic variation in KATP channel subunits has been linked to the etiology of life-threatening human diseases. In particular, pathogenic mutations in KATP channels have been identified in insulin secretion disorders, namely, congenital hyperinsulinism and neonatal diabetes. Moreover, KATP channel defects underlie the triad of developmental delay, epilepsy, and neonatal diabetes (DEND syndrome). KATP channelopathies implicated in patients with mechanical and/or electrical heart disease include dilated cardiomyopathy (with ventricular arrhythmia; CMD1O) and adrenergic atrial fibrillation. A common Kir6.2 E23K polymorphism has been associated with late-onset diabetes and as a risk factor for maladaptive cardiac remodeling in the community-at-large and abnormal cardiopulmonary exercise stress performance in patients with heart failure. The overall mutation frequency within KATP channel genes and the spectrum of genotype-phenotype relationships remain to be established, while predicting consequences of a deficit in channel function is becoming increasingly feasible through systems biology approaches. Thus, advances in molecular medicine in the emerging field of human KATP channelopathies offer new opportunities for targeted individualized screening, early diagnosis, and tailored therapy.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "39344622",
+   "title": "[Clinical characteristics and genetic analysis of a child with Cant\u00fa syndrome due to variant of ABCC9 gene].",
+   "pubdate": "2024 Oct 10",
+   "abstract": "To explore the clinical characteristics and pathogenic variant in a child with Cant\u00fa syndrome (CS).",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "18974387",
+   "title": "Differential structure of atrial and ventricular KATP: atrial KATP channels require SUR1.",
+   "pubdate": "2008 Dec 5",
+   "abstract": "The isoform-specific structure of the ATP-sensitive potassium (K(ATP)) channel endows it with differential fundamental properties, including physiological activation and pharmacology. Numerous studies have convincingly demonstrated that the pore-forming Kir6.2 (KCNJ11) and regulatory SUR2A (ABCC9) subunits are essential elements of the sarcolemmal K(ATP) channel in cardiac ventricular myocytes. Using a novel antibody directed against the COOH terminus of SUR1 (ABCC8), we show that this K(ATP) subunit is also expressed in mouse myocardium and is the dominant SUR isoform in the atrium. This suggests differential sarcolemmal K(ATP) composition in atria and ventricles, and, to test this, K(ATP) currents were measured in isolated atrial and ventricular myocytes from wild-type and SUR1(-/-) animals. K(ATP) conductance is essentially abolished in SUR1(-/-) atrial myocytes but is normal in SUR1(-/-) ventricular myocytes. Furthermore, pharmacological properties of wild-type atrial K(ATP) match closely the properties of heterologously expressed SUR1/Kir6.2 channels, whereas ventricular K(ATP) properties match those of heterologously expressed SUR2A/Kir6.2 channels. Collectively, the data demonstrate a previously unappreciated K(ATP) channel heterogeneity: SUR1 is an essential component of atrial, but not ventricular, K(ATP) channels. Differential molecular make-up of the 2 channels underlies differential pharmacology, with important implications when considering sulfonylurea therapy or dissecting the role of cardiac K(ATP) pharmacologically, as well as for understanding of the role of diazoxide in preconditioning.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "41995661",
+   "title": "Biophysical Characterization of a Novel KCNJ8 Rare Variant Linked With Inherited and Acquired J Wave Syndrome.",
+   "pubdate": "2026 Jul",
+   "abstract": "Adenosine triphosphate (ATP)-sensitive potassium cardiac channels (KATP) are composed of inward rectifying potassium channel (Kir) subunit Kir6.1 or Kir6.2, encoded by KCNJ8 or KCNJ11, and the sulfonylurea receptor SUR2 or SUR1, encoded by ABCC9 or ABCC8.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "19744493",
+   "title": "Differential K(ATP) channel pharmacology in intact mouse heart.",
+   "pubdate": "2010 Jan",
+   "abstract": "Classically, cardiac sarcolemmal K(ATP) channels have been thought to be composed of Kir6.2 (KCNJ11) and SUR2A (ABCC9) subunits. However, the evidence is strong that SUR1 (sulfonylurea receptor type 1, ABCC8) subunits are also expressed in the heart and that they play a significant functional role in the atria. To examine this further, we have assessed the effects of isotype-specific potassium channel-opening drugs, diazoxide (specific to SUR1>SUR2A) and pinacidil (SUR2A>SUR1), in intact hearts from wild-type mice (WT, n=6), SUR1(-/-) (n=6), and Kir6.2(-/-) mice (n=5). Action potential durations (APDs) in both atria and ventricles were estimated by optical mapping of the posterior surface of Langendorff-perfused hearts. To confirm the atrial effect of both openers, isolated atrial preparations were mapped in both WT (n=4) and SUR1(-/-) (n=3) mice. The glass microelectrode technique was also used to validate optical action potentials. In WT hearts, diazoxide (300 microM) decreased APD in atria (from 33.8+/-1.9 ms to 24.2+/-1.1 ms, p<0.001) but was without effect in ventricles (APD 60.0+/-7.6 ms vs. 60.8+/-7.5 ms, respectively, NS), consistent with an atrial-specific role for SUR1. The absence of SUR1 resulted in loss of efficacy of diazoxide in SUR1(-/-) atria (APD 36.8+/-1.9 ms vs. 36.8+/-2.8 ms, respectively, NS). In contrast, pinacidil (300 microM) significantly decreased ventricular APD in both WT and SUR1(-/-) hearts (from 60.0+/-7.6 ms to 29.8+/-3.5 ms in WT, p<0.001, and from 63.5+/-2.1 ms to 24.8+/-3.8 ms in SUR1(-/-), p<0.001), but did not decrease atrial APD in either WT or SUR1(-/-) hearts. Glibenclamide (10 microM) reversed the effect of pinacidil in ventricles and restored APD to control values. The absence of Kir6.2 subunits in Kir6.2(-/-) hearts resulted in loss of efficacy of both openers (APD 47.2+/-2.2 ms vs. 47.6+/-2.1 ms and 50.8+/-2.4 ms, and 90.6+/-5.7 ms vs. 93.2+/-6.5 ms and 117.3+/-6.4 ms, for atria and ventricle in control versus diazoxide and pinacidil, respectively). Collectively, these results indicate that in the same mouse heart, significant differential K(ATP) pharmacology in atria and ventricles, resulting from SUR1 predominance in forming the atrial channel, leads to differential effects of potassium channel openers on APD in the two chambers.",
+   "query_tier": "primary"
+  },
+  {
+   "pmid": "24176758",
+   "title": "Mutation of KCNJ8 in a patient with Cant\u00fa syndrome with unique vascular abnormalities - support for the role of K(ATP) channels in this condition.",
+   "pubdate": "2013 Dec",
+   "abstract": "KCNJ8 (NM_004982) encodes the pore forming subunit of one of the ATP-sensitive inwardly rectifying potassium (KATP) channels. KCNJ8 sequence variations are traditionally associated with J-wave syndromes, involving ventricular fibrillation and sudden cardiac death. Recently, the KATP gene ABCC9 (SUR2, NM_020297) has been associated with the multi-organ disorder Cant\u00fa syndrome or hypertrichotic osteochondrodysplasia (MIM 239850) (hypertrichosis, macrosomia, osteochondrodysplasia, and cardiomegaly). Here, we report on a patient with a de novo nonsynonymous KCNJ8 SNV (p.V65M) and Cant\u00fa syndrome, who tested negative for mutations in ABCC9. The genotype and multi-organ abnormalities of this patient are reviewed. A careful screening of the KATP genes should be performed in all individuals diagnosed with Cant\u00fa syndrome and no mutation in ABCC9.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "21185839",
+   "title": "HMR 1098 is not an SUR isotype specific inhibitor of heterologous or sarcolemmal K ATP channels.",
+   "pubdate": "2011 Mar",
+   "abstract": "Murine ventricular and atrial ATP-sensitive potassium (K(ATP)) channels contain different sulfonylurea receptors (ventricular K(ATP) channels are Kir6.2/SUR2A complexes, while atrial K(ATP) channels are Kir6.2/SUR1 complexes). HMR 1098, the sodium salt of HMR 1883 {1-[[5-[2-(5-chloro-o-anisamido)ethyl]-2-methoxyphenyl]sulfonyl]-3-methylthiourea}, has been considered as a selective sarcolemmal (i.e. SUR2A-dependent) K(ATP) channel inhibitor. However, it is not clear whether HMR 1098 would preferentially inhibit ventricular K(ATP) channels over atrial K(ATP) channels. To test this, we used whole-cell patch clamp techniques on mouse atrial and ventricular myocytes as well as (86)Rb(+) efflux assays and excised inside-out patch clamp techniques on Kir6.2/SUR1 and Kir6.2/SUR2A channels heterologously expressed in COSm6 cells. In mouse atrial myocytes, both spontaneously activated and diazoxide-activated K(ATP) currents were effectively inhibited by 10 \u03bcM HMR 1098. By contrast, in ventricular myocytes, pinacidil-activated K(ATP) currents were inhibited by HMR 1098 at a high concentration (100 \u03bcM) but not at a low concentration (10 \u03bcM). Consistent with this finding, HMR 1098 inhibits (86)Rb(+) effluxes through Kir6.2/SUR1 more effectively than Kir6.2/SUR2A channels in COSm6 cells. In excised inside-out patches, HMR 1098 inhibited Kir6.2/SUR1 channels more effectively, particularly in the presence of MgADP and MgATP (mimicking physiological stimulation). Finally, dose-dependent enhancement of insulin secretion from pancreatic islets and decrease of blood glucose level confirm that HMR 1098 is an inhibitor of Kir6.2/SUR1-composed K(ATP) channels.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "17245405",
+   "title": "KATP channel mutation confers risk for vein of Marshall adrenergic atrial fibrillation.",
+   "pubdate": "2007 Feb",
+   "abstract": "A 53-year-old female presented with a 10-year history of paroxysmal atrial fibrillation (AF), precipitated by activity and refractory to medical therapy. In the absence of traditional risk factors for disease, a genetic defect in electrical homeostasis underlying stress-induced AF was explored.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "15613976",
+   "title": "Identification and pharmacological characterization of sarcolemmal ATP-sensitive potassium channels in the murine atrial HL-1 cell line.",
+   "pubdate": "2005 Jan",
+   "abstract": "Activation of ATP-sensitive potassium (KATP) channels is known to have cardioprotective effects during periods of ischemia and reperfusion, making these channels important targets for clinical drug discovery. Using electrophysiological techniques we identify KATP channels in a mouse atrial cell line (HL-1). HL-1 KATP channels exhibited a concentration-dependent inhibition by ATP (IC50 = 23.3 +/- 3.2 microM), a unitary single-channel conductance of 55 pS, and sensitivity to the isoform-specific KATP channel opener P1075 and inhibitor HMR1098. Adenoviral infection of a dominant-negative Kir6.2 subunit significantly reduced the P1075-sensitive sarcKATP current. Taken together, the data indicate that HL-1 KATP channels are composed of sulfonylurea receptor isoform SUR2A coupled to the pore-forming Kir6.2 subunit--the molecular makeup of sarcKATP channels found in native cardiac myocytes. Pharmacological activation of HL-1 cell KATP channels also resulted in action potential shortening. Using the membrane potential-sensitive dye DiBac4(3), we demonstrated that the sarcKATP channel opener P1075 (20 microM) produced a concentration-dependent hyperpolarization of a monolayer of HL-1 cells that could be reversed by channel inhibition with HMR1098 (20 microM). We conclude that the HL-1 cells are an excellent cell line for studying cardiac sarcKATP channels, and these cells may also provide an important tool for the testing of novel pharmacological modulators of KATP channels in fluorescence-based assays.",
+   "query_tier": "oldest"
+  },
+  {
+   "pmid": "15115899",
+   "title": "Nicorandil protects against lethal ischemic ventricular arrhythmias and up-regulates endothelial nitric oxide synthase expression and sulfonylurea receptor 2 mRNA in conscious rats with acute myocardial infarction.",
+   "pubdate": "2004 Jan",
+   "abstract": "Nicorandil is an adenosine triphosphate sensitive K (K-ATP) channel opener and a nitric oxide donor. K-ATP channels and nitric oxide are important factors in ischemic preconditioning, which in turn suppresses reperfusion arrhythmias. The present study sought to evaluate whether nicorandil suppresses ischemic-induced ventricular arrhythmias and enhances sulfonylurea receptors (SUR 2; subunit of K-ATP channel), endothelial nitric oxide (eNOS), and inducible nitric oxide (iNOS) expression in the left ventricle after myocardial infarction without reperfusion. Thirty male Sprague-Dawley rats at 7 weeks of age were separated into three groups, as follows. Acute myocardial infarction was induced in twenty rats by ligating the left main coronary artery. Ten of these twenty rats were continuously administered nicorandil at 3 mg/kg/day i.p. The other ten rats were left untreated. The ten controls were untreated and sham-operated. After coronary ligation, ventricular arrhythmias were evaluated from stored ECG signals. At 24 hours after treatment, eNOS, iNOS, and SUR2 mRNA levels and eNOS, iNOS expression in the left ventricle were determined by reverse transcription polymerase chain reaction (RT-PCR) and by immunohistochemical staining, respectively. Nicorandil suppressed the total number of ventricular arrhythmias from 1 to 2 hours, the total duration of ventricular tachycardia from 2 to 3 hours, and that of ventricular fibrillation from 1 to 2 and from 4 to 5 hours after coronary ligation. Nicorandil improved the survival rate 24 hours after coronary ligation. Levels of SUR2 mRNA increased only in left ventricles treated with nicorandil, particularly in the non-ischemic myocardium. eNOS mRNA was enhanced 2.2-fold in the area at risk in infarcted controls compared to sham-operated rats. In the non-ischemic area and area at risk of rats treated with nicorandil compared to sham-operated rats, eNOS mRNA was enhanced 3.3- and 2.7-fold, respectively. Staining indicated that the highest concentrations of eNOS occurred in the endothelium and myocardium of the non-ischemic area of rats treated with nicorandil. iNOS mRNA was present in both the area at risk and the non-ischemic area only in infarcted rats, and levels thereof were higher in the area at risk than in the non-ischemic area. However, there was no difference in iNOS mRNA levels between nicorandil-treated rats and controls. iNOS exhibited stronger staining in the area at risk than in the non-ischemic area of both nicorandil-treated and infarcted controls, with no differences between these two groups of rats. The mechanisms of protection against lethal ventricular tachyarrhythmia in nicorandil may increase nitric oxide release by upregulated eNOS expression through the opening of K-ATP channels and/or a K-ATP channels opener itself after acute myocardial infarction.",
+   "query_tier": "oldest"
+  }
+ ],
+ "kept_pmids": [
+  "31039256",
+  "36129056",
+  "25275207",
+  "38217872",
+  "42290677",
+  "41347799",
+  "26226329",
+  "35876283",
+  "15910874",
+  "12939542",
+  "12166651",
+  "11310586",
+  "40923965",
+  "35495129",
+  "23538276",
+  "20033705",
+  "39344622",
+  "18974387",
+  "41995661",
+  "19744493",
+  "17245405"
+ ]
+}

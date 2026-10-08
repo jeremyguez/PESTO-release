@@ -1,0 +1,798 @@
+{
+    "gene_name": "ABCC6",
+    "phenotype": "Height",
+    "synonyms": [
+        "Stature",
+        "Body height",
+        "Standing height",
+        "Linear growth",
+        "Tallness",
+        "Vertical measurement"
+    ],
+    "run_parameters": {
+        "model": "claude-haiku-4-5@vertex",
+        "temperature": 0.0,
+        "batch_size": null
+    },
+    "prompt_templates": {
+        "phenotype_synonyms_prompt": "You are a medical expert helping to identify alternative terms and synonyms for phenotypes/diseases.\n\nGiven the following phenotype: {phenotype}\n\nGenerate between 0 and 10 relevant synonyms or alternative terms that could be used to search for scientific literature about this phenotype. Include:\n- Alternative medical terminology\n- Common abbreviations\n- Related clinical terms\n- Different ways the condition might be described in literature\n\nIMPORTANT: \n- If the phenotype is already very specific and well-defined, you may return fewer synonyms (even 0).\n- Only include terms that are semantically equivalent or very closely related.\n- Do NOT include broader categories, subtypes, or related but distinct conditions.\n\nReturn your answer in this exact XML format:\n<response>\n<synonyms>\n<synonym>term 1</synonym>\n<synonym>term 2</synonym>\n...\n</synonyms>\n</response>\n\nIf you think no synonyms are needed, return:\n<response>\n<synonyms>\n</synonyms>\n</response>",
+        "novelty_assessment_prompt": "You are a scientific literature expert evaluating the genetic association between {gene_name} and {phenotype}.\n\nBelow is a list of scientific articles about {gene_name} and/or {phenotype}:\n\n{alias_note}{dismiss_note}\n\n{articles_list}\n\nClassify the gene\u2013phenotype relationship into ONE of four categories:\n\n1. **Established**  \n   Strong, replicated evidence that variants in {gene_name} CAUSE {phenotype}. Multiple clinical or mechanistic studies support a clear causal role.\n   Research used to prove this category has to be in Human.\n\n2. **Existing**\n   At least one credible study reports that variation in {gene_name} contributes to or is associated with {phenotype}, but evidence is limited or not definitive.  \n   Also choose **Existing** when variants in {gene_name} are associated with a phenotype that is a well-recognized precursor, subtype, mechanism, or risk factor strongly linked to {phenotype}.\n   Research used to prove this category has to be in Human.\n\n3. **Hypothesized**  \n   Literature suggests a possible relationship based on biology, even without direct evidence from genetic variants.  \n   Includes expression, functional data, pathway links, or relevant animal models.  \n   Excludes cases where gene and phenotype are merely co-mentioned without relevance.\n\n4. **Novel**  \n   No evidence that variants or biological activity of {gene_name} influence {phenotype}.  \n   Co-mentions are incidental and provide no logical basis.\n\nYour task:\n1. Read the article titles and abstracts.  \n2. Choose the best category.  \n3. Provide a brief justification (3\u20135 sentences).  \n4. Cite up to 10 relevant PMIDs from the provided list only.\n\nReturn your answer in **this exact XML format**:\n\n<response>\n  <verdict>Established|Existing|Hypothesized|Novel</verdict>\n  <justification>Your brief explanation (3\u20135 sentences)</justification>\n  <pmids>\n    <pmid>12345678</pmid>\n    ...\n  </pmids>\n</response>\n\nAdditional rules:\n- If uncertain between two categories, choose the *less novel* one.  \n- Hypothesized can apply without phenotype measurements if the gene\u2019s biology is directly relevant.  \n- Think step by step internally: if the studies used to prove \"Existing\" or \"Established\" are not in human but in an animal or in vitro experiments, downgrade to \"Hypothesized\".\n- Maximum 10 PMIDs."
+    },
+    "prompt_texts": {},
+    "pubmed_articles": [
+        {
+            "pmid": "31843680",
+            "title": "Hypophosphatemic osteosclerosis, hyperostosis, and enthesopathy associated with novel homozygous mutations of DMP1 encoding dentin matrix protein 1 and SPP1 encoding osteopontin: The first digenic SIBLING protein osteopathy?",
+            "pubdate": "2020 Mar",
+            "abstract": "The SIBLINGs are a subfamily of the secreted calcium-binding phosphoproteins and comprise five small integrin-binding ligand N-linked glycoproteins [dentin matrix protein-1 (DMP1), secreted phosphoprotein-1 (SPP1) also called osteopontin (OPN), integrin-binding sialoprotein (IBSP) also called bone sialoprotein (BSP), matrix extracellular phosphoglycoprotein (MEPE), and dentin sialophosphoprotein (DSPP)]. Each SIBLING has at least one \"acidic, serine- and aspartic acid-rich motif\" (ASARM) and multiple Ser-x-Glu/pSer sequences that when phosphorylated promote binding of the protein to hydroxyapatite for regulation of biomineralization. Mendelian disorders from loss-of-function mutation(s) of the genes that encode the SIBLINGs thus far involve DSPP causing various autosomal dominant dysplasias of dentin but without skeletal disease, and DMP1 causing autosomal recessive hypophosphatemic rickets, type 1 (ARHR1). No diseases have been reported from gain-of-function mutation(s) of DSPP or DMP1 or from alterations of SPP1, IBSP, or MEPE. Herein, we describe severe hypophosphatemic osteosclerosis and hyperostosis associated with skeletal deformity, short stature, enthesopathy, tooth loss, and high circulating FGF23 levels in a middle-aged man and young woman from an endogamous family living in southern India. Both shared novel homozygous mutations within two genes that encode a SIBLING protein: stop-gain (\"nonsense\") DMP1 (c.556G>T,p.Glu186Ter) and missense SPP1 (c.769C>T,p.Leu266Phe). The man alone also carried novel heterozygous missense variants within two additional genes that condition mineral homeostasis and are the basis for autosomal recessive disorders: CYP27B1 underlying vitamin D dependent rickets, type 1, and ABCC6 underlying both generalized arterial calcification of infancy, type 2 and pseudoxanthoma elasticum (PXE). By immunochemistry, his bone contained high amounts of OPN, particularly striking surrounding osteocytes. We review how our patients' disorder may represent the first digenic SIBLING protein osteopathy."
+        },
+        {
+            "pmid": "42366349",
+            "title": "Genomic partitioning and functional dissection of inbreeding depression for stature in Brown Swiss cattle.",
+            "pubdate": "2026 Jun 28",
+            "abstract": "Small effective population size and the disproportionately large use of few genetically superior bulls in artificial insemination lead to extensive runs of homozygosity and an increased risk of homozygosity for deleterious alleles in domestic cattle, which may cause inbreeding depression. The adverse effects of inbreeding on phenotypic performance are well established, but the genetic variants contributing to inbreeding depression remain largely unknown. This study aimed to analyse the impacts of inbreeding on stature (measured as height at the sacral bone) in a cohort of 15,306 Brown Swiss (BS) cows that have imputed genotypes at 20 million sequence variants and stature measurements as height at the sacral bone."
+        },
+        {
+            "pmid": "37312576",
+            "title": "Determinants of cervical spine disorders in military pilots: a systematic review.",
+            "pubdate": "2023 Jun 26",
+            "abstract": "Neck pain and cervical spine disorders are widespread among military cockpit aircrew pilots and are often recognized as occupational stressors."
+        },
+        {
+            "pmid": "40580806",
+            "title": "High dose arachidonic and docosahexaenoic acid in very preterm infants and neurodevelopment at 2 years - A double-blind randomized controlled trial.",
+            "pubdate": "2025 Aug",
+            "abstract": "The fatty acids arachidonic acid (ARA) and docosahexaenoic acid (DHA) accumulate in neural tissue in the last trimester, thus preterm infants have lower levels compared to their term-born peers. Our aim was to evaluate the impact of ARA and DHA supplementation in very preterm infants on neurodevelopmental outcomes at two years corrected age (CA). We also wanted to study the effect of in-hospital growth, socioeconomic factors and other possible covariates on neurodevelopmental outcomes for the entire study population."
+        },
+        {
+            "pmid": "30617375",
+            "title": "Celiac disease among at-risk individuals in Saudi Arabia.",
+            "pubdate": "2019 Jan",
+            "abstract": "To perform a meta-analysis for celiac diseases (CD) among at-risk populations in Kingdom of Saudi Arabia (KSA), as well as a comparison with our previously reported meta-analysis in the normal population."
+        },
+        {
+            "pmid": "34845728",
+            "title": "Bioprospecting plant growth-promoting rhizobacteria from rice genotypes and their influence on growth under aerobic conditions.",
+            "pubdate": "2022 Feb",
+            "abstract": "The bacteria that colonize plant roots and enhance plant growth by various mechanisms are known as plant growth-promoting rhizobacteria (PGPR). The functions of rhizobacteria stand substantially unexplored and detailed insights into the aerobic rice ecosystem are yet to be examined. In this study, we have isolated rhizobacteria from rice varieties grown under aerobic conditions. Seed germination test showed that strain Ekn 03 was significantly effective in stimulating germination, enhancing shoot and root length, and increasing dry matter accumulation in treated rice plants as compared to the uninoculated plants. Under greenhouse conditions, strain Ekn 03 treated rice varieties showed an overall increase in plant height by 7.63%, dry matter accumulation by 16.23%, and total chlorophyll content by 76.47%. Soil acetylene reduction assay (ARA) (4.17 nmole\u00a0ethylene/g\u00a0soil/h) and in-planta ARA (4.2\u2009\u00d7\u200910-2 \u2009nmole\u00a0ethylene/mg\u00a0fresh weight of plant/h) was significantly higher in Ekn 03 treated rice variety PB 1509 under aerobic conditions. Other rice varieties showed comparable performance on inoculation with strain Ekn 03. The endophytic and rhizospheric population of antibiotic tagged Ekn 03 was higher in the roots of PB 1509 (1.02\u2009\u00d7\u2009104 \u2009cfu/g\u00a0and 5.8\u2009\u00d7\u2009105\u2009 cfu/g\u00a0soil, respectively) compared to other rice varieties. 16S rDNA sequence analysis revealed that strain Ekn 03 was having 100% similarity with Pseudomonas protegens. This study suggests that strain Ekn 03 can be used as a microbial inoculant in rice plants under aerobic system of cultivation. This is the first report on the application of P. protegens as PGPR in rice."
+        },
+        {
+            "pmid": "8887160",
+            "title": "Clinical aspects of coeliac disease in children with insulin-dependent diabetes mellitus.",
+            "pubdate": "1996 Mar",
+            "abstract": "Coeliac disease (CD) is heterogeneous in its clinical presentation and pathological expression. Silent, latent and potential forms represent the submerged part of the so-called \"coeliac iceberg\". The association of insulin-dependent diabetes mellitus (IDDM) and CD has been widely reported. For the screening of CD in diabetic patients, anti-reticulin R1 (ARA-R1) and anti-endomysium (AEA) antibodies are more reliable markers than anti-gliadin (AGA) antibodies. Recent studies have reported an increased prevalence of CD in children with IDDM. In our experience intestinal biopsy confirmed a diagnosis of CD in 6 out of 172 diabetic patients, with a prevalence of 3.5%. Only occasionally does CD precede the onset of IDDM; more often CD is diagnosed shortly or sometimes years after the onset of diabetes. Typical gastrointestinal complaints of CD (such as diarrhoea, abdominal distension) are rare in IDDM patients, while atypical isolated signs or symptoms of CD are more common, in particular sideropenic anemia, short stature, delayed puberty, epilepsy, hypertransaminasemia, dyspeptic symptoms, herpetiform dermatitis, and recurrent aphthous stomatitis. It is recommended that all diabetic children, even those asymptomatic, should be screened yearly for CD, using a combination of AGA plus ARA-R1 and AEA."
+        },
+        {
+            "pmid": "40846003",
+            "title": "Structural characteristics of pectin polysaccharide CWP-3 and its protective effect on primary dysmenorrhea mice with qi stagnation and blood stasis.",
+            "pubdate": "2025 Sep",
+            "abstract": "Curcumae wenyujin Rhizoma (CWR) is extensively implemented in clinical practice for treating primary dysmenorrhea (PD) resulting from qi stagnation and blood stasis. However, the development of CWR-derived polysaccharides remains poorly investigated. In this study, the polysaccharide CWP-3 was isolated from CWR, and structurally characterized through FT-IR, HPLC, GC-MS, and NMR, which identified it as an RG-I-type pectin polysaccharide with a molecular weight of 423.6\u00a0kDa. CWP-3 consists of the monosaccharides Rha, GalA, Gal, and Ara (25.7: 28.6:42.8:2.9). The main backbone consisted of alternating 1,2-linked Rhap and 1,4-linked GalAp residues, with Gal and Ara forming the side chains, respectively. SEM revealed a porous, sheet-like morphology, while Congo Red staining and AFM analyses confirmed a triple helix structure with a height of 3.37\u00a0nm, and TG-DSC analysis indicated good thermal stability. In a mouse model of PD, 160\u00a0mg/kg CWP-3 reduced writhing by 70.3\u00a0%, prolonged coagulation time by 37.5\u00a0%, restored uterine and hepatic indices, and decreased AST, ALT, D2D, TXB2, IL-6, IL-1\u03b2, and TNF-\u03b1, while normalizing PGF\u2082\u03b1/PGE\u2082 levels. These results indicate that CWP-3 exerts blood-activating and analgesic effects through cytokine-mediated COX-2 suppression, suggesting its potential as a therapeutic candidate for PD with qi stagnation and blood stasis."
+        },
+        {
+            "pmid": "37856920",
+            "title": "Effect of arachidonic and docosahexaenoic acid supplementation on quality of growth in preterm infants: A secondary analysis of a randomized controlled trial.",
+            "pubdate": "2023 Dec",
+            "abstract": "A balanced supply of arachidonic acid (ARA) and docosahexaenoic acid (DHA) may be crucial for quality of growth in preterm infants. This secondary analysis of a randomized controlled trial aimed to determine the effect of enhanced ARA and DHA supplementation on growth and body composition in infants born before 29 weeks of gestation. Furthermore, we aimed to study associations between human milk feeding, growth patterns and body composition."
+        },
+        {
+            "pmid": "37975489",
+            "title": "Lung function in preterm infants at 3 months corrected age after neonatal LC-PUFA supplementation.",
+            "pubdate": "2024 Feb",
+            "abstract": "To test the hypothesis that long-chain polyunsaturated fatty acid (LC-PUFA) supplementation improves lung function at 3 months corrected age (CA) compared with standard treatment in very preterm infants. We also aimed to investigate the association between bronchopulmonary dysplasia (BPD), longitudinal growth, and lung function at 3 months CA."
+        },
+        {
+            "pmid": "36762331",
+            "title": "The use of hydrolyzed formulas as a method of correction of feeding and clinical rehabilitation of infants with atopy signs.",
+            "pubdate": "2022 Dec",
+            "abstract": "Our study showed that in formula-fed babies, the use of mixture X (containing 2'-FL (2'-fucosyllactose) - a type of milk oligosaccharide, as well as carefully studied Bifidobacterium lactis, DHA, ARA, and nucleotides) as the main product for feeding could ensure children's body with all the necessary nutrients. Furthermore, it can minimize the progression of clinical signs of atopic dermatitis and reduce the use of drugs. In addition, there was an improvement in height and weight parameters, proportional development of the child (p<0.05), an increase in the number of erythrocytes (erythrocytes), hemoglobin (Hb), mean cell volume (MCV) (p<0.05), a decrease in the number of leukocytes (WBC) (p<0.05), and leveling of skin signs of atopic dermatitis (AD) (according to SCORAD a decrease from 32.8\u00b15.5 to 16.1\u00b12.2, p<0.05). Based on these results, it is possible to recommend using mixture (X) with a preventive and rational purpose as a product of artificial feeding of children with a hereditary predisposition to allergies."
+        },
+        {
+            "pmid": "22371752",
+            "title": "Screening for coeliac disease among Egyptian children.",
+            "pubdate": "2010 Apr 30",
+            "abstract": "To screen for coeliac disease in Egyptian children with non-endocrinal short stature, refractory iron deficiency anaemia and type 1 diabetes. Also, to evaluate the sensitivity and specificity of different serological tests for diagnosis of coeliac disease (CD)."
+        },
+        {
+            "pmid": "10698025",
+            "title": "Angle recess area decreases with age in normal Japanese.",
+            "pubdate": "2000 Jan-Feb",
+            "abstract": "To investigate prospectively the relationships between anterior chamber angle configuration and refractive error, axial length, age, and body height in the Japanese."
+        },
+        {
+            "pmid": "41749768",
+            "title": "Increased Cervical Disc Height and Decreased Neck Pain and Disability Following Improvement in Cervical Lordosis and Posture Using Chiropractic BioPhysics.",
+            "pubdate": "2026 Feb 15",
+            "abstract": "Cervical degenerative disc disease (DDD) is associated with decreased disc height, spinal arthrosis, decreased spinal stability, neck pain (NP), and increased years living with disability and global disease burden."
+        },
+        {
+            "pmid": "32315678",
+            "title": "Preliminary structure and bioactivities of polysaccharide SMWP-U&E isolated from Salvia miltiorrhiza Bunge Residue.",
+            "pubdate": "2020 Aug 15",
+            "abstract": "The fractional polysaccharide SMWP-U&E was isolated from Salvia miltiorrhiza residue. SMWP-U&E consists of 91.40% carbohydrates and has an average molecular weight of 5.07\u00a0\u00d7\u00a0105\u00a0Da. The polysaccharides are mainly composed of arabinose (Ara), fructose (Fru), mannose (Man), glucose (Glc), and galactose (Gal), and their mole percentages are 3.72%, 4.11%, 6.18%, 32.08% and 53.91%, respectively. When effected on weaned piglets, 1.5\u00a0g/kg SMWP-U&E supplementation significantly increased the villus height to crypt depth ratio in ileum. PCR-denaturing gradient gel electrophoresis and qRT-PCR results indicated that SMWP-U&E supplementation could change the density of intestinal microbiota and the populations of Lactobacillus and Escherichia coli in jejunum, ileum, caecum, and colon. The supplementation also increased contents of IgA, IgG, IgM, IL-2, IFN-\u03b3, and IL-10; promoted T-AOC and SOD activities; and reduced MDA level in the serum. These findings suggest that SMWP-U&E improves digestion and nutrient absorption in weaned piglets, exerts beneficial effects on intestinal morphology and microflora, and enhances the immune and antioxidant capabilities in mode of weaned piglets. Thus, SMWP-U&E exhibits potential as a new type of plant-derived additive and novel prebiotics."
+        },
+        {
+            "pmid": "33989665",
+            "title": "Myristic acid defends against testicular oxidative stress, inflammation, apoptosis: Restoration of spermatogenesis, steroidogenesis in diabetic rats.",
+            "pubdate": "2021 Aug 1",
+            "abstract": "Diabetes mellitus (DM) may lead to testicular-related infertility while Myristic acid (MA) is beneficial to lower hyperglycaemia. Thus, we hypothesized that MA could protect testes against hyperglycaemia-induced damage in DM. DM was induced in adult male rats by high-fat diet consumption for 12\u00a0weeks, accompanied by a single dose streptozotocin injection. Following DM confirmation, the rats were fed orally with 10 and 20\u00a0mg/kg body weight MA for 28 consecutive days. After completion of treatment, rats were sacrificed and blood, cauda epididymis and testes were harvested. Serum was separated, epididymal sperm was collected for analysis. Molecular studies of the testes were performed by qPCR, Western blotting and immunostaining. MA was found to protect the testes against oxidative stress via preventing the upregulation of RAGE, Keap1, and the downregulation of Nrf2, NQO1, HO1, SOD, CAT and GPx. MA also prevented increase in testicular inflammation and apoptosis, as indicated by low inflammatory (NF-\u03baB p65, IKK\u03b2, TNF-\u03b1, IL-1\u03b2 and iNOS) and apoptosis (Bax and caspase-9), but high anti-apoptosis (Bcl-2) markers' levels. Besides, MA prevented the downregulation of testicular steroidogenic markers (3\u03b2HSD, 17\u03b2HSD, StAR, ARA-54 and CYP11A1). Sperm analysis revealed near normal sperm count, motility, viability, lower abnormal sperm morphology in diabetic rats received MA. MA also prevented the loss of germ cells via preventing the decreased in cell proliferative marker (PCNA) while maintaining near normal epithelial height, tubular and Leydig cell diameters in the testes in DM. MA protects the testes against damage in DM, thus maintaining spermatogenesis and steroidogenesis, consequently preserving male fertility in diabetes."
+        },
+        {
+            "pmid": "38231131",
+            "title": "Vastus Lateralis Muscle Size Is Differently Associated With the Different Regions of the Squat Force-Velocity and Load-Velocity Relationships, Rate of Force Development, and Physical Performance Young Men.",
+            "pubdate": "2024 Mar 1",
+            "abstract": "Cornejo-Daza, PJ, S\u00e1nchez-Valdepe\u00f1as, J, Rodiles-Guerrero, L, P\u00e1ez-Maldonado, JA, Ara, I, Le\u00f3n-Prados, JA, Alegre, LM, Pareja-Blanco, F, and Alcazar, J. Vastus lateralis muscle size is differently associated with the different regions of the squat force-velocity and load-velocity relationships, rate of force development, and physical performance young men. J Strength Cond Res 38(3): 450-458, 2024-The influence that regional muscle size and muscle volume may have on different portions of the force-velocity (F-V) and load-velocity (L-V) relationships, explosive force, and muscle function of the lower limbs is poorly understood. This study assessed the association of muscle size with the F-V and L-V relationships, rate of force development (RFD) and maximal isometric force in the squat exercise, and vertical jump performance via countermovement jump (CMJ) height. Forty-nine resistance-trained young men (22.7 \u00b1 3.3 years old) participated in the study. Anatomical cross-sectional area (ACSA) of the vastus lateralis (VLA) muscle was measured using the extended field of view mode in an ultrasound device at 3 different femur lengths (40% [distal], 57.5% [medial], and 75% [proximal]), and muscle volume was estimated considering the VLA muscle insertion points previously published and validated in this study. There were significant associations between all muscle size measures (except distal ACSA) and (a) forces and loads yielded at velocities ranging from 0 to 1.5 m\u00b7s -1 ( r = 0.36-0.74, p < 0.05), (b) velocities exerted at forces and loads ranging between 750-2,000 N and 75-200 kg, respectively ( r = 0.31-0.69, p < 0.05), and (c) RFD at 200 and 400 milliseconds ( r = 0.35-0.64, p < 0.05). Proximal and distal ACSA and muscle volume were significantly associated with CMJ height ( r = 0.32-0.51, p < 0.05). Vastus lateralis muscle size exhibited a greater influence on performance at higher forces or loads and lower velocities and late phases of explosive muscle actions. Additionally, proximal ACSA and muscle volume showed the highest correlation with the muscle function measures."
+        },
+        {
+            "pmid": "26751068",
+            "title": "The Ratio of Docosahexaenoic Acid and Arachidonic Acid in Infant Formula Influences the Fatty Acid Composition of the Erythrocyte Membrane in Low-Birth-Weight Infants.",
+            "pubdate": "2016",
+            "abstract": "The arachidonic acid (ARA) and docosahexaenoic acid (DHA) contents in the infant formula influence on the growth and development of low-birth-weight infants (LBWI). In Japan, many infant formulas are fortified only with DHA. We investigated the safety and efficacy of an infant formula (H2025A) fortified with DHA and ARA (DHA/ARA ratio of 2:1, the same as that in Japanese breast milk)."
+        },
+        {
+            "pmid": "37215219",
+            "title": "Impact of FADS gene variation and dietary fatty acid exposure on biochemical and anthropomorphic phenotypes in a Hispanic/Latino cohort.",
+            "pubdate": "2023",
+            "abstract": "Polyunsaturated fatty acids (PUFA) and highly unsaturated fatty acid (HUFA) synthetic products and their signaling metabolites play vital roles in immunity, inflammation, and brain development/function. Frequency differences of variants within the fatty acid desaturase (FADS) gene cluster affect levels of HUFAs, their biologically active products, and numerous physiological phenotypes. Fundamental questions remain regarding the impact of this genetic variation on the health of Hispanic/Latino populations."
+        },
+        {
+            "pmid": "32764909",
+            "title": "Exploration of n-6 and n-3 Polyunsaturated Fatty Acids Metabolites Associated with Nutritional Levels in Patients with Severe Stable Chronic Obstructive Pulmonary Disease.",
+            "pubdate": "2020",
+            "abstract": "Severe chronic obstructive pulmonary disease (COPD) is the terminal stage of the disease characterized by declined lung function, malnutrition, and poor prognosis. Such patients cannot tolerate long-time sports rehabilitation owing to dyspnea and fail to achieve the desired therapeutic effect; therefore, increasing nutritional support will be an important strategy for them. The present study applied metabolomics technology to evaluate the correlation between serum concentrations of polyunsaturated fatty acid (PUFA) metabolites, nutritional status, and lung function in patients with COPD to provide a theoretical basis for accurate nutritional support."
+        },
+        {
+            "pmid": "26471570",
+            "title": "Standardization of RP-HPLC methods for the detection of the major peanut allergens Ara h 1, Ara h 2 and Ara h 3.",
+            "pubdate": "2016 Mar 1",
+            "abstract": "Crude peanut extract (CPE) was analyzed for three major allergens (Ara h 1, h 2, and h 3) using a C12 and a C18 column at two wavelengths (280 and 220nm) and under different solvent conditions. HPLC profiles were compared for retention time, resolution, and peak heights. CPE samples were spiked with pure allergens to identify the peaks corresponding to allergens. The HPLC fractions of corresponding allergens were collected and freeze-dried in order to perform SDS-PAGE and immunoblotting tests. The best method was identified the one with a shorter retention time, better resolution, and greater peak height as compared with the other methods. In general, the peak heights were greater at 220nm than at 280nm. The major disadvantage of the C12 column was the need for two sets of conditions to identify the allergens as compared to the C18 column where all three allergens could be identified in one run."
+        },
+        {
+            "pmid": "17891014",
+            "title": "Intravitreal bevacizumab for the management of choroidal neovascularization in pseudoxanthoma elasticum.",
+            "pubdate": "2007 Sep",
+            "abstract": "To determine the results of intravitreal bevacizumab injections for the management of choroidal neovascularization (CNV) in patients with pseudoxanthoma elasticum (PXE)-associated angioid streaks."
+        },
+        {
+            "pmid": "26398793",
+            "title": "Silica distinctively affects cell wall features and lignocellulosic saccharification with large enhancement on biomass production in rice.",
+            "pubdate": "2015 Oct",
+            "abstract": "Rice is a typical silicon-accumulating crop with enormous biomass residues for biofuels. Silica is a cell wall component, but its effect on the plant cell wall and biomass production remains largely unknown. In this study, a systems biology approach was performed using 42 distinct rice cell wall mutants. We found that silica levels are significantly positively correlated with three major wall polymers, indicating that silica is associated with the cell wall network. Silicon-supplied hydroculture analysis demonstrated that silica distinctively affects cell wall composition and major wall polymer features, including cellulose crystallinity (CrI), arabinose substitution degree (reverse Xyl/Ara) of xylans, and sinapyl alcohol (S) proportion in three typical rice mutants. Notably, the silicon supplement exhibited dual effects on biomass enzymatic digestibility in the mutant and wild type (NPB) after pre-treatments with 1% NaOH and 1% H2SO4. In addition, silicon supply largely enhanced plant height, mechanical strength and straw biomass production, suggesting that silica rescues mutant growth defects. Hence, this study provides potential approaches for silicon applications in biomass process and bioenergy rice breeding."
+        },
+        {
+            "pmid": "17019769",
+            "title": "Study of flying height of culicid species in the northern part of the Republic of Korea.",
+            "pubdate": "2006 Jun",
+            "abstract": "The vertical distribution of mosquitoes (Diptera, Culicidae) was evaluated in Paju County in northern South Korea by using Centers for Disease Control and Prevention (CDC) miniature light traps with ultraviolet light and dry ice (CO2) as attractants. CDC traps were placed at 1, 3 and 5 m above the ground near rice paddies in a relatively open agricultural ara. Traps wer hung on two scaffold towers (6 m height) spaced approximately 300 m aprt. Each trap operated 9 nights from August 3 to 16, 2002, and collected 9,971 mosquitoes: Aedes Vexans nipponii, 145.2; Culex tritaeniorhynchus, 34.9; Anopheles sinensis, 21.3; and Culex pipiens, 17.3 female mosquitoes/trap/night. Average flight height was calculated from the total number of catches in both stations. Overall, Cx. pipiens (2.52 +/- 0.35 m) was found to be the highest flying species followed by An. sinensis (2.04 +/- 0.79 m), Ae. vexans nipponii (1.96 +/- 0.44 m), and Cx. tritaeniorhynchus (1.76 +/- 0.68 m), respectively. Although no significant difference in flying height among species was encountered, every species showed their own flight preference range, matching with their host preference."
+        },
+        {
+            "pmid": "34555774",
+            "title": "Sodium bicarbonate reduces the cooked hardness of lotus rhizome via side chain rearrangement and pectin degradation.",
+            "pubdate": "2022 Feb 15",
+            "abstract": "In this study, 0.1% (W/V) sodium bicarbonate (SB) solution was used to soften lotus rhizome, and the mechanism was characterized by monoclonal antibodies labeling (mAbs) and atomic force microscopy (AFM). The results showed that the cell wall of lotus rhizome was disintegrated under SB treatment. In addition, the mAbs results revealed that low-esterified homogalacturonan (HG) at the tricellular junction was degraded, the rearrangement of Ara and the interaction between Gal and cellulose may be related to the texture changes. Compared with distilled water treatment, SB treatment reduced the relative content of pectin from 34.1% to 19.1% while increased that of cellulose from 65.9% to 80.9%. AFM results revealed that the height of CSF skeleton decreased from about 32\u00a0nm to 1.5\u00a0nm. These results clearly demonstrate that cooking with 0.1% SB can soften lotus rhizome through degradation of pectin and arrangement of side chains of rhamnogalacturonan-\u2160 (RG-\u2160)."
+        },
+        {
+            "pmid": "26136761",
+            "title": "Cell wall composition and digestibility alterations in Brachypodium distachyon achieved through reduced expression of the UDP-arabinopyranose mutase.",
+            "pubdate": "2015",
+            "abstract": "Nucleotide-activated sugars are essential substrates for plant cell-wall carbohydrate-polymer biosynthesis. The most prevalent grass cell wall (CW) sugars are glucose (Glc), xylose (Xyl), and arabinose (Ara). These sugars are biosynthetically related via the UDP-sugar interconversion pathway. We sought to target and generate UDP-sugar interconversion pathway transgenic Brachypodium distachyon lines resulting in CW carbohydrate composition changes with improved digestibility and normal plant stature. Both RNAi-mediated gene-suppression and constitutive gene-expression approaches were performed. CWs from 336 T0 transgenic plants with normal appearance were screened for complete carbohydrate composition. RNAi mutants of BdRGP1, a UDP-arabinopyranose mutase, resulted in large alterations in CW carbohydrate composition with significant decreases in CW Ara content but with minimal change in plant stature. Five independent RNAi-RGP1 T1 plant lines were used for in-depth analysis of plant CWs. Real-time PCR analysis indicated that gene expression levels for BdRGP1, BdRGP2, and BdRGP3 were reduced in RNAi-RGP1 plants to 15-20% of controls. CW Ara content was reduced by 23-51% of control levels. No alterations in CW Xyl and Glc content were observed. Corresponding decreases in CW ferulic acid (FA) and ferulic acid-dimers (FA-dimers) were observed. Additionally, CW p-coumarates (pCA) were decreased. We demonstrate the CW pCA decrease corresponds to Ara-coupled pCA. Xylanase-mediated digestibility of RNAi-RGP1 Brachypodium CWs resulted in a near twofold increase of released total carbohydrate. However, cellulolytic hydrolysis of CW material was inhibited in leaves of RNAi-RGP1 mutants. Our results indicate that targeted manipulation of UDP-sugar biosynthesis can result in biomass with substantially altered compositions and highlights the complex effect CW composition has on digestibility."
+        },
+        {
+            "pmid": "2611855",
+            "title": "The measurement of villus cell population size in the mouse small intestine in normal and abnormal states: a comparison of absolute measurements with morphometric estimators in sectioned immersion-fixed material.",
+            "pubdate": "1989 Nov",
+            "abstract": "From a functional viewpoint, the most important part of the small intestinal mucosa is the villus epithelium; in the experimental study of intestinal adaptation it is often necessary to estimate the size of the population. For these reasons, a systematic study of methods of measuring the size of the villus cell population was undertaken in villi of normal morphology from control animals, and in villi of abnormal morphology as produced by treatment of mice with cytosine arabinoside (Ara-C). The villus cell population can be measured with precision and accuracy in both normal and abnormal mucosal states, with a relative standard error usually less than 5%, with good reproducibility, and with very low counting errors. In the mouse a practically linear relationship between the villus cell population size and position in the small intestine can be shown. In normal, control animals, linear estimates of villus population, for example the villus height, the villus core height, and the villus row count measured in sections of immersion-fixed material, were found to be rough approximations as indicators of the villus cell population, and were highly correlated with it. Product variables, comprising the products of a height with a width measurement, show a large improvement over the linear variables as estimators of villus cell population. In populations of abnormally shaped villi produced by Ara-C, both linear and product variables showed a considerable decrease in correlation with the villus cell population. Consequently, indirect, linear measurements of the villus population size do not accurately reflect the size of the villus population in abnormal villi. Finally, a method comparing theoretical and measured surface: volume indices was used to indicate that the most appropriate shape for normal mouse villi is a simple cylinder; this method would also be applicable for other villus cell populations."
+        },
+        {
+            "pmid": "33963895",
+            "title": "Shear wave elastography assessment and comparison study of the Achilles tendons in optimally conditioned asymptomatic young collegiate athletes.",
+            "pubdate": "2021 Dec",
+            "abstract": "To assess the functional parameters of the Achilles tendons among asymptomatic college level athletes using shear wave elastography (SWE) and to describe the relationship to athlete demographics and anthropometric lower extremity measurements."
+        },
+        {
+            "pmid": "34906475",
+            "title": "Genetic heterogeneity of heritable ectopic mineralization disorders in a large international cohort.",
+            "pubdate": "2022 Jan",
+            "abstract": "Heritable ectopic mineralization disorders comprise a group of conditions with a broad range of clinical manifestations in nonskeletal connective tissues. We report the genetic findings from a large international cohort of 478 patients afflicted with ectopic mineralization."
+        },
+        {
+            "pmid": "38815804",
+            "title": "Pseudoxanthoma elasticum - Genetics, pathophysiology, and clinical presentation.",
+            "pubdate": "2024 Sep",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is an autosomal-recessively inherited multisystem disease. Mutations in the ABCC6-gene are causative, coding for a transmembrane transporter mainly expressed in hepatocytes, which promotes the efflux of adenosine triphosphate (ATP). This results in low levels of plasma inorganic pyrophosphate (PPi), a critical anti-mineralization factor. The clinical phenotype of PXE is characterized by the effects of elastic fiber calcification in the skin, the cardiovascular system, and the eyes. In the eyes, calcification of Bruch's membrane results in clinically visible lesions, including peau d'orange, angioid streaks, and comet tail lesions. Frequently, patients must be treated for secondary macular neovascularization. No effective therapy is available for treating the cause of PXE, but several promising approaches are emerging. Finding appropriate outcome measures remains a significant challenge for clinical trials in this slowly progressive disease. This review article provides an in-depth summary of the current understanding of PXE and its multi-systemic manifestations. The article offers a detailed overview of the ocular manifestations, including their morphological and functional consequences, as well as potential complications. Lastly, previous and future clinical trials of causative treatments for PXE are discussed."
+        },
+        {
+            "pmid": "28486967",
+            "title": "Pseudoxanthoma elasticum.",
+            "pubdate": "2017 May 10",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is a genetic metabolic disease with autosomal recessive inheritance caused by mutations in the ABCC6 gene. The lack of functional ABCC6 protein leads to ectopic mineralization that is most apparent in the elastic tissues of the skin, eyes and blood vessels. The clinical prevalence of PXE has been estimated at between 1 per 100,000 and 1 per 25,000, with slight female predominance. The first clinical sign of PXE is almost always small yellow papules on the nape and sides of the neck and in flexural areas. The papules coalesce, and the skin becomes loose and wrinkled. The mid-dermal elastic fibers are short, fragmented, clumped and calcified. Dystrophic calcification of Bruch's membrane, revealed by angioid streaks, may trigger choroidal neovascularization and, ultimately, loss of central vision and blindness in late-stage disease. Lesions in small and medium-sized artery walls may result in intermittent claudication and peripheral artery disease. Cardiac complications (myocardial infarction, angina pectoris) are thought to be relatively rare but merit thorough investigation. Ischemic strokes have been reported. PXE is a metabolic disease in which circulating levels of an anti-mineralization factor are low. There is good evidence to suggest that the factor is inorganic pyrophosphate (PPi), and that the circulating low levels of PPi and decreased PPi/Pi ratio result from the lack of ATP release by hepatocytes harboring the mutant ABCC6 protein. However, the substrate(s) bound, transported or modulated by the ABCC6 protein remain unknown. More than 300 sequence variants of the ABCC6 gene have been identified. There is no cure for PXE; the main symptomatic treatments are vascular endothelial growth factor inhibitor therapy (for ophthalmic manifestations), lifestyle, lipid-lowering and dietary measures (for reducing vascular risk factors), and vascular surgery (for severe cardiovascular manifestations). Future treatment options may include gene therapy/editing and pharmacologic chaperone therapy."
+        },
+        {
+            "pmid": "33946315",
+            "title": "Diverse Genetic Landscape of Suspected Retinitis Pigmentosa in a Large Korean Cohort.",
+            "pubdate": "2021 Apr 30",
+            "abstract": "We conducted targeted next-generation sequencing (TGS) and/or whole exome sequencing (WES) to assess the genetic profiles of clinically suspected retinitis pigmentosa (RP) in the Korean population. A cohort of 279 unrelated Korean patients with clinically diagnosed RP and available family members underwent molecular analyses using TGS consisting of 88 RP-causing genes and/or WES with clinical variant interpretation. The combined genetic tests (TGS and/or WES) found a mutation in the 44 RP-causing genes and seven inherited retinal disease (IRD)-causing genes, and the total mutation detection rate was 57%. The mutation detection rate was higher in patients who experienced visual deterioration at a younger age (75.4%, age of symptom onset under 10 years) and who had a family history of RP (70.7%). The most common causative genes were EYS (8.2%), USH2A (6.8%), and PDE6B (4.7%), but mutations were dispersed among the 51 RP/IRD genes generally. Meanwhile, the PDE6B mutation was the most common in patients experiencing initial symptoms in their first decade, EYS in their second to third decades, and USH2A in their fifth decades and older. Of note, WES revealed some unexpected genotypes: ABCC6, CHM, CYP4V2, RS1, TGFBI, VPS13B, and WDR19, which were verified by ophthalmological re-phenotyping."
+        },
+        {
+            "pmid": "17617515",
+            "title": "Mutation detection in the ABCC6 gene and genotype-phenotype analysis in a large international case series affected by pseudoxanthoma elasticum.",
+            "pubdate": "2007 Oct",
+            "abstract": "Pseudoxanthoma elasticum (PXE), an autosomal recessive disorder with considerable phenotypic variability, mainly affects the eyes, skin and cardiovascular system, characterised by dystrophic mineralization of connective tissues. It is caused by mutations in the ABCC6 (ATP binding cassette family C member 6) gene, which encodes MRP6 (multidrug resistance-associated protein 6)."
+        },
+        {
+            "pmid": "32873932",
+            "title": "Reassessment of causality of ABCC6 missense variants associated with pseudoxanthoma elasticum based on Sherloc.",
+            "pubdate": "2021 Jan",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is a heritable disorder affecting elastic fibers in the skin, eyes, and cardiovascular system. It is caused by biallelic pathogenic variants in the ABCC6 gene. To date, over 300 ABCC6 variants are associated with PXE, more than half being missense variants. Correct variant interpretation is essential for establishing a direct link between the variant and the patient's phenotype and has important implications for diagnosis and treatment."
+        },
+        {
+            "pmid": "16763870",
+            "title": "[Pseudoxanthoma elasticum].",
+            "pubdate": "2006 Jun",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is an inherited disorder that is associated with accumulation of mineralized and fragmented elastic fibers in the skin, vessel walls, and Bruch's membrane. Clinically, patients exhibit characteristic lesions of the skin (soft, ivory-colored papules in a reticular pattern that predominantly affect the neck), the posterior segment of the eye (peau d'orange, angioid streaks, choroidal neovascularizations), and the cardiovascular system (peripheral arterial occlusive disease, coronary occlusion, gastrointestinal bleeding). There is no causal therapy. Recent studies suggest that PXE is inherited almost exclusively as an autosomal recessive trait. Its prevalence has been estimated to be 1:25,000-100,000. The ABCC6 gene on chromosome 16p13.1 is associated with the disease. Mutations within the ABCC6 gene cause reduced or absent transmembraneous transport that leads to accumulation of substrate and calcification of elastic fibers. Although based on clinical features the diagnosis appears readily possible, variability in phenotypic expressions and the low prevalence may be responsible that the disease is underdiagnosed. This review covers current knowledge of PXE and presents therapeutic approaches."
+        },
+        {
+            "pmid": "34205333",
+            "title": "Phenotypic Features and Genetic Findings in a Cohort of Italian Pseudoxanthoma Elasticum Patients and Update of the Ophthalmologic Evaluation Score.",
+            "pubdate": "2021 Jun 19",
+            "abstract": "Pseudoxanthoma elasticum (PXE) is a rare ectopic calcification genetic disease mainly caused by ABCC6 rare sequence variants. The clinical phenotype is characterized by typical dermatological, ophthalmological and cardiovascular manifestations, whose frequency and severity are differently reported in the literature."
+        }
+    ],
+    "pubmed_pmids": [
+        "31843680",
+        "42366349",
+        "37312576",
+        "40580806",
+        "30617375",
+        "34845728",
+        "8887160",
+        "40846003",
+        "37856920",
+        "37975489",
+        "36762331",
+        "22371752",
+        "10698025",
+        "41749768",
+        "32315678",
+        "33989665",
+        "38231131",
+        "26751068",
+        "37215219",
+        "32764909",
+        "26471570",
+        "17891014",
+        "26398793",
+        "17019769",
+        "34555774",
+        "26136761",
+        "2611855",
+        "33963895",
+        "34906475",
+        "38815804",
+        "28486967",
+        "33946315",
+        "17617515",
+        "32873932",
+        "16763870",
+        "34205333"
+    ],
+    "llm_raw_response": "Let me analyze the provided articles systematically to evaluate the genetic association between ABCC6 and Height.\n\n## Step-by-step analysis:\n\n1. **Identifying relevant articles about ABCC6:**\n   - PMID 31843680: Mentions ABCC6 heterozygous missense variants in a patient with short stature, but ABCC6 is not the primary focus; the main findings concern DMP1 and SPP1 mutations\n   - PMID 38815804: Comprehensive review of PXE (pseudoxanthoma elasticum) caused by ABCC6 mutations - focuses on skin, cardiovascular, and ocular manifestations; no mention of height\n   - PMID 28486967: Review of PXE caused by ABCC6 mutations - discusses skin, eye, and vascular manifestations; no height phenotype mentioned\n   - PMID 34906475: Genetic heterogeneity of heritable ectopic mineralization disorders - mentions ABCC6 but focuses on ectopic mineralization, not height\n   - PMID 32873932: ABCC6 variant interpretation in PXE - focuses on variant classification, not height\n   - PMID 16763870: PXE review - discusses skin, eye, and cardiovascular manifestations; no height association\n   - PMID 34205333: Italian PXE cohort study - phenotypic features and genetic findings; no height measurements reported\n   - PMID 33946315: Retinitis pigmentosa genetic study - mentions ABCC6 as an unexpected finding in retinal disease, not height-related\n\n2. **Identifying articles about Height:**\n   - PMID 42366349: Inbreeding depression for stature in Brown Swiss cattle - animal study, not human\n   - PMID 31843680: Mentions \"short stature\" in a patient with DMP1/SPP1 mutations who also carries ABCC6 variants, but ABCC6 is not implicated in the short stature phenotype\n\n3. **Critical assessment:**\n   - No study directly demonstrates that ABCC6 variants cause or are associated with height variation in humans\n   - PMID 31843680 is the only article mentioning both ABCC6 and short stature, but the short stature is attributed to DMP1 and SPP1 mutations, not ABCC6\n   - The ABCC6 variants in that patient are heterozygous and described as \"additional\" findings unrelated to the primary phenotype\n   - All other ABCC6 studies focus exclusively on PXE manifestations (skin, eye, cardiovascular) with no height measurements\n   - No biological mechanism linking ABCC6 to height regulation is discussed in any article\n\n<response>\n  <verdict>Novel</verdict>\n  <justification>\nNo credible evidence exists linking ABCC6 variants to height variation in humans. While one article (PMID 31843680) mentions both ABCC6 variants and short stature in the same patient, the short stature is clearly attributed to mutations in DMP1 and SPP1, not ABCC6. The ABCC6 variants are described as incidental heterozygous findings unrelated to the skeletal phenotype. All other ABCC6 literature focuses exclusively on pseudoxanthoma elasticum manifestations (skin, ocular, and cardiovascular) without any height measurements or phenotypic associations. No biological mechanism connecting ABCC6 function to height regulation is proposed or supported.\n  </justification>\n  <pmids>\n    <pmid>31843680</pmid>\n    <pmid>38815804</pmid>\n    <pmid>28486967</pmid>\n  </pmids>\n</response>",
+    "final_output": {
+        "verdict": "Novel",
+        "justification": "No credible evidence exists linking ABCC6 variants to height variation in humans. While one article (PMID 31843680) mentions both ABCC6 variants and short stature in the same patient, the short stature is clearly attributed to mutations in DMP1 and SPP1, not ABCC6. The ABCC6 variants are described as incidental heterozygous findings unrelated to the skeletal phenotype. All other ABCC6 literature focuses exclusively on pseudoxanthoma elasticum manifestations (skin, ocular, and cardiovascular) without any height measurements or phenotypic associations. No biological mechanism connecting ABCC6 function to height regulation is proposed or supported.",
+        "pmids": [
+            "31843680",
+            "38815804",
+            "28486967"
+        ]
+    },
+    "api_response": {
+        "verdict": "Novel",
+        "justification": "No credible evidence exists linking ABCC6 variants to height variation in humans. While one article (PMID 31843680) mentions both ABCC6 variants and short stature in the same patient, the short stature is clearly attributed to mutations in DMP1 and SPP1, not ABCC6. The ABCC6 variants are described as incidental heterozygous findings unrelated to the skeletal phenotype. All other ABCC6 literature focuses exclusively on pseudoxanthoma elasticum manifestations (skin, ocular, and cardiovascular) without any height measurements or phenotypic associations. No biological mechanism connecting ABCC6 function to height regulation is proposed or supported.",
+        "articles_found": 36,
+        "cited_articles": [
+            {
+                "pmid": "31843680",
+                "title": "Hypophosphatemic osteosclerosis, hyperostosis, and enthesopathy associated with novel homozygous mutations of DMP1 encoding dentin matrix protein 1 and SPP1 encoding osteopontin: The first digenic SIBLING protein osteopathy?",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/31843680/"
+            },
+            {
+                "pmid": "38815804",
+                "title": "Pseudoxanthoma elasticum - Genetics, pathophysiology, and clinical presentation.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/38815804/"
+            },
+            {
+                "pmid": "28486967",
+                "title": "Pseudoxanthoma elasticum.",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/28486967/"
+            }
+        ],
+        "open_targets_verdict": "Existing",
+        "open_targets_max_score": 0.33316873016364584,
+        "open_targets_traits": {
+            "ensembl_id": "ENSG00000091262",
+            "traits_count": 66,
+            "file_path": "data/runs/novel/open_targets_traits_ABCC6_Height.txt",
+            "traits": [
+                {
+                    "disease_id": "Orphanet_758",
+                    "name": "Pseudoxanthoma elasticum",
+                    "score": 0.8656263103902633,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013768",
+                    "name": "arterial calcification, generalized, of infancy, 2",
+                    "score": 0.8073057192234084,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_51608",
+                    "name": "Generalized arterial calcification of infancy",
+                    "score": 0.7650204549084912,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009925",
+                    "name": "autosomal recessive inherited pseudoxanthoma elasticum",
+                    "score": 0.7543566956510941,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0024308",
+                    "name": "pseudoxanthoma elasticum (inherited or acquired)",
+                    "score": 0.6229455925046676,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000556",
+                    "name": "Retinal dystrophy",
+                    "score": 0.502876497010971,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004509",
+                    "name": "hemoglobin measurement",
+                    "score": 0.4918088532213142,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004838",
+                    "name": "calcium measurement",
+                    "score": 0.49125712686524137,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004305",
+                    "name": "erythrocyte count",
+                    "score": 0.4857031579142363,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004348",
+                    "name": "hematocrit",
+                    "score": 0.48443591466761515,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010968",
+                    "name": "phosphate measurement",
+                    "score": 0.4784377782394607,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0100091",
+                    "name": "inherited pseudoxanthoma elasticum",
+                    "score": 0.46197481835587717,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005001",
+                    "name": "phenylalanine measurement",
+                    "score": 0.4405802803618209,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0005058",
+                    "name": "tyrosine measurement",
+                    "score": 0.4352775504737311,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004541",
+                    "name": "HbA1c measurement",
+                    "score": 0.43297152715112475,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003847",
+                    "name": "hereditary disease",
+                    "score": 0.4178050162658971,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0010972",
+                    "name": "blood phosphate measurement",
+                    "score": 0.40104765092913297,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2045260",
+                    "name": "red blood cell density",
+                    "score": 0.40068532357298525,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0000478",
+                    "name": "Abnormality of the eye",
+                    "score": 0.39729834378605444,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008171",
+                    "name": "nephrolithiasis",
+                    "score": 0.3962352003405634,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0009188",
+                    "name": "Red cell distribution width",
+                    "score": 0.3937859606212275,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0006678",
+                    "name": "bladder calculus",
+                    "score": 0.3910213012100636,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004696",
+                    "name": "sex hormone-binding globulin measurement",
+                    "score": 0.3906444952006908,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0004617",
+                    "name": "cystatin C measurement",
+                    "score": 0.37693482205544493,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0016175",
+                    "name": "cutis laxa",
+                    "score": 0.3409374159466374,
+                    "matched": false
+                },
+                {
+                    "disease_id": "HP_0200034",
+                    "name": "Papule",
+                    "score": 0.3400134663099256,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_VT0001253",
+                    "name": "body height",
+                    "score": 0.33316873016364584,
+                    "matched": true
+                },
+                {
+                    "disease_id": "EFO_0800130",
+                    "name": "5-methylthioadenosine (MTA) measurement",
+                    "score": 0.31563433679897457,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050200",
+                    "name": "prostate specific antigen amount",
+                    "score": 0.29988889708902566,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003608",
+                    "name": "optic atrophy",
+                    "score": 0.2938159844743379,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020245",
+                    "name": "CD166 antigen measurement",
+                    "score": 0.2673079816904562,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2044990",
+                    "name": "level of nodal modulator 1 in blood serum",
+                    "score": 0.263313323621521,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2045210",
+                    "name": "brain attribute",
+                    "score": 0.2573929407293087,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0003900",
+                    "name": "connective tissue disorder",
+                    "score": 0.2419309712835953,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0020507",
+                    "name": "interleukin-4 receptor subunit alpha measurement",
+                    "score": 0.240277276315494,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004846",
+                    "name": "placental abruption",
+                    "score": 0.240277276315494,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2044065",
+                    "name": "level of ubiquitin carboxyl-terminal hydrolase 4 in blood serum",
+                    "score": 0.22797483354041237,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2050062",
+                    "name": "serum alanine aminotransferase amount",
+                    "score": 0.22541038725783097,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0006945",
+                    "name": "diastolic blood pressure change measurement",
+                    "score": 0.22479532459650198,
+                    "matched": false
+                },
+                {
+                    "disease_id": "OBA_2045291",
+                    "name": "cerebrospinal fluid composition attribute",
+                    "score": 0.21725554764883748,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0800931",
+                    "name": "X-25520 measurement",
+                    "score": 0.21725554764883748,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005093",
+                    "name": "skin disorder",
+                    "score": 0.12929238475608365,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0007256",
+                    "name": "hepatocellular carcinoma",
+                    "score": 0.09239936817983817,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005070",
+                    "name": "neoplasm",
+                    "score": 0.08307385370231708,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008895",
+                    "name": "hereditary arterial and articular multiple calcification syndrome",
+                    "score": 0.07798217062703805,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018328",
+                    "name": "homozygous familial hypercholesterolemia",
+                    "score": 0.07091144070995985,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018891",
+                    "name": "familial tumoral calcinosis",
+                    "score": 0.0650982678450888,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0060714",
+                    "name": "tumoral calcinosis, hyperphosphatemic, familial, 2",
+                    "score": 0.06314045962932488,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_411",
+                    "name": "Hyperlipoproteinemia type 1",
+                    "score": 0.06225711244609309,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0002474",
+                    "name": "primary hyperoxaluria",
+                    "score": 0.060032033664613,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0005382",
+                    "name": "bone Paget disease",
+                    "score": 0.05948182439008783,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0700513",
+                    "name": "apolipoprotein A-I deficiency",
+                    "score": 0.05927321709433247,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008877",
+                    "name": "blue diaper syndrome",
+                    "score": 0.0588592876570856,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0013533",
+                    "name": "hyperlipidemia due to hepatic triglyceride lipase deficiency",
+                    "score": 0.05883156916798426,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008261",
+                    "name": "hereditary sclerosing poikiloderma, Weary type",
+                    "score": 0.05858949436316578,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018999",
+                    "name": "LCAT deficiency",
+                    "score": 0.056672606850201125,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0008380",
+                    "name": "retinoblastoma",
+                    "score": 0.0566537172131839,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0019200",
+                    "name": "retinitis pigmentosa",
+                    "score": 0.05649574030429893,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0015612",
+                    "name": "Dent disease",
+                    "score": 0.05576849115427192,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0004981",
+                    "name": "atrial fibrillation",
+                    "score": 0.055705334241634666,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009823",
+                    "name": "primary hyperoxaluria type 1",
+                    "score": 0.05557341476572637,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0009824",
+                    "name": "primary hyperoxaluria type 2",
+                    "score": 0.054716297486070105,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0010225",
+                    "name": "Dent disease type 1",
+                    "score": 0.05385816386181345,
+                    "matched": false
+                },
+                {
+                    "disease_id": "MONDO_0018160",
+                    "name": "hereditary retinoblastoma",
+                    "score": 0.05304579654289524,
+                    "matched": false
+                },
+                {
+                    "disease_id": "Orphanet_300547",
+                    "name": "Autosomal recessive infantile hypercalcemia",
+                    "score": 0.05087543884625934,
+                    "matched": false
+                },
+                {
+                    "disease_id": "EFO_0000544",
+                    "name": "infection",
+                    "score": 0.05024232802297029,
+                    "matched": false
+                }
+            ],
+            "articles": [
+                {
+                    "pmid": "40968291",
+                    "title": "Pan-UK Biobank genome-wide association analyses enhance discovery and resolution of ancestry-enriched effects.",
+                    "abstract": "",
+                    "year": "2025 Oct",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "37377600",
+                    "title": "Variants in JAZF1 are associated with asthma, type 2 diabetes, and height in the United Kingdom biobank population.",
+                    "abstract": "",
+                    "year": "2023",
+                    "source": "gwas_credible_sets"
+                },
+                {
+                    "pmid": "36224396",
+                    "title": "A saturated map of common genetic variants associated with human height.",
+                    "abstract": "",
+                    "year": "2022 Oct",
+                    "source": "gwas_credible_sets"
+                }
+            ],
+            "ot_synonym_selection_usage": {
+                "text": "VERDICT: ALREADY KNOWN\nBASIS: body height\nREASON: \"Height\" is the same trait as the listed \"body height.\"",
+                "input_tokens": 1728,
+                "output_tokens": 48,
+                "flex": false
+            },
+            "match": {
+                "method": "broad_opus",
+                "matched_id": "OBA_VT0001253",
+                "basis": "body height",
+                "reason": "\"Height\" is the same trait as the listed \"body height.\"",
+                "verdict_text": "ALREADY KNOWN",
+                "unresolved_basis": false
+            }
+        },
+        "synonyms": [
+            "Stature",
+            "Body height",
+            "Standing height",
+            "Linear growth",
+            "Tallness",
+            "Vertical measurement"
+        ],
+        "pubmed_pmids": [
+            "31843680",
+            "42366349",
+            "37312576",
+            "40580806",
+            "30617375",
+            "34845728",
+            "8887160",
+            "40846003",
+            "37856920",
+            "37975489",
+            "36762331",
+            "22371752",
+            "10698025",
+            "41749768",
+            "32315678",
+            "33989665",
+            "38231131",
+            "26751068",
+            "37215219",
+            "32764909",
+            "26471570",
+            "17891014",
+            "26398793",
+            "17019769",
+            "34555774",
+            "26136761",
+            "2611855",
+            "33963895",
+            "34906475",
+            "38815804",
+            "28486967",
+            "33946315",
+            "17617515",
+            "32873932",
+            "16763870",
+            "34205333"
+        ]
+    }
+}
