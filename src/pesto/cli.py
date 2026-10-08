@@ -397,8 +397,8 @@ def build_parser():
                    help="which model ranks the answer for closeness: `biolord` "
                         "finds ties that run through a disease rather than "
                         "through a word, `sapbert` is a little faster, `none` "
-                        "reads the whole answer (default: %s)"
-                        % config.OT_ENCODER)
+                        "reads the whole answer (default: %s; `none` when "
+                        "PyTorch is not installed)" % config.OT_ENCODER)
     p.add_argument("--ot-top", type=int, metavar="N",
                    help="how many of the nearest traits are read; 0 reads them "
                         "all (default: %d)" % config.OT_TOP_K)
@@ -440,6 +440,12 @@ def main(argv=None):
         return download_models()
 
     args = build_parser().parse_args(argv)
+    if (not config.TORCH_INSTALLED and not args.ot_encoder
+            and not os.environ.get("OT_ENCODER") and not args.show_pipeline):
+        print("pesto: PyTorch is not installed, so the Open Targets branch grades "
+              "every trait associated with the gene instead of the 20 nearest, "
+              "which costs up to about $0.50 a pair for well-studied genes. See "
+              "'Without PyTorch' in the README.", file=sys.stderr)
     # Describing a pipeline calls nothing, so it needs no key.
     if args.show_pipeline:
         reader, worker = args.model, args.model_fast or args.model

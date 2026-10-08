@@ -301,6 +301,8 @@ def _load_match_sidecar(path, matcher=None, encoder=None, top_k=None,
         return None
     if not record.get("shortlist") or not record.get("graded"):
         return None
+    if not any(g.get("tag") for g in record["graded"]):
+        return None
     return record
 
 

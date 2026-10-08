@@ -11,6 +11,7 @@ paper/ directory, which is what keeps their paths unchanged.
 
 API keys are not read here: see credentials.py.
 """
+import importlib.util
 import os
 
 # --- Path Configuration ---
@@ -66,7 +67,12 @@ DEFAULT_SEED = 42
 OT_MATCHER = "tagged_shortlist"
 # Which embedding model ranks the answer: "biolord", "sapbert", or "none" to
 # read the whole list. See ot_shortlist.py for what the choice costs and buys.
-OT_ENCODER = os.environ.get("OT_ENCODER", "biolord")
+# An install without PyTorch cannot rank, so it reads the whole list instead;
+# the encoder is part of the cache key, so those runs are never mistaken for
+# ranked ones.
+TORCH_INSTALLED = (importlib.util.find_spec("torch") is not None and
+                   importlib.util.find_spec("transformers") is not None)
+OT_ENCODER = os.environ.get("OT_ENCODER", "biolord" if TORCH_INSTALLED else "none")
 # How many of the nearest traits are read. Zero or less reads the whole answer.
 OT_TOP_K = int(os.environ.get("OT_TOP_K", "20"))
 # Whether claude-haiku sieves the shortlist before claude-opus grades it. It

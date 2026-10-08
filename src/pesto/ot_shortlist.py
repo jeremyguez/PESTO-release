@@ -78,15 +78,13 @@ class Encoder:
             import torch
             from transformers import AutoModel, AutoTokenizer
         except ImportError as exc:
-            # A hard dependency, so a missing one means a broken install rather
-            # than a choice not taken. Still worth naming the way past it, since
-            # someone stuck on a machine that cannot hold torch can run without
-            # it at twice the reading cost.
+            # Reached only when an encoder was asked for by name: without
+            # torch the default is already `none`.
             raise RuntimeError(
-                f"{exc.name} is missing, though it is a dependency of this "
-                f"package: reinstall with pip install pesto-genetics. To carry "
-                f"on without it, --ot-encoder none reads the whole Open Targets "
-                f"answer instead, which costs about twice as much a pair."
+                f"--ot-encoder {key} needs {exc.name}, which is not installed. "
+                f"Install it with pip install torch transformers, or drop the "
+                f"option: without them PESTO reads the whole Open Targets "
+                f"answer instead (see 'Without PyTorch' in the README)."
             ) from exc
         name = ENCODERS[key]
         self.torch = torch

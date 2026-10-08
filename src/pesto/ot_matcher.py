@@ -209,6 +209,12 @@ def _match_tagged(gene, phenotype, traits, model=None, temperature=0.0,
         tokens[which + "_out"] = res.get("output_tokens") or 0
         return res
 
+    # Room for one line per trait on top of the model's thinking. 4096 fits the
+    # twenty nearest; read whole (--ot-encoder none), a gene's answer runs to
+    # several hundred traits, and a cut-off answer carries no tag at all.
+    per_trait = 128 if reasons else 64
+    room = min(64000, max(4096, 2048 + per_trait * len(short)))
+
     gate_text = ""
     dropped_ids = []
     if gate and short:
@@ -218,7 +224,8 @@ def _match_tagged(gene, phenotype, traits, model=None, temperature=0.0,
         res = spend(call_llm_with_usage(
             template.format(gene=gene, phenotype=phenotype,
                             traits=_render(short)),
-            GATE_MODEL, temperature, agent_name="ot_tagged_gate_agent"), "gate")
+            GATE_MODEL, temperature, agent_name="ot_tagged_gate_agent",
+            max_tokens=room), "gate")
         gate_text = res.get("text") or ""
         cut = _parse_gate(gate_text, len(short))
         # Never everything: a sieve that empties the list has misread the task,
@@ -234,9 +241,16 @@ def _match_tagged(gene, phenotype, traits, model=None, temperature=0.0,
         template.format(gene=gene, phenotype=phenotype,
                         traits=_render(short)),
         model or BROAD_MODEL, temperature,
-        agent_name="ot_tagged_match_agent"), "read")
+        agent_name="ot_tagged_match_agent", max_tokens=room), "read")
     tag_text = res.get("text") or ""
     tags, why = _parse_tags(tag_text, len(short))
+    # A cut-off or empty answer is a failed reading, not an answer: read as
+    # one, the traits it never reached would count as unrelated and pull the
+    # pair towards Novel.
+    if short and (res.get("stop_reason") == "max_tokens" or not any(tags)):
+        raise RuntimeError(
+            f"the Open Targets grader tagged {sum(1 for t in tags if t)} of "
+            f"{len(short)} traits (stop reason: {res.get('stop_reason')})")
     graded = [{"disease_id": t.get("disease_id"),
                "name": t.get("name", ""),
                "score": t.get("score"),

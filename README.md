@@ -28,9 +28,23 @@ redraws every figure and table of the manuscript.
 
 ## Install
 
+PESTO is a command-line tool, and [pipx](https://pipx.pypa.io) installs it in an
+environment of its own:
+
 ```bash
-pip install pesto-genetics            # or: pipx install pesto-genetics
+pipx install pesto-genetics
 ```
+
+or, in a virtual environment you manage yourself:
+
+```bash
+python3 -m venv ~/venvs/pesto
+~/venvs/pesto/bin/pip install pesto-genetics
+~/venvs/pesto/bin/pesto --help
+```
+
+On Debian and Ubuntu a plain `pip install` outside a virtual environment is
+refused (`externally-managed-environment`); use one of the two above.
 
 The install is about 1.3 GB, nearly all of it PyTorch, which the Open Targets
 branch uses to rank traits locally. On Linux, pip's default index serves the CUDA
@@ -38,11 +52,49 @@ build of torch; nothing here uses a GPU, and the CPU build is several hundred
 megabytes smaller:
 
 ```bash
-pip install pesto-genetics --extra-index-url https://download.pytorch.org/whl/cpu
+pipx install pesto-genetics --pip-args="--extra-index-url https://download.pytorch.org/whl/cpu"
 ```
 
 The embedding model weights (439 MB) are downloaded on first use into
 `~/.cache/huggingface`. `pesto --download-models` fetches them beforehand.
+
+### Without PyTorch
+
+PyTorch serves one step only: ranking a gene's Open Targets traits by closeness
+to the phenotype, so that Claude grades the 20 nearest. Without it the install is
+about 200 MB:
+
+```bash
+pipx install pesto-genetics --pip-args="--no-deps"
+pipx inject pesto-genetics anthropic pandas numpy requests python-dotenv
+```
+
+or, in a virtual environment:
+
+```bash
+python3 -m venv ~/venvs/pesto
+~/venvs/pesto/bin/pip install anthropic pandas numpy requests python-dotenv
+~/venvs/pesto/bin/pip install --no-deps pesto-genetics
+```
+
+PESTO notices that PyTorch is missing, says so, and reads every trait Open
+Targets associates with the gene instead of the 20 nearest (the same as
+`--ot-encoder none`). What that changes:
+
+- **The literature branch is unaffected**: same searches, same reading, same
+  verdicts.
+- **The Open Targets branch costs much more for well-studied genes**, because
+  Claude Opus grades every trait instead of 20. The cost grows with the number of
+  traits Open Targets associates with the gene: a few cents for a gene with a few
+  dozen, about $0.50 for one with several hundred (PCSK9 and familial
+  hypercholesterolemia: 438 traits, $0.53 for this branch against $0.03 with
+  PyTorch, and three minutes instead of one).
+- **Its verdicts can differ at the margin from the paper's**, which used the
+  BioLORD ranking. The grader sees every associated trait rather than the 20
+  nearest, so it can find a related trait the ranking would have left out, and
+  it reads a list of several hundred less closely than a list of 20.
+
+Installing `torch` and `transformers` afterwards restores the default.
 
 ## Your Anthropic API key
 

@@ -65,7 +65,13 @@ def _call_anthropic(prompt: str, model: str, temperature: float,
                     kwargs["temperature"] = temperature
                 else:
                     kwargs["extra_body"] = {"temperature": temperature}
-            message = client_.messages.create(**kwargs)
+            # The SDK refuses a long non-streamed request (a large max_tokens
+            # can run past ten minutes), so those are streamed and collected.
+            if max_tokens > 8192:
+                with client_.messages.stream(**kwargs) as stream:
+                    message = stream.get_final_message()
+            else:
+                message = client_.messages.create(**kwargs)
             usage = getattr(message, "usage", None)
             input_tokens = getattr(usage, "input_tokens", 0) or 0
             output_tokens = getattr(usage, "output_tokens", 0) or 0
@@ -114,6 +120,7 @@ def call_llm_with_usage(prompt: str, model: str = "claude-haiku-4-5",
     return {"text": result.get("text"),
             "input_tokens": result.get("input_tokens", 0),
             "output_tokens": result.get("output_tokens", 0),
+            "stop_reason": result.get("stop_reason"),
             "flex": False}
 
 
