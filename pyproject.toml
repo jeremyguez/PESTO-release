@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pesto-genetics"
-version = "0.2.0"
+version = "0.2.1"
 description = "PESTO: is a gene-phenotype association already known? Prior evidence from the literature and from Open Targets"
 readme = "README.md"
 requires-python = ">=3.10"

@@ -8,7 +8,8 @@ paid run.
 The Anthropic key is read from the environment, as on the command line. When it
 is not there the page asks for it; the key then lives in this process's memory
 until the server stops. It is never written to disk and never sent anywhere but
-api.anthropic.com (see pesto/credentials.py).
+api.anthropic.com (see pesto/credentials.py). The optional NCBI key can be
+pasted in the settings and is kept the same way, sent only to NCBI.
 
   pesto browser                     serve and open the page
   pesto browser --runs-dir DIR      keep new runs in DIR (remembered)
@@ -30,6 +31,7 @@ import requests
 
 from .. import config
 from ..credentials import anthropic_api_key
+from ..services import pubmed_service
 from . import export, runner, runs
 
 STATIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
@@ -47,6 +49,18 @@ def _check_key(key):
                          timeout=20)
         return r.status_code == 200
     except requests.RequestException:
+        return False
+
+
+def _check_ncbi_key(key):
+    """True if NCBI accepts the key. An empty PubMed search: costs nothing."""
+    try:
+        r = requests.get(f"{config.BASE_URL_NCBI}esearch.fcgi",
+                         params={"db": "pubmed", "term": "pesto", "retmax": 0,
+                                 "retmode": "json", "api_key": key},
+                         timeout=20)
+        return r.status_code == 200 and "error" not in r.json()
+    except (requests.RequestException, ValueError):
         return False
 
 
@@ -118,6 +132,7 @@ class Handler(BaseHTTPRequestHandler):
                     "version": runs._version(),
                     "key": bool(anthropic_api_key()),
                     "key_from_page": _KEY_FROM_PAGE["set"],
+                    "ncbi_key": bool(pubmed_service.NCBI_API_KEY),
                     "runs_dir": runs.runs_dir(),
                     "torch": config.TORCH_INSTALLED})
             if url.path == "/api/runs":
@@ -157,6 +172,13 @@ class Handler(BaseHTTPRequestHandler):
                     return self._send(400, {"error": "Anthropic did not accept "
                                                      "this key."})
                 _use_key(key)
+                return self._send(200, {"ok": True})
+            if url.path == "/api/ncbi-key":
+                key = (body.get("key") or "").strip()
+                if key and not _check_ncbi_key(key):
+                    return self._send(400, {"error": "NCBI did not accept "
+                                                     "this key."})
+                pubmed_service.use_key(key)
                 return self._send(200, {"ok": True})
             if url.path == "/api/settings":
                 return self._send(200, {"runs_dir": runs.set_runs_dir(

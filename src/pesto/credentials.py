@@ -9,6 +9,10 @@ here and nowhere else, from either of:
     (~/.local/share/pesto/.env, or $PESTO_PROJECT_ROOT/.env when that is set).
     A variable already set in the shell wins over the file.
 
+`pesto browser` also accepts either key pasted in its page. It is then held in
+the memory of that process until it stops (browser/server.py), like a key read
+from the environment, and is handled exactly as below.
+
 PESTO never writes a key to disk, never prints it, and never records it in a
 saved run. The Anthropic key is handed to the official `anthropic` client in
 services/llm_service.py, which sends it to api.anthropic.com and nowhere else.

@@ -15,7 +15,8 @@ import requests
 
 from . import ot_matcher
 from .config import BASE_URL_NCBI
-from .services.pubmed_service import NCBI_API_KEY, make_api_request_with_retry
+from .services import pubmed_service
+from .services.pubmed_service import make_api_request_with_retry
 
 OPEN_TARGETS_URL = "https://api.platform.opentargets.org/api/v4/graphql"
 
@@ -84,8 +85,8 @@ def _enrich_with_pubmed_metadata(articles):
         "id": ",".join(pmids),
         "retmode": "json"
     }
-    if NCBI_API_KEY:
-        params["api_key"] = NCBI_API_KEY
+    if pubmed_service.NCBI_API_KEY:
+        params["api_key"] = pubmed_service.NCBI_API_KEY
 
     resp = make_api_request_with_retry(esummary_url, params)
     if not resp:

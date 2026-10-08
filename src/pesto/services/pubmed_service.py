@@ -109,6 +109,19 @@ _rate_gate = threading.Lock()
 _next_slot = [0.0]
 
 
+def use_key(key):
+    """Switch the NCBI key, and the pace that goes with it, in a running process.
+
+    `pesto browser` calls this when a key is pasted in the page. Every request
+    reads NCBI_API_KEY at the moment it is built, so runs already under way
+    pick the key up from their next request.
+    """
+    global NCBI_API_KEY, NCBI_MAX_PER_SECOND
+    with _rate_gate:
+        NCBI_API_KEY = key or None
+        NCBI_MAX_PER_SECOND = 9.0 if NCBI_API_KEY else 2.5
+
+
 def _wait_for_slot():
     with _rate_gate:
         now = time.monotonic()

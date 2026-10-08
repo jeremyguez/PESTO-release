@@ -136,7 +136,7 @@ details p { font-size: 13px; margin: 6px 0 0; }
   justify-content: center; z-index: 10; }
 .modal.hidden { display: none; }
 .modal-card { background: var(--panel); border-radius: 12px; padding: 22px 24px; width: min(520px, 92vw);
-  box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+  max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
 .modal-card p { color: var(--muted); }
 .note { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
   font-size: 13px; color: var(--muted); }
@@ -254,11 +254,34 @@ $("settings-btn").onclick = () => {
     <p class="small">Runs already made stay where they are; open them with “Open a run folder”.</p>
     <div class="row" style="justify-content:flex-end">
       <button class="btn" onclick="closeModal()">Cancel</button>
-      <button class="btn primary" id="dir-ok">Save</button></div>`);
+      <button class="btn primary" id="dir-ok">Save</button></div>
+    <h2 style="margin-top:22px">NCBI API key <span class="small" style="font-weight:400">(optional)</span></h2>
+    <p>PubMed answers ${S.status.ncbi_key ? "<b>10 requests a second</b>: a key is in use"
+      : "<b>3 requests a second</b> without a key"}. A free key from your
+      <a href="https://account.ncbi.nlm.nih.gov/settings/" target="_blank" rel="noopener">NCBI account settings</a>
+      (“API Key Management”) raises it to 10, which makes runs of many pairs faster. Verdicts are the same either way.</p>
+    <div class="note">Your key stays on this computer. It is kept in memory only while
+    <code>pesto browser</code> runs, is never written to disk, and is sent only to NCBI.
+    To skip this step, run <code>export NCBI_API_KEY=…</code> before <code>pesto browser</code>.</div>
+    <div class="field" style="margin-top:14px"><input id="ncbi-in" type="password"
+      placeholder="${S.status.ncbi_key ? "Paste a new key to replace the one in use" : "NCBI API key"}" autocomplete="off"></div>
+    <div class="err" id="ncbi-err"></div>
+    <div class="row" style="justify-content:flex-end;margin-top:8px">
+      ${S.status.ncbi_key ? `<button class="btn" id="ncbi-off">Stop using the key</button>` : ""}
+      <button class="btn primary" id="ncbi-ok">Use this key</button></div>`);
   $("dir-ok").onclick = async () => {
     try { await api("/api/settings", { runs_dir: $("dir-in").value }); closeModal(); await loadStatus(); await loadRuns(); toast("Saved"); }
     catch (e) { toast(e.message); }
   };
+  const ncbi = async (key) => {
+    $("ncbi-ok").disabled = true; $("ncbi-err").textContent = key ? "Checking with NCBI…" : "";
+    try { await api("/api/ncbi-key", { key }); closeModal(); await loadStatus();
+          toast(key ? "NCBI key accepted for this session" : "NCBI key no longer used"); }
+    catch (e) { $("ncbi-err").textContent = e.message; $("ncbi-ok").disabled = false; }
+  };
+  $("ncbi-ok").onclick = () => { const k = $("ncbi-in").value.trim(); if (k) ncbi(k); };
+  $("ncbi-in").onkeydown = (e) => { if (e.key === "Enter") $("ncbi-ok").click(); };
+  if ($("ncbi-off")) $("ncbi-off").onclick = () => ncbi("");
 };
 
 function openRunDialog() {

@@ -174,6 +174,8 @@ ClinVar, DECIPHER, the GWAS Catalog, GTEx and UniProt.
 - **The API key** is read from `ANTHROPIC_API_KEY` as on the command line. If it is
   not set, the page asks for it; the key is then kept in memory while
   `pesto browser` runs, never written to disk, and sent only to api.anthropic.com.
+  The optional NCBI key can be pasted in the settings the same way, or read from
+  `NCBI_API_KEY`.
 
 The page is served on 127.0.0.1 only, and every request must carry the token in
 the address `pesto browser` opens, so no other site open in the browser can start
