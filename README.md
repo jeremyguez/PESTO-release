@@ -22,14 +22,20 @@ Two branches answer independently, and are kept apart on purpose:
   (BioLORD-2023), and Claude grades how each relates to the queried phenotype. The
   association score of a matching trait sets the level.
 
+PESTO runs from the command line, or in a web page on your own computer with
+`pesto browser`: one pair or a whole table at a time, each pair opening on its
+verdict, the reasoning behind it, the articles read and links to gene databases.
+
+![pesto browser: one pair opened on its literature verdict, the justification and the articles read](https://raw.githubusercontent.com/jeremyguez/PESTO-release/main/docs/pesto_browser_pair.png)
+
 This is the code of *Large language model classifies prior evidence in
 gene–phenotype associations* (Guez et al., 2026). The [`paper/`](paper/) directory
 redraws every figure and table of the manuscript.
 
 ## Install
 
-PESTO is a command-line tool, and [pipx](https://pipx.pypa.io) installs it in an
-environment of its own:
+PESTO is a command-line tool with a web interface, and
+[pipx](https://pipx.pypa.io) installs it in an environment of its own:
 
 ```bash
 pipx install pesto-genetics
@@ -99,6 +105,39 @@ Targets associates with the gene instead of the 20 nearest (the same as
 
 Installing `torch` and `transformers` afterwards restores the default.
 
+## In a web page
+
+```bash
+pesto browser
+```
+
+opens PESTO in your browser: run one pair, or drop a table of pairs and follow it
+as it runs; scroll through the answers, filter them by verdict, and open a pair
+to read its summary, the distribution over the four levels, the articles read
+(each opens in PubMed or Europe PMC), the Open Targets traits and how each relates
+to the phenotype, the cost, and links to gnomAD, GeneCards, Open Targets, OMIM,
+ClinVar, DECIPHER, the GWAS Catalog, GTEx and UniProt.
+
+![pesto browser: a finished run of twelve pairs, with the verdicts of both branches](https://raw.githubusercontent.com/jeremyguez/PESTO-release/main/docs/pesto_browser_run.png)
+
+- **Every table is a run of its own**, kept in a folder under
+  `~/.local/share/pesto/runs` (change it in the settings, or with
+  `pesto browser --runs-dir DIR`). The sidebar lists them; a run stopped or
+  interrupted resumes where it was, without paying again for the pairs done.
+- **Runs made elsewhere open too**: a folder written by `pesto --bench` (it holds
+  `pesto.tsv`) opens with *Open a run folder*.
+- **Export as HTML** saves a run as a single file that opens by double-clicking,
+  with no installation: it can be read and shared, not run again.
+- **The API key** is read from `ANTHROPIC_API_KEY` as on the command line. If it is
+  not set, the page asks for it; the key is then kept in memory while
+  `pesto browser` runs, never written to disk, and sent only to api.anthropic.com.
+  The optional NCBI key can be pasted in the settings the same way, or read from
+  `NCBI_API_KEY`.
+
+The page is served on 127.0.0.1 only, and every request must carry the token in
+the address `pesto browser` opens, so no other site open in the browser can start
+a run. Before a table runs, the page shows its estimated cost.
+
 ## Your Anthropic API key
 
 PESTO calls Claude through the Anthropic API, with your own key, billed to your
@@ -121,7 +160,7 @@ them to check.
 An NCBI key (`NCBI_API_KEY`, optional) raises the PubMed rate limit from 3 to 10
 requests a second and is handled the same way.
 
-## Use
+## On the command line
 
 ```bash
 pesto --gene DDX41 --phenotype "myelodysplastic syndrome"
@@ -149,37 +188,6 @@ pesto --bench pairs.tsv --workers 10      # writes pesto.tsv and cost.tsv beside
 | `--show-pipeline` | print the blocks of the pipeline and their fingerprints, call nothing |
 
 `pesto --help` lists the rest.
-
-## In a web page
-
-```bash
-pesto browser
-```
-
-opens PESTO in your browser: run one pair, or drop a table of pairs and follow it
-as it runs; scroll through the answers, filter them by verdict, and open a pair
-to read its summary, the distribution over the four levels, the articles read
-(each opens in PubMed or Europe PMC), the Open Targets traits and how each relates
-to the phenotype, the cost, and links to gnomAD, GeneCards, Open Targets, OMIM,
-ClinVar, DECIPHER, the GWAS Catalog, GTEx and UniProt.
-
-- **Every table is a run of its own**, kept in a folder under
-  `~/.local/share/pesto/runs` (change it in the settings, or with
-  `pesto browser --runs-dir DIR`). The sidebar lists them; a run stopped or
-  interrupted resumes where it was, without paying again for the pairs done.
-- **Runs made elsewhere open too**: a folder written by `pesto --bench` (it holds
-  `pesto.tsv`) opens with *Open a run folder*.
-- **Export as HTML** saves a run as a single file that opens by double-clicking,
-  with no installation: it can be read and shared, not run again.
-- **The API key** is read from `ANTHROPIC_API_KEY` as on the command line. If it is
-  not set, the page asks for it; the key is then kept in memory while
-  `pesto browser` runs, never written to disk, and sent only to api.anthropic.com.
-  The optional NCBI key can be pasted in the settings the same way, or read from
-  `NCBI_API_KEY`.
-
-The page is served on 127.0.0.1 only, and every request must carry the token in
-the address `pesto browser` opens, so no other site open in the browser can start
-a run. Before a table runs, the page shows its estimated cost.
 
 ## Pipelines
 
