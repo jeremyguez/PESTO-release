@@ -23,7 +23,7 @@ PRDX3	spinocerebellar ataxia, autosomal recessive 32	gencc_moderate	Established	
 REL	immunodeficiency 92	gencc_moderate	Established	3.52	92	20	False	
 SLC31A1	neurodegeneration and seizures due to copper transport defect	gencc_moderate	Established	3.9	60	20	False	
 INTS11	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	gencc_moderate	Established	3.92	24	20	False	
-FXYD2	renal hypomagnesemia 2	gencc_moderate	Established	2.97	61	20	False	
+FXYD2	renal hypomagnesemia 2	gencc_moderate	Established	3.66	61	20	False	
 THUMPD1	neurodevelopmental disorder with speech delay and variable ocular anomalies	gencc_moderate	Established	3.86	36	6	False	
 CPSF3	neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures	gencc_moderate	Existing	2.92	46	20	False	
 TRAC	TCR-alpha-beta-positive T-cell deficiency	gencc_moderate	Established	3.86	74	13	False	
@@ -38,12 +38,12 @@ SAMD11	retinitis pigmentosa	gencc_strong	Existing	3.0	9	3	False
 ALDH1A2	diaphragmatic hernia 4, with cardiovascular defects	gencc_strong	Established	3.54	76	20	False	
 SELENOI	spastic paraplegia 81, autosomal recessive	gencc_strong	Established	3.83	28	15	False	
 ALPK1	retinal dystrophy, optic nerve edema, splenomegaly, anhidrosis, and migraine headache syndrome	gencc_strong	Established	3.95	54	20	False	
-GDF11	vertebral hypersegmentation and orofacial anomalies	gencc_strong	Established	2.65	71	20	False	
+GDF11	vertebral hypersegmentation and orofacial anomalies	gencc_strong	Established	3.52	71	20	False	
 TMX2	neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity	gencc_strong	Established	3.9	19	9	False	
 PYCR2	hypomyelinating leukodystrophy 10	gencc_strong	Established	3.94	26	18	False	
 TMEM106B	leukodystrophy, hypomyelinating, 16	gencc_strong	Established	3.9	68	20	False	
 ATG7	spinocerebellar ataxia, autosomal recessive 31	gencc_strong	Established	3.65	86	20	False	
-GDAP2	spinocerebellar ataxia, autosomal recessive 27	gencc_strong	Established	3.62	10	8	False	
+GDAP2	spinocerebellar ataxia, autosomal recessive 27	gencc_strong	Established	3.89	10	8	False	
 USP44	congenital heart disease	gencc_limited	Novel	1.29	15	3	False	
 SACS	Charlevoix-Saguenay spastic ataxia	gencc_strong	Established	3.97	110	20	False	
 THAP1	torsion dystonia 6	gencc_strong	Established	3.94	106	20	False	
@@ -324,7 +324,7 @@ PHF12	Autism Spectrum Disorder	asd_curated	Novel	1.7	47	2	False
 ZFHX3	Autism Spectrum Disorder	asd_curated	Existing	3.05	56	20	False	
 NCKAP1	Autism Spectrum Disorder	asd_curated	Established	3.67	54	18	False	
 KBTBD6	Autism Spectrum Disorder	asd_curated	Novel	1.12	3	2	False	
-SETD2	Autism Spectrum Disorder	asd_curated	Established	2.53	73	20	False	
+SETD2	Autism Spectrum Disorder	asd_curated	Established	3.52	73	20	False	
 ITSN1	Autism Spectrum Disorder	asd_curated	Existing	3.15	54	20	False	
 ARID1A	Autism Spectrum Disorder	asd_curated	Existing	2.66	67	20	False	
 GNB1	Autism Spectrum Disorder	asd_curated	Existing	2.75	53	20	False	
@@ -360,7 +360,7 @@ JARID2	Autism Spectrum Disorder	asd_curated	Existing	3.13	63	20	False
 TRIM8	Autism Spectrum Disorder	asd_curated	Existing	2.66	67	20	False	
 SCN8A	Autism Spectrum Disorder	asd_curated	Existing	3.04	84	20	False	
 HNRNPD	Autism Spectrum Disorder	asd_curated	Novel	1.41	54	17	False	
-RALGAPB	Autism Spectrum Disorder	asd_curated	Established	1.31	14	8	False	
+RALGAPB	Autism Spectrum Disorder	asd_curated	Existing	3.02	14	8	False	
 EGR3	Autism Spectrum Disorder	asd_curated	Hypothesized	2.23	121	20	False	
 KMT2D	Autism Spectrum Disorder	asd_curated	Existing	3.05	70	20	False	
 MEIS2	Autism Spectrum Disorder	asd_curated	Existing	2.82	61	20	False	

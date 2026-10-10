@@ -638,17 +638,35 @@ class KnowledgeRead(Reader):
 # with.
 
 
+def read_probabilities(text):
+    """The four values of the last complete <probabilities> block.
+
+    Opus sometimes garbles a tag around a well-formed number: closes it with
+    another name (<existing>22</established>), gives it an empty attribute
+    (<existing="">57</existing>), wraps the number in CDATA, or writes a broken
+    block and then a correct one. The opening tag and the number are what count.
+    """
+    blocks = re.findall(r"<probabilities>(.*?)</probabilities>", text, re.S) or [text]
+    parsed = []
+    for block in blocks:
+        probs = {}
+        for cat in ("Established", "Existing", "Hypothesized", "Novel"):
+            found = re.findall(rf"<{cat.lower()}(?:\s[^>]*|=[^>]*)?>\s*(?:<!\[CDATA\[)?\s*(\d+)",
+                               block)
+            if found:
+                probs[cat] = int(found[-1])
+        parsed.append(probs)
+    complete = [p for p in parsed if len(p) == 4]
+    return (complete or parsed)[-1]
+
+
 @dataclass(frozen=True)
 class Argmax(Judge):
     """The grade holding the most points."""
     reads = "distribution"
 
     def run(self, query, text, corpus=None):
-        probs = {}
-        for cat in ("Established", "Existing", "Hypothesized", "Novel"):
-            m = re.search(rf"<{cat.lower()}>\s*(\d+)\s*</{cat.lower()}>", text)
-            if m:
-                probs[cat] = int(m.group(1))
+        probs = read_probabilities(text)
         if not probs:
             return Verdict(call="PARSE_FAIL")
         dist = Distribution(established=probs.get("Established", 0),

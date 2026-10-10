@@ -21,15 +21,15 @@ Fisher exact P vs RVAS           1.1e-16
 
 == Branch concordance
 exact agreement                  41.4%
-within one level                 82.7%
+within one level                 82.9%
 
 == Burden significance by Max verdict
 pairs with a P value             933
-Spearman rho                     0.40 (P = 2.2e-37)
+Spearman rho                     0.40 (P = 1.3e-37)
 mean -log10 P Novel              7.2  (n = 67)
 mean -log10 P Hypothesized       7.9  (n = 194)
-mean -log10 P Existing           9.0  (n = 322)
-mean -log10 P Established        24.8  (n = 350)
+mean -log10 P Existing           9.0  (n = 323)
+mean -log10 P Established        24.9  (n = 349)
 
 == ED Fig. 1b,c
 phenotypes with >= 8 pairs        26 covering 725 pairs

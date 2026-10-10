@@ -660,7 +660,7 @@ CHD8	Autism Spectrum Disorder	3.94	Established	Established	Established	True	asc_
 CHD8	bipolar disorder	2.09	Hypothesized	Hypothesized	Hypothesized	False	asc_ref299	
 CHD8	congenital heart disease	2.01	Hypothesized	Hypothesized	Hypothesized	False	fig3_chd	universe509
 CHD8	developmental disorder	3.92	Established	Established	Established	True	asc_ref299	
-CHD8	epilepsy	3.2666666666666666	Existing	Established	Existing	True	asc_ref299	
+CHD8	epilepsy	3.18	Existing	Existing	Existing	True	asc_ref299	
 CHD8	schizophrenia	3.03	Existing	Existing	Existing	True	asc_ref299	
 CHD8	type 2 diabetes	1.11	Novel	Novel	Novel	False	asc_ref299	
 CHKA	Alzheimer's disease	1.33	Novel	Novel	Novel	False	fig3_alzheimer	universe450
@@ -707,7 +707,7 @@ CLTC	Alzheimer's disease	1.95	Hypothesized	Hypothesized	Hypothesized	False	fig3_
 CLTC	Autism Spectrum Disorder	2.54	Existing	Existing	Existing	True	asc_ref299	
 CLTC	bipolar disorder	1.48	Novel	Novel	Novel	False	asc_ref299	
 CLTC	congenital heart disease	2.19	Hypothesized	Existing	Hypothesized	False	fig3_chd	universe509
-CLTC	developmental disorder	3.979381443298969	Established	Established	Established	True	asc_ref299	
+CLTC	developmental disorder	3.95	Established	Established	Established	True	asc_ref299	
 CLTC	epilepsy	3.86	Established	Established	Established	True	asc_ref299	
 CLTC	schizophrenia	2.67	Existing	Existing	Existing	True	asc_ref299	
 CLTC	type 2 diabetes	1.84	Hypothesized	Hypothesized	Hypothesized	False	asc_ref299	
@@ -2156,7 +2156,7 @@ MBD5	Autism Spectrum Disorder	3.71	Established	Established	Established	True	asc_
 MBD5	bipolar disorder	2.89	Existing	Existing	Existing	True	asc_ref299	
 MBD5	congenital heart disease	1.21	Novel	Novel	Novel	False	fig3_chd	universe509
 MBD5	developmental disorder	3.91	Established	Established	Established	True	asc_ref299	
-MBD5	epilepsy	3.9444444444444446	Established	Established	Established	True	asc_ref299	
+MBD5	epilepsy	3.85	Established	Established	Established	True	asc_ref299	
 MBD5	schizophrenia	2.72	Existing	Existing	Existing	True	asc_ref299	
 MBD5	type 2 diabetes	1.06	Novel	Novel	Novel	False	asc_ref299	
 MCOLN2	Alzheimer's disease	1.66	Hypothesized	Hypothesized	Hypothesized	False	random50_ann2	random50_ann2
@@ -2332,7 +2332,7 @@ NACC1	Autism Spectrum Disorder	2.86	Existing	Existing	Existing	True	asc_ref299
 NACC1	bipolar disorder	1.37	Novel	Novel	Novel	False	asc_ref299	
 NACC1	congenital heart disease	1.26	Novel	Novel	Novel	False	fig3_chd	universe509
 NACC1	developmental disorder	3.92	Established	Established	Established	True	asc_ref299	
-NACC1	epilepsy	3.978494623655914	Established	Established	Established	True	asc_ref299	
+NACC1	epilepsy	3.91	Established	Established	Established	True	asc_ref299	
 NACC1	schizophrenia	1.46	Novel	Novel	Novel	False	asc_ref299	
 NACC1	type 2 diabetes	1.32	Novel	Novel	Novel	False	asc_ref299	
 NBEA	Alzheimer's disease	2.37	Hypothesized	Existing	Hypothesized	False	fig3_alzheimer	universe450
@@ -2523,7 +2523,7 @@ NRXN3	Alzheimer's disease	2.83	Existing	Existing	Existing	True	fig3_alzheimer	un
 NRXN3	Autism Spectrum Disorder	3.07	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	bipolar disorder	2.59	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	congenital heart disease	2.48	Hypothesized	Existing	Hypothesized	False	fig3_chd	universe509
-NRXN3	developmental disorder	3.294117647058824	Existing	Existing	Existing	True	asc_ref299	
+NRXN3	developmental disorder	3.08	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	epilepsy	2.7	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	schizophrenia	2.85	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	type 2 diabetes	2.68	Existing	Existing	Existing	True	asc_ref299	
@@ -3827,7 +3827,7 @@ TCF12	Alzheimer's disease	1.12	Novel	Novel	Novel	False	fig3_alzheimer	universe45
 TCF12	Autism Spectrum Disorder	2.98	Existing	Existing	Existing	True	asc_ref299	
 TCF12	bipolar disorder	1.47	Novel	Novel	Novel	False	asc_ref299	
 TCF12	congenital heart disease	1.38	Novel	Novel	Novel	False	fig3_chd	universe509
-TCF12	developmental disorder	3.9791666666666665	Established	Established	Established	True	asc_ref299	
+TCF12	developmental disorder	3.94	Established	Established	Established	True	asc_ref299	
 TCF12	epilepsy	1.7	Hypothesized	Novel	Hypothesized	False	asc_ref299	
 TCF12	schizophrenia	1.85	Hypothesized	Hypothesized	Hypothesized	False	asc_ref299	
 TCF12	type 2 diabetes	1.26	Novel	Novel	Novel	False	asc_ref299	
@@ -3853,7 +3853,7 @@ TCF7L2	bipolar disorder	2.92	Existing	Existing	Existing	True	asc_ref299
 TCF7L2	congenital heart disease	2.04	Hypothesized	Hypothesized	Hypothesized	False	fig3_chd	universe509
 TCF7L2	developmental disorder	3.89	Established	Established	Established	True	asc_ref299	
 TCF7L2	epilepsy	2.41	Hypothesized	Existing	Hypothesized	False	asc_ref299	
-TCF7L2	schizophrenia	3.217391304347826	Existing	Established	Existing	True	asc_ref299	
+TCF7L2	schizophrenia	3.05	Existing	Existing	Existing	True	asc_ref299	
 TCF7L2	type 2 diabetes	3.87	Established	Established	Established	True	asc_ref299	
 TDRD12	Alzheimer's disease	1.08	Novel	Novel	Novel	False	fig3_alzheimer	universe450
 TDRD12	Autism Spectrum Disorder	1.06	Novel	Novel	Novel	False	random50_ann	random50_ann
