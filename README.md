@@ -283,7 +283,7 @@ per pair with the corpus, the prompts and the model's answer.
 See [`paper/README.md`](paper/README.md). Every figure and table is redrawn from
 the tables in `paper/results/` without calling any model. The saved model answers
 behind them are on Zenodo:
-[doi:10.5281/zenodo.23288772](https://doi.org/10.5281/zenodo.23288772).
+[doi:10.5281/zenodo.23288837](https://doi.org/10.5281/zenodo.23288837).
 
 ## Tests
 
@@ -299,7 +299,7 @@ python3 tests/script_imports.py   # every paper script still imports
 Guez J, Auwerx C, Lu W, Satterstrom FK, Berkowitz J, Fu JM, Betancur C,
 Talkowski ME, Daly MJ, Karczewski KJ. Large language model classifies prior
 evidence in gene–phenotype associations. 2026.
-Code and data: [doi:10.5281/zenodo.23288772](https://doi.org/10.5281/zenodo.23288772).
+Code and data: [doi:10.5281/zenodo.23288837](https://doi.org/10.5281/zenodo.23288837).
 
 ## Licence
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Fetch the data archives deposited on Zenodo (doi:10.5281/zenodo.23288772) and
+# Fetch the data archives deposited on Zenodo (doi:10.5281/zenodo.23288837) and
 # extract them into paper/. Only the upstream scripts need them: every figure
 # and table of the manuscript is redrawn from what the repository already holds.
 #
@@ -8,7 +8,7 @@
 #   bash paper/fetch_data.sh inputs   the upstream inputs only
 set -euo pipefail
 
-RECORD="https://zenodo.org/records/23288772/files"
+RECORD="https://zenodo.org/records/23288837/files"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REPO="$(dirname "$HERE")"
 

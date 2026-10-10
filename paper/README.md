@@ -69,7 +69,7 @@ will not reproduce each answer exactly.
 
 Their inputs and the saved model answers (one JSON per pair, with the corpus,
 the prompts and the response) are on Zenodo,
-[doi:10.5281/zenodo.23288772](https://doi.org/10.5281/zenodo.23288772):
+[doi:10.5281/zenodo.23288837](https://doi.org/10.5281/zenodo.23288837):
 
 ```bash
 bash fetch_data.sh        # about 105 MB, extracted into paper/
