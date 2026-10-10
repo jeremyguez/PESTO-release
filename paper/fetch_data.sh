@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Fetch the data archives deposited on Zenodo (doi:10.5281/zenodo.23230222) and
+# Fetch the data archives deposited on Zenodo (doi:10.5281/zenodo.23288772) and
 # extract them into paper/. Only the upstream scripts need them: every figure
 # and table of the manuscript is redrawn from what the repository already holds.
 #
@@ -8,13 +8,13 @@
 #   bash paper/fetch_data.sh inputs   the upstream inputs only
 set -euo pipefail
 
-RECORD="https://zenodo.org/records/23230222/files"
+RECORD="https://zenodo.org/records/23288772/files"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REPO="$(dirname "$HERE")"
 
 declare -A MD5=(
-  [pesto_paper_runs.tar.gz]=b6e7fdca43d432f45b60cce7411bcbe7
-  [pesto_paper_inputs.tar.gz]=ca08a797625789934cdd283f0d36d3e8
+  [pesto_paper_runs.tar.gz]=ba1a7d997ca942456007efab910b0c82
+  [pesto_paper_inputs.tar.gz]=84ebeaa428f766eea6c90039c4901725
 )
 
 want=("pesto_paper_runs.tar.gz" "pesto_paper_inputs.tar.gz")
