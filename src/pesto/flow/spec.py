@@ -36,6 +36,12 @@ def digest(payload):
         json.dumps(payload, sort_keys=True, default=str).encode()).hexdigest()[:12]
 
 
+def optional(default=()):
+    """A parameter hashed only when set, so adding one to a block leaves every
+    fingerprint computed without it unchanged."""
+    return dataclasses.field(default=default, metadata={"omit_empty": True})
+
+
 @dataclasses.dataclass(frozen=True)
 class Block:
     """One step. Immutable, so a pipeline can be shared and never drift."""
@@ -53,7 +59,12 @@ class Block:
         """Everything that changes what this block does, and nothing else."""
         return {f.name: getattr(self, f.name)
                 for f in dataclasses.fields(self)
-                if not f.name.startswith("_")}
+                if not f.name.startswith("_")
+                and not (f.metadata.get("omit_empty") and not getattr(self, f.name))}
+
+    def takes(self, name):
+        """Whether this block has a parameter of that name."""
+        return any(f.name == name for f in dataclasses.fields(self))
 
     def fingerprint(self):
         return digest({"kind": self.kind, "params": self.params(),
@@ -125,12 +136,14 @@ class Arm:
     def but(self, name=None, **changes):
         return dataclasses.replace(self, name=name or self.name, **changes)
 
-    def using(self, reader=None, worker=None, max_date=None):
-        """The same arm read by a different model, or over an older literature.
+    def using(self, reader=None, worker=None, max_date=None, notes=()):
+        """The same arm read by a different model, over an older literature,
+        or with notes added to the reading prompt.
 
         Swapping models is a change of parameter and not of architecture, so
         the arm stays the arm, and the fingerprint moves, which is the honest
-        record that the numbers may too. A date ceiling moves it the same way.
+        record that the numbers may too. A date ceiling and notes move it the
+        same way.
         """
         def swap(block, model):
             # A block whose model is None is not calling anything: that is how
@@ -139,11 +152,17 @@ class Arm:
             return (block.but(model=model)
                     if model and block.params().get("model") else block)
 
+        read = swap(self.read, reader or worker)
+        if notes:
+            if not read.takes("notes"):
+                raise ValueError(f"{self.name}: {read.kind} reads no articles, "
+                                 f"so its prompt has no place for a note")
+            read = read.but(notes=tuple(read.notes) + tuple(notes))
         return dataclasses.replace(
             self,
             expand=tuple(swap(b, worker) for b in self.expand),
             annotate=tuple(swap(b, worker) for b in self.annotate),
-            read=swap(self.read, reader or worker),
+            read=read,
             max_date=max_date or self.max_date)
 
     def validate(self):

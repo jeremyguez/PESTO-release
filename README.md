@@ -184,6 +184,7 @@ pesto --bench pairs.tsv --workers 10      # writes pesto.tsv and cost.tsv beside
 | `--no-cache` | read the literature again even if this pair was already answered |
 | `--resume` | with `--bench`, keep the rows an earlier attempt finished |
 | `--max-date DATE` | search only articles published up to `DATE`; Open Targets is not run (see below) |
+| `--note TEXT` | add a sentence to the reading prompt, before the articles; repeat for several |
 | `--model ID`, `--model-fast ID` | use other Claude models; the fingerprint records it |
 | `--ot-encoder biolord\|sapbert\|none` | how Open Targets traits are ranked; `none` reads them all |
 | `--show-pipeline` | print the blocks of the pipeline and their fingerprints, call nothing |
@@ -201,18 +202,42 @@ asks what the literature said at the end of 2014. `DATE` is `YYYY`, `YYYY/MM` or
 and the Europe PMC search of `--fulltext`, is restricted to articles published by
 then, and any article whose displayed year is later is dropped as well.
 
+The model that reads the abstracts is also told, in a note added before them,
+that they are the literature as it stood on that date and that it should judge
+from them alone, drawing on nothing else it knows
+([`prompts/max_date_note.txt`](src/pesto/prompts/max_date_note.txt)).
+`--no-date-note` sends the standard prompt instead.
+
 Three things it does not do, and PESTO says so when it starts:
 
 - **Open Targets is not run.** Its API serves only the current release, whose
   association scores cannot be restricted to a date, so the Open Targets columns
   are left empty (`ot_channel` reads `not run: --max-date`).
 - **The reading model is not dated.** Claude may know of work published after
-  the date, and nothing stops that knowledge from reaching the verdict.
-- **The `knowledge` arm** searches nothing, so the date has nothing to restrict.
+  the date. The note asks it not to use that knowledge, which narrows the leak
+  without closing it.
+- **The `knowledge` arm** searches nothing, so the date has nothing to restrict,
+  and it is sent no note.
 
 The date is part of the pipeline's fingerprint, so a cached run, or a row kept by
 `--resume`, is reused only for the same date; runs without `--max-date` keep their
 fingerprint. Tables carry it in a `max_date` column.
+
+### Notes to the reader
+
+`--note "..."` adds a sentence to the reading prompt, on a line of its own before
+the articles, and can be repeated:
+
+```bash
+pesto --gene DDX41 --phenotype "myelodysplastic syndrome" \
+      --note "Somatic variants in tumours do not count as evidence."
+```
+
+With `--max-date`, the date note comes first and yours follow in the order given.
+Notes are part of the fingerprint, so a run is reused only for the same notes,
+and tables carry them in a `notes` column. A run with notes no longer reads the
+prompt the paper's numbers were measured with. The `knowledge` arm refuses notes,
+having no articles to put them before.
 
 ## Pipelines
 

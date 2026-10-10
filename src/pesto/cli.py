@@ -68,8 +68,34 @@ OT_SKIPPED = "not run: --max-date"
 MAX_DATE_WARNING = """\
 pesto: --max-date {date}: PubMed and Europe PMC are searched for articles
 published up to that date only. Open Targets is not run: the API serves only
-its current release, whose scores cannot be dated. The model that reads the
+its current release, whose scores cannot be dated. {reader}"""
+DATE_NOTE_ON = """The model that reads the
+abstracts is told to judge from them alone (--no-date-note: not told), but it
+may still know of work published later."""
+DATE_NOTE_OFF = """The model that reads the
 abstracts may still know of work published later."""
+
+
+def reader_notes(args, arm):
+    """What the reading prompt is told before the articles: the instruction
+    --max-date adds unless --no-date-note, then every --note in order."""
+    notes = [n.strip() for n in (getattr(args, "note", None) or ()) if n.strip()]
+    if (getattr(args, "max_date", None) and not getattr(args, "no_date_note", False)
+            and arm.read.takes("notes")):
+        from .utils.helpers import load_prompt
+        notes.insert(0, load_prompt("max_date_note").strip().format(
+            date=args.max_date))
+    return tuple(notes)
+
+
+def fit(arm, args, reader, worker):
+    """The arm as this command line asks for it: models, date and notes."""
+    try:
+        return arm.using(reader=reader, worker=worker,
+                         max_date=getattr(args, "max_date", None),
+                         notes=reader_notes(args, arm))
+    except ValueError as exc:
+        raise SystemExit(f"pesto: {exc}")
 
 
 def open_targets(gene, phenotype, synonyms, model, runs_dir, args=None):
@@ -167,6 +193,7 @@ def assess(arm, gene, phenotype, args, worker, flow_dir):
         "gene": gene, "phenotype": phenotype,
         "arm": arm.name, "fingerprint": result.fingerprint,
         "max_date": arm.max_date,
+        "notes": " | ".join(getattr(arm.read, "notes", ())).replace("\t", " "),
         "lit_argmax": result.verdict.call,
         "lit_mean": mean_call(dist or {}),
         "p_established": (dist or {}).get("Established", ""),
@@ -241,7 +268,8 @@ ANSWER_FIELDS = ["lit_mean", "lit_argmax", "p_established", "p_existing",
                  "p_hypothesized", "p_novel", "open_targets_verdict",
                  "open_targets_max_score", "ot_channel", "ot_tag",
                  "ot_trait", "ot_cap", "found", "read", "cached",
-                 "arm", "fingerprint", "max_date", "justification", "error"]
+                 "arm", "fingerprint", "max_date", "notes", "justification",
+                 "error"]
 
 
 def run_bench(args, arm, worker, reader=None):
@@ -264,8 +292,7 @@ def run_bench(args, arm, worker, reader=None):
     max_date = getattr(args, "max_date", None)
 
     def fitted(name):
-        return arms.get(name).using(reader=reader, worker=worker,
-                                    max_date=max_date)
+        return fit(arms.get(name), args, reader, worker)
 
     family = family_of(args)
     if arm is None:
@@ -301,8 +328,8 @@ def run_bench(args, arm, worker, reader=None):
         chosen = arm
         if chosen is None:
             with contextlib.redirect_stdout(io.StringIO()):
-                chosen = arms.resolve(arms.AUTO, pheno, family=family).using(
-                    reader=reader, worker=worker, max_date=max_date)
+                chosen = fit(arms.resolve(arms.AUTO, pheno, family=family),
+                             args, reader, worker)
         try:
             row = assess(chosen, gene, pheno, args, worker, flow_dir)
         except Exception as exc:
@@ -410,7 +437,17 @@ def build_parser():
                         "to see what was known then. Open Targets is not run, "
                         "since it cannot be dated. The date is part of the "
                         "pipeline's fingerprint, so a cached run is reused "
-                        "only for the same date")
+                        "only for the same date. The reading model is told to "
+                        "judge from the articles alone, unless --no-date-note")
+    p.add_argument("--no-date-note", action="store_true",
+                   help="with --max-date, send the standard reading prompt, "
+                        "without the instruction to judge from the articles "
+                        "alone")
+    p.add_argument("--note", action="append", metavar="TEXT",
+                   help="a sentence added to the reading prompt, before the "
+                        "articles. Repeat for several. Part of the "
+                        "fingerprint, so a cached run is reused only for the "
+                        "same notes")
     p.add_argument("--no-cache", action="store_true",
                    help="read the literature again even if the same pipeline "
                         "has already answered this pair")
@@ -481,7 +518,12 @@ def main(argv=None):
             args.max_date = normalize_max_date(args.max_date)
         except ValueError as exc:
             raise SystemExit(f"pesto: --max-date: {exc}")
-        print(MAX_DATE_WARNING.format(date=args.max_date), file=sys.stderr)
+        print(MAX_DATE_WARNING.format(
+            date=args.max_date,
+            reader=DATE_NOTE_OFF if args.no_date_note else DATE_NOTE_ON),
+            file=sys.stderr)
+    elif args.no_date_note:
+        raise SystemExit("pesto: --no-date-note only applies with --max-date")
     if (not config.TORCH_INSTALLED and not args.ot_encoder and not args.max_date
             and not os.environ.get("OT_ENCODER") and not args.show_pipeline):
         print("pesto: PyTorch is not installed, so the Open Targets branch grades "
@@ -503,8 +545,7 @@ def main(argv=None):
 
     def fitted(name):
         try:
-            return arms.get(name).using(reader=reader, worker=worker,
-                                        max_date=args.max_date)
+            return fit(arms.get(name), args, reader, worker)
         except KeyError as exc:
             raise SystemExit(str(exc).strip('"'))
 
@@ -543,9 +584,9 @@ def main(argv=None):
     try:
         with contextlib.redirect_stdout(chatter):
             if auto:
-                arm = arms.resolve(arms.AUTO, args.phenotype,
-                                   family=family_of(args)).using(
-                    reader=reader, worker=worker, max_date=args.max_date)
+                arm = fit(arms.resolve(arms.AUTO, args.phenotype,
+                                       family=family_of(args)),
+                          args, reader, worker)
             result = flow_run.run(arm, query, cache=not args.no_cache)
             ot_verdict, ot_score, ot_tokens, ot_match = open_targets(
                 args.gene, args.phenotype, result.terms.get("synonyms"),
@@ -574,6 +615,7 @@ def main(argv=None):
             "gene": args.gene, "phenotype": args.phenotype,
             "arm": arm.name, "fingerprint": result.fingerprint,
             "max_date": arm.max_date or None,
+            "notes": list(getattr(arm.read, "notes", ())),
             "verdict": result.verdict.call,
             "distribution": (result.verdict.distribution.as_dict()
                              if result.verdict.distribution else None),

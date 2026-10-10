@@ -17,7 +17,7 @@ from ..services.pubmed_service import (deduplicate_articles, fetch_abstracts,
 from ..utils.data_loader import data_loader
 from ..utils.helpers import load_prompt
 from .render import render
-from .spec import Block, Judge, Reader
+from .spec import Block, Judge, Reader, optional
 from .types import Corpus, Distribution, Labels, Verdict
 
 # ---------------------------------------------------------------- expansion
@@ -533,6 +533,9 @@ class ProbabilityRead(Reader):
     left to memory.
     """
     model: str = "opus5"
+    # Sentences put before the articles, one per line: --note, and the
+    # instruction --max-date adds.
+    notes: tuple = optional()
     evidence = "distribution"
     needs = frozenset({"pmid", "title", "found_by", "abstract"})
     uses = ("novelty_probabilities", "novelty_assessment_prompt")
@@ -549,7 +552,8 @@ class ProbabilityRead(Reader):
             self.template().format(
                 gene_name=query.gene, phenotype=query.phenotype,
                 articles_list=render(corpus, self.needs, block=self.kind),
-                alias_note="", dismiss_note=harness.DISMISS),
+                alias_note="".join(n.strip() + "\n" for n in self.notes),
+                dismiss_note=harness.DISMISS),
             harness.MODELS.get(self.model, self.model), 0.0,
             agent_name="gencc_probs") or {}
         return resp.get("text", "") or "", resp
