@@ -1,35 +1,35 @@
 == Records and pairs
-table rows (analysed)            950
-unique gene-phenotype pairs      950
+table rows (analysed)            939
+unique gene-phenotype pairs      939
 AoU + GeneBass                   248
-BRaVa rows in table              702
-AoU pairs also in BRaVa          31
+BRaVa rows in table              691
+AoU pairs also in BRaVa          42
 BRaVa evaluated (rows + shared)  733  (raw BRaVa rows: 734)
 association-study records        981
 
 == Verdicts on the unique pairs
-literature Novel                 254 (27%)
-Open Targets Novel               99 (10%)
-Max Novel                        68 (7%)
-Max Hypothesized                 199 (21%)
-Max Novel or Hypothesized        267 (28%)
-literature Novel with 0 records  7 of 254 (3%), median records 44
+literature Novel                 252 (27%)
+Open Targets Novel               97 (10%)
+Max Novel                        67 (7%)
+Max Hypothesized                 194 (21%)
+Max Novel or Hypothesized        261 (28%)
+literature Novel with 0 records  7 of 252 (3%), median records 44
 
 == Negative controls
 controls Max Novel or Hyp.       43 of 50 (86%)
-Fisher exact P vs RVAS           1.7e-16
+Fisher exact P vs RVAS           1.1e-16
 
 == Branch concordance
-exact agreement                  41.8%
-within one level                 82.9%
+exact agreement                  41.4%
+within one level                 82.7%
 
 == Burden significance by Max verdict
-pairs with a P value             944
-Spearman rho                     0.40 (P = 1.2e-37)
-mean -log10 P Novel              7.2  (n = 68)
-mean -log10 P Hypothesized       8.0  (n = 199)
-mean -log10 P Existing           9.0  (n = 323)
-mean -log10 P Established        24.6  (n = 354)
+pairs with a P value             933
+Spearman rho                     0.40 (P = 2.2e-37)
+mean -log10 P Novel              7.2  (n = 67)
+mean -log10 P Hypothesized       7.9  (n = 194)
+mean -log10 P Existing           9.0  (n = 322)
+mean -log10 P Established        24.8  (n = 350)
 
 == ED Fig. 1b,c
-phenotypes with >= 8 pairs        26 covering 727 pairs
+phenotypes with >= 8 pairs        26 covering 725 pairs

@@ -15,10 +15,12 @@ Usage: python3 scripts/19_build_ed1_v2_table.py
 
 import csv
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RUNS = os.path.join(ROOT, "results", "all_runs_auto_v7.tsv")
+ALIASES = os.path.join(ROOT, "data", "phenotype_aliases.tsv")
 OUT = os.path.join(ROOT, "results", "ed1_v2_pairs.tsv")
 
 ALLOWED = {"Novel", "Hypothesized"}
@@ -145,19 +147,31 @@ FIELDS = [
 ]
 
 
+with open(ALIASES, encoding="utf-8") as _fh:
+    PHENOTYPE_ALIASES = {r["alias"]: r["canonical"]
+                         for r in csv.DictReader(_fh, delimiter="\t")}
+
+
+def pair_key(gene, phenotype):
+    # A pair significant in both studies keeps its AoU row, which may name
+    # the phenotype differently from the curation (HDL cholesterol).
+    ph = re.sub(r"[^a-z0-9]+", " ", phenotype.lower()).strip()
+    return gene.upper(), PHENOTYPE_ALIASES.get(ph, ph)
+
+
 def load(path):
     if not os.path.exists(path):
         sys.exit(f"missing input: {path}")
     with open(path, newline="", encoding="utf-8") as fh:
         rows = list(csv.DictReader(fh, delimiter="\t"))
-    return {(r["gene"].upper(), r["phenotype"].strip().lower()): r for r in rows}
+    return {pair_key(r["gene"], r["phenotype"]): r for r in rows}
 
 
 def main():
     runs = load(RUNS)
     out, problems = [], []
     for c in CURATION:
-        key = (c["gene"].upper(), c["phenotype"].strip().lower())
+        key = pair_key(c["gene"], c["phenotype"])
         r = runs.get(key)
         if r is None:
             problems.append(f"{c['gene']} / {c['phenotype']}: absent from {os.path.basename(RUNS)}")

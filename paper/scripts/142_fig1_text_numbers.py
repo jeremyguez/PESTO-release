@@ -27,28 +27,34 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RUNS = os.path.join(ROOT, "results", "all_runs_auto_v7.tsv")
 ABSENT = os.path.join(ROOT, "results", "bench_fig1c_absent50_hgnc_pesto_v7.tsv")
 BRAVA_RAW = os.path.join(ROOT, "data", "raw", "Duncan_results.tsv")
+ALIASES = os.path.join(ROOT, "data", "phenotype_aliases.tsv")
 
 VERDICTS = ["Novel", "Hypothesized", "Existing", "Established"]
 RANK = {v: i for i, v in enumerate(VERDICTS)}
-PHENOTYPE_ALIASES = {"bmi": "body mass index"}
+_aliases = pd.read_csv(ALIASES, sep="\t")
+PHENOTYPE_ALIASES = dict(zip(_aliases.alias, _aliases.canonical))
+ALIAS_LABELS = dict(zip(_aliases.canonical, _aliases.label))
 MIN_PAIRS = 8
 
 # Mirrors canon_pheno in scripts/25_figure_ed1.R.
 ED1_CANON = {
     "height": "Height",
     "total cholesterol": "Total cholesterol",
-    "waist to hip ratio adjusted for bmi": "WHRadjBMI",
     "hip-circumference-mean": "Hip circumference",
     "mean corpuscular volume": "Mean corpuscular volume",
     "red cell distribution width": "Red cell distribution width",
     "mean platelet volume": "Mean platelet volume",
-    "bmi": "Body mass index",
 }
 
 
 def norm_ph(x) -> str:
     s = re.sub(r"[^a-z0-9]+", " ", str(x).lower()).strip()
     return PHENOTYPE_ALIASES.get(s, s)
+
+
+def ed1_label(x) -> str:
+    s = str(x).strip()
+    return ALIAS_LABELS.get(norm_ph(s)) or ED1_CANON.get(s.lower(), s)
 
 
 def pct(k, n) -> str:
@@ -125,7 +131,7 @@ def main():
         sel = d.mx[ok] == i
         print(f"mean -log10 P {v:<13}      {logp[sel].mean():.1f}  (n = {int(sel.sum())})")
 
-    ph = d.phenotype.map(lambda x: ED1_CANON.get(str(x).strip().lower(), str(x).strip()))
+    ph = d.phenotype.map(ed1_label)
     counts = ph.value_counts()
     keep = counts[counts >= MIN_PAIRS]
     print("\n== ED Fig. 1b,c")

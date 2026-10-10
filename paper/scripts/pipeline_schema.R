@@ -81,17 +81,19 @@ pipeline_schema <- function(vcol) {
     x = c(IN_X, COLS, COLS),
     y = c(MID, rep(ROW_LIT, 4), rep(ROW_DB, 4)),
     w = c(IN_W, rep(BOX_W, 8)),
+    # The same names as the detailed schema of Supplementary Figure 1 and the
+    # section titles of Supplementary Note 1 (scripts/172_pipeline_detailed_schema.R).
     label = c("(Gene,\nPhenotype)",
-              "Synonym\nexpansion", "PubMed\nsearch",
-              "Relevance\nfilter", "Novelty\nassessment",
-              "Open Targets\nlookup", "Shortlist\nrelated traits",
-              "Select\nrelevant traits", "Trait\nmatching"),
+              "Term\nexpansion", "PubMed\nsearches",
+              "Relevance\nbands", "Evidence\nassessment",
+              "Open Targets\nlookup", "Trait\nshortlist",
+              "Trait\nsieve", "Trait\ngrading"),
     kind = c("input",
              "llm", "source", "llm", "llm",
              "db", "encoder", "llm", "llm"),
     num = c(NA, 1, 2, 3, 4, 5, 6, 7, 8),
     model = c(NA,
-              "Claude Haiku", NA, "Claude Haiku", "Claude Opus",
+              "Claude Opus, Haiku", NA, "Claude Haiku", "Claude Opus",
               NA, "BioLORD", "Claude Haiku", "Claude Opus"),
     stringsAsFactors = FALSE)
   steps$xmin <- steps$x - steps$w / 2

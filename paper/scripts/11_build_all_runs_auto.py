@@ -34,9 +34,13 @@ OLD = os.path.join(ROOT, "results", "all_runs.tsv")
 OT_TIGHT = os.path.join(ROOT, "results", "arm_auto_aou_brava_ot_tight.tsv")
 OUT = os.path.join(ROOT, "results", "all_runs_auto.tsv")
 
-# AoU writes "BMI" where BRaVa writes "Body mass index": the same pair, run
-# twice under two names, would otherwise be counted twice.
-PHENOTYPE_ALIASES = {"bmi": "body mass index"}
+# AoU and BRaVa name some phenotypes differently ("BMI" and "Body mass index",
+# "high density lipoprotein" and "HDL cholesterol"): the same pair, run twice
+# under two names, would otherwise be counted twice.
+ALIASES = os.path.join(ROOT, "data", "phenotype_aliases.tsv")
+with open(ALIASES, encoding="utf-8") as _fh:
+    PHENOTYPE_ALIASES = {r["alias"]: r["canonical"]
+                         for r in csv.DictReader(_fh, delimiter="\t")}
 
 
 def pair_key(gene, phenotype):

@@ -2,7 +2,7 @@
 # Extended Data Figure 1 - where the Novel calls in Figure 1b come from.
 #
 #   a  PubMed records retrieved, by literature verdict. Novel is not an empty
-#      search: only seven of 254 Novel pairs retrieved nothing.
+#      search: only seven of 252 Novel pairs retrieved nothing.
 #   b  literature verdicts by phenotype (n >= 8 after merging Height)
 #   c  the same phenotypes, same order, under Max. Open Targets recovers
 #      prior GWAS evidence on traits such as height; clinical traits with
@@ -35,12 +35,19 @@ VERDICTS <- c("Novel", "Hypothesized", "Existing", "Established")
 VCOL <- c(Novel = "#A9573F", Hypothesized = "#BFA45C",
           Existing = "#5B7F95", Established = "#2E5F4F")
 
+# The two studies name some phenotypes differently; each pair keeps one row
+# (scripts/11_build_all_runs_auto.py), and both names are drawn as one.
+aliases <- read_tsv(file.path(root, "data", "phenotype_aliases.tsv"),
+                    show_col_types = FALSE)
+
 canon_pheno <- function(p) {
   p <- trimws(as.character(p))
+  key <- trimws(gsub("[^a-z0-9]+", " ", tolower(p)))
+  key <- ifelse(key %in% aliases$alias,
+                aliases$canonical[match(key, aliases$alias)], key)
+  if (key %in% aliases$canonical) return(aliases$label[match(key, aliases$canonical)])
   if (tolower(p) == "height") return("Height")
   if (tolower(p) == "total cholesterol") return("Total cholesterol")
-  if (tolower(p) == "bmi") return("Body mass index")
-  if (p == "Waist to hip ratio adjusted for BMI") return("WHRadjBMI")
   if (p == "hip-circumference-mean") return("Hip circumference")
   if (p == "mean corpuscular volume") return("Mean corpuscular volume")
   if (p == "red cell distribution width") return("Red cell distribution width")

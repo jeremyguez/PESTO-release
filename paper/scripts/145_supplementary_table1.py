@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Supplementary Table 1: every RVAS association of Figure 1 and its verdicts.
 
-One row per unique gene-phenotype pair (950), read from the table behind
+One row per unique gene-phenotype pair (939), read from the table behind
 figure1_v7. A pair significant in both studies is listed once, with study
 "Both" and the All of Us-GeneBass P value, as the table already keeps it.
 Answers the request that the Novel and Hypothesized lists be released.
@@ -22,11 +22,13 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 RUNS = ROOT / "results" / "all_runs_auto_v7.tsv"
 BRAVA_RAW = ROOT / "data" / "raw" / "Duncan_results.tsv"
+ALIASES = ROOT / "data" / "phenotype_aliases.tsv"
 OUT = ROOT / "results" / "supplementary_table1"
 
 VERDICTS = ["Novel", "Hypothesized", "Existing", "Established"]
 RANK = {v: i for i, v in enumerate(VERDICTS)}
-PHENOTYPE_ALIASES = {"bmi": "body mass index"}
+_aliases = pd.read_csv(ALIASES, sep="\t")
+PHENOTYPE_ALIASES = dict(zip(_aliases.alias, _aliases.canonical))
 
 LEGEND = [
     ("gene", "HGNC gene symbol as queried."),

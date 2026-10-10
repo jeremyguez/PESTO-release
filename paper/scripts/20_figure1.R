@@ -69,11 +69,15 @@ d <- read_tsv(fig1_runs, show_col_types = FALSE) %>%
          source = factor(source, levels = c("AoU", "BRAVA")))
 
 # Panel b only. The table assigns a shared hit to AoU; the BRaVa bar should
-# still show it. AoU's "BMI" is BRaVa's "Body mass index". Panels c and d
-# keep the unique rows.
+# still show it. The two studies name some phenotypes differently (AoU's "BMI"
+# is BRaVa's "Body mass index"); data/phenotype_aliases.tsv lists them. Panels
+# c and d keep the unique rows.
+aliases <- read_tsv(file.path(root, "data", "phenotype_aliases.tsv"),
+                    show_col_types = FALSE)
 norm_ph <- function(x) {
   p <- trimws(gsub("[^a-z0-9]+", " ", tolower(x)))
-  ifelse(p == "bmi", "body mass index", p)
+  i <- match(p, aliases$alias)
+  ifelse(is.na(i), p, aliases$canonical[i])
 }
 aou_src <- read_tsv(file.path(root, "data", "raw", "AoU_results.tsv"),
                     show_col_types = FALSE) %>%
