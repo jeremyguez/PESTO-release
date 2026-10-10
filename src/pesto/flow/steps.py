@@ -660,10 +660,27 @@ def read_probabilities(text):
     return (complete or parsed)[-1]
 
 
+def well_formed_probabilities(text):
+    """One <probabilities> block, four matching tags, summing to 100."""
+    blocks = re.findall(r"<probabilities>(.*?)</probabilities>", text, re.S)
+    if len(blocks) != 1:
+        return False
+    total = 0
+    for cat in ("established", "existing", "hypothesized", "novel"):
+        found = re.findall(rf"<{cat}>\s*(\d+)\s*</{cat}>", blocks[0])
+        if len(found) != 1:
+            return False
+        total += int(found[0])
+    return total == 100
+
+
 @dataclass(frozen=True)
 class Argmax(Judge):
     """The grade holding the most points."""
     reads = "distribution"
+
+    def garbled(self, text):
+        return not well_formed_probabilities(text)
 
     def run(self, query, text, corpus=None):
         probs = read_probabilities(text)

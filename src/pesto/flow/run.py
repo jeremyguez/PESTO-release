@@ -13,6 +13,10 @@ from dataclasses import dataclass, field
 
 from .types import Corpus, Labels, Query, Step, Trace, Verdict
 
+# An answer the model could not format is not one to trust for its numbers:
+# the reading is asked again, and only the last answer is kept.
+READ_TRIES = 3
+
 
 @dataclass
 class Result:
@@ -119,8 +123,15 @@ def run(arm, query, synonyms=None, workers=6, cache=False, runs_dir=None):
     res.counts["read"] = len(corpus)
     res.corpus, res.labels = corpus, labels
 
-    with clock(arm.read):
-        text, _ = arm.read.run(query, corpus)
+    for attempt in range(1, READ_TRIES + 1):
+        with clock(arm.read):
+            text, _ = arm.read.run(query, corpus)
+        if not arm.judge.garbled(text):
+            break
+    else:
+        res.trace = res.trace.then(Step(arm.read.kind, arm.read.fingerprint(),
+                                        note=f"answer garbled {READ_TRIES} times; "
+                                             "the last one is read as well as it can be"))
     res.raw = text
     with clock(arm.judge):
         res.verdict = arm.judge.run(query, text, corpus)

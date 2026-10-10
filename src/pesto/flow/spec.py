@@ -92,6 +92,11 @@ class Judge(Block):
     judgement can be replayed from disk and argued with."""
     reads = "none"
 
+    def garbled(self, text):
+        """Whether the reader's answer is too malformed to be trusted, in which
+        case the run asks the reader again."""
+        return False
+
 
 @dataclasses.dataclass(frozen=True)
 class Arm:
