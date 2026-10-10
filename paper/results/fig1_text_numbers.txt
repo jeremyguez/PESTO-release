@@ -20,7 +20,7 @@ controls Max Novel or Hyp.       43 of 50 (86%)
 Fisher exact P vs RVAS           1.1e-16
 
 == Branch concordance
-exact agreement                  41.4%
+exact agreement                  41.3%
 within one level                 82.9%
 
 == Burden significance by Max verdict

@@ -2156,7 +2156,7 @@ MBD5	Autism Spectrum Disorder	3.71	Established	Established	Established	True	asc_
 MBD5	bipolar disorder	2.89	Existing	Existing	Existing	True	asc_ref299	
 MBD5	congenital heart disease	1.21	Novel	Novel	Novel	False	fig3_chd	universe509
 MBD5	developmental disorder	3.91	Established	Established	Established	True	asc_ref299	
-MBD5	epilepsy	3.85	Established	Established	Established	True	asc_ref299	
+MBD5	epilepsy	3.84	Established	Established	Established	True	asc_ref299	
 MBD5	schizophrenia	2.72	Existing	Existing	Existing	True	asc_ref299	
 MBD5	type 2 diabetes	1.06	Novel	Novel	Novel	False	asc_ref299	
 MCOLN2	Alzheimer's disease	1.66	Hypothesized	Hypothesized	Hypothesized	False	random50_ann2	random50_ann2
@@ -2523,7 +2523,7 @@ NRXN3	Alzheimer's disease	2.83	Existing	Existing	Existing	True	fig3_alzheimer	un
 NRXN3	Autism Spectrum Disorder	3.07	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	bipolar disorder	2.59	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	congenital heart disease	2.48	Hypothesized	Existing	Hypothesized	False	fig3_chd	universe509
-NRXN3	developmental disorder	3.08	Existing	Existing	Existing	True	asc_ref299	
+NRXN3	developmental disorder	3.13	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	epilepsy	2.7	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	schizophrenia	2.85	Existing	Existing	Existing	True	asc_ref299	
 NRXN3	type 2 diabetes	2.68	Existing	Existing	Existing	True	asc_ref299	
@@ -3853,7 +3853,7 @@ TCF7L2	bipolar disorder	2.92	Existing	Existing	Existing	True	asc_ref299
 TCF7L2	congenital heart disease	2.04	Hypothesized	Hypothesized	Hypothesized	False	fig3_chd	universe509
 TCF7L2	developmental disorder	3.89	Established	Established	Established	True	asc_ref299	
 TCF7L2	epilepsy	2.41	Hypothesized	Existing	Hypothesized	False	asc_ref299	
-TCF7L2	schizophrenia	3.05	Existing	Existing	Existing	True	asc_ref299	
+TCF7L2	schizophrenia	3.11	Existing	Existing	Existing	True	asc_ref299	
 TCF7L2	type 2 diabetes	3.87	Established	Established	Established	True	asc_ref299	
 TDRD12	Alzheimer's disease	1.08	Novel	Novel	Novel	False	fig3_alzheimer	universe450
 TDRD12	Autism Spectrum Disorder	1.06	Novel	Novel	Novel	False	random50_ann	random50_ann
