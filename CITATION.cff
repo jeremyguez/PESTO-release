@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use PESTO, please cite the paper and the archived release."
 title: "PESTO: prior evidence for gene-phenotype associations"
-version: 0.2.1
+version: 0.3.0
 doi: 10.5281/zenodo.23230222
 license: MIT
 repository-code: "https://github.com/jeremyguez/PESTO-release"

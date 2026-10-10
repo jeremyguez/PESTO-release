@@ -45,6 +45,7 @@ def save(result, runs_dir=None):
     payload = {
         "gene": result.query.gene, "phenotype": result.query.phenotype,
         "arm": result.arm, "fingerprint": result.fingerprint,
+        "max_date": result.max_date,
         "terms": {k: list(v) if isinstance(v, tuple) else v
                   for k, v in result.terms.items()},
         "counts": result.counts,
@@ -95,4 +96,5 @@ def load(query, arm, runs_dir=None):
         trace=Trace(tuple(
             Step(**{k: v for k, v in s.items() if k in _STEP_FIELDS})
             for s in (d.get("trace") or []))),
-        raw=d.get("raw", ""), terms=d.get("terms") or {})
+        raw=d.get("raw", ""), terms=d.get("terms") or {},
+        max_date=d.get("max_date") or "")

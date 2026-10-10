@@ -183,11 +183,36 @@ pesto --bench pairs.tsv --workers 10      # writes pesto.tsv and cost.tsv beside
 | `--json` | the whole result as JSON |
 | `--no-cache` | read the literature again even if this pair was already answered |
 | `--resume` | with `--bench`, keep the rows an earlier attempt finished |
+| `--max-date DATE` | search only articles published up to `DATE`; Open Targets is not run (see below) |
 | `--model ID`, `--model-fast ID` | use other Claude models; the fingerprint records it |
 | `--ot-encoder biolord\|sapbert\|none` | how Open Targets traits are ranked; `none` reads them all |
 | `--show-pipeline` | print the blocks of the pipeline and their fingerprints, call nothing |
 
 `pesto --help` lists the rest.
+
+### As of a past date
+
+```bash
+pesto --gene DDX41 --phenotype "myelodysplastic syndrome" --max-date 2014
+```
+
+asks what the literature said at the end of 2014. `DATE` is `YYYY`, `YYYY/MM` or
+`YYYY/MM/DD`, and a year or a month stands for its last day. Every PubMed search,
+and the Europe PMC search of `--fulltext`, is restricted to articles published by
+then, and any article whose displayed year is later is dropped as well.
+
+Three things it does not do, and PESTO says so when it starts:
+
+- **Open Targets is not run.** Its API serves only the current release, whose
+  association scores cannot be restricted to a date, so the Open Targets columns
+  are left empty (`ot_channel` reads `not run: --max-date`).
+- **The reading model is not dated.** Claude may know of work published after
+  the date, and nothing stops that knowledge from reaching the verdict.
+- **The `knowledge` arm** searches nothing, so the date has nothing to restrict.
+
+The date is part of the pipeline's fingerprint, so a cached run, or a row kept by
+`--resume`, is reused only for the same date; runs without `--max-date` keep their
+fingerprint. Tables carry it in a `max_date` column.
 
 ## Pipelines
 

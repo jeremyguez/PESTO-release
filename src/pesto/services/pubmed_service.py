@@ -22,8 +22,29 @@ VERBOSE_MODE = False  # Global flag to control verbose output
 # before this date via datetype=pdat. Default None = no restriction (historical
 # behavior unchanged). Used to reconstruct the literature as it stood at a past
 # date (e.g. a "2019" run to test prospective discovery potential).
+# flow.run sets it from the arm's max_date, so the date a run searched under is
+# always the one its fingerprint records.
 MAX_PUBDATE = None
 MIN_PUBDATE = "1000/01/01"
+
+
+def normalize_max_date(text):
+    """`2019`, `2019/06` or `2019-06-15` as the last day it covers, YYYY/MM/DD.
+
+    One spelling per day, so `--max-date 2019` and `--max-date 2019/12/31` are
+    the same question and share a cached run.
+    """
+    m = re.fullmatch(r"\s*(\d{4})(?:[/-](\d{1,2}))?(?:[/-](\d{1,2}))?\s*", str(text or ""))
+    if not m:
+        raise ValueError(f"not a date: {text!r} (expected YYYY, YYYY/MM or YYYY/MM/DD)")
+    year, month, day = int(m.group(1)), m.group(2), m.group(3)
+    month = int(month) if month else 12
+    if day:
+        day = int(day)
+    else:
+        nxt = datetime(year + month // 12, month % 12 + 1, 1)
+        day = (nxt - datetime(year, month, 1)).days
+    return datetime(year, month, day).strftime("%Y/%m/%d")
 
 
 def _apply_pubdate_cap(esearch_params):
@@ -478,6 +499,7 @@ def search_pubmed_gene_phenotype(
             "usehistory": "y",
             "retmode": "json"
         }
+        _apply_pubdate_cap(params)
         if NCBI_API_KEY:
             params['api_key'] = NCBI_API_KEY
         _maybe_random_delay()
@@ -674,6 +696,11 @@ def search_pubmed_gene_phenotype(
         articles = []
         for pmid in dedup_pmids:
             article_info = summary_data.get("result", {}).get(pmid, {})
+            # A GeneReviews chapter carries the series' 1993 as its pubdate, and
+            # PubMed's own date filter goes by it, so a 2021 chapter passes a
+            # 2014 ceiling. sortpubdate holds the chapter's own date.
+            if MAX_PUBDATE and str(article_info.get("sortpubdate") or "")[:10] > MAX_PUBDATE:
+                continue
             title = article_info.get("title", "No title found")
             pubdate = article_info.get("pubdate", "No date")
             articles.append({
@@ -683,7 +710,7 @@ def search_pubmed_gene_phenotype(
                 "abstract": None,
                 "query_tier": tiers.get(pmid, "")
             })
-        return articles, alias_hits
+        return _filter_articles_by_pubdate_cap(articles), alias_hits
     except Exception as e:
         print(f"ERROR: Failed to parse PubMed summaries: {e}")
         return [], alias_hits

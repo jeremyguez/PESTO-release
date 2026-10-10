@@ -85,9 +85,13 @@ def search_fulltext(gene, gene_aliases, phenotype, synonyms, limit=25, anchors=(
     built from them without a special case, plus `pmcid`, which gene_excerpts
     needs and PubMed does not carry.
     """
+    from . import pubmed_service
     query = fulltext_query(gene, gene_aliases, phenotype, synonyms, anchors)
     if not query:
         return []
+    cap = pubmed_service.MAX_PUBDATE
+    if cap:
+        query = f"({query}) AND FIRST_PDATE:[1000-01-01 TO {cap.replace('/', '-')}]"
     r = _get(SEARCH, {"query": query, "format": "json", "pageSize": limit,
                       "resultType": "lite"})
     if r is None:
@@ -106,7 +110,7 @@ def search_fulltext(gene, gene_aliases, phenotype, synonyms, limit=25, anchors=(
                     "title": a.get("title") or "",
                     "abstract": "", "pubdate": str(a.get("pubYear") or ""),
                     "query_tier": "fulltext"})
-    return out
+    return pubmed_service._filter_articles_by_pubdate_cap(out)
 
 
 def pmcids_for(pmids):

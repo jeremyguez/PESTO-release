@@ -27,6 +27,7 @@ class Result:
     raw: str = ""
     terms: dict = field(default_factory=dict)
     cached: bool = False
+    max_date: str = ""
 
 
 def run(arm, query, synonyms=None, workers=6, cache=False, runs_dir=None):
@@ -39,6 +40,9 @@ def run(arm, query, synonyms=None, workers=6, cache=False, runs_dir=None):
     `cache` reuses a saved run only when the arm's fingerprint matches, so a
     pipeline that has changed in any declared way is never answered from one
     that has not.
+
+    The arm's max_date is set on the PubMed client here, for every search the
+    run makes. The ceiling is process-wide, so concurrent runs must share it.
     """
     arm.validate()
     if cache:
@@ -47,7 +51,10 @@ def run(arm, query, synonyms=None, workers=6, cache=False, runs_dir=None):
         if saved is not None:
             saved.cached = True
             return saved
-    res = Result(query=query, arm=arm.name, fingerprint=arm.fingerprint())
+    from ..services import pubmed_service
+    pubmed_service.MAX_PUBDATE = arm.max_date or None
+    res = Result(query=query, arm=arm.name, fingerprint=arm.fingerprint(),
+                 max_date=arm.max_date)
     clock = _stopwatch(res)
 
     terms = {}

@@ -105,6 +105,8 @@ class Arm:
     # only for what survived.
     hydrate_at: int = 0
     note: str = ""
+    # The last publication date searched, YYYY/MM/DD; empty searches everything.
+    max_date: str = ""
 
     def blocks(self):
         annotate = list(self.annotate)
@@ -113,17 +115,22 @@ class Arm:
                 + tuple(annotate) + (self.select, self.read, self.judge))
 
     def fingerprint(self):
-        return digest([b.fingerprint() for b in self.blocks()])
+        # Hashed only when set, so every run made without a date keeps its
+        # fingerprint and stays in the cache.
+        parts = [b.fingerprint() for b in self.blocks()]
+        if self.max_date:
+            parts.append({"max_date": self.max_date})
+        return digest(parts)
 
     def but(self, name=None, **changes):
         return dataclasses.replace(self, name=name or self.name, **changes)
 
-    def using(self, reader=None, worker=None):
-        """The same arm read by a different model.
+    def using(self, reader=None, worker=None, max_date=None):
+        """The same arm read by a different model, or over an older literature.
 
         Swapping models is a change of parameter and not of architecture, so
         the arm stays the arm, and the fingerprint moves, which is the honest
-        record that the numbers may too.
+        record that the numbers may too. A date ceiling moves it the same way.
         """
         def swap(block, model):
             # A block whose model is None is not calling anything: that is how
@@ -136,7 +143,8 @@ class Arm:
             self,
             expand=tuple(swap(b, worker) for b in self.expand),
             annotate=tuple(swap(b, worker) for b in self.annotate),
-            read=swap(self.read, reader or worker))
+            read=swap(self.read, reader or worker),
+            max_date=max_date or self.max_date)
 
     def validate(self):
         """Everything checkable before a single call is made.
@@ -163,6 +171,8 @@ class Arm:
 
     def describe(self):
         lines = [f"{self.name}  [{self.fingerprint()}]"]
+        if self.max_date:
+            lines.append(f"  literature published up to {self.max_date}")
         for block in self.blocks():
             lines.append(f"  {block.fingerprint()}  {block.describe()}")
         return "\n".join(lines)

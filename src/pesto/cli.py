@@ -62,6 +62,16 @@ def pick_models(reader, worker):
     return reader or None, worker or None
 
 
+# What the Open Targets columns say when --max-date kept that branch from running.
+OT_SKIPPED = "not run: --max-date"
+
+MAX_DATE_WARNING = """\
+pesto: --max-date {date}: PubMed and Europe PMC are searched for articles
+published up to that date only. Open Targets is not run: the API serves only
+its current release, whose scores cannot be dated. The model that reads the
+abstracts may still know of work published later."""
+
+
 def open_targets(gene, phenotype, synonyms, model, runs_dir, args=None):
     """That database's own answer, kept apart from the literature's.
 
@@ -69,6 +79,8 @@ def open_targets(gene, phenotype, synonyms, model, runs_dir, args=None):
     Where the two disagree is informative, which is the reason neither is folded
     into the other.
     """
+    if getattr(args, "max_date", None):
+        return "", None, {}, {"channel": OT_SKIPPED}
     from .open_targets import fetch_and_save_open_targets_traits
     from .scoring import open_targets_verdict
     traits = fetch_and_save_open_targets_traits(
@@ -91,7 +103,10 @@ def render(result, ot_verdict, arm, show_reasoning):
     q = result.query
     out = [f"{q.gene}  /  {q.phenotype}", ""]
     out.append(f"  literature      {result.verdict.call}")
-    out.append(f"  open targets    {ot_verdict or 'unknown'}")
+    out.append(f"  open targets    "
+               f"{ot_verdict or (OT_SKIPPED if result.max_date else 'unknown')}")
+    if result.max_date:
+        out.append(f"  articles published up to {result.max_date}")
     out.append("")
 
     read = result.counts.get("read", 0)
@@ -151,6 +166,7 @@ def assess(arm, gene, phenotype, args, worker, flow_dir):
     return {
         "gene": gene, "phenotype": phenotype,
         "arm": arm.name, "fingerprint": result.fingerprint,
+        "max_date": arm.max_date,
         "lit_argmax": result.verdict.call,
         "lit_mean": mean_call(dist or {}),
         "p_established": (dist or {}).get("Established", ""),
@@ -225,7 +241,7 @@ ANSWER_FIELDS = ["lit_mean", "lit_argmax", "p_established", "p_existing",
                  "p_hypothesized", "p_novel", "open_targets_verdict",
                  "open_targets_max_score", "ot_channel", "ot_tag",
                  "ot_trait", "ot_cap", "found", "read", "cached",
-                 "arm", "fingerprint", "justification", "error"]
+                 "arm", "fingerprint", "max_date", "justification", "error"]
 
 
 def run_bench(args, arm, worker, reader=None):
@@ -245,8 +261,11 @@ def run_bench(args, arm, worker, reader=None):
     extra = [k for k in rows[0] if k not in ("gene", "phenotype")]
     fields = ["gene", "phenotype"] + extra + ANSWER_FIELDS
 
+    max_date = getattr(args, "max_date", None)
+
     def fitted(name):
-        return arms.get(name).using(reader=reader, worker=worker)
+        return arms.get(name).using(reader=reader, worker=worker,
+                                    max_date=max_date)
 
     family = family_of(args)
     if arm is None:
@@ -271,7 +290,7 @@ def run_bench(args, arm, worker, reader=None):
 
     # One load, on this thread, before anyone asks for a ranking. After the
     # resume check, so a batch with nothing left to do does not pay for it.
-    if resolve_encoder(args.ot_encoder) != "none":
+    if not max_date and resolve_encoder(args.ot_encoder) != "none":
         encoder(args.ot_encoder)
 
     started = time.time()
@@ -283,7 +302,7 @@ def run_bench(args, arm, worker, reader=None):
         if chosen is None:
             with contextlib.redirect_stdout(io.StringIO()):
                 chosen = arms.resolve(arms.AUTO, pheno, family=family).using(
-                    reader=reader, worker=worker)
+                    reader=reader, worker=worker, max_date=max_date)
         try:
             row = assess(chosen, gene, pheno, args, worker, flow_dir)
         except Exception as exc:
@@ -385,6 +404,13 @@ def build_parser():
                    help="Anthropic model for the cheap steps: expanding the "
                         "phenotype, sieving and banding (default: the arm's "
                         "own, claude-haiku-4-5 and claude-opus-5 for synonyms)")
+    p.add_argument("--max-date", metavar="DATE",
+                   help="search only articles published up to this date: "
+                        "YYYY, YYYY/MM or YYYY/MM/DD (2019 means 2019/12/31), "
+                        "to see what was known then. Open Targets is not run, "
+                        "since it cannot be dated. The date is part of the "
+                        "pipeline's fingerprint, so a cached run is reused "
+                        "only for the same date")
     p.add_argument("--no-cache", action="store_true",
                    help="read the literature again even if the same pipeline "
                         "has already answered this pair")
@@ -449,7 +475,14 @@ def main(argv=None):
         return browser_main(argv[1:])
 
     args = build_parser().parse_args(argv)
-    if (not config.TORCH_INSTALLED and not args.ot_encoder
+    if args.max_date:
+        from .services.pubmed_service import normalize_max_date
+        try:
+            args.max_date = normalize_max_date(args.max_date)
+        except ValueError as exc:
+            raise SystemExit(f"pesto: --max-date: {exc}")
+        print(MAX_DATE_WARNING.format(date=args.max_date), file=sys.stderr)
+    if (not config.TORCH_INSTALLED and not args.ot_encoder and not args.max_date
             and not os.environ.get("OT_ENCODER") and not args.show_pipeline):
         print("pesto: PyTorch is not installed, so the Open Targets branch grades "
               "every trait associated with the gene instead of the 20 nearest, "
@@ -470,7 +503,8 @@ def main(argv=None):
 
     def fitted(name):
         try:
-            return arms.get(name).using(reader=reader, worker=worker)
+            return arms.get(name).using(reader=reader, worker=worker,
+                                        max_date=args.max_date)
         except KeyError as exc:
             raise SystemExit(str(exc).strip('"'))
 
@@ -511,7 +545,7 @@ def main(argv=None):
             if auto:
                 arm = arms.resolve(arms.AUTO, args.phenotype,
                                    family=family_of(args)).using(
-                    reader=reader, worker=worker)
+                    reader=reader, worker=worker, max_date=args.max_date)
             result = flow_run.run(arm, query, cache=not args.no_cache)
             ot_verdict, ot_score, ot_tokens, ot_match = open_targets(
                 args.gene, args.phenotype, result.terms.get("synonyms"),
@@ -539,6 +573,7 @@ def main(argv=None):
         print(json.dumps({
             "gene": args.gene, "phenotype": args.phenotype,
             "arm": arm.name, "fingerprint": result.fingerprint,
+            "max_date": arm.max_date or None,
             "verdict": result.verdict.call,
             "distribution": (result.verdict.distribution.as_dict()
                              if result.verdict.distribution else None),
